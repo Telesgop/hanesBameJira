@@ -1,0 +1,118 @@
+.ageText {
+  z-index: 9;
+  text-align: center;
+  align-items: center;
+  margin-top: 5vh;
+  position: relative;
+  font-size: larger;
+  font-family: "Mona Sans", sans-serif;
+}
+
+.ageGroups {
+  z-index: 9;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Mona-Sans Regular", sans-serif;
+}
+
+.ageGroupIndiv {
+  border: 1px solid black;
+  background-color: #e88873;
+  color: #f4faff;
+  width: 18vw;
+  height: 20vh;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  font-family: "Mona-Sans Regular", sans-serif;
+
+  z-index: 9;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.ageGroupIndivBlocked {
+  border: 1px solid black;
+  background-color: rgb(174, 171, 171);
+  width: 18vw;
+  height: 20vh;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  font-family: "Mona-Sans Black";
+
+  z-index: 9;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.ageGroupIndivBlocked:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  z-index: 9;
+}
+
+.ageGroupIndiv:hover {
+  cursor: pointer;
+  color: #e88873;
+  background-color: white;
+  z-index: 9;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  z-index: 9;
+}
+
+.blob1 {
+  z-index: 0;
+  top: -25%;
+  left: 40%;
+  position: fixed;
+  transform: scale(0.75);
+  display: flex;
+}
+
+.blob2 {
+  z-index: 0;
+  top: -25%;
+  left: -10%;
+  position: fixed;
+  transform: scale(0.85);
+  display: flex;
+}
+
+.imageDiv {
+  display: flex;
+  overflow: hidden;
+  width: 20vw;
+  position: fixed;
+}
+
+@media only screen and (max-width: 600px) {
+  .ageGroups {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .ageText {
+    margin-bottom: 0px !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    flex-direction: column;
+    margin-top: auto;
+  }
+  .ageGroupIndiv {
+    width: 45vw;
+    height: 13vh;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,73 @@
+.theBack {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftTV {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.tvBase {
+  border: 10px solid #555;
+  height: 55%;
+  width: 75%;
+  border-radius: 10%;
+  border-bottom: 10px solid rgb(83, 83, 83);
+}
+
+.tvStand {
+  border-bottom: 50px solid #555;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 2px solid rgb(91, 200, 227);
+  height: 0;
+  width: 125px;
+  box-shadow: 0 5px 0 #888888;
+}
+
+.videoDescription {
+  margin-top: 10px;
+}
+
+.youtubeEmbed {
+  display: flex;
+  justify-content: center;
+  border-radius: 7%;
+  object-fit: contain;
+  border: 1px solid black;
+  height: 100%;
+  width: 100%;
+}
+
+.youtubeDiv {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.tvWhole {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20;
+}
+
+.rightTV {
+  width: 100%;
+  height: 100%;
+}
+
+.personBoxTV {
+  display: flex;
+  z-index: 9;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  width: 80vw;
+}
