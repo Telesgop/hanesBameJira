@@ -31,18 +31,6 @@
   z-index: 9;
 }
 
-.langbutton {
-  border: 1px solid black;
-  color: white;
-  background-color: #258ea6;
-  border-radius: 25px;
-  transform: scale(1.5);
-  width: 50px;
-  font-family: "Mona Sans";
-  z-index: 9;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
 .modal {
   /* display: none; Hidden by default */
   position: fixed; /* Stay in place */
@@ -116,17 +104,6 @@
   justify-content: center;
   align-self: center;
 }
-.infobutton {
-  border: 1px solid black;
-  color: white;
-  background-color: #258ea6;
-  border-radius: 25px;
-  transform: scale(1.5);
-  width: 25px;
-  font-family: "Mona-Sans Regular", sans-serif;
-  z-index: 9;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
 
 .infobutton:hover {
   cursor: pointer;
@@ -138,7 +115,11 @@
 
 .homebutton {
   border: 1px solid black;
+  height: 3vh;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #258ea6;
   border-radius: 25px;
   transform: scale(1.5);
@@ -148,6 +129,31 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.langbutton {
+  border: 1px solid black;
+  color: white;
+  background-color: #258ea6;
+  border-radius: 25px;
+  height: 3vh;
+  transform: scale(1.5);
+  width: 50px;
+  font-family: "Mona Sans";
+  z-index: 9;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.infobutton {
+  border: 1px solid black;
+  color: white;
+  background-color: #258ea6;
+  border-radius: 25px;
+  transform: scale(1.5);
+  width: 25px;
+  font-family: "Mona-Sans Regular", sans-serif;
+  z-index: 9;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 3vh;
+}
 .langbutton:hover {
   cursor: pointer;
   color: #258ea6;
