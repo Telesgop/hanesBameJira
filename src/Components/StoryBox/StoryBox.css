@@ -1,19 +1,27 @@
 .storyBox {
-  display: flex;
+  /* display: flex; */
   border: 1px solid black;
   background-color: #e88873;
   border-radius: 25px;
   height: 25vh;
   width: 20vw;
   margin: 2vw;
-  text-align: center;
-  align-items: center;
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  /* z-index: 10000; */
-  justify-content: space-evenly;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  /* grid-gap: 1rem; */
+  grid-template-areas: "content-2 content-3";
 }
 
+.indivName {
+  grid-area: content-2;
+  /* margin: 20px; */
+  margin-left: 20px;
+  margin-top: 10px;
+}
 .storyBoxGrey {
   background-color: rgb(149, 149, 149) !important;
 }
@@ -25,24 +33,25 @@
 
 .indivImage {
   border: 2px solid black;
-  /* margin-top: 4vh; */
   border-radius: 25px;
   overflow: hidden;
-  max-width: 100%;
-  min-width: 50%;
-  max-height: 100%;
-  width: fit-content;
-  height: fit-content;
+  width: 6vw;
+  height: 14vh;
   background-color: white;
-}
-
-.imageDivStoryBox {
-  height: 15vh;
-  width: 15vw;
+  grid-area: content-2;
+  margin: 20px;
+  margin-top: 10px;
+  /* margin-bottom: 25px; */
 }
 
 .indivSlug {
   font-family: Mona-Sans Regular;
+  grid-area: content-3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
 }
 
 @media only screen and (max-width: 600px) {
