@@ -41,12 +41,14 @@ const Navbar = () => {
           </motion.div>
         </Link>
       </div>
-      <div className="navdiv2">
-        {" "}
-        {lang !== true
-          ? "The History and Contribution of Black, Asian and Ethnic Minorities in Wales"
-          : "Hanes a chyfraniad Pobl Ddu, Asiaidd a Lleiafrifoedd Ethnig ym Gymru"}
-      </div>
+      <Link to={"/"}>
+        <div className="navdiv2">
+          {" "}
+          {lang !== true
+            ? "The History and Contribution of Black, Asian and Ethnic Minorities in Wales"
+            : "Hanes a chyfraniad Pobl Ddu, Asiaidd a Lleiafrifoedd Ethnig ym Gymru"}
+        </div>
+      </Link>
       <div className="navdiv3">
         <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
           <button className="langbutton" onClick={handlePress}>
