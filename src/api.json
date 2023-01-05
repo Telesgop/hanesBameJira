@@ -3,11 +3,57 @@
         "id" : 0,
         "name" : "Richard Parks",
         "slug": "Rugby player",
-        "engDescription": "sdf"
+        "image": "",
+        "url": "/6to9yo/RichardParks"
     },{
         "id" : 1,
         "name" : "John Ystumllyn",
-        "slug": "18th Century Gardener"
+        "slug": "18th Century Gardener",
+        "image": "",
+        "url": "/6to9yo/JohnYstumllyn"
+    }
+    ,
+    {
+        "id" : 2,
+        "name" : "Merthyr Tydfil Synagogue",
+        "slug": "Built in 1877",
+        "image": "",
+        "url": "/6to9yo/MerthyrSynagogue"
+    },
+    {
+        "id" : 3,
+        "name" : "Reuel Elijah",
+        "slug": "Musician",
+        "image": "",
+        "url": "/6to9yo/ReuelElijah"
+    },
+    {
+        "id" : 4,
+        "name" : "Lenn Lawrence",
+        "slug": "",
+        "image": "",
+        "url": "/6to9yo/LennLawrence"
+    },
+    {
+        "id" : 5,
+        "name" : "Teleri Gray ",
+        "slug": "Romani Storyteller",
+        "image": "",
+        "url": "/6to9yo/TeleriGray"
+    },
+    {
+        "id" : 6,
+        "name" : "Isaac Blake",
+        "slug": "Director of the Romani Cultural and Arts Company",
+        "image": "",
+        "url": "/6to9yo/IsaacBlake"
+    },
+    {
+        "id" : 7,
+        "name" : "Ian Hancock",
+        "slug": "Professor of Linguistics at the University of Texas",
+        "image": "",
+        "url": "/6to9yo/IanHancock"
     }
 ]
 

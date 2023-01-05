@@ -10,6 +10,7 @@ import richard from "../../Images/richard2.png";
 import john from "../../Images/johnYstumllyn.png";
 import Copyright from "../Copyright/Copyright";
 import { Link } from "react-router-dom";
+import api from "../../api.json";
 
 const SixToNine = () => {
   const { lang, setLang } = useContext(LanguageContext);
@@ -20,41 +21,16 @@ const SixToNine = () => {
         {lang !== true ? "Ages 6 - 9" : "6 - 9 Oed"}
       </div>
       <div className="storiesContainer">
-        <Link to={"/6to9yo/RichardParks"}>
-          <StoryBox
-            name={"Richard Parks"}
-            image={richard}
-            slug={"Rugby Player, Athlete"}
-          ></StoryBox>
-        </Link>
-        <Link to={"/6to9yo/JohnYstumllyn"}>
-          <StoryBox
-            name={"John Ystumllyn"}
-            image={john}
-            alt="test"
-            slug={"18th Century Gardener"}
-          ></StoryBox>
-        </Link>
-        {/* <Link to={"/6to9yo/example"}> */}
-        <StoryBox name={"Example"} image={manface} alt="test"></StoryBox>
-        {/* </Link> */}
-        {/* <Link to={"/6to9yo/example"}> */}
-        <StoryBox name={"Example"} image={manface} alt="test"></StoryBox>
-        {/* </Link>
-        <Link to={"/6to9yo/example"}> */}
-        <StoryBox name={"Example"} image={manface} alt="test"></StoryBox>
-        {/* </Link>
-        <Link to={"/6to9yo/example"}> */}
-        <StoryBox name={"Example"} image={manface} alt="test"></StoryBox>
-        {/* </Link>
-        <Link to={"/6to9yo/example"}> */}
-        <StoryBox name={"Example"} image={manface} alt="test"></StoryBox>
-        {/* </Link>
-        <Link to={"/6to9yo/example"}> */}
-        <StoryBox name={"Example"} image={manface} alt="test"></StoryBox>
-        {/* </Link> */}
-        {/* <StoryBox name={"Example"} image={manface} alt="test"></StoryBox>
-        <StoryBox name={"Example"} image={manface} alt="test"></StoryBox> */}
+        {api.map((item) => (
+          <Link to={item.url}>
+            <StoryBox
+              key={item.id}
+              name={item.name}
+              image={manface}
+              slug={item.slug}
+            ></StoryBox>
+          </Link>
+        ))}
       </div>
       <Copyright />
     </>

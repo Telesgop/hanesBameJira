@@ -49,6 +49,16 @@ const Home = () => {
         initial="hidden"
         animate="visible"
       >
+        <Link to={"/3to6"}>
+          <motion.div
+            className="ageGroupIndiv"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            variants={item}
+          >
+            3-6
+          </motion.div>
+        </Link>
         <Link to={"/6to9yo"}>
           <motion.div
             className="ageGroupIndiv"
@@ -78,16 +88,6 @@ const Home = () => {
             variants={item}
           >
             12-15
-          </motion.div>
-        </Link>
-        <Link to={"/12to15yo"}>
-          <motion.div
-            className="ageGroupIndiv"
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            variants={item}
-          >
-            ?
           </motion.div>
         </Link>
       </motion.div>
