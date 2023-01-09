@@ -37,7 +37,7 @@ const SixToNine = () => {
       </div>
       <div className="storiesContainer">
         {query == "" && (
-          <ul className="ulSearch">
+          <ul>
             {currentPosts.map((item, id) => (
               <Link to={item.url}>
                 <StoryBox
@@ -52,7 +52,7 @@ const SixToNine = () => {
           </ul>
         )}
         {query !== "" && (
-          <ul className="ulSearch">
+          <ul>
             {api.map((item) => {
               if (item.keywords.toLowerCase().includes(query.toLowerCase()))
                 return (

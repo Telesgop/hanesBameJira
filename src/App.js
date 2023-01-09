@@ -16,8 +16,6 @@ import Index from "./Components/Index/Index";
 import data from "./api.json";
 import ThreeToSix from "./Components/ThreeToSix/ThreeToSix";
 
-console.log(data);
-
 function App() {
   const [lang, setLang] = useState(false);
   return (

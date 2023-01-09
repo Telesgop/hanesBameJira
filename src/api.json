@@ -1,5 +1,5 @@
 [
-   
+    
     {
         "id" : 2,
         "name" : "Merthyr Tydfil Synagogue",
@@ -8,7 +8,6 @@
         "image": "",
         "url": "/6to9yo/MerthyrSynagogue",
         "keywords": "Merthyr Tydfil Synagogue Jewish"
-
     },
     {
         "id" : 3,
@@ -18,7 +17,6 @@
         "image": "",
         "url": "/6to9yo/ReuelElijah",
         "keywords": "Reuel Elijah Dancer"
-
     },
     {
         "id" : 4,
@@ -28,7 +26,6 @@
         "image": "",
         "url": "/6to9yo/LennLawrence",
         "keywords": "Lenn Lawrence carpenter"
-
     },
     {
         "id" : 5,
@@ -38,7 +35,6 @@
         "image": "",
         "url": "/6to9yo/TeleriGray",
         "keywords": "Teleri Gray romani storyteller"
-
     },
     {
         "id" : 6,
@@ -48,7 +44,6 @@
         "image": "",
         "url": "/6to9yo/IsaacBlake",
         "keywords": "Isaac Blake romani art"
-
     },
     {
         "id" : 7,
@@ -58,7 +53,6 @@
         "image": "",
         "url": "/6to9yo/IanHancock",
         "keywords": "Ian Hancock Professor of Linguistics at the University of Texas"
-
     }, {
         "id" : 8,
         "name" : "First Generation Chinese in Wales",
@@ -66,8 +60,7 @@
         "welshSlug": "",
         "image": "",
         "url": "/6to9yo/FirstGenChinese",
-        "keywords": "Merthyr Tydfil Synagogue Jewish"
-
+        "keywords": "First Generation Chinese in Wales"
     },
     {
         "id" : 9,
@@ -76,8 +69,7 @@
         "welshSlug": "",
         "image": "",
         "url": "/6to9yo/SSAndoraStarr",
-        "keywords": "Merthyr Tydfil Synagogue Jewish"
-
+        "keywords": "The SS Andorra Starr"
     },
     {
         "id" : 10,
@@ -86,8 +78,7 @@
         "welshSlug": "",
         "image": "",
         "url": "/6to9yo/WilsonMonk",
-        "keywords": "Merthyr Tydfil Synagogue Jewish"
-
+        "keywords": "Wilson Monk"
     },
     {
         "id" : 11,
@@ -96,8 +87,7 @@
         "welshSlug": "",
         "image": "",
         "url": "/6to9yo/ShirleyBassey",
-        "keywords": "Merthyr Tydfil Synagogue Jewish"
-
-    }
+        "keywords": "Dame Shirley Veronica Bassey"
+    } 
 ]
 

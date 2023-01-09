@@ -1,6 +1,5 @@
 .ageRange {
   display: flex;
-  /* margin-left:4vw; */
   align-self: center;
   justify-content: center;
   margin-top: 1vh;
@@ -40,6 +39,20 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
+
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+  overflow: scroll;
+  height: 65vh;
+}
+.ulSearch {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 0;
+  padding: 0;
   align-items: center;
   justify-content: center;
   z-index: 9;
@@ -58,10 +71,8 @@
   }
 
   .ageRange {
-    /* position: sticky !important; */
     top: 56px;
     z-index: 100000;
-    /* background-color: #f4faff; */
     width: 100%;
     display: flex;
     justify-content: center;
