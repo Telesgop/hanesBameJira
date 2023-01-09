@@ -1,59 +1,103 @@
 [
-    {
-        "id" : 0,
-        "name" : "Richard Parks",
-        "slug": "Rugby player",
-        "image": "",
-        "url": "/6to9yo/RichardParks"
-    },{
-        "id" : 1,
-        "name" : "John Ystumllyn",
-        "slug": "18th Century Gardener",
-        "image": "",
-        "url": "/6to9yo/JohnYstumllyn"
-    }
-    ,
+   
     {
         "id" : 2,
         "name" : "Merthyr Tydfil Synagogue",
         "slug": "Built in 1877",
+        "welshSlug": "",
         "image": "",
-        "url": "/6to9yo/MerthyrSynagogue"
+        "url": "/6to9yo/MerthyrSynagogue",
+        "keywords": "Merthyr Tydfil Synagogue Jewish"
+
     },
     {
         "id" : 3,
         "name" : "Reuel Elijah",
-        "slug": "Musician",
+        "slug": "Dancer",
+        "welshSlug": "",
         "image": "",
-        "url": "/6to9yo/ReuelElijah"
+        "url": "/6to9yo/ReuelElijah",
+        "keywords": "Reuel Elijah Dancer"
+
     },
     {
         "id" : 4,
         "name" : "Lenn Lawrence",
-        "slug": "",
+        "slug": "1st carpenter in British Steel",
+        "welshSlug": "",
         "image": "",
-        "url": "/6to9yo/LennLawrence"
+        "url": "/6to9yo/LennLawrence",
+        "keywords": "Lenn Lawrence carpenter"
+
     },
     {
         "id" : 5,
-        "name" : "Teleri Gray ",
+        "name" : "Teleri Gray",
         "slug": "Romani Storyteller",
+        "welshSlug": "",
         "image": "",
-        "url": "/6to9yo/TeleriGray"
+        "url": "/6to9yo/TeleriGray",
+        "keywords": "Teleri Gray romani storyteller"
+
     },
     {
         "id" : 6,
         "name" : "Isaac Blake",
         "slug": "Director of the Romani Cultural and Arts Company",
+        "welshSlug": "",
         "image": "",
-        "url": "/6to9yo/IsaacBlake"
+        "url": "/6to9yo/IsaacBlake",
+        "keywords": "Isaac Blake romani art"
+
     },
     {
         "id" : 7,
         "name" : "Ian Hancock",
         "slug": "Professor of Linguistics at the University of Texas",
+        "welshSlug": "",
         "image": "",
-        "url": "/6to9yo/IanHancock"
+        "url": "/6to9yo/IanHancock",
+        "keywords": "Ian Hancock Professor of Linguistics at the University of Texas"
+
+    }, {
+        "id" : 8,
+        "name" : "First Generation Chinese in Wales",
+        "slug": "",
+        "welshSlug": "",
+        "image": "",
+        "url": "/6to9yo/FirstGenChinese",
+        "keywords": "Merthyr Tydfil Synagogue Jewish"
+
+    },
+    {
+        "id" : 9,
+        "name" : "The SS Andorra Starr",
+        "slug": "",
+        "welshSlug": "",
+        "image": "",
+        "url": "/6to9yo/SSAndoraStarr",
+        "keywords": "Merthyr Tydfil Synagogue Jewish"
+
+    },
+    {
+        "id" : 10,
+        "name" : "Wilson Monk",
+        "slug": "",
+        "welshSlug": "",
+        "image": "",
+        "url": "/6to9yo/WilsonMonk",
+        "keywords": "Merthyr Tydfil Synagogue Jewish"
+
+    },
+    {
+        "id" : 11,
+        "name" : "Dame Shirley Veronica Bassey",
+        "slug": "",
+        "welshSlug": "",
+        "image": "",
+        "url": "/6to9yo/ShirleyBassey",
+        "keywords": "Merthyr Tydfil Synagogue Jewish"
+
     }
 ]
 

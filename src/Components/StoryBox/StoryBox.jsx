@@ -32,16 +32,12 @@ const StoryBox = ({ name, image, slug }) => {
       animate="visible"
     >
       <div>
-        <div className="indivName">{name}</div>
-        <div className="imageDivStoryBox" variants={item}>
-          <img
-            src={image}
-            className="indivImage"
-            alt="A small image of this person."
-          ></img>
+        <p className="indivName">{name}</p>
+        <div className="imgAndSlug">
+          <img src={image} className="indivImage" alt="A small image of"></img>
+          <p className="indivSlug">{slug}</p>
         </div>
       </div>
-      <div className="indivSlug">{slug}</div>
     </motion.div>
   );
 };

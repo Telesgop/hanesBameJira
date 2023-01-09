@@ -14,6 +14,7 @@ import johnBackground from "./Images/johnWBackground.jpeg";
 import PersonTVBack from "./Components/Person/PersonTVBack";
 import Index from "./Components/Index/Index";
 import data from "./api.json";
+import ThreeToSix from "./Components/ThreeToSix/ThreeToSix";
 
 console.log(data);
 
@@ -28,6 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/6to9yo" element={<SixToNine></SixToNine>}></Route>
+          <Route path="/3to6yo" element={<ThreeToSix></ThreeToSix>}></Route>
           <Route
             path="/9to12yo"
             element={<NineToTwelve></NineToTwelve>}
