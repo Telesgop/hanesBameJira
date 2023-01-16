@@ -46,7 +46,7 @@ const Navbar = () => {
           {" "}
           {lang !== true
             ? "The History and Contribution of Black, Asian and Ethnic Minorities in Wales"
-            : "Hanes a chyfraniad Pobl Ddu, Asiaidd a Lleiafrifoedd Ethnig ym Gymru"}
+            : "Hanes a Chyfraniad Pobl Ddu, Asiaidd a Lleiafrifoedd Ethnig ym Gymru"}
         </div>
       </Link>
       <div className="navdiv3">

@@ -11,6 +11,43 @@
         "slug": "Ice Cream",
         "image": "",
         "url": "/3to6yo/SidoliIceCream"
+    },
+    {
+        "id" : 2,
+        "name" : "Richard Parks",
+        "slug": "Rugby player / athlete",
+        "image": "",
+        "url": "/3to6yo/RichardParks"
+    }
+    
+    ,
+    {
+        "id" : 3,
+        "name" : "Vernester Cyril OBE",
+        "slug": "Vernester worked as a midwife for over 30 years",
+        "image": "",
+        "url": "/3to6yo/VernesterCyril"
+    },
+    {
+        "id" : 4,
+        "name" : "Dr Ganesh Subrahmanyam",
+        "slug": "Dr Ganesh Subrahmanyam was one of the first Indian doctors to arrive in Wales.  ",
+        "image": "",
+        "url": "/3to6yo/GaneshSubrahmanyam"
+    },
+    {
+        "id" : 5,
+        "name" : "Elizabeth Campbell MBE",
+        "slug": "Community Activist and Wales’ First Black Headteacher",
+        "image": "",
+        "url": "/3to6yo/ElizabethCampbell"
+    },
+    {
+        "id" : 6,
+        "name" : "Vaughan Gething ",
+        "slug": "Welsh Labour and Co-operative politician serving as Minister for the Economy since 2021.",
+        "image": "",
+        "url": "/3to6yo/ElizabethCampbell"
     }
     
 ]

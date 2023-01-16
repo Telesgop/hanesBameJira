@@ -19,7 +19,7 @@
   border-radius: 30px;
   padding: 10px;
   background: #fff;
-  border: 1px solid black;
+  border: 2px solid black;
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
     -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
     inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
@@ -27,6 +27,7 @@
   margin-bottom: 0;
   text-align: center;
   font-family: "Mona-Sans Regular";
+  width: 20vw;
 }
 
 .storyBoxGrey {
@@ -58,6 +59,7 @@
   z-index: 9;
   overflow: scroll;
   height: 65vh;
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {

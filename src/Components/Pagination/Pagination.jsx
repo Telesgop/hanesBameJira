@@ -1,5 +1,6 @@
 import React from "react";
 import "./Pagination.css";
+import { motion } from "framer-motion";
 
 const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
   const pageNumbers = [];
@@ -11,11 +12,17 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
     <div className="paginationPages">
       <nav className="paginationNav">
         {pageNumbers.map((number) => (
-          <ul className="paginationText" key={number}>
-            <a className="paginationNum" onClick={() => paginate(number)}>
-              {number}
-            </a>
-          </ul>
+          <motion.div
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            initial="hidden"
+            animate="visible"
+            onClick={() => paginate(number)}
+          >
+            <ul className="paginationText" key={number}>
+              <a className="paginationNum">{number}</a>
+            </ul>
+          </motion.div>
         ))}
       </nav>
     </div>

@@ -51,7 +51,7 @@ const SixToNine = () => {
             ))}
           </ul>
         )}
-        {query !== "" && (
+        {query && (
           <ul className="ulSearch">
             {api.map((item) => {
               if (item.keywords.toLowerCase().includes(query.toLowerCase()))
