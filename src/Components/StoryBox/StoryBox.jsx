@@ -2,7 +2,7 @@ import React from "react";
 import "./StoryBox.css";
 import { motion } from "framer-motion";
 
-const StoryBox = ({ name, image, slug }) => {
+const StoryBox = ({ name, image, slug, altName }) => {
   const container = {
     hidden: { opacity: 1, scale: 0.9 },
     visible: {
@@ -34,7 +34,7 @@ const StoryBox = ({ name, image, slug }) => {
       <div>
         <p className="indivName">{name}</p>
         <div className="imgAndSlug">
-          <img src={image} className="indivImage" alt="A small image of"></img>
+          <img src={image} className="indivImage" alt={name}></img>
           <p className="indivSlug">{slug}</p>
         </div>
       </div>

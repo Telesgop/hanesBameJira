@@ -24,10 +24,11 @@
 }
 
 .paginationNum {
-  border: 1px solid black;
-  background-color: #e88873;
-  padding: 10px;
-  border-radius: 30%;
+  /* border: 1px solid black; */
+  /* background-color: #e88873; */
+  /* padding: 10px; */
+  margin: 10px;
+  /* border-radius: 30%; */
 }
 
 .paginationText {

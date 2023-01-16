@@ -43,7 +43,7 @@ const SixToNine = () => {
                 <StoryBox
                   key={item.id}
                   name={item.name}
-                  image={manface}
+                  image={item.image}
                   slug={item.slug}
                   keywords={item.keywords}
                 ></StoryBox>
@@ -60,9 +60,10 @@ const SixToNine = () => {
                     <StoryBox
                       key={item.id}
                       name={item.name}
-                      image={manface}
+                      image={item.image}
                       slug={item.slug}
                       keywords={item.keywords}
+                      altName={item.name}
                     ></StoryBox>
                   </Link>
                 );

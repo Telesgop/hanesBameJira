@@ -13,7 +13,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
       <nav className="paginationNav">
         {pageNumbers.map((number) => (
           <motion.div
-            whileHover={{ scale: 1.2 }}
+            whileHover={{ scale: 1.5 }}
             whileTap={{ scale: 0.9 }}
             initial="hidden"
             animate="visible"

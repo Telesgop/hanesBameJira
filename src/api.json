@@ -3,9 +3,9 @@
     {
         "id" : 2,
         "name" : "Merthyr Tydfil Synagogue",
-        "slug": "Built in 1877",
+        "slug": "The former Merthyr Synagogue was built in 1877 and designed by local architect, Charles Taylor.",
         "welshSlug": "",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/The_Top_of_Church_Street%2C_Merthyr_Tydfil_%28geograph_4834858%29.jpg",
         "url": "/6to9yo/MerthyrSynagogue",
         "keywords": "Merthyr Tydfil Synagogue Jewish"
     },
@@ -14,7 +14,7 @@
         "name" : "Reuel Elijah",
         "slug": "Dancer",
         "welshSlug": "",
-        "image": "",
+        "image": "https://i2-prod.walesonline.co.uk/incoming/article15148582.ece/ALTERNATES/s615b/0_Reuel-Elijah.jpg",
         "url": "/6to9yo/ReuelElijah",
         "keywords": "Reuel Elijah Dancer"
     },
@@ -23,7 +23,7 @@
         "name" : "Lenn Lawrence",
         "slug": "1st carpenter in British Steel",
         "welshSlug": "",
-        "image": "",
+        "image": "https://blackhistorywales.org.uk/wp-content/uploads/2020/07/Screenshot-2020-07-09-at-07.56.04.png",
         "url": "/6to9yo/LennLawrence",
         "keywords": "Lenn Lawrence carpenter"
     },
@@ -32,7 +32,7 @@
         "name" : "Teleri Gray",
         "slug": "Romani Storyteller",
         "welshSlug": "",
-        "image": "",
+        "image": "https://live.staticflickr.com/655/22408268685_a9ec39be94_b.jpg",
         "url": "/6to9yo/TeleriGray",
         "keywords": "Teleri Gray romani storyteller"
     },
@@ -41,7 +41,7 @@
         "name" : "Isaac Blake",
         "slug": "Director of the Romani Cultural and Arts Company",
         "welshSlug": "",
-        "image": "",
+        "image": "https://alturi.org/wp-content/uploads/2021/08/IsaacBlakeCrop.png",
         "url": "/6to9yo/IsaacBlake",
         "keywords": "Isaac Blake romani art"
     },
@@ -50,7 +50,7 @@
         "name" : "Ian Hancock",
         "slug": "Professor of Linguistics at the University of Texas",
         "welshSlug": "",
-        "image": "",
+        "image": "https://thedailytexan.com/wp-content/uploads/2019/02/professor_queens_honors_CourtesyofIanHankcock.jpg",
         "url": "/6to9yo/IanHancock",
         "keywords": "Ian Hancock Professor of Linguistics at the University of Texas"
     }, {
@@ -65,18 +65,18 @@
     {
         "id" : 9,
         "name" : "The SS Andorra Starr",
-        "slug": "",
+        "slug": "The SS Arandora Star was a ship that had once been used for cruises. During World War Two it was then used to carry soldiers.",
         "welshSlug": "",
-        "image": "",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Arandora_Star_1940.jpg",
         "url": "/6to9yo/SSAndoraStarr",
         "keywords": "The SS Andorra Starr"
     },
     {
         "id" : 10,
         "name" : "Wilson Monk",
-        "slug": "",
+        "slug": "Member of the 320th Barrage Balloon Battalion ",
         "welshSlug": "",
-        "image": "",
+        "image": "https://images.squarespace-cdn.com/content/v1/55e4bcf2e4b01d0dc78c9848/1441893157537-7AL21O6U939POF0AYWGB/image-asset.jpeg",
         "url": "/6to9yo/WilsonMonk",
         "keywords": "Wilson Monk"
     },
@@ -85,7 +85,7 @@
         "name" : "Dame Shirley Veronica Bassey",
         "slug": "",
         "welshSlug": "",
-        "image": "",
+        "image": "https://www.thesun.co.uk/wp-content/uploads/2018/03/nintchdbpict000385642117.jpg",
         "url": "/6to9yo/ShirleyBassey",
         "keywords": "Dame Shirley Veronica Bassey"
     } 
