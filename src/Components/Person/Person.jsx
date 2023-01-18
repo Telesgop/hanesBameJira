@@ -1,7 +1,5 @@
 import "./Person.css";
 import React, { useState } from "react";
-import blob1 from "../../Images/blob1.png";
-import blob2 from "../../Images/blob2.png";
 import { HiArrowCircleRight } from "react-icons/hi";
 import { HiArrowCircleLeft } from "react-icons/hi";
 import { motion } from "framer-motion";
@@ -14,7 +12,6 @@ const Person = ({
   welshText,
   indivName,
   indivPic,
-  indivPic2,
   backText,
   backWelshText,
   slugText,

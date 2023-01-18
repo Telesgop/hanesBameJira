@@ -1,6 +1,6 @@
 table {
   font-family: "Mona-Sans Regular", sans-serif;
-
+  /* height: 70%; */
   border-collapse: collapse;
   /* width: 80%; */
   display: flex;

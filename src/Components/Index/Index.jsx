@@ -35,7 +35,10 @@ const Index = () => {
             {currentPosts.map((item, id) => (
               <Link to={item.url}>
                 <tr>
-                  <td>{item.name}</td>
+                  <td>
+                    <strong>{item.name}</strong>
+                  </td>
+
                   <td>{item.slug}</td>
                 </tr>
               </Link>
