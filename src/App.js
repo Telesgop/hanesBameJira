@@ -11,7 +11,6 @@ import NineToTwelve from "./Components/NineToTwelve/NineToTwelve";
 import johnBackground from "./Images/johnWBackground.jpeg";
 import PersonTVBack from "./Components/Person/PersonTVBack";
 import Index from "./Components/Index/Index";
-import data from "./api.json";
 import ThreeToSix from "./Components/ThreeToSix/ThreeToSix";
 import TwelveToSixteen from "./Components/TwelveToSixteen/TwelveToSixteen";
 
