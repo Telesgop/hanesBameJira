@@ -90,7 +90,7 @@ const Home = () => {
             whileTap={{ scale: 0.9 }}
             variants={item}
           >
-            12-15
+            12-16
           </motion.div>
         </Link>
       </motion.div>
