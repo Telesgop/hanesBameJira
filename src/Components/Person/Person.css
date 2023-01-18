@@ -30,9 +30,10 @@
 }
 
 .personName {
-  margin: 3vh;
   font-weight: bold;
-  font-size: larger;
+  font-family: "Mona Sans", sans-serif;
+
+  font-size: x-large !important;
 }
 .rightSide {
   overflow: scroll;
@@ -47,6 +48,10 @@
 }
 .personText {
   display: flex;
+}
+
+.personText li {
+  padding: 0.5rem;
 }
 .blob1 {
   z-index: 0;
@@ -116,10 +121,17 @@
   height: 50vh;
   border-radius: 7px;
   border: 2px solid black;
+  object-fit: cover;
 }
 
 .backButton {
   display: flex;
+}
+
+.personShortSlug {
+  text-align: center;
+  margin-top: 10px;
+  width: 70%;
 }
 
 @media only screen and (max-width: 600px) {

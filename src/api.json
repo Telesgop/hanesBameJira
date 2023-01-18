@@ -1,9 +1,18 @@
 [
     
     {
+        "id" : 1,
+        "name" : "Richard Parks",
+        "slug": "Rugby player and extreme athlete.",
+        "welshSlug": "",
+        "image": "https://www.richardparks.co.uk/files/7715/4383/2077/Richard_banner_mobile.png",
+        "url": "/6to9yo/RichardParks",
+        "keywords": "Richard Parks rugby player athlete"
+    },
+    {
         "id" : 2,
         "name" : "Merthyr Tydfil Synagogue",
-        "slug": "The former Merthyr Synagogue was built in 1877 and designed by local architect, Charles Taylor.",
+        "slug": "The oldest purpose-built Jewish building surviving in Wales.",
         "welshSlug": "",
         "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/The_Top_of_Church_Street%2C_Merthyr_Tydfil_%28geograph_4834858%29.jpg",
         "url": "/6to9yo/MerthyrSynagogue",

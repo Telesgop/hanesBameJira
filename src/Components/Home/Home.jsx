@@ -83,7 +83,7 @@ const Home = () => {
             9-12
           </motion.div>
         </Link>
-        <Link to={"/12to15yo"}>
+        <Link to={"/12to16yo"}>
           <motion.div
             className="ageGroupIndiv"
             whileHover={{ scale: 1.2 }}

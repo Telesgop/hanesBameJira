@@ -48,7 +48,8 @@
 .indivSlug {
   font-family: Mona-Sans Regular;
   grid-area: content-3;
-  margin-left: 20px;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
   width: 10vw;
   height: 14vh;
   margin-top: 30px;

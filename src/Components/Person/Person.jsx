@@ -82,6 +82,9 @@ const Person = ({
                   </div>
                   <div className="personShortSlug">
                     {lang !== true ? slugText : welshSlugText}
+                    <br />
+                    <br />
+                    <strong>Date of Birth, etc</strong>
                   </div>
                 </div>
                 <div className="rightSide">

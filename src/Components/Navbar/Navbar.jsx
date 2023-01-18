@@ -58,8 +58,8 @@ const Navbar = () => {
         </motion.div>
         <motion.div whileHover={{ scale: 1.2 }}>
           <button className="infobutton" onClick={handleInfo}>
-            {lang === true && "Notes"}
-            {lang !== true && "Nodiadau"}
+            {lang === true && "Nodiadau"}
+            {lang !== true && "Notes"}
           </button>
         </motion.div>
       </div>

@@ -3,11 +3,20 @@
     {
         "id" : 0,
         "name" : "Hans Lichtenstein",
-        "slug": "Hans worked hard and fulfilled his dream of becoming a doctor – but he never stopped having new interests. ",
+        "slug": "The boy who fled from Nazi Germany.",
         "welshSlug": "",
-        "image": "",
+        "image": "https://i.guim.co.uk/img/media/7c810c258320be244e1d7d4d721e8a171409c677/180_145_1240_744/master/1240.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=d36ac08cc3c44a21c37572bfc483bb4c",
         "url": "/9to12yo/HansLichtenstein",
         "keywords": "Hans Lichtenstein Jewish Doctor"
+    },
+    {
+        "id" : 5,
+        "name" : "Penrhyn Castle",
+        "slug": "The impressive castle and it's links to the slave trade.",
+        "welshSlug": "",
+        "image": "http://changing-pages.com/wp-content/uploads/2019/05/IMG_4201-1440x1001.jpg",
+        "url": "/9to12yo/PenrhynCastle",
+        "keywords": "Penrhyn Castle Slave Trade Jamaica"
     },
     {
         "id" : 1,
@@ -45,15 +54,7 @@
         "url": "/9to12yo/Louisa",
         "keywords": "Louisa St Bartholomew-Brown Morgan"
     },
-    {
-        "id" : 5,
-        "name" : "Penrhyn Castle",
-        "slug": "The magnificent Penrhyn Castle in north Wales was built on a dark history.",
-        "welshSlug": "",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/The_Top_of_Church_Street%2C_Merthyr_Tydfil_%28geograph_4834858%29.jpg",
-        "url": "/9to12yo/PenrhynCastle",
-        "keywords": "Penrhyn Castle Slave Trade Jamaica"
-    },
+    
     {
         "id" : 6,
         "name" : "Clive Sullivan",

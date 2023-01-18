@@ -1,13 +1,13 @@
 import { React, useContext, useState } from "react";
-import "./NineToTwelve.css";
+import "./TwelveToSixteen.css";
 import { LanguageContext } from "../../Helper/Context";
 import StoryBox from "../StoryBox/StoryBox";
-import ninetotwelve from "../../9to12.json";
+import twelvetosixteen from "../../12to16.json";
 import Copyright from "../Copyright/Copyright";
 import { Link } from "react-router-dom";
 import Pagination from "../Pagination/Pagination";
 
-const NineToTwelve = () => {
+const TwelveToSixteen = () => {
   const { lang, setLang } = useContext(LanguageContext);
   const [query, setQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
@@ -15,14 +15,14 @@ const NineToTwelve = () => {
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = ninetotwelve.slice(indexOfFirstPost, indexOfLastPost);
+  const currentPosts = twelvetosixteen.slice(indexOfFirstPost, indexOfLastPost);
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <>
       <div className="ageRange">
-        {lang !== true ? "Ages 9 - 12" : "9 - 12 Oed"}
+        {lang !== true ? "Ages 12 - 16" : "12 - 16 Oed"}
       </div>
       <div className="searchbar">
         <input
@@ -49,7 +49,7 @@ const NineToTwelve = () => {
         )}
         {query && (
           <ul className="ulSearch">
-            {ninetotwelve.map((item) => {
+            {twelvetosixteen.map((item) => {
               if (item.keywords.toLowerCase().includes(query.toLowerCase()))
                 return (
                   <Link to={item.url}>
@@ -68,7 +68,7 @@ const NineToTwelve = () => {
       </div>
       <Pagination
         postsPerPage={postsPerPage}
-        totalPosts={ninetotwelve.length}
+        totalPosts={twelvetosixteen.length}
         paginate={paginate}
       ></Pagination>
       <Copyright />
@@ -76,4 +76,4 @@ const NineToTwelve = () => {
   );
 };
 
-export default NineToTwelve;
+export default TwelveToSixteen;
