@@ -47,33 +47,17 @@
     },
     {
         "id" : 6,
-        "name" : "Isaac Blake",
-        "slug": "Director of the Romani Cultural and Arts Company",
+        "name" : "Fong Sui",
+        "slug": "First Generation Chinese in Wales",
         "welshSlug": "",
-        "image": "https://alturi.org/wp-content/uploads/2021/08/IsaacBlakeCrop.png",
-        "url": "/6to9yo/IsaacBlake",
-        "keywords": "Isaac Blake romani art"
+        "image": "https://i2-prod.walesonline.co.uk/incoming/article6289157.ece/ALTERNATES/s810/JS28547881.jpg",
+        "url": "/6to9yo/FongSui",
+        "keywords": "Fong Sui Chinese"
     },
-    {
-        "id" : 7,
-        "name" : "Ian Hancock",
-        "slug": "Professor of Linguistics at the University of Texas",
-        "welshSlug": "",
-        "image": "https://thedailytexan.com/wp-content/uploads/2019/02/professor_queens_honors_CourtesyofIanHankcock.jpg",
-        "url": "/6to9yo/IanHancock",
-        "keywords": "Ian Hancock Professor of Linguistics at the University of Texas"
-    }, {
-        "id" : 8,
-        "name" : "First Generation Chinese in Wales",
-        "slug": "",
-        "welshSlug": "",
-        "image": "",
-        "url": "/6to9yo/FirstGenChinese",
-        "keywords": "First Generation Chinese in Wales"
-    },
+   
     {
         "id" : 9,
-        "name" : "The SS Andorra Starr",
+        "name" : "Arandora Star",
         "slug": "The SS Arandora Star was a ship that had once been used for cruises. During World War Two it was then used to carry soldiers.",
         "welshSlug": "",
         "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Arandora_Star_1940.jpg",
@@ -91,7 +75,7 @@
     },
     {
         "id" : 11,
-        "name" : "Dame Shirley Veronica Bassey",
+        "name" : "Dame Shirley Bassey",
         "slug": "",
         "welshSlug": "",
         "image": "https://www.thesun.co.uk/wp-content/uploads/2018/03/nintchdbpict000385642117.jpg",

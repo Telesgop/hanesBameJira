@@ -13,49 +13,7 @@
         "image": "https://i2-prod.walesonline.co.uk/incoming/article17960109.ece/ALTERNATES/s1200c/0_RM_180320_Sidoli_IceCream_020.jpg",
         "url": "/3to6yo/SidoliIceCream",
         "keywords" : "Sidoli Ice Cream"
-    },
-    {
-        "id" : 2,
-        "name" : "Richard Parks",
-        "slug": "Rugby player / athlete",
-        "image": "https://www.richardparks.co.uk/files/7715/4383/2077/Richard_banner_mobile.png",
-        "url": "/3to6yo/RichardParks",
-        "keywords" : "Richard Parks"
     }
-    
-    ,
-    {
-        "id" : 3,
-        "name" : "Vernester Cyril OBE",
-        "slug": "Vernester worked as a midwife for over 30 years",
-        "image": "https://www.peoplescollection.wales/sites/default/files/stories/Mrs-Vernester-Cyril-OBE.jpg",
-        "url": "/3to6yo/VernesterCyril",
-        "keywords" : "Vernester Cyril OBE"
-    },
-    {
-        "id" : 4,
-        "name" : "Dr Ganesh Subrahmanyam",
-        "slug": "Dr Ganesh Subrahmanyam was one of the first Indian doctors to arrive in Wales.  ",
-        "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0b6ksrg.jpg",
-        "url": "/3to6yo/GaneshSubrahmanyam",
-        "keywords" : "Dr Ganesh Subrahmanyam"
-    },
-    {
-        "id" : 5,
-        "name" : "Elizabeth Campbell MBE",
-        "slug": "Community Activist and Wales’ First Black Headteacher",
-        "image": "https://www.100welshwomen.wales/wp-content/uploads/2018/01/Betty-Campbell.jpg",
-        "url": "/3to6yo/ElizabethCampbell",
-        "keywords" : "Elizabeth Campbell MBE"
-    },
-    {
-        "id" : 6,
-        "name" : "Vaughan Gething ",
-        "slug": "Welsh Labour and Co-operative politician serving as Minister for the Economy since 2021.",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Vaughan_Gething.jpg/800px-Vaughan_Gething.jpg",
-        "url": "/3to6yo/ElizabethCampbell",
-        "keywords" : "Vaughan Gething"
-    }
-    
+  
 ]
 
