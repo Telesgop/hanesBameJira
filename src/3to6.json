@@ -2,14 +2,14 @@
     {
         "id" : 0,
         "name" : "Shirley Bassey",
-        "slug": "Singer",
+        "slug": "The world famous Welsh singer from Tiger Bay.",
         "image": "https://www.thesun.co.uk/wp-content/uploads/2018/03/nintchdbpict000385642117.jpg",
         "url": "/3to6yo/ShirleyBassey",
         "keywords" : "Shirley Bassey"
     },{
         "id" : 1,
         "name" : "Sidoli Ice Cream",
-        "slug": "Ice Cream",
+        "slug": "The story of the award-winning ice cream.",
         "image": "https://i2-prod.walesonline.co.uk/incoming/article17960109.ece/ALTERNATES/s1200c/0_RM_180320_Sidoli_IceCream_020.jpg",
         "url": "/3to6yo/SidoliIceCream",
         "keywords" : "Sidoli Ice Cream"

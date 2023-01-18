@@ -19,7 +19,7 @@
 {
     "id" : 2,
     "name" : "Joe Calzaghe",
-    "slug": " Joe won the WBO (World Boxing Organization) super-middleweight title.",
+    "slug": "The super-middleweight world champion.",
     "welshSlug": "",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/JoeCalzaghe-July2007.jpg",
     "url": "/12to16yo/JoeCalzaghe",
@@ -28,7 +28,7 @@
 {
     "id" : 3,
     "name" : "Jason Mohammed",
-    "slug": " Jason is a well-known radio and television presenter for the BBC, most notably for news and sports coverage.",
+    "slug": "Newsreader, Television Presenter and Radio Presenter.",
     "welshSlug": "",
     "image": "https://m.media-amazon.com/images/M/MV5BZWNiOTA5YjQtZjRjYS00NjNlLTliOTAtZmUxZTI0YTIxMzBmXkEyXkFqcGdeQXVyODY0NzcxNw@@._V1_.jpg",
     "url": "/12to16yo/JasonMohammed",
@@ -37,7 +37,7 @@
 {
     "id" : 4,
     "name" : "Kizzy Crawford",
-    "slug": "Kizzy sings in both English and Welsh, using traditional and modern sources.",
+    "slug": "Award-winning Welsh singer / songwriter.",
     "welshSlug": "",
     "image": "https://ents24.imgix.net/image/000/158/543/f362a1cbe3eb9d638603c935c57a9f81ee7bd0bf.jpg?auto=format&crop=faces&w=1920&h=1920",
     "url": "/12to16yo/KizzyCrawford",
@@ -46,7 +46,7 @@
 {
     "id" : 5,
     "name" : "Ashley Williams",
-    "slug": "Williams is one of Wales’ biggest footballing stars.",
+    "slug": "Former professional footballer and captain of Wales.",
     "welshSlug": "",
     "image": "https://i.guim.co.uk/img/media/f77982ffce62788f1ab622c5a878a0b186b5d2db/1450_147_4297_2578/master/4297.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=509500c71e7dcda098b5952a4f2ba212",
     "url": "/12to16yo/AshleyWilliams",
@@ -79,7 +79,7 @@
 },
 {
     "id" : 9,
-    "name" : "Vaughan Gething ",
+    "name" : "Vaughan Gething",
     "slug": "Welsh Labour and Co-operative politician serving as Minister for the Economy since 2021.",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Vaughan_Gething.jpg/800px-Vaughan_Gething.jpg",
     "url": "/3to6yo/ElizabethCampbell",
