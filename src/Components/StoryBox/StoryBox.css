@@ -46,7 +46,7 @@
 }
 
 .indivSlug {
-  font-family: Mona-Sans Regular;
+  font-family: "Mona-Sans Regular", sans-serif;
   grid-area: content-3;
   margin-left: 0.5rem;
   margin-right: 1rem;
