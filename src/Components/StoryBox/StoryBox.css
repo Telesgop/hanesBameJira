@@ -1,12 +1,14 @@
 .storyBox {
   border: 1px solid black;
-  background-color: #e88873;
-  border-radius: 25px;
-  height: 25vh;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 40vh;
   width: 20vw;
   margin: 1.5vw;
+  margin-top: 1.5vw;
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: "Mona-Sans Regular", sans-serif;
 }
 
 .imgAndSlug {
@@ -15,13 +17,15 @@
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
+  border: 0;
 }
 
 .indivName {
-  grid-area: header;
-  margin-left: 1rem;
   margin-top: 0.5rem;
-  margin-bottom: 0 !important;
+  margin-bottom: 0.5rem !important;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Mona-Sans Regular", sans-serif;
 }
 .storyBoxGrey {
   background-color: rgb(149, 149, 149) !important;
@@ -33,15 +37,12 @@
 }
 
 .indivImage {
-  border: 2px solid black;
-  border-radius: 25px;
   overflow: hidden;
-  width: 6vw;
-  height: 14vh;
+  width: 20vw;
+  height: 20vh;
   max-width: 100%;
   background-color: white;
   grid-area: content-2;
-  margin-left: 20px;
   object-fit: cover;
 }
 
@@ -55,6 +56,10 @@
   margin-top: 30px;
 }
 
+.bottomDesc {
+  margin: 1rem;
+  font-family: "Mona-Sans Regular", sans-serif;
+}
 @media only screen and (max-width: 600px) {
   .storyBox {
     padding: 10px;

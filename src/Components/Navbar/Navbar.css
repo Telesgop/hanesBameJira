@@ -1,19 +1,23 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   height: 7vh;
-  margin-top: 10px;
+  margin-top: 0.5rem;
   z-index: 9;
   font-family: "Mona Sans", sans-serif;
 }
 
 .navdiv1 {
-  width: 20vw;
+  /* width: 20vw; */
   display: flex;
   justify-content: space-around;
   z-index: 9;
   font-family: "Mona Sans", sans-serif;
+}
+
+.navLeft {
+  width: 20vw;
 }
 
 .navdiv2 {
@@ -22,17 +26,18 @@
   font-weight: bold;
   font-size: larger;
   justify-content: center;
+
   z-index: 9;
   font-family: "Mona Sans", sans-serif;
 }
 
-.navdiv3 {
+/* .navdiv3 {
   width: 20vw;
   display: flex;
   justify-content: space-evenly;
   z-index: 9;
   font-family: "Mona Sans", sans-serif;
-}
+} */
 
 .modal {
   /* display: none; Hidden by default */
@@ -59,7 +64,7 @@
 .modalShow {
   display: none;
   position: fixed; /* Stay in place */
-  z-index: 10101010010101010; /* Sit on top */
+  z-index: 123123123123121232192394923949239410101010010101010; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
@@ -121,6 +126,21 @@
   transform: scale(1.2);
 }
 
+.menus {
+  display: flex;
+  flex-direction: row;
+  width: 20vw;
+  justify-content: space-around;
+  font-family: "Mona-Sans Regular", sans-serif;
+
+  /* margin: 20px; */
+  /* margin-right: 40px; */
+}
+
+.hoverNav:hover {
+  cursor: pointer;
+}
+
 .homebutton {
   border: 1px solid black;
   height: 3vh;
@@ -128,7 +148,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #258ea6;
+  background-color: #fff;
   border-radius: 25px;
   transform: scale(1.5);
   width: 50px;
@@ -140,7 +160,7 @@
 .langbutton {
   border: 1px solid black;
   color: white;
-  background-color: #258ea6;
+  background-color: #fff;
   border-radius: 25px;
   height: 3vh;
   transform: scale(1.5);
@@ -153,7 +173,7 @@
 .infobutton {
   border: 1px solid black;
   color: white;
-  background-color: #258ea6;
+  background-color: #fff;
   border-radius: 25px;
   transform: scale(1.5);
   /* width: 50px; */

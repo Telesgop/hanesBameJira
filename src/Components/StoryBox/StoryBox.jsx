@@ -25,7 +25,7 @@ const StoryBox = ({ name, image, slug, altName }) => {
   return (
     <motion.div
       className="storyBox"
-      whileHover={{ scale: 1.2 }}
+      whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
       variants={container}
       initial="hidden"
@@ -35,8 +35,8 @@ const StoryBox = ({ name, image, slug, altName }) => {
         <p className="indivName">{name}</p>
         <div className="imgAndSlug">
           <img src={image} className="indivImage" alt={name}></img>
-          <p className="indivSlug">{slug}</p>
         </div>
+        <div className="bottomDesc">{slug}</div>
       </div>
     </motion.div>
   );

@@ -14,15 +14,9 @@ import Pagination from "../Pagination/Pagination";
 const SixToNine = () => {
   const { lang, setLang } = useContext(LanguageContext);
   const [query, setQuery] = useState("");
-  const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(8);
-
-  const indexOfLastPost = currentPage * postsPerPage;
-  const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = api.slice(indexOfFirstPost, indexOfLastPost);
 
   // change page
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  // const paginate = (pageNumber) => setCurrentPage(pageNumber);
   return (
     <>
       <div className="ageRange">
@@ -38,7 +32,7 @@ const SixToNine = () => {
       <div className="storiesContainer">
         {query == "" && (
           <ul className="ulSearch">
-            {currentPosts.map((item, id) => (
+            {api.map((item, id) => (
               <Link to={item.url}>
                 <StoryBox
                   key={item.id}
@@ -71,13 +65,13 @@ const SixToNine = () => {
           </ul>
         )}
       </div>
-
+      {/* 
       <Pagination
         postsPerPage={postsPerPage}
         totalPosts={api.length}
         paginate={paginate}
-      ></Pagination>
-      <Copyright />
+      ></Pagination> */}
+      {/* <Copyright /> */}
     </>
   );
 };

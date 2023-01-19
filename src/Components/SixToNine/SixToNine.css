@@ -13,6 +13,8 @@
   display: flex;
   justify-content: center;
   padding: 10px;
+  font-family: "Mona-Sans Regular", sans-serif;
+  /* margin-bottom: 2vh; */
 }
 
 .searchInput {
@@ -44,7 +46,7 @@
   justify-content: center;
   z-index: 9;
   overflow: scroll;
-  height: 65vh;
+  /* height: 65vh; */
 }
 .ulSearch {
   display: flex;
@@ -57,8 +59,9 @@
   justify-content: center;
   z-index: 9;
   overflow: scroll;
-  height: 65vh;
+  /* height: 65vh; */
   width: 100%;
+  font-family: "Mona-Sans Regular", sans-serif;
 }
 
 @media only screen and (max-width: 600px) {

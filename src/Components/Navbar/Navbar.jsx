@@ -25,22 +25,7 @@ const Navbar = () => {
   };
   return (
     <div className="navbar">
-      <div className="navdiv1">
-        <Link to={"/"}>
-          <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-            <button className="homebutton">
-              <AiFillHome />
-            </button>
-          </motion.div>
-        </Link>
-        <Link to={"/index"}>
-          <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-            <button className="homebutton">
-              <AiOutlineProfile />
-            </button>
-          </motion.div>
-        </Link>
-      </div>
+      <div className="navLeft"></div>
       <Link to={"/"}>
         <div className="navdiv2">
           {" "}
@@ -49,18 +34,28 @@ const Navbar = () => {
             : "Hanes a Chyfraniad Pobl Ddu, Asiaidd a Lleiafrifoedd Ethnig ym Gymru"}
         </div>
       </Link>
-      <div className="navdiv3">
-        <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-          <button className="langbutton" onClick={handlePress}>
-            {lang === true && "Eng"}
-            {lang !== true && "Cym"}
-          </button>
-        </motion.div>
+      <div className="menus">
+        <Link to={"/"}>
+          <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+            <div>Home</div>
+          </motion.div>
+        </Link>
         <motion.div whileHover={{ scale: 1.2 }}>
-          <button className="infobutton" onClick={handleInfo}>
+          <div onClick={handleInfo} className="hoverNav">
             {lang === true && "Nodiadau"}
             {lang !== true && "Notes"}
-          </button>
+          </div>
+        </motion.div>
+        <Link to={"/index"}>
+          <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+            <div>Index</div>
+          </motion.div>
+        </Link>
+        <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+          <div onClick={handlePress} className="hoverNav">
+            {lang === true && "Eng"}
+            {lang !== true && "Cym"}
+          </div>
         </motion.div>
       </div>
       <div className={style}>
