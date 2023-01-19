@@ -11,13 +11,7 @@ import { AiOutlineProfile } from "react-icons/ai";
 
 const Home = () => {
   const { lang, setLang } = useContext(LanguageContext);
-  const introText = (
-    <>
-      To begin, choose an age group.
-      <br /> <br />
-      Alternatively, use the index page to view all individuals.{" "}
-    </>
-  );
+
   const container = {
     hidden: { y: 50 },
     visible: {
@@ -41,7 +35,9 @@ const Home = () => {
       <div className="ageText">
         <br></br>
         <br></br>
-        {lang !== true ? introText : "I ddechrau, dewiswch grŵp oedran:"}
+        {lang !== true
+          ? "To begin, choose an age group:"
+          : "I ddechrau, dewiswch grŵp oedran:"}
       </div>
       <motion.div
         className="ageGroups"

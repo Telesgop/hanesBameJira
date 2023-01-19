@@ -23,10 +23,12 @@
   align-items: center;
   font-size: large;
   justify-items: center;
+  font-family: "Mona-Sans Regular", sans-serif;
 }
 
 .flipMobile {
   display: none;
+  font-family: "Mona-Sans Regular", sans-serif;
 }
 
 .personName {
@@ -39,19 +41,23 @@
   overflow: scroll;
   height: 100%;
   margin: 10px;
+  font-family: "Mona-Sans Regular", sans-serif;
 }
 
 .leftSide {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Mona-Sans Regular", sans-serif;
 }
 .personText {
   display: flex;
+  font-family: "Mona-Sans Regular", sans-serif;
 }
 
 .personText li {
   padding: 0.5rem;
+  font-family: "Mona-Sans Regular", sans-serif;
 }
 .blob1 {
   z-index: 0;

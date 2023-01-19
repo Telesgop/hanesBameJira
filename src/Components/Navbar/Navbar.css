@@ -5,6 +5,7 @@
   height: 7vh;
   margin-top: 10px;
   z-index: 9;
+  font-family: "Mona Sans", sans-serif;
 }
 
 .navdiv1 {
@@ -12,6 +13,7 @@
   display: flex;
   justify-content: space-around;
   z-index: 9;
+  font-family: "Mona Sans", sans-serif;
 }
 
 .navdiv2 {
@@ -29,6 +31,7 @@
   display: flex;
   justify-content: space-evenly;
   z-index: 9;
+  font-family: "Mona Sans", sans-serif;
 }
 
 .modal {
