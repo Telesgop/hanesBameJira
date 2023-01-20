@@ -8,36 +8,20 @@
   font-family: "Mona Sans", sans-serif;
 }
 
-.navdiv1 {
-  /* width: 20vw; */
-  display: flex;
-  justify-content: space-around;
-  z-index: 9;
-  font-family: "Mona Sans", sans-serif;
-}
-
 .navLeft {
   width: 20vw;
 }
 
 .navdiv2 {
-  width: 60vw;
+  width: 70vw;
   display: flex;
   font-weight: bold;
   font-size: larger;
-  justify-content: center;
-
+  justify-content: flex-start;
+  padding-left: 4rem;
   z-index: 9;
   font-family: "Mona Sans", sans-serif;
 }
-
-/* .navdiv3 {
-  width: 20vw;
-  display: flex;
-  justify-content: space-evenly;
-  z-index: 9;
-  font-family: "Mona Sans", sans-serif;
-} */
 
 .modal {
   /* display: none; Hidden by default */
@@ -109,7 +93,6 @@
 
 .innerTextInfo {
   font-family: "Open Sans", sans-serif;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,9 +115,6 @@
   width: 20vw;
   justify-content: space-around;
   font-family: "Mona-Sans Regular", sans-serif;
-
-  /* margin: 20px; */
-  /* margin-right: 40px; */
 }
 
 .hoverNav:hover {
@@ -159,8 +139,8 @@
 
 .langbutton {
   border: 1px solid black;
-  color: white;
-  background-color: #fff;
+  color: rgb(227, 50, 50);
+  background-color: rgb(189, 50, 50);
   border-radius: 25px;
   height: 3vh;
   transform: scale(1.5);

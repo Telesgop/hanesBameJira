@@ -62,6 +62,7 @@
 }
 @media only screen and (max-width: 600px) {
   .storyBox {
-    padding: 10px;
+    height: 30vh !important;
+    width: 30vw;
   }
 }

@@ -9,14 +9,6 @@ import Pagination from "../Pagination/Pagination";
 const ThreeToSix = () => {
   const { lang, setLang } = useContext(LanguageContext);
   const [query, setQuery] = useState("");
-  const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(8);
-
-  const indexOfLastPost = currentPage * postsPerPage;
-  const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = threetosix.slice(indexOfFirstPost, indexOfLastPost);
-
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <>
@@ -33,7 +25,7 @@ const ThreeToSix = () => {
       <div className="storiesContainer">
         {query == "" && (
           <ul className="ulSearch">
-            {currentPosts.map((item, id) => (
+            {threetosix.map((item, id) => (
               <Link to={item.url}>
                 <StoryBox
                   id={item.id}
@@ -65,11 +57,7 @@ const ThreeToSix = () => {
           </ul>
         )}
       </div>
-      <Pagination
-        postsPerPage={postsPerPage}
-        totalPosts={threetosix.length}
-        paginate={paginate}
-      ></Pagination>
+
       <Copyright />
     </>
   );

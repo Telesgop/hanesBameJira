@@ -25,7 +25,6 @@ const Navbar = () => {
   };
   return (
     <div className="navbar">
-      <div className="navLeft"></div>
       <Link to={"/"}>
         <div className="navdiv2">
           {" "}

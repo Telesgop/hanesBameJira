@@ -5,19 +5,10 @@ import StoryBox from "../StoryBox/StoryBox";
 import ninetotwelve from "../../9to12.json";
 import Copyright from "../Copyright/Copyright";
 import { Link } from "react-router-dom";
-import Pagination from "../Pagination/Pagination";
 
 const NineToTwelve = () => {
   const { lang, setLang } = useContext(LanguageContext);
   const [query, setQuery] = useState("");
-  const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(8);
-
-  const indexOfLastPost = currentPage * postsPerPage;
-  const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = ninetotwelve.slice(indexOfFirstPost, indexOfLastPost);
-
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <>
@@ -34,7 +25,7 @@ const NineToTwelve = () => {
       <div className="storiesContainer">
         {query == "" && (
           <ul className="ulSearch">
-            {currentPosts.map((item, id) => (
+            {ninetotwelve.map((item, id) => (
               <Link to={item.url}>
                 <StoryBox
                   id={item.id}
@@ -66,12 +57,6 @@ const NineToTwelve = () => {
           </ul>
         )}
       </div>
-      <Pagination
-        postsPerPage={postsPerPage}
-        totalPosts={ninetotwelve.length}
-        paginate={paginate}
-      ></Pagination>
-      <Copyright />
     </>
   );
 };

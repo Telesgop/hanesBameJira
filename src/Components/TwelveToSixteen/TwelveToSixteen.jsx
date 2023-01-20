@@ -5,19 +5,10 @@ import StoryBox from "../StoryBox/StoryBox";
 import twelvetosixteen from "../../12to16.json";
 import Copyright from "../Copyright/Copyright";
 import { Link } from "react-router-dom";
-import Pagination from "../Pagination/Pagination";
 
 const TwelveToSixteen = () => {
   const { lang, setLang } = useContext(LanguageContext);
   const [query, setQuery] = useState("");
-  const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(8);
-
-  const indexOfLastPost = currentPage * postsPerPage;
-  const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = twelvetosixteen.slice(indexOfFirstPost, indexOfLastPost);
-
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <>
@@ -34,7 +25,7 @@ const TwelveToSixteen = () => {
       <div className="storiesContainer">
         {query == "" && (
           <ul className="ulSearch">
-            {currentPosts.map((item, id) => (
+            {twelvetosixteen.map((item, id) => (
               <Link to={item.url}>
                 <StoryBox
                   id={item.id}
@@ -66,12 +57,6 @@ const TwelveToSixteen = () => {
           </ul>
         )}
       </div>
-      <Pagination
-        postsPerPage={postsPerPage}
-        totalPosts={twelvetosixteen.length}
-        paginate={paginate}
-      ></Pagination>
-      <Copyright />
     </>
   );
 };

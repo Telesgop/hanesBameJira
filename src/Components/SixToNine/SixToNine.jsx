@@ -3,20 +3,15 @@ import "./SixToNine.css";
 import { LanguageContext } from "../../Helper/Context";
 import StoryBox from "../StoryBox/StoryBox";
 import { useParams } from "react-router-dom";
-import manface from "../../Images/manface.jpg";
-import richard from "../../Images/richard2.png";
-import john from "../../Images/johnYstumllyn.png";
+
 import Copyright from "../Copyright/Copyright";
 import { Link } from "react-router-dom";
 import api from "../../api.json";
-import Pagination from "../Pagination/Pagination";
 
 const SixToNine = () => {
   const { lang, setLang } = useContext(LanguageContext);
   const [query, setQuery] = useState("");
 
-  // change page
-  // const paginate = (pageNumber) => setCurrentPage(pageNumber);
   return (
     <>
       <div className="ageRange">

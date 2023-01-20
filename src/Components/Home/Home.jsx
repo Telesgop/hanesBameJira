@@ -51,7 +51,7 @@ const Home = () => {
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
             variants={item}
-            // style={{ "background-color": "#FFD25A" }}
+            style={{ "background-color": "#FFCB77" }}
           >
             3-6
           </motion.div>
@@ -62,7 +62,7 @@ const Home = () => {
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
             variants={item}
-            // style={{ "background-color": "#90E39A" }}
+            style={{ "background-color": "#CFE57D" }}
           >
             6-9
           </motion.div>
@@ -74,7 +74,7 @@ const Home = () => {
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
             variants={item}
-            // style={{ "background-color": "#D6EDFF" }}
+            style={{ "background-color": "#A2D6F9" }}
           >
             9-12
           </motion.div>
@@ -85,6 +85,7 @@ const Home = () => {
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
             variants={item}
+            style={{ "background-color": "#FF686B" }}
           >
             12-16
           </motion.div>
