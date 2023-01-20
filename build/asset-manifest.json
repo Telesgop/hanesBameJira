@@ -1,20 +1,17 @@
 {
   "files": {
-    "main.css": "/hanesbame/static/css/main.a996b784.css",
-    "main.js": "/hanesbame/static/js/main.0b06efcf.js",
-    "static/media/johnYstumllyn.png": "/hanesbame/static/media/johnYstumllyn.2965a36705143b9f964f.png",
-    "static/media/manface.jpg": "/hanesbame/static/media/manface.8ccf847dfb5730850674.jpg",
+    "main.css": "/hanesbame/static/css/main.c16fffbb.css",
+    "main.js": "/hanesbame/static/js/main.3a0812a4.js",
     "static/media/blob1.png": "/hanesbame/static/media/blob1.cd308fbe8be0d1210213.png",
     "static/media/blob2.png": "/hanesbame/static/media/blob2.8e45ba5ddc07bf5a62d1.png",
     "static/media/johnWBackground.jpeg": "/hanesbame/static/media/johnWBackground.480e9441904f2482826a.jpeg",
-    "static/media/richard2.png": "/hanesbame/static/media/richard2.f5ea2d46f2b518142fd0.png",
     "static/media/wgLogo.png": "/hanesbame/static/media/wgLogo.06fdf6239de01cc1ef2d.png",
     "index.html": "/hanesbame/index.html",
-    "main.a996b784.css.map": "/hanesbame/static/css/main.a996b784.css.map",
-    "main.0b06efcf.js.map": "/hanesbame/static/js/main.0b06efcf.js.map"
+    "main.c16fffbb.css.map": "/hanesbame/static/css/main.c16fffbb.css.map",
+    "main.3a0812a4.js.map": "/hanesbame/static/js/main.3a0812a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.a996b784.css",
-    "static/js/main.0b06efcf.js"
+    "static/css/main.c16fffbb.css",
+    "static/js/main.3a0812a4.js"
   ]
 }

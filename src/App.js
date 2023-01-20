@@ -86,41 +86,41 @@ function App() {
                 welshText={
                   <ul>
                     <li>
-                      Richard Parks was born in Pontypridd on 14 August 1977 to
-                      a Jamaican mother, Lee and a Welsh father, Derek Parks.
+                      Ganwyd Richard Parks ym Mhontypridd ar 14 Awst 1977 i fam
+                      o Jamaica, Lee, a thad o Gymru, Derek Parks.{" "}
                     </li>
                     <li>
-                      A gifted schoolboy rugby player, Richard specialised in
-                      playing flanker and went on to play rugby professionally.
+                      Yn yr ysgol, roedd Richard yn chwaraewr rygbi medrus, yn
+                      arbenigo yn chwarae safle blaenasgellwr ac aeth ymlaen i
+                      chwarae rygbi’n broffesiynol.{" "}
                     </li>
                     <li>
-                      During his rugby career Richard played for Pontypridd
-                      (winning the Principality Cup), Leeds (winning the
-                      Powergen Cup), Perpignan and Newport Gwent Dragons.
+                      Yn ystod ei yrfa rygbi, chwaraeodd Richard i Bontypridd
+                      (gan ennill y Cwpan Principality), Leeds (gan ennill Cwpan
+                      Powergen), Perpignan a Dreigiau Gwent Casnewydd.{" "}
                     </li>
                     <li>
-                      In 2001, Richard represented Wales Sevens in the Rugby
-                      World Cup in Argentina.
+                      Cynrychiolodd Richard Gymru yng Ngwpan y Byd Rygbi Saith
+                      bob Ochr yn Ariannin yn 2001.{" "}
                     </li>
-                    <li>Richard also won 4 caps playing for Wales.</li>
+                    <li>Enillodd Richard 4 cap i Gymru hefyd. </li>
                     <li>
-                      Following an injury to his ligaments and medical problems
-                      with his shoulder, Richard retired from professional rugby
-                      aged 31 in 2009. He then reinvented himself as an extreme
-                      athlete.
+                      Yn dilyn anaf i’w ligamentau a phroblemau meddygol gyda’i
+                      ysgwydd, ymddeolodd Richard o rygbi proffesiynol yn 31 oed
+                      yn 2009.{" "}
+                    </li>
+                    <li>Yna ail-greodd ei hun fel athletwr eithafol. </li>
+                    <li>
+                      Ym mis Gorffennaf 2011, dringodd Richard y mynydd uchaf ym
+                      mhob un o saith cyfandir y byd a safodd ar bob un o’r tri
+                      phegwn (Pegwn y Gogledd, Pegwn y De a chopa Everest).
+                      Cwblhaodd Richard y prawf anhygoel hwn o ddyfalbarhad a
+                      chryfder mewn saith mis yn unig.{" "}
                     </li>
                     <li>
-                      In July 2011, on an expedition known as the 737 Challenge,
-                      Richard became the first person to climb the highest
-                      mountain on each of the world’s seven continents and stand
-                      on all three poles (the North Pole, the South Pole and the
-                      summit of Everest). Richard completed this incredible test
-                      of stamina and strength within just seven months.
-                    </li>
-                    <li>
-                      In January 2014, Richard became the first Welshman, and
-                      the fastest ever British person, to ski solo, unsupported
-                      and unassisted to the South Pole.
+                      Ym mis Ionawr 2014, Richard oedd y Cymro cyntaf, a’r
+                      person cyflymaf ym Mhrydain erioed, i sgïo ar ben ei hun,
+                      heb gefnogaeth a heb gymorth, i Begwn y De.{" "}
                     </li>
                   </ul>
                 }
@@ -129,6 +129,10 @@ function App() {
                 }
                 backText={`Through his incredible achievements – as a professional rugby player and as an extreme athlete – Richard Parks proved that despite setbacks and frustrations, we are all capable of turning our skills and abilities to other things.  Because of his never-give-up attitude and determination to succeed at something new, Richard is an inspirational figure to many – both in Wales and beyond.   `}
                 slugText={"Rugby player and extreme athlete."}
+                backWelshText={
+                  "Trwy ei gyflawniadau anhygoel – fel chwaraewr rygbi proffesiynol ac fel athletwr eithafol – mae Richard Parks wedi profi, er gwaethaf anawsterau a rhwystredigaethau, ein bod i gyd yn gallu troi ein sgiliau a’n galluoedd i wneud pethau eraill.  Oherwydd yr agwedd hon o beidio byth â rhoi fyny a’r penderfynoldeb i lwyddo gyda rhywbeth newydd, mae Richard yn ysbrydoliaeth i gymaint o bobl – yng Nghymru a thu hwnt."
+                }
+                welshSlugText={"Chwaraewr rygbi ac athletwr eithafol."}
               ></Person>
             }
           ></Route>
@@ -188,10 +192,68 @@ function App() {
                     </li>
                   </ul>
                 }
-                welshText={<ul></ul>}
+                welshText={
+                  <ul>
+                    <li>
+                      Ganwyd Nigel Walker yng Nghaerdydd ar 15 Mehefin 1963.{" "}
+                    </li>
+                    <li>
+                      Cynrychiolodd Nigel Brydain Fawr a Gogledd Iwerddon yng
+                      Ngemau Olympaidd yr haf Prydain Fawr a Gogledd Iwerddon ym
+                      1984 yn y ras 110m dros y clwydi.{" "}
+                    </li>
+
+                    <li>
+                      Gan Walker y mae’r amser heb ennill cyflymaf ar gyfer y
+                      ras 200 metr dros y clwydi. Yng Nghaerdydd ym 1991,
+                      rhedodd hi mewn 22.77 eiliad.{" "}
+                    </li>
+
+                    <li>
+                      Pan fethodd gyrraedd y garfan Olympaidd ar gyfer gemau
+                      1992 yn Barcelona, perswadiwyd Nigel i roi cynnig ar
+                      rygbi, yn dilyn cyfarfod ar hap gyda Mark Ring. Ymunodd
+                      Nigel â Chlwb Rygbi Caerdydd ac, yn chwarae ar yr asgell,
+                      daeth yn ffefryn gan y dorf ym Mharc yr Arfau yn gyflym
+                      iawn.{" "}
+                    </li>
+
+                    <li>
+                      Mewn gyrfa dros chwe blynedd i’r Gleision a’r Duon,
+                      chwaraeodd Nigel 121 o gemau a sgorio 78 cais. Ar 6 Mawrth
+                      1993, chwaraeodd Nigel ym Mhencampwriaeth y Pum Gwlad am y
+                      tro cyntaf yn erbyn Iwerddon. Aeth Walker ymlaen i
+                      gynrychioli Cymru 17 o weithiau gan sgorio 12 cais – gan
+                      wneud ei ymddangosiad terfynol dros Gymru yn erbyn Lloegr
+                      ar 21 Chwefror 1998. Yn ystod ei yrfa rygbi, chwaraeodd
+                      Nigel i’r Barbariaid hefyd.{" "}
+                    </li>
+
+                    <li>
+                      Yn 2001, penodwyd Nigel yn Bennaeth Chwaraeon BBC Cymru.
+                      Yn 2010, gwnaed Walker yn Gyfarwyddwr Cenedlaethol yr
+                      English Institute of Sport. Yn 2018, wrth ddathlu Mis
+                      Hanes Pobl Ddu yn y DU, cafodd Walker ei gynnwys mewn
+                      rhestr o “100 Brilliant, Black and Welsh people”.{" "}
+                    </li>
+
+                    <li>
+                      Yn Nhymor yr Hydref 2021, gadawodd Nigel ei rôl yn yr EIS
+                      i dderbyn swydd Cyfarwyddwr Perfformiad Undeb Rygbi Cymru.
+                      Mae Nigel Walker wedi eistedd ar Fwrdd Chwaraeon y DU
+                      hefyd, gan gadeirio’r Panel digwyddiadau mawr.{" "}
+                    </li>
+                  </ul>
+                }
                 backText={`Nigel Walker’s career path demonstrates how with perseverance, hard work and focus we can achieve our goals and use our abilities and skills to further our ambitions.  
   
                 `}
+                backWelshText={
+                  "Mae llwybr gyrfa Nigel Walker yn dangos, gyda dyfalbarhad, gwaith caled a ffocws, y gallwn gyrraedd ein nodau a defnyddio ein galluoedd a’n sgiliau i gyflawni ein huchelgeisiau.  "
+                }
+                welshSlugText={
+                  "Athletwr, chwaraewr rygbi ac un sydd wedi cyflawni cryn dipyn."
+                }
                 slugText={"Athlete, rugby player and high achiever."}
               ></Person>
             }
@@ -262,10 +324,72 @@ function App() {
                     </li>
                   </ul>
                 }
-                welshText={<ul></ul>}
+                welshText={
+                  <ul>
+                    <li>
+                      Ganwyd Glenn Webbe ar 21 Ionawr 1962 yng Nghaerdydd. Roedd
+                      ei rieni’n rhan o genhedlaeth Windrush.{" "}
+                    </li>
+
+                    <li>
+                      Mynychodd Ysgol Gyfun Glan Ely a chafodd gydnabyddiaeth am
+                      ei sgiliau rygbi, pêl-fasged ac athletau.{" "}
+                    </li>
+
+                    <li>
+                      Ar ôl ymuno â Chlwb Rygbi Caerdydd, cynghorwyd Glenn i
+                      adael am fod ‘clymbleidiau’ (cliques) yn nhîm Caerdydd.
+                      Felly, yn 18 oed, cytunodd Glenn i chwarae i Glwb Rygbi
+                      Pen-y-bont ar Ogwr. Chwaraeodd bedwar tymor ar ddeg i’r
+                      clwb.{" "}
+                    </li>
+
+                    <li>
+                      Ar 12 Mehefin 1986, yn ystod taith Cymru o Dde’r Môr
+                      Tawel, chwaraeodd Glenn ei gêm ryngwladol gyntaf fel
+                      eilydd yn erbyn Tonga.{" "}
+                    </li>
+
+                    <li>
+                      Chwaraeodd ei gêm gartref gyntaf ym muddugoliaeth y Pum
+                      Gwlad yn erbyn Lloegr ym 1987 ac o ganlyniad, cafodd ei
+                      ddewis ar gyfer y Cwpan y Byd Cyntaf yn Seland Newydd.{" "}
+                    </li>
+                    <li>
+                      Yng nghwpan y byd, chwaraeodd Glenn yn erbyn Tonga a
+                      sgorio dau gais yn gynnar yn y gêm. Fodd bynnag, cafodd ei
+                      daro’n anymwybodol o ganlyniad i dacl uchel. Roedd Cymru
+                      eisoes wedi defnyddio eu dau eilydd, felly chwaraeodd
+                      Glenn ymlaen – yn reddfol yn ôl pob golwg. Sgoriodd
+                      drydydd cais gwych, gan redeg naw deg metr a churo nifer o
+                      amddiffynwyr mewn buddugoliaeth o 29-16 i Gymru.{" "}
+                    </li>
+
+                    <li>
+                      Collodd Glenn Cymru’n dod yn drydydd am iddo gael ei anfon
+                      gartref ar sail diogelwch. Bellach, dywed nad yw’n gallu
+                      cofio’r gêm ar ôl y dacl – yn cynnwys ei drydydd cais.
+                      Oherwydd ei gampau yng Nghwpan y Byd 1987 a’i enw da am
+                      fod yn stoicaidd ac yn ddoniol, mae Glenn yn cael ei
+                      ddisgrifio’n aml fel “eicon du cyntaf Cymru”.{" "}
+                    </li>
+
+                    <li>
+                      Dywed Glenn iddo weld ‘ychydig iawn o hiliaeth’ yn ystod
+                      ei yrfa rygbi. Ond yn ystod gêm yn erbyn y tîm lleol,
+                      Maesteg, dioddefodd Glenn gamdriniaeth hiliol gan nifer
+                      fach o wylwyr. Arweiniodd ei ymateb ato’n cael ei
+                      gymeradwyo’n wresog a’i ganmol gan y dorf.{" "}
+                    </li>
+                  </ul>
+                }
                 backText={`Hopefully, the racism Glenn experienced and the expectation that he would ‘play on’ despite suffering a head injury now belong firmly in the past.  
                 `}
                 slugText={"Wales’ first black icon."}
+                welshSlugText={"Eicon du cyntaf Cymru."}
+                backWelshText={
+                  "Gobeithio bod yr hiliaeth a brofodd Glenn a’r disgwyliad y byddai’n ‘parhau i chwarae’ er gwaetha’r ffaith ei fod wedi dioddef anaf i’w ben, bellach yn wirioneddol yn y gorffennol."
+                }
               ></Person>
             }
           ></Route>
@@ -343,47 +467,75 @@ function App() {
                 welshText={
                   <ul>
                     <li>
-                      Richard Parks was born in Pontypridd on 14 August 1977 to
-                      a Jamaican mother, Lee and a Welsh father, Derek Parks.
+                      Adeiladwyd Castell godidog Penrhyn yng ngogledd Cymru ar
+                      hanes tywyll: un o gamfanteisio, ffortiwn diwydiant siwgr
+                      Jamaica a masnach gaethwasiaeth ar draws yr Iwerydd.{" "}
                     </li>
                     <li>
-                      A gifted schoolboy rugby player, Richard specialised in
-                      playing flanker and went on to play rugby professionally.
+                      Ar ddiwedd yr 17eg Ganrif, fe wnaeth Gifford Pennant o Sir
+                      y Fflint gaffael tir yn Jamaica.{" "}
                     </li>
                     <li>
-                      During his rugby career Richard played for Pontypridd
-                      (winning the Principality Cup), Leeds (winning the
-                      Powergen Cup), Perpignan and Newport Gwent Dragons.
+                      Erbyn y 1700au, roedd y teulu Pennant wedi dychwelyd i
+                      Brydain a phan ddaeth Richard Pennant yn farwn 1af
+                      Penrhyn, roeddent yn rheoli eu heiddo Jamaicaidd trwy
+                      lythyr.{" "}
                     </li>
                     <li>
-                      In 2001, Richard represented Wales Sevens in the Rugby
-                      World Cup in Argentina.
-                    </li>
-                    <li>Richard also won 4 caps playing for Wales.</li>
-                    <li>
-                      Following an injury to his ligaments and medical problems
-                      with his shoulder, Richard retired from professional rugby
-                      aged 31 in 2009. He then reinvented himself as an extreme
-                      athlete.
+                      Datblygodd yr ystâd a chynyddodd nifer y caethweision.
+                      Erbyn 1805, roedd Richard Pennant yn berchen ar bron 1,000
+                      o bobl oedd yn gaethweision ar draws ei 4 planhigfa yn
+                      Jamaica.{" "}
                     </li>
                     <li>
-                      In July 2011, on an expedition known as the 737 Challenge,
-                      Richard became the first person to climb the highest
-                      mountain on each of the world’s seven continents and stand
-                      on all three poles (the North Pole, the South Pole and the
-                      summit of Everest). Richard completed this incredible test
-                      of stamina and strength within just seven months.
+                      Mae anwybodaeth Richard Pennant wedi ei gofnodi yn ei
+                      lythyr o gyfarwyddyd i’r rheolwyr ystadau. Disgrifir y
+                      bobl oedd yn gaethweision fel ‘chattels’ (eiddo y gellir
+                      ei symud).{" "}
                     </li>
                     <li>
-                      In January 2014, Richard became the first Welshman, and
-                      the fastest ever British person, to ski solo, unsupported
-                      and unassisted to the South Pole.
+                      Er gwaethaf ei gysylltiadau â chaethwasiaeth, roedd
+                      Richard Pennant yn adnabyddus fel ‘the Improver’, yn
+                      buddsoddi ei ffortiwn yn ei ystâd yng Ngogledd Cymru.{" "}
+                    </li>
+                    <li>
+                      Ariannodd arian o Jamaica ffyrdd, rheilffyrdd, ysgolion a
+                      Chwarel Penrhyn, y chwarel lechi fwyaf yn y byd ar un
+                      adeg. Gellir dweud hefyd i’r diwydiant llechi yng Ngogledd
+                      Cymru gael ei ariannu’n bennaf trwy gaethwasiaeth.{" "}
+                    </li>
+                    <li>
+                      Ym 1767, daeth Richard Pennant yn un o ddau AS ar gyfer
+                      Lerpwl: prif borthladd y fasnach gaethwasiaeth yn y DU.{" "}
+                    </li>
+                    <li>
+                      Daeth Pennant yn rhan o rwydwaith grymus oedd o blaid
+                      caethwasiaeth ac roedd ganddo gysylltiadau â bron bob un o
+                      berchnogion absennol Prydeinig y planhigfeydd.{" "}
+                    </li>
+                    <li>
+                      Er gwaethaf gwrthwynebiad gan y lobi o blaid
+                      caethwasiaeth, yn cynnwys Richard Pennant, ar 25 Mawrth
+                      1807, gwaharddodd y Senedd y fasnach gaethwasiaeth yn yr
+                      ymerodraeth Brydeinig. Cafodd cludo caethweision i Jamaica
+                      ei wahardd ym Mawrth 1808.{" "}
+                    </li>
+                    <li>
+                      Gwaharddwyd caethwasiaeth yn holl drefedigaethau Prydain
+                      rhwng 1833 a 1838 a daeth gwaith adeiladu Castell Penrhyn
+                      i ben.{" "}
                     </li>
                   </ul>
                 }
                 backText={`The Pennant family received in today’s money £1.3 million for freeing 764 enslaved people in Jamacia.  It is money forever tarnished by the suffering caused by slavery.`}
                 slugText={
                   "The impressive castle and it's links to the slave trade."
+                }
+                welshSlugText={
+                  "Y castell trawiadol a’i gysylltiadau â chaethwasiaeth."
+                }
+                backWelshText={
+                  "Yn arian heddiw, derbyniodd y teulu Pennant £1.3 miliwn am ryddhau 764 o gaethweision yn Jamacia.  Mae’n arian sydd wedi ei lychwino am byth gan y dioddefaint a achoswyd gan gaethwasiaeth. "
                 }
               ></Person>
             }
@@ -465,46 +617,71 @@ function App() {
                 welshText={
                   <ul>
                     <li>
-                      Richard Parks was born in Pontypridd on 14 August 1977 to
-                      a Jamaican mother, Lee and a Welsh father, Derek Parks.
+                      Ar 30 Ionawr 1933, penodwyd Adolf Hitler yn ganghellor
+                      newydd yr Almaen. Roedd Hitler yn casáu’r Iddewon ac yn
+                      fuan iawn roeddent yn cael eu herlid, eu poenydio a’u
+                      gormesu.{" "}
                     </li>
                     <li>
-                      A gifted schoolboy rugby player, Richard specialised in
-                      playing flanker and went on to play rugby professionally.
+                      Yn ystod ‘Kristallnacht’ (‘Noson Grisial’) ar 9-10
+                      Tachwedd 1938, dinistriwyd llawer o siopau a busnesau
+                      Iddewig.
                     </li>
                     <li>
-                      During his rugby career Richard played for Pontypridd
-                      (winning the Principality Cup), Leeds (winning the
-                      Powergen Cup), Perpignan and Newport Gwent Dragons.
+                      Ar ôl Kristallnacht, daeth rhai pobl ynghyd i achub plant
+                      Iddewig o’r Almaen ac ardaloedd eraill oedd wedi eu rheoli
+                      gan y Natsïaid. Galwyd yr ymgais hon i’w hachub yn
+                      ‘Kindertransport’ (Trafnidiaeth Plant). Roedd Hans
+                      Lichtenstein ymysg y rheiny gafodd eu hachub.{" "}
                     </li>
                     <li>
-                      In 2001, Richard represented Wales Sevens in the Rugby
-                      World Cup in Argentina.
-                    </li>
-                    <li>Richard also won 4 caps playing for Wales.</li>
-                    <li>
-                      Following an injury to his ligaments and medical problems
-                      with his shoulder, Richard retired from professional rugby
-                      aged 31 in 2009. He then reinvented himself as an extreme
-                      athlete.
+                      Ar ôl cyrraedd Prydain, cafodd Hans, oedd yn 12 oed, ei
+                      addysgu yn Ysgol fawreddog Gordonstoun.{" "}
                     </li>
                     <li>
-                      In July 2011, on an expedition known as the 737 Challenge,
-                      Richard became the first person to climb the highest
-                      mountain on each of the world’s seven continents and stand
-                      on all three poles (the North Pole, the South Pole and the
-                      summit of Everest). Richard completed this incredible test
-                      of stamina and strength within just seven months.
+                      Astudiodd Hans feddygaeth yng Ngholeg y Drindod,
+                      Caergrawnt, a chwblhau ei hyfforddiant meddygol yn ysbyty
+                      Guy’s yn Llundain.{" "}
                     </li>
                     <li>
-                      In January 2014, Richard became the first Welshman, and
-                      the fastest ever British person, to ski solo, unsupported
-                      and unassisted to the South Pole.
+                      Roedd yn rhaid i Hans wneud Gwasanaeth Milwrol (ymuno â’r
+                      fyddin, y llynges neu’r llu awyr) aeth ag ef i Malaya (sef
+                      Malaysia erbyn hyn), lle’r oedd, yn ystod yr argyfwng
+                      cenedlaethol, yn swyddog meddygol ar gyfer yr SAS oedd yn
+                      cael eu hedmygu’n fawr.{" "}
+                    </li>
+                    <li>
+                      Ym Malaysia, helpodd Hans i sefydlu’r gofal meddygol
+                      cyntaf ar gyfer pobl frodorol Malaysia, yr Orang
+                      Asli.  Cyfarfu â Beryl Rush hefyd, sef nyrs o Brydain, ac
+                      fe briododd y ddau yn Kuala Lumpur ym 1956.{" "}
+                    </li>
+                    <li>
+                      Ymgartrefodd Hans a Beryl yn Llandrindod yn y pen draw,
+                      lle gweithiodd Hans fel meddyg teulu uchel iawn ei barch
+                      am 32 o flynyddoedd.{" "}
+                    </li>
+                    <li>
+                      Yn ystod ei ymddeoliad, helpodd Hans i sefydlu
+                      Ymddiriedolaeth Bracken yn Llandrindod, sydd yn cynnig
+                      cymorth, cwnsela a therapïau cyflenwol canser.{" "}
+                    </li>
+                    <li>
+                      Yn hwyrach yn ei fywyd, dechreuodd Hans redeg marathonau a
+                      pharagleidio, ac yn ei 70au hwyr, gellid ei weld yn hedfan
+                      uwchlaw Cwm Elan ger ei gartref.{" "}
+                    </li>
+                    <li>
+                      Bu farw Dr Hans Lichtenstein ym Mawrth 2019 yn 91 oed.{" "}
                     </li>
                   </ul>
                 }
                 backText={`Dr Hans Lichtenstein lived a remarkable life.  Being Jewish in Hitler’s Germany, Hans faced violence and intimidation.  On moving to Britain on the Kindertransport, Hans worked hard and fulfilled his dream of becoming a doctor – but he never stopped having new interests. `}
                 slugText={"The boy who fled from Nazi Germany."}
+                welshSlugText={"Y bachgen wnaeth ffoi o’r Almaen Natsïaidd."}
+                backWelshText={
+                  "Cafodd Dr Hans Lichtenstein fywyd rhyfeddol. Yn Iddew yn yr Almaen Natsïaidd, wynebodd Hans drais a braw. Ar ôl symud i Brydain ar y Kindertransport, gweithiodd Hans yn galed a chyflawni ei freuddwyd o fod yn feddyg – ond ni wnaeth fyth rhoi’r gorau i gael diddordebau newydd. "
+                }
               ></Person>
             }
           ></Route>
@@ -573,48 +750,61 @@ function App() {
                 }
                 welshText={
                   <ul>
+                    <li>Adeiladwyd Synagog Merthyr ym 1877. </li>
                     <li>
-                      Richard Parks was born in Pontypridd on 14 August 1977 to
-                      a Jamaican mother, Lee and a Welsh father, Derek Parks.
+                      Cafodd ei ddylunio gan Charles Taylor, pensaer, oedd yn
+                      byw’n lleol.{" "}
                     </li>
                     <li>
-                      A gifted schoolboy rugby player, Richard specialised in
-                      playing flanker and went on to play rugby professionally.
+                      Symudodd llawer o bobl Iddewig i Ferthyr Tudful pan
+                      agorodd nifer o ffatrïoedd yno a datblygodd fel tref fwyaf
+                      Cymru.{" "}
                     </li>
                     <li>
-                      During his rugby career Richard played for Pontypridd
-                      (winning the Principality Cup), Leeds (winning the
-                      Powergen Cup), Perpignan and Newport Gwent Dragons.
+                      Ffurfiodd y bobl Iddewig gynulleidfa, grŵp i weddïo gyda’i
+                      gilydd, ym 1848.{" "}
                     </li>
                     <li>
-                      In 2001, Richard represented Wales Sevens in the Rugby
-                      World Cup in Argentina.
-                    </li>
-                    <li>Richard also won 4 caps playing for Wales.</li>
-                    <li>
-                      Following an injury to his ligaments and medical problems
-                      with his shoulder, Richard retired from professional rugby
-                      aged 31 in 2009. He then reinvented himself as an extreme
-                      athlete.
+                      Pan oedd llai o waith yn y ffatrïoedd, gadawodd llawer o
+                      Iddewon Merthyr i chwilio swyddi rhywle arall.{" "}
                     </li>
                     <li>
-                      In July 2011, on an expedition known as the 737 Challenge,
-                      Richard became the first person to climb the highest
-                      mountain on each of the world’s seven continents and stand
-                      on all three poles (the North Pole, the South Pole and the
-                      summit of Everest). Richard completed this incredible test
-                      of stamina and strength within just seven months.
+                      Mwy na thebyg mai Synagog Merthyr yw’r unig synagog yn y
+                      byd sydd â draig Cymru arni.{" "}
                     </li>
                     <li>
-                      In January 2014, Richard became the first Welshman, and
-                      the fastest ever British person, to ski solo, unsupported
-                      and unassisted to the South Pole.
+                      Ym 1960, cafodd y synagog ei harlunio gan yr arlunydd
+                      enwog, L. S. Lowry. Gwerthodd y darlun am £277,000 ym
+                      Mawrth 2022.{" "}
+                    </li>
+                    <li>
+                      Yn 2019, prynwyd yr adeilad gan y Sefydliad Treftadaeth
+                      Iddewig.
+                    </li>
+                    <li>
+                      Yn 2021, roedd yn rhaid iddynt atgyweirio’r adeilad i’w
+                      wneud yn ddiogel ac i’w ddiogelu rhag y tywydd.{" "}
+                    </li>
+                    <li>
+                      Gobaith y Sefydliad Treftadaeth Iddewig yw agor yr adeilad
+                      fel Canolfan Traftadaeth Iddewig erbyn 2025.{" "}
+                    </li>
+                    <li>
+                      Cred Michael Mail o’r Sefydliad Treftadaeth Iddewig fod yr
+                      adeilad yn bwysig iawn am mai dyma’r ‘adeilad Iddewig
+                      pwrpasol hynaf sydd wedi goroesi yng Nghymru’.{" "}
                     </li>
                   </ul>
                 }
                 backText={`The Merthyr Synagogue is important because it is a symbol of how important the Jewish community has been to Wales and Welsh history. `}
                 slugText={
                   "The oldest purpose-built Jewish building surviving in Wales."
+                }
+                backWelshText={
+                  "Mae Synagog Merthyr yn bwysig am ei bod yn symbol o bwysigrwydd y gymuned Iddewig i Gymru ac i hanes Cymru."
+                }
+                welshSlugText={
+                  "Yr adeilad Iddewig pwrpasol hynaf sydd wedi goroesi yng Nghymru."
                 }
               ></Person>
             }

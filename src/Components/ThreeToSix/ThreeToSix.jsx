@@ -32,6 +32,7 @@ const ThreeToSix = () => {
                   name={item.name}
                   image={item.image}
                   slug={item.slug}
+                  welshSlug={item.welshSlug}
                   keywords={item.keywords}
                 ></StoryBox>
               </Link>
@@ -49,6 +50,7 @@ const ThreeToSix = () => {
                       name={item.name}
                       image={item.image}
                       slug={item.slug}
+                      welshSlug={item.welshSlug}
                       keywords={item.keywords}
                     ></StoryBox>
                   </Link>

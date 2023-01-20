@@ -1,8 +1,12 @@
 import React from "react";
 import "./StoryBox.css";
 import { motion } from "framer-motion";
+import { LanguageContext } from "../../Helper/Context";
+import { useContext } from "react";
 
-const StoryBox = ({ name, image, slug, altName }) => {
+const StoryBox = ({ name, image, slug, welshSlug }) => {
+  const { lang, setLang } = useContext(LanguageContext);
+
   const container = {
     hidden: { opacity: 1, scale: 0.9 },
     visible: {
@@ -36,7 +40,7 @@ const StoryBox = ({ name, image, slug, altName }) => {
         <div className="imgAndSlug">
           <img src={image} className="indivImage" alt={name}></img>
         </div>
-        <div className="bottomDesc">{slug}</div>
+        <div className="bottomDesc"> {lang !== true ? slug : welshSlug}</div>
       </div>
     </motion.div>
   );

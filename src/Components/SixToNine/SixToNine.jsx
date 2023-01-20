@@ -34,6 +34,7 @@ const SixToNine = () => {
                   name={item.name}
                   image={item.image}
                   slug={item.slug}
+                  welshSlug={item.welshSlug}
                   keywords={item.keywords}
                 ></StoryBox>
               </Link>
@@ -51,6 +52,7 @@ const SixToNine = () => {
                       name={item.name}
                       image={item.image}
                       slug={item.slug}
+                      welshSlug={item.welshSlug}
                       keywords={item.keywords}
                       altName={item.name}
                     ></StoryBox>

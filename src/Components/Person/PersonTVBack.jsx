@@ -168,12 +168,6 @@ const PersonTVBack = ({
           </>
         )}
       </div>
-      <div className="imageDiv">
-        <img src={blob1} className="blob1" alt="test"></img>
-      </div>
-      <div className="imageDiv2">
-        <img src={blob2} className="blob2" alt="test"></img>
-      </div>
     </>
   );
 };
