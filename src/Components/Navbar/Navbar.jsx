@@ -69,8 +69,20 @@ const Navbar = () => {
           </motion.div>{" "}
           <div className="innerTextInfo">
             <div className="notesH2">Notes</div>
+            <div className="notesP">Here will be notes for teachers.</div>
+            <div className="notesH2">Accessibility</div>
             <div className="notesP">
-              Here will be notes for teachers as well as notes on accessibility.
+              It is our hope for the website to be easy to use and accessible to
+              as many people as possible. To aid accessibility, it is possible
+              to navigate the site using the keyboard.
+            </div>
+            <div className="notesH2">Attributions</div>
+            <div className="notesP">
+              Welsh and UK flag icons created by Freepik - Flaticon.
+            </div>
+            <div className="notesH2">Site Information</div>
+            <div className="notesP">
+              Website developed by Telesgop, funded by Welsh Government.
             </div>
           </div>
         </div>

@@ -8,8 +8,6 @@
   padding-bottom: 0.1rem;
   z-index: 9;
   font-family: "Mona Sans", sans-serif;
-  border-bottom: 1.5px solid #000;
-  box-shadow: 0px 5px 10px 0px #f4faff;
 }
 
 .navLeft {
@@ -144,10 +142,15 @@
   font-weight: bold;
   font-family: "Mona-Sans Regular", sans-serif;
   font-size: large;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .notesP {
-  margin-top: 10px;
+  font-family: "Mona-Sans Regular", sans-serif;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .translateImg {
