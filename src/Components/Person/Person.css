@@ -153,12 +153,7 @@
   .prevnext {
     display: none;
   }
-  .blob1 {
-    overflow: hidden;
-  }
-  .blob2 {
-    overflow: hidden;
-  }
+
   .personName {
     text-align: center;
   }

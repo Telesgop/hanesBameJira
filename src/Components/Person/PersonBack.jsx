@@ -1,7 +1,6 @@
 import React from "react";
 import "./PersonBack.css";
-import blob1 from "../../Images/blob1.png";
-import blob2 from "../../Images/blob2.png";
+
 import { HiArrowCircleRight } from "react-icons/hi";
 import { HiArrowCircleLeft } from "react-icons/hi";
 import { motion } from "framer-motion";
@@ -76,12 +75,6 @@ const Person = ({ text, welshText, indivName, indivPic, indivPic2 }) => {
             whileTap={{ scale: 0.9 }}
           ></motion.div>
         </motion.div>
-      </div>
-      <div className="imageDiv">
-        <img src={blob1} className="blob1" alt="test"></img>
-      </div>
-      <div className="imageDiv2">
-        <img src={blob2} className="blob2" alt="test"></img>
       </div>
     </>
   );

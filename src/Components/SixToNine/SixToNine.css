@@ -6,6 +6,7 @@
   font-size: larger;
   font-weight: bold;
   z-index: 9;
+  font-family: "Mona-Sans Regular", sans-serif;
 }
 
 .searchbar {
@@ -28,7 +29,7 @@
     inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 0;
   text-align: center;
-  font-family: "Mona-Sans Regular";
+  font-family: "Mona-Sans Regular", sans-serif;
   width: 20vw;
 }
 

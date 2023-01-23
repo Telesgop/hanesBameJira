@@ -9,6 +9,19 @@ table {
   margin: auto;
 }
 
+.indexContainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+  overflow: scroll;
+  height: 70vh;
+}
+
 th {
   text-align: left;
 

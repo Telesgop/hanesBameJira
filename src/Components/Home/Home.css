@@ -4,10 +4,27 @@
   align-items: center;
   margin-top: 5vh;
   position: relative;
-  font-size: larger;
+  font-size: large;
   font-family: "Mona Sans", sans-serif;
 }
 
+.introText {
+  font-size: medium;
+  margin-top: 3rem;
+  display: flex;
+  font-family: "Mona Sans", sans-serif;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+.introDiv {
+  display: flex;
+  font-family: "Mona Sans", sans-serif;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 .testSize {
   height: 20vh;
   margin: 1.5vw;

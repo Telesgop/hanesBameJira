@@ -39,6 +39,7 @@
   text-align: center;
   padding: 10px;
   font-family: "Mona-Sans Regular", sans-serif;
+  font-weight: bold;
 }
 .paginationNum :hover {
   cursor: pointer;

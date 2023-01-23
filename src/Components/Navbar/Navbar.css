@@ -3,13 +3,13 @@
   align-items: center;
   justify-content: space-between;
   height: 6vh;
-  /* padding-top: 0.1rem; */
   margin-bottom: 1.2rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
   z-index: 9;
   font-family: "Mona Sans", sans-serif;
-  /* background-color: #4e937a; */
-  /* border-bottom: 1px solid black; */
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 12px;
+  border-bottom: 1.5px solid #000;
+  box-shadow: 0px 5px 10px 0px #f4faff;
 }
 
 .navLeft {
@@ -98,6 +98,7 @@
 .innerTextInfo {
   font-family: "Open Sans", sans-serif;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   align-self: center;
@@ -139,13 +140,23 @@
   align-items: center;
 }
 
+.notesH2 {
+  font-weight: bold;
+  font-family: "Mona-Sans Regular", sans-serif;
+  font-size: large;
+}
+
+.notesP {
+  margin-top: 10px;
+}
+
 .translateImg {
   /* height: 20px; */
-  object-fit: fill;
-  height: 4vh;
+  object-fit: cover;
+  height: 3.5vh;
   width: 3vw;
-  border-radius: 15px;
-  border: 1px solid black;
+  border-radius: 10px;
+  border: 1.5px solid black;
   background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

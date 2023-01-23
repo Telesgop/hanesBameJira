@@ -6,6 +6,11 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { ImCross } from "react-icons/im";
+import { AiFillHome } from "react-icons/ai";
+import { GrNotes } from "react-icons/gr";
+import { BsPersonLinesFill } from "react-icons/bs";
+import welshFlag from "../../Images/wales.png";
+import engFlag from "../../Images/united-kingdom.png";
 
 const Navbar = () => {
   const { lang, setLang } = useContext(LanguageContext);
@@ -33,33 +38,26 @@ const Navbar = () => {
       <div className="menus">
         <Link to={"/"}>
           <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-            <div>Home</div>
+            <AiFillHome style={{ transform: "scale(1.5)" }} />
           </motion.div>
         </Link>
         <motion.div tabIndex="0" whileHover={{ scale: 1.2 }}>
           <div onClick={handleInfo} className="hoverNav">
-            {lang === true && "Nodiadau"}
-            {lang !== true && "Notes"}
+            <GrNotes style={{ transform: "scale(1.3)" }} />
           </div>
         </motion.div>
         <Link to={"/index"}>
           <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-            <div>Index</div>
+            <BsPersonLinesFill style={{ transform: "scale(1.4)" }} />
           </motion.div>
         </Link>
         <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
           <div onClick={handlePress} className="hoverNavCym" tabIndex="0">
             {lang === true && (
-              <img
-                className="translateImg"
-                src="https://cdn.britannica.com/25/4825-004-F1975B92/Flag-United-Kingdom.jpg"
-              ></img>
+              <img className="translateImg" src={engFlag}></img>
             )}
             {lang !== true && (
-              <img
-                className="translateImg"
-                src="https://media.istockphoto.com/id/1366932346/vector/national-flag-of-wales-eps-file-welsh-flag-vector-file.jpg?s=612x612&w=0&k=20&c=kA60hgiNFYlrHp_wdBM4afObLeTCr7z76mttjvDUDfc="
-              ></img>
+              <img className="translateImg" src={welshFlag}></img>
             )}
           </div>
         </motion.div>
@@ -70,59 +68,10 @@ const Navbar = () => {
             <ImCross className="crossImg" />
           </motion.div>{" "}
           <div className="innerTextInfo">
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore
-            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-            aliquid ex ea commodi consequatur? Quis autem vel eum iure
-            reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-            pariatur? Sed ut perspiciatis unde omnis iste natus error sit
-            voluptatem accusantium doloremque laudantium, totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto
-            beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-            voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-            magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-            quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-            adipisci velit, sed quia non numquam eius modi tempora incidunt ut
-            labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad
-            minima veniam, quis nostrum exercitationem ullam corporis suscipit
-            laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-            vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-            molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
-            nulla pariatur?Sed ut perspiciatis unde omnis iste natus error sit
-            voluptatem accusantium doloremque laudantium, totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto
-            beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-            voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-            magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-            quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-            adipisci velit, sed quia non numquam eius modi tempora incidunt ut
-            labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad
-            minima veniam, quis nostrum exercitationem ullam corporis suscipit
-            laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-            vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-            molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
-            nulla pariatur?Sed ut perspiciatis unde omnis iste natus error sit
-            voluptatem accusantium doloremque laudantium, totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto
-            beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-            voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-            magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-            quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-            adipisci velit, sed quia non numquam eius modi tempora incidunt ut
-            labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad
-            minima veniam, quis nostrum exercitationem ullam corporis suscipit
-            laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-            vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-            molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
-            nulla pariatur?"{" "}
+            <div className="notesH2">Notes</div>
+            <div className="notesP">
+              Here will be notes for teachers as well as notes on accessibility.
+            </div>
           </div>
         </div>
       </div>

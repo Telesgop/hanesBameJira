@@ -22,14 +22,7 @@ const Index = () => {
   return (
     <>
       <div className="ageRange">{lang !== true ? "Index" : "Index"}</div>
-      {/* <div className="searchbar">
-        <input
-          onChange={(event) => setQuery(event.target.value)}
-          className="searchInput"
-          placeholder={lang !== true ? "Search" : "Chwilio"}
-        ></input>
-      </div> */}
-      <div className="storiesContainer">
+      <div className="indexContainer">
         {query == "" && (
           <table>
             {currentPosts.map((item, id) => (
