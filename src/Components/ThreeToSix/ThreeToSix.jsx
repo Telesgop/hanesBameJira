@@ -4,7 +4,6 @@ import StoryBox from "../StoryBox/StoryBox";
 import threetosix from "../../3to6.json";
 import Copyright from "../Copyright/Copyright";
 import { Link } from "react-router-dom";
-import Pagination from "../Pagination/Pagination";
 
 const ThreeToSix = () => {
   const { lang, setLang } = useContext(LanguageContext);

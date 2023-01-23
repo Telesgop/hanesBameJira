@@ -2,13 +2,10 @@ import React from "react";
 import "./Navbar.css";
 import { useContext } from "react";
 import { LanguageContext } from "../../Helper/Context";
-import { AiFillHome } from "react-icons/ai";
-import { AiOutlineProfile } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { ImCross } from "react-icons/im";
-import wgLogo from "../../Images/wgLogo.png";
 
 const Navbar = () => {
   const { lang, setLang } = useContext(LanguageContext);
@@ -39,7 +36,7 @@ const Navbar = () => {
             <div>Home</div>
           </motion.div>
         </Link>
-        <motion.div whileHover={{ scale: 1.2 }}>
+        <motion.div tabIndex="0" whileHover={{ scale: 1.2 }}>
           <div onClick={handleInfo} className="hoverNav">
             {lang === true && "Nodiadau"}
             {lang !== true && "Notes"}
@@ -51,7 +48,7 @@ const Navbar = () => {
           </motion.div>
         </Link>
         <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-          <div onClick={handlePress} className="hoverNav">
+          <div onClick={handlePress} className="hoverNav" tabIndex="0">
             {lang === true && "Eng"}
             {lang !== true && "Cym"}
           </div>

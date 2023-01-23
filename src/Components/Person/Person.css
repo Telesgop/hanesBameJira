@@ -41,6 +41,7 @@
   overflow: scroll;
   height: 100%;
   margin: 10px;
+  width: 42vw;
   font-family: "Mona-Sans Regular", sans-serif;
 }
 
@@ -52,6 +53,7 @@
 }
 .personText {
   display: flex;
+  /* width: 30vw !important; */
   font-family: "Mona-Sans Regular", sans-serif;
 }
 
@@ -121,6 +123,7 @@
   text-align: center;
   margin-top: 10px;
   width: 70%;
+  height: 10vh;
 }
 
 @media only screen and (max-width: 600px) {

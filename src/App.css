@@ -9,6 +9,10 @@
     env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
+ul {
+  padding-right: 20px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -694,49 +694,42 @@ function App() {
                   "https://upload.wikimedia.org/wikipedia/commons/7/78/The_Top_of_Church_Street%2C_Merthyr_Tydfil_%28geograph_4834858%29.jpg"
                 }
                 text={
-                  <ul>
-                    <li>The Merthyr Synagogue was built in 1877 </li>
+                  <ul className="welshUl">
+                    <li>The Merthyr Synagogue was built in 1877.</li>
                     <li>
                       It was designed by Charles Taylor, an architect, who lived
-                      locally.{" "}
+                      locally.
                     </li>
-
                     <li>
                       A lot of Jewish people moved to Merthyr Tydfil when lots
                       of factories opened there and it became the largest town
-                      in Wales.{" "}
+                      in Wales.
                     </li>
                     <li>
                       The Jewish people formed a congregation, a group to pray
-                      together, in in 1848.{" "}
+                      together, in in 1848.
                     </li>
-
                     <li>
                       When the factories had less work a lot of Jews left
-                      Merthyr to look for jobs elsewhere.{" "}
+                      Merthyr to look for jobs elsewhere.
                     </li>
-
                     <li>
                       The Merthyr Synagogue is probably the only synagogue in
-                      the world which has a Welsh dragon on it.{" "}
+                      the world which has a Welsh dragon on it.
                     </li>
-
                     <li>
                       In 1960 the synagogue was painted by the well-known
                       artist, L. S. Lowry. The painting sold for £277,000 in
-                      March 2022.{" "}
+                      March 2022.
                     </li>
-
                     <li>
                       In 2019, the building was bought by the Foundation for
-                      Jewish Heritage.{" "}
+                      Jewish Heritage.
                     </li>
-
                     <li>
                       In 2021 they had to repair the building to make it safe
-                      and weather-proof.{" "}
+                      and weather-proof.
                     </li>
-
                     <li>
                       The Foundation for Jewish Heritage hope to open the
                       building as a Jewish Heritage Centre by 2025.{" "}
@@ -744,38 +737,38 @@ function App() {
                     <li>
                       Michael Mail of the Foundation for Jewish Heritage
                       believes the building is very important because ‘it’s the
-                      oldest purpose-built Jewish building surviving in Wales’.{" "}
+                      oldest purpose-built Jewish building surviving in Wales’.
                     </li>
                   </ul>
                 }
                 welshText={
-                  <ul>
-                    <li>Adeiladwyd Synagog Merthyr ym 1877. </li>
+                  <ul className="welshUl">
+                    <li>Adeiladwyd Synagog Merthyr ym 1877.</li>
                     <li>
                       Cafodd ei ddylunio gan Charles Taylor, pensaer, oedd yn
-                      byw’n lleol.{" "}
+                      byw’n lleol.
                     </li>
                     <li>
                       Symudodd llawer o bobl Iddewig i Ferthyr Tudful pan
                       agorodd nifer o ffatrïoedd yno a datblygodd fel tref fwyaf
-                      Cymru.{" "}
+                      Cymru.
                     </li>
                     <li>
                       Ffurfiodd y bobl Iddewig gynulleidfa, grŵp i weddïo gyda’i
-                      gilydd, ym 1848.{" "}
+                      gilydd, ym 1848.
                     </li>
                     <li>
                       Pan oedd llai o waith yn y ffatrïoedd, gadawodd llawer o
-                      Iddewon Merthyr i chwilio swyddi rhywle arall.{" "}
+                      Iddewon Merthyr i chwilio swyddi rhywle arall.
                     </li>
                     <li>
                       Mwy na thebyg mai Synagog Merthyr yw’r unig synagog yn y
-                      byd sydd â draig Cymru arni.{" "}
+                      byd sydd â draig Cymru arni.
                     </li>
                     <li>
                       Ym 1960, cafodd y synagog ei harlunio gan yr arlunydd
                       enwog, L. S. Lowry. Gwerthodd y darlun am £277,000 ym
-                      Mawrth 2022.{" "}
+                      Mawrth 2022.
                     </li>
                     <li>
                       Yn 2019, prynwyd yr adeilad gan y Sefydliad Treftadaeth
@@ -783,16 +776,16 @@ function App() {
                     </li>
                     <li>
                       Yn 2021, roedd yn rhaid iddynt atgyweirio’r adeilad i’w
-                      wneud yn ddiogel ac i’w ddiogelu rhag y tywydd.{" "}
+                      wneud yn ddiogel ac i’w ddiogelu rhag y tywydd.
                     </li>
                     <li>
                       Gobaith y Sefydliad Treftadaeth Iddewig yw agor yr adeilad
-                      fel Canolfan Traftadaeth Iddewig erbyn 2025.{" "}
+                      fel Canolfan Traftadaeth Iddewig erbyn 2025.
                     </li>
                     <li>
                       Cred Michael Mail o’r Sefydliad Treftadaeth Iddewig fod yr
                       adeilad yn bwysig iawn am mai dyma’r ‘adeilad Iddewig
-                      pwrpasol hynaf sydd wedi goroesi yng Nghymru’.{" "}
+                      pwrpasol hynaf sydd wedi goroesi yng Nghymru’.
                     </li>
                   </ul>
                 }

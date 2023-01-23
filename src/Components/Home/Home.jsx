@@ -4,10 +4,7 @@ import { LanguageContext } from "../../Helper/Context";
 import { useContext } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import blob1 from "../../Images/blob1.png";
-import blob2 from "../../Images/blob2.png";
 import Copyright from "../Copyright/Copyright";
-import { AiOutlineProfile } from "react-icons/ai";
 
 const Home = () => {
   const { lang, setLang } = useContext(LanguageContext);
