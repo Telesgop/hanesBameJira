@@ -7,7 +7,7 @@
         "welshSlug": "Y bachgen wnaeth ffoi o’r Almaen Natsïaidd.",
         "image": "https://i.guim.co.uk/img/media/7c810c258320be244e1d7d4d721e8a171409c677/180_145_1240_744/master/1240.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=d36ac08cc3c44a21c37572bfc483bb4c",
         "url": "/9to12yo/HansLichtenstein",
-        "keywords": "Hans Lichtenstein Jewish Doctor"
+        "keywords": "Hans Lichtenstein Jewish Doctor Meddyg"
     },
     {
         "id" : 5,
@@ -16,7 +16,7 @@
         "welshSlug": "Y castell trawiadol a’i gysylltiadau â chaethwasiaeth.",
         "image": "http://changing-pages.com/wp-content/uploads/2019/05/IMG_4201-1440x1001.jpg",
         "url": "/9to12yo/PenrhynCastle",
-        "keywords": "Penrhyn Castle Slave Trade Jamaica"
+        "keywords": "Penrhyn Castle Slave Trade Jamaica castell chaethwasiaeth"
     },
     {
         "id" : 1,
@@ -25,7 +25,7 @@
         "welshSlug": "",
         "image": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/2ED2/production/_95868911_gettyimages-1852091.jpg",
         "url": "/9to12yo/ColinJackson",
-        "keywords": "Colin Jackson Flag Run Hurdle Gay"
+        "keywords": "Colin Jackson Flag Run Hurdle Gay Olympics Rhedeg"
     },
     {
         "id" : 2,
@@ -34,7 +34,7 @@
         "welshSlug": "",
         "image": "https://i2-prod.walesonline.co.uk/incoming/article6534420.ece/ALTERNATES/s1200c/DHP_MAI_21011401irisJPG.jpg",
         "url": "/9to12yo/IrisWilliams",
-        "keywords": "Iris Williams singer jazz"
+        "keywords": "Iris Williams singer jazz "
     },
     {
         "id" : 3,
@@ -43,7 +43,7 @@
         "welshSlug": "",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Paul_Robeson_1942_crop.jpg/1200px-Paul_Robeson_1942_crop.jpg",
         "url": "/9to12yo/PaulRobeson",
-        "keywords": "Paul Robeson"
+        "keywords": "Paul Robeson singer miner strike"
     },
     {
         "id" : 4,
@@ -99,6 +99,15 @@
         "image": "https://www.peoplescollection.wales/sites/default/files/styles/item_detail/public/images/2015/November/bay213.jpg",
         "url": "/9to12yo/VernesterCyril",
         "keywords": "Vernester Cyril Nurse Caribbean OBE"
+    },
+    {
+        "id" : 11,
+        "name" : "Dom James",
+        "slug": "Rapper",
+        "welshSlug": "",
+        "image": "https://ichef.bbci.co.uk/news/976/cpsprodpb/DBCD/production/_124296265_33020262_1243885189076260_6186539543915659264_n-1.jpg",
+        "url": "/9to12yo/DomJames",
+        "keywords": "Dom James rapper"
     }
   
 ]

@@ -1,0 +1,58 @@
+.leftSideAnimCard {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  font-family: "Mona-Sans Regular", sans-serif;
+}
+
+.wholePageAnimCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.personInfoAnimCard {
+  background-color: white;
+  border: 2px solid black;
+  padding: 10px;
+
+  border-radius: 15px !important;
+  width: 75vw;
+  height: 75vh !important;
+  z-index: 9;
+  align-items: center;
+  font-size: large;
+  justify-items: center;
+  font-family: "Mona-Sans Regular", sans-serif;
+}
+.animCardVideo {
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  width: 70vw;
+  margin: auto;
+  border-radius: 15px;
+}
+
+.personNameAnimCard {
+  width: auto;
+  font-weight: bold;
+  font-family: "Mona Sans", sans-serif;
+  margin: 3vh;
+  margin-left: 5vh;
+  width: 30vw;
+  margin-bottom: 0;
+  font-size: x-large !important;
+}
+
+.personBoxAnimCard {
+  display: flex;
+  z-index: 9;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  width: 80vw;
+  font-family: "Mona-Sans Regular", sans-serif;
+}

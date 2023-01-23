@@ -13,6 +13,7 @@ import PersonTVBack from "./Components/Person/PersonTVBack";
 import Index from "./Components/Index/Index";
 import ThreeToSix from "./Components/ThreeToSix/ThreeToSix";
 import TwelveToSixteen from "./Components/TwelveToSixteen/TwelveToSixteen";
+import AnimCard from "./Components/AnimCard/AnimCard";
 
 function App() {
   const [lang, setLang] = useState(false);
@@ -135,6 +136,30 @@ function App() {
                 welshSlugText={"Chwaraewr rygbi ac athletwr eithafol."}
               ></Person>
             }
+          ></Route>
+          <Route
+            path="/3to6yo/ShirleyBassey"
+            element={<AnimCard indivName={"Shirley Bassey"} />}
+          ></Route>
+          <Route
+            path="/3to6yo/SidoliIceCream"
+            element={<AnimCard indivName={"Sidoli's Ice Cream"} />}
+          ></Route>
+          <Route
+            path="/3to6yo/HansLichtenstein"
+            element={<AnimCard indivName={"Hans Lichtenstein"} />}
+          ></Route>
+          <Route
+            path="/3to6yo/ArandoraStar"
+            element={<AnimCard indivName={"Arandora Star"} />}
+          ></Route>
+          <Route
+            path="/3to6yo/TigerBay"
+            element={<AnimCard indivName={"Tiger Bay"} />}
+          ></Route>
+          <Route
+            path="/3to6yo/JohnYstumllyn"
+            element={<AnimCard indivName={"John Ystumllyn"} />}
           ></Route>
           <Route
             path="/12to16yo/NigelWalker"

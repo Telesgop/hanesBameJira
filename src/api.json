@@ -81,6 +81,15 @@
         "image": "https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F75b621da-8fff-4cfb-ad8e-d63040e1f7a8.jpg?fit=scale-down&source=next&width=700",
         "url": "/6to9yo/ShirleyBassey",
         "keywords": "Dame Shirley Veronica Bassey"
+    } ,
+    {
+        "id" : 12,
+        "name" : "Piece on hair - hairdresser",
+        "slug": "",
+        "welshSlug": "",
+        "image": "",
+        "url": "/6to9yo/hair",
+        "keywords": "hair"
     } 
 ]
 

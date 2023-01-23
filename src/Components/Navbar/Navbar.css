@@ -2,10 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 7vh;
-  margin-top: 0.2rem;
+  height: 6vh;
+  /* padding-top: 0.1rem; */
+  margin-bottom: 1.2rem;
   z-index: 9;
   font-family: "Mona Sans", sans-serif;
+  /* background-color: #4e937a; */
+  /* border-bottom: 1px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 12px;
 }
 
 .navLeft {
@@ -113,12 +117,37 @@
   display: flex;
   flex-direction: row;
   width: 20vw;
+  align-items: center;
   justify-content: space-around;
   font-family: "Mona-Sans Regular", sans-serif;
+  font-weight: bold;
 }
 
 .hoverNav:hover {
   cursor: pointer;
+}
+.hoverNavCym:hover {
+  cursor: pointer;
+}
+
+.hoverNavCym {
+  /* border: 1px solid black; */
+  height: 5vh;
+  /* width: 10vw; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.translateImg {
+  /* height: 20px; */
+  object-fit: fill;
+  height: 4vh;
+  width: 3vw;
+  border-radius: 15px;
+  border: 1px solid black;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .homebutton {

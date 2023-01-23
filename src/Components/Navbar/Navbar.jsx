@@ -48,9 +48,19 @@ const Navbar = () => {
           </motion.div>
         </Link>
         <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-          <div onClick={handlePress} className="hoverNav" tabIndex="0">
-            {lang === true && "Eng"}
-            {lang !== true && "Cym"}
+          <div onClick={handlePress} className="hoverNavCym" tabIndex="0">
+            {lang === true && (
+              <img
+                className="translateImg"
+                src="https://cdn.britannica.com/25/4825-004-F1975B92/Flag-United-Kingdom.jpg"
+              ></img>
+            )}
+            {lang !== true && (
+              <img
+                className="translateImg"
+                src="https://media.istockphoto.com/id/1366932346/vector/national-flag-of-wales-eps-file-welsh-flag-vector-file.jpg?s=612x612&w=0&k=20&c=kA60hgiNFYlrHp_wdBM4afObLeTCr7z76mttjvDUDfc="
+              ></img>
+            )}
           </div>
         </motion.div>
       </div>
