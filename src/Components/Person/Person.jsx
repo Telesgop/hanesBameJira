@@ -125,9 +125,19 @@ const Person = ({
               animate="visible"
             >
               {" "}
-              <div className="personInfo">
-                <div className="backMessage">
-                  {lang !== true ? backText : backWelshText}
+              <div className="personInfoBack">
+                <div className="backLeft">
+                  <div className="backLText">
+                    {" "}
+                    Here will be a resource: video, podcast, etc.
+                  </div>
+                </div>
+                <div className="backRight">
+                  <p>Online Resources</p>{" "}
+                  <p>
+                    Here will be links to online resources surrounding this
+                    individual.
+                  </p>
                 </div>
               </div>
             </div>

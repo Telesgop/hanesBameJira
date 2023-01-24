@@ -25,6 +25,22 @@
   font-family: "Mona-Sans Regular", sans-serif;
 }
 
+.personInfoBack {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 75vw;
+  height: 75vh !important;
+  z-index: 9;
+  align-items: center;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
 .flipMobile {
   display: none;
   font-family: "Mona-Sans Regular", sans-serif;
@@ -33,7 +49,6 @@
 .personName {
   font-weight: bold;
   font-family: "Mona Sans", sans-serif;
-
   font-size: x-large !important;
 }
 .rightSide {
@@ -52,7 +67,6 @@
 }
 .personText {
   display: flex;
-  /* width: 30vw !important; */
   font-family: "Mona-Sans Regular", sans-serif;
 }
 
@@ -65,7 +79,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: space-evenly; */
 }
 
 .prevnext {
@@ -77,14 +90,35 @@
   z-index: 9;
 }
 
-.backMessage {
+.backLeft {
+  width: 50%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
-  align-self: center;
-  padding: 30px;
+  /* border: 2px solid black; */
+  border-radius: 15px;
+}
+.backLText {
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  height: 50%;
+  width: 80%;
+}
+.backRight {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: large;
+  align-items: center;
   text-align: center;
+  /* border: 2px solid black; */
+  border-radius: 15px;
 }
 
 .prevnextBlocked {

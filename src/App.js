@@ -82,6 +82,15 @@ function App() {
                       the fastest ever British person, to ski solo, unsupported
                       and unassisted to the South Pole.
                     </li>
+                    <li>
+                      Through his incredible achievements – as a professional
+                      rugby player and as an extreme athlete – Richard Parks
+                      proved that despite setbacks and frustrations, we are all
+                      capable of turning our skills and abilities to other
+                      things. Because of his never-give-up attitude and
+                      determination to succeed at something new, Richard is an
+                      inspirational figure to many – both in Wales and beyond.{" "}
+                    </li>
                   </ul>
                 }
                 welshText={
@@ -122,6 +131,16 @@ function App() {
                       Ym mis Ionawr 2014, Richard oedd y Cymro cyntaf, a’r
                       person cyflymaf ym Mhrydain erioed, i sgïo ar ben ei hun,
                       heb gefnogaeth a heb gymorth, i Begwn y De.{" "}
+                    </li>
+                    <li>
+                      Trwy ei gyflawniadau anhygoel – fel chwaraewr rygbi
+                      proffesiynol ac fel athletwr eithafol – mae Richard Parks
+                      wedi profi, er gwaethaf anawsterau a rhwystredigaethau,
+                      ein bod i gyd yn gallu troi ein sgiliau a’n galluoedd i
+                      wneud pethau eraill. Oherwydd yr agwedd hon o beidio byth
+                      â rhoi fyny a’r penderfynoldeb i lwyddo gyda rhywbeth
+                      newydd, mae Richard yn ysbrydoliaeth i gymaint o bobl –
+                      yng Nghymru a thu hwnt.
                     </li>
                   </ul>
                 }
