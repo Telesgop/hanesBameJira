@@ -7,7 +7,15 @@
         "welshSlug": "Chwaraewr rygbi ac athletwr eithafol.",
         "image": "https://images.ctfassets.net/pjshm78m9jt4/qOAmfNKcRdpCajNzkBHMa/0259e6a2036bb8d1797efdbd1a41fee3/richard_parks_hero_2.jpg",
         "url": "/6to9yo/RichardParks",
-        "keywords": "Richard Parks rugby player athlete"
+        "keywords": "Richard Parks rugby player athlete",
+        "resources": [
+            "https://www.richardparks.co.uk/", 
+            "https://www.youtube.com/watch?v=5bcC14ay-iY",
+            "https://www.youtube.com/watch?v=9COyDnyB_ag",
+            "https://www.youtube.com/watch?v=0EjCPnLAn6I",
+            "https://www.itv.com/news/wales/2022-03-14/the-pandemic-made-me-question-my-identity-and-my-value-to-the-world",
+            "https://www.visitwales.com/things-do/adventure-and-activities/discover-richard-parks-epic-wales"
+        ]
     },
     {
         "id" : 2,
@@ -16,7 +24,12 @@
         "welshSlug": "Yr adeilad Iddewig pwrpasol hynaf sydd wedi goroesi yng Nghymru.",
         "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/The_Top_of_Church_Street%2C_Merthyr_Tydfil_%28geograph_4834858%29.jpg",
         "url": "/6to9yo/MerthyrSynagogue",
-        "keywords": "Merthyr Tydfil Synagogue Jewish"
+        "keywords": "Merthyr Tydfil Synagogue Jewish",
+        "resources": [
+            "www.goole.com", 
+            "www.bing.com",
+            "www.test.com"
+        ]
     },
     {
         "id" : 3,
@@ -25,7 +38,12 @@
         "welshSlug": "",
         "image": "https://ichef.bbci.co.uk/images/ic/336xn/p03xh0b0.jpg",
         "url": "/6to9yo/ReuelElijah",
-        "keywords": "Reuel Elijah Dancer"
+        "keywords": "Reuel Elijah Dancer",
+        "resources": [
+            "www.google.com", 
+            "www.bing.com",
+            "www.test.com"
+        ]
     },
     {
         "id" : 4,
@@ -34,7 +52,12 @@
         "welshSlug": "",
         "image": "https://blackhistorywales.org.uk/wp-content/uploads/2020/07/Screenshot-2020-07-09-at-07.56.04.png",
         "url": "/6to9yo/LennLawrence",
-        "keywords": "Lenn Lawrence carpenter"
+        "keywords": "Lenn Lawrence carpenter",
+        "resources": [
+            "www.google.com", 
+            "www.bing.com",
+            "www.test.com"
+        ]
     },
     {
         "id" : 5,
@@ -43,7 +66,12 @@
         "welshSlug": "",
         "image": "https://live.staticflickr.com/655/22408268685_a9ec39be94_b.jpg",
         "url": "/6to9yo/TeleriGray",
-        "keywords": "Teleri Gray romani storyteller"
+        "keywords": "Teleri Gray romani storyteller",
+        "resources": [
+            "www.google.com", 
+            "www.bing.com",
+            "www.test.com"
+        ]
     },
     {
         "id" : 6,
@@ -52,7 +80,12 @@
         "welshSlug": "",
         "image": "https://i2-prod.walesonline.co.uk/incoming/article6289157.ece/ALTERNATES/s810/JS28547881.jpg",
         "url": "/6to9yo/FongSui",
-        "keywords": "Fong Sui Chinese"
+        "keywords": "Fong Sui Chinese",
+        "resources": [
+            "www.google.com", 
+            "www.bing.com",
+            "www.test.com"
+        ]
     },
    
     {
@@ -62,7 +95,12 @@
         "welshSlug": "",
         "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Arandora_Star_1940.jpg",
         "url": "/6to9yo/SSAndoraStarr",
-        "keywords": "The SS Andorra Starr"
+        "keywords": "The SS Andorra Starr",
+        "resources": [
+            "www.google.com", 
+            "www.bing.com",
+            "www.test.com"
+        ]
     },
     {
         "id" : 10,
@@ -71,7 +109,12 @@
         "welshSlug": "",
         "image": "https://images.squarespace-cdn.com/content/v1/55e4bcf2e4b01d0dc78c9848/1441893157537-7AL21O6U939POF0AYWGB/image-asset.jpeg",
         "url": "/6to9yo/WilsonMonk",
-        "keywords": "Wilson Monk"
+        "keywords": "Wilson Monk",
+        "resources": [
+            "www.google.com", 
+            "www.bing.com",
+            "www.test.com"
+        ]
     },
     {
         "id" : 11,
@@ -80,7 +123,12 @@
         "welshSlug": "",
         "image": "https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F75b621da-8fff-4cfb-ad8e-d63040e1f7a8.jpg?fit=scale-down&source=next&width=700",
         "url": "/6to9yo/ShirleyBassey",
-        "keywords": "Dame Shirley Veronica Bassey"
+        "keywords": "Dame Shirley Veronica Bassey",
+        "resources": [
+            "www.google.com", 
+            "www.bing.com",
+            "www.test.com"
+        ]
     } ,
     {
         "id" : 12,
@@ -89,7 +137,12 @@
         "welshSlug": "",
         "image": "",
         "url": "/6to9yo/hair",
-        "keywords": "hair"
+        "keywords": "hair",
+        "resources": [
+            "www.google.com", 
+            "www.bing.com",
+            "www.test.com"
+        ]
     } 
 ]
 

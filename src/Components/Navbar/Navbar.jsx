@@ -74,7 +74,7 @@ const Navbar = () => {
             <div className="notesP">
               It is our hope for the website to be easy to use and accessible to
               as many people as possible. To aid accessibility, it is possible
-              to navigate the site using the keyboard.
+              to navigate the site using the keyboard and the Tab key.
             </div>
             <div className="notesH2">Attributions</div>
             <div className="notesP">

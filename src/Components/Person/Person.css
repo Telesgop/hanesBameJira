@@ -15,7 +15,7 @@
 .personInfo {
   background-color: white;
   border: 2px solid black;
-  border-radius: 15px !important;
+  border-radius: 10px !important;
   width: 75vw;
   height: 75vh !important;
   z-index: 9;
@@ -23,6 +23,7 @@
   font-size: large;
   justify-items: center;
   font-family: "Mona-Sans Regular", sans-serif;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
 .personInfoBack {
@@ -30,7 +31,9 @@
   flex-direction: row;
   background-color: white;
   border: 2px solid black;
-  border-radius: 15px;
+  font-family: "Mona-Sans Regular", sans-serif;
+
+  border-radius: 10px;
   width: 75vw;
   height: 75vh !important;
   z-index: 9;
@@ -96,7 +99,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid black; */
+  font-family: "Mona-Sans Regular", sans-serif;
+
   border-radius: 15px;
 }
 .backLText {
@@ -106,6 +110,7 @@
   padding: 10px;
   height: 50%;
   width: 80%;
+  font-family: "Mona-Sans Regular", sans-serif;
 }
 .backRight {
   width: 50%;
@@ -114,11 +119,18 @@
   justify-content: flex-start;
   flex-direction: column;
   font-weight: bold;
+  font-family: "Mona-Sans Regular", sans-serif;
   font-size: large;
-  align-items: center;
-  text-align: center;
-  /* border: 2px solid black; */
+  text-align: flex-start;
   border-radius: 15px;
+}
+.resourceLi {
+  padding: 10px;
+  list-style: none;
+}
+
+.resourceHref {
+  color: blue;
 }
 
 .prevnextBlocked {

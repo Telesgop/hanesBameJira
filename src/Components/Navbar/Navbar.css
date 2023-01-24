@@ -73,14 +73,14 @@
 }
 
 .innerModal {
-  border: 1px solid black;
+  border: 1.5px solid black;
   background-color: #f4faff;
   width: 50%;
   height: 70%;
   display: flex;
   flex-direction: column;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .innerText {

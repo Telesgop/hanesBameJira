@@ -14,6 +14,7 @@ import Index from "./Components/Index/Index";
 import ThreeToSix from "./Components/ThreeToSix/ThreeToSix";
 import TwelveToSixteen from "./Components/TwelveToSixteen/TwelveToSixteen";
 import AnimCard from "./Components/AnimCard/AnimCard";
+import api from "./api.json";
 
 function App() {
   const [lang, setLang] = useState(false);
@@ -153,6 +154,7 @@ function App() {
                   "Trwy ei gyflawniadau anhygoel – fel chwaraewr rygbi proffesiynol ac fel athletwr eithafol – mae Richard Parks wedi profi, er gwaethaf anawsterau a rhwystredigaethau, ein bod i gyd yn gallu troi ein sgiliau a’n galluoedd i wneud pethau eraill.  Oherwydd yr agwedd hon o beidio byth â rhoi fyny a’r penderfynoldeb i lwyddo gyda rhywbeth newydd, mae Richard yn ysbrydoliaeth i gymaint o bobl – yng Nghymru a thu hwnt."
                 }
                 welshSlugText={"Chwaraewr rygbi ac athletwr eithafol."}
+                resource={api.slice(0, 1)}
               ></Person>
             }
           ></Route>
@@ -299,6 +301,7 @@ function App() {
                   "Athletwr, chwaraewr rygbi ac un sydd wedi cyflawni cryn dipyn."
                 }
                 slugText={"Athlete, rugby player and high achiever."}
+                resources={api}
               ></Person>
             }
           ></Route>
@@ -733,6 +736,7 @@ function App() {
             path="/6to9yo/MerthyrSynagogue"
             element={
               <Person
+                resource={api.slice(1, 2)}
                 indivName={"Merthyr Tydfil Synagogue"}
                 indivPic={
                   "https://upload.wikimedia.org/wikipedia/commons/7/78/The_Top_of_Church_Street%2C_Merthyr_Tydfil_%28geograph_4834858%29.jpg"

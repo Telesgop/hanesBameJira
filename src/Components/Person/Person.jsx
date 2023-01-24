@@ -16,6 +16,8 @@ const Person = ({
   backWelshText,
   slugText,
   welshSlugText,
+  resource,
+  noInList,
 }) => {
   const { lang, setLang } = useContext(LanguageContext);
   const [slide, setSlide] = useState(0);
@@ -133,11 +135,18 @@ const Person = ({
                   </div>
                 </div>
                 <div className="backRight">
-                  <p>Online Resources</p>{" "}
-                  <p>
-                    Here will be links to online resources surrounding this
-                    individual.
-                  </p>
+                  <p>Online Resources:</p>
+                  {resource.map((item, id) => {
+                    return item.resources.map((listItem) => {
+                      return (
+                        <li key={item.id} className="resourceLi">
+                          <a href={listItem} className="resourceHref">
+                            {listItem}
+                          </a>
+                        </li>
+                      );
+                    });
+                  })}
                 </div>
               </div>
             </div>
