@@ -5,7 +5,12 @@
     "welshSlug": "Eicon du cyntaf Cymru.",
     "image": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/DC57/production/_113170465_shutterstock_editorial_3156656a.jpg",
     "url": "/12to16yo/GlennWebbe",
-    "keywords": "Glenn Webbe Rugby"
+    "keywords": "Glenn Webbe Rugby",
+    "resources": [
+        "www.google.com", 
+        "www.bing.com",
+        "www.test.com"
+    ]
 },
 {
     "id" : 1,
@@ -14,7 +19,12 @@
     "welshSlug": "Athletwr, chwaraewr rygbi ac un sydd wedi cyflawni cryn dipyn.",
     "image": "https://d2cx26qpfwuhvu.cloudfront.net/wales/wp-content/uploads/2020/07/17113738/CDF_160294_Nigel_Walker_02-1-708x425.jpg",
     "url": "/12to16yo/NigelWalker",
-    "keywords": "Nigel Walker Athlete"
+    "keywords": "Nigel Walker Athlete",
+    "resources": [
+        "www.google.com", 
+        "www.bing.com",
+        "www.test.com"
+    ]
 },
 {
     "id" : 2,
@@ -23,7 +33,12 @@
     "welshSlug": "",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/JoeCalzaghe-July2007.jpg",
     "url": "/12to16yo/JoeCalzaghe",
-    "keywords": "Joe Calzaghe Boxing Italian Sardinia"
+    "keywords": "Joe Calzaghe Boxing Italian Sardinia",
+    "resources": [
+        "www.google.com", 
+        "www.bing.com",
+        "www.test.com"
+    ]
 },
 {
     "id" : 3,
@@ -32,7 +47,12 @@
     "welshSlug": "",
     "image": "https://i2-prod.walesonline.co.uk/incoming/article24630322.ece/ALTERNATES/s1200/0_S4C-TV-PAGES.jpg",
     "url": "/12to16yo/JasonMohammed",
-    "keywords": "Jason Mohammed radio television bbc news sport"
+    "keywords": "Jason Mohammed radio television bbc news sport",
+    "resources": [
+        "www.google.com", 
+        "www.bing.com",
+        "www.test.com"
+    ]
 },
 {
     "id" : 4,
@@ -41,7 +61,12 @@
     "welshSlug": "",
     "image": "https://ents24.imgix.net/image/000/158/543/f362a1cbe3eb9d638603c935c57a9f81ee7bd0bf.jpg?auto=format&crop=faces&w=1920&h=1920",
     "url": "/12to16yo/KizzyCrawford",
-    "keywords": "Kizzy Crawford singer bajan"
+    "keywords": "Kizzy Crawford singer bajan",
+    "resources": [
+        "www.google.com", 
+        "www.bing.com",
+        "www.test.com"
+    ]
 },
 {
     "id" : 5,
@@ -50,7 +75,12 @@
     "welshSlug": "",
     "image": "https://i.guim.co.uk/img/media/f77982ffce62788f1ab622c5a878a0b186b5d2db/1450_147_4297_2578/master/4297.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=509500c71e7dcda098b5952a4f2ba212",
     "url": "/12to16yo/AshleyWilliams",
-    "keywords": "Ashley Williams football"
+    "keywords": "Ashley Williams football",
+    "resources": [
+        "www.google.com", 
+        "www.bing.com",
+        "www.test.com"
+    ]
 },
 {
     "id" : 6,
@@ -59,31 +89,51 @@
     "welshSlug": "",
     "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/joe-erskine-keystone.jpg",
     "url": "/12to16yo/JoeErskine",
-    "keywords": "Joe Erskine boxer tiger bay cardiff"
+    "keywords": "Joe Erskine boxer tiger bay cardiff",
+    "resources": [
+        "www.google.com", 
+        "www.bing.com",
+        "www.test.com"
+    ]
 },
 {
     "id" : 7,
     "name" : "Elizabeth Campbell MBE",
     "slug": "Wales’ First Black Headteacher.",
     "image": "https://ichef.bbci.co.uk/news/976/cpsprodpb/13CF5/production/_98314118_bettyclean.jpg",
-    "url": "/3to6yo/ElizabethCampbell",
-    "keywords" : "Elizabeth Campbell MBE"
+    "url": "/12to16yo/ElizabethCampbell",
+    "keywords" : "Elizabeth Campbell MBE",
+    "resources": [
+        "www.google.com", 
+        "www.bing.com",
+        "www.test.com"
+    ]
 },
 {
     "id" : 8,
     "name" : "Dr Ganesh Subrahmanyam",
     "slug": "The Indian Doctor.",
     "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0b6ksrg.jpg",
-    "url": "/3to6yo/GaneshSubrahmanyam",
-    "keywords" : "Dr Ganesh Subrahmanyam"
+    "url": "/12to16yo/GaneshSubrahmanyam",
+    "keywords" : "Dr Ganesh Subrahmanyam",
+    "resources": [
+        "www.google.com", 
+        "www.bing.com",
+        "www.test.com"
+    ]
 },
 {
     "id" : 9,
     "name" : "Vaughan Gething",
     "slug": "Welsh Labour Politician.",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Vaughan_Gething.jpg/800px-Vaughan_Gething.jpg",
-    "url": "/3to6yo/ElizabethCampbell",
-    "keywords" : "Vaughan Gething"
+    "url": "/12to16yo/VaughanGething",
+    "keywords" : "Vaughan Gething",
+    "resources": [
+        "www.google.com", 
+        "www.bing.com",
+        "www.test.com"
+    ]
 }
 
 ]

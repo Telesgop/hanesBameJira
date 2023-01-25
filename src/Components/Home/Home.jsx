@@ -52,7 +52,7 @@ const Home = () => {
         <br></br>
         <br></br>
         {lang !== true
-          ? "To begin, choose an age group:"
+          ? "To begin, choose a category:"
           : "I ddechrau, dewiswch grŵp oedran:"}
       </div>
       <motion.div

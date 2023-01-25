@@ -135,7 +135,10 @@ const Person = ({
                   </div>
                 </div>
                 <div className="backRight">
-                  <p>Online Resources:</p>
+                  <p>
+                    {" "}
+                    {lang !== true ? "Online Resources:" : "Adnoddau Ar-lein:"}
+                  </p>
                   {resource.map((item, id) => {
                     return item.resources.map((listItem) => {
                       return (

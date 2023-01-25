@@ -15,6 +15,8 @@ import ThreeToSix from "./Components/ThreeToSix/ThreeToSix";
 import TwelveToSixteen from "./Components/TwelveToSixteen/TwelveToSixteen";
 import AnimCard from "./Components/AnimCard/AnimCard";
 import api from "./api.json";
+import nineApi from "./9to12.json";
+import twelveApi from "./12to16.json";
 
 function App() {
   const [lang, setLang] = useState(false);
@@ -186,6 +188,7 @@ function App() {
             path="/12to16yo/NigelWalker"
             element={
               <Person
+                resource={twelveApi.slice(1, 2)}
                 indivName={"Nigel Walker"}
                 indivPic={
                   "https://i.dailymail.co.uk/1s/2019/04/15/23/12319446-0-image-m-55_1555369161657.jpg"
@@ -309,6 +312,7 @@ function App() {
             path="/12to16yo/GlennWebbe"
             element={
               <Person
+                resource={twelveApi.slice(0, 1)}
                 indivName={"Glenn Webbe"}
                 indivPic={
                   "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/DC57/production/_113170465_shutterstock_editorial_3156656a.jpg"
@@ -445,6 +449,7 @@ function App() {
             element={
               <Person
                 indivName={"Penrhyn Castle"}
+                resource={nineApi.slice(2, 1)}
                 indivPic={
                   "http://changing-pages.com/wp-content/uploads/2019/05/IMG_4201-1440x1001.jpg"
                 }
@@ -595,6 +600,7 @@ function App() {
                 indivPic={
                   "https://i.guim.co.uk/img/media/7c810c258320be244e1d7d4d721e8a171409c677/180_145_1240_744/master/1240.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=d36ac08cc3c44a21c37572bfc483bb4c"
                 }
+                resource={nineApi.slice(1, 2)}
                 text={
                   <ul>
                     <li>
@@ -851,100 +857,343 @@ function App() {
             }
           ></Route>
           <Route
-            path="/6to9yo/JohnYstumllyn"
+            path="/6to9yo/ReuelElijah"
             element={
-              <PersonTVBack
-                indivName={"John Ystumllyn"}
-                welshText={
-                  <ul>
-                    <li>
-                      Richard Parks was born in Pontypridd on 14 August 1977 to
-                      a Jamaican mother, Lee and a Welsh father, Derek Parks.
-                    </li>
-                    <li>
-                      A gifted schoolboy rugby player, Richard specialised in
-                      playing flanker and went on to play rugby professionally.
-                    </li>
-                    <li>
-                      During his rugby career Richard played for Pontypridd
-                      (winning the Principality Cup), Leeds (winning the
-                      Powergen Cup), Perpignan and Newport Gwent Dragons.
-                    </li>
-                    <li>
-                      In 2001, Richard represented Wales Sevens in the Rugby
-                      World Cup in Argentina.
-                    </li>
-                    <li>Richard also won 4 caps playing for Wales.</li>
-                    <li>
-                      Following an injury to his ligaments and medical problems
-                      with his shoulder, Richard retired from professional rugby
-                      aged 31 in 2009. He then reinvented himself as an extreme
-                      athlete.
-                    </li>
-                    <li>
-                      In July 2011, on an expedition known as the 737 Challenge,
-                      Richard became the first person to climb the highest
-                      mountain on each of the world’s seven continents and stand
-                      on all three poles (the North Pole, the South Pole and the
-                      summit of Everest). Richard completed this incredible test
-                      of stamina and strength within just seven months.
-                    </li>
-                    <li>
-                      In January 2014, Richard became the first Welshman, and
-                      the fastest ever British person, to ski solo, unsupported
-                      and unassisted to the South Pole.
-                    </li>
-                  </ul>
+              <Person
+                indivName={"Reuel Elijah"}
+                slugText={"Musician, performer and dancer."}
+                resource={api.slice(2, 3)}
+                indivPic={
+                  "https://i.scdn.co/image/ab6761610000e5eb60d8b331c307dce08e839b02"
                 }
-                text={
-                  <p>
-                    John Ystumllyn – who is also known by the names Jack Du or
-                    Jack Black – was a gardener in the 18th century. He was the
-                    first black person in Wales who people wrote about. <br />
-                    <br /> We do not know where John originally lived before he
-                    arrived in Wales. He possible came here as a victim of the
-                    Atlantic slave trade when he was eight years of age, which
-                    may mean he came from the West Africa or the West Indies.
-                    Once in Wales, John came to live with the Wynn family as a
-                    servant at their Ystumllyn estate in Criccieth, where he was
-                    christened with the Welsh name John Ystumllyn. <br />
-                    <br /> John was taught English and Welsh by the local people
-                    and also learned how to be a gardener on the estate where he
-                    became very good at his job. John had his portrait painted
-                    when he was a young man and it shows that he was very
-                    handsome.
-                    <br />
-                    <br /> John fell in love with a white local maid called
-                    Margaret Gruffydd. In 1768, when Margaret left for another
-                    job, John left his gardening job to marry her. Theirs may
-                    have been the first mixed marriage in Wales. They had seven
-                    children, five of whom survived. John and Margaret then
-                    worked as land stewards. Later, John went back into the
-                    employment of the Wynn family. Ellis Wynn gave him a large
-                    garden and cottage at Y Nhyra Isa to say thank you for all
-                    his hard work.
-                    <br />
-                    <br /> John was a very likeable person. He also is known to
-                    have not suffered much racial prejudice, though locals did
-                    often express surprise at seeing a black man for the first
-                    time. John died in 1786; his wife, Margaret, lived for more
-                    than forty years more. <br />
-                    <br />
-                    Many years after his death, a small monument was built near
-                    where John was buried in St Cynhaearn's Church. Recently,
-                    Zehra Zaidi, the founder of We Too Built Britain, approached
-                    the Chelsea flower show winner Harkness Roses with the idea
-                    of creating a rose named after John Ystumllyn. The beautiful
-                    rose is yellow, symbolising friendship.
-                  </p>
-                }
-                indivPic={johnBackground}
-                slugText={"18th Century Gardener"}
-              ></PersonTVBack>
+              ></Person>
             }
-          >
-            {" "}
-          </Route>
+          ></Route>
+          <Route
+            path="/6to9yo/LennLawrence"
+            element={
+              <Person
+                indivName={"Lenn Lawrence"}
+                slugText={
+                  "Carpenter and co-former of the Carribean Friendship Society."
+                }
+                resource={api.slice(3, 4)}
+                indivPic={
+                  "https://blackhistorywales.org.uk/wp-content/uploads/2020/07/Screenshot-2020-07-09-at-07.56.04.png"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/6to9yo/TeleriGray"
+            element={
+              <Person
+                indivName={"Teleri Gray"}
+                slugText={"Romani Storyteller."}
+                resource={api.slice(4, 5)}
+                indivPic={
+                  "https://live.staticflickr.com/655/22408268685_a9ec39be94_b.jpg"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/6to9yo/FongSui"
+            element={
+              <Person
+                indivName={"Fong Sui"}
+                slugText={"First Generation Chinese in Wales."}
+                resource={api.slice(5, 6)}
+                indivPic={
+                  "https://i2-prod.walesonline.co.uk/incoming/article6289157.ece/ALTERNATES/s810/JS28547881.jpg"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/6to9yo/ArandoraStar"
+            element={
+              <Person
+                indivName={"The Arandora Star"}
+                slugText={
+                  "The ship sunk by a German torpedo killing Welsh Italians."
+                }
+                resource={api.slice(6, 7)}
+                indivPic={
+                  "https://upload.wikimedia.org/wikipedia/commons/7/72/Arandora_Star_1940.jpg"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/6to9yo/WilsonMonk"
+            element={
+              <Person
+                indivName={"Wilson Monk"}
+                slugText={"Member of the 320th Barrage Balloon Battalion."}
+                resource={api.slice(7, 8)}
+                indivPic={
+                  "https://images.squarespace-cdn.com/content/v1/55e4bcf2e4b01d0dc78c9848/1441893157537-7AL21O6U939POF0AYWGB/image-asset.jpeg"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/6to9yo/ShirleyBassey"
+            element={
+              <Person
+                indivName={"Dame Shirley Bassey"}
+                slugText={"The world famous Welsh singer from Tiger Bay."}
+                resource={api.slice(8, 9)}
+                indivPic={
+                  "https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F75b621da-8fff-4cfb-ad8e-d63040e1f7a8.jpg?fit=scale-down&source=next&width=700"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/9to12yo/ColinJackson"
+            element={
+              <Person
+                indivName={"Colin Jackson"}
+                slugText={"The Olympic medal winner."}
+                resource={nineApi.slice(3, 4)}
+                indivPic={
+                  "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/2ED2/production/_95868911_gettyimages-1852091.jpg"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/9to12yo/IrisWilliams"
+            element={
+              <Person
+                indivName={"Iris Williams"}
+                slugText={"The jazz legend from Wales."}
+                resource={nineApi.slice(4, 5)}
+                indivPic={
+                  "https://i2-prod.walesonline.co.uk/incoming/article1781243.ece/ALTERNATES/s615/iris-williams-61348596.jpg"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/9to12yo/PaulRobeson"
+            element={
+              <Person
+                indivName={"Paul Robeson"}
+                slugText={"The American singer who joined the miners strike."}
+                resource={nineApi.slice(5, 6)}
+                indivPic={
+                  "https://aaregistry.org/wp-content/uploads/2009/09/paul-robeson.jpg"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/9to12yo/Louisa"
+            element={
+              <Person
+                indivName={"Louisa BB Morgan"}
+                slugText={"The lady who's lived all around the world."}
+                resource={nineApi.slice(6, 7)}
+                indivPic={
+                  "https://m.media-amazon.com/images/M/MV5BZGRkNTgwM2YtZWUxNy00MDQzLWE5OTAtODU1MjVmYWE2ZjhiXkEyXkFqcGdeQXVyODIyODI5Mzc@._V1_.jpg"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/9to12yo/CliveSullivan"
+            element={
+              <Person
+                indivName={"Clive Sullivan"}
+                slugText={"The rugby league legend."}
+                resource={nineApi.slice(7, 8)}
+                indivPic={
+                  "https://e2.365dm.com/20/10/2048x1152/skysports-anthony-sullivan_5116431.jpg"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/9to12yo/JohnYstumllyn"
+            element={
+              <Person
+                indivName={"John Ystumllyn"}
+                slugText={"The 18th century slave who became a gardener."}
+                resource={nineApi.slice(8, 9)}
+                indivPic={
+                  "https://ichef.bbci.co.uk/news/976/cpsprodpb/FDB1/production/_121154946_johnystumllynpeople'scollection.png"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/9to12yo/TigerBay"
+            element={
+              <Person
+                indivName={"Tiger Bay"}
+                slugText={"The bustling multi-ethnic community in Cardiff Bay."}
+                resource={nineApi.slice(9, 10)}
+                indivPic={
+                  "https://i2-prod.walesonline.co.uk/incoming/article9925412.ece/ALTERNATES/s1227b/JS70059056.jpg"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/9to12yo/SidoliIceCream"
+            element={
+              <Person
+                indivName={"Sidoli Ice Cream"}
+                slugText={"The story of the award-winning ice cream."}
+                resource={nineApi.slice(10, 11)}
+                indivPic={
+                  "https://i2-prod.walesonline.co.uk/incoming/article17960109.ece/ALTERNATES/s1200c/0_RM_180320_Sidoli_IceCream_020.jpg"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/9to12yo/VernesterCyril"
+            element={
+              <Person
+                indivName={"Vernester Cyril"}
+                slugText={
+                  "The nurse from the Carribean who made a difference in Wales."
+                }
+                resource={nineApi.slice(11, 12)}
+                indivPic={
+                  "https://www.peoplescollection.wales/sites/default/files/styles/item_detail/public/images/2015/November/bay213.jpg"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/9to12yo/DomJames"
+            element={
+              <Person
+                indivName={"Dom James"}
+                slugText={"The Welsh rapper."}
+                resource={nineApi.slice(12, 13)}
+                indivPic={
+                  "https://ichef.bbci.co.uk/news/976/cpsprodpb/DBCD/production/_124296265_33020262_1243885189076260_6186539543915659264_n-1.jpg"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/12to16yo/JoeCalzaghe"
+            element={
+              <Person
+                indivName={"Joe Calzaghe"}
+                resource={twelveApi.slice(2, 3)}
+                slugText={"The super-middleweight world champion."}
+                indivPic={
+                  "https://upload.wikimedia.org/wikipedia/commons/a/a5/JoeCalzaghe-July2007.jpg"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/12to16yo/JasonMohammed"
+            element={
+              <Person
+                indivName={"Jason Mohammed"}
+                resource={twelveApi.slice(3, 4)}
+                slugText={
+                  "Newsreader, Television Presenter and Radio Presenter."
+                }
+                indivPic={
+                  "https://i2-prod.walesonline.co.uk/incoming/article24630322.ece/ALTERNATES/s1200/0_S4C-TV-PAGES.jpg"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/12to16yo/KizzyCrawford"
+            element={
+              <Person
+                indivName={"Kizzy Crawford"}
+                resource={twelveApi.slice(4, 5)}
+                slugText={"Award-winning Welsh singer / songwriter."}
+                indivPic={
+                  "https://ents24.imgix.net/image/000/158/543/f362a1cbe3eb9d638603c935c57a9f81ee7bd0bf.jpg?auto=format&crop=faces&w=1920&h=1920"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/12to16yo/AshleyWilliams"
+            element={
+              <Person
+                indivName={"Ashley Williams"}
+                resource={twelveApi.slice(5, 6)}
+                slugText={
+                  "Former professional footballer and captain of Wales."
+                }
+                indivPic={
+                  "https://i.guim.co.uk/img/media/f77982ffce62788f1ab622c5a878a0b186b5d2db/1450_147_4297_2578/master/4297.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=509500c71e7dcda098b5952a4f2ba212"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/12to16yo/JoeErskine"
+            element={
+              <Person
+                indivName={"Joe Erskine"}
+                resource={twelveApi.slice(6, 7)}
+                slugText={
+                  "Erskine was one of the most gifted British boxers of his day."
+                }
+                indivPic={
+                  "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/joe-erskine-keystone.jpg"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/12to16yo/ElizabethCampbell"
+            element={
+              <Person
+                indivName={"Elizabeth Campbell"}
+                resource={twelveApi.slice(7, 8)}
+                slugText={"Wales' First Black Headteacher."}
+                indivPic={
+                  "https://ichef.bbci.co.uk/news/976/cpsprodpb/13CF5/production/_98314118_bettyclean.jpg"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/12to16yo/GaneshSubrahmanyam"
+            element={
+              <Person
+                indivName={"Ganesh Subrahmanyam"}
+                resource={twelveApi.slice(8, 9)}
+                slugText={"The Indian Doctor."}
+                indivPic={
+                  "https://ichef.bbci.co.uk/images/ic/240x135/p0b6ksrg.jpg"
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/12to16yo/VaughanGething"
+            element={
+              <Person
+                indivName={"Vaughan Gething"}
+                resource={twelveApi.slice(9, 10)}
+                slugText={"The Welsh Labour Politician."}
+                indivPic={
+                  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Vaughan_Gething.jpg/800px-Vaughan_Gething.jpg"
+                }
+              ></Person>
+            }
+          ></Route>
+
           <Route path="/index" element={<Index />}></Route>
         </Routes>
       </LanguageContext.Provider>
