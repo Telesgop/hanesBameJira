@@ -5,6 +5,7 @@ import threetosix from "../../3to6.json";
 import Copyright from "../Copyright/Copyright";
 import { Link } from "react-router-dom";
 import "./ThreeToSix.css";
+import { BiSearchAlt } from "react-icons/bi";
 
 const ThreeToSix = () => {
   const { lang, setLang } = useContext(LanguageContext);
@@ -21,6 +22,7 @@ const ThreeToSix = () => {
           className="searchInput"
           placeholder={lang !== true ? "Search" : "Chwilio"}
         ></input>
+        <BiSearchAlt className="magnifyingGlass" />
       </div>
       <div className="storiesContainer">
         {query == "" && (

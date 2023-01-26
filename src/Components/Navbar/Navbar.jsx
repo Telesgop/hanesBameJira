@@ -43,7 +43,7 @@ const Navbar = () => {
         </Link>
         <motion.div tabIndex="0" whileHover={{ scale: 1.2 }}>
           <div onClick={handleInfo} className="hoverNav">
-            <GrNotes style={{ transform: "scale(1.3)" }} />
+            <GrNotes style={{ transform: "scale(1.1)" }} />
           </div>
         </motion.div>
         <Link to={"/index"}>

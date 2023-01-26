@@ -5,6 +5,7 @@ import StoryBox from "../StoryBox/StoryBox";
 import twelvetosixteen from "../../12to16.json";
 import Copyright from "../Copyright/Copyright";
 import { Link } from "react-router-dom";
+import { BiSearchAlt } from "react-icons/bi";
 
 const TwelveToSixteen = () => {
   const { lang, setLang } = useContext(LanguageContext);
@@ -21,6 +22,7 @@ const TwelveToSixteen = () => {
           className="searchInput"
           placeholder={lang !== true ? "Search" : "Chwilio"}
         ></input>
+        <BiSearchAlt className="magnifyingGlass" />
       </div>
       <div className="storiesContainer">
         {query == "" && (

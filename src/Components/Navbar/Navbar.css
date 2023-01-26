@@ -18,11 +18,11 @@
   width: 70vw;
   display: flex;
   font-weight: bold;
-  font-size: larger;
+  font-size: large;
   justify-content: flex-start;
   padding-left: 1rem;
   z-index: 9;
-  font-family: "Mona Sans", sans-serif;
+  font-family: "Futura", sans-serif;
 }
 
 .modal {
@@ -57,8 +57,6 @@
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  /* background-color: rgb(0, 0, 0); Fallback color */
-  /* background-color: rgba(0, 0, 0, 0.4); Black w/ opacity */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,9 +128,7 @@
 }
 
 .hoverNavCym {
-  /* border: 1px solid black; */
   height: 5vh;
-  /* width: 10vw; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,14 +150,13 @@
 }
 
 .translateImg {
-  /* height: 20px; */
   object-fit: cover;
   height: 3.5vh;
   width: 3vw;
   border-radius: 10px;
-  border: 1.5px solid black;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   background-size: cover;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .homebutton {
@@ -180,19 +175,6 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.langbutton {
-  border: 1px solid black;
-  color: rgb(227, 50, 50);
-  background-color: rgb(189, 50, 50);
-  border-radius: 25px;
-  height: 3vh;
-  transform: scale(1.5);
-  width: 50px;
-  font-family: "Mona-Sans Regular", sans-serif;
-  z-index: 9;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
 .infobutton {
   border: 1px solid black;
   color: white;
@@ -204,12 +186,6 @@
   z-index: 9;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   height: 3vh;
-}
-.langbutton:hover {
-  cursor: pointer;
-  color: #258ea6;
-  background-color: white;
-  z-index: 9;
 }
 
 .homebutton:hover {

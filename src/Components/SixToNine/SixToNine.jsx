@@ -3,7 +3,7 @@ import "./SixToNine.css";
 import { LanguageContext } from "../../Helper/Context";
 import StoryBox from "../StoryBox/StoryBox";
 import { useParams } from "react-router-dom";
-
+import { BiSearchAlt } from "react-icons/bi";
 import Copyright from "../Copyright/Copyright";
 import { Link } from "react-router-dom";
 import api from "../../api.json";
@@ -23,6 +23,7 @@ const SixToNine = () => {
           className="searchInput"
           placeholder={lang !== true ? "Search" : "Chwilio"}
         ></input>
+        <BiSearchAlt className="magnifyingGlass" />
       </div>
       <div className="storiesContainer">
         {query == "" && (

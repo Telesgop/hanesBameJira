@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/hanesbame/static/css/main.7a37a532.css",
-    "main.js": "/hanesbame/static/js/main.6a816226.js",
+    "main.css": "/hanesbame/static/css/main.398df828.css",
+    "main.js": "/hanesbame/static/js/main.7d6b26f6.js",
     "static/media/wales.png": "/hanesbame/static/media/wales.9007763c02b4a1afaa22.png",
     "static/media/united-kingdom.png": "/hanesbame/static/media/united-kingdom.789ff1da7dc0b7ff0220.png",
     "static/media/wgLogo.png": "/hanesbame/static/media/wgLogo.06fdf6239de01cc1ef2d.png",
     "index.html": "/hanesbame/index.html",
-    "main.7a37a532.css.map": "/hanesbame/static/css/main.7a37a532.css.map",
-    "main.6a816226.js.map": "/hanesbame/static/js/main.6a816226.js.map"
+    "main.398df828.css.map": "/hanesbame/static/css/main.398df828.css.map",
+    "main.7d6b26f6.js.map": "/hanesbame/static/js/main.7d6b26f6.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a37a532.css",
-    "static/js/main.6a816226.js"
+    "static/css/main.398df828.css",
+    "static/js/main.7d6b26f6.js"
   ]
 }

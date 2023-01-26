@@ -12,8 +12,9 @@
 }
 .personInfoAnimCard {
   background-color: white;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   border-radius: 15px !important;
   width: 75vw;
