@@ -18,6 +18,7 @@ const Person = ({
   welshSlugText,
   resource,
   noInList,
+  proposedResource,
 }) => {
   const { lang, setLang } = useContext(LanguageContext);
   const [slide, setSlide] = useState(0);
@@ -131,7 +132,7 @@ const Person = ({
                 <div className="backLeft">
                   <div className="backLText">
                     {" "}
-                    Here will be a resource: video, podcast, etc.
+                    Proposed resource: {proposedResource}
                   </div>
                 </div>
                 <div className="backRight">

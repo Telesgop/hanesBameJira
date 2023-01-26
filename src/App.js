@@ -8,8 +8,6 @@ import SixToNine from "./Components/SixToNine/SixToNine";
 import Person from "./Components/Person/Person";
 import PersonBack from "./Components/Person/PersonBack";
 import NineToTwelve from "./Components/NineToTwelve/NineToTwelve";
-import johnBackground from "./Images/johnWBackground.jpeg";
-import PersonTVBack from "./Components/Person/PersonTVBack";
 import Index from "./Components/Index/Index";
 import ThreeToSix from "./Components/ThreeToSix/ThreeToSix";
 import TwelveToSixteen from "./Components/TwelveToSixteen/TwelveToSixteen";
@@ -46,6 +44,9 @@ function App() {
             element={
               <Person
                 indivName={"Richard Parks"}
+                proposedResource={
+                  "Emily Pemberton to interview Richard Parks? Or Podcast "
+                }
                 // indivPic={char1}
                 text={
                   <ul>
@@ -313,6 +314,7 @@ function App() {
             element={
               <Person
                 resource={twelveApi.slice(0, 1)}
+                proposedResource={"Podcast with Theo Cabango"}
                 indivName={"Glenn Webbe"}
                 indivPic={
                   "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/DC57/production/_113170465_shutterstock_editorial_3156656a.jpg"
@@ -449,6 +451,7 @@ function App() {
             element={
               <Person
                 indivName={"Penrhyn Castle"}
+                proposedResource={"Filming of building with voiceover."}
                 resource={nineApi.slice(2, 1)}
                 indivPic={
                   "http://changing-pages.com/wp-content/uploads/2019/05/IMG_4201-1440x1001.jpg"
@@ -597,6 +600,9 @@ function App() {
             element={
               <Person
                 indivName={"Hans Lichtenstein"}
+                proposedResource={
+                  "Interview with Jane (daughter) or footage from S4C programme."
+                }
                 indivPic={
                   "https://i.guim.co.uk/img/media/7c810c258320be244e1d7d4d721e8a171409c677/180_145_1240_744/master/1240.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=d36ac08cc3c44a21c37572bfc483bb4c"
                 }
@@ -743,6 +749,7 @@ function App() {
             element={
               <Person
                 resource={api.slice(1, 2)}
+                proposedResource={"Film the building with voice over."}
                 indivName={"Merthyr Tydfil Synagogue"}
                 indivPic={
                   "https://upload.wikimedia.org/wikipedia/commons/7/78/The_Top_of_Church_Street%2C_Merthyr_Tydfil_%28geograph_4834858%29.jpg"
@@ -861,6 +868,7 @@ function App() {
             element={
               <Person
                 indivName={"Reuel Elijah"}
+                proposedResource={"Interview with Reuel."}
                 slugText={"Musician, performer and dancer."}
                 resource={api.slice(2, 3)}
                 indivPic={
@@ -874,6 +882,7 @@ function App() {
             element={
               <Person
                 indivName={"Lenn Lawrence"}
+                proposedResource={"Discussion points."}
                 slugText={
                   "Carpenter and co-former of the Carribean Friendship Society."
                 }
@@ -889,6 +898,9 @@ function App() {
             element={
               <Person
                 indivName={"Teleri Gray"}
+                proposedResource={
+                  "Footage from tv programmes re: Romani people."
+                }
                 slugText={"Romani Storyteller."}
                 resource={api.slice(4, 5)}
                 indivPic={
@@ -901,6 +913,7 @@ function App() {
             path="/6to9yo/FongSui"
             element={
               <Person
+                proposedResource={"Factfile including discussion points."}
                 indivName={"Fong Sui"}
                 slugText={"First Generation Chinese in Wales."}
                 resource={api.slice(5, 6)}
@@ -914,6 +927,7 @@ function App() {
             path="/6to9yo/ArandoraStar"
             element={
               <Person
+                proposedResource={"Interview  with Nick Servini? "}
                 indivName={"The Arandora Star"}
                 slugText={
                   "The ship sunk by a German torpedo killing Welsh Italians."
@@ -930,6 +944,7 @@ function App() {
             element={
               <Person
                 indivName={"Wilson Monk"}
+                proposedResource={"Factfile including discussion points."}
                 slugText={"Member of the 320th Barrage Balloon Battalion."}
                 resource={api.slice(7, 8)}
                 indivPic={
@@ -943,6 +958,9 @@ function App() {
             element={
               <Person
                 indivName={"Dame Shirley Bassey"}
+                proposedResource={
+                  "Podcast with Mel and Emily? Or Aleighia Scott?"
+                }
                 slugText={"The world famous Welsh singer from Tiger Bay."}
                 resource={api.slice(8, 9)}
                 indivPic={
@@ -956,6 +974,7 @@ function App() {
             element={
               <Person
                 indivName={"Colin Jackson"}
+                proposedResource={"Interview with Colin and his sister?"}
                 slugText={"The Olympic medal winner."}
                 resource={nineApi.slice(3, 4)}
                 indivPic={
@@ -969,6 +988,9 @@ function App() {
             element={
               <Person
                 indivName={"Iris Williams"}
+                proposedResource={
+                  "Footage of TV interview of Iris with Matthew Rhys."
+                }
                 slugText={"The jazz legend from Wales."}
                 resource={nineApi.slice(4, 5)}
                 indivPic={
@@ -982,6 +1004,7 @@ function App() {
             element={
               <Person
                 indivName={"Paul Robeson"}
+                proposedResource={"?"}
                 slugText={"The American singer who joined the miners strike."}
                 resource={nineApi.slice(5, 6)}
                 indivPic={
@@ -995,6 +1018,7 @@ function App() {
             element={
               <Person
                 indivName={"Louisa BB Morgan"}
+                proposedResource={"Factfile with discussion points."}
                 slugText={"The lady who's lived all around the world."}
                 resource={nineApi.slice(6, 7)}
                 indivPic={
@@ -1008,6 +1032,7 @@ function App() {
             element={
               <Person
                 indivName={"Clive Sullivan"}
+                proposedResource={"?"}
                 slugText={"The rugby league legend."}
                 resource={nineApi.slice(7, 8)}
                 indivPic={
@@ -1034,6 +1059,7 @@ function App() {
             element={
               <Person
                 indivName={"Tiger Bay"}
+                proposedResource={"S4C clip of flower from Garddio a Mwy."}
                 slugText={"The bustling multi-ethnic community in Cardiff Bay."}
                 resource={nineApi.slice(9, 10)}
                 indivPic={
@@ -1047,6 +1073,7 @@ function App() {
             element={
               <Person
                 indivName={"Sidoli Ice Cream"}
+                proposedResource={"Interview with family member."}
                 slugText={"The story of the award-winning ice cream."}
                 resource={nineApi.slice(10, 11)}
                 indivPic={
@@ -1063,6 +1090,7 @@ function App() {
                 slugText={
                   "The nurse from the Carribean who made a difference in Wales."
                 }
+                proposedResource={"Interview with Anwen's niece."}
                 resource={nineApi.slice(11, 12)}
                 indivPic={
                   "https://www.peoplescollection.wales/sites/default/files/styles/item_detail/public/images/2015/November/bay213.jpg"
@@ -1075,6 +1103,7 @@ function App() {
             element={
               <Person
                 indivName={"Dom James"}
+                proposedResource={"Podcast with Dom."}
                 slugText={"The Welsh rapper."}
                 resource={nineApi.slice(12, 13)}
                 indivPic={
@@ -1088,6 +1117,7 @@ function App() {
             element={
               <Person
                 indivName={"Joe Calzaghe"}
+                proposedResource={"?"}
                 resource={twelveApi.slice(2, 3)}
                 slugText={"The super-middleweight world champion."}
                 indivPic={
@@ -1101,6 +1131,7 @@ function App() {
             element={
               <Person
                 indivName={"Jason Mohammed"}
+                proposedResource={"Interview with Mirain Iwerydd."}
                 resource={twelveApi.slice(3, 4)}
                 slugText={
                   "Newsreader, Television Presenter and Radio Presenter."
@@ -1116,6 +1147,7 @@ function App() {
             element={
               <Person
                 indivName={"Kizzy Crawford"}
+                proposedResource={"Interview of podcast with Kizzy herself?"}
                 resource={twelveApi.slice(4, 5)}
                 slugText={"Award-winning Welsh singer / songwriter."}
                 indivPic={
@@ -1128,6 +1160,7 @@ function App() {
             path="/12to16yo/AshleyWilliams"
             element={
               <Person
+                proposedResource={"With Ben Cabango? Or with Ashley himself?"}
                 indivName={"Ashley Williams"}
                 resource={twelveApi.slice(5, 6)}
                 slugText={
@@ -1145,6 +1178,7 @@ function App() {
               <Person
                 indivName={"Joe Erskine"}
                 resource={twelveApi.slice(6, 7)}
+                proposedResource={"Factfile and discussion topics."}
                 slugText={
                   "Erskine was one of the most gifted British boxers of his day."
                 }
@@ -1159,6 +1193,9 @@ function App() {
             element={
               <Person
                 indivName={"Elizabeth Campbell"}
+                proposedResource={
+                  "Mel interviewing Natalie Jones? or Wayne (Connagh's dad?)"
+                }
                 resource={twelveApi.slice(7, 8)}
                 slugText={"Wales' First Black Headteacher."}
                 indivPic={
@@ -1173,6 +1210,9 @@ function App() {
               <Person
                 indivName={"Ganesh Subrahmanyam"}
                 resource={twelveApi.slice(8, 9)}
+                proposedResource={
+                  "Interview with the Dr himself or Dr Rini Chatterjee – 2nd second generation GP based in Merthyr."
+                }
                 slugText={"The Indian Doctor."}
                 indivPic={
                   "https://ichef.bbci.co.uk/images/ic/240x135/p0b6ksrg.jpg"
@@ -1185,6 +1225,9 @@ function App() {
             element={
               <Person
                 indivName={"Vaughan Gething"}
+                proposedResource={
+                  "Interview with school children about his career as a politician and the challenges he has faced. OR podcast with Emily Pemberton."
+                }
                 resource={twelveApi.slice(9, 10)}
                 slugText={"The Welsh Labour Politician."}
                 indivPic={
