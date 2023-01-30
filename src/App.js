@@ -15,11 +15,19 @@ import AnimCard from "./Components/AnimCard/AnimCard";
 import api from "./api.json";
 import nineApi from "./9to12.json";
 import twelveApi from "./12to16.json";
+import ScrollToTop from "./Components/ScrollToTop";
+import dom from "./Podcasts/DomJames/domEng.mp3";
+import theo from "./Podcasts/TheoCabango/theoEng.mp3";
+import emily from "./Podcasts/Emily/emilyEng.mp3";
+import domCym from "./Podcasts/DomJames/domCym.mp3";
+import theoCym from "./Podcasts/TheoCabango/theoCym.mp3";
+import emilyCym from "./Podcasts/Emily/emilyCym.mp3";
 
 function App() {
   const [lang, setLang] = useState(false);
   return (
     <BrowserRouter basename="/hanesbame">
+      <ScrollToTop />
       <meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
 
       <LanguageContext.Provider className="App" value={{ lang, setLang }}>
@@ -44,6 +52,8 @@ function App() {
             element={
               <Person
                 indivName={"Richard Parks"}
+                indivNameCym={"Richard Parks"}
+                resourcesAnch={("s", "s", "a")}
                 proposedResource={
                   "Emily Pemberton to interview Richard Parks? Or Podcast "
                 }
@@ -191,6 +201,7 @@ function App() {
               <Person
                 resource={twelveApi.slice(1, 2)}
                 indivName={"Nigel Walker"}
+                indivNameCym={"Nigel Walker"}
                 indivPic={
                   "https://i.dailymail.co.uk/1s/2019/04/15/23/12319446-0-image-m-55_1555369161657.jpg"
                 }
@@ -242,6 +253,7 @@ function App() {
                     </li>
                   </ul>
                 }
+                backLContent={"Factfile and discussion topics."}
                 welshText={
                   <ul>
                     <li>
@@ -314,8 +326,8 @@ function App() {
             element={
               <Person
                 resource={twelveApi.slice(0, 1)}
-                proposedResource={"Podcast with Theo Cabango"}
                 indivName={"Glenn Webbe"}
+                indivNameCym={"Glenn Webbe"}
                 indivPic={
                   "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/DC57/production/_113170465_shutterstock_editorial_3156656a.jpg"
                 }
@@ -443,6 +455,19 @@ function App() {
                 backWelshText={
                   "Gobeithio bod yr hiliaeth a brofodd Glenn a’r disgwyliad y byddai’n ‘parhau i chwarae’ er gwaetha’r ffaith ei fod wedi dioddef anaf i’w ben, bellach yn wirioneddol yn y gorffennol."
                 }
+                backLContent={
+                  <>
+                    <audio controls>
+                      <source src={theo} type="audio/mpeg" />
+                    </audio>
+                    <p>Podcast: Theo Cabango and Mel Owen in discussion.</p>
+                  </>
+                }
+                backLContentCym={
+                  <audio controls>
+                    <source src={theoCym} type="audio/mpeg" />
+                  </audio>
+                }
               ></Person>
             }
           ></Route>
@@ -451,6 +476,7 @@ function App() {
             element={
               <Person
                 indivName={"Penrhyn Castle"}
+                indivNameCym={"Castell Penrhyn"}
                 proposedResource={"Filming of building with voiceover."}
                 resource={nineApi.slice(2, 1)}
                 indivPic={
@@ -600,6 +626,7 @@ function App() {
             element={
               <Person
                 indivName={"Hans Lichtenstein"}
+                indivNameCym={"Hans Lichtenstein"}
                 proposedResource={
                   "Interview with Jane (daughter) or footage from S4C programme."
                 }
@@ -751,6 +778,7 @@ function App() {
                 resource={api.slice(1, 2)}
                 proposedResource={"Film the building with voice over."}
                 indivName={"Merthyr Tydfil Synagogue"}
+                indivNameCym={"Synagog Merthyr Tudful"}
                 indivPic={
                   "https://upload.wikimedia.org/wikipedia/commons/7/78/The_Top_of_Church_Street%2C_Merthyr_Tydfil_%28geograph_4834858%29.jpg"
                 }
@@ -868,11 +896,80 @@ function App() {
             element={
               <Person
                 indivName={"Reuel Elijah"}
+                indivNameCym={"Reuel Elijah"}
                 proposedResource={"Interview with Reuel."}
                 slugText={"Musician, performer and dancer."}
                 resource={api.slice(2, 3)}
                 indivPic={
                   "https://i.scdn.co/image/ab6761610000e5eb60d8b331c307dce08e839b02"
+                }
+                text={
+                  <ul>
+                    <li>
+                      Reuel Elijah (born Marlon Bertram) was born on 25th May
+                      1996, and raised in Cardiff.{" "}
+                    </li>
+                    <li>
+                      In Reuel’s early years, he studied at ‘The Gate’
+                      Performing arts school, taking part in many musicals.{" "}
+                    </li>
+                    <li>
+                      Reuel’s family enjoyed music at home – especially jazz.{" "}
+                    </li>
+
+                    <li>
+                      The family also attended Pentecostal church: his mum was
+                      in the choir, and his father played the organ.{" "}
+                    </li>
+
+                    <li>
+                      Asked to describe the importance of music, Reuel replies:
+                      ‘Music is a really big part of who I am. I love how it
+                      makes me feel, move... there’s so much to it, too much to
+                      comprehend...’{" "}
+                    </li>
+
+                    <li>
+                      During his teenage/high school years, Reuel joined
+                      “Jukebox Juniors” – which was crowned third best dance
+                      group in the world at the Hip-hop Internationals in Las
+                      Vegas, and runners up in Sky 1’s Got to Dance finals in
+                      2010.{" "}
+                    </li>
+
+                    <li>
+                      Also in these years, Reuel began nurturing his singing and
+                      rapping at vocal school “EYK” (Expression of the Young
+                      Kind) in Cardiff.{" "}
+                    </li>
+
+                    <li>
+                      It was at EYK that Reuel saw his future in music and
+                      performing.{" "}
+                    </li>
+
+                    <li>
+                      In 2012 Reuel finished college and invested in his own
+                      recording resources and started to get creative with his
+                      own sound.{" "}
+                    </li>
+
+                    <li>
+                      His early cover of Drake’s ‘Girls Love Beyonce’, picked up
+                      thousands of views on YouTube.{" "}
+                    </li>
+
+                    <li>
+                      In 2016, Reuel was a part of the BBC Horizons scheme,
+                      where he was chosen to tour around the UK. The following
+                      year, Reuel made a surprise appearance on X-Factor.{" "}
+                    </li>
+
+                    <li>
+                      In 2018 Reuel Released his debut album ‘Alignment’ – it
+                      charted Top 24 in the Hip Hop/Rap iTunes Charts.{" "}
+                    </li>
+                  </ul>
                 }
               ></Person>
             }
@@ -882,6 +979,7 @@ function App() {
             element={
               <Person
                 indivName={"Lenn Lawrence"}
+                indivNameCym={"Lenn Lawrence"}
                 proposedResource={"Discussion points."}
                 slugText={
                   "Carpenter and co-former of the Carribean Friendship Society."
@@ -889,6 +987,50 @@ function App() {
                 resource={api.slice(3, 4)}
                 indivPic={
                   "https://blackhistorywales.org.uk/wp-content/uploads/2020/07/Screenshot-2020-07-09-at-07.56.04.png"
+                }
+                text={
+                  <ul>
+                    <li>
+                      Lenn Lawrence was the first black carpenter and foreman
+                      for the British Steel Corporation in Neath Port Talbot.{" "}
+                    </li>
+                    <li>
+                      Lenn helped build the M4 motorway, the deep-water dock for
+                      Marple ridgeway, Port Talbot town centre, the Pontdrefen
+                      bridge and many more sites.{" "}
+                    </li>
+                    <li>
+                      Being an ethnic minority in 1962 in Wales was difficult
+                      and this led Lenn and other members of the community to
+                      start the Caribbean Friendship Society. Together they met
+                      with the police, councilors and other agencies.{" "}
+                    </li>
+
+                    <li>
+                      Although the Caribbean Friendship Society lacked funds,
+                      Lenn and other members used their own money to set up
+                      meetings in each other’s houses, in a shed at the back of
+                      Corporation Road or at the Talbot pub.{" "}
+                    </li>
+
+                    <li>
+                      In 1981, the Caribbean Friendship Society relocated to
+                      Swansea and lasted until 1992, when it evolved into
+                      Swansea Bay Regional Equality Council.{" "}
+                    </li>
+
+                    <li>
+                      Today it still upholds its initial principle, which is to
+                      value the rights of people.{" "}
+                    </li>
+
+                    <li>Lenn Lawrence is a patron of Black History Wales. </li>
+                    <li>
+                      Though determination and a belief in treating people
+                      fairly, Lenn Lawrence became widely respected as both
+                      hardworking and for promoting the rights of people.
+                    </li>
+                  </ul>
                 }
               ></Person>
             }
@@ -898,6 +1040,7 @@ function App() {
             element={
               <Person
                 indivName={"Teleri Gray"}
+                indivNameCym={"Teleri Gray"}
                 proposedResource={
                   "Footage from tv programmes re: Romani people."
                 }
@@ -905,6 +1048,79 @@ function App() {
                 resource={api.slice(4, 5)}
                 indivPic={
                   "https://live.staticflickr.com/655/22408268685_a9ec39be94_b.jpg"
+                }
+                text={
+                  <ul>
+                    <li>Gypsies have lived in Wales for over 400 years. </li>
+                    <li>
+                      Today there are about 1092 travelers caravans in Wales.{" "}
+                    </li>
+
+                    <li>Wales also has around 136 traveler sites. </li>
+
+                    <li>
+                      The Welsh Romani have given Wales a lot to be proud of.{" "}
+                    </li>
+
+                    <li>
+                      The Romani community has a rich, beautiful culture.{" "}
+                    </li>
+
+                    <li>
+                      They are very fond of creating music, writing poetry,
+                      storytelling and dancing.{" "}
+                    </li>
+
+                    <li>
+                      John Roberts, a Welsh gypsy, performed around Europe and
+                      in front of royalty.{" "}
+                    </li>
+
+                    <li>
+                      Many of the customs and traditions of the Romanis are
+                      being forgotten though.{" "}
+                    </li>
+                    <li>
+                      Teleri Gray is a Romani storyteller and she is helping
+                      people to remember about the Traveller’s history.{" "}
+                    </li>
+                    <li>
+                      Teleri and her sister are the only two Gypsy teachers in
+                      Wales.{" "}
+                    </li>
+
+                    <li>
+                      Teleri’s ancestors were famous Romani musicians. Her
+                      grandfather, her great- grandfather and her great great
+                      grandfather played the harp. Teleri’s
+                      great-great-grandfather John Roberts was known as the
+                      Harpist of Wales (or Telynor Cymru). As famous musicians,
+                      they traveled all over Wales, performing in the homes of
+                      rich people.{" "}
+                    </li>
+
+                    <li>
+                      Teleri also talks about what life is like for Traveller
+                      children and their families today.{" "}
+                    </li>
+
+                    <li>
+                      Life can be very hard for Romani’s. They are not always
+                      welcomed in communities because there are a lot of false
+                      things said about them and people do not understand the
+                      way they choose to live.{" "}
+                    </li>
+
+                    <li>
+                      The Romanis in Wales are a big part of Wales’ national
+                      identity.{" "}
+                    </li>
+
+                    <li>
+                      Memories and archives are now being collected to preserve
+                      their culture.{" "}
+                    </li>
+                  </ul>
                 }
               ></Person>
             }
@@ -915,10 +1131,71 @@ function App() {
               <Person
                 proposedResource={"Factfile including discussion points."}
                 indivName={"Fong Sui"}
+                indivNameCym={"Fong Sui"}
                 slugText={"First Generation Chinese in Wales."}
                 resource={api.slice(5, 6)}
                 indivPic={
                   "https://i2-prod.walesonline.co.uk/incoming/article6289157.ece/ALTERNATES/s810/JS28547881.jpg"
+                }
+                text={
+                  <ul>
+                    <li>
+                      Many of today’s older Chinese people living in Wales
+                      arrived as children and young adults during the 1940s -
+                      1970s.{" "}
+                    </li>
+                    <li>
+                      A lot came from Hong Kong and the Guangdong province.{" "}
+                    </li>
+
+                    <li>
+                      Many of these people were put to work in Chinese
+                      restaurants whilst others opened their own laundrettes.{" "}
+                    </li>
+
+                    <li>
+                      Fong Sui came to Wales from her home village in China as a
+                      new bride to her husband Chi Mau Chin.{" "}
+                    </li>
+
+                    <li>
+                      The young couple went on to open one of the first Chinese
+                      laundries in Swansea.{" "}
+                    </li>
+
+                    <li>They also opened a brand new restaurant. </li>
+
+                    <li>Life was very hard when Fong Sui arrived in Wales. </li>
+
+                    <li>
+                      She was put in a laundry, given just one meal a day and
+                      ironed 100 garments each shift, where she often burnt
+                      herself.{" "}
+                    </li>
+
+                    <li>
+                      At the age of 18, she moved with her husband to Swansea to
+                      run the KKK laundry in Bryn-y-Mor Road.{" "}
+                    </li>
+
+                    <li>
+                      They borrowed £500 from friends to be partners of the
+                      now-closed Ming Yon restaurant which they ran for seven
+                      years.{" "}
+                    </li>
+
+                    <li>
+                      Fong Sui working in the laundry by day, the restaurant two
+                      nights a week and raising four children.{" "}
+                    </li>
+                    <li>Fong Sui is now a widow and grandmother of seven. </li>
+                    <li>
+                      Fong Sui’s story is very similar to many young Chinese
+                      girls arriving in Wales during the mid-20th century. Life
+                      was very difficult but they worked very hard and left a
+                      lasting legacy in Wales.{" "}
+                    </li>
+                  </ul>
                 }
               ></Person>
             }
@@ -929,12 +1206,81 @@ function App() {
               <Person
                 proposedResource={"Interview  with Nick Servini? "}
                 indivName={"The Arandora Star"}
+                indivNameCym={"The Arandora Star"}
                 slugText={
                   "The ship sunk by a German torpedo killing Welsh Italians."
                 }
                 resource={api.slice(6, 7)}
                 indivPic={
                   "https://upload.wikimedia.org/wikipedia/commons/7/72/Arandora_Star_1940.jpg"
+                }
+                text={
+                  <ul>
+                    <li>
+                      The SS Arandora Star was a ship that had once been used
+                      for cruises.{" "}
+                    </li>
+                    <li>
+                      During World War Two it was then used to carry soldiers.{" "}
+                    </li>
+
+                    <li>She was painted grey and guns were added. </li>
+
+                    <li>
+                      In 1940 the ship took prisoners of war from Britain who
+                      were to be sent to camps in Canada.
+                    </li>
+
+                    <li>
+                      The ship had too many passengers - 1678 men boarded but
+                      the ship should only have taken 500.{" "}
+                    </li>
+
+                    <li>734 of these men were Welsh Italian. </li>
+
+                    <li>
+                      Among these Welsh Italians, many lived in the valleys of
+                      south Wales.{" "}
+                    </li>
+
+                    <li>
+                      These Italian men were declared “enemy aliens” by the
+                      British government despite their families moving to Wales
+                      decades before.{" "}
+                    </li>
+
+                    <li>
+                      On 2 July 1940, just one day into the journey, a German
+                      torpedo hit The Arandora Star.{" "}
+                    </li>
+
+                    <li>
+                      The ship was just off the coast of Ireland at the time.{" "}
+                    </li>
+
+                    <li>
+                      The ship wasn’t displaying the International Red Cross
+                      symbol – this would have told other ships that it was
+                      carrying civilians on board, and therefore shouldn’t be
+                      fired at.{" "}
+                    </li>
+
+                    <li>More than 800 lives were lost. </li>
+
+                    <li>53 Welsh Italians died. </li>
+
+                    <li>
+                      Lifeboats that could have been used to rescue some men
+                      were blocked by heavy wire so people couldn’t get at them.
+                      The barbed wire placed on deck also caused major problems.{" "}
+                    </li>
+
+                    <li>
+                      The women and the children left changed the rules of
+                      deporting civilians and helped to change British policy on
+                      internment.{" "}
+                    </li>
+                  </ul>
                 }
               ></Person>
             }
@@ -944,11 +1290,73 @@ function App() {
             element={
               <Person
                 indivName={"Wilson Monk"}
+                indivNameCym={"Wilson Monk"}
                 proposedResource={"Factfile including discussion points."}
                 slugText={"Member of the 320th Barrage Balloon Battalion."}
                 resource={api.slice(7, 8)}
                 indivPic={
                   "https://images.squarespace-cdn.com/content/v1/55e4bcf2e4b01d0dc78c9848/1441893157537-7AL21O6U939POF0AYWGB/image-asset.jpeg"
+                }
+                text={
+                  <ul>
+                    <li>
+                      In February 1944, the 320th Barrage Balloon Battalion, a
+                      unit of the 621 men from the US Army, arrived in
+                      Pontypool.{" "}
+                    </li>
+                    <li>
+                      They were part of the 130,000 black US troops stationed
+                      all over Britain who were assembling for D-Day in World
+                      War Two as part of a large Allied force.{" "}
+                    </li>
+                    <li>
+                      The Battalion had white officers in charge of black
+                      soldiers - the US Army practiced segregation.
+                    </li>
+                    <li>
+                      Five medics from the Battalion arrived on Omaha Beach on 6
+                      June 1944. The rest of the Battalion soon followed. {" "}
+                    </li>
+                    <li>
+                      As a Barrage Balloon Battalion their job was to raise
+                      helium balloons over the invasion beaches to prevent
+                      German airplanes from flying over the beaches.{" "}
+                    </li>
+                    <li>
+                      These men found Wales a very different country to the one
+                      they had come from. Wales had very different attitudes to
+                      America in the way residents treated black people. It was
+                      a surprisingly positive experience for the black soldiers.{" "}
+                    </li>
+
+                    <li>
+                      One member of the 320th who found a welcome in Wales was
+                      Wilson Caldwell Monk.{" "}
+                    </li>
+
+                    <li>
+                      Monk, before joining the army, had held down as many jobs
+                      as he could squeeze into a day. He mopped floors,
+                      delivered pharmacy orders, sold salt-water taffy and
+                      waited on tables in restaurants that would never serve a
+                      black man like himself.{" "}
+                    </li>
+
+                    <li>
+                      When America entered the war in 1941, and he traveled to
+                      Wales, he met people like Jessie Prior.{" "}
+                    </li>
+
+                    <li>
+                      Jessie looked after Monk as if he was her son and wrote to
+                      his own mother saying he was being looked after in Wales.{" "}
+                    </li>
+
+                    <li>
+                      The people of Wales taught Monk that not everyone treated
+                      black people badly.{" "}
+                    </li>
+                  </ul>
                 }
               ></Person>
             }
@@ -958,6 +1366,7 @@ function App() {
             element={
               <Person
                 indivName={"Dame Shirley Bassey"}
+                indivNameCym={"Y Fonesig Shirley Bassey"}
                 proposedResource={
                   "Podcast with Mel and Emily? Or Aleighia Scott?"
                 }
@@ -965,6 +1374,139 @@ function App() {
                 resource={api.slice(8, 9)}
                 indivPic={
                   "https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F75b621da-8fff-4cfb-ad8e-d63040e1f7a8.jpg?fit=scale-down&source=next&width=700"
+                }
+                text={
+                  <ul>
+                    <li>
+                      Dame Shirley was one of the first Black British
+                      entertainers to gain national and international fame. Her
+                      powerful expressive voice has made her one of the most
+                      popular singers in the world.{" "}
+                    </li>
+                    <li>
+                      She has sold over 135 million records and was the first
+                      Welsh artist to achieve a UK number one single in 1959.{" "}
+                    </li>
+
+                    <li>
+                      Dame Shirley was born in Tiger Bay, Cardiff. Her
+                      father was Nigerian, and her mother came from Teesside.  {" "}
+                    </li>
+
+                    <li>
+                      After leaving school at age 15, she worked in a factory,
+                      sang in men’s clubs, and performed in touring revues
+                      before making her breakthrough in a Christmas show in
+                      London in 1955.{" "}
+                    </li>
+
+                    <li>
+                      Landing a record contract, she had her first British hit
+                      in 1957 with “Banana Boat Song.”{" "}
+                    </li>
+
+                    <li>
+                      Over her long career she has had 27 Top 40 hits in the UK,
+                      including two number-ones.{" "}
+                    </li>
+
+                    <li>
+                      She became well-known for recording the soundtrack theme
+                      songs of the James Bond films Goldfinger (1964), Diamonds
+                      Are Forever  (1971)and Moonraker (1979).{" "}
+                    </li>
+
+                    <li>
+                      In 2020, Bassey became the first female artist to have an
+                      album in the Top 40 UK Albums Chart in every decade over a
+                      period of 70 years.
+                    </li>
+
+                    <li>
+                      Dame Shirley has also had numerous BBC television shows
+                      and has hosted her own variety series Shirley Bassey.{" "}
+                    </li>
+
+                    <li>
+                      Since making her first appearance at the Royal Albert
+                      Hall in 1971 she has performed at the venue 45 times.{" "}
+                    </li>
+
+                    <li>
+                      She has even sung at Glastonbury wearing diamante
+                      encrusted wellington boots.{" "}
+                    </li>
+
+                    <li>
+                      She received the first award for Best British Female Solo
+                      Artist at the First Brit Awards in 1977 was awarded the
+                      title of Most Successful Female Singer in 2000’s Guinness
+                      World Records (a title she still holds today).{" "}
+                    </li>
+
+                    <li>
+                      Dame Shirley was appointed a Dame in 1999 for services to
+                      the performing arts. In 2003, Dame Shirley was ranked
+                      among the "100 Great Black Britons". Her song "Goldfinger"
+                      was inducted into the Grammy Hall of Fame in 2008.{" "}
+                    </li>
+                  </ul>
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/6to9yo/hair"
+            element={
+              <Person
+                indivName={"Afro Hair"}
+                indivNameCym={"Afro Hair"}
+                proposedResource={"An interview with a hairdresser"}
+                slugText={"Not developed yet"}
+                resource={api.slice(9, 10)}
+                indivPic={
+                  "https://ichef.bbci.co.uk/images/ic/640x360/p08ng1wk.jpg"
+                }
+                text={
+                  <ul>
+                    <li>Not developed yet</li>
+                  </ul>
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/6to9yo/EnricoStennet"
+            element={
+              <Person
+                indivName={"Enrico Stennet"}
+                indivNameCym={"Enrico Stennet"}
+                proposedResource={"Not developed yet"}
+                slugText={"Not developed yet"}
+                resource={api.slice(10, 11)}
+                indivPic={""}
+                text={
+                  <ul>
+                    <li>Not developed yet</li>
+                  </ul>
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/6to9yo/IdrisPhillips"
+            element={
+              <Person
+                indivName={"Idris Phillips"}
+                indivNameCym={"Idris Phillips"}
+                proposedResource={"Not developed yet"}
+                slugText={"Not developed yet"}
+                resource={api.slice(11, 12)}
+                indivPic={""}
+                text={
+                  <ul>
+                    <li>Not developed yet</li>
+                  </ul>
                 }
               ></Person>
             }
@@ -974,11 +1516,74 @@ function App() {
             element={
               <Person
                 indivName={"Colin Jackson"}
+                indivNameCym={"Colin Jackson"}
                 proposedResource={"Interview with Colin and his sister?"}
                 slugText={"The Olympic medal winner."}
                 resource={nineApi.slice(3, 4)}
                 indivPic={
                   "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/2ED2/production/_95868911_gettyimages-1852091.jpg"
+                }
+                text={
+                  <ul>
+                    <li>
+                      Colin Jackson was born in Cardiff on 18 February 1967.{" "}
+                    </li>
+                    <li>
+                      His remarkable sporting prowess emerged while he was a
+                      pupil at Llanederyn High School. A gifted sportsman, Colin
+                      concentrated on athletics and joined the athletics club,
+                      Birchgrove Harriers, which nurtured his talent. He later
+                      trained with Brecon Athletics Club.{" "}
+                    </li>
+
+                    <li>
+                      An Olympian sprinter and Welsh hurdling champion, Colin
+                      won his first major medal, a silver, in the 110m hurdles,
+                      aged 19, at the 1986 Commonwealth Games.{" "}
+                    </li>
+
+                    <li>
+                      He went on to win a silver medal at the 1988 Seoul Olympic
+                      Games and won European and Commonwealth gold medals in
+                      1990.{" "}
+                    </li>
+
+                    <li>
+                      Colin didn’t win a medal at the Barcelona Olympics in
+                      1992. But he was undefeated at the European championships
+                      for 12 years in a row and remains the 60m hurdles world
+                      record holder. Jackson set a world record of 12.91 seconds
+                      to become the 1993 World Champion.{" "}
+                    </li>
+
+                    <li>
+                      During his illustrious career, Colin won twenty-four
+                      medals at World, Olympic, Commonwealth and European level
+                      – little wonder then that he’s widely regarded as Europe’s
+                      greatest-ever hurdler.{" "}
+                    </li>
+
+                    <li>
+                      Asked if being Welsh was important to him, Colin said he
+                      loved ‘being Welsh’. It was, he said, ‘part of my
+                      identity’. It had provided his ‘laid-backness’, and his
+                      ‘quiet determination’.{" "}
+                    </li>
+
+                    <li>
+                      Today a television sports commentator and presenter, Colin
+                      has appeared on Strictly Come Dancing and when aged 50, he
+                      came out as gay.{" "}
+                    </li>
+
+                    <li>
+                      Colin Jackson’s importance to Wales and Welsh sport is
+                      undeniable. No single image more powerfully redefined
+                      Welsh identity for the 1990s than that of a triumphant
+                      Colin proudly draped in Y Ddraig Goch (the National Flag
+                      of Wales).{" "}
+                    </li>
+                  </ul>
                 }
               ></Person>
             }
@@ -988,6 +1593,7 @@ function App() {
             element={
               <Person
                 indivName={"Iris Williams"}
+                indivNameCym={"Iris Williams"}
                 proposedResource={
                   "Footage of TV interview of Iris with Matthew Rhys."
                 }
@@ -995,6 +1601,63 @@ function App() {
                 resource={nineApi.slice(4, 5)}
                 indivPic={
                   "https://i2-prod.walesonline.co.uk/incoming/article1781243.ece/ALTERNATES/s615/iris-williams-61348596.jpg"
+                }
+                text={
+                  <ul>
+                    <li>Iris Williams was born on 20 April 1944. </li>
+                    <li>
+                      She was born in Rhydyfelin and brought up in a Children’s
+                      Home in Tonyrefail. Her father was a black American
+                      soldier posted to Wales during World War Two and her
+                      mother, whom he met at a dance hall in Pontypridd, gave
+                      her up for adoption.{" "}
+                    </li>
+
+                    <li>
+                      Iris’s career took off after she won a scholarship to the
+                      Royal Welsh College of Music and Drama.{" "}
+                    </li>
+
+                    <li>
+                      She is now regarded as a jazz legend after a glittering
+                      40-year international jazz singing career.{" "}
+                    </li>
+
+                    <li>
+                      Her hits include: ‘He Was Beautiful’ (1979) and ‘Pererin
+                      Wyf’ (1971) a Welsh-language version of ‘Amazing Grace’.
+                      She won the Welsh talent contest Cân i Gymru (A Song for
+                      Wales) in 1974 with the song ‘I gael Cymru’n Gymru Rydd’
+                      (For a Free Wales). Iris was one of the stars of the gala
+                      concert to celebrate the opening of the National Assembly
+                      of Wales in 1999.{" "}
+                    </li>
+
+                    <li>
+                      In the New Year Honours list of 2004, Iris was honoured
+                      with an OBE (Officer of the Order of the British Empire)
+                      for her contribution to music, performing for troops
+                      around the world.{" "}
+                    </li>
+
+                    <li>
+                      In 2006, she performed at the Brecon Jazz Festival, and
+                      was later admitted to the Gorsedd of Bards at the National
+                      Eisteddfod of Wales.{" "}
+                    </li>
+
+                    <li>
+                      Iris Williams became a foster care champion for Rhondda
+                      Cynon Taf Council in 2014.{" "}
+                    </li>
+                    <li>Iris now lives in California in the USA. </li>
+
+                    <li>
+                      Despite any difficulties Iris Williams suffered at the
+                      start of her life, she showed great strength of character
+                      to become an international singing star.{" "}
+                    </li>
+                  </ul>
                 }
               ></Person>
             }
@@ -1004,11 +1667,83 @@ function App() {
             element={
               <Person
                 indivName={"Paul Robeson"}
-                proposedResource={"?"}
+                indivNameCym={"Paul Robeson"}
+                backLContent={
+                  <>
+                    <audio controls>
+                      <source src={emily} type="audio/mpeg" />
+                    </audio>
+                    <p>
+                      Podcast: Emily Pemberton and Mel Owen discussing Paul
+                      Robesons's life.
+                    </p>
+                  </>
+                }
+                backLContentCym={
+                  <audio controls>
+                    <source src={emilyCym} type="audio/mpeg" />
+                  </audio>
+                }
                 slugText={"The American singer who joined the miners strike."}
                 resource={nineApi.slice(5, 6)}
                 indivPic={
                   "https://aaregistry.org/wp-content/uploads/2009/09/paul-robeson.jpg"
+                }
+                text={
+                  <ul>
+                    <li>
+                      Paul Robeson was born on 9 April 1898 in Princetown, New
+                      Jersey, the US.{" "}
+                    </li>
+                    <li>
+                      A natural athlete and American footballer; Paul also had
+                      an impressive singing voice. He became a bass-baritone
+                      concert artist, stage and film actor.{" "}
+                    </li>
+                    <li>
+                      Paul is also famed for his political activism. He moved to
+                      the UK to escape racism in the US, and developed strong
+                      links to Wales after meeting Welsh miners in London who
+                      were petitioning the government for help. He led a Welsh
+                      choir in a rendition and organised donations to fund their
+                      return to south Wales on a train, complete with food and
+                      clothing.{" "}
+                    </li>
+                    <li>
+                      After the Gresford Colliery Disaster, Paul contributed
+                      proceeds of his concert in Caernarfon to the fund for the
+                      orphans and children of the dead. It was an important
+                      moral and political gesture.{" "}
+                    </li>
+                    <li>
+                      Paul joined the miners on hunger marches in 1927 and 1928.
+                      In 1940, he starred in the movie Proud Valley – about a
+                      black miner who moves to the Valleys.{" "}
+                    </li>
+                    <li>
+                      Paul said of Wales: ‘[It was there] I first understood the
+                      struggles of white and negro together – when I went down
+                      into the coal mine in the Rhondda Valley, [and] lived
+                      amongst them’.{" "}
+                    </li>
+                    <li>
+                      In 2018, Hwn yw fy Mrawd: Paul Robeson - Arwr i Gymru,
+                      Arwr i’r Byd, a biopic depicting his life was performed at
+                      the National Eisteddfod in Cardiff Bay. The show was 60
+                      years to the day since Paul addressed the Eisteddfod
+                      festival in Ebbw Vale.
+                    </li>
+                    <li>
+                      On 23 January 1976, Paul Robeson died in Philadelphia, the
+                      US.{" "}
+                    </li>
+                    <li>
+                      Paul Robeson was blessed with a wonderful singing voice.
+                      He was also fiercely moral – and believed in treating
+                      people, whatever their creed and skin colour, with respect
+                      and fairness.{" "}
+                    </li>
+                  </ul>
                 }
               ></Person>
             }
@@ -1018,11 +1753,76 @@ function App() {
             element={
               <Person
                 indivName={"Louisa BB Morgan"}
+                indivNameCym={"Louisa BB Morgan"}
                 proposedResource={"Factfile with discussion points."}
                 slugText={"The lady who's lived all around the world."}
                 resource={nineApi.slice(6, 7)}
                 indivPic={
                   "https://m.media-amazon.com/images/M/MV5BZGRkNTgwM2YtZWUxNy00MDQzLWE5OTAtODU1MjVmYWE2ZjhiXkEyXkFqcGdeQXVyODIyODI5Mzc@._V1_.jpg"
+                }
+                text={
+                  <ul>
+                    <li>
+                      Louisa St Bartholomew-Brown Morgan was born on 12 June
+                      1951 in London.{" "}
+                    </li>
+                    <li>
+                      Returning to Nigeria in 1960, Louisa received a Catholic
+                      school education – and enjoyed it very much.{" "}
+                    </li>
+                    <li>
+                      Louisa studied: French & European Studies; Strategic
+                      Studies; and Drama & Performance at university.{" "}
+                    </li>
+                    <li>
+                      Louisa loves acting and singing and has worked hard to
+                      establish her career.{" "}
+                    </li>
+                    <li>
+                      For a while, she worked at CBS records in London, where
+                      she met many famous people.{" "}
+                    </li>
+                    <li>
+                      Louisa has lived all over the world. At one point, she
+                      worked at the Embassy of Grenada, where she worked as a
+                      PA/Translator.{" "}
+                    </li>
+                    <li>
+                      She was then ‘poached’ to work for Hughes Aircrafts
+                      Systems International, NATO Defence Contractors. It was
+                      classified work, which because of the Official Secrets
+                      Act, Louisa is forbidden to speak about.{" "}
+                    </li>
+                    <li>
+                      Louisa believes that travel and education are ‘extremely
+                      important’ in developing a person’s intellect and
+                      broadening their understanding of life. Adding, ‘The
+                      adage, “travel broadens the mind” is quite true. 
+                      Travelling makes one see the world with different
+                      eyes…Through exploring, you discover how fragile humans
+                      are, and how delicate the world we live in is’.{" "}
+                    </li>
+                    <li>
+                      Sadly, Louisa has experienced racism since moving to
+                      Wales.  Not from local Welsh people, but English people
+                      who had moved to the Builth area from the Midlands. They
+                      used to say to me: “Why don’t you go back to where you
+                      came from?”. I replied, “Why don’t you, you’re not from
+                      Wales. The Welsh people are lovely. You’re just ignorant
+                      English people’.{" "}
+                    </li>
+                    <li>
+                      Regarding her Catholic education and faith, Louisa says:
+                      ‘It binds me to my beliefs…It’s helped shape my life. It
+                      continues to make me what I am today’.{" "}
+                    </li>
+
+                    <li>
+                      Louisa has lived an interesting life – believing that a
+                      person can grow and improve through hard work, travelling
+                      the world and having strong faith.{" "}
+                    </li>
+                  </ul>
                 }
               ></Person>
             }
@@ -1032,11 +1832,80 @@ function App() {
             element={
               <Person
                 indivName={"Clive Sullivan"}
-                proposedResource={"?"}
+                indivNameCym={"Clive Sullivan"}
+                proposedResource={"Factfile with discussion."}
                 slugText={"The rugby league legend."}
                 resource={nineApi.slice(7, 8)}
                 indivPic={
                   "https://e2.365dm.com/20/10/2048x1152/skysports-anthony-sullivan_5116431.jpg"
+                }
+                text={
+                  <ul>
+                    <li>
+                      Clive Sullivan was born in Splott, Cardiff, on 9 April
+                      1943.{" "}
+                    </li>
+                    <li>
+                      Clive played rugby at school, but injuries required
+                      surgery on his knees, feet and shoulders. Doctors feared
+                      mobility issues – and thought a rugby career unlikely.{" "}
+                    </li>
+
+                    <li>
+                      1961 – Clive joins the army and is posted to Yorkshire. On
+                      account of being Welsh, Clive is picked to play in an
+                      inter-corps rugby match. Fearful of being invalided out of
+                      the army, Clive doesn’t mention having suffered major
+                      injuries.{" "}
+                    </li>
+
+                    <li>
+                      Intending to deliberately play badly, instinct took over
+                      and Clive scored a long distance try – suffering no ill
+                      effects. {" "}
+                    </li>
+
+                    <li>
+                      Soon offered a trial with Rugby League side Hull, Clive
+                      scored 3 tries and signed as a professional.{" "}
+                    </li>
+
+                    <li>
+                      During his career, Clive played for Hull, Hull Kingston
+                      Rovers, Oldham and Doncaster. Constant knee problems
+                      required further operations. Yet Clive played 352 games
+                      for Hull, scoring 250 tries and 213 games for Hull K.R.
+                      scoring 118 tries.{" "}
+                    </li>
+
+                    <li>
+                      In 1967, Clive made his debut for Great Britain. In 1972,
+                      Clive was handed the captaincy of GB and in the World Cup
+                      that year Clive captained GB to become world champions.
+                      Scoring a try in GB’s 4 games, Sullivan scored a memorable
+                      try to level 10-10 against Australia in the final, after
+                      running the length of the field.{" "}
+                    </li>
+
+                    <li>
+                      Clive’s Great Britain career ended in 1973 and in 1974,
+                      Clive was awarded an MBE for services to rugby league.{" "}
+                    </li>
+
+                    <li>
+                      Clive Sullivan died of cancer on 8 October 1985, aged just
+                      42. The city of Hull named an approach road ‘Clive
+                      Sullivan Way’ in his honour.
+                    </li>
+
+                    <li>
+                      Clive Sullivan was the first black person to captain a
+                      British national sports side. Plagued by injuries when a
+                      young teenager, it is miraculous that Clive played
+                      professional sport. But Clive’s success is testament to
+                      his strong personality and steely determination.{" "}
+                    </li>
+                  </ul>
                 }
               ></Person>
             }
@@ -1046,11 +1915,95 @@ function App() {
             element={
               <Person
                 indivName={"John Ystumllyn"}
+                indivNameCym={"John Ystumllyn"}
                 slugText={"The 18th century slave who became a gardener."}
                 resource={nineApi.slice(8, 9)}
                 indivPic={
                   "https://ichef.bbci.co.uk/news/976/cpsprodpb/FDB1/production/_121154946_johnystumllynpeople'scollection.png"
                 }
+                text={
+                  <ul>
+                    <li>
+                      John Ystumllyn – who is also known by the names Jack Du or
+                      Jack Black – was a gardener in the 18th century.{" "}
+                    </li>
+                    <li>
+                      We do not know where John originally lived before he
+                      arrived in Wales. He possible came here as a victim of the
+                      Atlantic slave trade when he was eight years of age, which
+                      may mean he came from the West Africa or the West Indies.{" "}
+                    </li>
+
+                    <li>
+                      Once in Wales, John came to live with the Wynn family as a
+                      servant at their Ystumllyn estate in Criccieth, where he
+                      was christened with the Welsh name John Ystumllyn.{" "}
+                    </li>
+
+                    <li>
+                      John was taught English and Welsh by the local people and
+                      also learned how to be a gardener on the estate where he
+                      became very good at his job.{" "}
+                    </li>
+
+                    <li>
+                      John had his portrait painted when he was a young man and
+                      it shows that he was very handsome.{" "}
+                    </li>
+
+                    <li>
+                      John fell in love with a white local maid called Margaret
+                      Gruffydd. In 1768, when Margaret left for another job,
+                      John left his gardening job to marry her. Theirs may have
+                      been the first mixed marriage in Wales.{" "}
+                    </li>
+
+                    <li>They had seven children, five of whom survived. </li>
+
+                    <li>
+                      John and Margaret worked as land stewards. Later, John
+                      went back into the employment of the Wynn family. Ellis
+                      Wynn gave him a large garden and cottage at Y Nhyra Isa to
+                      say thank you for all his hard work.{" "}
+                    </li>
+
+                    <li>
+                      John died in 1786; his wife, Margaret, lived for more than
+                      forty years more.{" "}
+                    </li>
+
+                    <li>
+                      Many years after his death, a small monument was built
+                      near where John was buried in St Cynhaearn's Church.{" "}
+                    </li>
+
+                    <li>
+                      Recently, Zehra Zaidi, the founder of We Too Built
+                      Britain, approached the Chelsea flower show winner
+                      Harkness Roses with the idea of creating a rose named
+                      after John Ystumllyn. The beautiful rose is yellow,
+                      symbolising friendship.{" "}
+                    </li>
+
+                    <li>
+                      His grave at St Cynhaearn's Church, Ynyscynhaearn, was
+                      made a Grade II listed building  in 1999. It was listed
+                      "as of special interest in commemorating a slave in
+                      service in Wales in the later years of the C18, who must
+                      have been well enough thought of that he was provided with
+                      a handsome memorial".{" "}
+                    </li>
+
+                    <li>
+                      John was the earliest black person in Wales who we have
+                      information about. John was a very likeable person. He
+                      also is known to have not suffered much racial prejudice,
+                      though locals did often express surprise at seeing a black
+                      man for the first time.{" "}
+                    </li>
+                  </ul>
+                }
+                proposedResource={" S4C clip of flower from Garddio a Mwy."}
               ></Person>
             }
           ></Route>
@@ -1059,11 +2012,62 @@ function App() {
             element={
               <Person
                 indivName={"Tiger Bay"}
-                proposedResource={"S4C clip of flower from Garddio a Mwy."}
+                indivNameCym={"Tiger Bay"}
+                proposedResource={"Factfile with discussion."}
                 slugText={"The bustling multi-ethnic community in Cardiff Bay."}
                 resource={nineApi.slice(9, 10)}
                 indivPic={
                   "https://i2-prod.walesonline.co.uk/incoming/article9925412.ece/ALTERNATES/s1227b/JS70059056.jpg"
+                }
+                text={
+                  <ul>
+                    <li>
+                      Tiger Bay is one of the UK’s oldest multi-ethnic
+                      communities.{" "}
+                    </li>
+                    <li>
+                      The site grew as a consequence of the Industrial
+                      Revolution. Coal mining brought many people to Cardiff to
+                      work on the docks and as coal production increased, so did
+                      the population.{" "}
+                    </li>
+
+                    <li>
+                      At one point, Tiger Bay’s community had people from over
+                      50 countries settling in the area around the docks.{" "}
+                    </li>
+
+                    <li>
+                      Communities included the Somalis, Yemenis, Greeks,
+                      African, Afro- Caribbean, Chinese, Arab, Somali and South
+                      Asian sailors and sea-merchants.{" "}
+                    </li>
+
+                    <li>
+                      Together these different communities made essential
+                      contributions to Cardiff’s wealth and achievements and
+                      brought different cultural influences that can still be
+                      seen today.{" "}
+                    </li>
+
+                    <li>
+                      Tiger Bay had a reputation as a tough and dangerous area;
+                      but locals who lived and stayed in the area described it
+                      as a friendly place.{" "}
+                    </li>
+
+                    <li>
+                      The economic decline in the 1960s and 1970s led to a large
+                      amount of unemployment in Tiger Bay. By the 1970s and
+                      1980s the area was demolished and redeveloped.{" "}
+                    </li>
+
+                    <li>
+                      Many famous people from diverse backgrounds came from
+                      Tiger Bay including Shirley Bassey, Betty Campbell, Billy
+                      Boston and Colin Dixon.{" "}
+                    </li>
+                  </ul>
                 }
               ></Person>
             }
@@ -1073,11 +2077,93 @@ function App() {
             element={
               <Person
                 indivName={"Sidoli Ice Cream"}
+                indivNameCym={"Hufen Iâ Sidoli"}
                 proposedResource={"Interview with family member."}
                 slugText={"The story of the award-winning ice cream."}
                 resource={nineApi.slice(10, 11)}
                 indivPic={
                   "https://i2-prod.walesonline.co.uk/incoming/article17960109.ece/ALTERNATES/s1200c/0_RM_180320_Sidoli_IceCream_020.jpg"
+                }
+                text={
+                  <ul>
+                    <li>
+                      More than 100 years ago, Italian immigrants established a
+                      café culture and a Welsh-Italian tradition that is still
+                      thriving today. The Sidoli family is one of these
+                      families.{" "}
+                    </li>
+                    <li>
+                      The Sidoli ice cream business was founded by Benedetto
+                      “Ben” Sidoli in 1922.{" "}
+                    </li>
+
+                    <li>
+                      Aged only 12 he followed in the footsteps of his brother,
+                      Bert, by coming to Wales to find a job.{" "}
+                    </li>
+
+                    <li>
+                      The brothers began by selling the lemon drink
+                      Sarsaparilla, as well as coffee and tea, to thirsty local
+                      miners.{" "}
+                    </li>
+
+                    <li>
+                      Their first café was in Cwm selling traditional Italian
+                      ice cream.{" "}
+                    </li>
+
+                    <li>
+                      In order to make the ice cream they had to buy large
+                      blocks of ice which came from Cardiff and arrived by train
+                      at 6am. Everything they made with this ice had to be sold
+                      that day or it would go to waste. Years later they would
+                      purchase a freezer which made the work so much easier to
+                      both make and store.{" "}
+                    </li>
+
+                    <li>
+                      Ben married and moved to Ebbw Vale where he opened a shop.{" "}
+                    </li>
+
+                    <li>
+                      Ben and Bert were excellent businessmen and were clever in
+                      marketing their ice cream. Trade was very good and even
+                      during World War 2, when ice cream was banned as it was
+                      considered a luxury item, Sidoli’s made ice cream for the
+                      American soldiers who had the provisions and equipment
+                      needed to make it.{" "}
+                    </li>
+
+                    <li>
+                      As Ben was Italian though, he was considered a threat to
+                      British security in the war, even though he had lived in
+                      Wales for over twenty years. He was immediately imprisoned
+                      with thousands of other Italian nationals on the Isle of
+                      Man until the war was over.{" "}
+                    </li>
+
+                    <li>
+                      After the war, production of the ice cream continued and
+                      Sidoli’s started making lollies as well as ice cream.{" "}
+                    </li>
+
+                    <li>
+                      In 1992, the company opened its first ice cream parlour at
+                      the Garden Festival Wales which was a huge success.{" "}
+                    </li>
+
+                    <li>
+                      A year later Sidoli’s won its first of many awards – The
+                      Ice Cream Alliance Silver Challenge Cup. The Sidoli brand
+                      is now a household name.{" "}
+                    </li>
+                    <li>
+                      Sidoli’s ice cream today is made with nearly the same
+                      original recipe that Ben used back in 1922. There are
+                      currently 45 flavours in their ice cream range.{" "}
+                    </li>
+                  </ul>
                 }
               ></Person>
             }
@@ -1087,13 +2173,74 @@ function App() {
             element={
               <Person
                 indivName={"Vernester Cyril"}
+                indivNameCym={"Vernester Cyril"}
                 slugText={
                   "The nurse from the Carribean who made a difference in Wales."
                 }
-                proposedResource={"Interview with Anwen's niece."}
+                proposedResource={"Possible interview with nurse."}
                 resource={nineApi.slice(11, 12)}
                 indivPic={
                   "https://www.peoplescollection.wales/sites/default/files/styles/item_detail/public/images/2015/November/bay213.jpg"
+                }
+                text={
+                  <ul>
+                    <li>
+                      Vernester Cyril was a happy little girl. She enjoyed
+                      school in St Lucia, an island in the Caribbean, where she
+                      recited poetry and learned about famous British writers.{" "}
+                    </li>
+
+                    <li>
+                      In March 1962, Vernester travelled by ship to Great
+                      Britain. On arriving, Vernester was shocked by how cold it
+                      was. But Vernester was determined to make a new life in
+                      the UK – and she immediately looked for work.{" "}
+                    </li>
+
+                    <li>
+                      Vernester felt sad when some people stared at her and made
+                      funny faces. But Vernester was tough. If people stupidly
+                      behaved like that, then that was their problem.{" "}
+                    </li>
+
+                    <li>
+                      Vernester worked in a factory, then a nursing home. She
+                      then trained as a nurse, then as a midwife. Vernester
+                      easily passed her exams and received the Best Promising
+                      Midwife award. Vernester worked as a midwife for over 30
+                      years, was promoted several times and she delivered and
+                      assisted at the births of over 500 babies.{" "}
+                    </li>
+
+                    <li>
+                      Vernester loved being a midwife. She was also proud of her
+                      Caribbean heritage, and educated herself – and others – in
+                      the cultural traditions of black people. A nursing sister
+                      told her off for wearing her hair in the Afro hairstyle:
+                      Vernester told her to look at books and see how people
+                      wore their hair in the Caribbean and Africa.{" "}
+                    </li>
+
+                    <li>
+                      Sadly, Vernester encountered racism from some patients
+                      too. Race equality laws did not yet exist in Britain. But
+                      Vernester always challenged discrimination and promoted
+                      racial equality.{" "}
+                    </li>
+
+                    <li>
+                      For Vernester’s tireless work, she was awarded an OBE from
+                      the Queen at Buckingham Palace in 1999. Vernester had come
+                      a long way.{" "}
+                    </li>
+
+                    <li>
+                      Vernester fulfilled her dream of coming to Great Britain
+                      and becoming a nurse. She also worked hard to teach people
+                      to be kinder and more tolerant of each other – teaching
+                      them that the colour of someone’s skin is not important.{" "}
+                    </li>
+                  </ul>
                 }
               ></Person>
             }
@@ -1103,11 +2250,29 @@ function App() {
             element={
               <Person
                 indivName={"Dom James"}
-                proposedResource={"Podcast with Dom."}
+                indivNameCym={"Dom James"}
                 slugText={"The Welsh rapper."}
                 resource={nineApi.slice(12, 13)}
                 indivPic={
                   "https://ichef.bbci.co.uk/news/976/cpsprodpb/DBCD/production/_124296265_33020262_1243885189076260_6186539543915659264_n-1.jpg"
+                }
+                backLContent={
+                  <>
+                    <audio controls>
+                      <source src={dom} type="audio/mpeg" />
+                    </audio>
+                    <p>Podcast: Dom James and Mel Owen in discussion</p>
+                  </>
+                }
+                backLContentCym={
+                  <audio controls>
+                    <source src={domCym} type="audio/mpeg" />
+                  </audio>
+                }
+                text={
+                  <ul>
+                    <li>Text to be inserted - podcast on next page</li>
+                  </ul>
                 }
               ></Person>
             }
@@ -1117,11 +2282,79 @@ function App() {
             element={
               <Person
                 indivName={"Joe Calzaghe"}
-                proposedResource={"?"}
+                indivNameCym={"Joe Calzaghe"}
+                proposedResource={"Factfile with discussion"}
                 resource={twelveApi.slice(2, 3)}
                 slugText={"The super-middleweight world champion."}
                 indivPic={
                   "https://upload.wikimedia.org/wikipedia/commons/a/a5/JoeCalzaghe-July2007.jpg"
+                }
+                text={
+                  <ul>
+                    <li>
+                      Joe Calzaghe was born on 23 March 1972 in Hammersmith,
+                      London, to an Italian (Sardinian) father and a Welsh
+                      mother.{" "}
+                    </li>
+                    <li>
+                      Joe joined his first boxing club, Newbridge Amateur Boxing
+                      Club at ten-years-old.  He moved on to Oakdale
+                      Comprehensive School when aged eleven.{" "}
+                    </li>
+
+                    <li>
+                      Joe was the target of regular verbal bullying as a
+                      teenager – which left him feeling isolated. Calzaghe later
+                      admitted that he ‘never recovered from the abuse’ and left
+                      school without sitting any of his GCSEs.{" "}
+                    </li>
+
+                    <li>
+                      After a successful amateur boxing career: winning 110 of
+                      120 amateur contests, in October 1993, Joe boxed
+                      professionally for the first time – and defeated his
+                      opponent in one round. It was the start of a glittering
+                      career.{" "}
+                    </li>
+
+                    <li>
+                      Among the other titles Joe won during his career, in
+                      October 1997, Joe won the WBO (World Boxing Organization)
+                      super-middleweight title – he retained the title in March
+                      2006.{" "}
+                    </li>
+
+                    <li>
+                      In November 2007, Joe retained the WBO and The Ring
+                      super-middleweight titles and also won the WBA (World
+                      Boxing Association) (Undisputed) and WBC (World Boxing
+                      Council) super-middleweight titles.{" "}
+                    </li>
+
+                    <li>
+                      In November 2008, he retained The Ring light-heavyweight
+                      title after a gruelling contest. Three months later, on 5
+                      February 2009, Joe announced his retirement from
+                      professional boxing. On doing so, Calzaghe became one of
+                      only fifteen world champions to retire as an undefeated
+                      world champion.{" "}
+                    </li>
+
+                    <li>
+                      During his professional career Joe, nicknamed ‘the Pride
+                      of Wales’ and the ‘Italian Dragon’, had 46 professional
+                      fights. He won them all: by knockout 32, and by decision
+                      14. It is a remarkable record.{" "}
+                    </li>
+
+                    <li>
+                      Joe Calzaghe was bullied at school, it left him feeling
+                      vulnerable and lonely. But Joe was determined to make a
+                      success of his life and through hard work, determination
+                      and by believing in himself, Joe achieved his dream and
+                      became an inspiration to many around the world.{" "}
+                    </li>
+                  </ul>
                 }
               ></Person>
             }
@@ -1131,6 +2364,7 @@ function App() {
             element={
               <Person
                 indivName={"Jason Mohammed"}
+                indivNameCym={"Jason Mohammed"}
                 proposedResource={"Interview with Mirain Iwerydd."}
                 resource={twelveApi.slice(3, 4)}
                 slugText={
@@ -1138,6 +2372,55 @@ function App() {
                 }
                 indivPic={
                   "https://i2-prod.walesonline.co.uk/incoming/article24630322.ece/ALTERNATES/s1200/0_S4C-TV-PAGES.jpg"
+                }
+                text={
+                  <ul>
+                    <li>
+                      Jason is a well-known radio and television presenter for
+                      the BBC, most notably for news and sports coverage.{" "}
+                    </li>
+                    <li>
+                      Born in Cardiff to a Pakistani father and Welsh mother,
+                      Jason - a practicing Muslim - went to Swansea University
+                      to study Welsh and Politics before then gaining a
+                      postgraduate diploma in broadcast journalism.{" "}
+                    </li>
+
+                    <li>
+                      Jason’s first work in radio was at Singleton Hospital for
+                      The Abertawe Bro Morgannwg University Health Board.{" "}
+                    </li>
+
+                    <li>
+                      Jason then began work at BBC Cymru Wales in 1997 as a
+                      reporter for BBC Wales Today.{" "}
+                    </li>
+
+                    <li>
+                      His career has seen him become an anchor on Wales on
+                      Saturday, host of the BBC sports programme, Final Score.
+                      presenter of the Scrum V specials on BBC Two Wales and
+                      presenter of the BBC Radio Two programme Good Morning
+                      Sunday.{" "}
+                    </li>
+
+                    <li>
+                      Jason was part of the BBC’s broadcasting crew at the Rio
+                      2016 Summer Olympics, has covered snooker for the BBC and
+                      hosted on BBC Radio Five Live. He has also been an
+                      occasional presenter of Match of the Day and Match of the
+                      Day 2, and has hosted some of the BBC’s live coverage of
+                      the RBS Six Nations.{" "}
+                    </li>
+
+                    <li>Jason is also in great demand as a public speaker. </li>
+
+                    <li>
+                      As one of the best-known presenters in the UK Jason was
+                      listed as being one of the top ten earners at the BBC in
+                      2019.{" "}
+                    </li>
+                  </ul>
                 }
               ></Person>
             }
@@ -1147,11 +2430,88 @@ function App() {
             element={
               <Person
                 indivName={"Kizzy Crawford"}
+                indivNameCym={"Kizzy Crawford"}
                 proposedResource={"Interview of podcast with Kizzy herself?"}
                 resource={twelveApi.slice(4, 5)}
                 slugText={"Award-winning Welsh singer / songwriter."}
                 indivPic={
                   "https://ents24.imgix.net/image/000/158/543/f362a1cbe3eb9d638603c935c57a9f81ee7bd0bf.jpg?auto=format&crop=faces&w=1920&h=1920"
+                }
+                text={
+                  <ul>
+                    <li>
+                      Born in 1996 in Oxford, Kizzy grew up in Merthyr Tydfil.
+                      She has Bajan heritage – her father’s family are from
+                      Barbados.{" "}
+                    </li>
+                    <li>
+                      She began writing songs at the age of thirteen. She sings
+                      in both English and Welsh, using traditional and modern
+                      sources.{" "}
+                    </li>
+
+                    <li>At the age of 26 Kizzy was diagnosed with autism. </li>
+
+                    <li>Kizzy has a sister, Eädyth, who is also a singer. </li>
+
+                    <li>
+                      Kizzy won the Arts Connect Original Singer-Songwriter
+                      prize in 2012 resulting in work with Amy Wadge including
+                      recording her first single Starling. Her EP Temporary
+                      Zone was released in December 2013.{" "}
+                    </li>
+
+                    <li>
+                      Together with many radio and TV appearances in Wales
+                      during 2013, Kizzy has performed live at various
+                      festivals.{" "}
+                    </li>
+
+                    <li>
+                      In 2014 she performed at Glastonbury on the BBC
+                      Introducing stage and has since performed at several other
+                      high-profile festivals.{" "}
+                    </li>
+
+                    <li>
+                      Crawford performed at the Euro 16 Welsh team homecoming
+                      gig at Cardiff City Football Stadium alongside the Manic
+                      Street Preachers.{" "}
+                    </li>
+
+                    <li>
+                      Her music was used to welcome the US President to the NATO
+                      Summit in Wales.{" "}
+                    </li>
+
+                    <li>
+                      In 2016, several of her compositions were selected as part
+                      of the WJEC A Level Music Syllabus - her music sat in the
+                      contemporary section alongside The Manics, Gruff Rhys &
+                      The Super Furry Animals.{" "}
+                    </li>
+
+                    <li>
+                      Kizzy was invited to perform and discuss that accolade
+                      live on Woman's Hour  for BBC Radio 4.  {" "}
+                    </li>
+
+                    <li>
+                      She played a supporting role as PC Emma Jones in the
+                      award-winning BBC drama Keeping Faith.{" "}
+                    </li>
+
+                    <li>
+                      In 2018, Crawford signed to Freestyle Records and released
+                      her debut album "The Way I Dream" in 2019.{" "}
+                    </li>
+
+                    <li>
+                      In November 2021, Crawford released her first
+                      self-recorded/produced/mixed and debut Welsh Album "Rhydd"
+                      with Sain Records.{" "}
+                    </li>
+                  </ul>
                 }
               ></Person>
             }
@@ -1162,12 +2522,97 @@ function App() {
               <Person
                 proposedResource={"With Ben Cabango? Or with Ashley himself?"}
                 indivName={"Ashley Williams"}
+                indivNameCym={"Ashley Williams"}
                 resource={twelveApi.slice(5, 6)}
                 slugText={
                   "Former professional footballer and captain of Wales."
                 }
                 indivPic={
                   "https://i.guim.co.uk/img/media/f77982ffce62788f1ab622c5a878a0b186b5d2db/1450_147_4297_2578/master/4297.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=509500c71e7dcda098b5952a4f2ba212"
+                }
+                text={
+                  <ul>
+                    <li>
+                      Ashley Williams was born in Wolverhampton. He is of
+                      Afro-Jamaican descent through his father and of Welsh
+                      descent through his mother.{" "}
+                    </li>
+
+                    <li>
+                      At 16, he was released as a youth player from West
+                      Bromwich Albion to begin his career with Hednesford Town
+                      and then Stockport County.{" "}
+                    </li>
+
+                    <li>
+                      In November 2007, Williams won both the inaugural
+                      North-West League Two Player of the Year Award and the
+                      North-West Player of the Year Award.{" "}
+                    </li>
+
+                    <li>
+                      Williams, whilst captain of Stockport, made his
+                      international debut for Wales.{" "}
+                    </li>
+
+                    <li>
+                      In March 2008, Williams signed for Swansea City on loan.{" "}
+                    </li>
+
+                    <li>
+                      After helping Swansea win the League One title and, with
+                      it, promotion the second tier of English football for the
+                      first time in 24 years, the move was made permanent for a
+                      reported £400,000, a club record transfer fee at the time.{" "}
+                    </li>
+
+                    <li>
+                      The defender impressed during his first season at
+                      Championship level, eventually going on to be named Wales
+                      Footballer of the Year in November 2009. Williams also
+                      picked up the Clubman of the Year award at the same event.{" "}
+                    </li>
+                    <li>
+                      The 2010–11 season saw Swansea and Williams gain promotion
+                      to the Premier League via a play-off final win at
+                      Wembley. {" "}
+                    </li>
+
+                    <li>
+                      Williams was named in the Championship PFA Team of the
+                      Year for the second consecutive season.{" "}
+                    </li>
+
+                    <li>
+                      The season also saw him equal and surpass a club record of
+                      106 consecutive matches, previously jointly held by Andy
+                      Legg and Gilbert Beech.{" "}
+                    </li>
+
+                    <li>
+                      In 2016, Williams joined Everton on a three-year contract
+                      for a £12 million transfer fee and then moved to Stoke
+                      City in 2018 and Bristol City 2019.{" "}
+                    </li>
+
+                    <li>
+                      The highlight of Ashley Williams’ career was captaining
+                      Wales to the semi-final of UEFA Euro 2016. It was Wales'
+                      first major tournament for more than half a century. Held
+                      in France, Williams headed the equalising goal,
+                      against Belgium in the quarter-finals as Wales eventually
+                      won 3–1 to progress to the semi-finals for the first time
+                      in their international football history.{" "}
+                    </li>
+
+                    <li>Williams retired in 2021 aged 36. </li>
+
+                    <li>
+                      Williams is one of Wales’ biggest footballing stars and
+                      earned 86 caps for Wales and scored two goals with his
+                      last cap coming in June 2019.{" "}
+                    </li>
+                  </ul>
                 }
               ></Person>
             }
@@ -1177,6 +2622,7 @@ function App() {
             element={
               <Person
                 indivName={"Joe Erskine"}
+                indivNameCym={"Joe Erskine"}
                 resource={twelveApi.slice(6, 7)}
                 proposedResource={"Factfile and discussion topics."}
                 slugText={
@@ -1193,6 +2639,7 @@ function App() {
             element={
               <Person
                 indivName={"Elizabeth Campbell"}
+                indivNameCym={"Elizabeth Campbell"}
                 proposedResource={
                   "Mel interviewing Natalie Jones? or Wayne (Connagh's dad?)"
                 }
@@ -1200,6 +2647,90 @@ function App() {
                 slugText={"Wales' First Black Headteacher."}
                 indivPic={
                   "https://ichef.bbci.co.uk/news/976/cpsprodpb/13CF5/production/_98314118_bettyclean.jpg"
+                }
+                text={
+                  <ul>
+                    <li>
+                      Betty was born in Butetown in Cardiff on the 6th of
+                      November 1934.{" "}
+                    </li>
+                    <li>
+                      {" "}
+                      Her mother, Nora, was Welsh Barbadian and her father,
+                      Simon, had come to the UK from Jamaica when he was 15, was
+                      killed in World War II. With the death of her father, the
+                      family struggled with money and life was hard.{" "}
+                    </li>
+
+                    <li>
+                      At school, Betty was top of her class. She won a
+                      scholarship to the Lady Margaret High School for Girls in
+                      Cardiff and wanted to be a teacher from a young age,
+                      despite one of her teachers saying it was unlikely to
+                      happen because she was a black, working class girl. This
+                      made her cry but also made her want to try even harder.{" "}
+                    </li>
+
+                    <li>
+                      In 1960 she applied to Cardiff Teacher Training College
+                      and was one of only six female students to be allowed to
+                      attend.{" "}
+                    </li>
+
+                    <li>
+                      Betty’s first teaching post was in Llanrumney but she soon
+                      returned to Butetown, getting a job at Mount Stuart
+                      Primary School, where she taught for 28 years.{" "}
+                    </li>
+
+                    <li>
+                      It was at this school that Betty became Wales’ first black
+                      headteacher. There were very few black teachers at this
+                      time in Wales.{" "}
+                    </li>
+
+                    <li>
+                      Betty felt that it was important to tell the children
+                      about black culture and black history as part of their
+                      education so she taught them about slavery and the system
+                      of apartheid which operated at the time in South Africa.{" "}
+                    </li>
+
+                    <li>
+                      Betty helped to create Black History Month and also taught
+                      a series of workshops on Butetown's citizens and their
+                      countries of origin.{" "}
+                    </li>
+
+                    <li>
+                      Betty became known outside Wales as an important authority
+                      on education and she put into practice new ideas on how to
+                      teach children.{" "}
+                    </li>
+
+                    <li>
+                      Her school became important as a good example of
+                      multicultural teaching.{" "}
+                    </li>
+
+                    <li>
+                      Betty was very passionate about the different communities
+                      and their history within Cardiff docks. She served as a
+                      Butetown councillor to try and help the people.{" "}
+                    </li>
+
+                    <li>
+                      In 2003, Betty was awarded an MBE for services to
+                      education and community life. She was also honoured by
+                      Unison Cymru’s Black Members’ group in 2015 with a
+                      lifetime achievement award for her contribution to black
+                      history and Welsh education.{" "}
+                    </li>
+
+                    <li>
+                      After she died, a statue of her was put up in Cardiff.{" "}
+                    </li>
+                  </ul>
                 }
               ></Person>
             }
@@ -1209,6 +2740,7 @@ function App() {
             element={
               <Person
                 indivName={"Ganesh Subrahmanyam"}
+                indivNameCym={"Ganesh Subrahmanyam"}
                 resource={twelveApi.slice(8, 9)}
                 proposedResource={
                   "Interview with the Dr himself or Dr Rini Chatterjee – 2nd second generation GP based in Merthyr."
@@ -1216,6 +2748,69 @@ function App() {
                 slugText={"The Indian Doctor."}
                 indivPic={
                   "https://ichef.bbci.co.uk/images/ic/240x135/p0b6ksrg.jpg"
+                }
+                text={
+                  <ul>
+                    <li>
+                      People who immigrated from Asia in the 1950s were very
+                      important to the success of the NHS.{" "}
+                    </li>
+                    <li>
+                      They continued to be important to healthcare in the years
+                      that followed.{" "}
+                    </li>
+
+                    <li>
+                      The NHS began in 1948 and there was a need for many
+                      doctors to look after people. But there was a shortage of
+                      medical people in Britain because of World War 2.{" "}
+                    </li>
+
+                    <li>
+                      Britain advertised in India (a former colony) for help,
+                      offering good pay and adventure.{" "}
+                    </li>
+                    <li>
+                      A large number of medical people came from India to
+                      Britain to work in the NHS.{" "}
+                    </li>
+
+                    <li>
+                      Dr Ganesh Subrahmanyam was one of the first Indian doctors
+                      to arrive in Wales.{" "}
+                    </li>
+
+                    <li>
+                      He was immediately accepted into the Welsh community and
+                      rose to the challenge of treating diseases that were very
+                      different to that of India.{" "}
+                    </li>
+
+                    <li>
+                      He was part of the medical team at the Aberfan disaster.{" "}
+                    </li>
+
+                    <li>
+                      By the 1960s, 18,000 more Indian doctors came to Britain
+                      to help a struggling NHS on the verge of collapse.{" "}
+                    </li>
+
+                    <li>
+                      Second generation Asians are very important in the medical
+                      world today: A quarter of all medical students in the UK
+                      have South Asian heritage; Many are employed in care
+                      homes; A third of all pharmacists are South Asian.{" "}
+                    </li>
+                    <li>
+                      In 2003, 73% of doctors in the Rhonda Valley were Asian.{" "}
+                    </li>
+
+                    <li>
+                      South Asian medical staff, alongside their other
+                      colleagues, worked tirelessly through the pandemic,
+                      despite being at higher risk of catching Covid.
+                    </li>
+                  </ul>
                 }
               ></Person>
             }
@@ -1225,6 +2820,7 @@ function App() {
             element={
               <Person
                 indivName={"Vaughan Gething"}
+                indivNameCym={"Vaughan Gething"}
                 proposedResource={
                   "Interview with school children about his career as a politician and the challenges he has faced. OR podcast with Emily Pemberton."
                 }
@@ -1232,6 +2828,56 @@ function App() {
                 slugText={"The Welsh Labour Politician."}
                 indivPic={
                   "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Vaughan_Gething.jpg/800px-Vaughan_Gething.jpg"
+                }
+                text={
+                  <ul>
+                    <li>
+                      Vaughan Gething was born in Zambia  where his father,
+                      a white Welsh vet from Ogmore-by-Sea, met his mother who
+                      is a Black Zambian.{" "}
+                    </li>
+                    <li>
+                      When he was two years old, he moved to Monmouthshire,
+                      Wales with his family and then they moved again to Dorset,
+                      England, where Gething was brought up.{" "}
+                    </li>
+                    <li>Vaughan joined the Labour Party when he was 17. </li>
+                    <li>
+                      He read law at Aberystwyth where he became the first Black
+                      president of the National Union of Students Wales.{" "}
+                    </li>
+
+                    <li>
+                      He went on to train as a solicitor in Cardiff in 2001,
+                      with the trade union solicitors Thompsons. He specialised
+                      in employment law and became a partner in Thompsons in
+                      2007.{" "}
+                    </li>
+
+                    <li>
+                      In 2008, at the age of 34, Vaughan became the youngest
+                      President of Wales TUC. He also became the first mixed
+                      race person in the role.{" "}
+                    </li>
+
+                    <li>
+                      Vaughan became a councillor for Butetown, Cardiff as the
+                      Welsh Labour candidate for the Cardiff South and
+                      Penarth constituency in the Senedd. {" "}
+                    </li>
+
+                    <li>
+                      Following the 2016 election, First Minister Carwyn
+                      Jones promoted Gething to the Welsh Cabinet as Cabinet
+                      Secretary for Health, Well-being and Sport. The position
+                      was then renamed as Minister for Health and Social
+                      Services.{" "}
+                    </li>
+                    <li>
+                      Since May 2021, Gething has served as  Minister for the
+                      Economy.{" "}
+                    </li>
+                  </ul>
                 }
               ></Person>
             }

@@ -14,7 +14,9 @@ const ThreeToSix = () => {
   return (
     <>
       <div className="ageRange">
-        {lang !== true ? "Ages 3 - 6" : "3 - 6 Oed"}
+        <h2 className="ageRangeh2">
+          {lang !== true ? "Ages 3 - 6" : "3 - 6 Oed"}
+        </h2>
       </div>
       <div className="searchbar">
         <input
@@ -31,7 +33,7 @@ const ThreeToSix = () => {
               <Link to={item.url}>
                 <StoryBox
                   id={item.id}
-                  name={item.name}
+                  name={lang !== true ? item.name : item.nameCym}
                   image={item.image}
                   slug={item.slug}
                   welshSlug={item.welshSlug}

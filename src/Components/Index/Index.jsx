@@ -44,7 +44,7 @@ const Index = () => {
         totalPosts={indexapi.length}
         paginate={paginate}
       ></Pagination>
-      <Copyright />
+      {/* <Copyright /> */}
     </>
   );
 };

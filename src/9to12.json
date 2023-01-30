@@ -3,170 +3,158 @@
     {
         "id" : 0,
         "name" : "Hans Lichtenstein",
+        "nameCym" : "Hans Lichtenstein",
         "slug": "The boy who fled from Nazi Germany.",
         "welshSlug": "Y bachgen wnaeth ffoi o’r Almaen Natsïaidd.",
         "image": "https://i.guim.co.uk/img/media/7c810c258320be244e1d7d4d721e8a171409c677/180_145_1240_744/master/1240.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=d36ac08cc3c44a21c37572bfc483bb4c",
         "url": "/9to12yo/HansLichtenstein",
         "keywords": "Hans Lichtenstein Jewish Doctor Meddyg",
         "resources": [
-            "www.google.com", 
-            "www.bing.com",
-            "www.test.com"
+            "Links will go here"
         ]
     },
     {
         "id" : 1,
         "name" : "Penrhyn Castle",
+        "nameCym" : "Castell Penrhyn",
         "slug": "The impressive castle and it's links to the slave trade.",
         "welshSlug": "Y castell trawiadol a’i gysylltiadau â chaethwasiaeth.",
         "image": "http://changing-pages.com/wp-content/uploads/2019/05/IMG_4201-1440x1001.jpg",
         "url": "/9to12yo/PenrhynCastle",
         "keywords": "Penrhyn Castle Slave Trade Jamaica castell chaethwasiaeth",
         "resources": [
-            "www.google.com", 
-            "www.bing.com",
-            "www.test.com"
+            "Links will go here"
         ]
     },
     {
         "id" : 2,
         "name" : "Colin Jackson",
+        "nameCym" : "Colin Jackson",
         "slug": "The Olympic medal winner.",
         "welshSlug": "",
         "image": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/2ED2/production/_95868911_gettyimages-1852091.jpg",
         "url": "/9to12yo/ColinJackson",
         "keywords": "Colin Jackson Flag Run Hurdle Gay Olympics Rhedeg",
         "resources": [
-            "www.google.com", 
-            "www.bing.com",
-            "www.test.com"
+            "Links will go here"
         ]
     },
     {
         "id" : 3,
         "name" : " Iris Williams",
+        "nameCym" : " Iris Williams",
         "slug": "The jazz legend from Wales.",
         "welshSlug": "",
         "image": "https://i2-prod.walesonline.co.uk/incoming/article1781243.ece/ALTERNATES/s615/iris-williams-61348596.jpg",
         "url": "/9to12yo/IrisWilliams",
         "keywords": "Iris Williams singer jazz ",
         "resources": [
-            "www.google.com", 
-            "www.bing.com",
-            "www.test.com"
+            "Links will go here"
         ]
     },
     {
         "id" : 4,
         "name" : "Paul Robeson",
+        "nameCym" : "Paul Robeson",
         "slug": "The American singer who joined the miners strike.",
         "welshSlug": "",
         "image": "https://aaregistry.org/wp-content/uploads/2009/09/paul-robeson.jpg",
         "url": "/9to12yo/PaulRobeson",
         "keywords": "Paul Robeson singer miner strike",
         "resources": [
-            "www.google.com", 
-            "www.bing.com",
-            "www.test.com"
+            "Links will go here"
         ]
     },
     {
         "id" : 5,
         "name" : "Louisa BB Morgan",
+        "nameCym" : "Louisa BB Morgan",
         "slug": "The lady who's lived all around the world.",
         "welshSlug": "",
         "image": "https://m.media-amazon.com/images/M/MV5BZGRkNTgwM2YtZWUxNy00MDQzLWE5OTAtODU1MjVmYWE2ZjhiXkEyXkFqcGdeQXVyODIyODI5Mzc@._V1_.jpg",
         "url": "/9to12yo/Louisa",
         "keywords": "Louisa St Bartholomew-Brown Morgan",
         "resources": [
-            "www.google.com", 
-            "www.bing.com",
-            "www.test.com"
+            "Links will go here"
         ]
     },
     
     {
         "id" : 6,
         "name" : "Clive Sullivan",
+        "nameCym" : "Clive Sullivan",
         "slug": "The rugby league legend.",
         "welshSlug": "",
         "image": "https://e2.365dm.com/20/10/2048x1152/skysports-anthony-sullivan_5116431.jpg",
         "url": "/9to12yo/CliveSullivan",
         "keywords": "Clive Sullivan Sport ",
         "resources": [
-            "www.google.com", 
-            "www.bing.com",
-            "www.test.com"
+            "Links will go here"
         ]
     },
     {
         "id" : 7,
         "name" : "John Ystumllyn",
+        "nameCym" : "John Ystumllyn",
         "slug": "The 18th century slave who became a gardener.",
         "welshSlug": "",
         "image": "https://ichef.bbci.co.uk/news/976/cpsprodpb/FDB1/production/_121154946_johnystumllynpeople'scollection.png",
         "url": "/9to12yo/JohnYstumllyn",
         "keywords": "John Ystumllyn gardener",
         "resources": [
-            "www.google.com", 
-            "www.bing.com",
-            "www.test.com"
+            "Links will go here"
         ]
     },
     {
         "id" : 8,
         "name" : "Tiger Bay",
+        "nameCym" : "Tiger Bay",
         "slug": "The bustling multi-ethnic community in Cardiff Bay.",
         "welshSlug": "",
         "image": "https://i2-prod.walesonline.co.uk/incoming/article9925412.ece/ALTERNATES/s1227b/JS70059056.jpg",
         "url": "/9to12yo/TigerBay",
         "keywords": "Tiger Bay ethnic community",
         "resources": [
-            "www.google.com", 
-            "www.bing.com",
-            "www.test.com"
+            "Links will go here"
         ]
     },
     {
         "id" : 9,
         "name" : "Sidoli Ice Cream",
+        "nameCym" : "Hufen Iâ Sidoli",
         "slug": "The story of the award-winning ice cream.",
         "welshSlug": "",
         "image": "https://i2-prod.walesonline.co.uk/incoming/article17960109.ece/ALTERNATES/s1200c/0_RM_180320_Sidoli_IceCream_020.jpg",
         "url": "/9to12yo/SidoliIceCream",
         "keywords": "Sidoli Ice Cream Italian",
         "resources": [
-            "www.google.com", 
-            "www.bing.com",
-            "www.test.com"
+            "Links will go here"
         ]
     },
     {
         "id" : 10,
         "name" : "Vernester Cyril",
+        "nameCym" : "Vernester Cyril",
         "slug": "The nurse from the Carribean who made a difference in Wales.",
         "welshSlug": "",
         "image": "https://www.peoplescollection.wales/sites/default/files/styles/item_detail/public/images/2015/November/bay213.jpg",
         "url": "/9to12yo/VernesterCyril",
         "keywords": "Vernester Cyril Nurse Caribbean OBE",
         "resources": [
-            "www.google.com", 
-            "www.bing.com",
-            "www.test.com"
+            "Links will go here"
         ]
     },
     {
         "id" : 11,
         "name" : "Dom James",
+        "nameCym" : "Dom James",
         "slug": "The Welsh rapper.",
         "welshSlug": "",
         "image": "https://ichef.bbci.co.uk/news/976/cpsprodpb/DBCD/production/_124296265_33020262_1243885189076260_6186539543915659264_n-1.jpg",
         "url": "/9to12yo/DomJames",
         "keywords": "Dom James rapper sing musician",
         "resources": [
-            "www.google.com", 
-            "www.bing.com",
-            "www.test.com"
+            "Links will go here"
         ]
     }
   

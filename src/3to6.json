@@ -1,7 +1,8 @@
 [
     {
         "id" : 0,
-        "name" : "Shirley Bassey",
+        "name" : "Dame Shirley Bassey",
+        "nameCym": "Y Fonesig Shirley Bassey",
         "slug": "The world famous Welsh singer from Tiger Bay.",
         "welshSlug": "",
         "image": "https://www.thesun.co.uk/wp-content/uploads/2018/03/nintchdbpict000385642117.jpg",
@@ -10,6 +11,7 @@
     },{
         "id" : 1,
         "name" : "Sidoli Ice Cream",
+        "nameCym": "Hufen Iâ Sidoli",
         "welshSlug": "",
         "slug": "The story of the award-winning ice cream.",
         "image": "https://i2-prod.walesonline.co.uk/incoming/article17960109.ece/ALTERNATES/s1200c/0_RM_180320_Sidoli_IceCream_020.jpg",
@@ -19,6 +21,7 @@
     ,{
         "id" : 2,
         "name" : "Hans Lichtenstein",
+        "nameCym" : "Hans Lichtenstein",
         "slug": "The boy who fled from Nazi Germany.",
         "welshSlug": "Y bachgen wnaeth ffoi o’r Almaen Natsïaidd.",
         "image": "https://i.guim.co.uk/img/media/7c810c258320be244e1d7d4d721e8a171409c677/180_145_1240_744/master/1240.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=d36ac08cc3c44a21c37572bfc483bb4c",
@@ -28,6 +31,7 @@
     ,{
         "id" : 3,
         "name" : "Arandora Star",
+        "nameCym" : "Arandora Star",
         "slug": "The ship sunk by a German torpedo killing Welsh Italians.",
         "welshSlug": "",
         "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Arandora_Star_1940.jpg",
@@ -37,6 +41,7 @@
     ,{
         "id" : 4,
         "name" : "Tiger Bay",
+        "nameCym" : "Tiger Bay",
         "slug": "The bustling multi-ethnic community in Cardiff Bay.",
         "welshSlug": "",
         "image": "https://i2-prod.walesonline.co.uk/incoming/article9925412.ece/ALTERNATES/s1227b/JS70059056.jpg",
@@ -46,6 +51,7 @@
     ,{
         "id" : 5,
         "name" : "John Ystumllyn",
+        "nameCym" : "John Ystumllyn",
         "slug": "The 18th century slave who became a gardener.",
         "welshSlug": "",
         "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Portrait_of_John_Ystumllyn%2C_11_May_1754.jpg",

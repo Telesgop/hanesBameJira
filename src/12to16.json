@@ -1,138 +1,152 @@
 [{
     "id" : 0,
     "name" : "Glenn Webbe",
+    "nameCym" : "Glenn Webbe",
     "slug": "Wales’ first black icon.",
     "welshSlug": "Eicon du cyntaf Cymru.",
     "image": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/DC57/production/_113170465_shutterstock_editorial_3156656a.jpg",
     "url": "/12to16yo/GlennWebbe",
     "keywords": "Glenn Webbe Rugby",
     "resources": [
-        "www.google.com", 
-        "www.bing.com",
-        "www.test.com"
+        "Links will go here"
     ]
 },
 {
     "id" : 1,
     "name" : "Nigel Walker",
+    "nameCym" : "Nigel Walker",
     "slug": "Athlete, rugby player and high achiever.",
     "welshSlug": "Athletwr, chwaraewr rygbi ac un sydd wedi cyflawni cryn dipyn.",
     "image": "https://d2cx26qpfwuhvu.cloudfront.net/wales/wp-content/uploads/2020/07/17113738/CDF_160294_Nigel_Walker_02-1-708x425.jpg",
     "url": "/12to16yo/NigelWalker",
     "keywords": "Nigel Walker Athlete",
     "resources": [
-        "www.google.com", 
-        "www.bing.com",
-        "www.test.com"
+        "Links will go here"
     ]
 },
 {
     "id" : 2,
     "name" : "Joe Calzaghe",
+    "nameCym" : "Joe Calzaghe",
     "slug": "The super-middleweight world champion.",
     "welshSlug": "",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/JoeCalzaghe-July2007.jpg",
     "url": "/12to16yo/JoeCalzaghe",
     "keywords": "Joe Calzaghe Boxing Italian Sardinia",
     "resources": [
-        "www.google.com", 
-        "www.bing.com",
-        "www.test.com"
+        "Links will go here"
     ]
 },
 {
     "id" : 3,
     "name" : "Jason Mohammed",
+    "nameCym" : "Jason Mohammed",
     "slug": "Newsreader, Television Presenter and Radio Presenter.",
     "welshSlug": "",
     "image": "https://i2-prod.walesonline.co.uk/incoming/article24630322.ece/ALTERNATES/s1200/0_S4C-TV-PAGES.jpg",
     "url": "/12to16yo/JasonMohammed",
     "keywords": "Jason Mohammed radio television bbc news sport",
     "resources": [
-        "www.google.com", 
-        "www.bing.com",
-        "www.test.com"
+        "Links will go here"
     ]
 },
 {
     "id" : 4,
     "name" : "Kizzy Crawford",
+    "nameCym" : "Kizzy Crawford",
     "slug": "Award-winning Welsh singer / songwriter.",
     "welshSlug": "",
     "image": "https://ents24.imgix.net/image/000/158/543/f362a1cbe3eb9d638603c935c57a9f81ee7bd0bf.jpg?auto=format&crop=faces&w=1920&h=1920",
     "url": "/12to16yo/KizzyCrawford",
     "keywords": "Kizzy Crawford singer bajan",
     "resources": [
-        "www.google.com", 
-        "www.bing.com",
-        "www.test.com"
+        "Links will go here"
     ]
 },
 {
     "id" : 5,
     "name" : "Ashley Williams",
+    "nameCym" : "Ashley Williams",
     "slug": "Former professional footballer and captain of Wales.",
     "welshSlug": "",
     "image": "https://i.guim.co.uk/img/media/f77982ffce62788f1ab622c5a878a0b186b5d2db/1450_147_4297_2578/master/4297.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=509500c71e7dcda098b5952a4f2ba212",
     "url": "/12to16yo/AshleyWilliams",
     "keywords": "Ashley Williams football",
     "resources": [
-        "www.google.com", 
-        "www.bing.com",
-        "www.test.com"
+        "Links will go here"
     ]
 },
 {
     "id" : 6,
     "name" : "Joe Erskine",
+    "nameCym" : "Joe Erskine",
     "slug": "Erskine was one of the most gifted British boxers of his day.",
     "welshSlug": "",
     "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/joe-erskine-keystone.jpg",
     "url": "/12to16yo/JoeErskine",
     "keywords": "Joe Erskine boxer tiger bay cardiff",
     "resources": [
-        "www.google.com", 
-        "www.bing.com",
-        "www.test.com"
+        "Links will go here"
     ]
 },
 {
     "id" : 7,
     "name" : "Elizabeth Campbell MBE",
+    "nameCym" : "Elizabeth Campbell MBE",
     "slug": "Wales’ First Black Headteacher.",
     "image": "https://ichef.bbci.co.uk/news/976/cpsprodpb/13CF5/production/_98314118_bettyclean.jpg",
     "url": "/12to16yo/ElizabethCampbell",
     "keywords" : "Elizabeth Campbell MBE",
     "resources": [
-        "www.google.com", 
-        "www.bing.com",
-        "www.test.com"
+        "Links will go here"
     ]
 },
 {
     "id" : 8,
     "name" : "Dr Ganesh Subrahmanyam",
+    "nameCym" : "Dr Ganesh Subrahmanyam",
     "slug": "The Indian Doctor.",
     "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0b6ksrg.jpg",
     "url": "/12to16yo/GaneshSubrahmanyam",
     "keywords" : "Dr Ganesh Subrahmanyam",
     "resources": [
-        "www.google.com", 
-        "www.bing.com",
-        "www.test.com"
+        "Links will go here"
     ]
 },
 {
     "id" : 9,
     "name" : "Vaughan Gething",
+    "nameCym" : "Vaughan Gething",
     "slug": "Welsh Labour Politician.",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Vaughan_Gething.jpg/800px-Vaughan_Gething.jpg",
     "url": "/12to16yo/VaughanGething",
     "keywords" : "Vaughan Gething",
     "resources": [
-        "www.google.com", 
-        "www.bing.com",
-        "www.test.com"
+        "Links will go here"
+    ]
+},
+{
+    "id" : 10,
+    "name" : "?",
+    "nameCym" : "?",
+    "slug": "Not developed yet",
+    "image": "",
+    "url": "/12to16yo/NYD",
+    "keywords" : "",
+    "resources": [
+        "Links will go here"
+    ]
+},
+{
+    "id" : 11,
+    "name" : "?",
+    "nameCym" : "?",
+    "slug": "Not developed yet",
+    "image": "",
+    "url": "/12to16yo/NYD",
+    "keywords" : "",
+    "resources": [
+        "Links will go here"
     ]
 }
 

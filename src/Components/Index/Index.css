@@ -21,7 +21,10 @@ table {
   overflow: scroll;
   height: 70vh;
 }
-
+.indexText {
+  margin-bottom: 0;
+  margin-top: 0;
+}
 th {
   text-align: left;
 

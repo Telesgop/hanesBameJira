@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 6vh;
+  height: 7vh;
   margin-bottom: 1.2rem;
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
@@ -11,18 +11,23 @@
 }
 
 .navLeft {
-  width: 20vw;
+  width: 25%;
 }
 
 .navdiv2 {
-  width: 70vw;
+  /* width: 70%; */
   display: flex;
-  font-weight: bold;
-  font-size: large;
-  justify-content: flex-start;
+  flex-direction: row;
+  /* font-weight: bold;
+  font-size: large; */
+  text-align: center;
+  /* justify-content: flex-start; */
+  align-items: center;
+  justify-content: center;
   padding-left: 1rem;
+  margin: auto;
   z-index: 9;
-  font-family: "Futura", sans-serif;
+  font-family: "Mona Sans", sans-serif;
 }
 
 .modal {
@@ -113,7 +118,7 @@
 .menus {
   display: flex;
   flex-direction: row;
-  width: 20vw;
+  width: 25%;
   align-items: center;
   justify-content: space-around;
   font-family: "Mona-Sans Regular", sans-serif;
@@ -201,7 +206,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .navdiv1 {
+  /* .navdiv1 {
     width: 5vw;
     display: none;
   }
@@ -236,6 +241,9 @@
   }
 
   .infobutton {
+    display: none;
+  } */
+  .navbar {
     display: none;
   }
 }

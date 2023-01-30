@@ -17,14 +17,18 @@ const Person = ({
   slugText,
   welshSlugText,
   resource,
-  noInList,
+  dateOfBirth,
   proposedResource,
+  backLContent,
+  backLContentCym,
+  indivNameCym,
+  resourcesAnch,
 }) => {
   const { lang, setLang } = useContext(LanguageContext);
   const [slide, setSlide] = useState(0);
 
   const container = {
-    hidden: { y: 50 },
+    // hidden: { y: 50 },
     visible: {
       y: 0,
       transition: {
@@ -56,9 +60,9 @@ const Person = ({
             <motion.div
               className="prevnext"
               variants={prevnextbuttons}
-              transition={{ delay: 2 }}
-              initial="hidden"
-              animate="visible"
+              transition={{ delay: 5 }}
+              // initial="hidden"
+              // animate="visible"
             >
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
                 <HiArrowCircleLeft className="prevnextBlocked" />
@@ -70,9 +74,13 @@ const Person = ({
               initial="hidden"
               animate="visible"
             >
-              <div className="personInfo">
+              <div className="personInfo" id="myDIV">
                 <div className="leftSide">
-                  <div className="personName">{indivName}</div>
+                  <div className="personName">
+                    <h2 className="personH2">
+                      {lang !== true ? indivName : indivNameCym}
+                    </h2>
+                  </div>
                   <div className="imgBox">
                     <img
                       src={indivPic}
@@ -84,7 +92,7 @@ const Person = ({
                     {lang !== true ? slugText : welshSlugText}
                     <br />
                     <br />
-                    <strong>Date of Birth, etc</strong>
+                    <strong>{dateOfBirth}</strong>
                   </div>
                 </div>
                 <div className="rightSide">
@@ -99,7 +107,17 @@ const Person = ({
               variants={prevnextbuttons}
               initial="hidden"
               animate="visible"
-              onClick={() => setSlide(1)}
+              onClick={() =>
+                (document.getElementById("myDIV").style = `
+                transform: rotateY(180deg); 
+                transition: 0.45s;
+                content-visibility: hidden;
+
+              `) &&
+                setTimeout(() => {
+                  setSlide(1);
+                }, "450")
+              }
             >
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
                 <HiArrowCircleRight className="prevnext" />
@@ -115,7 +133,17 @@ const Person = ({
               variants={prevnextbuttons}
               initial="hidden"
               animate="visible"
-              onClick={() => setSlide(0)}
+              onClick={() =>
+                (document.getElementById("myDIV2").style = `
+                transform: rotateY(180deg); 
+                transition: 0.45s;
+                content-visibility: hidden;
+
+              `) &&
+                setTimeout(() => {
+                  setSlide(0);
+                }, "450")
+              }
             >
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
                 <HiArrowCircleLeft className="prevnext" />
@@ -128,11 +156,12 @@ const Person = ({
               animate="visible"
             >
               {" "}
-              <div className="personInfoBack">
+              <div className="personInfoBack" id="myDIV2">
                 <div className="backLeft">
                   <div className="backLText">
                     {" "}
-                    Proposed resource: {proposedResource}
+                    {proposedResource}
+                    {lang !== true ? backLContent : backLContentCym}
                   </div>
                 </div>
                 <div className="backRight">
@@ -145,7 +174,7 @@ const Person = ({
                       return (
                         <li key={item.id} className="resourceLi">
                           <a href={listItem} className="resourceHref">
-                            {listItem}
+                            {resourcesAnch}
                           </a>
                         </li>
                       );

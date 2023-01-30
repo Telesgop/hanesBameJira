@@ -3,6 +3,7 @@
     {
         "id" : 1,
         "name" : "Richard Parks",
+        "nameCym" : "Richard Parks",
         "slug": "Rugby player and extreme athlete.",
         "welshSlug": "Chwaraewr rygbi ac athletwr eithafol.",
         "image": "https://images.ctfassets.net/pjshm78m9jt4/qOAmfNKcRdpCajNzkBHMa/0259e6a2036bb8d1797efdbd1a41fee3/richard_parks_hero_2.jpg",
@@ -15,133 +16,165 @@
             "https://www.youtube.com/watch?v=0EjCPnLAn6I",
             "https://www.itv.com/news/wales/2022-03-14/the-pandemic-made-me-question-my-identity-and-my-value-to-the-world",
             "https://www.visitwales.com/things-do/adventure-and-activities/discover-richard-parks-epic-wales"
+        ],
+        "resourcesAnch": [
+            "AAAA", 
+            "BBBB",
+            "CCCC",
+            "DDDD",
+            "EEEE",
+            "FFFF"
         ]
     },
     {
         "id" : 2,
         "name" : "Merthyr Tydfil Synagogue",
+        "nameCym" : "Synagog Merthyr Tudful",
         "slug": "The oldest purpose-built Jewish building surviving in Wales.",
         "welshSlug": "Yr adeilad Iddewig pwrpasol hynaf sydd wedi goroesi yng Nghymru.",
         "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/The_Top_of_Church_Street%2C_Merthyr_Tydfil_%28geograph_4834858%29.jpg",
         "url": "/6to9yo/MerthyrSynagogue",
         "keywords": "Merthyr Tydfil Synagogue Jewish",
         "resources": [
-            "www.goole.com", 
-            "www.bing.com",
-            "www.test.com"
+            "Links will go here"
         ]
     },
     {
         "id" : 3,
         "name" : "Reuel Elijah",
+        "nameCym" : "Reuel Elijah",
         "slug": "Musician, performer and dancer.",
         "welshSlug": "",
         "image": "https://ichef.bbci.co.uk/images/ic/336xn/p03xh0b0.jpg",
         "url": "/6to9yo/ReuelElijah",
         "keywords": "Reuel Elijah Dancer",
         "resources": [
-            "www.google.com", 
-            "www.bing.com",
-            "www.test.com"
+            "Links will go here"
         ]
     },
     {
         "id" : 4,
         "name" : "Lenn Lawrence",
+        "nameCym" : "Lenn Lawrence",
         "slug": "Carpenter and co-former of the Carribean Friendship Society.",
         "welshSlug": "",
         "image": "https://blackhistorywales.org.uk/wp-content/uploads/2020/07/Screenshot-2020-07-09-at-07.56.04.png",
         "url": "/6to9yo/LennLawrence",
         "keywords": "Lenn Lawrence carpenter",
         "resources": [
-            "www.google.com", 
-            "www.bing.com",
-            "www.test.com"
+            "Links will go here"
         ]
     },
     {
         "id" : 5,
         "name" : "Teleri Gray",
+        "nameCym" : "Teleri Gray",
         "slug": "Romani Storyteller.",
         "welshSlug": "",
         "image": "https://live.staticflickr.com/655/22408268685_a9ec39be94_b.jpg",
         "url": "/6to9yo/TeleriGray",
         "keywords": "Teleri Gray romani storyteller",
         "resources": [
-            "www.google.com", 
-            "www.bing.com",
-            "www.test.com"
+            "Links will go here"
         ]
     },
     {
         "id" : 6,
         "name" : "Fong Sui",
+        "nameCym" : "Fong Sui",
         "slug": "First Generation Chinese in Wales.",
         "welshSlug": "",
         "image": "https://i2-prod.walesonline.co.uk/incoming/article6289157.ece/ALTERNATES/s810/JS28547881.jpg",
         "url": "/6to9yo/FongSui",
         "keywords": "Fong Sui Chinese",
         "resources": [
-            "www.google.com", 
-            "www.bing.com",
-            "www.test.com"
+            "Links will go here"
+
         ]
     },
    
     {
         "id" : 9,
         "name" : "Arandora Star",
+        "nameCym" : "Arandora Star",
         "slug": "The ship sunk by a German torpedo killing Welsh Italians.",
         "welshSlug": "",
         "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Arandora_Star_1940.jpg",
         "url": "/6to9yo/ArandoraStar",
         "keywords": "The SS Arandora Star",
         "resources": [
-            "www.google.com", 
-            "www.bing.com",
-            "www.test.com"
+            "Links will go here"
+
         ]
     },
     {
         "id" : 10,
         "name" : "Wilson Monk",
+        "nameCym" : "Wilson Monk",
         "slug": "Member of the 320th Barrage Balloon Battalion.",
         "welshSlug": "",
         "image": "https://images.squarespace-cdn.com/content/v1/55e4bcf2e4b01d0dc78c9848/1441893157537-7AL21O6U939POF0AYWGB/image-asset.jpeg",
         "url": "/6to9yo/WilsonMonk",
         "keywords": "Wilson Monk",
         "resources": [
-            "www.google.com", 
-            "www.bing.com",
-            "www.test.com"
+            "Links will go here"
+
         ]
     },
     {
         "id" : 11,
         "name" : "Dame Shirley Bassey",
+        "nameCym" : "Y Fonesig Shirley Bassey",
         "slug": "The world famous Welsh singer from Tiger Bay.",
         "welshSlug": "",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/TV-opnamen_van_Engelse_zangeres_Shirley_Bassey_Shirley_Bassey_%2C_kop%2C_Bestanddeelnr_924-1644.jpg/1600px-TV-opnamen_van_Engelse_zangeres_Shirley_Bassey_Shirley_Bassey_%2C_kop%2C_Bestanddeelnr_924-1644.jpg?20180317103651",
         "url": "/6to9yo/ShirleyBassey",
         "keywords": "Dame Shirley Veronica Bassey",
         "resources": [
-            "www.google.com", 
-            "www.bing.com",
-            "www.test.com"
+            "Links will go here"
+
         ]
     } ,
     {
         "id" : 12,
-        "name" : "Piece on hair - hairdresser",
+        "name" : "Afro hair",
+        "nameCym" : "Afro hair",
         "slug": "",
         "welshSlug": "",
-        "image": "",
+        "image": "https://ichef.bbci.co.uk/images/ic/640x360/p08ng1wk.jpg",
         "url": "/6to9yo/hair",
         "keywords": "hair",
         "resources": [
-            "www.google.com", 
-            "www.bing.com",
-            "www.test.com"
+            "Links will go here"
+           
+        ]
+    } ,
+    {
+        "id" : 13,
+        "name" : "Enrico Stennet",
+        "nameCym" : "Windrush Cymru",
+        "slug": "Not developed yet",
+        "welshSlug": "Not developed yet",
+        "image": "",
+        "url": "/6to9yo/EnricoStennet",
+        "keywords": "Enrico Stennet",
+        "resources": [
+            "Links will go here"
+           
+        ]
+    } ,
+    {
+        "id" : 14,
+        "name" : "Idris Phillips",
+        "nameCym" : "Black Gold",
+        "slug": "Not developed yet",
+        "welshSlug": "Not developed yet",
+        "image": "",
+        "url": "/6to9yo/IdrisPhillips",
+        "keywords": "Enrico Stennet",
+        "resources": [
+            "Links will go here"
+           
         ]
     } 
 ]

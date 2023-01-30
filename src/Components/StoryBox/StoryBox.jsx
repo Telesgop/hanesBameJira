@@ -36,7 +36,7 @@ const StoryBox = ({ name, image, slug, welshSlug }) => {
       animate="visible"
     >
       <div>
-        <p className="indivName">{name}</p>
+        <h3 className="indivName">{name}</h3>
         <div className="imgAndSlug">
           <img src={image} className="indivImage" alt={name}></img>
         </div>

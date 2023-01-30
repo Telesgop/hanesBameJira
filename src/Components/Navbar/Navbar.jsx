@@ -27,12 +27,10 @@ const Navbar = () => {
   };
   return (
     <div className="navbar">
+      <div className="navLeft"></div>
       <Link to={"/"}>
         <div className="navdiv2">
-          {" "}
-          {lang !== true
-            ? "The History and Contribution of Black, Asian and Ethnic Minorities in Wales"
-            : "Hanes a Chyfraniad Pobl Ddu, Asiaidd a Lleiafrifoedd Ethnig ym Gymru"}
+          <h2>{lang !== true ? "Our Welsh History" : "Hanes Cymru Ni"}</h2>
         </div>
       </Link>
       <div className="menus">

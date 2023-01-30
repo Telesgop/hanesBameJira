@@ -7,6 +7,10 @@
   width: 80vw;
   font-family: "Mona-Sans Regular", sans-serif;
 }
+
+.personH2 {
+  margin: 0;
+}
 .imgBox {
   display: flex;
   justify-content: center;
@@ -85,6 +89,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  transform-style: preserve-3d;
 }
 
 .prevnext {
@@ -108,7 +113,9 @@
 }
 .backLText {
   margin: 10px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  flex-direction: column;
   border-radius: 15px;
   padding: 10px;
   height: 50%;
@@ -134,6 +141,7 @@
 .resourceLi {
   padding: 10px;
   list-style: none;
+  font-size: smaller;
 }
 
 .resourceHref {
@@ -163,7 +171,9 @@
   width: 70%;
   height: 50vh;
   border-radius: 7px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
   object-fit: cover;
 }
 
@@ -182,21 +192,29 @@
   .personInfo {
     display: flex;
     flex-direction: column;
+    height: auto !important;
   }
   .personText {
-    padding: 1rem;
-    overflow: hidden;
+    padding: 0rem !important;
+    margin-right: 20px !important;
+    width: 100vw;
+    /* overflow: hidden; */
+    list-style: none !important;
   }
   .personBox {
     justify-content: space-between;
     margin-top: 1vh;
-    height: 80vh;
+    list-style: none !important;
+
+    height: auto !important;
     background: none;
     border: none;
+    display: flex;
     width: 100%;
   }
   .leftSide {
     width: 100%;
+    list-style: none !important;
   }
 
   .imgBox {
@@ -215,11 +233,13 @@
   }
   .rightSide {
     overflow: visible;
+    list-style: none !important;
   }
   .wholePage {
     margin-top: 0;
     display: flex;
     flex-direction: column;
+    list-style: none !important;
   }
 
   .flipMobile {

@@ -7,6 +7,7 @@ import { BiSearchAlt } from "react-icons/bi";
 import Copyright from "../Copyright/Copyright";
 import { Link } from "react-router-dom";
 import api from "../../api.json";
+import { motion } from "framer-motion";
 
 const SixToNine = () => {
   const { lang, setLang } = useContext(LanguageContext);
@@ -15,7 +16,9 @@ const SixToNine = () => {
   return (
     <>
       <div className="ageRange">
-        {lang !== true ? "Ages 6 - 9" : "6 - 9 Oed"}
+        <h2 className="ageRangeh2">
+          {lang !== true ? "Ages 6 - 9" : "6 - 9 Oed"}
+        </h2>
       </div>
       <div className="searchbar">
         <input
@@ -23,7 +26,9 @@ const SixToNine = () => {
           className="searchInput"
           placeholder={lang !== true ? "Search" : "Chwilio"}
         ></input>
-        <BiSearchAlt className="magnifyingGlass" />
+        <div className="searchMagni">
+          <BiSearchAlt className="magnifyingGlass" />
+        </div>
       </div>
       <div className="storiesContainer">
         {query == "" && (
@@ -32,7 +37,7 @@ const SixToNine = () => {
               <Link to={item.url}>
                 <StoryBox
                   key={item.id}
-                  name={item.name}
+                  name={lang !== true ? item.name : item.nameCym}
                   image={item.image}
                   slug={item.slug}
                   welshSlug={item.welshSlug}

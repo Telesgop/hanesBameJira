@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/hanesbame/static/css/main.398df828.css",
-    "main.js": "/hanesbame/static/js/main.7d6b26f6.js",
+    "main.css": "/hanesbame/static/css/main.55898abd.css",
+    "main.js": "/hanesbame/static/js/main.07d69590.js",
+    "static/media/theoEng.mp3": "/hanesbame/static/media/theoEng.19ea092d84b338b8c607.mp3",
+    "static/media/theoCym.mp3": "/hanesbame/static/media/theoCym.cb6575fedce401b5d77a.mp3",
+    "static/media/emilyEng.mp3": "/hanesbame/static/media/emilyEng.d5413163c9dab3d62e35.mp3",
+    "static/media/emilyCym.mp3": "/hanesbame/static/media/emilyCym.180f5658725ac409950f.mp3",
+    "static/media/domCym.mp3": "/hanesbame/static/media/domCym.eb0441118567208e5e50.mp3",
+    "static/media/domEng.mp3": "/hanesbame/static/media/domEng.84b272fbea4d333b3c3a.mp3",
     "static/media/wales.png": "/hanesbame/static/media/wales.9007763c02b4a1afaa22.png",
     "static/media/united-kingdom.png": "/hanesbame/static/media/united-kingdom.789ff1da7dc0b7ff0220.png",
     "static/media/wgLogo.png": "/hanesbame/static/media/wgLogo.06fdf6239de01cc1ef2d.png",
     "index.html": "/hanesbame/index.html",
-    "main.398df828.css.map": "/hanesbame/static/css/main.398df828.css.map",
-    "main.7d6b26f6.js.map": "/hanesbame/static/js/main.7d6b26f6.js.map"
+    "main.55898abd.css.map": "/hanesbame/static/css/main.55898abd.css.map",
+    "main.07d69590.js.map": "/hanesbame/static/js/main.07d69590.js.map"
   },
   "entrypoints": [
-    "static/css/main.398df828.css",
-    "static/js/main.7d6b26f6.js"
+    "static/css/main.55898abd.css",
+    "static/js/main.07d69590.js"
   ]
 }

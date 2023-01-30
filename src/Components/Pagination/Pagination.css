@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: flex-start;
   align-self: center;
+  list-style: none;
   position: fixed;
   width: 100vw;
   text-align: center;
@@ -12,6 +13,8 @@
 .paginationNav {
   display: flex;
   align-items: flex-start;
+  list-style: none;
+
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -33,6 +36,9 @@
   margin: 10px;
   padding-bottom: 40px;
   font-family: "Mona-Sans Regular", sans-serif;
+  list-style: none;
+
+  text-align: center;
 
   /* border-radius: 30%; */
 }
@@ -41,6 +47,7 @@
   text-align: center;
   font-family: "Mona-Sans Regular", sans-serif;
   font-weight: bold;
+  list-style: none;
 }
 .paginationNum :hover {
   cursor: pointer;

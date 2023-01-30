@@ -8,7 +8,61 @@ import Copyright from "../Copyright/Copyright";
 
 const Home = () => {
   const { lang, setLang } = useContext(LanguageContext);
-
+  const introParaEng = (
+    <>
+      <h1>
+        <span className="underlineNice">Our Welsh History</span>
+      </h1>
+      <h3>
+        A website which celebrates the rich diverse history of ethnic and
+        minority people in Wales.
+      </h3>
+      <h3 style={{ "font-weight": "normal" }}>
+        On the website we look at the essential role that ethnic minorities have
+        played in the history of our country. We shine a light on characters
+        that have been influencial in our history , on important buildings as
+        well as on some current individuals that are shaping the Wales of the
+        future.
+      </h3>
+      <h3 style={{ "font-weight": "normal" }}>
+        The website contains interesting facts, videos, podcasts and points for
+        discussion. The Teacher Notes show how the website fits in to the new
+        National Curriculum and contains weblinks for further research.
+      </h3>
+      <h3 style={{ "font-weight": "normal" }}>
+        We very much hope the website will assist in bringing the multicultural
+        history of Wales to life in classrooms across the country. Enjoy!
+      </h3>
+    </>
+  );
+  const introParaCym = (
+    <>
+      <h1>
+        <span className="underlineNice">Hanes Cymru Ni</span>
+      </h1>
+      <h3>
+        {" "}
+        Gwefan sy'n dathlu cyfoeth hanes pobl ethnig a lleiafrifol yng Nghymru.
+      </h3>
+      <h3 style={{ "font-weight": "normal" }}>
+        Ar y wefan rydym yn edrych ar y rôl hanfodol mae pobl o gefndiroedd
+        ethnig a lleiafrifol wedi chwarae yn hanes ein gwlad. Rydym yn taflu
+        golau ar gymeriadau sydd wedi bod y allweddol yn ein hanes, ar adeiladau
+        pwysig yn ogystal â rhai unigolion cyfoes sy'n siapio dyfodol Cymru.
+      </h3>
+      <h3 style={{ "font-weight": "normal" }}>
+        Mae'r wefan yn cynnwys ffeithiau diddorol, fideos, podcastiau a
+        phwyntiau trafod. Mae Nodiadau Athrawon ar gael sy'n dangos sut mae'r
+        wefan yn cysylltu â'r Cwricwlwm Cenedlaethol yn ogystal â dolenni i
+        wneud ymchwil pellach.
+      </h3>
+      <h3 style={{ "font-weight": "normal" }}>
+        Hyderwn yn fawr y bydd y wefan yn gymorth i ddod a hanes
+        aml-ddiwylliannol Cymru yn fyw mewn ystafelloedd dosbarth trwy'r wlad.
+        Mwynhewch!
+      </h3>
+    </>
+  );
   const container = {
     hidden: { y: 50 },
     visible: {
@@ -32,28 +86,15 @@ const Home = () => {
       <div className="introDiv">
         <div className="introText">
           {" "}
-          This will be an introduction to the site. Here is some placeholder
-          text: Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-          qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-          dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-          quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-          aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-          exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-          ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
-          ea voluptate velit esse quam nihil molestiae consequatur, vel illum
-          qui dolorem eum fugiat quo voluptas nulla pariatur?
+          {lang !== true ? introParaEng : introParaCym}
         </div>
       </div>
       <div className="ageText">
-        <br></br>
-        <br></br>
-        {lang !== true
-          ? "To begin, choose a category:"
-          : "I ddechrau, dewiswch grŵp oedran:"}
+        <h3 style={{ "font-weight": "normal" }}>
+          {lang !== true
+            ? "To begin, choose an age group:"
+            : "I ddechrau, dewiswch grŵp oedran:"}
+        </h3>
       </div>
       <motion.div
         className="ageGroups"
@@ -69,7 +110,7 @@ const Home = () => {
             variants={item}
             style={{ "background-color": "#FFCB77" }}
           >
-            3-6
+            <h3>3-6</h3>
           </motion.div>
         </Link>
         <Link to={"/6to9yo"}>
@@ -80,7 +121,7 @@ const Home = () => {
             variants={item}
             style={{ "background-color": "#CFE57D" }}
           >
-            6-9
+            <h3>6-9</h3>
           </motion.div>
         </Link>
 
@@ -92,7 +133,7 @@ const Home = () => {
             variants={item}
             style={{ "background-color": "#A2D6F9" }}
           >
-            9-12
+            <h3>9-12</h3>
           </motion.div>
         </Link>
         <Link to={"/12to16yo"}>
@@ -103,11 +144,10 @@ const Home = () => {
             variants={item}
             style={{ "background-color": "#FF686B" }}
           >
-            12-16
+            <h3>12-16</h3>
           </motion.div>
         </Link>
       </motion.div>
-      <Copyright />
     </>
   );
 };
