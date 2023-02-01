@@ -72,7 +72,7 @@ const Navbar = () => {
             </motion.div>
           </div>{" "}
           <div className="innerTextInfo">
-            <div className="notesH2">Notes</div>
+            <div className="notesH2">Teacher Notes</div>
             <div className="notesP">Here will be notes for teachers.</div>
             <div className="notesH2">Accessibility</div>
             <div className="notesP">
