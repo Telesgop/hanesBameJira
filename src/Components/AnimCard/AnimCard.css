@@ -1,7 +1,4 @@
 .leftSideAnimCard {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
   font-family: "Mona-Sans Regular", sans-serif;
 }
 
@@ -12,10 +9,8 @@
 }
 .personInfoAnimCard {
   background-color: white;
-  /* border: 2px solid black; */
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
   border-radius: 15px !important;
   width: 75vw;
   height: 75vh !important;
@@ -26,9 +21,7 @@
   font-family: "Mona-Sans Regular", sans-serif;
 }
 .animCardVideo {
-  /* border: 2px solid black; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,7 +48,51 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  /* height: 90vh; */
   width: 80vw;
   font-family: "Mona-Sans Regular", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .wholePageAnimCard {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-shadow: none;
+    background-color: #f5f5f7;
+
+    list-style: none !important;
+  }
+  .personBoxAnimCard {
+    justify-content: space-between;
+    margin-top: 1vh;
+    list-style: none !important;
+    list-style-type: none !important;
+    height: auto !important;
+    background: none;
+    background-color: #f5f5f7;
+
+    border: none;
+    display: flex;
+    box-shadow: none;
+    width: 100%;
+  }
+  .personInfoAnimCard {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f7;
+
+    box-shadow: none;
+
+    height: 90vh !important;
+    width: 95vw;
+  }
+  .animCardVideo {
+    margin: 10px !important;
+    width: 90%;
+  }
+  .personNameAnimCard {
+    margin: 0;
+    width: auto;
+  }
 }

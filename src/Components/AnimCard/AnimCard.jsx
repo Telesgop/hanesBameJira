@@ -49,7 +49,9 @@ const AnimCard = ({
             animate="visible"
           >
             <div className="personInfoAnimCard">
-              <div className="personNameAnimCard">{indivName}</div>
+              <div className="personNameAnimCard">
+                <h2 className="personH2">{indivName}</h2>
+              </div>
               <div className="animCardVideo">Animated video will be here.</div>
             </div>
           </motion.div>

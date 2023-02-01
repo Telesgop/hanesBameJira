@@ -139,7 +139,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: medium;
+    /* font-size: medium; */
     flex-direction: column;
     margin-top: auto;
   }
@@ -147,5 +147,9 @@ a {
     width: 45vw;
     height: 13vh;
     margin-top: 20px;
+  }
+
+  .introDiv {
+    width: 95%;
   }
 }
