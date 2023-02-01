@@ -148,6 +148,10 @@
   color: blue;
 }
 
+.linkLi {
+  padding-bottom: 10px;
+}
+
 .prevnextBlocked {
   transform: scale(3);
   display: flex;
@@ -193,19 +197,26 @@
     display: flex;
     flex-direction: column;
     height: auto !important;
+    width: 100vw;
   }
   .personText {
     padding: 0rem !important;
     margin-right: 20px !important;
     width: 100vw;
-    /* overflow: hidden; */
     list-style: none !important;
+    display: flex;
+    list-style-type: none !important;
+  }
+
+  .personText ul {
+    list-style: none;
+    padding: 10px;
   }
   .personBox {
     justify-content: space-between;
     margin-top: 1vh;
     list-style: none !important;
-
+    list-style-type: none !important;
     height: auto !important;
     background: none;
     border: none;
@@ -248,5 +259,8 @@
 
   .flipImg {
     transform: scale(2);
+  }
+  .personShortSlug {
+    height: auto;
   }
 }

@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className="navLeft"></div>
       <Link to={"/"}>
         <div className="navdiv2">
-          <h2>{lang !== true ? "Our Welsh History" : "Hanes Cymru Ni"}</h2>
+          {/* <h2>{lang !== true ? "Our Welsh History" : "Hanes Cymru Ni"}</h2> */}
         </div>
       </Link>
       <div className="menus">
@@ -62,9 +62,15 @@ const Navbar = () => {
       </div>
       <div className={style}>
         <div className="innerModal">
-          <motion.div className="innerText" onClick={() => setStyle("noModal")}>
-            <ImCross className="crossImg" />
-          </motion.div>{" "}
+          <div className="innerText">
+            <motion.div
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              onClick={() => setStyle("noModal")}
+            >
+              <ImCross className="crossImg" />
+            </motion.div>
+          </div>{" "}
           <div className="innerTextInfo">
             <div className="notesH2">Notes</div>
             <div className="notesP">Here will be notes for teachers.</div>

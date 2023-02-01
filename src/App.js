@@ -53,7 +53,60 @@ function App() {
               <Person
                 indivName={"Richard Parks"}
                 indivNameCym={"Richard Parks"}
-                resourcesAnch={("s", "s", "a")}
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.richardparks.co.uk/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Richard Parks Official Site
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=5bcC14ay-iY"
+                        className="resourceHref"
+                      >
+                        Mind Over Mountain | Richard Parks on Mount Everest
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=9COyDnyB_ag"
+                        className="resourceHref"
+                      >
+                        Richard Parks - Welsh Sports Hall of Fame
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=0EjCPnLAn6I"
+                        className="resourceHref"
+                      >
+                        Richard Parks: The Big Interview
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.itv.com/news/wales/2022-03-14/the-pandemic-made-me-question-my-identity-and-my-value-to-the-world"
+                        className="resourceHref"
+                      >
+                        Richard Parks: ‘The pandemic made me question my
+                        identity and my value to the world’
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.visitwales.com/things-do/adventure-and-activities/discover-richard-parks-epic-wales"
+                        className="resourceHref"
+                      >
+                        Richard Parks: Epic Welsh adventures
+                      </a>
+                    </li>
+                  </ul>
+                }
                 proposedResource={
                   "Emily Pemberton to interview Richard Parks? Or Podcast "
                 }

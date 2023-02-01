@@ -107,6 +107,7 @@ const Home = () => {
             className="ageGroupIndiv"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
+            transition={{ duration: 0.3 }}
             variants={item}
             style={{ "background-color": "#FFCB77" }}
           >
@@ -119,6 +120,7 @@ const Home = () => {
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
             variants={item}
+            transition={{ duration: 0.3 }}
             style={{ "background-color": "#CFE57D" }}
           >
             <h3>6-9</h3>
@@ -131,6 +133,7 @@ const Home = () => {
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
             variants={item}
+            transition={{ duration: 0.3 }}
             style={{ "background-color": "#A2D6F9" }}
           >
             <h3>9-12</h3>
@@ -141,6 +144,7 @@ const Home = () => {
             className="ageGroupIndiv"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
+            transition={{ duration: 0.3 }}
             variants={item}
             style={{ "background-color": "#FF686B" }}
           >

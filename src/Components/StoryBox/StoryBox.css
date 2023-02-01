@@ -67,7 +67,7 @@
   .storyBox {
     height: 40vh !important;
     padding: 1px;
-    width: 20vw;
+    width: 70vw !important;
   }
 
   .imgAndSlug {

@@ -22,7 +22,7 @@ const Person = ({
   backLContent,
   backLContentCym,
   indivNameCym,
-  resourcesAnch,
+  links,
 }) => {
   const { lang, setLang } = useContext(LanguageContext);
   const [slide, setSlide] = useState(0);
@@ -169,17 +169,8 @@ const Person = ({
                     {" "}
                     {lang !== true ? "Online Resources:" : "Adnoddau Ar-lein:"}
                   </p>
-                  {resource.map((item, id) => {
-                    return item.resources.map((listItem) => {
-                      return (
-                        <li key={item.id} className="resourceLi">
-                          <a href={listItem} className="resourceHref">
-                            {resourcesAnch}
-                          </a>
-                        </li>
-                      );
-                    });
-                  })}
+                  <p>(Links will go here)</p>
+                  {links}
                 </div>
               </div>
             </div>

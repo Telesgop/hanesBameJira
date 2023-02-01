@@ -31,6 +31,7 @@ const StoryBox = ({ name, image, slug, welshSlug }) => {
       className="storyBox"
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
+      transition={{ duration: 0.3 }}
       variants={container}
       initial="hidden"
       animate="visible"
