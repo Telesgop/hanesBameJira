@@ -6,7 +6,9 @@
   font-size: larger;
   font-weight: bold;
   z-index: 9;
-  font-family: "Mona-Sans Regular", sans-serif;
+  /* font-family: "Mona-Sans Regular", sans-serif; */
+  font-family: "Space Grotesk", regular;
+
   margin-bottom: 10px;
 }
 

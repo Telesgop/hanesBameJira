@@ -10,7 +10,7 @@ const Home = () => {
   const { lang, setLang } = useContext(LanguageContext);
   const introParaEng = (
     <>
-      <h1>
+      <h1 className="OurWelshHistory">
         <span className="underlineNice">Our Welsh History</span>
       </h1>
       <h3>
@@ -20,7 +20,7 @@ const Home = () => {
       <h3 style={{ "font-weight": "normal" }}>
         On the website we look at the essential role that ethnic minorities have
         played in the history of our country. We shine a light on characters
-        that have been influencial in our history , on important buildings as
+        that have been influencial in our history, on important buildings as
         well as on some current individuals that are shaping the Wales of the
         future.
       </h3>
@@ -37,7 +37,7 @@ const Home = () => {
   );
   const introParaCym = (
     <>
-      <h1>
+      <h1 className="OurWelshHistory">
         <span className="underlineNice">Hanes Cymru Ni</span>
       </h1>
       <h3>

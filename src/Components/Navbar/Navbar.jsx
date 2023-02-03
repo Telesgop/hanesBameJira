@@ -9,12 +9,14 @@ import { ImCross } from "react-icons/im";
 import { AiFillHome } from "react-icons/ai";
 import { GrNotes } from "react-icons/gr";
 import { BsPersonLinesFill } from "react-icons/bs";
+import { GiHamburgerMenu } from "react-icons/gi";
 import welshFlag from "../../Images/wales.png";
 import engFlag from "../../Images/united-kingdom.png";
 
 const Navbar = () => {
   const { lang, setLang } = useContext(LanguageContext);
   const [style, setStyle] = useState("noModal");
+  const [isOpen, setIsOpen] = useState(false);
 
   let handlePress = () => {
     if (lang === true) {
@@ -25,30 +27,31 @@ const Navbar = () => {
     if (style === "noModal") setStyle("modal");
     else if (style === "modal") setStyle("noModal");
   };
+
+  const variants = {
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: "100%" },
+  };
+
   return (
     <div className="navbar">
-      <div className="navLeft"></div>
+      <div className="navLeft">
+        <div>
+          <Link to={"/"}>
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+              <AiFillHome
+                style={{ transform: "scale(1.5)", "padding-left": "30px" }}
+              />
+            </motion.div>
+          </Link>
+        </div>
+      </div>
       <Link to={"/"}>
         <div className="navdiv2">
           {/* <h2>{lang !== true ? "Our Welsh History" : "Hanes Cymru Ni"}</h2> */}
         </div>
       </Link>
       <div className="menus">
-        <Link to={"/"}>
-          <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-            <AiFillHome style={{ transform: "scale(1.5)" }} />
-          </motion.div>
-        </Link>
-        <motion.div tabIndex="0" whileHover={{ scale: 1.2 }}>
-          <div onClick={handleInfo} className="hoverNav">
-            <GrNotes style={{ transform: "scale(1.1)" }} />
-          </div>
-        </motion.div>
-        <Link to={"/index"}>
-          <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-            <BsPersonLinesFill style={{ transform: "scale(1.4)" }} />
-          </motion.div>
-        </Link>
         <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
           <div onClick={handlePress} className="hoverNavCym" tabIndex="0">
             {lang === true && (
@@ -59,38 +62,50 @@ const Navbar = () => {
             )}
           </div>
         </motion.div>
+        <motion.div tabIndex="0" whileHover={{ scale: 1.2 }}>
+          <div
+            // onClick={handleInfo}
+            className="hoverNav"
+            onClick={() => setIsOpen((isOpen) => !isOpen)}
+          >
+            <GiHamburgerMenu
+              style={{ transform: "scale(1.5)" }}
+              className="burger"
+            />
+          </div>
+        </motion.div>
       </div>
-      <div className={style}>
+
+      <motion.div
+        // className={style}
+        className="modal"
+        animate={isOpen ? "open" : "closed"}
+        variants={variants}
+        transition={{ type: "Inertia", stiffness: 25 }}
+      >
         <div className="innerModal">
           <div className="innerText">
             <motion.div
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
-              onClick={() => setStyle("noModal")}
+              // onClick={() => setStyle("noModal")}
+              onClick={() => setIsOpen((isOpen) => !isOpen)}
             >
               <ImCross className="crossImg" />
             </motion.div>
           </div>{" "}
           <div className="innerTextInfo">
             <div className="notesH2">Teacher Notes</div>
-            <div className="notesP">Here will be notes for teachers.</div>
+            <div className="notesH2">Index</div>
             <div className="notesH2">Accessibility</div>
-            <div className="notesP">
-              It is our hope for the website to be easy to use and accessible to
-              as many people as possible. To aid accessibility, it is possible
-              to navigate the site using the keyboard and the Tab key.
-            </div>
             <div className="notesH2">Attributions</div>
-            <div className="notesP">
-              Welsh and UK flag icons created by Freepik - Flaticon.
-            </div>
             <div className="notesH2">Site Information</div>
-            <div className="notesP">
-              Website developed by Telesgop, funded by Welsh Government.
-            </div>
+          </div>
+          <div className="cpyrght">
+            Website developed by Telesgop. Funded by Welsh Government.
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

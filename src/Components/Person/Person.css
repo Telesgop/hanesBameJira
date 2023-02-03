@@ -53,7 +53,9 @@
 
 .personName {
   font-weight: bold;
-  font-family: "Mona Sans", sans-serif;
+  /* font-family: "Mona Sans", sans-serif; */
+  font-family: "Space Grotesk", regular;
+
   font-size: x-large !important;
 }
 .rightSide {
