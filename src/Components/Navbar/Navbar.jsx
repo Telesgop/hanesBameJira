@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { useContext } from "react";
 import { LanguageContext } from "../../Helper/Context";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, MotionConfig } from "framer-motion";
 import { useState } from "react";
 import { ImCross } from "react-icons/im";
 import { AiFillHome } from "react-icons/ai";
@@ -29,7 +29,7 @@ const Navbar = () => {
   };
 
   const variants = {
-    open: { opacity: 1, x: 0 },
+    open: { opacity: 1, x: "0%" },
     closed: { opacity: 0, x: "100%" },
   };
 
@@ -40,7 +40,7 @@ const Navbar = () => {
           <Link to={"/"}>
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
               <AiFillHome
-                style={{ transform: "scale(1.5)", "padding-left": "30px" }}
+                style={{ transform: "scale(1.5)", "margin-left": "30px" }}
               />
             </motion.div>
           </Link>
@@ -62,17 +62,17 @@ const Navbar = () => {
             )}
           </div>
         </motion.div>
-        <motion.div tabIndex="0" whileHover={{ scale: 1.2 }}>
-          <div
-            // onClick={handleInfo}
-            className="hoverNav"
-            onClick={() => setIsOpen((isOpen) => !isOpen)}
-          >
-            <GiHamburgerMenu
-              style={{ transform: "scale(1.5)" }}
-              className="burger"
-            />
-          </div>
+
+        <motion.div
+          className="hoverNav"
+          onClick={() => setIsOpen((isOpen) => !isOpen)}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <GiHamburgerMenu
+            style={{ transform: "scale(1.5)" }}
+            className="burger"
+          />
         </motion.div>
       </div>
 
@@ -81,25 +81,59 @@ const Navbar = () => {
         className="modal"
         animate={isOpen ? "open" : "closed"}
         variants={variants}
-        transition={{ type: "Inertia", stiffness: 25 }}
+        exit={{ opacity: 0 }}
+        transition={{ type: "spring", damping: 19 }}
       >
         <div className="innerModal">
           <div className="innerText">
             <motion.div
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
-              // onClick={() => setStyle("noModal")}
               onClick={() => setIsOpen((isOpen) => !isOpen)}
             >
               <ImCross className="crossImg" />
             </motion.div>
           </div>{" "}
           <div className="innerTextInfo">
-            <div className="notesH2">Teacher Notes</div>
-            <div className="notesH2">Index</div>
-            <div className="notesH2">Accessibility</div>
-            <div className="notesH2">Attributions</div>
-            <div className="notesH2">Site Information</div>
+            <motion.h2
+              className="notesH2"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              {lang ? "Nodiadau" : "Notes"}
+            </motion.h2>
+
+            <motion.h2
+              className="notesH2"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              {lang ? "Mynegai" : "Index"}
+            </motion.h2>
+
+            <motion.h2
+              className="notesH2"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              {lang ? "Hygyrchedd" : "Accessibility"}
+            </motion.h2>
+
+            <motion.h2
+              className="notesH2"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              Attributions
+            </motion.h2>
+
+            <motion.h2
+              className="notesH2"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              Site Information
+            </motion.h2>
           </div>
           <div className="cpyrght">
             Website developed by Telesgop. Funded by Welsh Government.

@@ -1,0 +1,38 @@
+.ageGroupsCat {
+  z-index: 9;
+  margin-top: 5vh;
+  font-weight: lighter;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Space Grotesk", regular;
+  /* margin-bottom: 5vh; */
+  font-weight: light;
+  /* padding-bottom: 5vh; */
+}
+
+.ageGroupIndivCat {
+  display: flex;
+  font-size: x-large;
+  justify-content: center;
+  align-items: center;
+  color: #f5f5f7;
+  border-radius: 5px;
+  height: 60vh;
+  width: 20vw;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-family: "Space Grotesk", regular;
+}
+
+.ageTextCat {
+  z-index: 9;
+  text-align: center;
+  align-items: center;
+  margin-top: 1vh !important;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: large;
+  font-family: "Space Grotesk", regular;
+}

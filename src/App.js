@@ -22,6 +22,7 @@ import emily from "./Podcasts/Emily/emilyEng.mp3";
 import domCym from "./Podcasts/DomJames/domCym.mp3";
 import theoCym from "./Podcasts/TheoCabango/theoCym.mp3";
 import emilyCym from "./Podcasts/Emily/emilyCym.mp3";
+import Categories from "./Components/Categories/Categories";
 
 function App() {
   const [lang, setLang] = useState(false);
@@ -46,7 +47,7 @@ function App() {
           ></Route>
           <Route path="/12to12yo" element={<SixToNine></SixToNine>}></Route>
           <Route path="/back" element={<PersonBack></PersonBack>}></Route>
-
+          <Route path="/Categories" element={<Categories />}></Route>
           <Route
             path="/6to9yo/RichardParks"
             element={

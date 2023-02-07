@@ -3,19 +3,60 @@
   text-align: center;
   align-items: center;
   margin-top: 5vh;
+  display: flex;
+  justify-content: center;
   position: relative;
   font-size: large;
   /* font-family: "Mona Sans", sans-serif; */
   font-family: "Space Grotesk", regular;
 }
 
+.ageTextBegin {
+  z-index: 9;
+  text-align: center;
+  align-items: center;
+  margin-top: 5vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  font-size: large;
+  font-family: "Space Grotesk", regular;
+  border-radius: 5px;
+  width: 10vw;
+  height: 7vh;
+  color: #f2f2f2;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #258ea6;
+}
+.colourCategory {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.colourCategoryH3 {
+  margin-top: 0;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.colourCategoryP {
+  margin: 0;
+  font-size: large;
+  font-weight: bold;
+  padding-left: 10px;
+}
 .OurWelshHistory {
   margin-top: 0 !important;
   /* font-size: xx-large; */
   font-size: 50px;
 }
 .underlineNice {
-  background-image: linear-gradient(90deg, #e67399, #f2a640);
+  background-image: linear-gradient(90deg, #ffcb77, #cfe57d, #a2d6f9, #ff686b);
   background-position: bottom;
   background-size: 100% 30%;
   background-repeat: no-repeat;
@@ -34,7 +75,7 @@
   text-align: left;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 60%;
   font-size: large;
 }
 .introDiv {

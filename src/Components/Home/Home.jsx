@@ -89,69 +89,18 @@ const Home = () => {
           {lang !== true ? introParaEng : introParaCym}
         </div>
       </div>
-      <div className="ageText">
-        <h3 style={{ "font-weight": "normal" }}>
-          {lang !== true
-            ? "To begin, choose an age group:"
-            : "I ddechrau, dewiswch grŵp oedran:"}
-        </h3>
-      </div>
-      <motion.div
-        className="ageGroups"
-        variants={container}
-        initial="hidden"
-        animate="visible"
-      >
-        <Link to={"/3to6yo"}>
-          <motion.div
-            className="ageGroupIndiv"
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ duration: 0.3 }}
-            variants={item}
-            style={{ "background-color": "#FFCB77" }}
-          >
-            <h3>3-6</h3>
-          </motion.div>
-        </Link>
-        <Link to={"/6to9yo"}>
-          <motion.div
-            className="ageGroupIndiv"
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            variants={item}
-            transition={{ duration: 0.3 }}
-            style={{ "background-color": "#CFE57D" }}
-          >
-            <h3>6-9</h3>
-          </motion.div>
-        </Link>
 
-        <Link to={"/9to12yo"}>
-          <motion.div
-            className="ageGroupIndiv"
+      <div className="ageText">
+        <Link to={"/Categories"}>
+          <motion.h2
+            className="ageTextBegin"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
-            variants={item}
-            transition={{ duration: 0.3 }}
-            style={{ "background-color": "#A2D6F9" }}
           >
-            <h3>9-12</h3>
-          </motion.div>
+            Begin
+          </motion.h2>
         </Link>
-        <Link to={"/12to16yo"}>
-          <motion.div
-            className="ageGroupIndiv"
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ duration: 0.3 }}
-            variants={item}
-            style={{ "background-color": "#FF686B" }}
-          >
-            <h3>12-16</h3>
-          </motion.div>
-        </Link>
-      </motion.div>
+      </div>
     </>
   );
 };
