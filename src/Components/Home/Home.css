@@ -204,6 +204,14 @@ a {
   }
 
   .introDiv {
-    width: 95%;
+    width: 95vw !important;
+  }
+
+  .introText {
+    width: auto;
+  }
+
+  .ageTextBegin {
+    width: 20vw;
   }
 }

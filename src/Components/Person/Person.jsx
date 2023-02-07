@@ -163,6 +163,13 @@ const Person = ({
                     {proposedResource}
                     {lang !== true ? backLContent : backLContentCym}
                   </div>
+                  <motion.div
+                    className="quizButton"
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <h3 className="quizH2">Try The Quiz!</h3>
+                  </motion.div>
                 </div>
                 <div className="backRight">
                   <p>

@@ -53,7 +53,6 @@
 
 .personName {
   font-weight: bold;
-  /* font-family: "Mona Sans", sans-serif; */
   font-family: "Space Grotesk", regular;
 
   font-size: x-large !important;
@@ -105,9 +104,34 @@
   justify-content: center;
   align-items: center;
   font-family: "Mona-Sans Regular", sans-serif;
-
+  flex-direction: column;
   border-radius: 15px;
 }
+
+.quizButton {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 10vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+  align-items: center;
+  background-color: #258ea6;
+  color: #f2f2f2;
+}
+
+.quizButton:hover {
+  cursor: pointer;
+}
+
+.quizH2 {
+  text-align: center;
+  font-weight: normal;
+}
+
 .backLText {
   margin: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -141,7 +165,7 @@
 }
 
 .resourceHref {
-  color: blue;
+  color: #258ea6;
 }
 
 .linkLi {
