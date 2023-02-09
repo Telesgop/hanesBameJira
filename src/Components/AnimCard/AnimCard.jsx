@@ -57,7 +57,6 @@ const AnimCard = ({
           </motion.div>
         </>
       </div>
-      <Copyright />
     </>
   );
 };

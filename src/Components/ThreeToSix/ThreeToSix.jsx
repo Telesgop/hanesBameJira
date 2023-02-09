@@ -14,9 +14,7 @@ const ThreeToSix = () => {
   return (
     <>
       <div className="ageRange">
-        <h2 className="ageRangeh2">
-          {lang !== true ? "Ages 3 - 6" : "3 - 6 Oed"}
-        </h2>
+        <h2 className="ageRangeh2">{lang !== true ? "Yellow" : "Melyn"}</h2>
       </div>
       <div className="searchbar">
         <input

@@ -534,7 +534,7 @@ function App() {
                 proposedResource={"Filming of building with voiceover."}
                 resource={nineApi.slice(2, 1)}
                 indivPic={
-                  "http://changing-pages.com/wp-content/uploads/2019/05/IMG_4201-1440x1001.jpg"
+                  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Penrhyn_Castle_Wales_015.jpg/640px-Penrhyn_Castle_Wales_015.jpg"
                 }
                 text={
                   <ul>
@@ -1741,7 +1741,7 @@ function App() {
                 slugText={"The American singer who joined the miners strike."}
                 resource={nineApi.slice(5, 6)}
                 indivPic={
-                  "https://aaregistry.org/wp-content/uploads/2009/09/paul-robeson.jpg"
+                  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/%22Paul_Robeson%2C_world_famous_Negro_baritone%2C_leading_Moore_Shipyard_%28Oakland%2C_CA%29_workers_in_singing_the_Star_Spangled_Ba_-_NARA_-_535874.jpg/640px-%22Paul_Robeson%2C_world_famous_Negro_baritone%2C_leading_Moore_Shipyard_%28Oakland%2C_CA%29_workers_in_singing_the_Star_Spangled_Ba_-_NARA_-_535874.jpg"
                 }
                 text={
                   <ul>
@@ -2071,7 +2071,7 @@ function App() {
                 slugText={"The bustling multi-ethnic community in Cardiff Bay."}
                 resource={nineApi.slice(9, 10)}
                 indivPic={
-                  "https://i2-prod.walesonline.co.uk/incoming/article9925412.ece/ALTERNATES/s1227b/JS70059056.jpg"
+                  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Immigrant_Statues%2C_Cardiff_Bay_-_geograph.org.uk_-_853491.jpg/640px-Immigrant_Statues%2C_Cardiff_Bay_-_geograph.org.uk_-_853491.jpg"
                 }
                 text={
                   <ul>
@@ -2582,7 +2582,7 @@ function App() {
                   "Former professional footballer and captain of Wales."
                 }
                 indivPic={
-                  "https://i.guim.co.uk/img/media/f77982ffce62788f1ab622c5a878a0b186b5d2db/1450_147_4297_2578/master/4297.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=509500c71e7dcda098b5952a4f2ba212"
+                  "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/AUT_vs._WAL_2016-10-06_%28127%29.jpg/800px-AUT_vs._WAL_2016-10-06_%28127%29.jpg?20161110161214"
                 }
                 text={
                   <ul>

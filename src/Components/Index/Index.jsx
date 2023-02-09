@@ -11,7 +11,7 @@ const Index = () => {
   const { lang, setLang } = useContext(LanguageContext);
   const [query, setQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(12);
+  const [postsPerPage] = useState(10);
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
@@ -21,7 +21,9 @@ const Index = () => {
 
   return (
     <>
-      <div className="ageRange">{lang !== true ? "Index" : "Index"}</div>
+      <div className="ageRange">
+        <h2 className="indexH2">{lang !== true ? "Index" : "Index"}</h2>
+      </div>
       <div className="indexContainer">
         {query == "" && (
           <table>

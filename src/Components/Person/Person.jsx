@@ -195,7 +195,6 @@ const Person = ({
           </>
         )}
       </div>
-      <Copyright />
     </>
   );
 };

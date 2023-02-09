@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hanesbame/static/css/main.0a24af52.css",
-    "main.js": "/hanesbame/static/js/main.0d0d8509.js",
+    "main.css": "/hanesbame/static/css/main.6689539d.css",
+    "main.js": "/hanesbame/static/js/main.aa90c61e.js",
     "static/media/theoEng.mp3": "/hanesbame/static/media/theoEng.19ea092d84b338b8c607.mp3",
     "static/media/theoCym.mp3": "/hanesbame/static/media/theoCym.cb6575fedce401b5d77a.mp3",
     "static/media/emilyEng.mp3": "/hanesbame/static/media/emilyEng.d5413163c9dab3d62e35.mp3",
@@ -12,11 +12,11 @@
     "static/media/united-kingdom.png": "/hanesbame/static/media/united-kingdom.789ff1da7dc0b7ff0220.png",
     "static/media/wgLogo.png": "/hanesbame/static/media/wgLogo.06fdf6239de01cc1ef2d.png",
     "index.html": "/hanesbame/index.html",
-    "main.0a24af52.css.map": "/hanesbame/static/css/main.0a24af52.css.map",
-    "main.0d0d8509.js.map": "/hanesbame/static/js/main.0d0d8509.js.map"
+    "main.6689539d.css.map": "/hanesbame/static/css/main.6689539d.css.map",
+    "main.aa90c61e.js.map": "/hanesbame/static/js/main.aa90c61e.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a24af52.css",
-    "static/js/main.0d0d8509.js"
+    "static/css/main.6689539d.css",
+    "static/js/main.aa90c61e.js"
   ]
 }

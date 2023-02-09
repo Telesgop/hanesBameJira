@@ -97,7 +97,7 @@ const Home = () => {
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
           >
-            Begin
+            {lang ? "Dechrau" : "Begin"}
           </motion.h2>
         </Link>
       </div>

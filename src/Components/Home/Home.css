@@ -7,7 +7,6 @@
   justify-content: center;
   position: relative;
   font-size: large;
-  /* font-family: "Mona Sans", sans-serif; */
   font-family: "Space Grotesk", regular;
 }
 
@@ -51,8 +50,7 @@
   padding-left: 10px;
 }
 .OurWelshHistory {
-  margin-top: 0 !important;
-  /* font-size: xx-large; */
+  margin-top: 20px;
   font-size: 50px;
 }
 .underlineNice {
@@ -66,12 +64,8 @@
 .introText {
   font-size: medium;
   margin-top: 0;
-  /* font-family: "Mona Sans", sans-serif; */
   font-family: "Space Grotesk", regular;
-
-  /* font-family: "ProximaNova", "Helvetica", "Arial", sans-serif; */
   list-style: none;
-  /* font-weight: 900; */
   text-align: left;
   align-items: center;
   justify-content: center;
@@ -110,9 +104,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* font-family: "Mona Sans", sans-serif; */
   font-family: "Space Grotesk", regular;
-
   margin-bottom: 5vh;
   font-weight: light;
   padding-bottom: 5vh;
@@ -133,7 +125,6 @@
   margin-top: 1.5vw;
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  /* font-family: "Mona-Sans Regular", sans-serif; */
   font-family: "Space Grotesk", regular;
 }
 
@@ -179,7 +170,7 @@ a {
   position: fixed;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .ageGroups {
     width: 100vw;
     display: flex;
@@ -193,7 +184,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* font-size: medium; */
     flex-direction: column;
     margin-top: auto;
   }

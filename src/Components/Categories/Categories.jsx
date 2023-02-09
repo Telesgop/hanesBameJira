@@ -49,7 +49,7 @@ const Categories = () => {
             style={{ "background-color": "#FFCB77" }}
           >
             <div className="colourCategory">
-              <h3 className="colourCategoryH3">Yellow</h3>
+              <h3 className="colourCategoryH3">{lang ? "Melyn" : "Yellow"}</h3>
               {/* <p className="colourCategoryP"> Tailored for ages 3-6.</p> */}
             </div>
           </motion.div>
@@ -64,7 +64,7 @@ const Categories = () => {
             style={{ "background-color": "#CFE57D" }}
           >
             <div className="colourCategory">
-              <h3 className="colourCategoryH3">Green</h3>
+              <h3 className="colourCategoryH3">{lang ? "Gwyrdd" : "Green"}</h3>
               {/* <p className="colourCategoryP"> Tailored for ages 6-9.</p> */}
             </div>
           </motion.div>
@@ -80,7 +80,7 @@ const Categories = () => {
             style={{ "background-color": "#A2D6F9" }}
           >
             <div className="colourCategory">
-              <h3 className="colourCategoryH3">Blue</h3>
+              <h3 className="colourCategoryH3">{lang ? "Glas" : "Blue"}</h3>
               {/* <p className="colourCategoryP"> Tailored for ages 9-12.</p> */}
             </div>
           </motion.div>
@@ -95,7 +95,7 @@ const Categories = () => {
             style={{ "background-color": "#FF686B" }}
           >
             <div className="colourCategory">
-              <h3 className="colourCategoryH3">Red</h3>
+              <h3 className="colourCategoryH3">{lang ? "Coch" : "Red"}</h3>
               {/* <p className="colourCategoryP"> Tailored for ages 12-16.</p> */}
             </div>
           </motion.div>

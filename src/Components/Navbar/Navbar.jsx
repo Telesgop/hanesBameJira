@@ -36,15 +36,49 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navLeft">
-        <div>
-          <Link to={"/"}>
-            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-              <AiFillHome
-                style={{ transform: "scale(1.5)", "margin-left": "30px" }}
-              />
-            </motion.div>
-          </Link>
-        </div>
+        <Link to={"/"}>
+          <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+            <AiFillHome
+              style={{
+                transform: "scale(1.5)",
+                "margin-left": "30px",
+                "margin-right": "10px",
+              }}
+            />
+          </motion.div>
+        </Link>
+        <Link to={"/3to6yo"}>
+          <motion.div
+            className="categoryBut"
+            style={{ "background-color": "#FFCB77" }}
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+          ></motion.div>
+        </Link>
+        <Link to={"/6to9yo"}>
+          <motion.div
+            className="categoryBut"
+            style={{ "background-color": "#CFE57D" }}
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+          ></motion.div>
+        </Link>
+        <Link to={"/9to12yo"}>
+          <motion.div
+            className="categoryBut"
+            style={{ "background-color": "#A2D6F9" }}
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+          ></motion.div>
+        </Link>
+        <Link to={"/12to16yo"}>
+          <motion.div
+            className="categoryBut"
+            style={{ "background-color": "#FF686B" }}
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+          ></motion.div>
+        </Link>
       </div>
       <Link to={"/"}>
         <div className="navdiv2">
@@ -77,7 +111,6 @@ const Navbar = () => {
       </div>
 
       <motion.div
-        // className={style}
         className="modal"
         animate={isOpen ? "open" : "closed"}
         variants={variants}
@@ -102,14 +135,16 @@ const Navbar = () => {
             >
               {lang ? "Nodiadau" : "Notes"}
             </motion.h2>
-
-            <motion.h2
-              className="notesH2"
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              {lang ? "Mynegai" : "Index"}
-            </motion.h2>
+            <Link to={"/Index"}>
+              <motion.h2
+                className="notesH2"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                onClick={() => setIsOpen(false)}
+              >
+                {lang ? "Mynegai" : "Index"}
+              </motion.h2>
+            </Link>
 
             <motion.h2
               className="notesH2"

@@ -14,9 +14,7 @@ const NineToTwelve = () => {
   return (
     <>
       <div className="ageRange">
-        <h2 className="ageRangeh2">
-          {lang !== true ? "Ages 9 - 12" : "9 - 12 Oed"}
-        </h2>
+        <h2 className="ageRangeh2">{lang !== true ? "Blue" : "Glas"}</h2>
       </div>
       <div className="searchbar">
         <input

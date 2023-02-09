@@ -16,9 +16,7 @@ const SixToNine = () => {
   return (
     <>
       <div className="ageRange">
-        <h2 className="ageRangeh2">
-          {lang !== true ? "Ages 6 - 9" : "6 - 9 Oed"}
-        </h2>
+        <h2 className="ageRangeh2">{lang !== true ? "Green" : "Gwyrdd"}</h2>
       </div>
       <div className="searchbar">
         <input

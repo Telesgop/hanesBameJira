@@ -14,10 +14,7 @@ const TwelveToSixteen = () => {
   return (
     <>
       <div className="ageRange">
-        <h2 className="ageRangeh2">
-          {" "}
-          {lang !== true ? "Ages 12 - 16" : "12 - 16 Oed"}
-        </h2>
+        <h2 className="ageRangeh2"> {lang !== true ? "Red" : "Coch"}</h2>
       </div>
       <div className="searchbar">
         <input

@@ -6,9 +6,7 @@
   justify-content: space-evenly;
   align-items: center;
   font-family: "Space Grotesk", regular;
-  /* margin-bottom: 5vh; */
   font-weight: light;
-  /* padding-bottom: 5vh; */
 }
 
 .ageGroupIndivCat {
@@ -25,6 +23,10 @@
   font-family: "Space Grotesk", regular;
 }
 
+.ageGroupIndivCat:hover {
+  cursor: pointer;
+}
+
 .ageTextCat {
   z-index: 9;
   text-align: center;
@@ -38,6 +40,17 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .ageGroupsCat {
+    flex-direction: column;
+  }
+
+  .ageGroupIndivCat {
+    width: 70vw;
+    height: 40vh;
+    margin-bottom: 5vh;
+  }
+}
+@media only screen and (max-width: 900px) {
   .ageGroupsCat {
     flex-direction: column;
   }
