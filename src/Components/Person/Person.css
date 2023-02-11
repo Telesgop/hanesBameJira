@@ -125,6 +125,8 @@
 
 .quizButton:hover {
   cursor: pointer;
+  background-color: #fff;
+  color: #258ea6;
 }
 
 .quizH2 {

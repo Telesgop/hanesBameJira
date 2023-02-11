@@ -2071,7 +2071,7 @@ function App() {
                 slugText={"The bustling multi-ethnic community in Cardiff Bay."}
                 resource={nineApi.slice(9, 10)}
                 indivPic={
-                  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Immigrant_Statues%2C_Cardiff_Bay_-_geograph.org.uk_-_853491.jpg/640px-Immigrant_Statues%2C_Cardiff_Bay_-_geograph.org.uk_-_853491.jpg"
+                  "https://www.peoplescollection.wales/sites/default/files/images/2014/February/ah_50_34.jpg?itok=SN4XskT2"
                 }
                 text={
                   <ul>

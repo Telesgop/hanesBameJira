@@ -1,8 +1,6 @@
 import { React, useContext, useState } from "react";
 import { LanguageContext } from "../../Helper/Context";
-import StoryBox from "../StoryBox/StoryBox";
 import indexapi from "./indexApi.json";
-import Copyright from "../Copyright/Copyright";
 import { Link } from "react-router-dom";
 import Pagination from "../Pagination/Pagination";
 import "./Index.css";
@@ -16,7 +14,6 @@ const Index = () => {
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = indexapi.slice(indexOfFirstPost, indexOfLastPost);
-
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
@@ -46,7 +43,6 @@ const Index = () => {
         totalPosts={indexapi.length}
         paginate={paginate}
       ></Pagination>
-      {/* <Copyright /> */}
     </>
   );
 };
