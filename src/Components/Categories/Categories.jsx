@@ -29,9 +29,9 @@ const Categories = () => {
   return (
     <>
       <div className="ageTextCat">
-        <h3 style={{ "font-weight": "bold" }}>
+        <h1 className="categoriesH1">
           {lang !== true ? "Choose a category:" : "Dewiswch categori:"}
-        </h3>
+        </h1>
       </div>
       <motion.div
         className="ageGroupsCat"

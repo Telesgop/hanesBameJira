@@ -19,7 +19,7 @@ const Index = () => {
   return (
     <>
       <div className="ageRange">
-        <h2 className="indexH2">{lang !== true ? "Index" : "Index"}</h2>
+        <h1 className="indexH2">{lang !== true ? "Index" : "Index"}</h1>
       </div>
       <div className="indexContainer">
         {query == "" && (

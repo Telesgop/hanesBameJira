@@ -27,9 +27,32 @@
   color: #000;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.categoryButTranslate {
+  height: 4vh;
+  width: 5vw;
+  margin: 5px;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #258ea6;
+  font-family: "Space Grotesk", regular;
 }
 
 .categoryBut:hover {
+  cursor: pointer;
+}
+
+.categoryButTranslate:hover {
   cursor: pointer;
 }
 

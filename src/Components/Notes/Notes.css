@@ -1,0 +1,17 @@
+.notesH1 {
+  font-family: "Space Grotesk", regular;
+  margin-top: 0;
+}
+
+.notesMain {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notesP {
+  font-family: "Space Grotesk", regular;
+}

@@ -27,6 +27,11 @@
   cursor: pointer;
 }
 
+.categoriesH1 {
+  font-family: "Space Grotesk", regular;
+  margin-top: 0;
+}
+
 .ageTextCat {
   z-index: 9;
   text-align: center;
@@ -35,7 +40,6 @@
   display: flex;
   justify-content: center;
   position: relative;
-  font-size: large;
   font-family: "Space Grotesk", regular;
 }
 

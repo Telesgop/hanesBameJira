@@ -3,15 +3,11 @@ import "./Navbar.css";
 import { useContext } from "react";
 import { LanguageContext } from "../../Helper/Context";
 import { Link } from "react-router-dom";
-import { motion, MotionConfig } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { ImCross } from "react-icons/im";
 import { AiFillHome } from "react-icons/ai";
-import { GrNotes } from "react-icons/gr";
-import { BsPersonLinesFill } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
-import welshFlag from "../../Images/wales.png";
-import engFlag from "../../Images/united-kingdom.png";
 
 const Navbar = () => {
   const { lang, setLang } = useContext(LanguageContext);
@@ -87,13 +83,12 @@ const Navbar = () => {
       </Link>
       <div className="menus">
         <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-          <div onClick={handlePress} className="hoverNavCym" tabIndex="0">
-            {lang === true && (
-              <img className="translateImg" src={engFlag}></img>
-            )}
-            {lang !== true && (
-              <img className="translateImg" src={welshFlag}></img>
-            )}
+          <div
+            onClick={handlePress}
+            className="categoryButTranslate"
+            tabIndex="0"
+          >
+            {lang ? "English" : "Cymraeg"}
           </div>
         </motion.div>
 
@@ -128,13 +123,16 @@ const Navbar = () => {
             </motion.div>
           </div>{" "}
           <div className="innerTextInfo">
-            <motion.h2
-              className="notesH2"
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              {lang ? "Nodiadau" : "Notes"}
-            </motion.h2>
+            <Link to={"/Notes"}>
+              <motion.h2
+                className="notesH2"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                onClick={() => setIsOpen(false)}
+              >
+                {lang ? "Nodiadau" : "Notes"}
+              </motion.h2>
+            </Link>
             <Link to={"/Index"}>
               <motion.h2
                 className="notesH2"
@@ -150,22 +148,25 @@ const Navbar = () => {
               className="notesH2"
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
+              onClick={() => setIsOpen(false)}
             >
               {lang ? "Hygyrchedd" : "Accessibility"}
             </motion.h2>
-
+            <Link to={"/Categories"}>
+              <motion.h2
+                className="notesH2"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                onClick={() => setIsOpen(false)}
+              >
+                Categories
+              </motion.h2>
+            </Link>
             <motion.h2
               className="notesH2"
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
-            >
-              Attributions
-            </motion.h2>
-
-            <motion.h2
-              className="notesH2"
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
+              onClick={() => setIsOpen(false)}
             >
               Site Information
             </motion.h2>

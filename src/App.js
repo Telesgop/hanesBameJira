@@ -23,6 +23,7 @@ import domCym from "./Podcasts/DomJames/domCym.mp3";
 import theoCym from "./Podcasts/TheoCabango/theoCym.mp3";
 import emilyCym from "./Podcasts/Emily/emilyCym.mp3";
 import Categories from "./Components/Categories/Categories";
+import Notes from "./Components/Notes/Notes";
 
 function App() {
   const [lang, setLang] = useState(false);
@@ -48,6 +49,7 @@ function App() {
           <Route path="/12to12yo" element={<SixToNine></SixToNine>}></Route>
           <Route path="/back" element={<PersonBack></PersonBack>}></Route>
           <Route path="/Categories" element={<Categories />}></Route>
+          <Route path="/Notes" element={<Notes />}></Route>
           <Route
             path="/6to9yo/RichardParks"
             element={
