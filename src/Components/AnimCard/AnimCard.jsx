@@ -7,16 +7,7 @@ import { LanguageContext } from "../../Helper/Context";
 import { useContext } from "react";
 import Copyright from "../Copyright/Copyright";
 
-const AnimCard = ({
-  text,
-  welshText,
-  indivName,
-  indivPic,
-  backText,
-  backWelshText,
-  slugText,
-  welshSlugText,
-}) => {
+const AnimCard = ({ indivName, sourceVid }) => {
   const { lang, setLang } = useContext(LanguageContext);
   const [slide, setSlide] = useState(0);
 
@@ -52,7 +43,16 @@ const AnimCard = ({
               <div className="personNameAnimCard">
                 <h2 className="personH2">{indivName}</h2>
               </div>
-              <div className="animCardVideo">Animated video will be here.</div>
+              <div className="animCardVideo">
+                <iframe
+                  className="animVideoIframe"
+                  src={sourceVid}
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </motion.div>
         </>

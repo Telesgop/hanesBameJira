@@ -143,15 +143,16 @@ const Navbar = () => {
                 {lang ? "Mynegai" : "Index"}
               </motion.h2>
             </Link>
-
-            <motion.h2
-              className="notesH2"
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-              onClick={() => setIsOpen(false)}
-            >
-              {lang ? "Hygyrchedd" : "Accessibility"}
-            </motion.h2>
+            <Link to={"/Accessibility"}>
+              <motion.h2
+                className="notesH2"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                onClick={() => setIsOpen(false)}
+              >
+                {lang ? "Hygyrchedd" : "Accessibility"}
+              </motion.h2>
+            </Link>
             <Link to={"/Categories"}>
               <motion.h2
                 className="notesH2"
@@ -162,14 +163,16 @@ const Navbar = () => {
                 Categories
               </motion.h2>
             </Link>
-            <motion.h2
-              className="notesH2"
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-              onClick={() => setIsOpen(false)}
-            >
-              Site Information
-            </motion.h2>
+            <Link to={"/Info"}>
+              <motion.h2
+                className="notesH2"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                onClick={() => setIsOpen(false)}
+              >
+                Site Information
+              </motion.h2>
+            </Link>
           </div>
           <div className="cpyrght">
             Website developed by Telesgop. Funded by Welsh Government.

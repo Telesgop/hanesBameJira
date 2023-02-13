@@ -1,18 +1,16 @@
-.notesH1 {
-  font-family: "Space Grotesk", regular;
+.a11yH1 {
   margin-top: 0;
+  font-family: "Space Grotesk", regular;
 }
 
-.notesMain {
-  width: 100%;
-  margin: auto;
+.a11yMain {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.notesP {
+.a11yP {
   font-family: "Space Grotesk", regular;
   width: 50%;
 }

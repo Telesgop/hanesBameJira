@@ -1,0 +1,15 @@
+.infoMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoH1 {
+  margin-top: 0;
+  font-family: "Space Grotesk", regular;
+}
+
+.infoP {
+  font-family: "Space Grotesk", regular;
+}

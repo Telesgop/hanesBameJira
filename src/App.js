@@ -24,6 +24,8 @@ import theoCym from "./Podcasts/TheoCabango/theoCym.mp3";
 import emilyCym from "./Podcasts/Emily/emilyCym.mp3";
 import Categories from "./Components/Categories/Categories";
 import Notes from "./Components/Notes/Notes";
+import Accessibility from "./Components/Accessibility/Accessibility";
+import Info from "./Components/Info/Info";
 
 function App() {
   const [lang, setLang] = useState(false);
@@ -50,6 +52,11 @@ function App() {
           <Route path="/back" element={<PersonBack></PersonBack>}></Route>
           <Route path="/Categories" element={<Categories />}></Route>
           <Route path="/Notes" element={<Notes />}></Route>
+          <Route
+            path="/Accessibility"
+            element={<Accessibility></Accessibility>}
+          ></Route>
+          <Route path="/Info" element={<Info />}></Route>
           <Route
             path="/6to9yo/RichardParks"
             element={
@@ -233,7 +240,12 @@ function App() {
           ></Route>
           <Route
             path="/3to6yo/SidoliIceCream"
-            element={<AnimCard indivName={"Sidoli's Ice Cream"} />}
+            element={
+              <AnimCard
+                indivName={"Sidoli's Ice Cream"}
+                sourceVid={"https://www.youtube.com/embed/azstFr2LpdA"}
+              />
+            }
           ></Route>
           <Route
             path="/3to6yo/HansLichtenstein"

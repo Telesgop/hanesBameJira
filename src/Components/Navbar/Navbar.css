@@ -46,6 +46,7 @@
   align-items: center;
   background-color: #258ea6;
   font-family: "Space Grotesk", regular;
+  padding: 2px;
 }
 
 .categoryBut:hover {
@@ -280,6 +281,17 @@
   bottom: 0;
 }
 
+@media only screen and (max-width: 1300px) {
+  .categoryButTranslate {
+    width: 7vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .categoryButTranslate {
+    width: 11vw;
+  }
+}
 @media only screen and (max-width: 600px) {
   .innerModal {
     width: 90%;
@@ -290,5 +302,9 @@
   }
   .categoryBut {
     width: 40px;
+  }
+
+  .categoryButTranslate {
+    display: none;
   }
 }
