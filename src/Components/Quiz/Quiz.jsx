@@ -11,7 +11,7 @@ const Quiz = () => {
         <p className="infoP">A variety of quizzes for use in the classroom.</p>
       </div>
       <div className="storiesContainer">
-        <Link to={"/RichardParksQuiz"}>
+        <Link to={"/QuizData"}>
           <StoryBox
             name={"Richard Parks"}
             image={
