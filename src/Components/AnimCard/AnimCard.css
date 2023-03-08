@@ -44,7 +44,7 @@
   width: auto;
   font-weight: bold;
   /* font-family: "Mona Sans", sans-serif; */
-  font-family: "Space Grotesk", regular;
+  font-family: "Space Grotesk", sans-serif;
 
   margin: 3vh;
   margin-left: 5vh;
@@ -61,7 +61,7 @@
   align-items: center;
   width: 80vw;
   /* font-family: "Mona-Sans Regular", sans-serif; */
-  font-family: "Space Grotesk", regular;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 @media only screen and (max-width: 600px) {

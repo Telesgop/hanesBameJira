@@ -6,7 +6,7 @@
     "welshSlug": "Eicon du cyntaf Cymru.",
     "image": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/DC57/production/_113170465_shutterstock_editorial_3156656a.jpg",
     "url": "/12to16yo/GlennWebbe",
-    "keywords": "Glenn Webbe Rugby",
+    "keywords": "Glenn webbe cardiff windrush rugby athletics world cup sport",
     "resources": [
         "Links will go here"
     ]
@@ -19,24 +19,12 @@
     "welshSlug": "Athletwr, chwaraewr rygbi ac un sydd wedi cyflawni cryn dipyn.",
     "image": "https://d2cx26qpfwuhvu.cloudfront.net/wales/wp-content/uploads/2020/07/17113738/CDF_160294_Nigel_Walker_02-1-708x425.jpg",
     "url": "/12to16yo/NigelWalker",
-    "keywords": "Nigel Walker Athlete",
+    "keywords": "Nigel walker rugby athlete cardiff olympics sport",
     "resources": [
         "Links will go here"
     ]
 },
-{
-    "id" : 2,
-    "name" : "Joe Calzaghe",
-    "nameCym" : "Joe Calzaghe",
-    "slug": "The super-middleweight world champion.",
-    "welshSlug": "",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/JoeCalzaghe-July2007.jpg",
-    "url": "/12to16yo/JoeCalzaghe",
-    "keywords": "Joe Calzaghe Boxing Italian Sardinia",
-    "resources": [
-        "Links will go here"
-    ]
-},
+
 {
     "id" : 3,
     "name" : "Jason Mohammed",
@@ -45,7 +33,7 @@
     "welshSlug": "",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/2012-03-19_Jason_Mohammad_at_Wales_Grand_Slam_Celebrations.jpg/640px-2012-03-19_Jason_Mohammad_at_Wales_Grand_Slam_Celebrations.jpg",
     "url": "/12to16yo/JasonMohammed",
-    "keywords": "Jason Mohammed radio television bbc news sport",
+    "keywords": "Jason mohammed newsreader presenter radio muslim pakistani cardiff bbc olympics ",
     "resources": [
         "Links will go here"
     ]
@@ -58,7 +46,7 @@
     "welshSlug": "",
     "image": "https://ents24.imgix.net/image/000/158/543/f362a1cbe3eb9d638603c935c57a9f81ee7bd0bf.jpg?auto=format&crop=faces&w=1920&h=1920",
     "url": "/12to16yo/KizzyCrawford",
-    "keywords": "Kizzy Crawford singer bajan",
+    "keywords": "Kizzy crawford singer songwriter merthyr tydfil bajan barbados autism radio  ",
     "resources": [
         "Links will go here"
     ]
@@ -71,7 +59,7 @@
     "welshSlug": "",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/AUT_vs._WAL_2016-10-06_%28127%29.jpg/800px-AUT_vs._WAL_2016-10-06_%28127%29.jpg?20161110161214",
     "url": "/12to16yo/AshleyWilliams",
-    "keywords": "Ashley Williams football",
+    "keywords": "Ashley williams footballer captain swansea sport",
     "resources": [
         "Links will go here"
     ]
@@ -84,7 +72,7 @@
     "welshSlug": "",
     "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/joe-erskine-keystone.jpg",
     "url": "/12to16yo/JoeErskine",
-    "keywords": "Joe Erskine boxer tiger bay cardiff",
+    "keywords": "Joe Erskine boxer tiger bay cardiff sport",
     "resources": [
         "Links will go here"
     ]
@@ -96,7 +84,7 @@
     "slug": "Wales’ First Black Headteacher.",
     "image": "https://ichef.bbci.co.uk/news/976/cpsprodpb/13CF5/production/_98314118_bettyclean.jpg",
     "url": "/12to16yo/ElizabethCampbell",
-    "keywords" : "Elizabeth Campbell MBE",
+    "keywords" : "Elizabeth betty campbell teacher headteacher cardiff barbados jamaica world war two butetown mbe statue ",
     "resources": [
         "Links will go here"
     ]
@@ -108,7 +96,7 @@
     "slug": "The Indian Doctor.",
     "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0b6ksrg.jpg",
     "url": "/12to16yo/GaneshSubrahmanyam",
-    "keywords" : "Dr Ganesh Subrahmanyam",
+    "keywords" : "Doctor ganesh subrahmanyam indian nhs world war two aberfan asian  ",
     "resources": [
         "Links will go here"
     ]
@@ -120,7 +108,7 @@
     "slug": "Welsh Labour Politician.",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Vaughan_Gething.jpg/640px-Vaughan_Gething.jpg",
     "url": "/12to16yo/VaughanGething",
-    "keywords" : "Vaughan Gething",
+    "keywords" : "Vaughan gething zambian labour cardiff butetown senedd politics politicians  ",
     "resources": [
         "Links will go here"
     ]
@@ -145,6 +133,19 @@
     "image": "",
     "url": "/12to16yo/NYD",
     "keywords" : "",
+    "resources": [
+        "Links will go here"
+    ]
+},
+{
+    "id" : 5,
+    "name" : "Louisa BB Morgan",
+    "nameCym" : "Louisa BB Morgan",
+    "slug": "The lady who's lived all around the world.",
+    "welshSlug": "",
+    "image": "https://m.media-amazon.com/images/M/MV5BZGRkNTgwM2YtZWUxNy00MDQzLWE5OTAtODU1MjVmYWE2ZjhiXkEyXkFqcGdeQXVyODIyODI5Mzc@._V1_.jpg",
+    "url": "/9to12yo/Louisa",
+    "keywords": "Louisa st bartholomew brown morgan nigeria catholic singing acting singer actor religion ",
     "resources": [
         "Links will go here"
     ]

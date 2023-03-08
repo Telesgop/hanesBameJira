@@ -1,6 +1,6 @@
 .a11yH1 {
   margin-top: 0;
-  font-family: "Space Grotesk", regular;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .a11yMain {
@@ -11,6 +11,6 @@
 }
 
 .a11yP {
-  font-family: "Space Grotesk", regular;
+  font-family: "Space Grotesk", sans-serif;
   width: 50%;
 }

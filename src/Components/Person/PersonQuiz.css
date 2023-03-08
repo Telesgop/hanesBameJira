@@ -1,0 +1,78 @@
+.personInfoQuiz {
+  grid-template-columns: auto auto;
+  background-color: white;
+  z-index: 9;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px !important;
+  width: 75vw;
+  height: 75vh !important;
+  z-index: 9;
+  font-size: large;
+  justify-items: center;
+  font-family: "Mona-Sans Regular", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.quizPage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.quizQuestions {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+}
+
+.quizQuestionText {
+  padding: 20px;
+  text-align: center;
+}
+
+.quizQuestionButtons {
+  height: 70%;
+}
+
+.quizQuestionButtonIndiv {
+  height: 10vh;
+  width: 30vw;
+  /* border: 1px solid black;   */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  border-radius: 10px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.quizQuestionButtonIndiv:hover {
+  cursor: pointer;
+}
+
+.question-count {
+  text-align: center;
+}
+
+.quizQuestionButtonsMiddle {
+  display: flex;
+  flex-wrap: wrap !important;
+  justify-content: center;
+}
+.personH2 {
+  margin: 0 !important;
+  margin-block-end: 0 !important;
+  margin-block-start: 0 !important;
+}
+.personName {
+  text-align: center;
+}

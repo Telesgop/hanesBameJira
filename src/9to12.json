@@ -8,7 +8,7 @@
         "welshSlug": "Y bachgen wnaeth ffoi o’r Almaen Natsïaidd.",
         "image": "https://www.countytimes.co.uk/resources/images/9306088.jpg?type=mds-article-962",
         "url": "/9to12yo/HansLichtenstein",
-        "keywords": "Hans Lichtenstein Jewish Doctor Meddyg",
+        "keywords": "Hans Lichtenstein jewish nazi germany gp llandrindod world war two doctor ",
         "resources": [
             "Links will go here"
         ]
@@ -21,7 +21,7 @@
         "welshSlug": "Y castell trawiadol a’i gysylltiadau â chaethwasiaeth.",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Penrhyn_Castle_Wales_015.jpg/640px-Penrhyn_Castle_Wales_015.jpg",
         "url": "/9to12yo/PenrhynCastle",
-        "keywords": "Penrhyn Castle Slave Trade Jamaica castell chaethwasiaeth",
+        "keywords": "Penrhyn castle slavery north wales jamaican slave trade plantations ",
         "resources": [
             "Links will go here"
         ]
@@ -34,7 +34,7 @@
         "welshSlug": "",
         "image": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/2ED2/production/_95868911_gettyimages-1852091.jpg",
         "url": "/9to12yo/ColinJackson",
-        "keywords": "Colin Jackson Flag Run Hurdle Gay Olympics Rhedeg",
+        "keywords": "Colin jackson olympics cardiff sports athletics hurdles hurdler dancing gay  ",
         "resources": [
             "Links will go here"
         ]
@@ -47,38 +47,12 @@
         "welshSlug": "",
         "image": "https://i2-prod.walesonline.co.uk/incoming/article1781243.ece/ALTERNATES/s615/iris-williams-61348596.jpg",
         "url": "/9to12yo/IrisWilliams",
-        "keywords": "Iris Williams singer jazz ",
+        "keywords": "Iris williams jazz singer world war two legend obe foster care singing  ",
         "resources": [
             "Links will go here"
         ]
     },
-    {
-        "id" : 4,
-        "name" : "Paul Robeson",
-        "nameCym" : "Paul Robeson",
-        "slug": "The American singer who joined the miners strike.",
-        "welshSlug": "",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/%22Paul_Robeson%2C_world_famous_Negro_baritone%2C_leading_Moore_Shipyard_%28Oakland%2C_CA%29_workers_in_singing_the_Star_Spangled_Ba_-_NARA_-_535874.jpg/640px-%22Paul_Robeson%2C_world_famous_Negro_baritone%2C_leading_Moore_Shipyard_%28Oakland%2C_CA%29_workers_in_singing_the_Star_Spangled_Ba_-_NARA_-_535874.jpg",
-        "url": "/9to12yo/PaulRobeson",
-        "keywords": "Paul Robeson singer miner strike",
-        "resources": [
-            "Links will go here"
-        ]
-    },
-    {
-        "id" : 5,
-        "name" : "Louisa BB Morgan",
-        "nameCym" : "Louisa BB Morgan",
-        "slug": "The lady who's lived all around the world.",
-        "welshSlug": "",
-        "image": "https://m.media-amazon.com/images/M/MV5BZGRkNTgwM2YtZWUxNy00MDQzLWE5OTAtODU1MjVmYWE2ZjhiXkEyXkFqcGdeQXVyODIyODI5Mzc@._V1_.jpg",
-        "url": "/9to12yo/Louisa",
-        "keywords": "Louisa St Bartholomew-Brown Morgan",
-        "resources": [
-            "Links will go here"
-        ]
-    },
-    
+   
     {
         "id" : 6,
         "name" : "Clive Sullivan",
@@ -87,7 +61,7 @@
         "welshSlug": "",
         "image": "https://e2.365dm.com/20/10/2048x1152/skysports-anthony-sullivan_5116431.jpg",
         "url": "/9to12yo/CliveSullivan",
-        "keywords": "Clive Sullivan Sport ",
+        "keywords": "Clive sullivan rugby league cardiff sports army mbe hull  ",
         "resources": [
             "Links will go here"
         ]
@@ -100,7 +74,7 @@
         "welshSlug": "",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Portrait_of_John_Ystumllyn%2C_1754_%284671107%29_%28cropped%29.jpg/640px-Portrait_of_John_Ystumllyn%2C_1754_%284671107%29_%28cropped%29.jpg",
         "url": "/9to12yo/JohnYstumllyn",
-        "keywords": "John Ystumllyn gardener",
+        "keywords": "John ystumllyn gardener slave jack du black flower ",
         "resources": [
             "Links will go here"
         ]
@@ -113,7 +87,7 @@
         "welshSlug": "",
         "image": "https://www.peoplescollection.wales/sites/default/files/images/2014/February/ah_50_34.jpg?itok=SN4XskT2",
         "url": "/9to12yo/TigerBay",
-        "keywords": "Tiger Bay ethnic community",
+        "keywords": "Tiger bay cardiff multi ethnic shirley bassey betty campbell community",
         "resources": [
             "Links will go here"
         ]
@@ -139,7 +113,46 @@
         "welshSlug": "",
         "image": "https://www.peoplescollection.wales/sites/default/files/images/2020/October/0Y3A9739%20%281%29.JPG?itok=MCJWHC5s",
         "url": "/9to12yo/VernesterCyril",
-        "keywords": "Vernester Cyril Nurse Caribbean OBE",
+        "keywords": "Vernester cyril nurse caribbean midwife racism equality obe ",
+        "resources": [
+            "Links will go here"
+        ]
+    },
+    {
+        "id" : 12,
+        "name" : "Patti Flynn",
+        "nameCym" : "Patti Flynn",
+        "slug": "",
+        "welshSlug": "",
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Patti_Flynn.jpg/220px-Patti_Flynn.jpg",
+        "url": "/9to12yo/PattiFlynn",
+        "keywords": "Patti Flynn",
+        "resources": [
+            "Links will go here"
+        ]
+    },
+    {
+        "id" : 13,
+        "name" : "Isaac Blake",
+        "nameCym" : "Isaac Blake",
+        "slug": "A Romani in Wales following tradition.",
+        "welshSlug": "",
+        "image": "https://www.araart.cz/AraArt/media/static-media/21b555c9-32f8-495c-8337-3cac9a75d031@w400.png",
+        "url": "/9to12yo/IsaacBlake",
+        "keywords": "Isaac Blake",
+        "resources": [
+            "Links will go here"
+        ]
+    },
+    {
+        "id" : 14,
+        "name" : "Joe Calzaghe  ",
+        "nameCym" : "Joe Calzaghe  ",
+        "slug": "The undefeated boxing world champion.",
+        "welshSlug": "",
+        "image":   "https://upload.wikimedia.org/wikipedia/commons/a/a5/JoeCalzaghe-July2007.jpg",
+        "url": "/9to12yo/JoeCalzaghe",
+        "keywords": "Joe calzaghe italian boxing boxer sport",
         "resources": [
             "Links will go here"
         ]

@@ -1,13 +1,13 @@
 [
     {
         "id" : 0,
-        "name" : "Dame Shirley Bassey",
-        "nameCym": "Y Fonesig Shirley Bassey",
-        "slug": "The world famous Welsh singer from Tiger Bay.",
+        "name" : "Dr Ganesh Subrahamanyan",
+        "nameCym": "Dr Ganesh Subrahamanyan",
+        "slug": "The Indian Doctor.",
         "welshSlug": "",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/TV-opnamen_van_Engelse_zangeres_Shirley_Bassey_Shirley_Bassey_%2C_kop%2C_Bestanddeelnr_924-1644.jpg/1600px-TV-opnamen_van_Engelse_zangeres_Shirley_Bassey_Shirley_Bassey_%2C_kop%2C_Bestanddeelnr_924-1644.jpg?20180317103651",
-        "url": "/3to6yo/ShirleyBassey",
-        "keywords" : "Shirley Bassey"
+        "image": "https://ichef.bbci.co.uk/images/ic/1008x567/p0b6ksrg.jpg",
+        "url": "/3to6yo/GaneshSubrahamanyan",
+        "keywords" : "Doctor ganesh subrahmanyam indian nhs world war two aberfan asian dr"
     },{
         "id" : 1,
         "name" : "Sidoli Ice Cream",
@@ -16,37 +16,37 @@
         "slug": "The story of the award-winning ice cream.",
         "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Sidolis%2C_Coney_Beach%2C_Porthcawl_%28geograph_6353418%29.jpg?20191231185933",
         "url": "/3to6yo/SidoliIceCream",
-        "keywords" : "Sidoli Ice Cream"
+        "keywords" : "Sidoli ice cream italian world war two"
     }
     ,{
         "id" : 2,
-        "name" : "Hans Lichtenstein",
-        "nameCym" : "Hans Lichtenstein",
-        "slug": "The boy who fled from Nazi Germany.",
-        "welshSlug": "Y bachgen wnaeth ffoi o’r Almaen Natsïaidd.",
-        "image": "https://www.countytimes.co.uk/resources/images/9306088.jpg?type=mds-article-962",
-        "url": "/3to6yo/HansLichtenstein",
-        "keywords": "Hans Lichtenstein Jewish Doctor Meddyg"
+        "name" : "Betty Campbell",
+        "nameCym" : "Betty Campbell",
+        "slug": "Community Activist and Wales’ First Black Headteacher.",
+        "welshSlug": "Community Activist and Wales’ First Black Headteacher.",
+        "image": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F06ce3ec4-2164-11ec-a1fd-37d9030e4d65.jpg?crop=5056%2C2844%2C47%2C36&resize=1500",
+        "url": "/3to6yo/BettyCampbell",
+        "keywords": "Elizabeth betty campbell teacher headteacher cardiff barbados jamaica world war two butetown mbe statue "
     }
     ,{
         "id" : 3,
-        "name" : "Arandora Star",
-        "nameCym" : "Arandora Star",
-        "slug": "The ship sunk by a German torpedo killing Welsh Italians.",
+        "name" : "Romani (Kale)",
+        "nameCym" : "Romani (Kale)",
+        "slug": "",
         "welshSlug": "",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Arandora_Star_1940.jpg",
-        "url": "/3to6yo/ArandoraStar",
-        "keywords": "The SS Arandora Star Italian war"
+        "image": "https://www.peoplescollection.wales/sites/default/files/images/2014/February/GTJ12406_2.jpg?itok=_U1XnrC5",
+        "url": "/3to6yo/RomaniKale",
+        "keywords": "Romani Kale Gypsy gypsies travellers  "
     }
     ,{
         "id" : 4,
-        "name" : "Tiger Bay",
-        "nameCym" : "Tiger Bay",
-        "slug": "The bustling multi-ethnic community in Cardiff Bay.",
+        "name" : "Vernester Cyril",
+        "nameCym" : "Vernester Cyril",
+        "slug": "Nurse.",
         "welshSlug": "",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Immigrant_Statues%2C_Cardiff_Bay_-_geograph.org.uk_-_853491.jpg/640px-Immigrant_Statues%2C_Cardiff_Bay_-_geograph.org.uk_-_853491.jpg",
-        "url": "/3to6yo/TigerBay",
-        "keywords": "Tiger Bay ethnic community"
+        "image": "https://www.peoplescollection.wales/sites/default/files/styles/item_detail/public/images/2015/November/bay213.jpg",
+        "url": "/3to6yo/VernesterCyril",
+        "keywords": "Vernester cyril nurse caribbean"
     }
     ,{
         "id" : 5,
@@ -54,9 +54,9 @@
         "nameCym" : "John Ystumllyn",
         "slug": "The 18th century slave who became a gardener.",
         "welshSlug": "",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Portrait_of_John_Ystumllyn%2C_1754_%284671107%29_%28cropped%29.jpg/640px-Portrait_of_John_Ystumllyn%2C_1754_%284671107%29_%28cropped%29.jpg",
+        "image": "https://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/885/?sUrl=https://cached.offlinehbpl.hbpl.co.uk/news/WOH/John-Ystumllyn.jpg",
         "url": "/3to6yo/JohnYstumllyn",
-        "keywords": "John Ystumllyn gardener"
+        "keywords": "John ystumllyn gardener slave jack du black flower "
     }
   
 ]

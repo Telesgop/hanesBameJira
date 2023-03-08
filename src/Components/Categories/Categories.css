@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-family: "Space Grotesk", regular;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: light;
 }
 
@@ -20,7 +20,7 @@
   width: 20vw;
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  font-family: "Space Grotesk", regular;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .ageGroupIndivCat:hover {
@@ -28,7 +28,7 @@
 }
 
 .categoriesH1 {
-  font-family: "Space Grotesk", regular;
+  font-family: "Space Grotesk", sans-serif;
   margin-top: 0;
 }
 
@@ -40,7 +40,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  font-family: "Space Grotesk", regular;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 @media only screen and (max-width: 600px) {

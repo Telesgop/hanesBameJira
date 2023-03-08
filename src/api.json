@@ -8,7 +8,7 @@
         "welshSlug": "Chwaraewr rygbi ac athletwr eithafol.",
         "image": "https://images.ctfassets.net/pjshm78m9jt4/qOAmfNKcRdpCajNzkBHMa/0259e6a2036bb8d1797efdbd1a41fee3/richard_parks_hero_2.jpg",
         "url": "/6to9yo/RichardParks",
-        "keywords": "Richard Parks rugby player athlete",
+        "keywords": "Richard parks rugby player athlete pontypridd jamaican ski north south pole everest extreme adventurer ",
         "resources": [
             "https://www.richardparks.co.uk/", 
             "https://www.youtube.com/watch?v=5bcC14ay-iY",
@@ -34,33 +34,21 @@
         "welshSlug": "Yr adeilad Iddewig pwrpasol hynaf sydd wedi goroesi yng Nghymru.",
         "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/The_Top_of_Church_Street%2C_Merthyr_Tydfil_%28geograph_4834858%29.jpg",
         "url": "/6to9yo/MerthyrSynagogue",
-        "keywords": "Merthyr Tydfil Synagogue Jewish",
+        "keywords": "Merthyr tydfil synagogue jewish lowry ",
         "resources": [
             "Links will go here"
         ]
     },
-    {
-        "id" : 3,
-        "name" : "Reuel Elijah",
-        "nameCym" : "Reuel Elijah",
-        "slug": "Musician, performer and dancer.",
-        "welshSlug": "",
-        "image": "https://ichef.bbci.co.uk/images/ic/336xn/p03xh0b0.jpg",
-        "url": "/6to9yo/ReuelElijah",
-        "keywords": "Reuel Elijah Dancer",
-        "resources": [
-            "Links will go here"
-        ]
-    },
+    
     {
         "id" : 4,
         "name" : "Lenn Lawrence",
         "nameCym" : "Lenn Lawrence",
-        "slug": "Carpenter and co-former of the Carribean Friendship Society.",
+        "slug": "The man who stopped Swansea from drowning.",
         "welshSlug": "",
         "image": "https://blackhistorywales.org.uk/wp-content/uploads/2020/07/Screenshot-2020-07-09-at-07.56.04.png",
         "url": "/6to9yo/LennLawrence",
-        "keywords": "Lenn Lawrence carpenter",
+        "keywords": "Lenn lawrence carpenter carribean neath port talbot black history wales ",
         "resources": [
             "Links will go here"
         ]
@@ -73,7 +61,7 @@
         "welshSlug": "",
         "image": "https://live.staticflickr.com/655/22408268685_a9ec39be94_b.jpg",
         "url": "/6to9yo/TeleriGray",
-        "keywords": "Teleri Gray romani storyteller",
+        "keywords": "Teleri gray romani storyteller gypsy traveller teacher gypsies",
         "resources": [
             "Links will go here"
         ]
@@ -86,7 +74,7 @@
         "welshSlug": "",
         "image": "https://i2-prod.walesonline.co.uk/incoming/article6289157.ece/ALTERNATES/s810/JS28547881.jpg",
         "url": "/6to9yo/FongSui",
-        "keywords": "Fong Sui Chinese",
+        "keywords": "Fong sui chinese first generation hong kong restaurant laundrette laundry swansea ",
         "resources": [
             "Links will go here"
 
@@ -101,7 +89,7 @@
         "welshSlug": "",
         "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Arandora_Star_1940.jpg",
         "url": "/6to9yo/ArandoraStar",
-        "keywords": "The SS Arandora Star",
+        "keywords": "world war two ship italian soldiers valleys arandora star boat",
         "resources": [
             "Links will go here"
 
@@ -109,13 +97,13 @@
     },
     {
         "id" : 10,
-        "name" : "Wilson Monk",
-        "nameCym" : "Wilson Monk",
-        "slug": "Member of the 320th Barrage Balloon Battalion.",
+        "name" : "320th Barrage Balloon Battalion  ",
+        "nameCym" : "320th Barrage Balloon Battalion  ",
+        "slug": "A unit of the 621 men from the US Army.",
         "welshSlug": "",
         "image": "https://images.squarespace-cdn.com/content/v1/55e4bcf2e4b01d0dc78c9848/1441893157537-7AL21O6U939POF0AYWGB/image-asset.jpeg",
-        "url": "/6to9yo/WilsonMonk",
-        "keywords": "Wilson Monk",
+        "url": "/6to9yo/320Battalion",
+        "keywords": "Wilson monk world war two black troops us america ",
         "resources": [
             "Links will go here"
 
@@ -129,35 +117,22 @@
         "welshSlug": "",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/TV-opnamen_van_Engelse_zangeres_Shirley_Bassey_Shirley_Bassey_%2C_kop%2C_Bestanddeelnr_924-1644.jpg/1600px-TV-opnamen_van_Engelse_zangeres_Shirley_Bassey_Shirley_Bassey_%2C_kop%2C_Bestanddeelnr_924-1644.jpg?20180317103651",
         "url": "/6to9yo/ShirleyBassey",
-        "keywords": "Dame Shirley Veronica Bassey",
+        "keywords": "singer tiger bay shirley bassey cardiff ",
         "resources": [
             "Links will go here"
 
         ]
     } ,
-    {
-        "id" : 12,
-        "name" : "Afro hair",
-        "nameCym" : "Afro hair",
-        "slug": "",
-        "welshSlug": "",
-        "image": "https://ichef.bbci.co.uk/images/ic/640x360/p08ng1wk.jpg",
-        "url": "/6to9yo/hair",
-        "keywords": "hair",
-        "resources": [
-            "Links will go here"
-           
-        ]
-    } ,
+    
     {
         "id" : 13,
-        "name" : "Enrico Stennet",
-        "nameCym" : "Windrush Cymru",
-        "slug": "Not developed yet",
+        "name" : "The Windrush Generation",
+        "nameCym" : "The Windrush Generation",
+        "slug": "Caribbean migrants have become a vital part of Welsh society.",
         "welshSlug": "Not developed yet",
-        "image": "",
-        "url": "/6to9yo/EnricoStennet",
-        "keywords": "Enrico Stennet",
+        "image": "https://www.peoplescollection.wales/sites/default/files/teaching/cover_0.jpg",
+        "url": "/6to9yo/Windrush",
+        "keywords": "Windrush Generation boat immigration ",
         "resources": [
             "Links will go here"
            
@@ -166,12 +141,12 @@
     {
         "id" : 14,
         "name" : "Idris Phillips",
-        "nameCym" : "Black Gold",
-        "slug": "Not developed yet",
-        "welshSlug": "Not developed yet",
-        "image": "",
+        "nameCym" : "Idris Phillips",
+        "slug": "Black gold.",
+        "welshSlug": "Black gold.",
+        "image": "https://ichef.bbci.co.uk/images/ic/640x360/p08t5ggx.jpg",
         "url": "/6to9yo/IdrisPhillips",
-        "keywords": "Enrico Stennet",
+        "keywords": "Idris Phillips black miner coal aberfan  ",
         "resources": [
             "Links will go here"
            

@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   background-color: #f2f2f2;
-  font-family: "Futura Medium", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   max-width: 100%;
   max-height: 100%;
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
@@ -44,5 +44,5 @@
 }
 
 button {
-  font-family: "Futura", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }

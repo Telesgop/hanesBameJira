@@ -7,7 +7,7 @@
   justify-content: center;
   position: relative;
   font-size: large;
-  font-family: "Space Grotesk", regular;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .ageTextBegin {
@@ -19,7 +19,7 @@
   position: relative;
   justify-content: center;
   font-size: large;
-  font-family: "Space Grotesk", regular;
+  font-family: "Space Grotesk", sans-serif;
   border-radius: 5px;
   width: 10vw;
   height: 7vh;
@@ -64,7 +64,7 @@
 .introText {
   font-size: medium;
   margin-top: 0;
-  font-family: "Space Grotesk", regular;
+  font-family: "Space Grotesk", sans-serif;
   list-style: none;
   text-align: left;
   align-items: center;
@@ -104,7 +104,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-family: "Space Grotesk", regular;
+  font-family: "Space Grotesk", sans-serif;
   margin-bottom: 5vh;
   font-weight: light;
   padding-bottom: 5vh;
@@ -125,7 +125,7 @@
   margin-top: 1.5vw;
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  font-family: "Space Grotesk", regular;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .ageGroupIndivBlocked {

@@ -9,7 +9,6 @@
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   font-family: "Mona-Sans Regular", sans-serif;
-  overflow: scroll;
 }
 
 .imgAndSlug {
@@ -26,9 +25,8 @@
   margin-bottom: 0.5rem !important;
   font-weight: bold;
   text-align: center;
-  /* font-family: "Mona-Sans Regular", sans-serif;
-   */
-  font-family: "Space Grotesk", regular;
+
+  font-family: "Space Grotesk", sans-serif;
 }
 .storyBoxGrey {
   background-color: rgb(149, 149, 149) !important;

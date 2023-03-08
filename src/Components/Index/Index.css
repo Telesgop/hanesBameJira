@@ -1,5 +1,5 @@
 table {
-  font-family: "Space Grotesk", regular;
+  font-family: "Space Grotesk", sans-serif;
   border-collapse: collapse;
   display: flex;
   flex-direction: column;
@@ -9,17 +9,17 @@ table {
 }
 
 .ageRange {
-  font-family: "Space Grotesk", regular;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .indexH2 {
   margin-top: 0;
-  font-family: "Space Grotesk", regular;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .indexContainer {
   display: flex;
-  font-family: "Space Grotesk", regular;
+  font-family: "Space Grotesk", sans-serif;
 
   flex-direction: row;
   flex-wrap: wrap;

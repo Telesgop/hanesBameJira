@@ -143,6 +143,16 @@ const Navbar = () => {
                 {lang ? "Mynegai" : "Index"}
               </motion.h2>
             </Link>
+            <Link to={"/Quiz"}>
+              <motion.h2
+                className="notesH2"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                onClick={() => setIsOpen(false)}
+              >
+                {lang ? "Cwis" : "Quiz"}
+              </motion.h2>
+            </Link>
             <Link to={"/Accessibility"}>
               <motion.h2
                 className="notesH2"
