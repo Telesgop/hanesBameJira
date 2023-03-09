@@ -23,6 +23,7 @@ const Person = ({
   backLContentCym,
   indivNameCym,
   links,
+  quizButtonText,
 }) => {
   const { lang, setLang } = useContext(LanguageContext);
   const [slide, setSlide] = useState(0);
@@ -168,7 +169,7 @@ const Person = ({
                     whileHover={{ scale: 1.2 }}
                     whileTap={{ scale: 0.9 }}
                   >
-                    <h3 className="quizH2">Try The Quiz!</h3>
+                    <h3 className="quizH2">{quizButtonText}</h3>
                   </motion.div>
                 </div>
                 <div className="backRight">

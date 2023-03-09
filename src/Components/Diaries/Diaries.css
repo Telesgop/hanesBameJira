@@ -1,0 +1,17 @@
+.infoMainDiaries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.infoH1Diaries {
+  margin-top: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.infoPDiaries {
+  font-family: "Space Grotesk", sans-serif;
+}

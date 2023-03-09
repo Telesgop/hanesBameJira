@@ -20,6 +20,10 @@
   border: 0;
 }
 
+.imgAndSlugDiaries {
+  height: 100%;
+}
+
 .indivName {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem !important;
@@ -41,6 +45,16 @@
   overflow: hidden;
   width: 20vw;
   height: 20vh;
+  max-width: 100%;
+  background-color: white;
+  grid-area: content-2;
+  object-fit: cover;
+}
+
+.indivImageDiaries {
+  overflow: hidden;
+  width: 25vw;
+  height: 35vh;
   max-width: 100%;
   background-color: white;
   grid-area: content-2;
