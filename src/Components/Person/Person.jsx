@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { LanguageContext } from "../../Helper/Context";
 import { useContext } from "react";
 import Copyright from "../Copyright/Copyright";
+import { Link } from "react-router-dom";
 
 const Person = ({
   text,
@@ -24,6 +25,7 @@ const Person = ({
   indivNameCym,
   links,
   quizButtonText,
+  buttonLink,
 }) => {
   const { lang, setLang } = useContext(LanguageContext);
   const [slide, setSlide] = useState(0);
@@ -164,13 +166,15 @@ const Person = ({
                     {proposedResource}
                     {lang !== true ? backLContent : backLContentCym}
                   </div>
-                  <motion.div
-                    className="quizButton"
-                    whileHover={{ scale: 1.2 }}
-                    whileTap={{ scale: 0.9 }}
-                  >
-                    <h3 className="quizH2">{quizButtonText}</h3>
-                  </motion.div>
+                  <Link to={buttonLink.toString()}>
+                    <motion.div
+                      className="quizButton"
+                      whileHover={{ scale: 1.2 }}
+                      whileTap={{ scale: 0.9 }}
+                    >
+                      <h3 className="quizH2">{quizButtonText}</h3>
+                    </motion.div>
+                  </Link>
                 </div>
                 <div className="backRight">
                   <p>

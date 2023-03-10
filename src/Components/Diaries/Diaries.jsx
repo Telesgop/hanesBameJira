@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Diary from "../../Images/FongSuiDiary.png";
-import Idris from "../../Images/IdrisPhillipsDiary.png";
 import StoryBoxDiaries from "../StoryBox/StoryBoxDiaries";
 import "./Diaries.css";
 
@@ -16,10 +14,10 @@ const Diaries = () => {
       </div>
       <div className="storiesContainer">
         <Link to={"/Diaries/FongSui"}>
-          <StoryBoxDiaries name={"Fong Sui"} image={Diary} />
+          <StoryBoxDiaries name={"Fong Sui"} image={""} />
         </Link>
         <Link to={"/Diaries/IdrisPhillips"}>
-          <StoryBoxDiaries name={"Idris Phillips"} image={Idris} />
+          <StoryBoxDiaries name={"Idris Phillips"} image={""} />
         </Link>
       </div>
     </>

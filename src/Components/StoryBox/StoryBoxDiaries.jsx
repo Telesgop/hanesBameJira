@@ -29,12 +29,12 @@ const StoryBoxDiaries = ({ name, image, slug, welshSlug }) => {
   return (
     <motion.div
       className="storyBox"
-      //   whileHover={{ scale: 1.1 }}
-      //   whileTap={{ scale: 0.9 }}
-      //   transition={{ duration: 0.3 }}
-      //   variants={container}
-      //   initial="hidden"
-      //   animate="visible"
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
+      transition={{ duration: 0.3 }}
+      variants={container}
+      initial="hidden"
+      animate="visible"
     >
       <div>
         <h3 className="indivName">{name}</h3>

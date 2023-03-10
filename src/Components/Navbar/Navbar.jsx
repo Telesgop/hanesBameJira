@@ -150,7 +150,7 @@ const Navbar = () => {
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setIsOpen(false)}
               >
-                {lang ? "Cwis" : "Quiz"}
+                {lang ? "Cwis" : "Quizzes"}
               </motion.h2>
             </Link>
             <Link to={"/Diaries"}>

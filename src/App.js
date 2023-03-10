@@ -30,6 +30,7 @@ import Quiz from "./Components/Quiz/Quiz";
 import PersonQuiz from "./Components/Person/PersonQuiz";
 import QuizData from "./Components/Quiz/QuizData";
 import Diaries from "./Components/Diaries/Diaries";
+import DiaryBox from "./Components/DiaryBox/DiaryBox";
 
 function App() {
   const [lang, setLang] = useState(false);
@@ -63,6 +64,10 @@ function App() {
           <Route path="/Info" element={<Info />}></Route>
           <Route path="/Quiz" element={<Quiz />}></Route>
           <Route path="/Diaries" element={<Diaries />}></Route>
+          <Route
+            path="/Diaries/FongSui"
+            element={<DiaryBox></DiaryBox>}
+          ></Route>
           <Route path="/QuizData" element={<QuizData />}></Route>
           <Route
             path="/RichardParksQuiz"
@@ -1139,6 +1144,7 @@ function App() {
               <Person
                 proposedResource={"Factfile including discussion points."}
                 quizButtonText={"Diary Entries"}
+                buttonLink={"/Diaries/FongSui"}
                 indivName={"Fong Sui"}
                 indivNameCym={"Fong Sui"}
                 slugText={"First Generation Chinese in Wales."}
