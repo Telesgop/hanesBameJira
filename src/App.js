@@ -432,6 +432,29 @@ function App() {
             path="/12to16yo/GlennWebbe"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/news/uk-wales-64717463"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Glenn Webbe: Black Welsh rugby star humbled by
+                        documentary
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/programmes/m001jhdl"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        VIDEO - Glenn Webbe - Legends of Welsh Sport
+                      </a>
+                    </li>
+                  </ul>
+                }
                 resource={twelveApi.slice(0, 1)}
                 indivName={"Glenn Webbe"}
                 indivNameCym={"Glenn Webbe"}
@@ -582,6 +605,29 @@ function App() {
             path="/9to12yo/PenrhynCastle"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.nationaltrust.org.uk/visit/wales/penrhyn-castle-and-garden/history-of-penrhyn-castle-and-garden"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        History of Penryhn Castle - National Trust
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.blackhistorymonth.org.uk/article/section/history-of-slavery/the-welsh-slave-owner-and-anti-abolitionist-mp-richard-pennant/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        The Welsh slave owner and anti-abolitionist MP Richard
+                        Pennant - Black History Month
+                      </a>
+                    </li>
+                  </ul>
+                }
                 indivName={"Penrhyn Castle"}
                 indivNameCym={"Castell Penrhyn"}
                 proposedResource={"Filming of building with voiceover."}
@@ -739,6 +785,29 @@ function App() {
             path="/9to12yo/HansLichtenstein"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.theguardian.com/society/2019/apr/02/hans-lichtenstein-obituary"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Hans Lichtenstein Obituary
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.countytimes.co.uk/news/17369270.llandrindod-wells-tributes-paid-inspirational-heroic-family-doctor-hans-lichtenstein/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Tributes paid to 'inspirational', 'heroic' family doctor
+                        Hans Lichtenstein
+                      </a>
+                    </li>
+                  </ul>
+                }
                 indivName={"Hans Lichtenstein"}
                 indivNameCym={"Hans Lichtenstein"}
                 proposedResource={
@@ -890,6 +959,36 @@ function App() {
             path="/6to9yo/MerthyrSynagogue"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.foundationforjewishheritage.com/merthyr-tydfil"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Merthyr Synagogue - Foundation for Jewish Heritage
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=5bcC14ay-iY"
+                        className="resourceHref"
+                      >
+                        Merthyr Synagogue History - Welsh Jewish Heritage Centre
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://ahfund.org.uk/projects/former-merthyr-tydfil-synagogue/"
+                        className="resourceHref"
+                      >
+                        Saving and Restoring the Oldest Surviving Synagogue in
+                        Wales
+                      </a>
+                    </li>
+                  </ul>
+                }
                 resource={api.slice(1, 2)}
                 proposedResource={"Film the building with voice over."}
                 indivName={"Merthyr Tydfil Synagogue"}
@@ -1003,6 +1102,29 @@ function App() {
             path="/6to9yo/LennLawrence"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/news/uk-wales-44525608"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Windrush: How Lenn Lawrence stopped Swansea from
+                        flooding
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.peoplescollection.wales/items/965656"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        An Interview with Lenn Lawrence
+                      </a>
+                    </li>
+                  </ul>
+                }
                 indivName={"Lenn Lawrence"}
                 indivNameCym={"Lenn Lawrence"}
                 proposedResource={"Discussion points."}
@@ -1142,6 +1264,29 @@ function App() {
             path="/6to9yo/FongSui"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://chineseinwales.org.uk/our-community/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Chinese In Wales Organisation
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.huckmag.com/art-and-culture/growing-up-behind-the-counter-of-a-chinese-takeaway-in-wales/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Growing up behind the counter of a Chinese takeaway in
+                        Wales
+                      </a>
+                    </li>
+                  </ul>
+                }
                 proposedResource={"Factfile including discussion points."}
                 quizButtonText={"Diary Entries"}
                 buttonLink={"/Diaries/FongSui"}
@@ -1199,6 +1344,48 @@ function App() {
             path="/6to9yo/ArandoraStar"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.liverpoolmuseums.org.uk/stories/maritime-tales-tragedy-of-arandora-star"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        The Tragedy of the Arandora Star - National Museums
+                        Liverpool
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.warthmillsproject.com/stories/tragedy-of-the-arandora-star/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        The Tragedy of the SS Arandora Star - The Warth Mills
+                        Project
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.cardiffcathedral.org.uk/remembering-the-arandora-star/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Remembering the Arandora Star - Cardiff Cathedral
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://arandorastar.online/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Arandora Star Online
+                      </a>
+                    </li>
+                  </ul>
+                }
                 proposedResource={"Interview  with Nick Servini? "}
                 indivName={"The Arandora Star"}
                 indivNameCym={"The Arandora Star"}
@@ -1340,6 +1527,28 @@ function App() {
             path="/6to9yo/ShirleyBassey"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://cardiffyouthcouncil.com/dame-shirley-bassey/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Shirley Bassey - Cardiff Youth Council
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.britannica.com/biography/Shirley-Bassey"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Shirley Bassey - Encyclopedia Britannica
+                      </a>
+                    </li>
+                  </ul>
+                }
                 indivName={"Dame Shirley Bassey"}
                 indivNameCym={"Y Fonesig Shirley Bassey"}
                 proposedResource={
@@ -1439,6 +1648,39 @@ function App() {
             path="/6to9yo/Windrush"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://senedd.wales/visit/exhibitions/past-exhibitions/windrush-cymru-celebrating-the-lives-and-journeys-of-a-generation/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Windrush Cymru: celebrating the lives and journeys of a
+                        generation
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://racecouncilcymru.org.uk/windrush-generation-wales"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Windrush Generation Wales - Race Council Cymru
+                      </a>
+                    </li>
+
+                    <li className="linkLi">
+                      <a
+                        href="https://www.iwa.wales/agenda/2018/06/windrush-and-wales/?gclid=Cj0KCQjw2cWgBhDYARIsALggUhrSm8AiB_KvwqEG5ooZXtOM9uvG6JpyPwmZZDN68vShQiwGG_wUoQQaAkgzEALw_wcB"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Windrush and Wales - Institute of Welsh Affairs
+                      </a>
+                    </li>
+                  </ul>
+                }
                 indivName={"The Windrush Generation "}
                 indivNameCym={"The Windrush Generation "}
                 proposedResource={"Not developed yet"}
@@ -1509,6 +1751,28 @@ function App() {
             path="/6to9yo/IdrisPhillips"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/programmes/p08t59ty"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Wales's Black Miners
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.visionfountain.com/2019/10/04/idris-phillips-portrait-at-national-coal-mining-museum/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Idris Phillips’ Portrait at National Coal Mining Museum
+                      </a>
+                    </li>
+                  </ul>
+                }
                 indivName={"Idris Phillips"}
                 indivNameCym={"Idris Phillips"}
                 proposedResource={"Not developed yet"}
@@ -1572,6 +1836,37 @@ function App() {
             path="/9to12yo/ColinJackson"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://olympics.com/en/athletes/colin-jackson"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Colin Jackson Olymic Biography
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.welshathletics.org/en/page/colin-jackson"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Colin Jackson - Welsh Athletics
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.theguardian.com/world/2017/sep/02/colin-jackson-phenomenal-athlete-who-came-out-at-50"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Colin Jackson: phenomenal athlete who came out at 50
+                      </a>
+                    </li>
+                  </ul>
+                }
                 indivName={"Colin Jackson"}
                 indivNameCym={"Colin Jackson"}
                 proposedResource={"Interview with Colin and his sister?"}
@@ -1644,6 +1939,19 @@ function App() {
             path="/9to12yo/IrisWilliams"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://blackhistorywales.org.uk/resources/resource/iris-williams-obe/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Iris Williams - Black History Wales{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
                 indivName={"Iris Williams"}
                 indivNameCym={"Iris Williams"}
                 proposedResource={
@@ -1884,6 +2192,38 @@ function App() {
             path="/9to12yo/CliveSullivan"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.africansinyorkshireproject.com/clive-sullivan.html"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Clive Sullivan - Britain's First Black Rugby Captain
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=0Z9hvtk3wbc"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        VIDEO - The Story of the RLWC1972 Final and the Iconic
+                        Clive Sullivan
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.hullfc.com/club/history-stats/hall-of-fame/clive-sullivan"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Hall of Fame - Hull FC
+                      </a>
+                    </li>
+                  </ul>
+                }
                 indivName={"Clive Sullivan"}
                 indivNameCym={"Clive Sullivan"}
                 proposedResource={"Factfile with discussion."}
@@ -1972,6 +2312,38 @@ function App() {
             path="/9to12yo/JohnYstumllyn"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://friendsoffriendlesschurches.org.uk/story/john-ystumllyn/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        John Ystumllyn: From Africa to Ynyscynhaearn
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://cadw.gov.wales/learn/wales-rich-and-diverse-heritage/creative-responses/john-ystumllyn-c1738-1786"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        John Ystumllyn - Cadw
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.theguardian.com/uk-news/2021/oct/21/new-rose-named-after-one-of-britains-first-known-black-gardeners-john-ystumllyn"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        New rose named after one of UK’s first documented black
+                        gardeners
+                      </a>
+                    </li>
+                  </ul>
+                }
                 indivName={"John Ystumllyn"}
                 indivNameCym={"John Ystumllyn"}
                 slugText={"The 18th century slave who became a gardener."}
@@ -2080,6 +2452,37 @@ function App() {
             path="/9to12yo/TigerBay"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.tigerbay.org.uk/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Tiger Bay and the World{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/wales/history/sites/themes/society/tiger_bay.shtml"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Tiger Bay - BBC Wales
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.theguardian.com/commentisfree/2017/mar/07/multiculturalism-ethnic-diversity-butetown-cardiff"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        The town that pioneered multiculturalism
+                      </a>
+                    </li>
+                  </ul>
+                }
                 indivName={"Tiger Bay"}
                 indivNameCym={"Tiger Bay"}
                 proposedResource={"Factfile with discussion."}
@@ -2152,6 +2555,19 @@ function App() {
             path="/9to12yo/SidoliIceCream"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.sidolis-icecream.co.uk/about/the-sidolis-story/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        The Sidoli's Story
+                      </a>
+                    </li>
+                  </ul>
+                }
                 indivName={"Sidoli Ice Cream"}
                 indivNameCym={"Hufen Iâ Sidoli"}
                 proposedResource={"Interview with family member."}
@@ -2248,6 +2664,28 @@ function App() {
             path="/9to12yo/IsaacBlake"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.romaniarts.co.uk/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Romani Cultural and Arts Company{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://eriac.org/members/isaac-blake/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Isaac Blake profile - ERIAC
+                      </a>
+                    </li>
+                  </ul>
+                }
                 indivName={"Isaac Blake"}
                 indivNameCym={"Isaac Blake"}
                 slugText={"A Romani in Wales following tradition."}
@@ -2498,6 +2936,28 @@ function App() {
             path="/9to12yo/VernesterCyril"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://chwaraeteg.com/projects/wonderful-welsh-women/vernesta-cyril/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Vernester Cyril - Chwarae Teg
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.southwalesargus.co.uk/news/1017285.midwife-gets-national-recognition/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Midwife gets national recognition{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
                 indivName={"Vernester Cyril"}
                 indivNameCym={"Vernester Cyril"}
                 slugText={
@@ -2621,6 +3081,19 @@ function App() {
             path="/9to12yo/JoeCalzaghe"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://joecalzaghe.com/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Joe Calzaghe Official Site
+                      </a>
+                    </li>
+                  </ul>
+                }
                 indivName={"Joe Calzaghe"}
                 indivNameCym={"Joe Calzaghe"}
                 proposedResource={"Factfile with discussion"}
@@ -2713,11 +3186,24 @@ function App() {
             }
           ></Route>
           <Route
-            path="/12to16yo/JasonMohammed"
+            path="/12to16yo/JasonMohammad"
             element={
               <Person
-                indivName={"Jason Mohammed"}
-                indivNameCym={"Jason Mohammed"}
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/programmes/b01mzk7b"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Jason Mohammad - BBC Radio Wales
+                      </a>
+                    </li>
+                  </ul>
+                }
+                indivName={"Jason Mohammad"}
+                indivNameCym={"Jason Mohammad"}
                 proposedResource={"Interview with Mirain Iwerydd."}
                 resource={twelveApi.slice(3, 4)}
                 slugText={
@@ -2782,6 +3268,37 @@ function App() {
             path="/12to16yo/KizzyCrawford"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="http://www.kizzymerielcrawford.com/#about"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Kizzy Crawford Official Site
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/programmes/profiles/1xvLV8vfWGVwm6F641sVRdl/kizzy-crawford"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Kizzy Crawford - BBC Wales Horizons
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://kizzycrawford.bandcamp.com/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Kizzy Crawford - Bandcamp
+                      </a>
+                    </li>
+                  </ul>
+                }
                 indivName={"Kizzy Crawford"}
                 indivNameCym={"Kizzy Crawford"}
                 proposedResource={"Interview of podcast with Kizzy herself?"}
@@ -2974,6 +3491,19 @@ function App() {
             path="/12to16yo/JoeErskine"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.boxingnewsonline.net/joe-erskine-too-small-to-be-great/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Joe Erskine - Too Small to be Great
+                      </a>
+                    </li>
+                  </ul>
+                }
                 indivName={"Joe Erskine"}
                 indivNameCym={"Joe Erskine"}
                 resource={twelveApi.slice(6, 7)}
@@ -2991,6 +3521,56 @@ function App() {
             path="/12to16yo/ElizabethCampbell"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.100welshwomen.wales/100-women/betty_campbell/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Betty Campbell - 100 Welsh Women{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/programmes/profiles/1p7r3fkpsWTbQ9shCFh1QXc/betty-campbell"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        BBC Hidden Heroines - Betty Campbell
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://cadw.gov.wales/learn/wales-rich-and-diverse-heritage/creative-responses/betty-campbell-1934-2017"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Cadw - Betty Campbell
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.theguardian.com/uk-news/2021/sep/29/wales-honours-betty-campbell-first-black-headteacher"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Wales honours Betty Campbell, country’s first black
+                        headteacher
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.meiccymru.org/black-history-month-betty-campbell/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Meic: Black History Month – Betty Campbell
+                      </a>
+                    </li>
+                  </ul>
+                }
                 indivName={"Elizabeth Campbell"}
                 indivNameCym={"Elizabeth Campbell"}
                 proposedResource={

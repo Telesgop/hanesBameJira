@@ -166,22 +166,20 @@ const Person = ({
                     {proposedResource}
                     {lang !== true ? backLContent : backLContentCym}
                   </div>
-                  <Link to={buttonLink.toString()}>
-                    <motion.div
-                      className="quizButton"
-                      whileHover={{ scale: 1.2 }}
-                      whileTap={{ scale: 0.9 }}
-                    >
-                      <h3 className="quizH2">{quizButtonText}</h3>
-                    </motion.div>
-                  </Link>
+
+                  <motion.div
+                    className="quizButton"
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <h3 className="quizH2">{quizButtonText}</h3>
+                  </motion.div>
                 </div>
                 <div className="backRight">
                   <p>
                     {" "}
                     {lang !== true ? "Online Resources:" : "Adnoddau Ar-lein:"}
                   </p>
-                  <p>(Links will go here)</p>
                   {links}
                 </div>
               </div>
