@@ -7,101 +7,281 @@ const QuizData = () => {
   const questions = [
     {
       questionText: "Where was Richard Parks born?",
-      answerOptions: [
-        { answerText: "Wrexham", isCorrect: false },
-        { answerText: "Cardiff", isCorrect: false },
-        { answerText: "Pontypridd", isCorrect: true },
-        { answerText: "Swansea", isCorrect: false },
-      ],
     },
     {
       questionText:
         "What sport did Richard Parks go on to play professionally?",
-      answerOptions: [
-        { answerText: "Football", isCorrect: false },
-        { answerText: "Rugby", isCorrect: true },
-        { answerText: "Golf", isCorrect: false },
-        { answerText: "Basketball", isCorrect: false },
-      ],
     },
     {
       questionText: "What did Richard Parks become after retiring from rugby?",
-      answerOptions: [
-        { answerText: "Extreme Athlete", isCorrect: true },
-        { answerText: "Gardener", isCorrect: false },
-        { answerText: "Football Commentator", isCorrect: false },
-        { answerText: "Pilot", isCorrect: false },
-      ],
     },
     {
       questionText:
-        "How long did it take Richard to climb the highest mountain on each continent?",
-      answerOptions: [
-        { answerText: "1 year", isCorrect: false },
-        { answerText: "312 days", isCorrect: false },
-        { answerText: "2 months", isCorrect: false },
-        { answerText: "7 months", isCorrect: true },
-      ],
+        "How long did it take Richard to climb the highest mountains on each continent?",
+    },
+    {
+      questionText:
+        "In January 2014, what did Richard become the first Welshman to do?",
     },
   ];
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [showScore, setShowScore] = useState(false);
-  const [score, setScore] = useState(0);
+  const [next, setNext] = useState(false);
+  const [buttonStyle, setButtonStyle] = useState("white");
+  const [buttonStyleWrong, setButtonStyleWrong] = useState("white");
+  const [buttonStyleWrong2, setButtonStyleWrong2] = useState("white");
+  const [buttonStyleWrong3, setButtonStyleWrong3] = useState("white");
+  const [finished, setFinished] = useState(false);
+  function goNext() {
+    setNext(true);
+    setButtonStyle("#96E072");
+  }
+  function finishedQuiz() {
+    setFinished(true);
+    setButtonStyle("#96E072");
+  }
 
-  const handleAnswerOptionClick = (isCorrect) => {
-    if (isCorrect) {
-      setScore(score + 1);
-    }
+  function nextPage() {
+    setCurrentQuestion(currentQuestion + 1);
+    setButtonStyle("white");
+    setButtonStyleWrong("white");
+    setButtonStyleWrong2("white");
+    setButtonStyleWrong3("white");
 
-    const nextQuestion = currentQuestion + 1;
-
-    if (nextQuestion < questions.length) {
-      setCurrentQuestion(nextQuestion);
-    } else {
-      setShowScore(true);
-    }
-  };
+    setNext(false);
+  }
 
   return (
     <div className="wholePage">
       <div className="personBox">
         <div className="personInfoQuiz">
-          {showScore ? (
-            <div className="score-section">
-              You scored {score} out of {questions.length}!
+          <h2 className="personH2Quiz">Richard Parks</h2>
+          <div className="questions">
+            <h3>
+              Question {currentQuestion + 1}:{" "}
+              {questions[currentQuestion].questionText}
+            </h3>
+            <div className="answerBoxes">
+              {currentQuestion === 1 && (
+                <div className="boxes">
+                  <motion.div
+                    className="answers"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    style={{ backgroundColor: buttonStyleWrong }}
+                    onClick={() => setButtonStyleWrong("#E71D36")}
+                  >
+                    Football
+                  </motion.div>
+                  <motion.div
+                    className="answers"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    style={{ backgroundColor: buttonStyle }}
+                    onClick={() => goNext()}
+                  >
+                    Rugby
+                  </motion.div>
+                  <motion.div
+                    className="answers"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    style={{ backgroundColor: buttonStyleWrong2 }}
+                    onClick={() => setButtonStyleWrong2("#E71D36")}
+                  >
+                    Badminton
+                  </motion.div>
+                  <motion.div
+                    className="answers"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    style={{ backgroundColor: buttonStyleWrong3 }}
+                    onClick={() => setButtonStyleWrong3("#E71D36")}
+                  >
+                    Extreme Frisbee
+                  </motion.div>
+                </div>
+              )}
+              {currentQuestion === 0 && (
+                <div className="boxes">
+                  <motion.div
+                    className="answers"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    style={{ backgroundColor: buttonStyleWrong }}
+                    onClick={() => setButtonStyleWrong("#E71D36")}
+                  >
+                    Wrexham
+                  </motion.div>
+                  <motion.div
+                    className="answers"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    style={{ backgroundColor: buttonStyle }}
+                    onClick={() => goNext()}
+                  >
+                    Pontypridd
+                  </motion.div>
+                  <motion.div
+                    className="answers"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    style={{ backgroundColor: buttonStyleWrong2 }}
+                    onClick={() => setButtonStyleWrong2("#E71D36")}
+                  >
+                    Cardiff
+                  </motion.div>
+                  <motion.div
+                    className="answers"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    style={{ backgroundColor: buttonStyleWrong3 }}
+                    onClick={() => setButtonStyleWrong3("#E71D36")}
+                  >
+                    Swansea
+                  </motion.div>
+                </div>
+              )}
+              {currentQuestion === 2 && (
+                <div className="boxes">
+                  <motion.div
+                    className="answers"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    style={{ backgroundColor: buttonStyle }}
+                    onClick={() => goNext()}
+                  >
+                    Extreme Athlete
+                  </motion.div>
+                  <motion.div
+                    className="answers"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    style={{ backgroundColor: buttonStyleWrong }}
+                    onClick={() => setButtonStyleWrong("#E71D36")}
+                  >
+                    Gardener
+                  </motion.div>
+                  <motion.div
+                    className="answers"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    style={{ backgroundColor: buttonStyleWrong2 }}
+                    onClick={() => setButtonStyleWrong2("#E71D36")}
+                  >
+                    Pilot
+                  </motion.div>
+                  <motion.div
+                    className="answers"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    style={{ backgroundColor: buttonStyleWrong3 }}
+                    onClick={() => setButtonStyleWrong3("#E71D36")}
+                  >
+                    Astronaut
+                  </motion.div>
+                </div>
+              )}
+              {currentQuestion === 3 && (
+                <div className="boxes">
+                  <motion.div
+                    className="answers"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    style={{ backgroundColor: buttonStyleWrong }}
+                    onClick={() => setButtonStyleWrong("#E71D36")}
+                  >
+                    1 year
+                  </motion.div>
+                  <motion.div
+                    className="answers"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    style={{ backgroundColor: buttonStyleWrong2 }}
+                    onClick={() => setButtonStyleWrong2("#E71D36")}
+                  >
+                    17 months
+                  </motion.div>
+                  <motion.div
+                    className="answers"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    style={{ backgroundColor: buttonStyle }}
+                    onClick={() => goNext()}
+                  >
+                    7 months
+                  </motion.div>
+                  <motion.div
+                    className="answers"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    style={{ backgroundColor: buttonStyleWrong3 }}
+                    onClick={() => setButtonStyleWrong3("#E71D36")}
+                  >
+                    7 weeks
+                  </motion.div>
+                </div>
+              )}
+              {currentQuestion === 4 && (
+                <div className="boxes">
+                  <motion.div
+                    className="answers"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    style={{ backgroundColor: buttonStyleWrong }}
+                    onClick={() => setButtonStyleWrong("#E71D36")}
+                  >
+                    Eat 2,000 Welshcakes in 24 hours
+                  </motion.div>
+                  <motion.div
+                    className="answers"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    style={{ backgroundColor: buttonStyleWrong2 }}
+                    onClick={() => setButtonStyleWrong2("#E71D36")}
+                  >
+                    Absail off the Millennium Stadium
+                  </motion.div>
+                  <motion.div
+                    className="answers"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    style={{ backgroundColor: buttonStyleWrong3 }}
+                    onClick={() => setButtonStyleWrong3("#E71D36")}
+                  >
+                    Ride a dragon side saddle
+                  </motion.div>
+                  <motion.div
+                    className="answers"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    style={{ backgroundColor: buttonStyle }}
+                    onClick={() => finishedQuiz()}
+                  >
+                    Ski solo to the South Pole
+                  </motion.div>
+                </div>
+              )}
+            </div>{" "}
+            <div className="nextArea">
+              {next == true && (
+                <div className="nextBut" onClick={() => nextPage()}>
+                  Next
+                </div>
+              )}
+              {finished == true && (
+                <>
+                  <div className="finishedQuiz">Well done!</div>
+                  <div className="finishedBut">
+                    {" "}
+                    <a href="https://dev.addysgop.co.uk/hanesbame/6to9yo/RichardParks">
+                      Back to info page
+                    </a>
+                  </div>
+                </>
+              )}
             </div>
-          ) : (
-            <>
-              <h2 className="personH2Quiz">Richard Parks</h2>
-              <div className="question-section">
-                <div className="quizQuestionText">
-                  {questions[currentQuestion].questionText}
-                </div>
-              </div>
-              <div className="quizQuestionButtons">
-                <div className="quizQuestionButtonsMiddle">
-                  {questions[currentQuestion].answerOptions.map(
-                    (answerOption) => (
-                      <motion.div
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        className="quizQuestionButtonIndiv"
-                        onClick={() =>
-                          handleAnswerOptionClick(answerOption.isCorrect)
-                        }
-                      >
-                        {answerOption.answerText}
-                      </motion.div>
-                    )
-                  )}
-                </div>
-              </div>
-              <div className="question-count">
-                <span>Question {currentQuestion + 1}</span>/{questions.length}
-              </div>
-            </>
-          )}
+          </div>
         </div>
       </div>
     </div>

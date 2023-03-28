@@ -31,6 +31,8 @@ import PersonQuiz from "./Components/Person/PersonQuiz";
 import QuizData from "./Components/Quiz/QuizData";
 import Diaries from "./Components/Diaries/Diaries";
 import DiaryBox from "./Components/DiaryBox/DiaryBox";
+import PersonYTVid from "./Components/Person/PersonYTVid";
+import BettyQuiz from "./Components/Quiz/BettyQuiz";
 
 function App() {
   const [lang, setLang] = useState(false);
@@ -68,8 +70,9 @@ function App() {
             path="/Diaries/FongSui"
             element={<DiaryBox></DiaryBox>}
           ></Route>
-          <Route path="/QuizData" element={<QuizData />}></Route>
-          <Route
+          <Route path="/RichardParksQuiz" element={<QuizData />}></Route>
+          <Route path="/BettyQuiz" element={<BettyQuiz />}></Route>
+          {/* <Route
             path="/RichardParksQuiz"
             element={
               <PersonQuiz
@@ -77,13 +80,17 @@ function App() {
                 // indivPic="https://images.ctfassets.net/pjshm78m9jt4/qOAmfNKcRdpCajNzkBHMa/0259e6a2036bb8d1797efdbd1a41fee3/richard_parks_hero_2.jpg"
               />
             }
-          ></Route>
+          ></Route> */}
 
           <Route
             path="/6to9yo/RichardParks"
             element={
               <Person
                 indivName={"Richard Parks"}
+                quizButtonText={"Try the quiz!"}
+                linkQuiz={
+                  "https://dev.addysgop.co.uk/hanesbame/RichardParksQuiz"
+                }
                 indivNameCym={"Richard Parks"}
                 links={
                   <ul>
@@ -958,7 +965,8 @@ function App() {
           <Route
             path="/6to9yo/MerthyrSynagogue"
             element={
-              <Person
+              <PersonYTVid
+                youtubeVid={"https://www.youtube.com/embed/SJttEt3idYI"}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -1094,7 +1102,7 @@ function App() {
                 welshSlugText={
                   "Yr adeilad Iddewig pwrpasol hynaf sydd wedi goroesi yng Nghymru."
                 }
-              ></Person>
+              ></PersonYTVid>
             }
           ></Route>
 
@@ -1192,7 +1200,7 @@ function App() {
           <Route
             path="/6to9yo/TeleriGray"
             element={
-              <Person
+              <PersonYTVid
                 indivName={"Teleri Gray"}
                 indivNameCym={"Teleri Gray"}
                 proposedResource={
@@ -1203,6 +1211,7 @@ function App() {
                 indivPic={
                   "https://live.staticflickr.com/655/22408268685_a9ec39be94_b.jpg"
                 }
+                youtubeVid={"https://www.youtube.com/embed/ixW54ttBcGw"}
                 text={
                   <ul>
                     <li>
@@ -1257,7 +1266,7 @@ function App() {
                     </li>
                   </ul>
                 }
-              ></Person>
+              ></PersonYTVid>
             }
           ></Route>
           <Route
@@ -2311,7 +2320,8 @@ function App() {
           <Route
             path="/9to12yo/JohnYstumllyn"
             element={
-              <Person
+              <PersonYTVid
+                youtubeVid={"https://www.youtube.com/embed/96yE8N_f35o"}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -2444,8 +2454,7 @@ function App() {
                     </li>
                   </ul>
                 }
-                proposedResource={" S4C clip of flower from Garddio a Mwy."}
-              ></Person>
+              ></PersonYTVid>
             }
           ></Route>
           <Route
@@ -2663,7 +2672,7 @@ function App() {
           <Route
             path="/9to12yo/IsaacBlake"
             element={
-              <Person
+              <PersonYTVid
                 links={
                   <ul>
                     <li className="linkLi">
@@ -2687,6 +2696,7 @@ function App() {
                   </ul>
                 }
                 indivName={"Isaac Blake"}
+                youtubeVid={"https://www.youtube.com/embed/jvbI_RvP3Ic"}
                 indivNameCym={"Isaac Blake"}
                 slugText={"A Romani in Wales following tradition."}
                 proposedResource={""}
@@ -2759,7 +2769,7 @@ function App() {
                     </li>
                   </ul>
                 }
-              ></Person>
+              ></PersonYTVid>
             }
           ></Route>
           <Route

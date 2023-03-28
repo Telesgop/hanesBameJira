@@ -26,6 +26,7 @@ const Person = ({
   links,
   quizButtonText,
   buttonLink,
+  linkQuiz,
 }) => {
   const { lang, setLang } = useContext(LanguageContext);
   const [slide, setSlide] = useState(0);
@@ -172,11 +173,15 @@ const Person = ({
                     whileHover={{ scale: 1.2 }}
                     whileTap={{ scale: 0.9 }}
                   >
-                    <h3 className="quizH2">{quizButtonText}</h3>
+                    <h3 className="quizH2">
+                      <a href={linkQuiz} style={{ color: "white" }}>
+                        {quizButtonText}
+                      </a>
+                    </h3>
                   </motion.div>
                 </div>
                 <div className="backRight">
-                  <p>
+                  <p className="backRightP">
                     {" "}
                     {lang !== true ? "Online Resources:" : "Adnoddau Ar-lein:"}
                   </p>
