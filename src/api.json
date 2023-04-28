@@ -83,7 +83,7 @@
    
     {
         "id" : 9,
-        "name" : "Arandora Star",
+        "name" : "The Arandora Star",
         "nameCym" : "Arandora Star",
         "slug": "The ship sunk by a German torpedo killing Welsh Italians.",
         "welshSlug": "",
@@ -97,8 +97,8 @@
     },
     {
         "id" : 10,
-        "name" : "320th Barrage Balloon Battalion  ",
-        "nameCym" : "320th Barrage Balloon Battalion  ",
+        "name" : "320th Battalion  ",
+        "nameCym" : "320th Battalion  ",
         "slug": "A unit of the 621 men from the US Army.",
         "welshSlug": "",
         "image": "https://images.squarespace-cdn.com/content/v1/55e4bcf2e4b01d0dc78c9848/1441893157537-7AL21O6U939POF0AYWGB/image-asset.jpeg",

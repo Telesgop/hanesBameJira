@@ -4,6 +4,7 @@ import { LanguageContext } from "../../Helper/Context";
 import { useContext } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import map from "../../Images/map.png";
 import Copyright from "../Copyright/Copyright";
 
 const Home = () => {
@@ -84,9 +85,14 @@ const Home = () => {
   return (
     <>
       <div className="introDiv">
-        <div className="introText">
-          {" "}
-          {lang !== true ? introParaEng : introParaCym}
+        <div className="introDivL">
+          <div className="introText">
+            {" "}
+            {lang !== true ? introParaEng : introParaCym}
+          </div>
+        </div>
+        <div className="introDivR">
+          <img src={map} className="introDivImg"></img>
         </div>
       </div>
 

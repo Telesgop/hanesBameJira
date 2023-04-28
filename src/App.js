@@ -1,5 +1,8 @@
 import { useState } from "react";
 import "./App.css";
+import "./Components/Person/Person.css";
+import { motion } from "framer-motion";
+
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import { LanguageContext } from "./Helper/Context";
@@ -29,10 +32,20 @@ import Info from "./Components/Info/Info";
 import Quiz from "./Components/Quiz/Quiz";
 import PersonQuiz from "./Components/Person/PersonQuiz";
 import QuizData from "./Components/Quiz/QuizData";
-import Diaries from "./Components/Diaries/Diaries";
 import DiaryBox from "./Components/DiaryBox/DiaryBox";
 import PersonYTVid from "./Components/Person/PersonYTVid";
 import BettyQuiz from "./Components/Quiz/BettyQuiz";
+import Resources from "./Components/Resources/Resources";
+import CliveSullivanPortrait from "./Components/Resources/CliveSullivanPortrait";
+import IdrisPhillips from "./Components/Resources/IdrisPhillips";
+import JoeCalzaghe from "./Components/Resources/JoeCalzaghe";
+import PenrhynCastle from "./Components/Resources/PenrhynCastle";
+import ColinJackson from "./Components/Resources/ColinJackson";
+import LennLawrence from "./Components/Resources/LennLawrence";
+import Windrush from "./Components/Resources/Windrush";
+import ShirleyBassey from "./Components/Resources/ShirleyBassey";
+import WilsonMonk from "./Components/Resources/WilsonMonk";
+import Hans from "./Components/Resources/Hans";
 
 function App() {
   const [lang, setLang] = useState(false);
@@ -65,27 +78,49 @@ function App() {
           ></Route>
           <Route path="/Info" element={<Info />}></Route>
           <Route path="/Quiz" element={<Quiz />}></Route>
-          <Route path="/Diaries" element={<Diaries />}></Route>
+          <Route path="/Resources" element={<Resources />}></Route>
+          <Route
+            path="/Resources/CliveSullivanPortrait"
+            element={<CliveSullivanPortrait bgColour={"#CFE57D"} />}
+          ></Route>
+          <Route
+            path="/Resources/IdrisPhillips"
+            element={<IdrisPhillips />}
+          ></Route>
+          <Route path="/Resources/Windrush" element={<Windrush />}></Route>
+          <Route
+            path="/Resources/LennLawrence"
+            element={<LennLawrence />}
+          ></Route>
+          <Route
+            path="/Resources/ShirleyBassey"
+            element={<ShirleyBassey />}
+          ></Route>
+          <Route path="/Resources/WilsonMonk" element={<WilsonMonk />}></Route>
+          <Route
+            path="/Resources/ColinJackson"
+            element={<ColinJackson />}
+          ></Route>
+          <Route
+            path="/Resources/JoeCalzaghe"
+            element={<JoeCalzaghe />}
+          ></Route>
+          <Route
+            path="/Resources/PenrhynCastle"
+            element={<PenrhynCastle />}
+          ></Route>
+          <Route path="/Resources/Hans" element={<Hans />}></Route>
           <Route
             path="/Diaries/FongSui"
             element={<DiaryBox></DiaryBox>}
           ></Route>
           <Route path="/RichardParksQuiz" element={<QuizData />}></Route>
           <Route path="/BettyQuiz" element={<BettyQuiz />}></Route>
-          {/* <Route
-            path="/RichardParksQuiz"
-            element={
-              <PersonQuiz
-                indivName={"Richard Parks"}
-                // indivPic="https://images.ctfassets.net/pjshm78m9jt4/qOAmfNKcRdpCajNzkBHMa/0259e6a2036bb8d1797efdbd1a41fee3/richard_parks_hero_2.jpg"
-              />
-            }
-          ></Route> */}
-
           <Route
             path="/6to9yo/RichardParks"
             element={
               <Person
+                quizButStyle={"showQuizBut"}
                 indivName={"Richard Parks"}
                 quizButtonText={"Try the quiz!"}
                 linkQuiz={
@@ -107,6 +142,7 @@ function App() {
                       <a
                         href="https://www.youtube.com/watch?v=5bcC14ay-iY"
                         className="resourceHref"
+                        target="_blank"
                       >
                         Mind Over Mountain | Richard Parks on Mount Everest
                       </a>
@@ -115,6 +151,7 @@ function App() {
                       <a
                         href="https://www.youtube.com/watch?v=9COyDnyB_ag"
                         className="resourceHref"
+                        target="_blank"
                       >
                         Richard Parks - Welsh Sports Hall of Fame
                       </a>
@@ -123,6 +160,7 @@ function App() {
                       <a
                         href="https://www.youtube.com/watch?v=0EjCPnLAn6I"
                         className="resourceHref"
+                        target="_blank"
                       >
                         Richard Parks: The Big Interview
                       </a>
@@ -131,6 +169,7 @@ function App() {
                       <a
                         href="https://www.itv.com/news/wales/2022-03-14/the-pandemic-made-me-question-my-identity-and-my-value-to-the-world"
                         className="resourceHref"
+                        target="_blank"
                       >
                         Richard Parks: ‘The pandemic made me question my
                         identity and my value to the world’
@@ -140,6 +179,7 @@ function App() {
                       <a
                         href="https://www.visitwales.com/things-do/adventure-and-activities/discover-richard-parks-epic-wales"
                         className="resourceHref"
+                        target="_blank"
                       >
                         Richard Parks: Epic Welsh adventures
                       </a>
@@ -272,7 +312,7 @@ function App() {
             element={
               <AnimCard
                 indivName={"Sidoli's Ice Cream"}
-                sourceVid={"https://www.youtube.com/embed/azstFr2LpdA"}
+                sourceVid={"https://www.youtube.com/embed/19MmCWS2s6U"}
               />
             }
           ></Route>
@@ -282,7 +322,7 @@ function App() {
           ></Route>
           <Route
             path="/3to6yo/ArandoraStar"
-            element={<AnimCard indivName={"Arandora Star"} />}
+            element={<AnimCard indivName={"The Arandora Star"} />}
           ></Route>
           <Route
             path="/3to6yo/TigerBay"
@@ -290,23 +330,48 @@ function App() {
           ></Route>
           <Route
             path="/3to6yo/JohnYstumllyn"
-            element={<AnimCard indivName={"John Ystumllyn"} />}
+            element={
+              <AnimCard
+                indivName={"John Ystumllyn"}
+                sourceVid="https://www.youtube.com/embed/2llyk3-Lffk"
+              />
+            }
           ></Route>
           <Route
-            path="/3to6yo/RomaniKale"
-            element={<AnimCard indivName={"Romani Kale"} />}
+            path="/3to6yo/AbramWood"
+            element={
+              <AnimCard
+                indivName={"Abram Wood"}
+                sourceVid="https://www.youtube.com/embed/KA_5dmVTopI"
+              />
+            }
           ></Route>
           <Route
             path="/3to6yo/BettyCampbell"
-            element={<AnimCard indivName={"Betty Campbell"} />}
+            element={
+              <AnimCard
+                indivName={"Betty Campbell"}
+                sourceVid="https://www.youtube.com/embed/gikb903GUqM"
+              />
+            }
           ></Route>
           <Route
             path="/3to6yo/GaneshSubrahamanyan"
-            element={<AnimCard indivName={"Dr Ganesh Subrahamanyan"} />}
+            element={
+              <AnimCard
+                indivName={"Dr Ganesh Subrahamanyan"}
+                sourceVid="https://www.youtube.com/embed/qlN9J-DsxYM"
+              />
+            }
           ></Route>
           <Route
             path="/3to6yo/VernesterCyril"
-            element={<AnimCard indivName={"Vernester Cyril"} />}
+            element={
+              <AnimCard
+                indivName={"Vernester Cyril"}
+                sourceVid="https://www.youtube.com/embed/NEu7ctn7-8g"
+              />
+            }
           ></Route>
 
           <Route
@@ -620,7 +685,7 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        History of Penryhn Castle - National Trust
+                        History of Penrhyn Castle - National Trust
                       </a>
                     </li>
                     <li className="linkLi">
@@ -637,7 +702,11 @@ function App() {
                 }
                 indivName={"Penrhyn Castle"}
                 indivNameCym={"Castell Penrhyn"}
-                proposedResource={"Filming of building with voiceover."}
+                proposedResource={
+                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/PenrhynCastle">
+                    Should people refuse to visit Penrhyn Castle?
+                  </a>
+                }
                 resource={nineApi.slice(2, 1)}
                 indivPic={
                   "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Penrhyn_Castle_Wales_015.jpg/640px-Penrhyn_Castle_Wales_015.jpg"
@@ -818,78 +887,83 @@ function App() {
                 indivName={"Hans Lichtenstein"}
                 indivNameCym={"Hans Lichtenstein"}
                 proposedResource={
-                  "Interview with Jane (daughter) or footage from S4C programme."
+                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/Hans">
+                    Hans Lichtenstein monologue
+                  </a>
                 }
                 indivPic={
                   "https://i.guim.co.uk/img/media/7c810c258320be244e1d7d4d721e8a171409c677/180_145_1240_744/master/1240.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=d36ac08cc3c44a21c37572bfc483bb4c"
                 }
                 resource={nineApi.slice(1, 2)}
                 text={
-                  <ul>
-                    <li>
-                      Hitler was appointed chancellor of Germany on 30 January
-                      1933.
-                    </li>
-                    <li>
-                      Hitler hated ethnic minorities, including the Jews, and
-                      Jews were treated very badly in Germany.
-                    </li>
+                  <>
+                    <ul>
+                      <li>
+                        Hitler was appointed chancellor of Germany on 30 January
+                        1933.
+                      </li>
+                      <li>
+                        Hitler hated ethnic minorities, including the Jews, and
+                        Jews were treated very badly in Germany.
+                      </li>
 
-                    <li>
-                      During Kristallnacht in 1938, many Jewish shops and
-                      businesses were destroyed and looted.
-                    </li>
+                      <li>
+                        During Kristallnacht in 1938, many Jewish shops and
+                        businesses were destroyed and looted.
+                      </li>
 
-                    <li>
-                      One of the shops that was destroyed belonged to Ruth and
-                      Walter Lichtenstein.
-                    </li>
+                      <li>
+                        One of the shops that was destroyed belonged to Ruth and
+                        Walter Lichtenstein.
+                      </li>
 
-                    <li>
-                      During Hitler’s time in power, brave people joined
-                      together to rescue Jewish children. This rescue operation
-                      was called ‘Kindertransport’ (Children’s Transport).
-                    </li>
-                    <li>
-                      One of the children that was rescued was Ruth and Walter’s
-                      son, Hans Lichtenstein!
-                    </li>
-                    <li>
-                      Hans arrived in Britain when he was just 12 years old.
-                    </li>
-                    <li>
-                      He studied medicine at Trinity College, Cambridge, and
-                      then became a medical officer for the SAS (Special Air
-                      Service) in Malaysia.
-                    </li>
+                      <li>
+                        During Hitler’s time in power, brave people joined
+                        together to rescue Jewish children. This rescue
+                        operation was called ‘Kindertransport’ (Children’s
+                        Transport).
+                      </li>
+                      <li>
+                        One of the children that was rescued was Ruth and
+                        Walter’s son, Hans Lichtenstein!
+                      </li>
+                      <li>
+                        Hans arrived in Britain when he was just 12 years old.
+                      </li>
+                      <li>
+                        He studied medicine at Trinity College, Cambridge, and
+                        then became a medical officer for the SAS (Special Air
+                        Service) in Malaysia.
+                      </li>
 
-                    <li>
-                      While in Malaysia, Hans met British nurse Beryl Rush and
-                      they got married in 1956.
-                    </li>
+                      <li>
+                        While in Malaysia, Hans met British nurse Beryl Rush and
+                        they got married in 1956.
+                      </li>
 
-                    <li>
-                      After their work in Malaysia, Hans and Beryl moved to
-                      Llandrindod, where Hans worked as a much-respected GP (a
-                      doctor) for 32 years.
-                    </li>
+                      <li>
+                        After their work in Malaysia, Hans and Beryl moved to
+                        Llandrindod, where Hans worked as a much-respected GP (a
+                        doctor) for 32 years.
+                      </li>
 
-                    <li>
-                      When he retired, Hans helped to set up the Bracken Trust
-                      in Llandrindod, which offers cancer support, counselling
-                      and complementary therapies.{" "}
-                    </li>
-                    <li>
-                      Hans later took up marathon running and paragliding, and
-                      in his late 70s he could be seen soaring above Cwm Elan
-                      near his home!
-                    </li>
-                    <li>Dr Hans Lichtenstein died aged 91 in March 2019. </li>
-                    <li>
+                      <li>
+                        When he retired, Hans helped to set up the Bracken Trust
+                        in Llandrindod, which offers cancer support, counselling
+                        and complementary therapies.{" "}
+                      </li>
+                      <li>
+                        Hans later took up marathon running and paragliding, and
+                        in his late 70s he could be seen soaring above Cwm Elan
+                        near his home!
+                      </li>
+                      <li>Dr Hans Lichtenstein died aged 91 in March 2019. </li>
+                    </ul>
+                    <p>
                       Dr Hans Lichtenstein lived a long, hard life. After moving
                       to Britain, he fulfilled his dream of becoming a doctor.{" "}
-                    </li>
-                  </ul>
+                    </p>
+                  </>
                 }
                 welshText={
                   <ul>
@@ -1135,7 +1209,11 @@ function App() {
                 }
                 indivName={"Lenn Lawrence"}
                 indivNameCym={"Lenn Lawrence"}
-                proposedResource={"Discussion points."}
+                proposedResource={
+                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/LennLawrence">
+                    Newspaper article{" "}
+                  </a>
+                }
                 slugText={"The man who stopped Swansea from drowning."}
                 resource={api.slice(3, 4)}
                 indivPic={
@@ -1213,58 +1291,62 @@ function App() {
                 }
                 youtubeVid={"https://www.youtube.com/embed/ixW54ttBcGw"}
                 text={
-                  <ul>
-                    <li>
-                      Teleri Gray is a Romani storyteller and she is helping
-                      people to remember and preserve the Traveller’s history.{" "}
-                    </li>
-                    <li>
-                      Teleri talks about what life is like for Traveller
-                      children and their families today.
-                    </li>
+                  <>
+                    <ul>
+                      <li>
+                        Teleri Gray is a Romani storyteller and she is helping
+                        people to remember and preserve the Traveller’s history.{" "}
+                      </li>
+                      <li>
+                        Teleri talks about what life is like for Traveller
+                        children and their families today.
+                      </li>
 
-                    <li>
-                      Life can be very hard for Romani’s. They are not always
-                      welcomed in communities because there are a lot of false
-                      things said about them and people do not understand the
-                      way they choose to live.{" "}
-                    </li>
-                    <li>Gypsies have lived in Wales for over 400 years.</li>
+                      <li>
+                        Life can be very hard for Romani’s. They are not always
+                        welcomed in communities because there are a lot of false
+                        things said about them and people do not understand the
+                        way they choose to live.{" "}
+                      </li>
+                      <li>Gypsies have lived in Wales for over 400 years.</li>
 
-                    <li>
-                      The Romani community has a rich, beautiful culture, and
-                      has given Wales a lot to be proud of.
-                    </li>
-                    <li>
-                      They are very fond of creating music, writing poetry,
-                      storytelling and dancing.
-                    </li>
-                    <li>
-                      Teleri’s ancestors were famous Romani musicians. Her
-                      grandfather, her great- grandfather and her great great
-                      grandfather played the harp. Teleri’s
-                      great-great-grandfather John Roberts was known as the
-                      Harpist of Wales (or Telynor Cymru). As famous musicians,
-                      they traveled all over Wales, performing in the homes of
-                      rich people.
-                    </li>
-                    <li>
-                      Teleri and her sister are the only two Gypsy teachers in
-                      Wales.
-                    </li>
-                    <li>
-                      Today there are about 1092 travelers caravans in Wales.
-                    </li>
-                    <li>Wales has around 136 traveler sites.</li>
-                    <li>
+                      <li>
+                        The Romani community has a rich, beautiful culture, and
+                        has given Wales a lot to be proud of.
+                      </li>
+                      <li>
+                        They are very fond of creating music, writing poetry,
+                        storytelling and dancing.
+                      </li>
+                      <li>
+                        Teleri’s ancestors were famous Romani musicians. Her
+                        grandfather, her great- grandfather and her great great
+                        grandfather played the harp. Teleri’s
+                        great-great-grandfather John Roberts was known as the
+                        Harpist of Wales (or Telynor Cymru). As famous
+                        musicians, they traveled all over Wales, performing in
+                        the homes of rich people.
+                      </li>
+                      <li>
+                        Teleri and her sister are the only two Gypsy teachers in
+                        Wales.
+                      </li>
+                      <li>
+                        Today there are about 1092 travellers caravans in Wales.
+                      </li>
+                      <li>Wales has around 136 traveller sites.</li>
+                    </ul>
+                    <p>
+                      {" "}
                       Many of the customs and traditions of the Romanis are
                       being forgotten.
-                    </li>
-                    <li>
+                    </p>
+                    <p>
+                      {" "}
                       Memories and documents are now being collected to preserve
                       their culture.
-                    </li>
-                  </ul>
+                    </p>
+                  </>
                 }
               ></PersonYTVid>
             }
@@ -1296,8 +1378,11 @@ function App() {
                     </li>
                   </ul>
                 }
-                proposedResource={"Factfile including discussion points."}
-                quizButtonText={"Diary Entries"}
+                proposedResource={
+                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Diaries/FongSui">
+                    Imagined diary entries{" "}
+                  </a>
+                } // quizButtonText={"Diary Entries"}
                 buttonLink={"/Diaries/FongSui"}
                 indivName={"Fong Sui"}
                 indivNameCym={"Fong Sui"}
@@ -1307,44 +1392,48 @@ function App() {
                   "https://i2-prod.walesonline.co.uk/incoming/article6289157.ece/ALTERNATES/s810/JS28547881.jpg"
                 }
                 text={
-                  <ul>
-                    <li>
-                      Many of today’s older Chinese people living in Wales
-                      arrived as children and young adults during the 1940s -
-                      1970s.
-                    </li>
-                    <li>
-                      Many of those who came opened and worked in Chinese
-                      restaurants whilst others opened their own launderettes.
-                    </li>
-                    <li>
-                      Fong Sui came to Wales from her home village in China with
-                      her husband Chi Mau Chin.
-                    </li>
-                    <li>Life was very hard when Fong Sui arrived.</li>
-                    <li>
-                      She was put in a laundry, given just one meal a day and
-                      ironed 100 garments each shift, where she often burnt
-                      herself.
-                    </li>
-                    <li>
-                      At the age of 18, she moved with her husband to Swansea to
-                      run a laundry, one of the first Chinese laundries in
-                      Swansea!{" "}
-                    </li>
-                    <li>They also opened a brand new restaurant. </li>
-                    <li>
-                      Fong Sui was working in the laundry by day, working in the
-                      restaurant two nights a week, and raising four children.
-                    </li>
-                    <li>
+                  <>
+                    <ul>
+                      <li>
+                        Many of today’s older Chinese people living in Wales
+                        arrived as children and young adults during the 1940s -
+                        1970s.
+                      </li>
+                      <li>
+                        Many of those who came opened and worked in Chinese
+                        restaurants whilst others opened their own launderettes.
+                      </li>
+                      <li>
+                        Fong Sui came to Wales from her home village in China
+                        with her husband Chi Mau Chin.
+                      </li>
+                      <li>Life was very hard when Fong Sui arrived.</li>
+                      <li>
+                        She was put in a laundry, given just one meal a day and
+                        ironed 100 garments each shift, where she often burnt
+                        herself.
+                      </li>
+                      <li>
+                        At the age of 18, she moved with her husband to Swansea
+                        to run a laundry, one of the first Chinese laundries in
+                        Swansea!{" "}
+                      </li>
+                      <li>They also opened a brand new restaurant. </li>
+                      <li>
+                        Fong Sui was working in the laundry by day, working in
+                        the restaurant two nights a week, and raising four
+                        children.
+                      </li>
+                      <li>Fong Sui is now a grandmother of seven children.</li>
+                    </ul>
+                    <p>
+                      {" "}
                       Fong Sui’s story is very similar to many young Chinese
                       girls arriving in Wales during the mid-20th century. Life
                       was very difficult but they worked very hard and made a
                       big difference in Wales.
-                    </li>
-                    <li>Fong Sui is now a grandmother of seven children.</li>
-                  </ul>
+                    </p>
+                  </>
                 }
               ></Person>
             }
@@ -1468,7 +1557,11 @@ function App() {
               <Person
                 indivName={"320th Barrage Balloon Battalion "}
                 indivNameCym={"320th Barrage Balloon Battalion "}
-                proposedResource={"Factfile including discussion points."}
+                proposedResource={
+                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/WilsonMonk">
+                    A letter from Jessie Prior..{" "}
+                  </a>
+                }
                 slugText={"A unit of the 621 men from the US Army."}
                 resource={api.slice(7, 8)}
                 indivPic={
@@ -1561,7 +1654,9 @@ function App() {
                 indivName={"Dame Shirley Bassey"}
                 indivNameCym={"Y Fonesig Shirley Bassey"}
                 proposedResource={
-                  "Podcast with Mel and Emily? Or Aleighia Scott?"
+                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/ShirleyBassey">
+                    A night to remember!{" "}
+                  </a>
                 }
                 slugText={"The world famous Welsh singer from Tiger Bay."}
                 resource={api.slice(8, 9)}
@@ -1569,66 +1664,73 @@ function App() {
                   "https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F75b621da-8fff-4cfb-ad8e-d63040e1f7a8.jpg?fit=scale-down&source=next&width=700"
                 }
                 text={
-                  <ul>
-                    <li>
-                      Shirley Bassey was one of the first black British
-                      entertainers to become famous around the world.
-                    </li>
-                    <li>She was born in Tiger Bay, Cardiff.</li>
-                    <li>
-                      Her father was Nigerian and her mother was from Teeside.
-                    </li>
-                    <li>She loved singing as a child.</li>
-                    <li>After leaving school at 15 she worked in a factory.</li>
-                    <li>
-                      She continued to sing in clubs in the evenings and became
-                      well-known after in a Christmas show in London in 1955.
-                    </li>
-                    <li>
-                      In 1959, her song 'As I Love You' reached number 1 in in
-                      the charts. The first ever number 1 single by a Welsh
-                      artist.
-                    </li>
-                    <li>
-                      Her powerful voice made her popular all over the world.
-                    </li>
-                    <li>
-                      She became well-known for recording theme songs to James
-                      Bond films - Goldfinger, Diamonds are Forever and
-                      Moonraker.
-                    </li>
-                    <li>
-                      Over her long career she has had 27 Top 40 hits in the UK,
-                      including two number-ones and has sold over 135 million
-                      records.
-                    </li>
-                    <li>
-                      In 1999 she was given the title Dame for services to the
-                      arts.
-                    </li>
+                  <>
+                    <ul>
+                      <li>
+                        Shirley Bassey was one of the first black British
+                        entertainers to become famous around the world.
+                      </li>
+                      <li>She was born in Tiger Bay, Cardiff.</li>
+                      <li>
+                        Her father was Nigerian and her mother was from Teeside.
+                      </li>
+                      <li>She loved singing as a child.</li>
+                      <li>
+                        After leaving school at 15 she worked in a factory.
+                      </li>
+                      <li>
+                        She continued to sing in clubs in the evenings and
+                        became well-known after in a Christmas show in London in
+                        1955.
+                      </li>
+                      <li>
+                        In 1959, her song 'As I Love You' reached number 1 in in
+                        the charts. The first ever number 1 single by a Welsh
+                        artist.
+                      </li>
+                      <li>
+                        Her powerful voice made her popular all over the world.
+                      </li>
+                      <li>
+                        She became well-known for recording theme songs to James
+                        Bond films - Goldfinger, Diamonds are Forever and
+                        Moonraker.
+                      </li>
+                      <li>
+                        Over her long career she has had 27 Top 40 hits in the
+                        UK, including two number-ones and has sold over 135
+                        million records.
+                      </li>
+                      <li>
+                        In 1999 she was given the title Dame for services to the
+                        arts.
+                      </li>
 
-                    <li>
-                      In the same year she sang in the opening ceremony of the
-                      Senedd building in Cardiff Bay.
-                    </li>
-                    <li>
-                      She is well known for her glamorous style and at
-                      Glastonbury Festival in 2007 she performed in wellington
-                      boots with diamonds all over them!
-                    </li>
-                    <li>
-                      She was the first female artist to have an album in the
-                      charts during 7 decades.{" "}
-                    </li>
-                    <li>
-                      She released her last album "I Owe It All To You" in 2020.{" "}
-                    </li>
-                    <li>
+                      <li>
+                        In the same year she sang in the opening ceremony of the
+                        Senedd building in Cardiff Bay.
+                      </li>
+                      <li>
+                        She is well known for her glamorous style and at
+                        Glastonbury Festival in 2007 she performed in wellington
+                        boots with diamonds all over them!
+                      </li>
+                      <li>
+                        She was the first female artist to have an album in the
+                        charts during 7 decades.{" "}
+                      </li>
+                      <li>
+                        She released her last album "I Owe It All To You" in
+                        2020.{" "}
+                      </li>
+                    </ul>
+                    <p>
+                      {" "}
                       Dame Shirley Bassey came from a poor background but with
                       dedication and hard work became one of the most well-known
                       singers in the world.{" "}
-                    </li>
-                  </ul>
+                    </p>
+                  </>
                 }
               ></Person>
             }
@@ -1692,7 +1794,11 @@ function App() {
                 }
                 indivName={"The Windrush Generation "}
                 indivNameCym={"The Windrush Generation "}
-                proposedResource={"Not developed yet"}
+                proposedResource={
+                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/Windrush">
+                    Who are the Windrush Generation?
+                  </a>
+                }
                 slugText={"Not developed yet"}
                 resource={api.slice(10, 11)}
                 indivPic={
@@ -1760,6 +1866,7 @@ function App() {
             path="/6to9yo/IdrisPhillips"
             element={
               <Person
+                quizButStyle={"dontShowQuizBut"}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -1784,7 +1891,11 @@ function App() {
                 }
                 indivName={"Idris Phillips"}
                 indivNameCym={"Idris Phillips"}
-                proposedResource={"Not developed yet"}
+                proposedResource={
+                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/IdrisPhillips">
+                    Imaginary Biography
+                  </a>
+                }
                 slugText={"Black gold."}
                 resource={api.slice(11, 12)}
                 indivPic={
@@ -1878,7 +1989,11 @@ function App() {
                 }
                 indivName={"Colin Jackson"}
                 indivNameCym={"Colin Jackson"}
-                proposedResource={"Interview with Colin and his sister?"}
+                proposedResource={
+                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/ColinJackson">
+                    Imagined interview{" "}
+                  </a>
+                }
                 slugText={"The Olympic medal winner."}
                 resource={nineApi.slice(3, 4)}
                 indivPic={
@@ -2033,7 +2148,7 @@ function App() {
             }
           ></Route>
           <Route
-            path="/9to12yo/PaulRobeson"
+            path="/12to16yo/PaulRobeson"
             element={
               <Person
                 indivName={"Paul Robeson"}
@@ -2235,7 +2350,11 @@ function App() {
                 }
                 indivName={"Clive Sullivan"}
                 indivNameCym={"Clive Sullivan"}
-                proposedResource={"Factfile with discussion."}
+                proposedResource={
+                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/CliveSullivanPortrait">
+                    Portrait of Clive Sullivan Worksheet
+                  </a>
+                }
                 slugText={"The rugby league legend."}
                 resource={nineApi.slice(7, 8)}
                 indivPic={
@@ -2282,7 +2401,7 @@ function App() {
                     <li>
                       His constant knee problems required further operations.
                       Yet Clive played 352 games for Hull, scoring 250 tries,
-                      and 213 games for Hull K.R. scoring 118 tries.
+                      and 213 games for Hull Kingston Rovers scoring 118 tries.
                     </li>
 
                     <li>In 1967, Clive made his debut for Great Britain.</li>
@@ -3106,7 +3225,11 @@ function App() {
                 }
                 indivName={"Joe Calzaghe"}
                 indivNameCym={"Joe Calzaghe"}
-                proposedResource={"Factfile with discussion"}
+                proposedResource={
+                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/JoeCalzaghe">
+                    Imagined newspaper article
+                  </a>
+                }
                 resource={twelveApi.slice(2, 3)}
                 slugText={"The undefeated boxing world champion."}
                 indivPic={
@@ -3524,6 +3647,61 @@ function App() {
                 indivPic={
                   "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/joe-erskine-keystone.jpg"
                 }
+                text={
+                  <>
+                    <ul>
+                      <li>
+                        Joseph Erskine, a boxer from the Butetown district of
+                        Cardiff, was a former British and British Empire
+                        heavyweight boxing champion.
+                      </li>
+                      <li>He was one of the most gifted boxers of his day.</li>
+
+                      <li>
+                        Erskine was born in January 1934 in Cardiff's dockland
+                        district, Tiger Bay. His mother was Welsh and his father
+                        Jamaican.
+                      </li>
+
+                      <li>
+                        As a schoolboy he won various titles with the Victoria
+                        ABC and was an ABA heavyweight champion in 1953.
+                      </li>
+
+                      <li>
+                        At the age of 19 Erskine was an Amateur Boxing
+                        Association Champion, Inter-Services Champion, and
+                        British Army Champion.
+                      </li>
+                      <li>
+                        He began fighting as a professional in 1954 and was
+                        trained by Freddie Elvin.
+                      </li>
+                      <li>
+                        Boxing rivals included the American boxer Willie
+                        Pastrano, Welsh boxer Dick Richardson, German Karl
+                        Mildenberger, Jack Bodell (a British future champion)
+                        and the legendary Henry Cooper, who he fought 5 times.
+                      </li>
+                      <li>
+                        From August 1956 to June 1958 Erskine held the British
+                        heavyweight title. He won 45 of his 54 professional
+                        bouts (13 knockouts), losing 8, with one draw.
+                      </li>
+
+                      <li>
+                        His last fight was against Billy Walker on 27 October
+                        1964. He lost the ten-round bout on points.
+                      </li>
+                    </ul>
+                    <p>
+                      Erskine was 5ft 11inches and weighed under 200lbs. As a
+                      small heavyweight, he outmanoeuvred rather than
+                      overpowered his opponents. His determination however, and
+                      his strong belief in himself, made him a fierce opponent.
+                    </p>
+                  </>
+                }
               ></Person>
             }
           ></Route>
@@ -3531,6 +3709,8 @@ function App() {
             path="/12to16yo/ElizabethCampbell"
             element={
               <Person
+                quizButtonText={"Try the quiz!"}
+                linkQuiz={"https://dev.addysgop.co.uk/hanesbame/BettyQuiz"}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -3584,7 +3764,15 @@ function App() {
                 indivName={"Elizabeth Campbell"}
                 indivNameCym={"Elizabeth Campbell"}
                 proposedResource={
-                  "Mel interviewing Natalie Jones? or Wayne (Connagh's dad?)"
+                  <a href={"https://dev.addysgop.co.uk/hanesbame/BettyQuiz"}>
+                    <motion.div
+                      // className={quizButStyle}
+                      whileHover={{ scale: 1.2 }}
+                      whileTap={{ scale: 0.9 }}
+                    >
+                      <h3 className="quizH2">Try the Quiz!</h3>
+                    </motion.div>
+                  </a>
                 }
                 resource={twelveApi.slice(7, 8)}
                 slugText={"Wales' First Black Headteacher."}

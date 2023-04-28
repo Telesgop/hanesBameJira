@@ -14,7 +14,7 @@
   z-index: 9;
   text-align: center;
   align-items: center;
-  margin-top: 5vh;
+  margin-top: 2vh;
   display: flex;
   position: relative;
   justify-content: center;
@@ -69,7 +69,7 @@
   text-align: left;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  /* width: 60%; */
   font-size: large;
 }
 .introDiv {
@@ -82,6 +82,32 @@
   justify-content: flex-start;
   width: 90%;
   margin: auto;
+  flex-direction: row;
+}
+
+.introDivL {
+  width: 55%;
+  height: 100%;
+}
+
+.introDivImg {
+  object-fit: contain;
+  margin-top: 5rem;
+  transform: scale(1.2);
+  width: 100%;
+  height: 100%;
+}
+
+.introDivR {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  font-family: "Mona Sans", sans-serif;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
 }
 .testSize {
   height: 20vh;

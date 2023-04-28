@@ -4,8 +4,8 @@ import StoryBox from "../StoryBox/StoryBox";
 import threetosix from "../../3to6.json";
 import Copyright from "../Copyright/Copyright";
 import { Link } from "react-router-dom";
-import "./ThreeToSix.css";
 import { BiSearchAlt } from "react-icons/bi";
+import StoryBoxAnim from "../StoryBoxAnim/StoryBoxAnim";
 
 const ThreeToSix = () => {
   const { lang, setLang } = useContext(LanguageContext);
@@ -16,27 +16,27 @@ const ThreeToSix = () => {
       <div className="ageRange">
         <h2 className="ageRangeh2">{lang !== true ? "Yellow" : "Melyn"}</h2>
       </div>
-      <div className="searchbar">
+      {/* <div className="searchbar">
         <input
           onChange={(event) => setQuery(event.target.value)}
           className="searchInput"
           placeholder={lang !== true ? "Search" : "Chwilio"}
         ></input>
         <BiSearchAlt className="magnifyingGlass" />
-      </div>
+      </div> */}
       <div className="storiesContainer">
         {query == "" && (
           <ul className="ulSearch">
             {threetosix.map((item, id) => (
               <Link to={item.url}>
-                <StoryBox
+                <StoryBoxAnim
                   id={item.id}
                   name={lang !== true ? item.name : item.nameCym}
                   image={item.image}
                   slug={item.slug}
                   welshSlug={item.welshSlug}
                   keywords={item.keywords}
-                ></StoryBox>
+                ></StoryBoxAnim>
               </Link>
             ))}
           </ul>

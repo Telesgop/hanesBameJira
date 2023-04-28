@@ -11,6 +11,19 @@
   font-family: "Mona-Sans Regular", sans-serif;
 }
 
+.storyBoxAnim {
+  background-color: #fff;
+  border-radius: 10px;
+  /* height: 30vh; */
+  /* padding: 1px; */
+  width: 20vw;
+  margin: 1.5vw;
+  margin-top: 1.5vw;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: "Comic Sans MS", sans-serif;
+}
+
 .imgAndSlug {
   display: grid;
   grid-template-areas: "content-2 content-3";
@@ -32,6 +45,15 @@
 
   font-family: "Space Grotesk", sans-serif;
 }
+.indivNameAnim {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+  font-weight: bold;
+  padding-top: 5px;
+  text-align: center;
+
+  font-family: "Comic Sans MS", sans-serif;
+}
 .storyBoxGrey {
   background-color: rgb(149, 149, 149) !important;
 }
@@ -49,6 +71,17 @@
   background-color: white;
   grid-area: content-2;
   object-fit: cover;
+}
+
+.indivImageAnim {
+  overflow: hidden;
+  width: 20vw;
+  height: 25vh;
+  max-width: 100%;
+  background-color: white;
+  grid-area: content-2;
+  object-fit: cover;
+  border-radius: 7px;
 }
 
 .indivImageDiaries {
@@ -102,6 +135,12 @@
     width: 70vw !important;
   }
 
+  .storyBoxAnim {
+    height: 40vh !important;
+    padding: 1px;
+    width: 70vw !important;
+  }
+
   .imgAndSlug {
     display: flex;
     justify-content: center;
@@ -112,5 +151,10 @@
   .indivImage {
     width: 100% !important;
     height: 20vh !important;
+  }
+
+  .indivImageAnim {
+    width: 100% !important;
+    height: 100% !important;
   }
 }

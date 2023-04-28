@@ -31,6 +31,13 @@
   margin: auto;
   border-radius: 15px;
 }
+
+.personH2AnimCard {
+  font-family: "Comic Sans MS", sans-serif;
+  width: auto;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
 .animVideoIframe {
   position: relative;
   overflow: hidden;
@@ -44,11 +51,10 @@
   width: auto;
   font-weight: bold;
   /* font-family: "Mona Sans", sans-serif; */
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Comic Sans MS", sans-serif;
 
   margin: 3vh;
   margin-left: 5vh;
-  width: 30vw;
   margin-bottom: 0;
   font-size: x-large !important;
 }
@@ -59,7 +65,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 80vw;
+  width: 100%;
   /* font-family: "Mona-Sans Regular", sans-serif; */
   font-family: "Space Grotesk", sans-serif;
 }

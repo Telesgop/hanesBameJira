@@ -161,7 +161,7 @@ const PersonYTVid = ({
             >
               {" "}
               <div className="personInfoBack" id="myDIV2">
-                <div className="backLeft">
+                <div className="backLeftYTVid">
                   <div className="backLVid">
                     <iframe
                       src={youtubeVid}
@@ -169,7 +169,7 @@ const PersonYTVid = ({
                       title="YouTube video player"
                       frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
+                      allowfullscreen="true"
                     ></iframe>
 
                     {lang !== true ? backLContent : backLContentCym}

@@ -153,14 +153,14 @@ const Navbar = () => {
                 {lang ? "Cwis" : "Quizzes"}
               </motion.h2>
             </Link>
-            <Link to={"/Diaries"}>
+            <Link to={"/Resources"}>
               <motion.h2
                 className="notesH2"
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setIsOpen(false)}
               >
-                {lang ? "Dyddiaduron" : "Diaries"}
+                {lang ? "" : "Resources"}
               </motion.h2>
             </Link>
             <Link to={"/Accessibility"}>

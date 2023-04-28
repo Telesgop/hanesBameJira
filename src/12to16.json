@@ -115,11 +115,11 @@
 },
 {
     "id" : 10,
-    "name" : "?",
-    "nameCym" : "?",
-    "slug": "Not developed yet",
-    "image": "",
-    "url": "/12to16yo/NYD",
+    "name" : "Paul Robeson",
+    "nameCym" : "Paul Robeson",
+    "slug": "The American singer who joined the miners strike.    ",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/%22Paul_Robeson%2C_world_famous_Negro_baritone%2C_leading_Moore_Shipyard_%28Oakland%2C_CA%29_workers_in_singing_the_Star_Spangled_Ba_-_NARA_-_535874.jpg/640px-%22Paul_Robeson%2C_world_famous_Negro_baritone%2C_leading_Moore_Shipyard_%28Oakland%2C_CA%29_workers_in_singing_the_Star_Spangled_Ba_-_NARA_-_535874.jpg",
+    "url": "/12to16yo/PaulRobeson",
     "keywords" : "",
     "resources": [
         "Links will go here"

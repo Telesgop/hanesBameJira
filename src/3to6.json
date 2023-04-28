@@ -5,16 +5,16 @@
         "nameCym": "Dr Ganesh Subrahamanyan",
         "slug": "The Indian Doctor.",
         "welshSlug": "",
-        "image": "https://ichef.bbci.co.uk/images/ic/1008x567/p0b6ksrg.jpg",
+        "image": "https://dev.addysgop.co.uk/pdfs/ganesh.png",
         "url": "/3to6yo/GaneshSubrahamanyan",
         "keywords" : "Doctor ganesh subrahmanyam indian nhs world war two aberfan asian dr"
     },{
         "id" : 1,
-        "name" : "Sidoli Ice Cream",
+        "name" : "Sidoli's Ice Cream",
         "nameCym": "Hufen Iâ Sidoli",
         "welshSlug": "",
         "slug": "The story of the award-winning ice cream.",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Sidolis%2C_Coney_Beach%2C_Porthcawl_%28geograph_6353418%29.jpg?20191231185933",
+        "image": "https://dev.addysgop.co.uk/pdfs/sidoli.png",
         "url": "/3to6yo/SidoliIceCream",
         "keywords" : "Sidoli ice cream italian world war two"
     }
@@ -24,18 +24,18 @@
         "nameCym" : "Betty Campbell",
         "slug": "Community Activist and Wales’ First Black Headteacher.",
         "welshSlug": "Community Activist and Wales’ First Black Headteacher.",
-        "image": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F06ce3ec4-2164-11ec-a1fd-37d9030e4d65.jpg?crop=5056%2C2844%2C47%2C36&resize=1500",
+        "image": "https://dev.addysgop.co.uk/pdfs/betty.png",
         "url": "/3to6yo/BettyCampbell",
         "keywords": "Elizabeth betty campbell teacher headteacher cardiff barbados jamaica world war two butetown mbe statue "
     }
     ,{
         "id" : 3,
-        "name" : "Romani (Kale)",
-        "nameCym" : "Romani (Kale)",
+        "name" : "Abram Wood",
+        "nameCym" : "Abram Wood",
         "slug": "",
         "welshSlug": "",
-        "image": "https://www.peoplescollection.wales/sites/default/files/images/2014/February/GTJ12406_2.jpg?itok=_U1XnrC5",
-        "url": "/3to6yo/RomaniKale",
+        "image": "https://dev.addysgop.co.uk/pdfs/abram.png",
+        "url": "/3to6yo/AbramWood",
         "keywords": "Romani Kale Gypsy gypsies travellers  "
     }
     ,{
@@ -44,7 +44,7 @@
         "nameCym" : "Vernester Cyril",
         "slug": "Nurse.",
         "welshSlug": "",
-        "image": "https://www.peoplescollection.wales/sites/default/files/styles/item_detail/public/images/2015/November/bay213.jpg",
+        "image": "https://dev.addysgop.co.uk/pdfs/vernester.png",
         "url": "/3to6yo/VernesterCyril",
         "keywords": "Vernester cyril nurse caribbean"
     }
@@ -54,7 +54,7 @@
         "nameCym" : "John Ystumllyn",
         "slug": "The 18th century slave who became a gardener.",
         "welshSlug": "",
-        "image": "https://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/885/?sUrl=https://cached.offlinehbpl.hbpl.co.uk/news/WOH/John-Ystumllyn.jpg",
+        "image": "https://dev.addysgop.co.uk/pdfs/john.png",
         "url": "/3to6yo/JohnYstumllyn",
         "keywords": "John ystumllyn gardener slave jack du black flower "
     }

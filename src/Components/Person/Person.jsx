@@ -27,6 +27,7 @@ const Person = ({
   quizButtonText,
   buttonLink,
   linkQuiz,
+  quizButStyle,
 }) => {
   const { lang, setLang } = useContext(LanguageContext);
   const [slide, setSlide] = useState(0);
@@ -167,18 +168,15 @@ const Person = ({
                     {proposedResource}
                     {lang !== true ? backLContent : backLContentCym}
                   </div>
-
-                  <motion.div
-                    className="quizButton"
-                    whileHover={{ scale: 1.2 }}
-                    whileTap={{ scale: 0.9 }}
-                  >
-                    <h3 className="quizH2">
-                      <a href={linkQuiz} style={{ color: "white" }}>
-                        {quizButtonText}
-                      </a>
-                    </h3>
-                  </motion.div>
+                  {/* <a href={linkQuiz}>
+                    <motion.div
+                      className={quizButStyle}
+                      whileHover={{ scale: 1.2 }}
+                      whileTap={{ scale: 0.9 }}
+                    >
+                      <h3 className="quizH2">{quizButtonText}</h3>
+                    </motion.div>
+                  </a> */}
                 </div>
                 <div className="backRight">
                   <p className="backRightP">

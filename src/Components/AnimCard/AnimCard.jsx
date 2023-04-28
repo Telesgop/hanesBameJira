@@ -41,7 +41,7 @@ const AnimCard = ({ indivName, sourceVid }) => {
           >
             <div className="personInfoAnimCard">
               <div className="personNameAnimCard">
-                <h2 className="personH2">{indivName}</h2>
+                <h2 className="personH2AnimCard">{indivName}</h2>
               </div>
               <div className="animCardVideo">
                 <iframe
