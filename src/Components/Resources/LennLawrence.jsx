@@ -12,7 +12,7 @@ const LennLawrence = () => {
         <h1 className="resourceH1">
           {lang
             ? "Lenn yr Arwr yn Achub Abertawe! "
-            : "Len the Hero Saves Swansea! "}
+            : "Lenn the Hero Saves Swansea! "}
         </h1>
         <p className="resourceP">
           <strong>

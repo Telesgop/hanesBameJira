@@ -1,16 +1,16 @@
-[{
-    "id" : 0,
-    "name" : "Glenn Webbe",
-    "nameCym" : "Glenn Webbe",
-    "slug": "Wales’ first black icon.",
-    "welshSlug": "Eicon du cyntaf Cymru.",
-    "image": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/DC57/production/_113170465_shutterstock_editorial_3156656a.jpg",
-    "url": "/12to16yo/GlennWebbe",
-    "keywords": "Glenn webbe cardiff windrush rugby athletics world cup sport",
-    "resources": [
-        "Links will go here"
-    ]
-},
+[
+    {
+        "id" : 7,
+        "name" : "Elizabeth Campbell MBE",
+        "nameCym" : "Elizabeth Campbell MBE",
+        "slug": "Wales’ First black headteacher.",
+        "image": "https://ichef.bbci.co.uk/news/976/cpsprodpb/13CF5/production/_98314118_bettyclean.jpg",
+        "url": "/12to16yo/ElizabethCampbell",
+        "keywords" : "Elizabeth betty campbell teacher headteacher cardiff barbados jamaica world war two butetown mbe statue ",
+        "resources": [
+            "Links will go here"
+        ]
+    },
 {
     "id" : 1,
     "name" : "Nigel Walker",
@@ -25,70 +25,7 @@
     ]
 },
 
-{
-    "id" : 3,
-    "name" : "Jason Mohammad",
-    "nameCym" : "Jason Mohammad",
-    "slug": "Newsreader, Television Presenter and Radio Presenter.",
-    "welshSlug": "",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/2012-03-19_Jason_Mohammad_at_Wales_Grand_Slam_Celebrations.jpg/640px-2012-03-19_Jason_Mohammad_at_Wales_Grand_Slam_Celebrations.jpg",
-    "url": "/12to16yo/JasonMohammad",
-    "keywords": "Jason mohammad newsreader presenter radio muslim pakistani cardiff bbc olympics ",
-    "resources": [
-        "Links will go here"
-    ]
-},
-{
-    "id" : 4,
-    "name" : "Kizzy Crawford",
-    "nameCym" : "Kizzy Crawford",
-    "slug": "Award-winning Welsh singer / songwriter.",
-    "welshSlug": "",
-    "image": "https://ents24.imgix.net/image/000/158/543/f362a1cbe3eb9d638603c935c57a9f81ee7bd0bf.jpg?auto=format&crop=faces&w=1920&h=1920",
-    "url": "/12to16yo/KizzyCrawford",
-    "keywords": "Kizzy crawford singer songwriter merthyr tydfil bajan barbados autism radio  ",
-    "resources": [
-        "Links will go here"
-    ]
-},
-{
-    "id" : 5,
-    "name" : "Ashley Williams",
-    "nameCym" : "Ashley Williams",
-    "slug": "Former professional footballer and captain of Wales.",
-    "welshSlug": "",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/AUT_vs._WAL_2016-10-06_%28127%29.jpg/800px-AUT_vs._WAL_2016-10-06_%28127%29.jpg?20161110161214",
-    "url": "/12to16yo/AshleyWilliams",
-    "keywords": "Ashley williams footballer captain swansea sport",
-    "resources": [
-        "Links will go here"
-    ]
-},
-{
-    "id" : 6,
-    "name" : "Joe Erskine",
-    "nameCym" : "Joe Erskine",
-    "slug": "Erskine was one of the most gifted British boxers of his day.",
-    "welshSlug": "",
-    "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/joe-erskine-keystone.jpg",
-    "url": "/12to16yo/JoeErskine",
-    "keywords": "Joe Erskine boxer tiger bay cardiff sport",
-    "resources": [
-        "Links will go here"
-    ]
-},
-{
-    "id" : 7,
-    "name" : "Elizabeth Campbell MBE",
-    "nameCym" : "Elizabeth Campbell MBE",
-    "slug": "Wales’ First Black Headteacher.",
-    "image": "https://ichef.bbci.co.uk/news/976/cpsprodpb/13CF5/production/_98314118_bettyclean.jpg",
-    "url": "/12to16yo/ElizabethCampbell",
-    "keywords" : "Elizabeth betty campbell teacher headteacher cardiff barbados jamaica world war two butetown mbe statue ",
-    "resources": [
-        "Links will go here"
-    ]
-},
+
 {
     "id" : 8,
     "name" : "Dr Ganesh Subrahmanyam",
@@ -102,10 +39,51 @@
     ]
 },
 {
+    "id" : 4,
+    "name" : "Kizzy Crawford",
+    "nameCym" : "Kizzy Crawford",
+    "slug": "The talented singer songwriter.",
+    "welshSlug": "",
+    "image": "https://ents24.imgix.net/image/000/158/543/f362a1cbe3eb9d638603c935c57a9f81ee7bd0bf.jpg?auto=format&crop=faces&w=1920&h=1920",
+    "url": "/12to16yo/KizzyCrawford",
+    "keywords": "Kizzy crawford singer songwriter merthyr tydfil bajan barbados autism radio  ",
+    "resources": [
+        "Links will go here"
+    ]
+},
+
+{
+    "id" : 0,
+    "name" : "Glenn Webbe",
+    "nameCym" : "Glenn Webbe",
+    "slug": "Wales’ first black icon.",
+    "welshSlug": "Eicon du cyntaf Cymru.",
+    "image": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/DC57/production/_113170465_shutterstock_editorial_3156656a.jpg",
+    "url": "/12to16yo/GlennWebbe",
+    "keywords": "Glenn webbe cardiff windrush rugby athletics world cup sport",
+    "resources": [
+        "Links will go here"
+    ]
+},
+{
+    "id" : 3,
+    "name" : "Jason Mohammad",
+    "nameCym" : "Jason Mohammad",
+    "slug": "Newsreader, television and radio presenter.",
+    "welshSlug": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/2012-03-19_Jason_Mohammad_at_Wales_Grand_Slam_Celebrations.jpg/640px-2012-03-19_Jason_Mohammad_at_Wales_Grand_Slam_Celebrations.jpg",
+    "url": "/12to16yo/JasonMohammad",
+    "keywords": "Jason mohammad newsreader presenter radio muslim pakistani cardiff bbc olympics ",
+    "resources": [
+        "Links will go here"
+    ]
+},
+
+{
     "id" : 9,
     "name" : "Vaughan Gething",
     "nameCym" : "Vaughan Gething",
-    "slug": "Welsh Labour Politician.",
+    "slug": "Welsh Labour politician.",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Vaughan_Gething.jpg/640px-Vaughan_Gething.jpg",
     "url": "/12to16yo/VaughanGething",
     "keywords" : "Vaughan gething zambian labour cardiff butetown senedd politics politicians  ",
@@ -114,10 +92,23 @@
     ]
 },
 {
+    "id" : 6,
+    "name" : "Joe Erskine",
+    "nameCym" : "Joe Erskine",
+    "slug": "The gifted boxer from Butetown.",
+    "welshSlug": "",
+    "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/joe-erskine-keystone.jpg",
+    "url": "/12to16yo/JoeErskine",
+    "keywords": "Joe Erskine boxer tiger bay cardiff sport",
+    "resources": [
+        "Links will go here"
+    ]
+},
+{
     "id" : 10,
     "name" : "Paul Robeson",
     "nameCym" : "Paul Robeson",
-    "slug": "The American singer who joined the miners strike.    ",
+    "slug": "The American who stood with the miners.    ",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/%22Paul_Robeson%2C_world_famous_Negro_baritone%2C_leading_Moore_Shipyard_%28Oakland%2C_CA%29_workers_in_singing_the_Star_Spangled_Ba_-_NARA_-_535874.jpg/640px-%22Paul_Robeson%2C_world_famous_Negro_baritone%2C_leading_Moore_Shipyard_%28Oakland%2C_CA%29_workers_in_singing_the_Star_Spangled_Ba_-_NARA_-_535874.jpg",
     "url": "/12to16yo/PaulRobeson",
     "keywords" : "",
@@ -125,27 +116,41 @@
         "Links will go here"
     ]
 },
+
 {
-    "id" : 11,
-    "name" : "?",
-    "nameCym" : "?",
-    "slug": "Not developed yet",
-    "image": "",
-    "url": "/12to16yo/NYD",
-    "keywords" : "",
+    "id" : 5,
+    "name" : "Louisa BB Morgan",
+    "nameCym" : "Louisa BB Morgan",
+    "slug": "The lady who lived all over the world.",
+    "welshSlug": "",
+    "image": "https://m.media-amazon.com/images/M/MV5BZGRkNTgwM2YtZWUxNy00MDQzLWE5OTAtODU1MjVmYWE2ZjhiXkEyXkFqcGdeQXVyODIyODI5Mzc@._V1_.jpg",
+    "url": "/9to12yo/Louisa",
+    "keywords": "Louisa st bartholomew brown morgan nigeria catholic singing acting singer actor religion ",
     "resources": [
         "Links will go here"
     ]
 },
 {
     "id" : 5,
-    "name" : "Louisa BB Morgan",
-    "nameCym" : "Louisa BB Morgan",
-    "slug": "The lady who's lived all around the world.",
+    "name" : "Ashley Williams",
+    "nameCym" : "Ashley Williams",
+    "slug": "The Welsh football star.",
     "welshSlug": "",
-    "image": "https://m.media-amazon.com/images/M/MV5BZGRkNTgwM2YtZWUxNy00MDQzLWE5OTAtODU1MjVmYWE2ZjhiXkEyXkFqcGdeQXVyODIyODI5Mzc@._V1_.jpg",
-    "url": "/9to12yo/Louisa",
-    "keywords": "Louisa st bartholomew brown morgan nigeria catholic singing acting singer actor religion ",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/AUT_vs._WAL_2016-10-06_%28127%29.jpg/800px-AUT_vs._WAL_2016-10-06_%28127%29.jpg?20161110161214",
+    "url": "/12to16yo/AshleyWilliams",
+    "keywords": "Ashley williams footballer captain swansea sport",
+    "resources": [
+        "Links will go here"
+    ]
+},
+{
+    "id" : 11,
+    "name" : "1919 Race Riots",
+    "nameCym" : "1919 Race Riots",
+    "slug": "The race riots that shamed Wales.",
+    "image": "https://i2-prod.walesonline.co.uk/incoming/article16433006.ece/ALTERNATES/s810/0_AMR_WOL_140619_13.jpg",
+    "url": "/12to16yo/1919RaceRiots",
+    "keywords" : "",
     "resources": [
         "Links will go here"
     ]

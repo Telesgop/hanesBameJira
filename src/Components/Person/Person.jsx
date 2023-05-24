@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 const Person = ({
   text,
   welshText,
+  linkResource,
   indivName,
   indivPic,
   backText,
@@ -28,6 +29,9 @@ const Person = ({
   buttonLink,
   linkQuiz,
   quizButStyle,
+  bgcolor,
+  linksCym,
+  backcardImg,
 }) => {
   const { lang, setLang } = useContext(LanguageContext);
   const [slide, setSlide] = useState(0);
@@ -100,10 +104,12 @@ const Person = ({
                     <strong>{dateOfBirth}</strong>
                   </div>
                 </div>
+
                 <div className="rightSide">
                   <motion.div variants={item} className="personText">
                     {lang !== true ? text : welshText}
                   </motion.div>
+                  {/* <div className="scroll">scroll!</div> */}
                 </div>
               </div>
             </motion.div>
@@ -163,27 +169,30 @@ const Person = ({
               {" "}
               <div className="personInfoBack" id="myDIV2">
                 <div className="backLeft">
-                  <div className="backLText">
-                    {" "}
+                  <div className="resourceBanner">RESOURCE</div>{" "}
+                  <div
+                    className="backLText"
+                    style={{ backgroundColor: bgcolor }}
+                  >
                     {proposedResource}
+                    <a href={linkResource} className="resourceLi">
+                      <img
+                        src={backcardImg}
+                        style={{
+                          transform: "scale(0.5) ",
+                          objectFit: "contain",
+                        }}
+                      ></img>
+                    </a>
                     {lang !== true ? backLContent : backLContentCym}
                   </div>
-                  {/* <a href={linkQuiz}>
-                    <motion.div
-                      className={quizButStyle}
-                      whileHover={{ scale: 1.2 }}
-                      whileTap={{ scale: 0.9 }}
-                    >
-                      <h3 className="quizH2">{quizButtonText}</h3>
-                    </motion.div>
-                  </a> */}
                 </div>
                 <div className="backRight">
                   <p className="backRightP">
                     {" "}
                     {lang !== true ? "Online Resources:" : "Adnoddau Ar-lein:"}
                   </p>
-                  {links}
+                  {lang !== true ? links : linksCym}
                 </div>
               </div>
             </div>

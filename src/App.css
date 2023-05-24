@@ -1,11 +1,27 @@
 .App {
   text-align: center;
-  background-color: #f2f2f2;
-  font-family: "Space Grotesk", sans-serif;
+  background-color: #cfe57d;
+  font-family: sassoon;
   max-width: 100%;
   max-height: 100%;
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
     env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+p {
+  font-family: sassoon;
+}
+
+@font-face {
+  font-family: sassoon;
+  src: url(./Fonts/Sassoon\ Infant\ Std\ Regular.otf);
+}
+@font-face {
+  font-family: grotesk;
+  src: url(./Fonts/SpaceGrotesk-Regular.ttf);
+}
+h1 {
+  font-family: sassoon;
 }
 
 .App-logo {
@@ -44,5 +60,5 @@
 }
 
 button {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: grotesk;
 }

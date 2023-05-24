@@ -1,12 +1,24 @@
 import { useState } from "react";
 import "./App.css";
+import { FaVideo } from "react-icons/fa";
 import "./Components/Person/Person.css";
-import { motion } from "framer-motion";
-
+import { motion, transform } from "framer-motion";
+import strip from "./Images/asstrip.png";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
+import newspaper from "./Images/readallaboutit.png";
+import italianDragon from "./Images/italianDragon.png";
+import hans from "./Images/hans.png";
+import colin from "./Images/colin.png";
+import vg from "./Images/vg.png";
+import idris from "./Images/idrisBio.png";
+import clive from "./Images/clive.png";
+import vip from "./Images/vipPass.png";
+import castle from "./Images/castle.png";
+import diary from "./Images/diary.png";
+import postcard from "./Images/postcardsmall.png";
 import { LanguageContext } from "./Helper/Context";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import SixToNine from "./Components/SixToNine/SixToNine";
 import Person from "./Components/Person/Person";
 import PersonBack from "./Components/Person/PersonBack";
@@ -20,17 +32,18 @@ import nineApi from "./9to12.json";
 import twelveApi from "./12to16.json";
 import ScrollToTop from "./Components/ScrollToTop";
 import dom from "./Podcasts/DomJames/domEng.mp3";
+import domCym from "./Podcasts/DomJames/domCym.mp3";
 import theo from "./Podcasts/TheoCabango/theoEng.mp3";
 import emily from "./Podcasts/Emily/emilyEng.mp3";
-import domCym from "./Podcasts/DomJames/domCym.mp3";
 import theoCym from "./Podcasts/TheoCabango/theoCym.mp3";
 import emilyCym from "./Podcasts/Emily/emilyCym.mp3";
+import mirainCym from "./Podcasts/Mirain/mirainCym.mp3";
+import mirainEng from "./Podcasts/Mirain/mirainEng.mp3";
 import Categories from "./Components/Categories/Categories";
 import Notes from "./Components/Notes/Notes";
 import Accessibility from "./Components/Accessibility/Accessibility";
 import Info from "./Components/Info/Info";
 import Quiz from "./Components/Quiz/Quiz";
-import PersonQuiz from "./Components/Person/PersonQuiz";
 import QuizData from "./Components/Quiz/QuizData";
 import DiaryBox from "./Components/DiaryBox/DiaryBox";
 import PersonYTVid from "./Components/Person/PersonYTVid";
@@ -42,10 +55,14 @@ import JoeCalzaghe from "./Components/Resources/JoeCalzaghe";
 import PenrhynCastle from "./Components/Resources/PenrhynCastle";
 import ColinJackson from "./Components/Resources/ColinJackson";
 import LennLawrence from "./Components/Resources/LennLawrence";
+import LouisaBiog from "./Components/Resources/LouisaBiog";
 import Windrush from "./Components/Resources/Windrush";
 import ShirleyBassey from "./Components/Resources/ShirleyBassey";
 import WilsonMonk from "./Components/Resources/WilsonMonk";
 import Hans from "./Components/Resources/Hans";
+import DiaryBoxArandora from "./Components/DiaryBox/DiaryBoxArandora";
+import PersonPodcast from "./Components/Person/PersonPodcast";
+import Vaughan from "./Components/Resources/Vaughan";
 
 function App() {
   const [lang, setLang] = useState(false);
@@ -58,7 +75,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/6to9yo" element={<SixToNine></SixToNine>}></Route>
+          <Route
+            path="/6to9yo"
+            element={<SixToNine id="page2"></SixToNine>}
+          ></Route>
           <Route path="/3to6yo" element={<ThreeToSix></ThreeToSix>}></Route>
           <Route
             path="/12to16yo"
@@ -80,46 +100,65 @@ function App() {
           <Route path="/Quiz" element={<Quiz />}></Route>
           <Route path="/Resources" element={<Resources />}></Route>
           <Route
-            path="/Resources/CliveSullivanPortrait"
+            path="9to12yo/Resources/CliveSullivan"
             element={<CliveSullivanPortrait bgColour={"#CFE57D"} />}
           ></Route>
           <Route
-            path="/Resources/IdrisPhillips"
+            path="6to9yo/Resources/IdrisPhillips"
             element={<IdrisPhillips />}
           ></Route>
+          <Route path="/Resources/LouisaBiog" element={<LouisaBiog />}></Route>
           <Route path="/Resources/Windrush" element={<Windrush />}></Route>
           <Route
-            path="/Resources/LennLawrence"
+            path="/6to9yo/Resources/LennLawrence"
             element={<LennLawrence />}
           ></Route>
           <Route
-            path="/Resources/ShirleyBassey"
+            path="6to9yo/Resources/ShirleyBassey"
             element={<ShirleyBassey />}
           ></Route>
-          <Route path="/Resources/WilsonMonk" element={<WilsonMonk />}></Route>
           <Route
-            path="/Resources/ColinJackson"
+            path="6to9yo/Resources/WilsonMonk"
+            element={<WilsonMonk />}
+          ></Route>
+          <Route
+            path="9to12yo/Resources/ColinJackson"
             element={<ColinJackson />}
           ></Route>
           <Route
-            path="/Resources/JoeCalzaghe"
+            path="9to12yo/Resources/JoeCalzaghe"
             element={<JoeCalzaghe />}
           ></Route>
           <Route
-            path="/Resources/PenrhynCastle"
+            path="9to12yo/Resources/PenrhynCastle"
             element={<PenrhynCastle />}
           ></Route>
-          <Route path="/Resources/Hans" element={<Hans />}></Route>
+          <Route path="9to12yo/Resources/Hans" element={<Hans />}></Route>
           <Route
-            path="/Diaries/FongSui"
+            path="12to16yo/Resources/VaughanGething"
+            element={<Vaughan />}
+          ></Route>
+          <Route
+            path="6to9yo/Diaries/FongSui"
             element={<DiaryBox></DiaryBox>}
+          ></Route>
+          <Route
+            path="6to9yo/Resources/ArandoraStarStrip"
+            element={<DiaryBoxArandora></DiaryBoxArandora>}
           ></Route>
           <Route path="/RichardParksQuiz" element={<QuizData />}></Route>
           <Route path="/BettyQuiz" element={<BettyQuiz />}></Route>
           <Route
             path="/6to9yo/RichardParks"
             element={
-              <Person
+              <PersonYTVid
+                welshSlugText={"Yr athletwr anhygoel."}
+                overlayText={
+                  <h2>
+                    The experiences of Gerallt Wyn Jones in North Wales{" "}
+                    <FaVideo />
+                  </h2>
+                }
                 quizButStyle={"showQuizBut"}
                 indivName={"Richard Parks"}
                 quizButtonText={"Try the quiz!"}
@@ -165,16 +204,7 @@ function App() {
                         Richard Parks: The Big Interview
                       </a>
                     </li>
-                    <li className="linkLi">
-                      <a
-                        href="https://www.itv.com/news/wales/2022-03-14/the-pandemic-made-me-question-my-identity-and-my-value-to-the-world"
-                        className="resourceHref"
-                        target="_blank"
-                      >
-                        Richard Parks: ‘The pandemic made me question my
-                        identity and my value to the world’
-                      </a>
-                    </li>
+
                     <li className="linkLi">
                       <a
                         href="https://www.visitwales.com/things-do/adventure-and-activities/discover-richard-parks-epic-wales"
@@ -186,9 +216,7 @@ function App() {
                     </li>
                   </ul>
                 }
-                proposedResource={
-                  "Emily Pemberton to interview Richard Parks? Or Podcast "
-                }
+                youtubeVid="https://www.youtube.com/embed/ZBmWbOYI8vk"
                 // indivPic={char1}
                 text={
                   <ul>
@@ -294,13 +322,12 @@ function App() {
                   "https://www.richardparks.co.uk/files/7715/4383/2077/Richard_banner_mobile.png"
                 }
                 backText={`Through his incredible achievements – as a professional rugby player and as an extreme athlete – Richard Parks proved that despite setbacks and frustrations, we are all capable of turning our skills and abilities to other things.  Because of his never-give-up attitude and determination to succeed at something new, Richard is an inspirational figure to many – both in Wales and beyond.   `}
-                slugText={"Rugby player and extreme athlete."}
+                slugText={"The incredible athlete."}
                 backWelshText={
                   "Trwy ei gyflawniadau anhygoel – fel chwaraewr rygbi proffesiynol ac fel athletwr eithafol – mae Richard Parks wedi profi, er gwaethaf anawsterau a rhwystredigaethau, ein bod i gyd yn gallu troi ein sgiliau a’n galluoedd i wneud pethau eraill.  Oherwydd yr agwedd hon o beidio byth â rhoi fyny a’r penderfynoldeb i lwyddo gyda rhywbeth newydd, mae Richard yn ysbrydoliaeth i gymaint o bobl – yng Nghymru a thu hwnt."
                 }
-                welshSlugText={"Chwaraewr rygbi ac athletwr eithafol."}
                 resource={api.slice(0, 1)}
-              ></Person>
+              ></PersonYTVid>
             }
           ></Route>
           <Route
@@ -313,6 +340,7 @@ function App() {
               <AnimCard
                 indivName={"Sidoli's Ice Cream"}
                 sourceVid={"https://www.youtube.com/embed/19MmCWS2s6U"}
+                sourceVidCym={"https://www.youtube.com/embed/HVU7HVg8-h0"}
               />
             }
           ></Route>
@@ -334,6 +362,7 @@ function App() {
               <AnimCard
                 indivName={"John Ystumllyn"}
                 sourceVid="https://www.youtube.com/embed/2llyk3-Lffk"
+                sourceVidCym={"https://www.youtube.com/embed/1LMGniAE0Go"}
               />
             }
           ></Route>
@@ -343,6 +372,7 @@ function App() {
               <AnimCard
                 indivName={"Abram Wood"}
                 sourceVid="https://www.youtube.com/embed/KA_5dmVTopI"
+                sourceVidCym={"https://www.youtube.com/embed/q_8NtoaUIgY"}
               />
             }
           ></Route>
@@ -352,6 +382,7 @@ function App() {
               <AnimCard
                 indivName={"Betty Campbell"}
                 sourceVid="https://www.youtube.com/embed/gikb903GUqM"
+                sourceVidCym={"https://www.youtube.com/embed/UEcG_eEXRts"}
               />
             }
           ></Route>
@@ -361,6 +392,7 @@ function App() {
               <AnimCard
                 indivName={"Dr Ganesh Subrahamanyan"}
                 sourceVid="https://www.youtube.com/embed/qlN9J-DsxYM"
+                sourceVidCym={"https://www.youtube.com/embed/2OOy40pWRPA"}
               />
             }
           ></Route>
@@ -370,6 +402,7 @@ function App() {
               <AnimCard
                 indivName={"Vernester Cyril"}
                 sourceVid="https://www.youtube.com/embed/NEu7ctn7-8g"
+                sourceVidCym={"https://www.youtube.com/embed/0m0Z_vGwVgA"}
               />
             }
           ></Route>
@@ -429,6 +462,10 @@ function App() {
                       the position of Performance Director at the Welsh Rugby
                       Union. Nigel Walker has also sat on the UK Sport Board
                       where he chaired its major events Panel.{" "}
+                    </li>
+                    <li>
+                      In January 2023 was appointed as the Acting CEO of the WRU
+                      following the resignation of Steve Phillips.
                     </li>
                   </ul>
                 }
@@ -503,7 +540,7 @@ function App() {
           <Route
             path="/12to16yo/GlennWebbe"
             element={
-              <Person
+              <PersonPodcast
                 links={
                   <ul>
                     <li className="linkLi">
@@ -665,12 +702,14 @@ function App() {
                     <p>Podcast: Theo Cabango and Mel Owen in discussion.</p>
                   </>
                 }
+                overlayText="Podcast: Theo Cabango and Mel Owen in discussion."
+                bgImg={"podcastImgOverlay"}
                 backLContentCym={
                   <audio controls>
                     <source src={theoCym} type="audio/mpeg" />
                   </audio>
                 }
-              ></Person>
+              ></PersonPodcast>
             }
           ></Route>
           <Route
@@ -685,28 +724,83 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        History of Penrhyn Castle - National Trust
+                        History of Penrhyn Castle
                       </a>
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://www.blackhistorymonth.org.uk/article/section/history-of-slavery/the-welsh-slave-owner-and-anti-abolitionist-mp-richard-pennant/"
+                        href="https://footsteps.bangor.ac.uk/en/location/penrhyn-castle"
                         className="resourceHref"
                         target="_blank"
                       >
-                        The Welsh slave owner and anti-abolitionist MP Richard
-                        Pennant - Black History Month
+                        Journey to the Past - Penrhyn Castle
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.revisitinghistory.com/castles/wales/penrhyn-castle/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Interesting facts about Penrhyn Castle{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.nationaltrust.org.uk/visit/wales/penrhyn-castle-and-garden/penrhyn-castle-and-slave-trade-history"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Penrhyn Castle's colonial history{" "}
                       </a>
                     </li>
                   </ul>
                 }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://nationaltrust.org.uk/cy/visit/wales/penrhyn-castle-and-garden/hanes-castell-penrhyn-ar-ardd"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Hanes Castell Penrhyn{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://footsteps.bangor.ac.uk/cy/location/penrhyn-castle"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Taith i'r Gorffennol - Castell Penrhyn{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.revisitinghistory.com/castles/wales/penrhyn-castle/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Ffeithiau diddorol am Gastell Penrhyn{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.nationaltrust.org.uk/cy/visit/wales/penrhyn-castle-and-garden/castell-penrhyn-a-hanes-fasnach-gaethwasiaeth"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Hanes trefedigaethol Castell Penrhyn{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                backcardImg={castle}
+                bgcolor={"#A2D6F9"}
                 indivName={"Penrhyn Castle"}
                 indivNameCym={"Castell Penrhyn"}
-                proposedResource={
-                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/PenrhynCastle">
-                    Should people refuse to visit Penrhyn Castle?
-                  </a>
-                }
+                linkResource={"Resources/PenrhynCastle"}
                 resource={nineApi.slice(2, 1)}
                 indivPic={
                   "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Penrhyn_Castle_Wales_015.jpg/640px-Penrhyn_Castle_Wales_015.jpg"
@@ -844,13 +938,9 @@ function App() {
                     </li>
                   </ul>
                 }
-                backText={`The Pennant family received in today’s money £1.3 million for freeing 764 enslaved people in Jamacia.  It is money forever tarnished by the suffering caused by slavery.`}
-                slugText={
-                  "The impressive castle and it's links to the slave trade."
-                }
-                welshSlugText={
-                  "Y castell trawiadol a’i gysylltiadau â chaethwasiaeth."
-                }
+                backText={`The Pennant family received in today’s money £1.3 million for freeing 764 enslaved people in Jamaica.  It is money forever tarnished by the suffering caused by slavery.`}
+                slugText={"The impressive castle and the slave trade."}
+                welshSlugText={"Y castell a chaethwasiaeth."}
                 backWelshText={
                   "Yn arian heddiw, derbyniodd y teulu Pennant £1.3 miliwn am ryddhau 764 o gaethweision yn Jamacia.  Mae’n arian sydd wedi ei lychwino am byth gan y dioddefaint a achoswyd gan gaethwasiaeth. "
                 }
@@ -861,6 +951,8 @@ function App() {
             path="/9to12yo/HansLichtenstein"
             element={
               <Person
+                backcardImg={hans}
+                bgcolor={"#A2D6F9"}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -869,7 +961,7 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Hans Lichtenstein Obituary
+                        Obituary to Hans Lichtenstein
                       </a>
                     </li>
                     <li className="linkLi">
@@ -878,19 +970,73 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Tributes paid to 'inspirational', 'heroic' family doctor
-                        Hans Lichtenstein
+                        Local news article following his death
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://forward.com/culture/461412/long-after-the-kindertransport-the-trauma-remained/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Hans' son writes on trauma of his move to Wales
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="http://drdeereallifesuperheroes.blogspot.com/2020/10/jewish-holocaust-survivor-hans.html"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Real Life Super Heroes - Hans Lichtenstein{" "}
                       </a>
                     </li>
                   </ul>
                 }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.theguardian.com/society/2019/apr/02/hans-lichtenstein-obituary"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Ysgrif goffa i Hans Lichenstein{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.countytimes.co.uk/news/17369270.llandrindod-wells-tributes-paid-inspirational-heroic-family-doctor-hans-lichtenstein/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl newyddion lleol yn dilyn ei farwolaeth{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://forward.com/culture/461412/long-after-the-kindertransport-the-trauma-remained/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Mab Hans yn ysgrifennu ar effaith niweidiol symud i
+                        Gymru{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="http://drdeereallifesuperheroes.blogspot.com/2020/10/jewish-holocaust-survivor-hans.html"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Arwyr bywyd go iawn - Hans Lichtenstein{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linkResource={"Resources/Hans"}
                 indivName={"Hans Lichtenstein"}
                 indivNameCym={"Hans Lichtenstein"}
-                proposedResource={
-                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/Hans">
-                    Hans Lichtenstein monologue
-                  </a>
-                }
                 indivPic={
                   "https://i.guim.co.uk/img/media/7c810c258320be244e1d7d4d721e8a171409c677/180_145_1240_744/master/1240.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=d36ac08cc3c44a21c37572bfc483bb4c"
                 }
@@ -1028,8 +1174,8 @@ function App() {
                   </ul>
                 }
                 backText={`Dr Hans Lichtenstein lived a remarkable life.  Being Jewish in Hitler’s Germany, Hans faced violence and intimidation.  On moving to Britain on the Kindertransport, Hans worked hard and fulfilled his dream of becoming a doctor – but he never stopped having new interests. `}
-                slugText={"The boy who fled from Nazi Germany."}
-                welshSlugText={"Y bachgen wnaeth ffoi o’r Almaen Natsïaidd."}
+                slugText={"The Jewish boy who fled Germany."}
+                welshSlugText={"Yr Iddew a ddihangodd o'r Almaen."}
                 backWelshText={
                   "Cafodd Dr Hans Lichtenstein fywyd rhyfeddol. Yn Iddew yn yr Almaen Natsïaidd, wynebodd Hans drais a braw. Ar ôl symud i Brydain ar y Kindertransport, gweithiodd Hans yn galed a chyflawni ei freuddwyd o fod yn feddyg – ond ni wnaeth fyth rhoi’r gorau i gael diddordebau newydd. "
                 }
@@ -1040,7 +1186,14 @@ function App() {
             path="/6to9yo/MerthyrSynagogue"
             element={
               <PersonYTVid
-                youtubeVid={"https://www.youtube.com/embed/SJttEt3idYI"}
+                overlayText={
+                  <h2>
+                    Learn more about synagogues <FaVideo />
+                  </h2>
+                }
+                youtubeVid={
+                  "https://www.youtube.com/embed/-KOxyZAgQEk?controls=0"
+                }
                 links={
                   <ul>
                     <li className="linkLi">
@@ -1081,7 +1234,7 @@ function App() {
                 text={
                   <ul className="welshUl">
                     <li>
-                      A synagogue is a building were Jewish people go to pray.{" "}
+                      A synagogue is a building where Jewish people go to pray.{" "}
                     </li>
                     <li>
                       The Merthyr Synagogue was built in 1877 - the oldest
@@ -1173,9 +1326,7 @@ function App() {
                 backWelshText={
                   "Mae Synagog Merthyr yn bwysig am ei bod yn symbol o bwysigrwydd y gymuned Iddewig i Gymru ac i hanes Cymru."
                 }
-                welshSlugText={
-                  "Yr adeilad Iddewig pwrpasol hynaf sydd wedi goroesi yng Nghymru."
-                }
+                welshSlugText={"Yr adeilad Iddewig pwysicaf yng Nghymru."}
               ></PersonYTVid>
             }
           ></Route>
@@ -1184,6 +1335,7 @@ function App() {
             path="/6to9yo/LennLawrence"
             element={
               <Person
+                backcardImg={newspaper}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -1209,13 +1361,11 @@ function App() {
                 }
                 indivName={"Lenn Lawrence"}
                 indivNameCym={"Lenn Lawrence"}
-                proposedResource={
-                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/LennLawrence">
-                    Newspaper article{" "}
-                  </a>
-                }
-                slugText={"The man who stopped Swansea from drowning."}
+                bgcolor={"#CFE57D"}
+                slugText={"The hero who saved Swansea."}
                 resource={api.slice(3, 4)}
+                linkResource="Resources/LennLawrence"
+                welshSlugText={"Yr arwr achubodd Abertawe."}
                 indivPic={
                   "https://blackhistorywales.org.uk/wp-content/uploads/2020/07/Screenshot-2020-07-09-at-07.56.04.png"
                 }
@@ -1279,12 +1429,18 @@ function App() {
             path="/6to9yo/TeleriGray"
             element={
               <PersonYTVid
+                welshSlugText={"Y storïwr Romani."}
+                overlayText={
+                  <h2>
+                    Learn more about the Romani Gypsies way of life <FaVideo />
+                  </h2>
+                }
                 indivName={"Teleri Gray"}
                 indivNameCym={"Teleri Gray"}
                 proposedResource={
                   "Footage from tv programmes re: Romani people."
                 }
-                slugText={"Romani Storyteller."}
+                slugText={"The Romani storyteller."}
                 resource={api.slice(4, 5)}
                 indivPic={
                   "https://live.staticflickr.com/655/22408268685_a9ec39be94_b.jpg"
@@ -1340,11 +1496,8 @@ function App() {
                       {" "}
                       Many of the customs and traditions of the Romanis are
                       being forgotten.
-                    </p>
-                    <p>
-                      {" "}
-                      Memories and documents are now being collected to preserve
-                      their culture.
+                      <br /> Memories and documents are now being collected to
+                      preserve their culture.
                     </p>
                   </>
                 }
@@ -1355,6 +1508,8 @@ function App() {
             path="/6to9yo/FongSui"
             element={
               <Person
+                welshSlugText={"Y Tsïeiniaid yng Nghymru."}
+                linkResource={"Diaries/FongSui"}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -1378,15 +1533,22 @@ function App() {
                     </li>
                   </ul>
                 }
+                bgcolor="#CFE57D"
+                backcardImg={diary}
                 proposedResource={
-                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Diaries/FongSui">
-                    Imagined diary entries{" "}
-                  </a>
-                } // quizButtonText={"Diary Entries"}
+                  <a
+                    href="https://www.dev.addysgop.co.uk/hanesbame/Diaries/FongSui"
+                    style={{
+                      display: "flex",
+                      position: "absolute",
+                      overflow: "hidden",
+                    }}
+                  ></a>
+                }
                 buttonLink={"/Diaries/FongSui"}
                 indivName={"Fong Sui"}
                 indivNameCym={"Fong Sui"}
-                slugText={"First Generation Chinese in Wales."}
+                slugText={"The Chinese in Wales."}
                 resource={api.slice(5, 6)}
                 indivPic={
                   "https://i2-prod.walesonline.co.uk/incoming/article6289157.ece/ALTERNATES/s810/JS28547881.jpg"
@@ -1484,12 +1646,13 @@ function App() {
                     </li>
                   </ul>
                 }
-                proposedResource={"Interview  with Nick Servini? "}
+                welshSlugText={"Trasiedi y llong â suddwyd."}
+                backcardImg={strip}
+                linkResource="Resources/ArandoraStarStrip"
+                bgcolor="#CFE57D"
                 indivName={"The Arandora Star"}
                 indivNameCym={"The Arandora Star"}
-                slugText={
-                  "The ship sunk by a German torpedo killing Welsh Italians."
-                }
+                slugText={"The tragedy of the sunken ship."}
                 resource={api.slice(6, 7)}
                 indivPic={
                   "https://upload.wikimedia.org/wikipedia/commons/7/72/Arandora_Star_1940.jpg"
@@ -1555,14 +1718,13 @@ function App() {
             path="/6to9yo/320Battalion"
             element={
               <Person
+                welshSlugText={"Yr Americanwyr gafodd groeso yng Nghymru."}
                 indivName={"320th Barrage Balloon Battalion "}
                 indivNameCym={"320th Barrage Balloon Battalion "}
-                proposedResource={
-                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/WilsonMonk">
-                    A letter from Jessie Prior..{" "}
-                  </a>
-                }
-                slugText={"A unit of the 621 men from the US Army."}
+                linkResource={"Resources/WilsonMonk"}
+                backcardImg={postcard}
+                bgcolor={"#CFE57D"}
+                slugText={"The Americans who found a welcome in Wales."}
                 resource={api.slice(7, 8)}
                 indivPic={
                   "https://images.squarespace-cdn.com/content/v1/55e4bcf2e4b01d0dc78c9848/1441893157537-7AL21O6U939POF0AYWGB/image-asset.jpeg"
@@ -1629,6 +1791,8 @@ function App() {
             path="/6to9yo/ShirleyBassey"
             element={
               <Person
+                bgcolor={"#CFE57D"}
+                welshSlugText={"Y gantores fyd-enwog o Tiger Bay."}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -1653,11 +1817,8 @@ function App() {
                 }
                 indivName={"Dame Shirley Bassey"}
                 indivNameCym={"Y Fonesig Shirley Bassey"}
-                proposedResource={
-                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/ShirleyBassey">
-                    A night to remember!{" "}
-                  </a>
-                }
+                linkResource={"Resources/ShirleyBassey"}
+                backcardImg={vip}
                 slugText={"The world famous Welsh singer from Tiger Bay."}
                 resource={api.slice(8, 9)}
                 indivPic={
@@ -1759,6 +1920,9 @@ function App() {
             path="/6to9yo/Windrush"
             element={
               <Person
+                welshSlugText={
+                  "Y gweithwyr â  fu'n helpu ail-adeiladu Prydain."
+                }
                 links={
                   <ul>
                     <li className="linkLi">
@@ -1793,13 +1957,13 @@ function App() {
                   </ul>
                 }
                 indivName={"The Windrush Generation "}
-                indivNameCym={"The Windrush Generation "}
+                indivNameCym={"Y Genhedlaeth Windrush"}
                 proposedResource={
                   <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/Windrush">
                     Who are the Windrush Generation?
                   </a>
                 }
-                slugText={"Not developed yet"}
+                slugText={"The workers who helped rebuild Britain."}
                 resource={api.slice(10, 11)}
                 indivPic={
                   "https://www.peoplescollection.wales/sites/default/files/teaching/cover_0.jpg"
@@ -1866,6 +2030,7 @@ function App() {
             path="/6to9yo/IdrisPhillips"
             element={
               <Person
+                welshSlugText={"Glowyr du yn cloddio am aur du."}
                 quizButStyle={"dontShowQuizBut"}
                 links={
                   <ul>
@@ -1889,14 +2054,12 @@ function App() {
                     </li>
                   </ul>
                 }
+                linkResource={"Resources/IdrisPhillips"}
                 indivName={"Idris Phillips"}
                 indivNameCym={"Idris Phillips"}
-                proposedResource={
-                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/IdrisPhillips">
-                    Imaginary Biography
-                  </a>
-                }
-                slugText={"Black gold."}
+                bgcolor="#CFE57D"
+                backcardImg={idris}
+                slugText={"Black miners digging for black gold."}
                 resource={api.slice(11, 12)}
                 indivPic={
                   "https://ichef.bbci.co.uk/images/ic/640x360/p08t5ggx.jpg"
@@ -1956,6 +2119,7 @@ function App() {
             path="/9to12yo/ColinJackson"
             element={
               <Person
+                bgcolor={"#A2D6F9"}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -1964,37 +2128,84 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Colin Jackson Olymic Biography
+                        Biography from the official Olympics website{" "}
                       </a>
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://www.welshathletics.org/en/page/colin-jackson"
+                        href="https://www.factsnippet.com/site/facts-about-colin-jackson.html"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Colin Jackson - Welsh Athletics
+                        37 facts about Colin Jackson{" "}
                       </a>
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://www.theguardian.com/world/2017/sep/02/colin-jackson-phenomenal-athlete-who-came-out-at-50"
+                        href="https://www.heart.co.uk/showbiz/tv-movies/dancing-on-ice/colin-jackson-gay-boyfriend-partner-husband/"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Colin Jackson: phenomenal athlete who came out at 50
+                        Colin Jackson on his sexuality{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://meithrin.cymru/wp-content/uploads/2022/07/Colin-J-Terfynol.pdf"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Mudiad Ysgolion Meithrin information page{" "}
                       </a>
                     </li>
                   </ul>
                 }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://olympics.com/en/athletes/colin-jackson"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Bywgraffiad gan wefan swyddogol y Gemau Olympaidd{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.factsnippet.com/site/facts-about-colin-jackson.html"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        37 ffaith am Colin Jackson{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.heart.co.uk/showbiz/tv-movies/dancing-on-ice/colin-jackson-gay-boyfriend-partner-husband/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Coli Jackson ar ei rywioldeb{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://meithrin.cymru/wp-content/uploads/2022/07/Colin-J-Terfynol.pdf"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Taflen wybodaeth gan Mudiad Ysgolion Meithrin{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                backcardImg={colin}
                 indivName={"Colin Jackson"}
                 indivNameCym={"Colin Jackson"}
-                proposedResource={
-                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/ColinJackson">
-                    Imagined interview{" "}
-                  </a>
-                }
-                slugText={"The Olympic medal winner."}
+                linkResource={"Resources/ColinJackson"}
+                slugText={"The Olympic medallist."}
+                welshSlugText={"Yr athletwr â medal Olympaidd."}
                 resource={nineApi.slice(3, 4)}
                 indivPic={
                   "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/2ED2/production/_95868911_gettyimages-1852091.jpg"
@@ -2062,26 +2273,74 @@ function App() {
           <Route
             path="/9to12yo/IrisWilliams"
             element={
-              <Person
+              <PersonYTVid
                 links={
                   <ul>
                     <li className="linkLi">
                       <a
-                        href="https://blackhistorywales.org.uk/resources/resource/iris-williams-obe/"
+                        href="https://www.thefreelibrary.com/Voice+of+the+Valleys%3B+Singer+Iris+Williams+is+still+proud+of+her...-a090780695"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Iris Williams - Black History Wales{" "}
+                        Short biography{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/news/wales-news/iris-williams-owes-success-kindness-6535907"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Iris Williams on the quality of her foster care{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/news/wales-news/iris-williams-wales-always-great-1835966"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Iris Williams on Welsh identity{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.thefreelibrary.com/Voice+of+the+Valleys%3B+Singer+Iris+Williams+is+still+proud+of+her...-a090780695"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Bywgraffiad byr{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/news/wales-news/iris-williams-owes-success-kindness-6535907"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Iris Williams ar safon ei gofal maeth{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/news/wales-news/iris-williams-wales-always-great-1835966"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Iris Williams ar ei hunaniaeth Gymreig
                       </a>
                     </li>
                   </ul>
                 }
                 indivName={"Iris Williams"}
                 indivNameCym={"Iris Williams"}
-                proposedResource={
-                  "Footage of TV interview of Iris with Matthew Rhys."
-                }
-                slugText={"The jazz legend from Wales."}
+                youtubeVid="https://www.youtube.com/embed/Et70EtJ0Shg"
+                slugText={"The jazz legend from South Wales."}
+                welshSlugText={"Y gantores jazz chwedlonol o Dde Cymru. "}
                 resource={nineApi.slice(4, 5)}
                 indivPic={
                   "https://i2-prod.walesonline.co.uk/incoming/article1781243.ece/ALTERNATES/s615/iris-williams-61348596.jpg"
@@ -2144,15 +2403,18 @@ function App() {
                     <li>She now lives in California in the USA.</li>
                   </ul>
                 }
-              ></Person>
+              ></PersonYTVid>
             }
           ></Route>
           <Route
             path="/12to16yo/PaulRobeson"
             element={
-              <Person
+              <PersonPodcast
                 indivName={"Paul Robeson"}
+                bgImg={"podcastImgOverlay2"}
                 indivNameCym={"Paul Robeson"}
+                overlayText=" Podcast: Emily Pemberton and Mel Owen discussing Paul
+                Robeson's life."
                 backLContent={
                   <>
                     <audio controls>
@@ -2160,7 +2422,7 @@ function App() {
                     </audio>
                     <p>
                       Podcast: Emily Pemberton and Mel Owen discussing Paul
-                      Robesons's life.
+                      Robeson's life.
                     </p>
                   </>
                 }
@@ -2169,7 +2431,7 @@ function App() {
                     <source src={emilyCym} type="audio/mpeg" />
                   </audio>
                 }
-                slugText={"The American singer who joined the miners strike."}
+                slugText={"The American who stood with the miners."}
                 resource={nineApi.slice(5, 6)}
                 indivPic={
                   "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/%22Paul_Robeson%2C_world_famous_Negro_baritone%2C_leading_Moore_Shipyard_%28Oakland%2C_CA%29_workers_in_singing_the_Star_Spangled_Ba_-_NARA_-_535874.jpg/640px-%22Paul_Robeson%2C_world_famous_Negro_baritone%2C_leading_Moore_Shipyard_%28Oakland%2C_CA%29_workers_in_singing_the_Star_Spangled_Ba_-_NARA_-_535874.jpg"
@@ -2230,7 +2492,7 @@ function App() {
                     </li>
                   </ul>
                 }
-              ></Person>
+              ></PersonPodcast>
             }
           ></Route>
           <Route
@@ -2239,8 +2501,12 @@ function App() {
               <Person
                 indivName={"Louisa BB Morgan"}
                 indivNameCym={"Louisa BB Morgan"}
-                proposedResource={"Factfile with discussion points."}
-                slugText={"The lady who's lived all around the world."}
+                proposedResource={
+                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/LouisaBiog">
+                    Read Louisa BB Morgan's imaginary biography
+                  </a>
+                }
+                slugText={"The lady who lived all over the world."}
                 resource={nineApi.slice(6, 7)}
                 indivPic={
                   "https://m.media-amazon.com/images/M/MV5BZGRkNTgwM2YtZWUxNy00MDQzLWE5OTAtODU1MjVmYWE2ZjhiXkEyXkFqcGdeQXVyODIyODI5Mzc@._V1_.jpg"
@@ -2320,42 +2586,108 @@ function App() {
                   <ul>
                     <li className="linkLi">
                       <a
-                        href="https://www.africansinyorkshireproject.com/clive-sullivan.html"
+                        href="https://wrl.wales/clive-sullivan-documentary-to-be-screened-by-bbc1-wales#:~:text=%E2%80%9CClive%20Sullivan%3A%20Rugby%20League%20Legend,the%20next%20generation%20of%20black"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Clive Sullivan - Britain's First Black Rugby Captain
+                        Official Wales rugby league blog post about Clive
+                        Sullivan{" "}
                       </a>
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://www.youtube.com/watch?v=0Z9hvtk3wbc"
+                        href="https://www.loverugbyleague.com/post/clive-sullivan-rugby-league-wales"
                         className="resourceHref"
                         target="_blank"
                       >
-                        VIDEO - The Story of the RLWC1972 Final and the Iconic
-                        Clive Sullivan
+                        Article describing Clive Sullivan's remarkable journey
                       </a>
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://www.hullfc.com/club/history-stats/hall-of-fame/clive-sullivan"
+                        href="https://www.blackhistorymonth.org.uk/article/section/sporting-heroes/clive-sullivan-rugbys-first-black-captain/"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Hall of Fame - Hull FC
+                        Article on Clive Sullivan's rugby league career{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=IeMc2KBrf3w"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        'Imagine' by Alex Wharton. A triubute to Clive Sullivan{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://cadw.gov.wales/learn/wales-rich-and-diverse-heritage/creative-responses/clive-sullivan-1943-1985"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Biography of Clive Sullivan{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://wrl.wales/clive-sullivan-documentary-to-be-screened-by-bbc1-wales#:~:text=%E2%80%9CClive%20Sullivan%3A%20Rugby%20League%20Legend,the%20next%20generation%20of%20black"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Gwefan swyddogol Rygbi Cynghrair Cymru am Clive Sullivan
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.loverugbyleague.com/post/clive-sullivan-rugby-league-wales"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl yn disgrifio bywyd Clive Sullivan{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.blackhistorymonth.org.uk/article/section/sporting-heroes/clive-sullivan-rugbys-first-black-captain/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl am yrfa Clive Sullivan{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=IeMc2KBrf3w"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        'Imagine' gan Alex Wharton. Er cof am Clive Sullivan{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://cadw.gov.wales/learn/wales-rich-and-diverse-heritage/creative-responses/clive-sullivan-1943-1985"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Bywgraffiad byr o Clive Sullivan{" "}
                       </a>
                     </li>
                   </ul>
                 }
                 indivName={"Clive Sullivan"}
                 indivNameCym={"Clive Sullivan"}
-                proposedResource={
-                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/CliveSullivanPortrait">
-                    Portrait of Clive Sullivan Worksheet
-                  </a>
-                }
-                slugText={"The rugby league legend."}
+                backcardImg={clive}
+                bgcolor={"#A2D6F9"}
+                linkResource={"Resources/CliveSullivan"}
+                welshSlugText={"Yr arwr a aeth i Hull."}
+                slugText={"Hull's rugby league hero."}
                 resource={nineApi.slice(7, 8)}
                 indivPic={
                   "https://e2.365dm.com/20/10/2048x1152/skysports-anthony-sullivan_5116431.jpg"
@@ -2440,35 +2772,126 @@ function App() {
             path="/9to12yo/JohnYstumllyn"
             element={
               <PersonYTVid
-                youtubeVid={"https://www.youtube.com/embed/96yE8N_f35o"}
+                backLContent={"Clip courtesy of Cwmni Da Cyf."}
+                backLContentCym={
+                  "Diolch i Cwmni Da Cyf. am y clip.                  "
+                }
+                youtubeVid={"https://www.youtube.com/embed/AsDgYVYenG8"}
                 links={
                   <ul>
-                    <li className="linkLi">
-                      <a
-                        href="https://friendsoffriendlesschurches.org.uk/story/john-ystumllyn/"
-                        className="resourceHref"
-                        target="_blank"
-                      >
-                        John Ystumllyn: From Africa to Ynyscynhaearn
-                      </a>
-                    </li>
                     <li className="linkLi">
                       <a
                         href="https://cadw.gov.wales/learn/wales-rich-and-diverse-heritage/creative-responses/john-ystumllyn-c1738-1786"
                         className="resourceHref"
                         target="_blank"
                       >
-                        John Ystumllyn - Cadw
+                        Biography on Welsh government webite{" "}
                       </a>
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://www.theguardian.com/uk-news/2021/oct/21/new-rose-named-after-one-of-britains-first-known-black-gardeners-john-ystumllyn"
+                        href="https://www.youtube.com/watch?v=NomyyXgCvgQ"
                         className="resourceHref"
                         target="_blank"
                       >
-                        New rose named after one of UK’s first documented black
-                        gardeners
+                        The Gardener' by Alex Wharton. A tribute to John
+                        Ystumllun{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://friendsoffriendlesschurches.org.uk/story/john-ystumllyn/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        From Africa to Ynyscynhaearn
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.black-boy-inn.com/the-story-of-john-ystumllyn/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        History of the Black Boy Inn{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.northwaleschronicle.co.uk/news/20682874.criccieth-community-remembers-john-ystumllyn/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Local news article commemorating life of John Ystumllun{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://nation.cymru/news/hidden-black-history-queen-plants-rose-named-after-18th-century-welsh-horticulturist-john-ystumllyn/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Queen plants rose named after John Ystumllyn{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://cadw.llyw.cymru/dysgu/treftadaeth-gyfoethog-ac-amrywiol-cymru/ymatebion-creadigol/john-ystumllyn-c1738-1786?_gl=1*14tbl2*_ga*NjQwMjYzMDcyLjE2ODM1Njc0MTk.*_ga_B2BCVKM874*MTY4MzU2NzQxOC4xLjEuMTY4MzU2NzkzMC42MC4wLjA."
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Bywgrafiiad o John Ystymullyn{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=UT9nmucr_2c"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        ''Y Garddwr' gan Alex Wharton. Er cof am John Ystumllyn
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://friendsoffriendlesschurches.org.uk/story/john-ystumllyn/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl yn son am mudiad John Ystumllyn o Affrica i
+                        Ynyscynhaearn{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.black-boy-inn.com/the-story-of-john-ystumllyn/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Hanes y 'Black Boy Inn'{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.northwaleschronicle.co.uk/news/20682874.criccieth-community-remembers-john-ystumllyn/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl newyddion lleol yn coffau bywyd John Ystumllyn{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://nation.cymru/news/hidden-black-history-queen-plants-rose-named-after-18th-century-welsh-horticulturist-john-ystumllyn/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Y Frenhines yn plannu rhosyn wedi'i enwi ar ôl John
+                        Ystumllyn{" "}
                       </a>
                     </li>
                   </ul>
@@ -2476,6 +2899,7 @@ function App() {
                 indivName={"John Ystumllyn"}
                 indivNameCym={"John Ystumllyn"}
                 slugText={"The 18th century slave who became a gardener."}
+                welshSlugText={"Y caethwas a'r garddwr."}
                 resource={nineApi.slice(8, 9)}
                 indivPic={
                   "https://ichef.bbci.co.uk/news/976/cpsprodpb/FDB1/production/_121154946_johnystumllynpeople'scollection.png"
@@ -2615,6 +3039,7 @@ function App() {
                 indivNameCym={"Tiger Bay"}
                 proposedResource={"Factfile with discussion."}
                 slugText={"The bustling multi-ethnic community in Cardiff Bay."}
+                welshSlugText={"Y gymuned aml-ddiwylliannol yng Nghaerdydd."}
                 resource={nineApi.slice(9, 10)}
                 indivPic={
                   "https://www.peoplescollection.wales/sites/default/files/images/2014/February/ah_50_34.jpg?itok=SN4XskT2"
@@ -2682,7 +3107,13 @@ function App() {
           <Route
             path="/9to12yo/SidoliIceCream"
             element={
-              <Person
+              <PersonYTVid
+                overlayText={
+                  <h2>
+                    Have a look how Sidoli Ice Cream is made today
+                    <FaVideo />
+                  </h2>
+                }
                 links={
                   <ul>
                     <li className="linkLi">
@@ -2698,8 +3129,9 @@ function App() {
                 }
                 indivName={"Sidoli Ice Cream"}
                 indivNameCym={"Hufen Iâ Sidoli"}
-                proposedResource={"Interview with family member."}
                 slugText={"The story of the award-winning ice cream."}
+                welshSlugText={"Stori'r hufen iâ arbennig o'r Eidal."}
+                youtubeVid="https://www.youtube.com/embed/xTRwVpwUvVw"
                 resource={nineApi.slice(10, 11)}
                 indivPic={
                   "https://i2-prod.walesonline.co.uk/incoming/article17960109.ece/ALTERNATES/s1200c/0_RM_180320_Sidoli_IceCream_020.jpg"
@@ -2785,7 +3217,7 @@ function App() {
                     </li>
                   </ul>
                 }
-              ></Person>
+              ></PersonYTVid>
             }
           ></Route>
           <Route
@@ -2817,7 +3249,8 @@ function App() {
                 indivName={"Isaac Blake"}
                 youtubeVid={"https://www.youtube.com/embed/jvbI_RvP3Ic"}
                 indivNameCym={"Isaac Blake"}
-                slugText={"A Romani in Wales following tradition."}
+                slugText={"A Romani in Wales."}
+                welshSlugText={"Romani yng Nghymru."}
                 proposedResource={""}
                 resource={nineApi.slice(11, 12)}
                 indivPic={
@@ -2894,11 +3327,12 @@ function App() {
           <Route
             path="/9to12yo/PattiFlynn"
             element={
-              <Person
+              <PersonYTVid
                 indivName={"Patti Flynn"}
                 indivNameCym={"Patti Flynn"}
-                slugText={""}
-                proposedResource={""}
+                welshSlugText={"Cantores, actores, model ac ymgyrchydd."}
+                slugText={"Jazz singer, author, model and social activist."}
+                youtubeVid="https://www.youtube.com/embed/g3y5JJQdanI"
                 resource={nineApi.slice(11, 12)}
                 indivPic={
                   "https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Patti_Flynn.jpg/220px-Patti_Flynn.jpg"
@@ -2973,94 +3407,10 @@ function App() {
                     </li>
                   </ul>
                 }
-              ></Person>
+              ></PersonYTVid>
             }
           ></Route>
-          <Route
-            path="/9to12yo/PattiFlynn"
-            element={
-              <Person
-                indivName={"Patti Flynn"}
-                indivNameCym={"Patti Flynn"}
-                slugText={""}
-                proposedResource={""}
-                resource={nineApi.slice(11, 12)}
-                indivPic={
-                  "https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Patti_Flynn.jpg/220px-Patti_Flynn.jpg"
-                }
-                text={
-                  <ul>
-                    <li>
-                      Patricia Maude Young was born in Cardiff and was the
-                      youngest child of seven to Wilmott George Young and
-                      Beatrice Young.  
-                    </li>
 
-                    <li>
-                      Her father was Jamaican and a merchant seaman, he arrived
-                      in Cardiff in the 1920s; Patti’s mother was from
-                      Cardiff.  
-                    </li>
-
-                    <li>
-                      During World War Two, Patti’s father died when his boat
-                      was hit by a torpedo and her brothers also died in the
-                      same war.
-                    </li>
-
-                    <li>
-                      When a young girl, and living in Bute Town (also known as
-                      Tiger Bay) Patti loved music and singing – especially
-                      jazz.
-                    </li>
-
-                    <li>
-                      Patti became a successful jazz singer, author, radio
-                      actress, model and social activist.
-                    </li>
-
-                    <li>
-                      She also co-founded the Bute Town Bay Jazz Festival.{" "}
-                    </li>
-
-                    <li>
-                      Patti campaigned bravely for 26 years to have a monument
-                      for black and ethnic minority soldiers who died in
-                      conflict after losing her father and brothers in World War
-                      Two.
-                    </li>
-
-                    <li>This monument was erected in 2019!</li>
-                    <li>
-                      Patti Flynn wrote the words on the face of the monument.
-                    </li>
-                    <li>
-                      In 2019, Patti was honoured with the Ethnic Minority Welsh
-                      Women Achievement Association’s (EMWWAA) Lifetime
-                      Achievement Award.   
-                    </li>
-                    <li>
-                      She was also a founder and patron of Black History
-                      Wales.  
-                    </li>
-                    <li>
-                      On 10 September 2020, Patti died after a short battle with
-                      cancer, she was aged 83. 
-                    </li>
-                    <li>
-                      Patti loved music ever since she was a girl and she grew
-                      up to be a successful singer.  Patti also believed that
-                      people who were Black, Asian and from an ethnic minority
-                      background who fought courageously for Britain during the
-                      wars should be honoured.  It is thanks to Patti and others
-                      like her that there are monuments now in Wales which
-                      recognise their bravery.   
-                    </li>
-                  </ul>
-                }
-              ></Person>
-            }
-          ></Route>
           <Route
             path="/9to12yo/VernesterCyril"
             element={
@@ -3089,9 +3439,8 @@ function App() {
                 }
                 indivName={"Vernester Cyril"}
                 indivNameCym={"Vernester Cyril"}
-                slugText={
-                  "The nurse from the Carribean who made a difference in Wales."
-                }
+                slugText={"The nurse from the Carribean."}
+                welshSlugText={"Y nyrs o'r Caribî."}
                 proposedResource={"Possible interview with nurse."}
                 resource={nineApi.slice(11, 12)}
                 indivPic={
@@ -3180,7 +3529,8 @@ function App() {
               <Person
                 indivName={"Dom James"}
                 indivNameCym={"Dom James"}
-                slugText={"The Welsh rapper."}
+                slugText={"Rapper and radio presenter."}
+                welshSlugText={"Rapiwr a chyflwynydd radio."}
                 resource={nineApi.slice(12, 13)}
                 indivPic={
                   "https://ichef.bbci.co.uk/news/976/cpsprodpb/DBCD/production/_124296265_33020262_1243885189076260_6186539543915659264_n-1.jpg"
@@ -3200,7 +3550,43 @@ function App() {
                 }
                 text={
                   <ul>
-                    <li>Text to be inserted - podcast on next page</li>
+                    <li>
+                      Dom James is from Cardiff and attended Ysgol Gyfun
+                      Plasmawr.{" "}
+                    </li>
+
+                    <li>
+                      He's a musician who currently presents a weekly Welsh
+                      language music programme on Radio Cymru.{" "}
+                    </li>
+
+                    <li>
+                      He is a regular contributor to S4C's online channel Hansh
+                      and has a large social media following.{" "}
+                    </li>
+
+                    <li>
+                      He is also a rapper and started collaborating with Lloyd
+                      Lewis in 2017.{" "}
+                    </li>
+
+                    <li>Dom is passionate about creating Welsh rap. </li>
+
+                    <li>
+                      Dom and Lloyd Lewis sang with Sage Todz in the Tafwyl
+                      Festival in 2022.{" "}
+                    </li>
+
+                    <li>
+                      Their single 'Pwy sy'n Galw?' generated a great response
+                      when it was played on Huw Stephens radio programme.{" "}
+                    </li>
+
+                    <li>
+                      In 2023, Dom James, Lloyd Lewis and their producer Don
+                      topped the Miwsig poll of musicians that were going to be
+                      making waves in the Welsh music scene.{" "}
+                    </li>
                   </ul>
                 }
               ></Person>
@@ -3210,6 +3596,8 @@ function App() {
             path="/9to12yo/JoeCalzaghe"
             element={
               <Person
+                bgcolor={"#A2D6F9"}
+                backcardImg={italianDragon}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -3225,13 +3613,10 @@ function App() {
                 }
                 indivName={"Joe Calzaghe"}
                 indivNameCym={"Joe Calzaghe"}
-                proposedResource={
-                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/JoeCalzaghe">
-                    Imagined newspaper article
-                  </a>
-                }
+                linkResource={"Resources/JoeCalzaghe"}
                 resource={twelveApi.slice(2, 3)}
                 slugText={"The undefeated boxing world champion."}
+                welshSlugText={"Pencampwr bocsio diguro'r byd."}
                 indivPic={
                   "https://upload.wikimedia.org/wikipedia/commons/a/a5/JoeCalzaghe-July2007.jpg"
                 }
@@ -3322,6 +3707,20 @@ function App() {
             path="/12to16yo/JasonMohammad"
             element={
               <Person
+                overlayText=""
+                backLContent={
+                  <>
+                    <audio controls>
+                      <source src={mirainEng} type="audio/mpeg" />
+                    </audio>
+                    <p>Interview with Mirain Iwerydd.</p>
+                  </>
+                }
+                backLContentCym={
+                  <audio controls>
+                    <source src={mirainCym} type="audio/mpeg" />
+                  </audio>
+                }
                 links={
                   <ul>
                     <li className="linkLi">
@@ -3337,11 +3736,8 @@ function App() {
                 }
                 indivName={"Jason Mohammad"}
                 indivNameCym={"Jason Mohammad"}
-                proposedResource={"Interview with Mirain Iwerydd."}
                 resource={twelveApi.slice(3, 4)}
-                slugText={
-                  "Newsreader, Television Presenter and Radio Presenter."
-                }
+                slugText={"Newsreader, Television and Radio presenter."}
                 indivPic={
                   "https://i2-prod.walesonline.co.uk/incoming/article24630322.ece/ALTERNATES/s1200/0_S4C-TV-PAGES.jpg"
                 }
@@ -3398,9 +3794,126 @@ function App() {
             }
           ></Route>
           <Route
-            path="/12to16yo/KizzyCrawford"
+            path="/12to16yo/1919RaceRiots"
             element={
               <Person
+                overlayText=""
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/programmes/b01mzk7b"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Jason Mohammad - BBC Radio Wales
+                      </a>
+                    </li>
+                  </ul>
+                }
+                indivName={"1919 Race Riots"}
+                indivNameCym={"1919 Race Riots"}
+                // resource={twelveApi.slice(3, 4)}
+                slugText={"The race riots that shamed Wales."}
+                indivPic={
+                  "https://i2-prod.walesonline.co.uk/incoming/article16433006.ece/ALTERNATES/s810/0_AMR_WOL_140619_13.jpg"
+                }
+                text={
+                  <ul>
+                    <li>
+                      From January to August 1919, Tiger Bay in Cardiff was the
+                      scene of fierce riots which targeted black and ethnic
+                      communities{" "}
+                    </li>
+                    <li>
+                      Several factors caused to the riots:
+                      <ul>
+                        <li>
+                          At the end of the First World War, the return home of
+                          a large number of troops meant there were too many men
+                          competing for the available jobs at Cardiff docks,
+                          especially among the seamen.{" "}
+                        </li>
+                        <li>
+                          Some people felt that people from other countries –
+                          ‘foreigners’ - were ‘stealing’ jobs despite these
+                          communities helping to keep the docks working whilst
+                          Britain was at war.{" "}
+                        </li>
+
+                        <li>
+                          Fear about the lack of housing - a lack of materials
+                          and labour caused by the war meant places to live in
+                          were hard to find - also helped to cause tension.{" "}
+                        </li>
+
+                        <li>
+                          Indian seamen were hired at a much lower rate than
+                          their white co-workers and had to put up with much
+                          poorer working and living conditions. They were
+                          unfairly blamed for white workers getting a lower wage
+                          too.{" "}
+                        </li>
+
+                        <li>
+                          Racism also motivated the hostility towards these
+                          settlers. {" "}
+                        </li>
+
+                        <li>
+                          Four minority workers died in these violent attacks.
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      Tensions broke out into riots in Cardiff, whilst other
+                      riots took place in other port towns such as Glasgow and
+                      Scotland. Cities in England also saw riots such as London,
+                      South Shields, Hull and Liverpool.{" "}
+                    </li>
+                    <li>
+                      Along with African, Afro-Caribbean, Chinese and Arab
+                      sailors, South Asians were also targeted.{" "}
+                    </li>
+
+                    <li>
+                      Through the intensive press coverage, the 1919 race riots
+                      were the first time many people became aware that there
+                      were black and minority ethnic people living in Britain,
+                      including those who had lived and worked here for many
+                      years and served in the war.{" "}
+                    </li>
+
+                    <li>
+                      Many also suffered vandalisation of their homes and
+                      properties. South Asians suffered less than black or
+                      Chinese workers as they were not regarded as such direct
+                      competition for jobs and housing.{" "}
+                    </li>
+
+                    <li>
+                      In Cardiff clashes took place on 11 June 1919 between
+                      white soldiers returning from the Great War and local
+                      Butetown (Tiger Bay) men of mainly Yemeni, Somali and
+                      Afro-Caribbean backgrounds.{" "}
+                    </li>
+
+                    <li>
+                      The riots lasted for four days, spreading out into
+                      Grangetown and parts of the city centre.{" "}
+                    </li>
+                  </ul>
+                }
+              ></Person>
+            }
+          ></Route>
+          <Route
+            path="/12to16yo/KizzyCrawford"
+            element={
+              <PersonYTVid
+                overlayText={"Kizzy Crawford performing 'The Starling'"}
+                youtubeVid={"https://www.youtube.com/embed/g3-eFdI9ZTY"}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -3436,7 +3949,7 @@ function App() {
                 indivNameCym={"Kizzy Crawford"}
                 proposedResource={"Interview of podcast with Kizzy herself?"}
                 resource={twelveApi.slice(4, 5)}
-                slugText={"Award-winning Welsh singer / songwriter."}
+                slugText={"The talented singer songwriter."}
                 indivPic={
                   "https://ents24.imgix.net/image/000/158/543/f362a1cbe3eb9d638603c935c57a9f81ee7bd0bf.jpg?auto=format&crop=faces&w=1920&h=1920"
                 }
@@ -3516,7 +4029,7 @@ function App() {
                     </li>
                   </ul>
                 }
-              ></Person>
+              ></PersonYTVid>
             }
           ></Route>
           <Route
@@ -3527,9 +4040,7 @@ function App() {
                 indivName={"Ashley Williams"}
                 indivNameCym={"Ashley Williams"}
                 resource={twelveApi.slice(5, 6)}
-                slugText={
-                  "Former professional footballer and captain of Wales."
-                }
+                slugText={"The Welsh football star."}
                 indivPic={
                   "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/AUT_vs._WAL_2016-10-06_%28127%29.jpg/800px-AUT_vs._WAL_2016-10-06_%28127%29.jpg?20161110161214"
                 }
@@ -3641,9 +4152,7 @@ function App() {
                 indivNameCym={"Joe Erskine"}
                 resource={twelveApi.slice(6, 7)}
                 proposedResource={"Factfile and discussion topics."}
-                slugText={
-                  "Erskine was one of the most gifted British boxers of his day."
-                }
+                slugText={"The gifted boxer from Butetown."}
                 indivPic={
                   "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/joe-erskine-keystone.jpg"
                 }
@@ -3775,7 +4284,7 @@ function App() {
                   </a>
                 }
                 resource={twelveApi.slice(7, 8)}
-                slugText={"Wales' First Black Headteacher."}
+                slugText={"Wales' First black headteacher."}
                 indivPic={
                   "https://ichef.bbci.co.uk/news/976/cpsprodpb/13CF5/production/_98314118_bettyclean.jpg"
                 }
@@ -3869,13 +4378,11 @@ function App() {
           <Route
             path="/12to16yo/GaneshSubrahmanyam"
             element={
-              <Person
+              <PersonYTVid
                 indivName={"Ganesh Subrahmanyam"}
                 indivNameCym={"Ganesh Subrahmanyam"}
                 resource={twelveApi.slice(8, 9)}
-                proposedResource={
-                  "Interview with the Dr himself or Dr Rini Chatterjee – 2nd second generation GP based in Merthyr."
-                }
+                youtubeVid="https://www.bbc.co.uk/programmes/p0b4kn0p/player"
                 slugText={"The Indian Doctor."}
                 indivPic={
                   "https://ichef.bbci.co.uk/images/ic/240x135/p0b6ksrg.jpg"
@@ -3933,7 +4440,7 @@ function App() {
                       homes; A third of all pharmacists are South Asian.{" "}
                     </li>
                     <li>
-                      In 2003, 73% of doctors in the Rhonda Valley were Asian.{" "}
+                      In 2003, 73% of doctors in the Rhondda Valley were Asian.{" "}
                     </li>
 
                     <li>
@@ -3943,7 +4450,7 @@ function App() {
                     </li>
                   </ul>
                 }
-              ></Person>
+              ></PersonYTVid>
             }
           ></Route>
           <Route
@@ -3952,11 +4459,11 @@ function App() {
               <Person
                 indivName={"Vaughan Gething"}
                 indivNameCym={"Vaughan Gething"}
-                proposedResource={
-                  "Interview with school children about his career as a politician and the challenges he has faced. OR podcast with Emily Pemberton."
-                }
+                linkResource={"Resources/VaughanGething"}
+                bgcolor={"#FF686B"}
+                backcardImg={vg}
                 resource={twelveApi.slice(9, 10)}
-                slugText={"The Welsh Labour Politician."}
+                slugText={"Welsh Labour politician."}
                 indivPic={
                   "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Vaughan_Gething.jpg/800px-Vaughan_Gething.jpg"
                 }

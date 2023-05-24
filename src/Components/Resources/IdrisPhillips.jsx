@@ -14,14 +14,7 @@ const IdrisPhillips = () => {
             ? "Hunangofiant dychmygol Idris Phillips "
             : "The imaginary biography of Idris Phillips "}
         </h1>
-        <p className="resourceP">
-          <strong>
-            {" "}
-            {lang
-              ? "Roedd miloedd o lowyr yn Ne Cymru ar un cyfnod ond, oherwydd lliw ei groen, roedd glowyr fel Idris Phillips yn brin iawn. Tybed pa fath o bethau allai fod wedi mynd trwy ei feddwl wrth edrych yn ôl ar ei fywyd yn y pyllau glo?   "
-              : "There were thousands of colliers or miners in South Wales at one time but, because of his skin colour, colliers such as Idris Phillips were very rare. What kinds of things might have been going through his mind when looking back on his life in the coal mines?   "}
-          </strong>{" "}
-        </p>
+
         <p className="resourceP">
           {lang
             ? "‘Ry’n ni gyd yr un lliw croen ar ôl shifft yn y pwll glo ’ma!’ Dyna roeddwn i wastad yn ei ddweud wrth y bechgyn oedd yn hoffi tynnu fy nghoes i ar ôl shifft i lawr yn y pwll! Doedd rhai o’r glowyr ddim yn ei feddwl yn gas, jôc, ychydig o sbort oedd hyn i rai. Ond doedden nhw byth yn ystyried sut roeddwn i’n teimlo a ’mod i weithiau yn cael llond bol o’r holl bryfocio. Wedi dweud hynny, roedd 'na eraill oedd yn dweud pethau cas ac yn eu golygu nhw pob gair. Y peth callaf i’w wneud gyda’r rheini oedd trio eu hosgoi nhw, orau y gallwn i – sydd ddim yn hawdd pan rydych chi’n gweithio’n agos at eich gilydd, gannoedd o droedfeddi dan ddaear!"
@@ -44,7 +37,7 @@ const IdrisPhillips = () => {
         </p>
         <p className="resourceP">
           {lang
-            ? "Do, dwi wedi gweld llawer a chyflawni hyd oed mwy yn ystod fy mywyd fel glöwr ym mhyllau glo De Cymru. Dwi wedi cael llawer o brofiadau ond yn anffodus, mae hiliaeth wedi bod gyda fi drwy gydol fy ngyrfa, fel rhyw gysgod yn y cefndir. Ond gobeithio, drwy rannu fy mhrofiadau, y bydd pethau’n haws i’r genhedlaeth nesaf."
+            ? "Do, dwi wedi gweld llawer a chyflawni hyd yn oed mwy yn ystod fy mywyd fel glöwr ym mhyllau glo De Cymru. Dwi wedi cael llawer o brofiadau ond yn anffodus, mae hiliaeth wedi bod gyda fi drwy gydol fy ngyrfa, fel rhyw gysgod yn y cefndir. Ond gobeithio, drwy rannu fy mhrofiadau, y bydd pethau’n haws i’r genhedlaeth nesaf."
             : "Yes, I've seen a lot and achieved even more during my life as a collier in the South Wales coalmines. I've had many experiences but unfortunately, I've faced racism throughout my career, like a kind of shadow in the background. But hopefully, by sharing my experiences, things will be easier for the next generation."}
         </p>
         <div className="learningOutcomes">

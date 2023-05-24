@@ -6,8 +6,7 @@
   align-self: center;
   list-style: none;
   position: fixed;
-  font-family: "Space Grotesk", sans-serif;
-
+  font-family: sassoon;
   width: 100vw;
   text-align: center;
 }
@@ -23,18 +22,18 @@
   align-self: center;
   margin: auto;
   text-align: center;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: sassoon;
 }
 
 .paginationText:hover {
   cursor: pointer;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: sassoon;
 }
 
 .paginationNum {
   margin: 10px;
   padding-bottom: 40px;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: sassoon;
   list-style: none;
   text-align: center;
 }
@@ -42,7 +41,7 @@
 .paginationText {
   text-align: center;
   display: flex;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: grotesk;
   font-weight: bold;
   padding-left: 0 !important;
   width: 3rem;

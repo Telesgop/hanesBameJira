@@ -8,6 +8,7 @@
 
 .DiaryFlipBook {
   /* border: 1px solid black; */
+
   width: 75vw;
   height: 75vh;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -22,14 +23,36 @@
   padding: 10px;
 }
 
+.ASimg {
+  transform: scale(0.8);
+}
+
 .diaryLOs {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: grotesk;
 }
 
 .DiaryFlipBookLeft {
   height: 100%;
   width: 50%;
   /* border: 1px solid black; */
+}
+
+.DiaryFlipBookLeftAS {
+  height: 100%;
+  width: 50%;
+  /* display: flex; */
+  /* border: 1px solid black; */
+}
+
+.ASdiv {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.ASdiv2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .DiaryFlipBookSpine {
@@ -68,6 +91,13 @@
 .button {
   background-color: black;
   color: black;
+  display: flex;
+}
+.LOs {
+  font-family: grotesk;
+}
+.handwritten {
+  font-family: "Chalkduster", sans-serif;
 }
 
 .button:hover {

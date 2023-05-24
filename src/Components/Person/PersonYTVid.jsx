@@ -13,6 +13,7 @@ const PersonYTVid = ({
   welshText,
   indivName,
   indivPic,
+  overlayText,
   backText,
   backWelshText,
   slugText,
@@ -21,6 +22,7 @@ const PersonYTVid = ({
   dateOfBirth,
   youtubeVid,
   backLContent,
+  linksCym,
   backLContentCym,
   indivNameCym,
   links,
@@ -30,7 +32,7 @@ const PersonYTVid = ({
 }) => {
   const { lang, setLang } = useContext(LanguageContext);
   const [slide, setSlide] = useState(0);
-
+  const [displayStyle, setDisplayStyle] = useState("flex");
   const container = {
     // hidden: { y: 50 },
     visible: {
@@ -163,6 +165,13 @@ const PersonYTVid = ({
               <div className="personInfoBack" id="myDIV2">
                 <div className="backLeftYTVid">
                   <div className="backLVid">
+                    {/* <div
+                      className="youtubeImgOverlay"
+                      style={{ display: displayStyle }}
+                      onClick={() => setDisplayStyle("none")}
+                    >
+                      {overlayText}
+                    </div> */}
                     <iframe
                       src={youtubeVid}
                       className="youtubeEmbed"
@@ -171,8 +180,9 @@ const PersonYTVid = ({
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen="true"
                     ></iframe>
-
-                    {lang !== true ? backLContent : backLContentCym}
+                    <p className="courtesyText">
+                      {lang !== true ? backLContent : backLContentCym}
+                    </p>
                   </div>
                 </div>
                 <div className="backRight">
@@ -180,7 +190,7 @@ const PersonYTVid = ({
                     {" "}
                     {lang !== true ? "Online Resources:" : "Adnoddau Ar-lein:"}
                   </p>
-                  {links}
+                  {lang !== true ? links : linksCym}
                 </div>
               </div>
             </div>

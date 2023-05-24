@@ -10,11 +10,17 @@ import { BiSearchAlt } from "react-icons/bi";
 const TwelveToSixteen = () => {
   const { lang, setLang } = useContext(LanguageContext);
   const [query, setQuery] = useState("");
+  document.body.style = "background: #FF686B;";
 
   return (
     <>
       <div className="ageRange">
-        <h2 className="ageRangeh2"> {lang !== true ? "Red" : "Coch"}</h2>
+        <h2 className="ageRangeh2">
+          {" "}
+          {lang !== true
+            ? "Progression Step 4"
+            : "NOT DEVELOPED - DO NOT TRIAL"}
+        </h2>
       </div>
       <div className="searchbar">
         <input

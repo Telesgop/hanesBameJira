@@ -1,15 +1,14 @@
 import "./AnimCard.css";
 import React, { useState } from "react";
-import { HiArrowCircleRight } from "react-icons/hi";
-import { HiArrowCircleLeft } from "react-icons/hi";
+
 import { motion } from "framer-motion";
 import { LanguageContext } from "../../Helper/Context";
 import { useContext } from "react";
-import Copyright from "../Copyright/Copyright";
 
-const AnimCard = ({ indivName, sourceVid }) => {
+const AnimCard = ({ indivName, sourceVid, sourceVidCym }) => {
   const { lang, setLang } = useContext(LanguageContext);
   const [slide, setSlide] = useState(0);
+  const [displayStyle, setDisplayStyle] = useState("flex");
 
   const container = {
     hidden: { y: 50 },
@@ -43,10 +42,11 @@ const AnimCard = ({ indivName, sourceVid }) => {
               <div className="personNameAnimCard">
                 <h2 className="personH2AnimCard">{indivName}</h2>
               </div>
+
               <div className="animCardVideo">
                 <iframe
                   className="animVideoIframe"
-                  src={sourceVid}
+                  src={lang ? sourceVidCym : sourceVid}
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

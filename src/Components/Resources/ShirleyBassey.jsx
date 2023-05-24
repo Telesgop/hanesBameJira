@@ -65,7 +65,7 @@ const ShirleyBassey = () => {
         </p>
         <p className="resourceP">
           {lang
-            ? "“Noswaith dda. Megan Robert,s ia? Chi enillodd ein cystadleuaeth ni ar y wefan, ynte? Wel, mae gennym ni syrpréis bach ychwanegol i chi heno. Yn ogystal â chael seddi VIP yn y rhes flaen, bydd cyfle i chi gyfarfod â’r Fonesig Shirley Bassey ei hun ar ôl y sioe! Bydd cyfle i chi gael sgwrs fach anffurfiol, felly efallai byddai’n syniad i chi feddwl am unrhyw gwestiynau yr hoffech eu gofyn iddi. Gwela’ i chi wedyn; mwynhewch y sioe!” "
+            ? "“Noswaith dda. Megan Roberts, ia? Chi enillodd ein cystadleuaeth ni ar y wefan, ynte? Wel, mae gennym ni syrpréis bach ychwanegol i chi heno. Yn ogystal â chael seddi VIP yn y rhes flaen, bydd cyfle i chi gyfarfod â’r Fonesig Shirley Bassey ei hun ar ôl y sioe! Bydd cyfle i chi gael sgwrs fach anffurfiol, felly efallai byddai’n syniad i chi feddwl am unrhyw gwestiynau yr hoffech eu gofyn iddi. Gwela’ i chi wedyn; mwynhewch y sioe!” "
             : "“Good evening, it's Megan Roberts, isn't it? You won our competition on our website, didn't you? Well, we've got a little extra surprise for you tonight. As well as having VIP seats in the front row, there’ll be an opportunity for you to meet Dame Shirley Bassey herself after the show! You’ll be able to have a short informal conversation, so it might be an idea for you to think about any questions you'd like to ask her. I'll see you later; enjoy the show!''"}
         </p>
         <p className="resourceP">

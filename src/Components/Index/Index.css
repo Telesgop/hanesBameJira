@@ -1,5 +1,5 @@
 table {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: sassoon;
   border-collapse: collapse;
   display: flex;
   flex-direction: column;
@@ -9,18 +9,17 @@ table {
 }
 
 .ageRange {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: sassoon;
 }
 
 .indexH2 {
   margin-top: 0;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: sassoon;
 }
 
 .indexContainer {
   display: flex;
-  font-family: "Space Grotesk", sans-serif;
-
+  font-family: sassoon;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -33,6 +32,7 @@ table {
 .indexText {
   margin-bottom: 0;
   margin-top: 0;
+  font-family: sassoon;
 }
 th {
   text-align: left;
@@ -43,4 +43,5 @@ td {
   padding: 10px;
   width: 30vw;
   border-bottom: 0.5px solid black;
+  font-family: sassoon;
 }

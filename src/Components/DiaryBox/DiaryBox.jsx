@@ -7,18 +7,25 @@ import { HiArrowCircleLeft } from "react-icons/hi";
 
 const DiaryBox = () => {
   const [page, setPage] = useState(0);
+  const [bgColor, setBgColor] = useState("#f2f2f2");
+  const [bgColor2, setBgColor2] = useState("black");
+
   function pageUpdate() {
-    if (page <= 2) {
+    if (page < 2) {
       setPage(page + 1);
-    } else {
-      setPage(0);
+      setBgColor("black");
+    } else if (page == 2) {
+      setPage(page + 1);
+      setBgColor2("#f2f2f2");
     }
   }
   function pageBack() {
     if (page >= 1) {
       setPage(page - 1);
+      setBgColor2("black");
     } else {
       setPage(0);
+      setBgColor("#f2f2f2");
     }
   }
 
@@ -50,7 +57,7 @@ const DiaryBox = () => {
           whileTap={{ scale: 0.9 }}
           onClick={() => pageBack()}
         >
-          <HiArrowCircleLeft className="prevnext" />
+          <HiArrowCircleLeft className="prevnext" style={{ color: bgColor }} />
         </motion.div>
       </motion.div>
       <motion.div
@@ -63,7 +70,7 @@ const DiaryBox = () => {
           <div className="DiaryText">
             {page === 0 && (
               <>
-                <h2>Thursday, 24th of November </h2>
+                <h2 className="handwritten">Thursday, 24th of November </h2>
                 <p>
                   Tired, today was a very long day in the laundry. I left this
                   house at 6:30am, I only had half an hour to eat my lunch and
@@ -75,13 +82,13 @@ const DiaryBox = () => {
             )}
             {page === 1 && (
               <>
-                <h2>Monday, 26th of December </h2>
+                <h2 className="handwritten">Monday, 26th of December </h2>
                 <p>
                   {" "}
                   It was a special day here in Wales yesterday, Christmas Day.
-                  Lot of houses are decorated and many people go around singing
+                  Lots of houses are decorated and many people go around singing
                   carols. Welsh people are great singers! But things haven't
-                  changed much in my live, unfortunately: work, work and more
+                  changed much in my life, unfortunately: work, work and more
                   work! But as Chi Mau always says, we have to work harder than
                   everyone else to build a solid foundation for our new life
                   here in Wales! I know he's right but I never thought it would
@@ -91,7 +98,7 @@ const DiaryBox = () => {
             )}
             {page === 2 && (
               <>
-                <h2>Wednesday, 22nd of February </h2>
+                <h2 className="handwritten"> Wednesday, 22nd of February </h2>
                 <p>
                   {" "}
                   I burnt myself badly today when ironing! I'm in pain but I've
@@ -123,7 +130,7 @@ const DiaryBox = () => {
           <div className="DiaryText">
             {page === 0 && (
               <>
-                <h2>Sunday, 4th of December </h2>
+                <h2 className="handwritten">Sunday, 4th of December </h2>
                 <p>
                   I'm longing for home! It's Mum's birthday today, I hope she's
                   had a good day back in China. It feels as if she's further
@@ -138,7 +145,7 @@ const DiaryBox = () => {
             )}
             {page === 1 && (
               <>
-                <h2>Monday, 23th of January </h2>
+                <h2 className="handwritten">Monday, 23th of January </h2>
                 <p>
                   {" "}
                   It's New Year's Day today, the beginning of the Year of the
@@ -154,7 +161,7 @@ const DiaryBox = () => {
             )}
             {page === 2 && (
               <>
-                <h2>Thursday, 20th of April </h2>
+                <h2 className="handwritten">Thursday, 20th of April </h2>
                 <p>
                   It's a big day today! We're opening our own laundry here in
                   Swansea, the first of a thousand, Chi Mau said – we'll see
@@ -167,20 +174,20 @@ const DiaryBox = () => {
             {page === 3 && (
               <>
                 <h2>Learning outcome: </h2>
-                <p>Able to write an imaginary diary</p>
-                <h2>Success Criteria</h2>
-                <p>
+                <p className="LOs">Able to write an imaginary diary</p>
+                <h2 className="LOs">Success Criteria</h2>
+                <p className="LOs">
                   Using spoken language, e.g. everyone has a job in this house!{" "}
                 </p>
-                <p>
+                <p className="LOs">
                   Using the past, present and future tenses of the verb, e.g. I
                   ran, I'm running, I will run{" "}
                 </p>
-                <p>
+                <p className="LOs">
                   Using interesting descriptions and short simple sentences,
                   e.g. Another hard day.
                 </p>
-                <p>
+                <p className="LOs">
                   Looking back at an event, e.g. I burnt myself badly today when
                   ironing.
                 </p>
@@ -200,7 +207,10 @@ const DiaryBox = () => {
           whileTap={{ scale: 0.9 }}
           onClick={() => pageUpdate()}
         >
-          <HiArrowCircleRight className="prevnext" />
+          <HiArrowCircleRight
+            className="prevnext"
+            style={{ color: bgColor2 }}
+          />
         </motion.div>
       </motion.div>
     </div>

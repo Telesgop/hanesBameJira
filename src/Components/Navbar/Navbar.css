@@ -7,7 +7,7 @@
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
   z-index: 9;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: sassoon;
 }
 
 .navLeft {
@@ -17,14 +17,18 @@
   align-items: center;
   align-content: center;
   height: 3vh;
+  font-family: sassoon;
   width: 25%;
 }
 
 .categoryBut {
-  height: 3.5vh;
-  width: 3vw;
+  height: 4vh;
+  width: 4vw;
   margin: 5px;
+  /* padding: 0 !important; */
+  font-family: sassoon;
   color: #000;
+  padding-top: 3px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
@@ -45,8 +49,7 @@
   justify-content: center;
   align-items: center;
   background-color: #258ea6;
-  font-family: "Space Grotesk", sans-serif;
-
+  font-family: sassoon;
   padding: 2px;
 }
 
@@ -66,7 +69,7 @@
   justify-content: center;
   margin: auto;
   z-index: 9;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: sassoon;
 }
 
 .modal {
@@ -78,8 +81,7 @@
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: hidden; /* Enable scroll if needed */
-  font-family: "Space Grotesk", sans-serif;
-
+  font-family: sassoon;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -96,11 +98,11 @@
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: hidden; /* Enable scroll if needed */
-  font-family: "Space Grotesk", sans-serif;
+  font-family: sassoon;
 }
 
 .modalShow {
-  font-family: "Mona-Sans Regular", sans-serif;
+  font-family: sassoon;
 
   display: none;
   position: fixed; /* Stay in place */
@@ -121,6 +123,8 @@
 
 .noModal {
   display: none;
+  font-family: sassoon;
+
   justify-content: flex-end;
 }
 
@@ -137,13 +141,13 @@
   border-bottom-left-radius: 45px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 999999;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: sassoon;
 }
 
 .innerText {
   display: flex;
   justify-content: flex-end;
-  font-family: "Mona-Sans Regular", sans-serif;
+  font-family: sassoon;
   margin: 10px;
   margin-right: 25px;
   margin-bottom: 10px;
@@ -154,7 +158,7 @@
 }
 
 .innerTextInfo {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: sassoon;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -189,7 +193,7 @@
   align-items: center;
   padding-right: 20px;
   justify-content: flex-end;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: sassoon;
   font-weight: bold;
 }
 
@@ -203,7 +207,7 @@
   align-self: baseline;
   margin: auto;
   font-size: small;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: sassoon;
 }
 
 .hoverNavCym {
@@ -216,7 +220,7 @@
 .notesH2 {
   font-weight: bold;
   color: #fff;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: sassoon;
   font-size: xx-large;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -228,7 +232,7 @@
 }
 
 .notesP {
-  font-family: "Mona-Sans Regular", sans-serif;
+  font-family: sassoon;
   text-align: flex-start;
   margin-left: 20px;
   margin-right: 20px;
@@ -266,7 +270,7 @@
   background-color: #fff;
   border-radius: 25px;
   transform: scale(1.5);
-  font-family: "Mona-Sans Regular", sans-serif;
+  font-family: sassoon;
   z-index: 9;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   height: 3vh;
@@ -309,5 +313,17 @@
 
   .categoryButTranslate {
     display: none;
+  }
+}
+@media only screen and (max-width: 970px) {
+  .innerModal {
+    width: 90%;
+  }
+
+  .translateImg {
+    width: 40px;
+  }
+  .categoryBut {
+    width: 40px;
   }
 }

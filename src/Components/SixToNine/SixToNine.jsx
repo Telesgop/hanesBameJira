@@ -12,11 +12,16 @@ import { motion } from "framer-motion";
 const SixToNine = () => {
   const { lang, setLang } = useContext(LanguageContext);
   const [query, setQuery] = useState("");
+  document.body.style = "background: #CFE57D;";
 
   return (
     <>
       <div className="ageRange">
-        <h2 className="ageRangeh2">{lang !== true ? "Green" : "Gwyrdd"}</h2>
+        <h2 className="ageRangeh2">
+          {lang !== true
+            ? "Progression Step 2"
+            : "NOT DEVELOPED - DO NOT TRIAL"}
+        </h2>
       </div>
       <div className="searchbar">
         <input

@@ -46,34 +46,45 @@ const Navbar = () => {
         <Link to={"/3to6yo"}>
           <motion.div
             className="categoryBut"
-            style={{ "background-color": "#FFCB77" }}
+            style={{ "background-color": "#FFCB77", color: "#f2f2f2" }}
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
-          ></motion.div>
+          >
+            {lang ? "CC1" : "PS1"}
+          </motion.div>
         </Link>
         <Link to={"/6to9yo"}>
           <motion.div
             className="categoryBut"
-            style={{ "background-color": "#CFE57D" }}
+            style={{ "background-color": "#CFE57D", color: "#f2f2f2" }}
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
-          ></motion.div>
+          >
+            {" "}
+            {lang ? "CC2" : "PS2"}
+          </motion.div>
         </Link>
         <Link to={"/9to12yo"}>
           <motion.div
             className="categoryBut"
-            style={{ "background-color": "#A2D6F9" }}
+            style={{ "background-color": "#A2D6F9", color: "#f2f2f2" }}
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
-          ></motion.div>
+          >
+            {" "}
+            {lang ? "CC3" : "PS3"}
+          </motion.div>
         </Link>
         <Link to={"/12to16yo"}>
           <motion.div
             className="categoryBut"
-            style={{ "background-color": "#FF686B" }}
+            style={{ "background-color": "#FF686B", color: "#f2f2f2" }}
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
-          ></motion.div>
+          >
+            {" "}
+            {lang ? "CC4" : "PS4"}
+          </motion.div>
         </Link>
       </div>
       <Link to={"/"}>
@@ -143,16 +154,7 @@ const Navbar = () => {
                 {lang ? "Mynegai" : "Index"}
               </motion.h2>
             </Link>
-            <Link to={"/Quiz"}>
-              <motion.h2
-                className="notesH2"
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={() => setIsOpen(false)}
-              >
-                {lang ? "Cwis" : "Quizzes"}
-              </motion.h2>
-            </Link>
+
             <Link to={"/Resources"}>
               <motion.h2
                 className="notesH2"

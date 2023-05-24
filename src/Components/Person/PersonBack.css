@@ -5,6 +5,7 @@
   margin-top: 3vh;
   flex-direction: column;
   align-items: center;
+  font-family: sassoon;
 }
 .imgBox {
   display: flex;
@@ -15,6 +16,7 @@
 }
 .personInfo {
   display: grid;
+  font-family: sassoon;
   grid-template-columns: auto auto;
   background-color: white;
   /* border: 2px solid black; */
@@ -34,6 +36,7 @@
   width: 75vw;
   z-index: 9;
   align-items: center;
+  font-family: sassoon;
   padding: 10px;
   justify-content: center;
 }
@@ -45,6 +48,7 @@
   font-size: larger;
   width: 20vw;
   margin-bottom: 0;
+  font-family: sassoon;
 }
 
 .blob1 {

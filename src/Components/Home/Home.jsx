@@ -8,6 +8,8 @@ import map from "../../Images/map.png";
 import Copyright from "../Copyright/Copyright";
 
 const Home = () => {
+  document.body.style = "background: #f2f2f2;";
+
   const { lang, setLang } = useContext(LanguageContext);
   const introParaEng = (
     <>

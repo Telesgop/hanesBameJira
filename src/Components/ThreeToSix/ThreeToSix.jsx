@@ -10,11 +10,16 @@ import StoryBoxAnim from "../StoryBoxAnim/StoryBoxAnim";
 const ThreeToSix = () => {
   const { lang, setLang } = useContext(LanguageContext);
   const [query, setQuery] = useState("");
+  document.body.style = "background: #FFCB77;";
 
   return (
     <>
       <div className="ageRange">
-        <h2 className="ageRangeh2">{lang !== true ? "Yellow" : "Melyn"}</h2>
+        <h2 className="ageRangeh2">
+          {lang !== true
+            ? "Progression Step 1"
+            : "NOT DEVELOPED - DO NOT TRIAL"}
+        </h2>
       </div>
       {/* <div className="searchbar">
         <input
