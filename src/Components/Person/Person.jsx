@@ -19,6 +19,7 @@ const Person = ({
   slugText,
   welshSlugText,
   resource,
+  resourceOverlay,
   dateOfBirth,
   proposedResource,
   backLContent,
@@ -67,14 +68,17 @@ const Person = ({
         {slide === 0 && (
           <>
             <motion.div
-              className="prevnext"
+              className="prevnextblocked"
               variants={prevnextbuttons}
               transition={{ delay: 5 }}
               // initial="hidden"
               // animate="visible"
             >
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-                <HiArrowCircleLeft className="prevnextBlocked" />
+                <HiArrowCircleLeft
+                  className="prevnextblocked"
+                  style={{ display: "none" }}
+                />
               </motion.div>
             </motion.div>
             <motion.div
@@ -131,7 +135,7 @@ const Person = ({
               }
             >
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-                <HiArrowCircleRight className="prevnext" />
+                <HiArrowCircleRight className="prevnextpulse" />
               </motion.div>
             </motion.div>
           </>
@@ -157,7 +161,7 @@ const Person = ({
               }
             >
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-                <HiArrowCircleLeft className="prevnext" />
+                <HiArrowCircleLeft className="prevnextpulse" />
               </motion.div>
             </motion.div>
             <div
@@ -186,6 +190,7 @@ const Person = ({
                     </a>
                     {lang !== true ? backLContent : backLContentCym}
                   </div>
+                  <div className="overlayUnderText">{resourceOverlay}</div>
                 </div>
                 <div className="backRight">
                   <p className="backRightP">
@@ -209,6 +214,9 @@ const Person = ({
             </motion.div>
           </>
         )}
+      </div>
+      <div className="backToSection">
+        <div className="backToButton">Back to PS..</div>
       </div>
     </>
   );

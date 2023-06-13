@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hanesbame/static/css/main.22b1b3cf.css",
-    "main.js": "/hanesbame/static/js/main.4fd9ae06.js",
+    "main.css": "/hanesbame/static/css/main.b403dfcc.css",
+    "main.js": "/hanesbame/static/js/main.c221edcf.js",
     "static/media/theoEng.mp3": "/hanesbame/static/media/theoEng.19ea092d84b338b8c607.mp3",
     "static/media/theoCym.mp3": "/hanesbame/static/media/theoCym.cb6575fedce401b5d77a.mp3",
     "static/media/emilyEng.mp3": "/hanesbame/static/media/emilyEng.d5413163c9dab3d62e35.mp3",
@@ -14,6 +14,7 @@
     "static/media/map.png": "/hanesbame/static/media/map.7099df32dbc47a082325.png",
     "static/media/colin.png": "/hanesbame/static/media/colin.b11fe325b2cfc9796314.png",
     "static/media/asstrip.png": "/hanesbame/static/media/asstrip.4bda85a132abfea32002.png",
+    "static/media/windrush.png": "/hanesbame/static/media/windrush.8cc100edd6017a001667.png",
     "static/media/postcard.png": "/hanesbame/static/media/postcard.dc6c2ba660864a2513ab.png",
     "static/media/italianDragon.png": "/hanesbame/static/media/italianDragon.1e9e7d5ae316bb187b4d.png",
     "static/media/readallaboutit.png": "/hanesbame/static/media/readallaboutit.a4f918a7ebedae4b759c.png",
@@ -22,6 +23,7 @@
     "static/media/SpaceGrotesk-Regular.ttf": "/hanesbame/static/media/SpaceGrotesk-Regular.67fa42510e26f5d4733d.ttf",
     "static/media/hans.png": "/hanesbame/static/media/hans.852b68df70e523f19801.png",
     "static/media/vg.png": "/hanesbame/static/media/vg.6f8dc65945b3cd160cad.png",
+    "static/media/louisa.png": "/hanesbame/static/media/louisa.05e061c77e7d3b25e530.png",
     "static/media/idrisBio.png": "/hanesbame/static/media/idrisBio.9b8582379aef72da7184.png",
     "static/media/clive.png": "/hanesbame/static/media/clive.4a251ae4c03ca4016022.png",
     "static/media/diary.png": "/hanesbame/static/media/diary.7d5fa866dd3a5f9bdadd.png",
@@ -29,11 +31,11 @@
     "static/media/vipPass.png": "/hanesbame/static/media/vipPass.8f639e5506d722b61c2c.png",
     "static/media/wgLogo.png": "/hanesbame/static/media/wgLogo.06fdf6239de01cc1ef2d.png",
     "index.html": "/hanesbame/index.html",
-    "main.22b1b3cf.css.map": "/hanesbame/static/css/main.22b1b3cf.css.map",
-    "main.4fd9ae06.js.map": "/hanesbame/static/js/main.4fd9ae06.js.map"
+    "main.b403dfcc.css.map": "/hanesbame/static/css/main.b403dfcc.css.map",
+    "main.c221edcf.js.map": "/hanesbame/static/js/main.c221edcf.js.map"
   },
   "entrypoints": [
-    "static/css/main.22b1b3cf.css",
-    "static/js/main.4fd9ae06.js"
+    "static/css/main.b403dfcc.css",
+    "static/js/main.c221edcf.js"
   ]
 }

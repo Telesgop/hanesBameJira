@@ -10,9 +10,11 @@ import newspaper from "./Images/readallaboutit.png";
 import italianDragon from "./Images/italianDragon.png";
 import hans from "./Images/hans.png";
 import colin from "./Images/colin.png";
+import windrush from "./Images/windrush.png";
 import vg from "./Images/vg.png";
 import idris from "./Images/idrisBio.png";
 import clive from "./Images/clive.png";
+import louisa from "./Images/louisa.png";
 import vip from "./Images/vipPass.png";
 import castle from "./Images/castle.png";
 import diary from "./Images/diary.png";
@@ -107,8 +109,14 @@ function App() {
             path="6to9yo/Resources/IdrisPhillips"
             element={<IdrisPhillips />}
           ></Route>
-          <Route path="/Resources/LouisaBiog" element={<LouisaBiog />}></Route>
-          <Route path="/Resources/Windrush" element={<Windrush />}></Route>
+          <Route
+            path="9to12yo/Resources/Louisa"
+            element={<LouisaBiog />}
+          ></Route>
+          <Route
+            path="6to9yo/Resources/Windrush"
+            element={<Windrush />}
+          ></Route>
           <Route
             path="/6to9yo/Resources/LennLawrence"
             element={<LennLawrence />}
@@ -161,6 +169,9 @@ function App() {
                 }
                 quizButStyle={"showQuizBut"}
                 indivName={"Richard Parks"}
+                backLContent={
+                  "The experiences of Gerallt Wyn Jones in North Wales"
+                }
                 quizButtonText={"Try the quiz!"}
                 linkQuiz={
                   "https://dev.addysgop.co.uk/hanesbame/RichardParksQuiz"
@@ -170,48 +181,101 @@ function App() {
                   <ul>
                     <li className="linkLi">
                       <a
+                        href="https://www.gov.wales/st-david-awards/richard-parks "
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Clip explaining his nomination for St David's award{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/news/wales-news/richard-parks-antarctic-fatherhood-dad-17659218"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        An article about his adventures and his family{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.itv.com/news/wales/2022-03-14/the-pandemic-made-me-question-my-identity-and-my-value-to-the-world"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        An article on Richard Park's identity{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
                         href="https://www.richardparks.co.uk/"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Richard Parks Official Site
-                      </a>
-                    </li>
-                    <li className="linkLi">
-                      <a
-                        href="https://www.youtube.com/watch?v=5bcC14ay-iY"
-                        className="resourceHref"
-                        target="_blank"
-                      >
-                        Mind Over Mountain | Richard Parks on Mount Everest
-                      </a>
-                    </li>
-                    <li className="linkLi">
-                      <a
-                        href="https://www.youtube.com/watch?v=9COyDnyB_ag"
-                        className="resourceHref"
-                        target="_blank"
-                      >
-                        Richard Parks - Welsh Sports Hall of Fame
-                      </a>
-                    </li>
-                    <li className="linkLi">
-                      <a
-                        href="https://www.youtube.com/watch?v=0EjCPnLAn6I"
-                        className="resourceHref"
-                        target="_blank"
-                      >
-                        Richard Parks: The Big Interview
+                        Richard Parks official website{" "}
                       </a>
                     </li>
 
                     <li className="linkLi">
                       <a
-                        href="https://www.visitwales.com/things-do/adventure-and-activities/discover-richard-parks-epic-wales"
+                        href="https://www.richardparks.co.uk/team-quest-2020"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Richard Parks: Epic Welsh adventures
+                        Blog from his website discussing his skiing adventure in
+                        Antartica{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.llyw.cymru/gwobrau-dewi-sant/richard-parks"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Clip fideo yn esbonio ei enwebiad ar gyfer gwobr Dewi
+                        Sant{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/news/wales-news/richard-parks-antarctic-fatherhood-dad-17659218"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl am ei anturiaethau a'i deulu{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.itv.com/news/wales/2022-03-14/the-pandemic-made-me-question-my-identity-and-my-value-to-the-world"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl ar hunaniaeth Richard Parks{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.richardparks.co.uk/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Gwefan swyddogol Richard Parks{" "}
+                      </a>
+                    </li>
+
+                    <li className="linkLi">
+                      <a
+                        href="https://www.richardparks.co.uk/team-quest-2020"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Blog oddi ar ei wefan yn disgrifio ei antur sgio yn
+                        Antartica
                       </a>
                     </li>
                   </ul>
@@ -411,6 +475,88 @@ function App() {
             path="/12to16yo/NigelWalker"
             element={
               <Person
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/sport/rugby-union/57835005"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        BBC sports article on Nigel Walker's appointment as
+                        performance director{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.itv.com/news/wales/2022-04-05/welsh-sporting-great-nigel-walker-on-values-success-and-life-in-1970s-cardiff"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Nigel Walker speaks on racism
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/sport/rugby/rugby-news/nigel-walker-interview-ive-joined-21710769"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Nigel Walker on his involvement with the WRU{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/sport/rugby/rugby-news/nigel-walker-interview-cult-hero-14987772"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Interview with Nigel Walker (2018)
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/sport/rugby-union/57835005"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl BBC Sports am Nigel Walker yn cael ei benodi yn
+                        gyfarwyddwr perfformiadau
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.itv.com/news/wales/2022-04-05/welsh-sporting-great-nigel-walker-on-values-success-and-life-in-1970s-cardiff"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Nigel Walker yn rhannu ei farn ar hiliaeth{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/sport/rugby/rugby-news/nigel-walker-interview-ive-joined-21710769"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl Wales Online{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/sport/rugby/rugby-news/nigel-walker-interview-cult-hero-14987772"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Cyfweliad â Nigel Walker (2018)
+                      </a>
+                    </li>
+                  </ul>
+                }
                 resource={twelveApi.slice(1, 2)}
                 indivName={"Nigel Walker"}
                 indivNameCym={"Nigel Walker"}
@@ -469,7 +615,9 @@ function App() {
                     </li>
                   </ul>
                 }
-                backLContent={"Factfile and discussion topics."}
+                backLContent={
+                  "Factfile and discussion topics. NOT DEVELOPED YET"
+                }
                 welshText={
                   <ul>
                     <li>
@@ -545,21 +693,62 @@ function App() {
                   <ul>
                     <li className="linkLi">
                       <a
-                        href="https://www.bbc.co.uk/news/uk-wales-64717463"
+                        href="https://jomec.co.uk/thecardiffian/2020/01/28/glenn-webbe-why-laughter-can-be-best-weapon-against-abuse/"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Glenn Webbe: Black Welsh rugby star humbled by
-                        documentary
+                        Glenn Webbe on dealing with racism
                       </a>
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://www.bbc.co.uk/programmes/m001jhdl"
+                        href="https://www.walesonline.co.uk/sport/rugby/rugby-news/how-life-turned-out-glen-15213382"
                         className="resourceHref"
                         target="_blank"
                       >
-                        VIDEO - Glenn Webbe - Legends of Welsh Sport
+                        Wales Online article on Glen Webbe's career{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.wru.wales/2019/05/webbe-recalls-historic-world-cup-treble/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Article on Webbe as the first black player at the Rugby
+                        World Cup{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://jomec.co.uk/thecardiffian/2020/01/28/glenn-webbe-why-laughter-can-be-best-weapon-against-abuse/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Glenn Webbe yn son am ddelio â hiliaeth{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/sport/rugby/rugby-news/how-life-turned-out-glen-15213382"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl Wales Online ar yrfa Glen Webbe{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.wru.wales/2019/05/webbe-recalls-historic-world-cup-treble/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl am Webbe fel y chwaraewr du cyntaf yng Nghwpan
+                        Rygbi y Byd
                       </a>
                     </li>
                   </ul>
@@ -716,6 +905,9 @@ function App() {
             path="/9to12yo/PenrhynCastle"
             element={
               <Person
+                resourceOverlay={
+                  "Should you visit Penrhyn Castle? Argument for and against. (Item & Task)"
+                }
                 links={
                   <ul>
                     <li className="linkLi">
@@ -953,6 +1145,7 @@ function App() {
               <Person
                 backcardImg={hans}
                 bgcolor={"#A2D6F9"}
+                resourceOverlay={"Read an imaginary monologue. (Item & Task)"}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -1186,6 +1379,7 @@ function App() {
             path="/6to9yo/MerthyrSynagogue"
             element={
               <PersonYTVid
+                backLContent={"Learn more about synagogues "}
                 overlayText={
                   <h2>
                     Learn more about synagogues <FaVideo />
@@ -1202,15 +1396,23 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Merthyr Synagogue - Foundation for Jewish Heritage
+                        A description of the history of the synogogue{" "}
                       </a>
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://www.youtube.com/watch?v=5bcC14ay-iY"
+                        href="https://nation.cymru/news/merthyr-tydfil-synagogue-welsh-jewish-heritage-centre-lottery/"
                         className="resourceHref"
                       >
-                        Merthyr Synagogue History - Welsh Jewish Heritage Centre
+                        Article describing the project to preserve the building{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://jewishheritage.wales/"
+                        className="resourceHref"
+                      >
+                        Jewish Heritage page on the synogogue
                       </a>
                     </li>
                     <li className="linkLi">
@@ -1218,8 +1420,45 @@ function App() {
                         href="https://ahfund.org.uk/projects/former-merthyr-tydfil-synagogue/"
                         className="resourceHref"
                       >
-                        Saving and Restoring the Oldest Surviving Synagogue in
-                        Wales
+                        An article about Merthyr Synogoue from Jewish Heritage
+                        website.{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.foundationforjewishheritage.com/merthyr-tydfil"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Disgrifiad o hanes y synogog{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://nation.cymru/news/merthyr-tydfil-synagogue-welsh-jewish-heritage-centre-lottery/"
+                        className="resourceHref"
+                      >
+                        Erthygl yn son am y project i{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://jewishheritage.wales/"
+                        className="resourceHref"
+                      >
+                        Tudalen y 'Jewish heritage centre' ar y synogog{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://ahfund.org.uk/projects/former-merthyr-tydfil-synagogue/"
+                        className="resourceHref"
+                      >
+                        Erthygl am Synagog Merthyrar wefan 'Jewish Heritage'
                       </a>
                     </li>
                   </ul>
@@ -1336,6 +1575,9 @@ function App() {
             element={
               <Person
                 backcardImg={newspaper}
+                resourceOverlay={
+                  "Read an imaginary newpaper article about Lenn Lawrence saving Swansea. (Item & Task)"
+                }
                 links={
                   <ul>
                     <li className="linkLi">
@@ -1344,17 +1586,57 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Windrush: How Lenn Lawrence stopped Swansea from
-                        flooding
+                        How Lenn Lawrence stopped Swansea from flooding{" "}
                       </a>
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://www.peoplescollection.wales/items/965656"
+                        href="https://www.walesonline.co.uk/news/wales-news/brilliant-black-welsh-celebration-100-15173754"
                         className="resourceHref"
                         target="_blank"
                       >
-                        An Interview with Lenn Lawrence
+                        Top 100 influential Black Welsh people - Lenn is No.39{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.peoplescollection.wales/sites/default/files/documents/The_Windrush_Project_booklet.pdf"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Windrush generation information including Lenn Lawrence{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/news/uk-wales-44525608"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Sut lwyddodd Lenn Lawrence achub Abertawe rhag boddi{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/news/wales-news/brilliant-black-welsh-celebration-100-15173754"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        100 person du Cymraeg fwyaf dylanwadol - Lenn yw rhif 39{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.peoplescollection.wales/sites/default/files/documents/The_Windrush_Project_booklet.pdf"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Gwybodaeth ar y genhedlaeth Windrush gan gynnwys Lenn
+                        Lawrence{" "}
                       </a>
                     </li>
                   </ul>
@@ -1422,6 +1704,61 @@ function App() {
                     </li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>
+                      Daeth Lenn Lawrence i Gymru o Jamaica, yn rhan o
+                      genhedlaeth Windrush yn 1960 pan oedd yn 24 oed.
+                    </li>
+                    <li>
+                      Roedd yn rhaid iddo gymryd gwaith oedd yn talu'n wael fel
+                      adeiladwr, i ddechrau, ac arbenigodd ar goncrit.
+                    </li>
+                    <li>
+                      Un diwrnod, roedd twll yn un o’r giatiau clo yn nociau
+                      Abertawe, felly roedd perygl y byddai dŵr yn llifo dros y
+                      ddinas. Roedd yn rhaid i Lenn weithio'n galed i'w lenwi â
+                      choncrit, mewn ras yn erbyn y llanw!
+                    </li>
+                    <li>
+                      Helpodd Lenn i adeiladu traffordd yr M4, y doc dŵr dwfn ar
+                      gyfer Marple Ridgeway, canol tref Port Talbot, pont
+                      Pontdrefen a llawer o fannau eraill.
+                    </li>
+                    <li>
+                      Fe oedd y saer a'r fforman du cyntaf ar gyfer Corfforaeth
+                      Dur Prydain yng Nghastell-nedd Port Talbot.
+                    </li>
+                    <li>
+                      Roedd hi'n anodd bod yn lleiafrif ethnig yng Nghymru yn
+                      1962, felly dechreuodd Lenn ac aelodau eraill o'r gymuned
+                      Gymdeithas Cyfeillgarwch y Caribî. Gyda'i gilydd, cawson
+                      nhw gyfarfodydd gyda'r heddlu, cynghorwyr ac asiantaethau
+                      eraill.
+                    </li>
+                    <li>
+                      Doedd dim llawer o arian gan Gymdeithas Cyfeillgarwch y
+                      Caribî, felly defnyddiodd Lenn a'r aelodau eraill eu
+                      harian eu hunain i drefnu cyfarfodydd yn nhai ei gilydd,
+                      mewn sied yng nghefn Ffordd Corporation neu yn nhafarn y
+                      Talbot.
+                    </li>
+                    <li>
+                      Yn 1981, symudodd Cymdeithas Cyfeillgarwch y Caribî i
+                      Abertawe. Daliodd i fynd tan 1992, pan newidiodd ei henw i
+                      Gyngor Cydraddoldeb Rhanbarthol Bae Abertawe.
+                    </li>
+                    <li>
+                      Heddiw, mae'r Cyngor yn dal i weithio er mwyn
+                      gwerthfawrogi hawliau pobl.
+                    </li>
+                    <li>
+                      Oherwydd bod Lenn Lawrence yn benderfynol ac yn credu mewn
+                      trin pobl yn deg, roedd llawer o bobl yn ei barchu am
+                      weithio'n galed ac am hybu hawliau pobl.
+                    </li>
+                  </ul>
+                }
               ></Person>
             }
           ></Route>
@@ -1429,6 +1766,60 @@ function App() {
             path="/6to9yo/TeleriGray"
             element={
               <PersonYTVid
+                backLContent={"Learn more about the Romani Gypsies way of life"}
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.flickr.com/photos/134286418@N02/22408268685"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Information about Teleri Gray{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/lifestyle/showbiz/history-month-challenges-stereotype-gypsies-2029120"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Article on racial stereotyping of travellers{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.flickr.com/photos/134286418@N02/22408268685"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Gwybodaeth am Teleri Gray{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/lifestyle/showbiz/history-month-challenges-stereotype-gypsies-2029120"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erhygl am stereoteipio hiliol yn erbyn teithwyr{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/cymrufyw/29667652"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl am ei theulu{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
                 welshSlugText={"Y storïwr Romani."}
                 overlayText={
                   <h2>
@@ -1501,6 +1892,63 @@ function App() {
                     </p>
                   </>
                 }
+                welshText={
+                  <>
+                    <ul>
+                      <li>
+                        Mae Teleri Gray yn storïwraig Romani ac mae hi'n helpu
+                        pobl i gofio ac i gadw hanes y Teithwyr.
+                      </li>
+                      <li>
+                        Mae Teleri'n sôn am sut mae bywyd i blant a theuluoedd
+                        Teithwyr heddiw.
+                      </li>
+
+                      <li>
+                        Mae bywyd yn gallu bod yn anodd iawn i'r Romani.
+                        Weithiau dydy cymunedau ddim yn rhoi croeso iddyn nhw
+                        oherwydd bod llawer o bethau anghywir yn cael eu dweud
+                        amdanyn nhw. Hefyd, dydy pobl ddim yn deall y ffordd
+                        maen nhw'n dewis byw.
+                      </li>
+                      <li>
+                        Mae sipsiwn yn byw yng Nghymru ers dros 400 mlynedd.{" "}
+                      </li>
+
+                      <li>
+                        Mae gan y gymuned Romani ddiwylliant cyfoethog, hardd,
+                        ac mae wedi rhoi llawer i Gymru fod yn falch ohono.
+                      </li>
+                      <li>
+                        Maen nhw'n hoff iawn o greu cerddoriaeth, ysgrifennu
+                        barddoniaeth, adrodd storïau a dawnsio.
+                      </li>
+                      <li>
+                        Roedd cyndeidiau Teleri yn gerddorion Romani enwog.
+                        Roedd ei thad-cu, ei hen dad-cu a'i hen hen dad-cu yn
+                        canu'r delyn. Telynor Cymru oedd yr enw ar John Roberts,
+                        hen hen dad-cu Teleri. Roedden nhw'n gerddorion enwog,
+                        felly roedden nhw'n arfer teithio i bob rhan o Gymru.
+                        Roedden nhw'n perfformio yng nghartrefi pobl gyfoethog.
+                      </li>
+                      <li>
+                        Teleri a'i chwaer yw'r unig ddwy athrawes sy'n sipsiwn
+                        yng Nghymru.
+                      </li>
+                      <li>
+                        Heddiw mae tua 1092 o garafanau teithwyr yng Nghymru.{" "}
+                      </li>
+                      <li>Mae gan Gymru tua 136 o safleoedd i deithwyr. </li>
+                    </ul>
+                    <p>
+                      {" "}
+                      Mae pobl yn anghofio llawer o arferion a thraddodiadau'r
+                      Romani.
+                      <br /> Mae pobl yn casglu atgofion a dogfennau nawr er
+                      mwyn cadw eu diwylliant nhw.
+                    </p>
+                  </>
+                }
               ></PersonYTVid>
             }
           ></Route>
@@ -1508,27 +1956,51 @@ function App() {
             path="/6to9yo/FongSui"
             element={
               <Person
+                resourceOverlay={
+                  "Read the imaginary diary of Fong Sui. (Item & Task)"
+                }
                 welshSlugText={"Y Tsïeiniaid yng Nghymru."}
                 linkResource={"Diaries/FongSui"}
                 links={
                   <ul>
                     <li className="linkLi">
                       <a
-                        href="https://chineseinwales.org.uk/our-community/"
+                        href="https://www.walesonline.co.uk/news/wales-news/new-project-reveals-tales-how-6289299"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Chinese In Wales Organisation
+                        Article describing Fong Sui's migration to Swansea{" "}
                       </a>
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://www.huckmag.com/art-and-culture/growing-up-behind-the-counter-of-a-chinese-takeaway-in-wales/"
+                        href="https://chineseinwales.org.uk/our-community/"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Growing up behind the counter of a Chinese takeaway in
-                        Wales
+                        Chinese in Wales website
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/news/wales-news/new-project-reveals-tales-how-6289299"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl yn disgrifio mudiad Fong Sui i Abertawe{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://chineseinwales.org.uk/our-community/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Gwefan 'Chinese in Wales'{" "}
                       </a>
                     </li>
                   </ul>
@@ -1597,6 +2069,53 @@ function App() {
                     </p>
                   </>
                 }
+                welshText={
+                  <>
+                    <ul>
+                      <li>
+                        Daeth llawer o'r Tsieineaid hŷn sy'n byw yng Nghymru
+                        nawr i'n gwlad ni pan oedden nhw'n blant ac oedolion
+                        ifanc yn ystod y 1940au a'r 1970au.
+                      </li>
+                      <li>
+                        Penderfynodd llawer o'r Tsieineaid agor bwytai
+                        Tsieineaidd a gweithio ynddyn nhw. Agorodd rhai eraill
+                        eu golchdai eu hunain.
+                      </li>
+                      <li>
+                        Daeth Fong Sui i Gymru o'i phentref yn China gyda'i gŵr,
+                        Chi Mau Chin.
+                      </li>
+                      <li>
+                        Roedd bywyd yn anodd iawn pan gyrhaeddodd Fong Sui.{" "}
+                      </li>
+                      <li>
+                        Cafodd hi ei rhoi mewn golchdy, roedd hi'n cael un pryd
+                        o fwyd y dydd yn unig ac roedd hi'n smwddio 100 o
+                        ddillad bob shifft. Roedd hi'n aml yn llosgi ei hun.
+                      </li>
+                      <li>
+                        Pan oedd hi'n 18 oed, symudodd hi gyda'i gŵr i Abertawe
+                        i redeg golchdy, un o'r golchdai Tsieineaidd cyntaf yn
+                        Abertawe!
+                      </li>
+                      <li>Hefyd, agoron nhw fwyty newydd sbon. </li>
+                      <li>
+                        Roedd Fong Sui yn gweithio yn y golchdy yn ystod y dydd,
+                        roedd hi'n gweithio yn y bwyty ddwy noson yr wythnos, a
+                        magodd hi bedwar o blant.
+                      </li>
+                      <li>Nawr mae Fong Sui yn fam-gu i saith o blant. </li>
+                    </ul>
+                    <p>
+                      Mae stori Fong Sui yn debyg iawn i stori llawer o ferched
+                      ifanc o Tsieina a gyrhaeddodd Gymru yn ystod canol yr
+                      20fed ganrif. Roedd bywyd yn anodd iawn ond gweithion
+                      nhw'n galed iawn a gwnaethon nhw wahaniaeth mawr yng
+                      Nghymru.
+                    </p>
+                  </>
+                }
               ></Person>
             }
           ></Route>
@@ -1604,44 +2123,87 @@ function App() {
             path="/6to9yo/ArandoraStar"
             element={
               <Person
+                resourceOverlay={
+                  "Read a cartoon about the fate of the SS Arandora Star. (Item & Task)"
+                }
                 links={
                   <ul>
-                    <li className="linkLi">
-                      <a
-                        href="https://www.liverpoolmuseums.org.uk/stories/maritime-tales-tragedy-of-arandora-star"
-                        className="resourceHref"
-                        target="_blank"
-                      >
-                        The Tragedy of the Arandora Star - National Museums
-                        Liverpool
-                      </a>
-                    </li>
-                    <li className="linkLi">
-                      <a
-                        href="https://www.warthmillsproject.com/stories/tragedy-of-the-arandora-star/"
-                        className="resourceHref"
-                        target="_blank"
-                      >
-                        The Tragedy of the SS Arandora Star - The Warth Mills
-                        Project
-                      </a>
-                    </li>
                     <li className="linkLi">
                       <a
                         href="https://www.cardiffcathedral.org.uk/remembering-the-arandora-star/"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Remembering the Arandora Star - Cardiff Cathedral
+                        Cardiff Cathedral remembering the Arandora Star
                       </a>
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://arandorastar.online/"
+                        href="https://www.youtube.com/watch?v=RcLcQbViMvY"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Arandora Star Online
+                        ITV news report of Arandora Star remembrance
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=occyQT7LvI4"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        BBC correpondent traces his reports on Arandora Star -
+                        his grandfather was amongst the victims{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/news/10485955"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        BBC article commemorating 70th anniversary of tragedy{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.cardiffcathedral.org.uk/remembering-the-arandora-star/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Cadeirlan Caerdydd yn cofio yr 'Arandora Star'{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=RcLcQbViMvY"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Adroddiad newyddion am goffadwriaeth yr Arandora Star{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=occyQT7LvI4"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Darlledydd y BBC yn adrodd ar ei gyswllt personol i'r
+                        Arandora Star
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/news/10485955"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl BBC yn cofio 70 mlynedd ers y digwyddiad{" "}
                       </a>
                     </li>
                   </ul>
@@ -1711,6 +2273,69 @@ function App() {
                     <li>This was a dreadful tragedy.</li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>
+                      Cafodd yr SS Arandora Star ei hadeiladu i fod yn llong
+                      bleser.{" "}
+                    </li>
+                    <li>
+                      Yn ystod yr Ail Ryfel Byd, cafodd ei pheintio'n llwyd a
+                      chafodd hi ddrylliau hefyd. Wedyn cafodd yr Arandora Star
+                      ei defnyddio i gario milwyr.
+                    </li>
+                    <li>
+                      Ar ei thaith olaf, yn 1940, roedd y llong yn cario
+                      carcharorion rhyfel i wersylloedd yng Nghanada.
+                    </li>
+                    <li>
+                      Roedd 734 o'r dynion ar ei bwrdd yn Gymry o dras
+                      Eidalaidd.{" "}
+                    </li>
+                    <li>
+                      Dywedodd llywodraeth Prydain mai “gelynion” oedd y dynion
+                      Eidalaidd hyn er bod eu teuluoedd wedi symud i Gymru
+                      ddegawdau cyn i'r rhyfel ddechrau!
+                    </li>
+                    <li>
+                      Hefyd roedd y llong yn cario gormod o deithwyr – roedd
+                      1678 o ddynion ar ei bwrdd ond dim ond 500 oedd i fod
+                      arni!
+                    </li>
+                    <li>
+                      Ar 2 Gorffennaf 1940, dim ond diwrnod ar ôl gadael, tarodd
+                      torpedo Almaenig long yr Arandora Star.
+                    </li>
+
+                    <li>
+                      Roedd y llong dafliad carreg o arfordir Iwerddon ar y
+                      pryd.
+                    </li>
+
+                    <li>
+                      Doedd y llong ddim yn dangos symbol y Groes Goch
+                      Ryngwladol. Byddai’r symbol wedi dweud wrth longau eraill
+                      ei bod hi'n cario sifiliaid ar ei bwrdd, ac felly na
+                      ddylai neb saethu tuag ati.
+                    </li>
+
+                    <li>
+                      Suddodd y llong cyn pen munudau a chafodd dros 800 o
+                      fywydau eu colli.
+                    </li>
+
+                    <li>Gwnaeth 53 o Gymry o dras Eidalaidd farw. </li>
+
+                    <li>
+                      Roedd hi'n amhosibl cyrraedd badau achub a allai fod wedi
+                      achub rhai o'r dynion oherwydd bod weiars trwm o'u cwmpas
+                      nhw. Hefyd, cododd problemau mawr oherwydd y weiren bigog
+                      dros y dec.
+                    </li>
+
+                    <li>Roedd yn drychineb ofnadwy. </li>
+                  </ul>
+                }
               ></Person>
             }
           ></Route>
@@ -1718,6 +2343,107 @@ function App() {
             path="/6to9yo/320Battalion"
             element={
               <Person
+                resourceOverlay={
+                  "Read the letter from Rosie to the mother of Wilson Monk. (Item & Task)"
+                }
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="http://www.spanglefish.com/welshblackhistorystories/index.asp?pageid=711844"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Website about the 320th Barrage Batallion{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://cadw.gov.wales/learn/wales-rich-and-diverse-heritage/creative-responses/320th-barrage-balloon-battalion-1944"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Gov.wales blog about the 320th Barrage Batallion{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="http://www.lindahervieux.com/the-320th-blog/tag/320th+Barrage+Balloon+Battalion"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Info about specific members of the batallion
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.army.mil/article/119639/all_black_balloon_unit_served_with_distinction_on_d_day"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Description of the role of 320th batallion on D-Day{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=-9dkEg8k2pk&t=7s"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Song dedicated to the 320th Barrage Batallion{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="http://www.spanglefish.com/welshblackhistorystories/index.asp?pageid=711844"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Gwefan am y 320fed Bataliwn{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://cadw.llyw.cymru/dysgu/treftadaeth-gyfoethog-ac-amrywiol-cymru/ymatebion-creadigol/320th-barrage-balloon-battalion?_gl=1*v3p5au*_ga*MjA2MDE1MzAzMy4xNjgzNjIyMzk3*_ga_B2BCVKM874*MTY4MzYyMjM5Ny4xLjAuMTY4MzYyMjM5Ny42MC4wLjA."
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Blog gan Llywodraeth Cymru am y bataliwn{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="http://www.lindahervieux.com/the-320th-blog/tag/320th+Barrage+Balloon+Battalion"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Gwybodaeth am unigolion penodol ymysg y bataliwn{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.army.mil/article/119639/all_black_balloon_unit_served_with_distinction_on_d_day"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Disgrifiad o rôl hanfodol y bataliwn ar 'D-Day'{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=Sv9msqoXA8Y"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Can a ysgrifennnwyd I gofio am y 320fed bataliwn{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
                 welshSlugText={"Yr Americanwyr gafodd groeso yng Nghymru."}
                 indivName={"320th Barrage Balloon Battalion "}
                 indivNameCym={"320th Barrage Balloon Battalion "}
@@ -1784,6 +2510,60 @@ function App() {
                     </li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>
+                      Yn ystod yr Ail Ryfel Byd, daeth 320fed Bataliwn “Barrage
+                      Balloon”, uned o 621 o ddynion o Fyddin UDA, i Bont-y-pŵl.
+                    </li>
+                    <li>Roedd y dynion i gyd yn Americanwyr Affricanaidd. </li>
+                    <li>
+                      Roedden nhw'n rhan o'r 130,000 o filwyr du UDA a ddaeth i
+                      Brydain pan oedd angen helpu i ymladd yn erbyn yr Almaen
+                      yn y rhyfel.
+                    </li>
+                    <li>
+                      Gwaith 320fed Bataliwn “Barrage Balloon” oedd codi balwnau
+                      heliwm dros y traethau lle roedd milwyr yn glanio er mwyn
+                      atal awyrennau'r Almaen rhag hedfan dros y traethau.
+                    </li>
+                    <li>
+                      Ar y pryd, roedd pobl ddu yn America yn cael eu trin yn
+                      wael. Doedden nhw ddim yn cael bwyta ac yfed yn yr un
+                      bwytai â phobl wyn.
+                    </li>
+                    <li>
+                      Gwelodd y dynion hyn fod Cymru yn wlad wahanol iawn i
+                      America, ac roedden nhw'n falch iawn o gael croeso cynnes.
+                    </li>
+                    <li>
+                      Roedd agweddau pobl Cymru'n wahanol iawn i agweddau pobl
+                      America o ran sut roedd pobl Cymru'n trin pobl ddu. Cafodd
+                      y milwyr du eu croesawu i gartrefi yng Nghymru.
+                    </li>
+                    <li>
+                      Roedd Wilson Caldwell Monk yn un o'r 320fed Bataliwn a
+                      gafodd groeso yng Nghymru.
+                    </li>
+                    <li>
+                      Cyn ymuno â'r fyddin, roedd wedi bod yn gwneud llawer o
+                      swyddi ac roedd yn gweithio drwy'r dydd. Roedd yn glanhau
+                      lloriau, yn mynd â meddyginiaeth at gleifion, yn gwerthu
+                      ‘salt-water taffy’ ac yn gweithio fel gweinydd mewn bwytai
+                      lle na fyddai e fel dyn du byth yn cael bwyta.
+                    </li>
+                    <li>
+                      Pan deithiodd Wilson Monk i Gymru, daeth i adnabod pobl
+                      fel Jessie Prior. Gofalodd hi am Monk fel tasai'n fab
+                      iddi, ac ysgrifennodd hi at fam Wilson i ddweud ei bod
+                      hi'n gofalu amdano yng Nghymru.
+                    </li>
+                    <li>
+                      Oherwydd pobl Cymru, dysgodd Monk nad oedd pawb yn trin
+                      pobl ddu'n wael.
+                    </li>
+                  </ul>
+                }
               ></Person>
             }
           ></Route>
@@ -1791,26 +2571,51 @@ function App() {
             path="/6to9yo/ShirleyBassey"
             element={
               <Person
+                resourceOverlay={
+                  "Read a short story about Megan meeting Shirley Bassey. (Item & Task)"
+                }
                 bgcolor={"#CFE57D"}
                 welshSlugText={"Y gantores fyd-enwog o Tiger Bay."}
                 links={
                   <ul>
                     <li className="linkLi">
                       <a
-                        href="https://cardiffyouthcouncil.com/dame-shirley-bassey/"
+                        href="https://www.digitalspy.com/showbiz/10-things-about/a186168/ten-things-you-never-knew-about-shirley-bassey/"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Shirley Bassey - Cardiff Youth Council
+                        10 facts about Shirley Bassey{" "}
                       </a>
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://www.britannica.com/biography/Shirley-Bassey"
+                        href="https://www.thefamouspeople.com/profiles/dame-shirley-veronica-bassey-2850.php"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Shirley Bassey - Encyclopedia Britannica
+                        Brief biography of Shirley Bassey{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.digitalspy.com/showbiz/10-things-about/a186168/ten-things-you-never-knew-about-shirley-bassey/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        10 ffaith am Shirley Bassey{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.thefamouspeople.com/profiles/dame-shirley-veronica-bassey-2850.php"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Bywgraffiad byr am Shirley Bassey{" "}
                       </a>
                     </li>
                   </ul>
@@ -1893,6 +2698,76 @@ function App() {
                     </p>
                   </>
                 }
+                welshText={
+                  <>
+                    <ul>
+                      <li>
+                        Roedd Shirley Bassey yn un o'r diddanwyr du cyntaf o
+                        Brydain i ddod yn enwog ledled y byd.
+                      </li>
+                      <li>Cafodd hi ei geni yn Tiger Bay, Caerdydd yn 1937.</li>
+                      <li>
+                        Roedd ei thad o Nigeria ac roedd ei mam o ardal Teeside
+                        yng ngogledd Lloegr.
+                      </li>
+                      <li>Roedd hi'n dwlu ar ganu pan oedd hi'n blentyn. </li>
+                      <li>
+                        Ar ôl gadael yr ysgol pan oedd hi'n 15 oed, gweithiodd
+                        hi mewn ffatri.
+                      </li>
+                      <li>
+                        Roedd hi'n dal i ganu mewn clybiau gyda'r nos a daeth
+                        hi'n adnabyddus ar ôl sioe Nadolig yn Llundain yn 1955.
+                      </li>
+                      <li>
+                        Yn 1959, cyrhaeddodd ei chân 'As I Love You' rif 1 yn y
+                        siartiau. Y sengl rhif 1 gyntaf erioed gan artist o
+                        Gymru.
+                      </li>
+                      <li>
+                        Roedd hi'n boblogaidd dros y byd i gyd oherwydd ei llais
+                        pwerus.
+                      </li>
+                      <li>
+                        Daeth hi'n enwog am recordio'r caneuon thema i ffilmiau
+                        James Bond – Goldfinger, Diamonds Are Forever a
+                        Moonraker.
+                      </li>
+                      <li>
+                        Dros ei gyrfa hir, mae hi wedi cael 27 o ganeuon yn y 40
+                        uchaf yn y DU, gan gynnwys dwy gân yn cyrraedd rhif 1 ac
+                        mae hi wedi gwerthu dros 135 miliwn o recordiau.
+                      </li>
+                      <li>
+                        Yn 1999 cafodd y teitl 'Y Fonesig' am ei gwasanaeth i'r
+                        celfyddydau.
+                      </li>
+
+                      <li>
+                        Yn yr un flwyddyn, canodd hi yn seremoni agor adeilad y
+                        Senedd ym Mae Caerdydd.
+                      </li>
+                      <li>
+                        Mae hi'n enwog am steil ei dillad ac yng Ngŵyl
+                        Glastonbury yn 2007 perfformiodd hi mewn esgidiau glaw
+                        gyda diemwntau drostyn nhw i gyd!
+                      </li>
+                      <li>
+                        Hi oedd yr artist benywaidd cyntaf i gael albwm yn y
+                        siartiau dros 7 degawd.
+                      </li>
+                      <li>
+                        Rhyddhaodd hi ei halbwm diweddaraf "I Owe It All To You"
+                        yn 2020.
+                      </li>
+                    </ul>
+                    <p>
+                      Daeth y Fonesig Shirley Bassey o gefndir tlawd ond gydag
+                      ymroddiad a gwaith caled, daeth hi'n un o'r cantorion
+                      mwyaf enwog yn y byd.
+                    </p>
+                  </>
+                }
               ></Person>
             }
           ></Route>
@@ -1920,6 +2795,12 @@ function App() {
             path="/6to9yo/Windrush"
             element={
               <Person
+                bgcolor={"#CFE57D"}
+                linkResource={"Resources/Windrush"}
+                resourceOverlay={
+                  "Find out more about the Windrush Generation in this informational piece. (Item & Task)"
+                }
+                backcardImg={windrush}
                 welshSlugText={
                   "Y gweithwyr â  fu'n helpu ail-adeiladu Prydain."
                 }
@@ -1927,12 +2808,21 @@ function App() {
                   <ul>
                     <li className="linkLi">
                       <a
+                        href="https://www.youtube.com/watch?v=QFRRpw6Qu4Q"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Senedd Cymru educational video about Windrush generation
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
                         href="https://senedd.wales/visit/exhibitions/past-exhibitions/windrush-cymru-celebrating-the-lives-and-journeys-of-a-generation/"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Windrush Cymru: celebrating the lives and journeys of a
-                        generation
+                        A collection of individual stories about those from the
+                        Windrush Generation
                       </a>
                     </li>
                     <li className="linkLi">
@@ -1941,28 +2831,83 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Windrush Generation Wales - Race Council Cymru
+                        A description of the Windrush voyage itself{" "}
                       </a>
                     </li>
 
                     <li className="linkLi">
                       <a
-                        href="https://www.iwa.wales/agenda/2018/06/windrush-and-wales/?gclid=Cj0KCQjw2cWgBhDYARIsALggUhrSm8AiB_KvwqEG5ooZXtOM9uvG6JpyPwmZZDN68vShQiwGG_wUoQQaAkgzEALw_wcB"
+                        href="https://racecouncilcymru.org.uk/windrush-cymru-elders"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Windrush and Wales - Institute of Welsh Affairs
+                        The Windrush Cymru elders page{" "}
+                      </a>
+                    </li>
+
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=uzvjWIpFhQI"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Video on Windrush exhibition at Museum of Wales{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=QFRRpw6Qu4Q"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Fideo addysgiadol Senedd Cymru am y genhedlaeth Windrush{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://senedd.wales/visit/exhibitions/past-exhibitions/windrush-cymru-celebrating-the-lives-and-journeys-of-a-generation/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Casgliad o straeon gan aelodau o genhedlaeth Windrush
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://racecouncilcymru.org.uk/windrush-generation-wales"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Disgrifiad o'r daith Windrush{" "}
+                      </a>
+                    </li>
+
+                    <li className="linkLi">
+                      <a
+                        href="https://racecouncilcymru.org.uk/windrush-cymru-elders"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Tudalen y 'Windrush Elders'{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://racecouncilcymru.org.uk/windrush-cymru-elders"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Clip fideo am arddangosfa Windrush yn Amgueddfa Cymru{" "}
                       </a>
                     </li>
                   </ul>
                 }
                 indivName={"The Windrush Generation "}
                 indivNameCym={"Y Genhedlaeth Windrush"}
-                proposedResource={
-                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/Windrush">
-                    Who are the Windrush Generation?
-                  </a>
-                }
                 slugText={"The workers who helped rebuild Britain."}
                 resource={api.slice(10, 11)}
                 indivPic={
@@ -2023,6 +2968,63 @@ function App() {
                     </li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>
+                      Rhwng blynyddoedd 1948 ac 1971, daeth llawer o bobl i'r DU
+                      o wledydd y Caribî.
+                    </li>
+                    <li>
+                      Cawson nhw'r enw ‘Cenhedlaeth Windrush’ oherwydd enw'r
+                      llong gyntaf a ddaeth â nhw i Brydain oedd MV Empire
+                      Windrush.
+                    </li>
+                    <li>
+                      Roedden nhw wedi cael gwahoddiad gan Lywodraeth Prydain i
+                      fyw a gweithio yn y Deyrnas Unedig oherwydd bod dim digon
+                      o weithwyr yn y wlad ar ôl yr Ail Ryfel Byd.
+                    </li>
+                    <li>
+                      Roedd y teithwyr a ddaeth ar y Windrush wedi gadael eu
+                      ffrindiau a'u teulu gartref er mwyn helpu i ailadeiladu
+                      Prydain. Roedd rhai wedi ymladd ar ochr Prydain yn ystod y
+                      rhyfel.
+                    </li>
+                    <li>
+                      Dechreuodd llawer ohonyn nhw weithio yn y Gwasanaeth
+                      Iechyd Gwladol (y GIG) ac mewn sectorau eraill lle roedd
+                      problemau oherwydd bod dim digon o bobl i weithio.
+                    </li>
+                    <li>
+                      Gan fod Ynysoedd y Caribî yn rhan o'r Gymanwlad Brydeinig
+                      ar y pryd hwnnw, roedd y rhai a gyrhaeddodd yma yn
+                      ‘ddeiliaid Prydeinig’ yn awtomatig. Felly, roedden nhw'n
+                      cael byw a gweithio yn y DU yn barhaol.
+                    </li>
+                    <li>
+                      Dros y degawdau wedyn, daeth miloedd yn rhagor o bobl o'r
+                      Gymanwlad i Brydain a daeth llawer ohonyn nhw i fyw yng
+                      Nghymru.
+                    </li>
+                    <li>
+                      Roedden nhw'n aml yn gweld bod pobl yn eu trin nhw'n
+                      wahanol a'u bod nhw'n gas wrthyn nhw. Ond gwnaeth
+                      Cenhedlaeth Windrush gyfraniad gwerthfawr a pharhaol i
+                      fywyd yng Nghymru.
+                    </li>
+                    <li>
+                      Mae mudwyr o'r Caribî wedi dod yn rhan hanfodol o
+                      gymdeithas Cymru ac maen nhw wedi trawsnewid agweddau
+                      pwysig ar fywyd Cymru.
+                    </li>
+                    <li>
+                      Yn 2017 roedd sgandal pan gafodd cannoedd o bobl
+                      Cenhedlaeth Windrush wybod y byddai'n rhaid iddyn nhw
+                      adael y wlad oherwydd bod dim prawf ganddyn nhw eu bod
+                      nhw'n ddeiliaid Prydeinig.
+                    </li>
+                  </ul>
+                }
               ></Person>
             }
           ></Route>
@@ -2030,17 +3032,31 @@ function App() {
             path="/6to9yo/IdrisPhillips"
             element={
               <Person
+                resourceOverlay={
+                  "Read an imaginary biography of Idris Phillips. (Item & Task)"
+                }
                 welshSlugText={"Glowyr du yn cloddio am aur du."}
                 quizButStyle={"dontShowQuizBut"}
                 links={
                   <ul>
                     <li className="linkLi">
                       <a
+                        href="https://www.walesonline.co.uk/news/wales-news/mixed-race-working-mines-suspicion-16186636"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Wales Online article documenting Phillips's struggle
+                        being from the only mixed race family in his village{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
                         href="https://www.bbc.co.uk/programmes/p08t59ty"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Wales's Black Miners
+                        BBC's 'Wales's Black Miners' report speaks to the family
+                        of Idris Phillips{" "}
                       </a>
                     </li>
                     <li className="linkLi">
@@ -2049,7 +3065,58 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Idris Phillips’ Portrait at National Coal Mining Museum
+                        Portrait at National Coal Mining Museum
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/news/uk-wales-54390217"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        BBC article on the history of black coal miners in Wales{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/news/wales-news/mixed-race-working-mines-suspicion-16186636"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl yn trafod profiad Phillips fel yr unig deulu
+                        aml-ethnig yn ei bentref
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/programmes/p08t59ty"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Rhaglen ddogfen "Wales's Black Miner's" yn trafod bywyd
+                        Idris Phillips gyda'i deulu
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.visionfountain.com/2019/10/04/idris-phillips-portrait-at-national-coal-mining-museum/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Portread yn yr Amgueddfa Cloddio Glo Gwladol{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/news/uk-wales-54390217"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl am lowyr du yng Nghymru{" "}
                       </a>
                     </li>
                   </ul>
@@ -2112,6 +3179,63 @@ function App() {
                     </li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>
+                      Roedd Idris Phillips yn fab i forwr o St Lucia, ynys yn y
+                      Caribî, a menyw wen o Ferthyr Tudful.
+                    </li>
+                    <li>
+                      Cafodd ei eni ar ddechrau'r 1930au ac roedd ganddo 10
+                      brawd a chwaer.{" "}
+                    </li>
+                    <li>
+                      Dioddefodd Idris a'i deulu o hiliaeth ym mhentref bach
+                      Senghennydd lle roedden nhw'n byw ac roedd pobl yn arfer
+                      eu trin nhw'n wahanol oherwydd lliw eu croen.
+                    </li>
+                    <li>Nhw oedd yr unig deulu hil gymysg yn y pentref.</li>
+                    <li>
+                      Pan oedd Idris yn 14 oed, fel llawer o fechgyn eraill o'i
+                      oedran ar y pryd hwnnw, dechreuodd weithio yn y pyllau
+                      glo.
+                    </li>
+                    <li>
+                      Gweithiodd tua 200 o lowyr du fel glowyr yng Nghymru o'r
+                      1800au ymlaen.
+                    </li>
+                    <li>
+                      Gweithiodd glowyr Affricanaidd Caribïaidd fel Idris yn
+                      galed o dan ddaear gyda glowyr gwyn Prydeinig ac
+                      Ewropeaidd a glowyr Asiaidd, ond doedden nhw ddim yn cael
+                      eu trin yn gyfartal.
+                    </li>
+                    <li>
+                      Pan oedd Idris yn gweithio yng Nglofa Windsor, gwrthododd
+                      y rheolwr adael iddo weithio o dan ddaear, gan ddweud
+                      “byddai'r bechgyn yn mynd ar streic” tasai rhaid iddyn nhw
+                      weithio gydag e.
+                    </li>
+                    <li>
+                      Wynebodd Idris hiliaeth mewn mannau eraill hefyd, nid dim
+                      ond yn y pyllau glo. “Roedd plisman oedd bob amser yn
+                      rhedeg ata i ac yn fy mwrw â'i bastwn oherwydd nad oedd
+                      e'n hoffi pobl ddu,” meddai Idris.
+                    </li>
+                    <li>
+                      Y peth roedd Idris fwyaf balch ohono oedd yr help roddodd
+                      e wrth drefnu'r timau o lowyr adeg trychineb Aberfan.
+                      Roedd plant yr ysgol wedi'u claddu o dan ddaear a helpodd
+                      y glowyr i'w cael nhw allan.
+                    </li>
+                    <li>
+                      Mae stori Idris yn dangos, er bod bywyd yn gallu bod yn
+                      galed ac yn annheg, eich bod chi'n gallu cyflawni pethau
+                      mawr os ydych chi'n benderfynol.
+                    </li>
+                    <li>Yn anffodus, bu farw Idris yn ddiweddar o Covid.</li>
+                  </ul>
+                }
               ></Person>
             }
           ></Route>
@@ -2120,6 +3244,9 @@ function App() {
             element={
               <Person
                 bgcolor={"#A2D6F9"}
+                resourceOverlay={
+                  "An imaginary interview between Jason Mohammed and Colin Jackson. (Item & Task)"
+                }
                 links={
                   <ul>
                     <li className="linkLi">
@@ -2267,6 +3394,72 @@ function App() {
                     </li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>
+                      Cafodd Colin Jackson ei eni ar 18 Chwefror 1967, yng
+                      Nghaerdydd.{" "}
+                    </li>
+                    <li>
+                      Roedd Colin yn dda iawn am wneud chwaraeon. Roedd yn
+                      dalentog iawn mewn llawer o chwaraeon. Chwaraeodd
+                      bêl-droed a chriced dros y sir a hefyd rygbi a phêl fasged
+                      dros ei ysgol.
+                    </li>
+                    <li>
+                      Enillodd Colin Jackson ei fedal fawr gyntaf, medal arian,
+                      yn y ras 110m dros y clwydi, pan oedd yn 19 oed yng
+                      Ngemau'r Gymanwlad yn 1986.
+                    </li>
+                    <li>
+                      Wedyn, enillodd Colin fedal arian yng Ngemau Olympaidd
+                      Seoul, 1988, ac enillodd fedalau aur ym mhencampwriaeth
+                      Ewrop ac yng Ngemau'r Gymanwlad yn 1990.
+                    </li>
+
+                    <li>
+                      Sefydlodd Jackson record byd o 12.91 eiliad i ddod yn
+                      Bencampwr y Byd 1993 a chollodd e ddim un ras ym
+                      mhencampwriaethau Ewrop am 12 mlynedd yn olynol.
+                    </li>
+
+                    <li>
+                      Fe yw deiliad record Ewrop am y ras 60m dros y clwydi o
+                      hyd!{" "}
+                    </li>
+
+                    <li>
+                      Yn ystod ei yrfa lwyddiannus, enillodd Colin Jackson ddau
+                      ddeg pedair o fedalau ar lefel Byd, Olympaidd, y Gymanwlad
+                      ac Ewrop.
+                    </li>
+                    <li>
+                      Does dim syndod bod pobl heddiw yn meddwl mai Jackson oedd
+                      y rhedwr gorau erioed dros y clwydi yn Ewrop!
+                    </li>
+
+                    <li>
+                      Pan ofynnodd rhywun iddo yn 2002 a oedd bod yn Gymro yn
+                      bwysig iddo, atebodd Colin: “Dwi'n dwlu ar fod yn Gymro.
+                      Mae'n rhan o'm hunaniaeth i. Beth mae bod yn Gymro wedi'i
+                      roi i fi? Fy natur hamddenol. Fy mhenderfyniad tawel.”
+                    </li>
+                    <li>
+                      Mae'r llun o Colin Jackson wedi'i lapio'n falch yn y
+                      Ddraig Goch, baner Cymru, yn ddelwedd bwerus o hunaniaeth
+                      Gymreig.
+                    </li>
+                    <li>
+                      Erbyn hyn mae Colin yn sylwebydd ac yn gyflwynydd
+                      chwaraeon ar y teledu. Ymddangosodd ar Strictly Come
+                      Dancing yn 2005.
+                    </li>
+                    <li>
+                      Yn 2017, pan oedd yn 50 oed, dywedodd Colin Jackson, eicon
+                      llawn steil chwaraeon Cymru, ei fod yn hoyw.
+                    </li>
+                  </ul>
+                }
               ></Person>
             }
           ></Route>
@@ -2274,6 +3467,7 @@ function App() {
             path="/9to12yo/IrisWilliams"
             element={
               <PersonYTVid
+                backLContent={"Listen to the beautiful voice of Iris Williams."}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -2403,6 +3597,66 @@ function App() {
                     <li>She now lives in California in the USA.</li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>
+                      Cafodd Iris Williams ei geni ar 20 Ebrill 1944 yn
+                      Rhydfelen.
+                    </li>
+                    <li>
+                      Roedd ei thad yn filwr ‘GI’ Americanaidd Du a ddaeth i
+                      Gymru yn ystod yr Ail Ryfel Byd. Cwrddodd e â'i mam mewn
+                      neuadd ddawns ym Mhontypridd. Penderfynodd mam Iris ei
+                      rhoi hi i gael ei mabwysiadu.
+                    </li>
+
+                    <li>
+                      Cafodd Iris ei magu mewn Cartref Plant yn Nhonyrefail.
+                    </li>
+
+                    <li>
+                      Datblygodd gyrfa Iris ar ôl iddi ennill ysgoloriaeth i
+                      Goleg Brenhinol Cerdd a Drama Cymru.
+                    </li>
+
+                    <li>
+                      Erbyn hyn mae Iris Williams yn cael ei hystyried yn
+                      gantores jazz chwedlonol. Cafodd yrfa ryngwladol
+                      lwyddiannus dros 40 mlynedd yn canu jazz. Mae ei chaneuon
+                      llwyddiannus yn cynnwys: ‘He Was Beautiful’ (1979) a
+                      ‘Pererin Wyf’ (1971).
+                    </li>
+
+                    <li>
+                      Enillodd hi gystadleuaeth Cân i Gymru yn 1974 gyda'r gân
+                      ‘I gael Cymru’n Gymru Rydd’.
+                    </li>
+
+                    <li>
+                      Mae Iris wedi canu gyda Bob Hope, ar gyfer y ‘Royal
+                      Variety Performance’ ac roedd hi'n un o sêr y cyngerdd
+                      gala i ddathlu agor Cynulliad Cenedlaethol Cymru yn 1999.
+                    </li>
+
+                    <li>
+                      Yn rhestr Anrhydeddau'r Flwyddyn Newydd 2004, cafodd
+                      Williams yr anrhydedd OBE (Officer of the Order of the
+                      British Empire) am ei chyfraniad i gerddoriaeth ac am
+                      berfformio i filwyr ledled y byd.
+                    </li>
+                    <li>
+                      Yn 2006, perfformiodd hi yng Ngŵyl Jazz Aberhonddu ac
+                      wedyn cafodd ei derbyn i Orsedd y Beirdd yn Eisteddfod
+                      Genedlaethol Cymru.
+                    </li>
+
+                    <li>
+                      Daeth Iris Williams yn hyrwyddwr gofal maeth i Gyngor
+                      Rhondda Cynon Taf yn 2014.{" "}
+                    </li>
+                    <li>Erbyn hyn mae hi'n byw yn California yn UDA.</li>
+                  </ul>
+                }
               ></PersonYTVid>
             }
           ></Route>
@@ -2412,6 +3666,69 @@ function App() {
               <PersonPodcast
                 indivName={"Paul Robeson"}
                 bgImg={"podcastImgOverlay2"}
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://hwb.gov.wales/repository/resource/b21a2669-cd8c-4f09-87e4-bfb0bca4d51a/en"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Welsh Government website - information about the life of
+                        Paul Robeson{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://cadw.gov.wales/paul-robesons-wales"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Welsh Government website - remembering Paul Robeson
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=IWhQ_0y7Nds"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        David Harewood (actor) talking about Paul Robeson{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://hwb.gov.wales/repository/resource/b21a2669-cd8c-4f09-87e4-bfb0bca4d51a/en"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Gwybodaeth am Paul Robeson ar Hwb
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://cadw.llyw.cymru/cymru-paul-robeson?_gl=1*1tm0k8q*_ga*MTI5NjUxMTQwOC4xNjY5MjIwMDkz*_ga_B2BCVKM874*MTY4MjQxNTc1OS4yLjAuMTY4MjQxNTc1OS42MC4wLjA."
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl Cadw am Paul Robeson{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=IWhQ_0y7Nds"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        David Harewood (actor) yn trafod Paul Robeson{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
                 indivNameCym={"Paul Robeson"}
                 overlayText=" Podcast: Emily Pemberton and Mel Owen discussing Paul
                 Robeson's life."
@@ -2492,6 +3809,63 @@ function App() {
                     </li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>
+                      Cafodd Paul Robeson ei eni ar 9 Ebrill 1898 yn Princetown,
+                      New Jersey, UDA.
+                    </li>
+                    <li>
+                      Roedd Paul yn athletwr naturiol ac yn bêl-droediwr
+                      Americanaidd. Hefyd, roedd ganddo lais canu hyfryd iawn.
+                      Daeth yn artist cyngerdd fel bas bariton, ac yn actor
+                      llwyfan a ffilm.
+                    </li>
+                    <li>
+                      Mae Paul yn enwog hefyd am ei weithredu gwleidyddol.
+                      Symudodd i'r DU i ddianc rhag hiliaeth yn UDA. Datblygodd
+                      gysylltiadau cryf â Chymru ar ôl cwrdd â glowyr o Gymru yn
+                      Llundain. Roedden nhw yno i geisio cael help gan y
+                      llywodraeth. Arweiniodd Paul y canu gyda chôr o Gymru a
+                      threfnu rhoddion er mwyn iddyn nhw allu mynd yn ôl i dde
+                      Cymru ar y trên, gyda bwyd a dillad hefyd.
+                    </li>
+                    <li>
+                      Ar ôl Trychineb Glofa Gresford, cyfrannodd Paul enillion
+                      ei gyngerdd yng Nghaernarfon i'r gronfa i blant amddifad a
+                      phlant y glowyr a oedd wedi marw. Roedd yn rhywbeth pwysig
+                      i'w wneud, yn foesol ac yn wleidyddol.
+                    </li>
+                    <li>
+                      Ymunodd Paul â'r glowyr ar orymdeithiau newyn yn 1927 a
+                      1928. Yn 1940, Paul oedd y seren yn y ffilm Proud Valley –
+                      am löwr du sy'n symud i'r Cymoedd.
+                    </li>
+                    <li>
+                      Meddai Paul am Gymru: ‘[Yno] des i ddeall am y tro cyntaf
+                      sut roedd pobl wyn a du yn ymdrechu gyda’i gilydd – pan es
+                      i lawr i’r pwll glo yng Nghwm Rhondda, [a] byw yn eu mysg
+                      nhw.
+                    </li>
+                    <li>
+                      Yn 2018, perfformiwyd Hwn yw fy Mrawd: Paul Robeson – Arwr
+                      i Gymru, Arwr i’r Byd, drama gerdd yn darlunio ei fywyd,
+                      yn yr Eisteddfod Genedlaethol ym Mae Caerdydd. Cafodd y
+                      sioe ei llwyfannu 60 mlynedd i'r diwrnod ers i Paul
+                      annerch yr Eisteddfod yng Nglyn Ebwy.
+                    </li>
+                    <li>
+                      Ar 23 Ionawr 1976, gwnaeth Paul Robeson farw yn
+                      Philadelphia, UDA.
+                    </li>
+                    <li>
+                      Roedd llais canu rhagorol gan Paul Robeson. Hefyd, roedd
+                      yn ffyrnig o foesol – ac yn credu mewn trin pobl, beth
+                      bynnag oedd eu cred a lliw eu croen, gyda pharch a
+                      thegwch.
+                    </li>
+                  </ul>
+                }
               ></PersonPodcast>
             }
           ></Route>
@@ -2501,11 +3875,12 @@ function App() {
               <Person
                 indivName={"Louisa BB Morgan"}
                 indivNameCym={"Louisa BB Morgan"}
-                proposedResource={
-                  <a href="https://www.dev.addysgop.co.uk/hanesbame/Resources/LouisaBiog">
-                    Read Louisa BB Morgan's imaginary biography
-                  </a>
+                bgcolor={"#FF686B"}
+                backcardImg={louisa}
+                resourceOverlay={
+                  "Read Louisa BB Morgan’s imaginary biography. (Item & Task)"
                 }
+                linkResource={"Resources/Louisa"}
                 slugText={"The lady who lived all over the world."}
                 resource={nineApi.slice(6, 7)}
                 indivPic={
@@ -2575,6 +3950,73 @@ function App() {
                     </li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>
+                      Cafodd Louisa St Bartholomew-Brown Morgan ei geni ar 12
+                      Mehefin 1951 yn Llundain.
+                    </li>
+                    <li>
+                      Aeth Louisa yn ôl i Nigeria yn 1960, ac aeth i ysgol
+                      Gatholig – a mwynhau yn fawr iawn.
+                    </li>
+                    <li>
+                      Astudiodd Louisa: Ffrangeg ac Astudiaethau Ewropeaidd;
+                      Astudiaethau Strategol; a Drama a Pherfformio yn y
+                      brifysgol.
+                    </li>
+                    <li>
+                      Mae Louisa yn dwlu ar actio a chanu ac mae hi wedi
+                      gweithio'n galed i sefydlu ei gyrfa.
+                    </li>
+                    <li>
+                      Am ychydig, gweithiodd yn CBS Records yn Llundain, lle
+                      cafodd hi gyfarfod â llawer o enwogion.
+                    </li>
+                    <li>
+                      Mae Louisa wedi byw dros y byd i gyd. Ar un adeg, roedd
+                      hi'n gweithio yn Llysgenhadaeth Granada, lle roedd hi'n
+                      gweithio fel Cynorthwyydd Personol/Cyfieithydd.
+                    </li>
+                    <li>
+                      Wedyn, cafodd hi ei ‘photsio’ i weithio i gwmni Hughes
+                      Aircrafts Systems International, Contractwyr Amddiffyn
+                      NATO. Roedd yn waith cyfrinachol, ac oherwydd y Ddeddf
+                      Cyfrinachau Swyddogol, dydy Louisa ddim yn cael siarad
+                      amdano.
+                    </li>
+                    <li>
+                      Mae Louisa yn credu bod teithio ac addysg yn ‘hynod
+                      bwysig’ er mwyn datblygu deallusrwydd person ac ehangu ei
+                      ddealltwriaeth o fywyd. Mae hi'n ychwanegu, ‘Mae'r
+                      ymadrodd “mae teithio'n ehangu'r meddwl” yn hollol wir.
+                      Mae teithio'n gwneud i rywun weld y byd â llygaid
+                      gwahanol... Drwy deithio, rydych chi'n gweld pa mor agored
+                      i niwed yw bodau dynol, a pha mor fregus yw'r byd lle
+                      rydyn ni'n byw’.
+                    </li>
+                    <li>
+                      Yn anffodus, mae Louisa wedi profi hiliaeth ers symud i
+                      Gymru. Nid gan y Cymry lleol, ond gan Saeson a oedd wedi
+                      symud i ardal Llanelwedd o ganolbarth Lloegr. ‘Bydden
+                      nhw'n dweud wrtha i: “Pam nad ydych chi’n mynd yn ôl i'r
+                      wlad y daethoch chi ohoni?”. Byddwn i'n ateb, “Pam dydych
+                      chi ddim yn gwneud hynny? Nid Cymry ydych chi. Mae'r Cymry
+                      yn hyfryd. Dim ond Saeson anwybodus ydych chi”’.
+                    </li>
+                    <li>
+                      O ran ei haddysg a'i ffydd Gatholig, dywed Louisa: ‘Mae'n
+                      fy nghlymu at fy nghredoau...Mae wedi helpu i lunio fy
+                      mywyd. Mae'n dal i'm gwneud i'r person ydw i heddiw’.
+                    </li>
+
+                    <li>
+                      Mae Louisa wedi byw bywyd diddorol – gan gredu bod person
+                      yn gallu tyfu a gwella drwy waith caled, teithio'r byd a
+                      bod â ffydd gref.
+                    </li>
+                  </ul>
+                }
               ></Person>
             }
           ></Route>
@@ -2582,6 +4024,9 @@ function App() {
             path="/9to12yo/CliveSullivan"
             element={
               <Person
+                resourceOverlay={
+                  "Read a portrait of Clive Sullivan. (Item & Task)"
+                }
                 links={
                   <ul>
                     <li className="linkLi">
@@ -2762,6 +4207,92 @@ function App() {
                       young teenager, it is miraculous that Clive played
                       professional sport. But Clive’s success is testament to
                       his strong personality and steely determination.{" "}
+                    </li>
+                  </ul>
+                }
+                welshText={
+                  <ul>
+                    <li>
+                      Cafodd Clive Sullivan ei eni ar 9 Ebrill 1943 yn Sblot,
+                      Caerdydd.{" "}
+                    </li>
+                    <li>
+                      Chwaraeodd Clive rygbi yn yr ysgol, ond oherwydd
+                      anafiadau, cafodd lawdriniaeth ar ei bengliniau, ei draed
+                      a'i ysgwyddau.
+                    </li>
+                    <li>
+                      Roedd y meddygon yn ofni y byddai'n cael problemau wrth
+                      symud – ac doedden nhw ddim yn meddwl y byddai Clive yn
+                      gallu cael gyrfa yn chwarae rygbi.
+                    </li>
+
+                    <li>
+                      Yn 1961, ymunodd Clive â'r fyddin a chafodd ei anfon i
+                      swydd Efrog.
+                    </li>
+
+                    <li>
+                      Oherwydd ei fod yn Gymro, cafodd Clive ei ddewis i chwarae
+                      mewn gêm rygbi yn erbyn adrannau gwahanol o'r fyddin.
+                    </li>
+
+                    <li>
+                      Gan ei fod yn ofni cael ei daflu allan o'r fyddin, soniodd
+                      Clive ddim byd ei fod wedi dioddef anafiadau mawr.
+                    </li>
+
+                    <li>
+                      Roedd Clive wedi meddwl chwarae'n wael yn fwriadol, ond
+                      chwaraeodd yn dda yn reddfol, a sgorio cais o bellter heb
+                      unrhyw broblemau.
+                    </li>
+
+                    <li>
+                      Cyn hir, cafodd gynnig gêm brawf gyda thîm Rygbi'r
+                      Cynghrair, Hull. Sgoriodd Clive dri chais a chafodd gynnig
+                      i chwarae'n broffesiynol.
+                    </li>
+
+                    <li>
+                      Roedd yn dioddef problemau gyda'i bengliniau o hyd, felly
+                      cafodd ragor o lawdriniaethau. Eto i gyd, chwaraeodd Clive
+                      352 o gemau dros Hull, gan sgorio 250 o geisiau, a 213 o
+                      gemau dros Hull Kingston Rovers gan sgorio 118 o geisiau.
+                    </li>
+
+                    <li>
+                      Yn 1967, chwaraeodd Clive am y tro cyntaf dros Brydain
+                      Fawr.{" "}
+                    </li>
+                    <li>
+                      Yn 1972, cafodd Clive ei wneud yn gapten tîm Prydain Fawr
+                      ac yng Nghwpan y Byd y flwyddyn honno, daethon nhw'n
+                      bencampwyr y byd!
+                    </li>
+                    <li>
+                      Sgoriodd Clive gais ym mhedair gêm Prydain Fawr. Hefyd,
+                      sgoriodd gais cofiadwy i gael y sgôr yn gyfartal 10-10 yn
+                      erbyn Awstralia yn y rownd derfynol, ar ôl rhedeg hyd y
+                      cae.
+                    </li>
+                    <li>Daeth gyrfa Clive dros Brydain Fawr i ben yn 1973. </li>
+                    <li>
+                      Yn 1974, cafodd Clive anrhydedd MBE am ei wasanaeth i
+                      rygbi'r cynghrair.
+                    </li>
+                    <li>
+                      Gwnaeth Clive Sullivan farw o ganser ar 8 Hydref 1985, dim
+                      ond 42 oed oedd e. Enwodd dinas Hull ffordd ddynesu yn
+                      ‘Clive Sullivan Way’ er anrhydedd iddo.
+                    </li>
+                    <li>
+                      Clive Sullivan oedd y person du cyntaf i fod yn gapten ar
+                      dîm chwaraeon cenedlaethol ym Mhrydain. Dioddefodd Clive
+                      anafiadau pan oedd yn ei arddegau cynnar, felly mae'n
+                      wyrth iddo chwarae rygbi'n broffesiynol. Ond mae
+                      llwyddiant Clive yn dangos bod ganddo bersonoliaeth gref
+                      a'i fod yn benderfynol o lwyddo.
                     </li>
                   </ul>
                 }
@@ -2997,6 +4528,101 @@ function App() {
                     </li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>
+                      Roedd John Ystumllyn – sydd hefyd yn cael ei adnabod fel
+                      Jack Du neu Jack Black – yn arddwr yn y 18fed ganrif.
+                    </li>
+                    <li>
+                      Dydyn ni ddim yn gwybod ble roedd John yn byw cyn iddo
+                      gyrraedd Cymru. Mae'n bosibl iddo gyrraedd fel un o
+                      ddioddefwyr masnach gaethweision yr Iwerydd pan oedd yn
+                      wyth oed.
+                    </li>
+
+                    <li>
+                      Efallai fod hyn yn golygu ei fod wedi dod o Orllewin
+                      Affrica neu India'r Gorllewin.
+                    </li>
+
+                    <li>
+                      Ar ôl cyrraedd Cymru, daeth John i fyw gyda theulu Wynn
+                      fel gwas ar Ystumllyn, eu hystâd yng Nghricieth.
+                    </li>
+
+                    <li>Yma, cafodd yr enw Cymraeg John Ystumllyn.</li>
+
+                    <li>
+                      Dysgodd John Gymraeg a Saesneg oddi wrth y bobl leol.
+                      Hefyd, dysgodd sut i fod yn arddwr ar yr ystâd, a daeth yn
+                      dda iawn wrth ei waith.
+                    </li>
+
+                    <li>
+                      Peintiodd rhywun ddarlun o John pan oedd yn ddyn ifanc ac
+                      mae'n dangos ei fod yn ddyn golygus iawn!
+                    </li>
+
+                    <li>
+                      Cwympodd John mewn cariad â morwyn leol oedd yn wyn.
+                      Margaret Gruffydd oedd ei henw hi.
+                    </li>
+
+                    <li>
+                      Yn 1768, pan adawodd Margaret i gael swydd arall, gadawodd
+                      John ei swydd fel garddwr er mwyn ei phriodi hi. Efallai
+                      mai dyma'r briodas gymysg gyntaf yng Nghymru!
+                    </li>
+
+                    <li>
+                      Cawson nhw saith o blant, a thyfodd pump ohonyn nhw'n
+                      oedolion.{" "}
+                    </li>
+
+                    <li>
+                      Gweithiodd John a Margaret fel stiwardiaid tir. Wedyn,
+                      aeth John yn ôl i weithio i deulu Wynn. Rhoddodd Ellis
+                      Wynn ardd fawr a thyddyn iddo yn Y Nhyra Isa er mwyn
+                      diolch iddo am ei holl waith caled.
+                    </li>
+
+                    <li>
+                      Gwnaeth John farw yn 1786; gwnaeth Margaret, ei wraig, fyw
+                      am dros bedwar deg o flynyddoedd.
+                    </li>
+
+                    <li>
+                      Flynyddoedd lawer ar ôl i John farw, cafodd cofeb fechan
+                      ei chodi gerllaw lle roedd wedi'i gladdu yn Eglwys
+                      Cynhaearn Sant.
+                    </li>
+                    <li>
+                      Yn ddiweddar, aeth Zehra Zaidi, sylfaenydd We Too Built
+                      Britain, at gwmni Harkness Roses, sydd wedi ennill yn sioe
+                      flodau Chelsea, gyda'r syniad o greu rhosyn wedi'i enwi ar
+                      ôl John Ystumllyn. Mae'r rhosyn hardd yn felyn, yn symbol
+                      o gyfeillgarwch.
+                    </li>
+                    <li>
+                      Cafodd bedd John yn Eglwys Cynhaearn Sant, Ynyscynhaearn,
+                      ei wneud yn adeilad rhestredig Gradd II yn 1999.
+                    </li>
+                    <li>
+                      Cafodd ei restru "fel un o ddiddordeb arbennig mewn coffáu
+                      caethwas mewn gwasanaeth yng Nghymru ym mlynyddoedd olaf y
+                      18G y mae'n rhaid fod coffa da amdano i dderbyn cofeb mor
+                      olygus".
+                    </li>
+                    <li>
+                      John oedd y person du cynharaf yng Nghymru rydyn ni'n
+                      gwybod rhywbeth amdano. Roedd John yn berson hoffus iawn.
+                      Hefyd mae'n debyg na ddioddefodd lawer o ragfarn hiliaeth,
+                      er bod pobl leol yn aml yn synnu o weld dyn du am y tro
+                      cyntaf.
+                    </li>
+                  </ul>
+                }
               ></PersonYTVid>
             }
           ></Route>
@@ -3008,11 +4634,11 @@ function App() {
                   <ul>
                     <li className="linkLi">
                       <a
-                        href="https://www.tigerbay.org.uk/"
+                        href="https://www.cardiffbay.co.uk/history/"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Tiger Bay and the World{" "}
+                        Our History - Cardiff Bay{" "}
                       </a>
                     </li>
                     <li className="linkLi">
@@ -3021,23 +4647,72 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Tiger Bay - BBC Wales
+                        BBC Wales History - Tiger Bay{" "}
                       </a>
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://www.theguardian.com/commentisfree/2017/mar/07/multiculturalism-ethnic-diversity-butetown-cardiff"
+                        href="https://severnestuarypartnership.org.uk/explore-the-estuary/exploring-guide/cardiff-bay/#:~:text=The%20name%20'Tiger%20Bay'%20was,of%20foreign%20and%20Welsh%20culture."
                         className="resourceHref"
                         target="_blank"
                       >
-                        The town that pioneered multiculturalism
+                        History of Cardiff Bay area{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.tigerbay.org.uk/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Official website of Tiger Bay{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.cardiffbay.co.uk/history/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Ein Hanes - Bae Caerdydd{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/wales/history/sites/themes/society/tiger_bay.shtml"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        BBC Hanes Cymru - Tiger Bay{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://severnestuarypartnership.org.uk/explore-the-estuary/exploring-guide/cardiff-bay/#:~:text=The%20name%20'Tiger%20Bay'%20was,of%20foreign%20and%20Welsh%20culture."
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Hanes ardal Bae Caerdydd{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.tigerbay.org.uk/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Gwefan swyddogol Tiger Bay{" "}
                       </a>
                     </li>
                   </ul>
                 }
                 indivName={"Tiger Bay"}
                 indivNameCym={"Tiger Bay"}
-                proposedResource={"Factfile with discussion."}
+                proposedResource={"Factfile with discussion. NOT DEVELOPED YET"}
                 slugText={"The bustling multi-ethnic community in Cardiff Bay."}
                 welshSlugText={"Y gymuned aml-ddiwylliannol yng Nghaerdydd."}
                 resource={nineApi.slice(9, 10)}
@@ -3101,6 +4776,62 @@ function App() {
                     </li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>Tiger Bay yw un o gymunedau aml ethnig hynaf y DU.</li>
+                    <li>
+                      Tyfodd y safle'n enfawr oherwydd y Chwyldro Diwydiannol
+                      ychydig dros 200 mlynedd yn ôl.
+                    </li>
+                    <li>
+                      Oherwydd y diwydiant glo, daeth llawer o bobl i Gymru i
+                      weithio yn y dociau.
+                    </li>
+
+                    <li>
+                      Cafodd mwy a mwy o lo ei gynhyrchu, felly tyfodd y
+                      boblogaeth hefyd.{" "}
+                    </li>
+
+                    <li>
+                      Ar un adeg, roedd cymuned Tiger Bay yn cynnwys pobl o dros
+                      50 o wledydd a oedd wedi dod i fyw yn yr ardal o gwmpas y
+                      dociau!
+                    </li>
+
+                    <li>
+                      Yn y cymunedau hyn roedd morwyr a masnachwyr môr a oedd
+                      wedi dod o Somalia, Yemen, Groeg, Affrica, China, De Asia,
+                      a rhai Affricanaidd Caribïaidd ac Arabaidd.
+                    </li>
+
+                    <li>
+                      Gyda'i gilydd, gwnaeth y cymunedau hyn gyfraniad hanfodol
+                      i gyfoeth Caerdydd a'r pethau a gyflawnodd y ddinas.
+                      Daethon nhw â dylanwadau diwylliannol sydd i'w gweld o hyd
+                      heddiw.
+                    </li>
+
+                    <li>
+                      Roedd gan Tiger Bay enw drwg fel ardal arw a pheryglus,
+                      ond i'r bobl leol a ddaeth i fyw yn yr ardal ac aros yno,
+                      roedd yn lle cyfeillgar!
+                    </li>
+                    <li>
+                      Ond roedd llawer o bobl yn ddi-waith yn Tiger Bay yn ystod
+                      dirywiad economaidd y 1960au a'r 1970au.
+                    </li>
+                    <li>
+                      Erbyn y 1970au a'r 1980au, cafodd yr ardal ei bwrw i lawr
+                      a'i hailddatblygu.
+                    </li>
+                    <li>
+                      Daeth llawer o bobl enwog o gefndiroedd amrywiol o Tiger
+                      Bay gan gynnwys Shirley Bassey, Betty Campbell, Billy
+                      Boston a Colin Dixon.
+                    </li>
+                  </ul>
+                }
               ></Person>
             }
           ></Route>
@@ -3122,7 +4853,74 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        The Sidoli's Story
+                        Sidoli's Ice Cream offical website{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/news/wales-news/sidoli-story-tale-love-travel-1845764"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Story of Sidoli's migration from Italy{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://historypoints.org/index.php?page=sidoli-ice-cream-factory-ebbw-vale"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Sidoli's ice cream factory in Ebbw Vale{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="http://news.bbc.co.uk/local/northeastwales/hi/people_and_places/history/newsid_8878000/8878979.stm"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Celebrating 100 years of Sidoli's Ice Cream in Rhyl{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.sidolis-icecream.co.uk/about/the-sidolis-story/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Gwefan swyddogol Hufen iâ Sidoli{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/news/wales-news/sidoli-story-tale-love-travel-1845764"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Hanes teulu Sidoli yn mudo i Gymru{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://historypoints.org/index.php?page=sidoli-ice-cream-factory-ebbw-vale"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Ffatri hufen iâ yn Ebbw Vale{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="http://news.bbc.co.uk/local/northeastwales/hi/people_and_places/history/newsid_8878000/8878979.stm"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Dathlu 100 mlynedd o Hufen iâ Sidoli yn Rhyl{" "}
                       </a>
                     </li>
                   </ul>
@@ -3131,6 +4929,9 @@ function App() {
                 indivNameCym={"Hufen Iâ Sidoli"}
                 slugText={"The story of the award-winning ice cream."}
                 welshSlugText={"Stori'r hufen iâ arbennig o'r Eidal."}
+                backLContent={
+                  "Have a look how Sidoli Ice Cream is made today. "
+                }
                 youtubeVid="https://www.youtube.com/embed/xTRwVpwUvVw"
                 resource={nineApi.slice(10, 11)}
                 indivPic={
@@ -3217,6 +5018,89 @@ function App() {
                     </li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>
+                      Dros gan mlynedd yn ôl, daeth mewnfudwyr o'r Eidal i
+                      Gymru. Dechreuon nhw ddiwylliant caffi a thraddodiad
+                      Cymreig-Eidalaidd sy'n dal i fynd heddiw. Mae teulu Sidoli
+                      yn un o'r teuluoedd hyn.
+                    </li>
+                    <li>
+                      Cafodd busnes hufen iâ Sidoli ei ddechrau gan Benedetto
+                      “Ben” Sidoli yn 1922.
+                    </li>
+
+                    <li>
+                      Pan oedd yn 12 oed yn unig, dilynodd ôl traed Bert, ei
+                      frawd, drwy ddod i Gymru i chwilio am swydd.
+                    </li>
+
+                    <li>
+                      I ddechrau, roedd y ddau frawd yn gwerthu Sarsaparilla,
+                      diod lemwn, a hefyd coffi a the, i lowyr lleol sychedig.
+                    </li>
+
+                    <li>
+                      Roedd eu caffi cyntaf yng Nghwm yn gwerthu hufen iâ
+                      Eidalaidd traddodiadol.
+                    </li>
+
+                    <li>
+                      Er mwyn gwneud yr hufen iâ, roedd yn rhaid iddyn nhw brynu
+                      blociau mawr o iâ a oedd yn dod o Gaerdydd ac yn cyrraedd
+                      ar y trên am 6 y bore. Roedd yn rhaid gwerthu popeth
+                      roedden nhw'n ei wneud gyda'r iâ hwn y diwrnod hwnnw, neu
+                      byddai'n mynd yn ofer. Flynyddoedd yn ddiweddarach, bydden
+                      nhw'n prynu rhewgell. Wedyn roedd gwneud a storio'r hufen
+                      iâ yn llawer haws.
+                    </li>
+
+                    <li>Priododd Ben a symud i Lyn Ebwy lle agorodd siop. </li>
+
+                    <li>
+                      Roedd Ben a Bert yn ddynion busnes ardderchog ac roedden
+                      nhw'n glyfar wrth farchnata eu hufen iâ. Roedd busnes yn
+                      dda iawn, a hyd yn oed yn ystod yr Ail Ryfel Byd, pan
+                      gafodd hufen iâ ei wahardd oherwydd ei fod yn eitem
+                      foethus, gwnaeth y brodyr Sidoli hufen iâ i'r milwyr
+                      Americanaidd. Roedd y bwydydd a’r offer ganddyn nhw i'w
+                      wneud.
+                    </li>
+
+                    <li>
+                      Ond, oherwydd mai Eidalwr oedd Ben, roedd yn cael ei
+                      ystyried yn fygythiad i ddiogelwch Prydain yn ystod y
+                      rhyfel, er ei fod yn byw yng Nghymru ers dros ugain
+                      mlynedd. Cafodd ei garcharu'n syth gyda miloedd o Eidalwyr
+                      eraill ar Ynys Manaw tan ddiwedd y rhyfel.
+                    </li>
+
+                    <li>
+                      Ar ôl y rhyfel, aeth Sidoli's ati i gynhyrchu hufen iâ
+                      eto. Hefyd dechreuon nhw wneud lolipops yn ogystal â hufen
+                      iâ.
+                    </li>
+
+                    <li>
+                      Yn 1992, agorodd y cwmni ei barlwr hufen iâ cyntaf yng
+                      Ngŵyl Gardd Cymru. Roedd yn llwyddiant enfawr.
+                    </li>
+
+                    <li>
+                      Flwyddyn yn ddiweddarach, enillodd Sidoli's y gyntaf o
+                      lawer o wobrau – Cwpan Her Arian y Cynghrair Hufen Iâ (The
+                      Ice Cream Alliance Silver Challenge Cup).
+                    </li>
+                    <li>Erbyn hyn, mae brand Sidoli yn gyfarwydd i bawb. </li>
+                    <li>
+                      Heddiw, mae hufen iâ Sidoli yn cael ei wneud gyda'r un
+                      rysáit, bron, â'r rysáit gwreiddiol roedd Ben yn ei
+                      ddefnyddio yn ôl yn 1922. Ar hyn o bryd, maen nhw'n
+                      gwerthu 45 blas o hufen iâ.
+                    </li>
+                  </ul>
+                }
               ></PersonYTVid>
             }
           ></Route>
@@ -3224,24 +5108,86 @@ function App() {
             path="/9to12yo/IsaacBlake"
             element={
               <PersonYTVid
+                backLContent={"Find out more about Gypsy Jazz! "}
                 links={
                   <ul>
-                    <li className="linkLi">
-                      <a
-                        href="https://www.romaniarts.co.uk/"
-                        className="resourceHref"
-                        target="_blank"
-                      >
-                        Romani Cultural and Arts Company{" "}
-                      </a>
-                    </li>
                     <li className="linkLi">
                       <a
                         href="https://eriac.org/members/isaac-blake/"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Isaac Blake profile - ERIAC
+                        European Roma Institute for Arts and Culture{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="http://betweenthelinesart.com/project/isaac-blake/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Information on Isaac Blake's Career{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://orcid.org/0000-0001-7134-8838"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Blog on Isaac Blake's projects amongst traveller
+                        communities{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.romaniarts.co.uk/portfolio-item/isaac-blake-2/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Romani Culture and Arts offical website - Isaac Blake
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://eriac.org/members/isaac-blake/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Gwybodaeth am Isaac Blake fel aelod o ERIAC{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="http://betweenthelinesart.com/project/isaac-blake/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Gwybodaeth am yrfa Isaac Blake{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://orcid.org/0000-0001-7134-8838"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Blog am brosiectau Isaac Blake ymysg cymunedau o
+                        deithwyr
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.romaniarts.co.uk/portfolio-item/isaac-blake-2/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Gwybodaeth am Isaac Blake ar wefan Diwylliant a
+                        Chelfyddydau Romani{" "}
                       </a>
                     </li>
                   </ul>
@@ -3321,6 +5267,75 @@ function App() {
                     </li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>
+                      Roedd sipsiwn i'w gweld yn rheolaidd yng Nghymru ers
+                      talwm. Roedden nhw'n teithio o gymuned i gymuned ac ar
+                      gael i weithio am gyfnod byr.
+                    </li>
+
+                    <li>
+                      Hefyd, roedden nhw'n rhannu eu talent artistig, fel
+                      traddodiadau cerddorol, gan gyfoethogi diwylliant Cymru.
+                    </li>
+
+                    <li>
+                      Ffurfiodd John Roberts gerddorfa The Cambrian Minstrels
+                      gyda'i 9 mab – nhw oedd y gerddorfa gyntaf o Romani
+                      Cymreig.
+                    </li>
+
+                    <li>
+                      Mae John Wood Jones yn enghraifft arall. Fe oedd gor-ŵyr
+                      Abram Wood, y cerddor chwedlonol. Daeth John yn delynor
+                      preswyl yn Llys Llanofer, ger y Fenni. Hefyd, roedd yn
+                      dysgu plant dall a rhai eraill oedd yn methu symud yn dda
+                      i ganu'r delyn. Chwaraeodd John ym Mhalas Buckingham
+                      Palace i'r Frenhines Victoria, hyd yn oed.
+                    </li>
+
+                    <li>
+                      Felly mae etifeddiaeth gyfoethog celfyddydau a diwylliant
+                      Romani yn amrywiol ac yn lliwgar. Mae'n cynnwys
+                      barddoniaeth, Jazz Sipsiwn, y delyn deires a dawnsio
+                      traddodiadol.
+                    </li>
+
+                    <li>
+                      Cafodd Isaac Blake ei fagu ar safle Shirenewton yng
+                      Nghaerdydd – safle wedi'i redeg gan y cyngor. Mae 55 llain
+                      neu le unigol. Mae tua 300 o bobl yn byw yno.
+                    </li>
+
+                    <li>
+                      Roedd rhai pobl yn galw enwau ar y Romani a oedd yn byw ar
+                      y safle yn aml. Roedd pobl yn eu barnu nhw gyda
+                      stereoteipiau. Mae Isaac yn cofio sut roedd “plant
+                      sipsiwn” yn cael eu rhoi mewn dosbarthiadau arbennig yn yr
+                      ysgol, beth bynnag oedd eu gallu nhw. Roedd ar y plant
+                      angen “croen trwchus a disgwyliadau isel”.
+                    </li>
+
+                    <li>
+                      Mae Isaac wedi tyfu i herio'r stereoteipiau. Enillodd
+                      ysgoloriaeth i ddilyn cwrs theatr dawns yng Ngholeg
+                      Cerddoriaeth a Dawns Trinity Laban. Wedyn cofrestrodd yn
+                      Ysgol Martha Graham, ysgol enwog yn Efrog Newydd i wella
+                      ei sgiliau.
+                    </li>
+                    <li>
+                      Heddiw, Isaac yw cyfarwyddwr Cwmni Diwylliannol a
+                      Chelfyddydau Romani ac mae'n gweithio fel hyfforddwr symud
+                      yng Ngholeg Brenhinol Cerdd a Drama Cymru yng Nghaerdydd.
+                    </li>
+                    <li>
+                      Mae Isaac Blake yn dilyn etifeddiaeth ddiwylliannol
+                      gyfoethog y gymuned Romani, sy'n cynnwys rhannu ei
+                      wybodaeth â'r gymuned Romani.
+                    </li>
+                  </ul>
+                }
               ></PersonYTVid>
             }
           ></Route>
@@ -3330,12 +5345,96 @@ function App() {
               <PersonYTVid
                 indivName={"Patti Flynn"}
                 indivNameCym={"Patti Flynn"}
+                backLContent={
+                  "The unveiling of a purple plaque for Patti Flynn."
+                }
                 welshSlugText={"Cantores, actores, model ac ymgyrchydd."}
                 slugText={"Jazz singer, author, model and social activist."}
                 youtubeVid="https://www.youtube.com/embed/g3y5JJQdanI"
                 resource={nineApi.slice(11, 12)}
                 indivPic={
                   "https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Patti_Flynn.jpg/220px-Patti_Flynn.jpg"
+                }
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/news/wales-news/patti-flynn-cardiff-tiger-bay-18923700"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Patti Flynn's obituary{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://blackhistorywales.org.uk/our-team/patti-flynn/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Black History Wales - blog post on Patti Flynn{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/news/uk-wales-65039113"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        An article on first black woman to be awarded the Purple
+                        Plaque{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/news/uk-wales-54130745"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        BBC artilce on life and death of Patti Flynn{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/news/wales-news/patti-flynn-cardiff-tiger-bay-18923700"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Ysgrif Goffa i Patti Flynn{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://blackhistorywales.org.uk/our-team/patti-flynn/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Hanes Du Cymru - blog ar Patti Flynn{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/news/uk-wales-65039113"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl ar y menyw du cyntaf i gael Plac Porffor
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/news/uk-wales-54130745"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl BBC ar fywyd Patti Flynn{" "}
+                      </a>
+                    </li>
+                  </ul>
                 }
                 text={
                   <ul>
@@ -3407,6 +5506,76 @@ function App() {
                     </li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>
+                      Cafodd Patricia Maude Young ei geni yng Nghaerdydd yn
+                      1937. Hi oedd y plentyn ieuengaf o saith i Wilmott George
+                      Young a Beatrice Young.  
+                    </li>
+
+                    <li>
+                      Roedd ei thad yn dod o Jamaica ac roedd yn forwr
+                      masnachol. Cyrhaeddodd Gaerdydd yn y 1920au. Roedd mam
+                      Patti yn dod o Gaerdydd.
+                    </li>
+
+                    <li>
+                      Yn ystod yr Ail Ryfel Byd, gwnaeth tad Patti farw pan
+                      gafodd ei long ei tharo gan dorpido. Hefyd cafodd ei
+                      brodyr hi eu lladd yn yr un rhyfel.
+                    </li>
+
+                    <li>
+                      Pan oedd hi'n ferch fach, ac yn byw yn Butetown (mae Tiger
+                      Bay yn enw arall ar yr ardal), roedd Patti'n dwlu ar
+                      gerddoriaeth a chanu – jazz yn enwedig.
+                    </li>
+
+                    <li>
+                      Daeth Patti yn llwyddiannus fel cantores jazz, awdur,
+                      actores radio, model a gweithredwraig gymdeithasol.
+                    </li>
+
+                    <li>
+                      Hefyd roedd hi'n un o'r rhai a sefydlodd Ŵyl Jazz Bae
+                      Butetown (Butetown Bay Jazz Festival).
+                    </li>
+
+                    <li>
+                      Ymgyrchodd Patti yn ddewr am 26 o flynyddoedd i gael cofeb
+                      i'r milwyr du a'r milwyr o leiafrifoedd ethnig a wnaeth
+                      farw mewn rhyfeloedd ar ôl colli ei thad a'i brodyr yn yr
+                      Ail Ryfel Byd.
+                    </li>
+
+                    <li>Cafodd y gofeb hon ei chodi yn 2019! </li>
+                    <li>Geiriau Patti Flynn sydd ar wyneb y gofeb. </li>
+                    <li>
+                      Yn 2019, cafodd Patti ei hanrhydeddu gyda Gwobr Cyflawniad
+                      Oes Cymdeithas Cymraësau o Leiafrifoedd Ethnig (Ethnic
+                      Minority Welsh Women Achievement Association’s
+                      (EMWWAA)).   
+                    </li>
+                    <li>
+                      Hefyd roedd hi'n sylfaenydd ac yn noddwr Hanes Pobl Dduon
+                      Cymru (Black History Wales).
+                    </li>
+                    <li>
+                      Ar 10 Medi 2020, gwnaeth Patti farw ar ôl brwydr fer â
+                      chanser; roedd hi'n 83 oed.
+                    </li>
+                    <li>
+                      Roedd Patti'n dwlu ar gerddoriaeth ers pan oedd hi’n ferch
+                      fach a thyfodd i fod yn gantores lwyddiannus. Hefyd, roedd
+                      Patti yn credu bod yn rhaid cofio ac anrhydeddu pobl a
+                      oedd yn Ddu, yn Asiaidd ac o gefndir lleiafrifoedd ethnig
+                      a ymladdodd yn ddewr dros Brydain yn ystod y rhyfeloedd.
+                      Diolch i Patti ac i bobl eraill fel hi, nawr mae cofebau
+                      yng Nghymru sy'n cydnabod ei dewrder.
+                    </li>
+                  </ul>
+                }
               ></PersonYTVid>
             }
           ></Route>
@@ -3423,16 +5592,56 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Vernester Cyril - Chwarae Teg
+                        Article on Cyril's 2006 Midwife of the Year award{" "}
                       </a>
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://www.southwalesargus.co.uk/news/1017285.midwife-gets-national-recognition/"
+                        href="https://www.futuregenerations.wales/news/black-history-month-i-felt-that-if-we-sit-and-watch-the-television-and-shout-when-we-see-injustice-it-doesnt-help-anyone-if-you-go-out-and-put-your-head-above-the-parapet-then-a/"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Midwife gets national recognition{" "}
+                        Black History Month blog on Cyril{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/news/uk-wales-58765457"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Windrush stories - Vernester Cyril{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://chwaraeteg.com/merched-gwych-o-gymru/vernesta-cyril/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl am wobr Bydwraig y Flwyddyn 2006{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.futuregenerations.wales/cy/news/mis-hanes-pobl-dduon-roeddwn-in-teimlo-os-ydyn-nin-eistedd-ac-yn-gwylior-teledu-ac-yn-gweiddi-pan-rydyn-nin-gweld-anghyfiawnder-nid-ywn-helpu-unrhyw-un-os-ewch-chi-allan-a-rhoi-e/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Mis Hanes Du - blog am Vernester Cyril{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/news/uk-wales-58765457"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Storiau Windrush - Vernester Cyril{" "}
                       </a>
                     </li>
                   </ul>
@@ -3520,6 +5729,79 @@ function App() {
                     </li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>
+                      Cafodd Vernester Cyril ei geni yn St Lucia, ynys yn y
+                      Caribî, lle roedd hi'n arfer adrodd barddoniaeth a dysgu
+                      am ysgrifenwyr enwog o Brydain.
+                    </li>
+
+                    <li>
+                      Ym mis Mawrth 1962, teithiodd Vernester ar long i Brydain
+                      Fawr. Ar ôl cyrraedd, cafodd Vernester sioc oherwydd ei
+                      bod hi mor oer!
+                    </li>
+
+                    <li>
+                      Roedd Vernester yn benderfynol o wneud bywyd newydd yn y
+                      DU – ac aeth hi i chwilio am waith yn syth.
+                    </li>
+
+                    <li>
+                      Roedd Vernester yn teimlo'n drist pan oedd rhai pobl yn
+                      syllu arni ac yn tynnu wynebau doniol. Ond roedd Vernester
+                      yn galed. Os oedd pobl yn ymddwyn yn anghywir fel yna, eu
+                      problem nhw oedd hi!
+                    </li>
+
+                    <li>
+                      Cafodd Vernester sawl swydd; gweithiodd hi mewn ffatri,
+                      yna mewn cartref nyrsio.
+                    </li>
+
+                    <li>Wedyn hyfforddodd hi fel nyrs, wedyn fel bydwraig. </li>
+
+                    <li>
+                      Pasiodd Vernester ei harholiadau'n hawdd ac enillodd wobr
+                      am y Fydwraig Fwyaf Addawol.
+                    </li>
+
+                    <li>
+                      Gweithiodd Vernester fel bydwraig am dros 30 mlynedd, a
+                      chafodd ddyrchafiad sawl gwaith!
+                    </li>
+                    <li>Helpodd hi famau i eni dros 500 o fabanod.</li>
+                    <li>
+                      Roedd Vernester yn dwlu ar fod yn fydwraig. Hefyd, roedd
+                      hi'n falch o'i threftadaeth o'r Caribî. Addysgodd hi ei
+                      hun – a phobl eraill – am draddodiadau diwylliannol pobl
+                      ddu.
+                    </li>
+                    <li>
+                      Dywedodd chwaer nyrsio y drefn wrthi am wisgo ei gwallt yn
+                      arddull Affro: Dywedodd Vernester wrthi am edrych ar
+                      lyfrau a gweld sut roedd pobl yn gwisgo eu gwallt yn y
+                      Caribî ac yn Affrica.
+                    </li>
+                    <li>
+                      Yn anffodus, roedd rhai cleifion yn ymddwyn yn hiliol tuag
+                      at Vernester hefyd. Doedd dim deddfau cydraddoldeb hiliol
+                      ym Mhrydain eto ar y pryd. Ond roedd Vernester yn herio
+                      gwahaniaethu bob amser ac yn hyrwyddo cydraddoldeb hiliol.
+                    </li>
+                    <li>
+                      Oherwydd gwaith diflino Vernester, cafodd anrhydedd OBE
+                      oddi wrth y Frenhines ym Mhalas Buckingham yn 1999.
+                    </li>
+                    <li>
+                      Gwireddodd Vernester ei breuddwyd o ddod i Brydain Fawr a
+                      bod yn nyrs. Hefyd, gweithiodd hi'n galed i ddysgu pobl i
+                      fod yn fwy caredig a mwy goddefgar tuag at ei gilydd – gan
+                      eu dysgu nhw nad yw lliw croen rhywun yn bwysig.
+                    </li>
+                  </ul>
+                }
               ></Person>
             }
           ></Route>
@@ -3589,6 +5871,47 @@ function App() {
                     </li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>
+                      Mae Dom James yn dod o Gaerdydd ac aeth i Ysgol Gyfun
+                      Plasmawr.
+                    </li>
+
+                    <li>
+                      Mae'n gerddor ac ar hyn o bryd mae'n cyflwyno rhaglen
+                      gerddoriaeth Gymraeg bob wythnos ar Radio Cymru.
+                    </li>
+
+                    <li>
+                      Mae'n cyfrannu'n gyson i Hansh, sianel ar-lein S4C, ac mae
+                      llawer o bobl yn ei ddilyn ar y cyfryngau cymdeithasol.
+                    </li>
+
+                    <li>
+                      Hefyd, mae'n rapiwr a dechreuodd gydweithio â Lloyd Lewis
+                      yn 2017.
+                    </li>
+
+                    <li>Mae Dom yn angerddol am greu rap Cymraeg. </li>
+
+                    <li>
+                      Canodd Dom a Lloyd Lewis gyda Sage Todz yng Ngŵyl Tafwyl
+                      yn 2022.
+                    </li>
+
+                    <li>
+                      Cafodd eu sengl 'Pwy sy'n Galw?' ymateb gwych pan gafodd
+                      ei chwarae ar raglen radio Huw Stephens.
+                    </li>
+
+                    <li>
+                      Yn 2023, roedd Dom James, Lloyd Lewis a'u cynhyrchydd Don
+                      ar frig rhestr Miwsig o gerddorion a oedd yn mynd i fod yn
+                      ddylanwadol yn y sin gerddoriaeth Gymraeg a Chymreig.
+                    </li>
+                  </ul>
+                }
               ></Person>
             }
           ></Route>
@@ -3597,16 +5920,77 @@ function App() {
             element={
               <Person
                 bgcolor={"#A2D6F9"}
+                resourceOverlay={
+                  "An imaginary newspaper report about Calzaghe. (Item & Task)"
+                }
                 backcardImg={italianDragon}
                 links={
                   <ul>
                     <li className="linkLi">
                       <a
-                        href="https://joecalzaghe.com/"
+                        href="https://www.youtube.com/watch?v=lvR89jxwnyU"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Joe Calzaghe Official Site
+                        In conversation with Calzaghe and clips of him fighting{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=GiKNhC-erso"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Clips from his 5 'notable wins'{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://welsh-sports-hall-of-fame.wales/az/joe-calzaghe/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        General information about him{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.ringtv.com/120339-calzaghe-through-the-years/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Timeline of Calzaghe's career{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=lvR89jxwnyU"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Sgwrs gyda Calzaghe a chlipiau ohono'n ymladd.{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=GiKNhC-erso"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Clips o'i 5 prif buddugoliaeth{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://welsh-sports-hall-of-fame.wales/az/joe-calzaghe/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Gwybodaeth cyffredinol amdano{" "}
                       </a>
                     </li>
                   </ul>
@@ -3700,6 +6084,87 @@ function App() {
                     </li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>
+                      Cafodd Joe Calzaghe ei eni yn 1972 yn Llundain i dad o'r
+                      Eidal (Sardinia) a mam o Gymru.
+                    </li>
+                    <li>
+                      Ymunodd Joe â'i glwb bocsio cyntaf, Clwb Bocsio Amatur
+                      Pontnewydd pan oedd yn ddeg oed.
+                    </li>
+
+                    <li>
+                      Pan oedd Joe yn ei arddegau, dioddefodd fwlio geiriol cas
+                      yn rheolaidd – felly, roedd yn teimlo'n unig. Yn
+                      ddiweddarach, cyfaddefodd Calzaghe nad oedd ‘wedi gallu
+                      dod dros y cam-drin geiriol’. Gadawodd yr ysgol heb sefyll
+                      unrhyw un o'i arholiadau TGAU.
+                    </li>
+
+                    <li>
+                      Ar ôl gyrfa lwyddiannus fel bocsiwr amatur: ennill 110 o
+                      120 o ornestau amatur, ym mis Hydref 1993, bocsiodd Joe yn
+                      broffesiynol am y tro cyntaf – a churo'r bocsiwr arall
+                      mewn un rownd. Dyma ddechrau gyrfa lwyddiannus iawn.
+                    </li>
+
+                    <li>
+                      Ym mis Hydref 1997, enillodd Joe deitl uwch bwysau canol y
+                      WBO (World Boxing Organization) – cadwodd e'r teitl ym mis
+                      Mawrth 2006.
+                    </li>
+
+                    <li>
+                      Ym mis Tachwedd 2007, cadwodd Joe deitlau uwch bwysau
+                      canol y WBO a The Ring. Hefyd, enillodd deitlau uwch
+                      bwysau canol y WBA a Chyngor Bocsio'r Byd.
+                    </li>
+
+                    <li>
+                      Ym mis Tachwedd 2008, cadwodd deitl pwysau go-drwm ar ôl
+                      gornest galed!
+                    </li>
+
+                    <li>
+                      Dri mis yn ddiweddarach, ar 5 Chwefror 2009, cyhoeddodd
+                      Joe ei fod yn ymddeol o focsio proffesiynol. Drwy wneud
+                      hyn, daeth Calzaghe yn un o bymtheg pencampwr byd yn unig
+                      i ymddeol heb gael ei guro.
+                    </li>
+
+                    <li>
+                      Roedd Joe yn aml yn cael ei alw'n ‘Balchder Cymru / The
+                      Pride of Wales’ a'r ‘Ddraig Eidalaidd / Italian Dragon’
+                    </li>
+                    <li>
+                      Yn ystod ei yrfa broffesiynol, ymladdodd Joe 46 o ornestau
+                      proffesiynol. Enillodd bob un ohonyn nhw: 32 drwy lorio
+                      (knock out) a 14 drwy benderfyniad y dyfarnwyr. Mae hi'n
+                      record ryfeddol.
+                    </li>
+                    <li>
+                      Calzaghe oedd y person cyntaf i gael Rhyddid Bwrdeistref
+                      Sir Caerffili, yn 2009.
+                    </li>
+                    <li>
+                      Cafodd anrhydedd CBE yn Anrhydeddau Pen-blwydd y Frenhines
+                      yn 2008.
+                    </li>
+                    <li>
+                      Ar ôl ymddeol o focsio, ymddangosodd ar y sioe Strictly
+                      Come Dancing!
+                    </li>
+                    <li>
+                      Cafodd Joe Calzaghe ei fwlio yn yr ysgol, felly roedd yn
+                      teimlo'n fregus ac yn unig. Ond roedd Joe yn benderfynol o
+                      lwyddo yn ei fywyd. Drwy waith caled, bod yn benderfynol a
+                      chredu ynddo ei hun, gwireddodd Joe ei freuddwyd a daeth
+                      yn ysbrydoliaeth i lawer o bobl ledled y byd.
+                    </li>
+                  </ul>
+                }
               ></Person>
             }
           ></Route>
@@ -3725,11 +6190,64 @@ function App() {
                   <ul>
                     <li className="linkLi">
                       <a
-                        href="https://www.bbc.co.uk/programmes/b01mzk7b"
+                        href="https://www.walesonline.co.uk/lifestyle/tv/jason-mohammads-wife-huge-bbc-24630224"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Jason Mohammad - BBC Radio Wales
+                        Wales Online article about Jason Mohammad{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/programmes/profiles/4msqlXLpFWdFmjTJZ07yygn/more-about-jason"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        BBC Radio Wales piece on Jason Mohammad including clips
+                        of his work{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.s4c.cymru/en/press/post/53136/s4c-announce-jason-mohammad-as-ambassador/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Press statement by S4C including Jason Mohammad as one
+                        of the channel's faces
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/lifestyle/tv/jason-mohammads-wife-huge-bbc-24630224"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl Wales Online am fywyd Jason Mohammad{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/programmes/profiles/4msqlXLpFWdFmjTJZ07yygn/more-about-jason"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Darn BBC Radio Cymru am Jason Mohammad sy'n cynnwys
+                        clipiau o'i waith
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.s4c.cymru/cy/y-wasg/post/53136/s4c-yn-cyhoeddi-jason-mohammad-fel-un-o-wynebaur-sianel/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Datganiad i'r wasg gan S4C yn cyflwyno Jason Mohammad
+                        fel un o wynebau'r sianel
                       </a>
                     </li>
                   </ul>
@@ -3790,6 +6308,58 @@ function App() {
                     </li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>
+                      Mae Jason, a gafodd ei eni ar 17 Medi 1973, yn gyflwynydd
+                      radio a theledu adnabyddus i'r BBC. Mae'n cyflwyno
+                      rhaglenni newyddion a chwaraeon yn bennaf.
+                    </li>
+                    <li>
+                      Cafodd Jason ei eni yng Nghaerdydd i dad o Pakistan a mam
+                      o Gymru. Aeth Jason, sy'n Fwslim, i Brifysgol Abertawe i
+                      astudio Cymraeg a Gwleidyddiaeth cyn mynd wedyn i ennill
+                      diploma ôl-raddedig mewn newyddiaduraeth ddarlledu.
+                    </li>
+
+                    <li>
+                      Roedd gwaith cyntaf Jason ar y radio yn Ysbyty Singleton
+                      ar gyfer Bwrdd Iechyd Prifysgol Abertawe Bro Morgannwg.
+                    </li>
+
+                    <li>
+                      Wedyn, dechreuodd Jason ei waith yn BBC Cymru Wales yn
+                      1997 fel gohebydd i raglen Wales Today ar BBC Wales.
+                    </li>
+
+                    <li>
+                      Yn ystod ei yrfa, mae wedi bod yn brif gyflwynydd ar Wales
+                      on Saturday, ac ar Final Score, rhaglen chwaraeon y BBC.
+                      Mae wedi cyflwyno rhaglenni arbennig Scrum V ar BBC 2
+                      Cymru ac yn gyflwynydd Good Morning Sunday, rhaglen ar
+                      Radio 2 y BBC.
+                    </li>
+
+                    <li>
+                      Roedd Jason yn rhan o griw darlledu'r BBC yng Ngemau
+                      Olympaidd Rio 2016, mae wedi cyflwyno snwcer i'r BBC ac yn
+                      gyflwynydd ar BBC Radio Five Live. Hefyd mae wedi cyflwyno
+                      Match of the Day a Match of the Day 2 bob hyn a hyn. Mae
+                      wedi cyflwyno rhai o gemau rygbi byw Cystadleuaeth Chwe
+                      Gwlad RBS.
+                    </li>
+
+                    <li>
+                      Hefyd, mae galw mawr am Jason fel siaradwr cyhoeddus.{" "}
+                    </li>
+
+                    <li>
+                      Fel un o'r cyflwynwyr mwyaf adnabyddus yn y DU, cafodd
+                      Jason ei restru fel un o'r deg person sy'n ennill y
+                      cyflogau uchaf yn y BBC yn 2019.
+                    </li>
+                  </ul>
+                }
               ></Person>
             }
           ></Route>
@@ -3802,11 +6372,116 @@ function App() {
                   <ul>
                     <li className="linkLi">
                       <a
-                        href="https://www.bbc.co.uk/programmes/b01mzk7b"
+                        href="https://hwb.gov.wales/repository/resource/aaa2e3a7-65b1-4488-845e-7368c3016cde"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Jason Mohammad - BBC Radio Wales
+                        Hwb resource on 1919 riots{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.cardiff1919.wales/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Graphic Novel about the 1919 riots{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/news/wales-news/race-riots-cardiff-1919-butetown-16428953"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Wales Online article{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.blackpast.org/global-african-history/events-global-african-history/britain-s-1919-race-riots/#:~:text=The%201919%20race%20riots%20in%20Great%20Britain%20%E2%80%99s,periods%20of%20racial%20upheaval%20in%20the%2020th%20century."
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Wider consideration of the riots beyond Cardiff{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://blog.nationalarchives.gov.uk/from-cardiff-to-the-caribbean-the-1919-race-riots/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        National Archives Blog{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/news/uk-wales-48611603"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        People voicing their opinions on the incidient trying to
+                        conclude what actually happened{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://hwb.gov.wales/repository/resource/aaa2e3a7-65b1-4488-845e-7368c3016cde"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Adnodd Hwb am Derfysgoedd 1919{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.cardiff1919.wales/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Nofel graffeg am Derfysgoedd 1919{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/news/wales-news/race-riots-cardiff-1919-butetown-16428953"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl Wales Online{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.blackpast.org/global-african-history/events-global-african-history/britain-s-1919-race-riots/#:~:text=The%201919%20race%20riots%20in%20Great%20Britain%20%E2%80%99s,periods%20of%20racial%20upheaval%20in%20the%2020th%20century."
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Darlun ehangach o'r terfysgoedd tu hwnt i Gaerdydd{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://blog.nationalarchives.gov.uk/from-cardiff-to-the-caribbean-the-1919-race-riots/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Blog gan The National Archives{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/news/uk-wales-48611603"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Pobl yn lleisio eu barn ar y ddigwyddiad gan geisio dod
+                        i wybod beth yn union ddigwyddodd
                       </a>
                     </li>
                   </ul>
@@ -3905,6 +6580,98 @@ function App() {
                     </li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>
+                      O fis Ionawr i fis Awst 1919, digwyddodd terfysgoedd
+                      ffyrnig yn Tiger Bay yng Nghaerdydd. Y targed oedd
+                      cymunedau du ac ethnig.
+                    </li>
+                    <li>
+                      Roedd nifer o ffactorau yn gyfrifol am y terfysgoedd:{" "}
+                      <ul>
+                        <li>
+                          Ar ddiwedd y Rhyfel Byd Cyntaf, daeth llawer iawn o
+                          filwyr adref, felly roedd gormod o ddynion yn cystadlu
+                          am y swyddi a oedd ar gael yn nociau Caerdydd, yn
+                          enwedig ymysg y morwyr.
+                        </li>
+                        <li>
+                          Roedd rhai pobl yn teimlo bod pobl o wledydd eraill –
+                          ‘tramorwyr’ – yn ‘dwyn’ swyddi er bod y cymunedau hyn
+                          wedi helpu i gadw'r dociau i weithio tra oedd Prydain
+                          yn rhyfela.
+                        </li>
+
+                        <li>
+                          Hefyd, roedd pobl yn poeni am ddiffyg tai – oherwydd y
+                          rhyfel, roedd diffyg deunyddiau a llafur, felly roedd
+                          hi'n anodd dod o hyd i le i fyw. Cododd y tensiwn o
+                          achos hyn.
+                        </li>
+
+                        <li>
+                          Roedd morwyr o India yn cael eu cyflogi am lawer llai
+                          o arian na'u cydweithwyr gwyn ac roedd rhaid iddyn nhw
+                          ddioddef amodau gweithio a byw llawer gwaeth. Cawson
+                          nhw eu beio ar gam hefyd am fod gweithwyr gwyn yn cael
+                          cyflog is hefyd.
+                        </li>
+
+                        <li>
+                          Roedd hiliaeth yn cymell dicter tuag at y mewnfudwyr
+                          hyn hefyd.
+                        </li>
+
+                        <li>
+                          Gwnaeth pedwar gweithiwr o leiafrifoedd ethnig farw yn
+                          yr ymosodiadau treisgar hyn.
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      Torrodd y tensiynau yn derfysgoedd yng Nghaerdydd, a
+                      digwyddodd terfysgoedd eraill mewn trefi porthladd eraill
+                      fel Glasgow yn yr Alban. Gwelodd dinasoedd yn Lloegr
+                      derfysgoedd hefyd, fel Llundain, South Shields, Hull a
+                      Lerpwl.
+                    </li>
+                    <li>
+                      Ynghyd â morwyr Affricanaidd, Affricanaidd Caribïaidd,
+                      Tsieineaidd ac Arabaidd, roedd rhai o Dde Asia yn darged
+                      hefyd.
+                    </li>
+
+                    <li>
+                      Drwy'r sylw mawr yn y wasg, terfysgoedd hil 1919 oedd y
+                      tro cyntaf i lawer o bobl sylweddoli bod pobl ddu ac o
+                      leiafrifoedd ethnig yn byw ym Mhrydain, gan gynnwys rhai a
+                      oedd yn byw a gweithio yma ers llawer o flynyddoedd ac
+                      wedi ymladd yn y rhyfel.
+                    </li>
+
+                    <li>
+                      Hefyd, cafodd cartrefi ac eiddo rhai pobl eu fandaleiddio.
+                      Ddioddefodd pobl o Dde Asia ddim cymaint â gweithwyr du
+                      neu Tsieineaidd oherwydd nad oedden nhw'n cael eu
+                      hystyried yn gymaint o gystadleuaeth am swyddi a thai.
+                    </li>
+
+                    <li>
+                      Yng Nghaerdydd, digwyddodd gwrthdaro ar 11 Mehefin 1919
+                      rhwng milwyr gwyn a oedd yn dod yn ôl o'r Rhyfel Mawr a
+                      dynion lleol o Butetown (Tiger Bay) a oedd yn dod yn
+                      bennaf o gefndir Yemen, Somalia ac
+                      Affricanaidd-Caribïaidd.
+                    </li>
+
+                    <li>
+                      Parhaodd y terfysgoedd am bedwar diwrnod, gan estyn allan
+                      i Grangetown a rhannau o ganol y ddinas.
+                    </li>
+                  </ul>
+                }
               ></Person>
             }
           ></Route>
@@ -3922,25 +6689,39 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Kizzy Crawford Official Site
+                        Kizzy Crawford's personal website
                       </a>
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://www.bbc.co.uk/programmes/profiles/1xvLV8vfWGVwm6F641sVRdl/kizzy-crawford"
+                        href="https://www.test.bbc.co.uk/programmes/profiles/1xvLV8vfWGVwm6F641sVRdl/kizzy-crawford"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Kizzy Crawford - BBC Wales Horizons
+                        Her performance at the Hay Festival and a written piece
+                        about her{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="http://www.kizzymerielcrawford.com/cymraeg"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Gwefan Kizzy Crawford{" "}
                       </a>
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://kizzycrawford.bandcamp.com/"
+                        href="https://www.bbc.co.uk/programmes/profiles/2lq8vb199Rf4Q3fJLJJsGlw/kizzy-crawford"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Kizzy Crawford - Bandcamp
+                        Perfformiad yng Ngŵyl y Gelli a darn ysgrifenedig amdani
                       </a>
                     </li>
                   </ul>
@@ -4029,6 +6810,85 @@ function App() {
                     </li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>
+                      Ganwyd Kizzy yn Rhydychen yn 1996, ond cafodd hi ei magu
+                      ym Merthyr Tudful. Mae teulu ei thad yn dod o Barbados.
+                    </li>
+                    <li>
+                      Dechreuodd hi ysgrifennu caneuon pan oedd hi'n 13 oed. Mae
+                      hi'n canu yn Gymraeg ac yn Saesneg, gan ddefnyddio
+                      ffynonellau traddodiadol a modern.
+                    </li>
+
+                    <li>
+                      Pan oedd Kizzy yn 26 oed, cafodd hi ddiagnosis
+                      awtistiaeth.{" "}
+                    </li>
+
+                    <li>Mae gan Kizzy chwaer, Eädyth, sy'n canu hefyd. </li>
+
+                    <li>
+                      Enillodd Kizzy wobr Canwr-Gyfansoddwr Gwreiddiol Arts
+                      Connect yn 2012. O ganlyniad, gweithiodd hi gydag Amy
+                      Wadge gan gynnwys recordio Starling, ei sengl gyntaf.
+                      Cafodd yr EP Temporary Zone ei ryddhau ym mis Rhagfyr
+                      2013.
+                    </li>
+
+                    <li>
+                      Yn ogystal ag ymddangos yn aml ar y radio a'r teledu yng
+                      Nghymru yn ystod 2013, mae Kizzy wedi perfformio'n fyw
+                      mewn llawer o wyliau cerddorol.
+                    </li>
+
+                    <li>
+                      Yn 2014 perfformiodd hi yn Glastonbury ar lwyfan BBC
+                      Introducing ac ers hynny mae hi wedi perfformio mewn nifer
+                      o wyliau amlwg.
+                    </li>
+
+                    <li>
+                      Perfformiodd Crawford pan ddaeth tîm Ewros 16 Cymru yn ôl
+                      adre, mewn gig yn Stadiwm Tîm Pêl-droed Caerdydd, wrth
+                      ochr y Manic Street Preachers.
+                    </li>
+
+                    <li>
+                      Cafodd ei cherddoriaeth ei defnyddio i groesawu Arlywydd
+                      UDA i Uwchgynhadledd NATO yng Nghymru.
+                    </li>
+
+                    <li>
+                      Yn 2016, cafodd nifer o'i chyfansoddiadau eu dewis yn rhan
+                      o Faes Llafur TGAU Safon Uwch Cerddoriaeth – roedd ei
+                      cherddoriaeth yn yr adran gyfoes wrth ochr y Manics, Gruff
+                      Rhys a'r Super Furry Animals.
+                    </li>
+
+                    <li>
+                      Cafodd Kizzy ei gwahodd i berfformio ac i drafod y fraint
+                      honno yn fyw ar raglen Woman's Hour BBC Radio 4.  
+                    </li>
+
+                    <li>
+                      Chwaraeodd rôl gynorthwyol fel PC Emma Jones yn Keeping
+                      Faith, y ddrama gan y BBC sydd wedi ennill gwobrau.
+                    </li>
+
+                    <li>
+                      Yn 2018, arwyddodd Crawford gyda Freestyle Records a
+                      rhyddhau ei halbwm cyntaf "The Way I Dream" yn 2019.
+                    </li>
+
+                    <li>
+                      Ym mis Tachwedd 2021, rhyddhaodd Crawford "Rhydd", ei
+                      Halbwm Cymraeg cyntaf y mae hi wedi'i
+                      hunanrecordio/cynhyrchu/cymysgu gyda Recordiau Sain.
+                    </li>
+                  </ul>
+                }
               ></PersonYTVid>
             }
           ></Route>
@@ -4039,6 +6899,70 @@ function App() {
                 proposedResource={"With Ben Cabango? Or with Ashley himself?"}
                 indivName={"Ashley Williams"}
                 indivNameCym={"Ashley Williams"}
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.skysports.com/football/news/11095/12199145/ashley-williams-former-wales-and-swansea-captain-announces-retirement"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Sky news article on his retirement{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/sport/football/55896323"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        BBC Sport Wales article discussing his future{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.wales247.co.uk/was-ashley-williams-wales-greatest-ever-captain"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Article discussing his legacy as Wales' best ever
+                        captain{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.skysports.com/football/news/11095/12199145/ashley-williams-former-wales-and-swansea-captain-announces-retirement"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl Sky News pan gyhoeddodd ei fod yn ymddeol{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/sport/football/55896323"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl BBC Sports Wales yn trafod am ei ddyfodol{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.wales247.co.uk/was-ashley-williams-wales-greatest-ever-captain"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl 'Was Ashley Williams Wales' Greatest Ever
+                        Captain? Gan Wales 247
+                      </a>
+                    </li>
+                  </ul>
+                }
                 resource={twelveApi.slice(5, 6)}
                 slugText={"The Welsh football star."}
                 indivPic={
@@ -4128,6 +7052,95 @@ function App() {
                     </li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>
+                      Cafodd Ashley Williams ei eni yn 1985 yn Wolverhampton.
+                      Mae o dras Affricanaidd-Jamaicaidd drwy ei dad ac o dras
+                      Gymreig drwy ei fam.
+                    </li>
+
+                    <li>
+                      Pan oedd yn 16 oed, cafodd ei ryddhau fel chwaraewr ifanc
+                      o West Bromwich Albion i ddechrau ei yrfa gyda Hednesford
+                      Town ac yna Stockport County.
+                    </li>
+
+                    <li>
+                      Ym mis Tachwedd 2007, enillodd Williams Wobr Chwaraewr y
+                      Flwyddyn Ail Gynghrair Gogledd-orllewin Lloegr, a Gwobr
+                      Chwaraewr y Flwyddyn Gogledd-orllewin Lloegr.
+                    </li>
+
+                    <li>
+                      Tra oedd Williams yn gapten Stockport, chwaraeodd yn ei
+                      gêm ryngwladol gyntaf dros Gymru.
+                    </li>
+
+                    <li>
+                      Ym mis Mawrth 2008, arwyddodd Williams i Ddinas Abertawe
+                      ar fenthyg.{" "}
+                    </li>
+
+                    <li>
+                      Ar ôl helpu Abertawe i ennill teitl y Gynghrair Gyntaf
+                      (League One), a hefyd, dyrchafiad i ail haen pêl-droed
+                      Lloegr am y tro cyntaf mewn 24 blynedd, cafodd aros yn
+                      barhaol yn Abertawe. Mae'n debyg i'r clwb dalu £400,000,
+                      record am ffi drosglwyddo ar y pryd.
+                    </li>
+
+                    <li>
+                      Chwaraeodd yr amddiffynnwr yn dda yn ystod ei dymor cyntaf
+                      yn y Bencampwriaeth. Yn y pen draw, cafodd ei enwi'n
+                      Bêl-droediwr y Flwyddyn yng Nghymru ym mis Tachwedd 2009.
+                      Hefyd, cododd Williams wobr Dyn Clwb y Flwyddyn yn yr un
+                      achlysur.
+                    </li>
+                    <li>
+                      Yn nhymor 2010–11 cafodd Abertawe a Williams ddyrchafiad i
+                      Uwch Gynghrair Lloegr drwy ennill rownd derfynol y gemau
+                      ail gyfle yn Wembley. 
+                    </li>
+
+                    <li>
+                      Cafodd Williams ei enwi yn Nhîm y Flwyddyn y
+                      Bencampwriaeth gan Gymdeithas y Pêl-droedwyr proffesiynol
+                      am yr ail dymor yn olynol.
+                    </li>
+
+                    <li>
+                      Hefyd yn y tymor hwnnw, curodd record y clwb o 106 gêm yn
+                      ddi-dor. Andy Legg a Gilbert Beech oedd yn arfer bod â'r
+                      record ar y cyd.
+                    </li>
+
+                    <li>
+                      Yn 2016, ymunodd Williams â thîm Everton ar gontract tair
+                      blynedd gyda ffi trosglwyddo gwerth £12 miliwn ac yna
+                      symudodd i Stoke City yn 2018 a Bristol City yn 2019.
+                    </li>
+
+                    <li>
+                      Uchafbwynt gyrfa Ashley Williams oedd bod yn gapten ar dîm
+                      Cymru a gyrhaeddodd rowndiau cynderfynol Euros UEFA yn
+                      2016. Hwn oedd twrnamaint mawr cyntaf Cymru ers dros
+                      hanner canrif. Cafodd y twrnamaint ei gynnal yn Ffrainc.
+                      Peniodd Williams y gôl a ddaeth â Chymru yn gyfartal yn
+                      erbyn Gwlad Belg yn y chwarteri wrth i Gymru ennill 3-1 yn
+                      y pen draw a symud ymlaen i'r gemau cynderfynol am y tro
+                      cyntaf yn eu hanes pêl-droed rhyngwladol.
+                    </li>
+
+                    <li>Ymddeolodd Williams yn 2021, yn 36 oed. </li>
+
+                    <li>
+                      Mae Williams yn un o sêr pêl-droed mwyaf Cymru. Enillodd
+                      86 o gapiau dros Gymru a sgorio dwy gôl, gyda'i gap olaf
+                      ym mis Mehefin 2019.
+                    </li>
+                  </ul>
+                }
               ></Person>
             }
           ></Route>
@@ -4143,7 +7156,56 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Joe Erskine - Too Small to be Great
+                        Article on his life{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/news/local-news/day-cardiff-said-farewells-legend-1935179"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Remembrance article on Wales Online{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=8Q_EWAi0puo"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Video of fight against Henry Cooper{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.boxingnewsonline.net/joe-erskine-too-small-to-be-great/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl am ei fywyd{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/news/local-news/day-cardiff-said-farewells-legend-1935179"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl cofiant ar Wales Online{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=8Q_EWAi0puo"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Fideo o ornest yn erbyn Henry Cooper{" "}
                       </a>
                     </li>
                   </ul>
@@ -4151,7 +7213,9 @@ function App() {
                 indivName={"Joe Erskine"}
                 indivNameCym={"Joe Erskine"}
                 resource={twelveApi.slice(6, 7)}
-                proposedResource={"Factfile and discussion topics."}
+                proposedResource={
+                  "Factfile and discussion topics. NOT DEVELOPED YET"
+                }
                 slugText={"The gifted boxer from Butetown."}
                 indivPic={
                   "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/joe-erskine-keystone.jpg"
@@ -4211,24 +7275,85 @@ function App() {
                     </p>
                   </>
                 }
+                welshText={
+                  <>
+                    <ul>
+                      <li>
+                        Roedd Joseph Erskine, a gafodd ei eni ar 26 Ionawr 1934,
+                        yn focsiwr o ardal Butetown yng Nghaerdydd.
+                      </li>
+                      <li>
+                        Roedd yn un o focswyr mwyaf talentog ei ddydd ac yn
+                        gyn-bencampwr bocsio pwysau trwm Prydain ac Ymerodraeth
+                        Prydain.
+                      </li>
+
+                      <li>
+                        Cafodd Erskine ei eni ym mis Ionawr 1934 yn Tiger Bay,
+                        ardal y dociau yng Nghaerdydd. Roedd ei fam yn Gymraes
+                        a'i dad yn dod o Jamaica.
+                      </li>
+
+                      <li>
+                        Fel bachgen ysgol, enillodd wahanol deitlau gyda Chlwb
+                        Bocsio Amatur Victoria ac roedd yn bencampwr pwysau trwm
+                        ABA yn 1953.
+                      </li>
+
+                      <li>
+                        Pan oedd yn 19 oed, roedd Erskine yn Bencampwr y
+                        Gymdeithas Bocsio Amatur, yn Bencampwr y Lluoedd Arfog,
+                        ac yn Bencampwr Byddin Prydain.
+                      </li>
+                      <li>
+                        Dechreuodd ymladd yn broffesiynol yn 1954 a chafodd ei
+                        hyfforddi gan Freddie Elvin.
+                      </li>
+                      <li>
+                        Bocsiodd yn erbyn dynion fel Willie Pastrano o America,
+                        Dick Richardson o Gymru, Karl Mildenberger o'r Almaen,
+                        Jack Bodell (a fyddai'n dod yn bencampwr Prydain) a'r
+                        chwedlonol Henry Cooper o Loegr, ymladdon nhw 5 gwaith.
+                      </li>
+                      <li>
+                        O fis Awst 1956 i fis Mehefin 1958, Erskine oedd â
+                        theitl pwysau trwm Prydain. Enillodd 45 o'i 54 o
+                        ornestau proffesiynol (13 drwy lorio), colli 8, gydag un
+                        yn gyfartal.
+                      </li>
+
+                      <li>
+                        Roedd ei ornest olaf yn erbyn Billy Walker ar 27 Hydref
+                        1964. Collodd yr ornest ddeg rownd ar bwyntiau.
+                      </li>
+                    </ul>
+                    <p>
+                      Roedd Erskine yn 5 troedfedd 11 modfedd (1 metr 80 cm) ac
+                      roedd yn pwyso o dan 200 pwys (bron i 91 kg). Fel ymladdwr
+                      pwysau trwm bach, roedd yn gallu symud yn gyflym o afael
+                      ei wrthwynebwyr, yn hytrach na'u trechu nhw. Ond oherwydd
+                      ei fod yn benderfynol ac yn credu'n gryf ynddo ei hun,
+                      roedd yn wrthwynebydd ffyrnig.
+                    </p>
+                  </>
+                }
               ></Person>
             }
           ></Route>
           <Route
             path="/12to16yo/ElizabethCampbell"
             element={
-              <Person
-                quizButtonText={"Try the quiz!"}
-                linkQuiz={"https://dev.addysgop.co.uk/hanesbame/BettyQuiz"}
+              <PersonYTVid
+                youtubeVid={"https://www.youtube.com/embed/y0Lg1LF65JY"}
                 links={
                   <ul>
                     <li className="linkLi">
                       <a
-                        href="https://www.100welshwomen.wales/100-women/betty_campbell/"
+                        href="https://www.bbc.co.uk/newsround/58732219"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Betty Campbell - 100 Welsh Women{" "}
+                        Newsround article about the statue of her in Cardiff{" "}
                       </a>
                     </li>
                     <li className="linkLi">
@@ -4237,35 +7362,86 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        BBC Hidden Heroines - Betty Campbell
+                        Hidden Heroines article by the BBC with videos about
+                        Betty Campbell{" "}
                       </a>
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://cadw.gov.wales/learn/wales-rich-and-diverse-heritage/creative-responses/betty-campbell-1934-2017"
+                        href="https://blackhistorywales.org.uk/black-history-wales-press-release-mrs-betty-campbell-mbe-monument/"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Cadw - Betty Campbell
+                        Press release - History of Welsh Black People{" "}
                       </a>
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://www.theguardian.com/uk-news/2021/sep/29/wales-honours-betty-campbell-first-black-headteacher"
+                        href="https://www.itv.com/news/wales/2021-09-29/who-was-betty-campbell-and-why-is-a-statue-of-her-being-unveiled-in-cardiff"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Wales honours Betty Campbell, country’s first black
-                        headteacher
+                        Article on Betty Campbell and uncovering her statue
                       </a>
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://www.meiccymru.org/black-history-month-betty-campbell/"
+                        href="https://meithrin.cymru/wp-content/uploads/2023/02/Betty_Campbell.pdf"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Meic: Black History Month – Betty Campbell
+                        Mudiad Ysgolion Meithrin information sheet{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/newsround/58732219"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl Newsround am y cerflun ohoni yng Nghaerdydd{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/programmes/articles/54j56MQDcCvvnsNlyy8JVPn/adnoddau-dysgu"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl Merched Mawreddog y BBC gyda fideos am Betty
+                        Campbell
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://blackhistorywales.org.uk/black-history-wales-press-release-mrs-betty-campbell-mbe-monument/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Datganiad i'r wasg Hanes Pobl Duon Cymru{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.itv.com/news/wales/2021-09-29/who-was-betty-campbell-and-why-is-a-statue-of-her-being-unveiled-in-cardiff"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl am bwy oedd Betty Campbell a dad-orchuddio'r
+                        cerflun{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://meithrin.cymru/wp-content/uploads/2023/02/Betty_Campbell.pdf"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Taflen ffeithiau Mudiad Ysgolion Meithrin{" "}
                       </a>
                     </li>
                   </ul>
@@ -4372,13 +7548,145 @@ function App() {
                     </li>
                   </ul>
                 }
-              ></Person>
+                welshText={
+                  <ul>
+                    <li>
+                      Cafodd Betty ei geni yn Butetown, Caerdydd, ar 6 Tachwedd
+                      1934.
+                    </li>
+                    <li>
+                      Roedd Nora, ei mam, yn Gymraes o dras Barbados. Roedd
+                      Simon, ei thad, wedi dod i'r DU o Jamaica pan oedd yn 15
+                      oed, a chafodd ei ladd yn yr Ail Ryfel Byd. Ar ôl i'w thad
+                      farw, roedd gan y teulu broblemau arian ac roedd bywyd yn
+                      anodd.
+                    </li>
+
+                    <li>
+                      Yn yr ysgol, Betty oedd disgybl gorau ei dosbarth.
+                      Enillodd ysgoloriaeth i Ysgol Uwchradd y Fonesig Margaret
+                      i Ferched yng Nghaerdydd. Roedd hi eisiau bod yn athrawes
+                      o'r adeg pan oedd hi'n ferch fach. Ond dywedodd un o'i
+                      hathrawon wrthi nad oedd hi’n meddwl y byddai hynny’n
+                      digwydd oherwydd mai merch ddu o'r dosbarth gweithiol oedd
+                      hi. Gwnaeth hyn i Betty grio ond hefyd gwnaeth iddi eisiau
+                      trio hyd yn oed yn galetach.
+                    </li>
+
+                    <li>
+                      Yn 1960 gwnaeth hi gais i Goleg Hyfforddi Athrawon
+                      Caerdydd. Hi oedd un o chwe myfyrwraig yn unig i gael
+                      gwneud cwrs yno.
+                    </li>
+
+                    <li>
+                      Roedd swydd ddysgu gyntaf Betty yn Llanrhymni ond cyn hir,
+                      daeth yn ôl i Butetown. Cafodd swydd yn Ysgol Gynradd
+                      Mount Stuart, lle dysgodd hi am 28 o flynyddoedd.
+                    </li>
+
+                    <li>
+                      Yn yr ysgol hon daeth Betty yn bennaeth du cyntaf Cymru.
+                      Ychydig bach iawn o athrawon du oedd yng Nghymru ar yr
+                      adeg hon.
+                    </li>
+
+                    <li>
+                      Roedd Betty yn teimlo ei bod hi'n bwysig bod y plant yn
+                      gwybod am ddiwylliant pobl dduon a hanes pobl dduon fel
+                      rhan o'u haddysg. Felly roedd hi'n eu dysgu nhw am
+                      gaethwasiaeth a’r system apartheid a oedd yn Ne Affrica ar
+                      y pryd.
+                    </li>
+
+                    <li>
+                      Helpodd Betty i greu Mis Hanes Pobl Dduon a hefyd dysgodd
+                      hi gyfres o weithdai am bobl Butetown a'r gwledydd roedden
+                      nhw wedi dod ohonyn nhw'n wreiddiol.
+                    </li>
+
+                    <li>
+                      Daeth Betty yn adnabyddus y tu allan i Gymru fel awdurdod
+                      pwysig ar addysg. Defnyddiodd hi lawer o syniadau newydd
+                      am sut i addysgu plant.
+                    </li>
+
+                    <li>
+                      Daeth ei hysgol hi'n bwysig fel enghraifft dda o addysgu
+                      amlddiwylliannol.
+                    </li>
+
+                    <li>
+                      Roedd Betty yn teimlo'n angerddol am y gwahanol gymunedau
+                      a'u hanes yn nociau Caerdydd. Gwasanaethodd hi fel
+                      cynghorydd yn Butetown er mwyn ceisio helpu'r bobl.
+                    </li>
+
+                    <li>
+                      Yn 2003, cafodd Betty anrhydedd MBE am ei gwasanaeth i
+                      addysg a bywyd y gymuned. Hefyd, cafodd hi anrhydedd gan
+                      grŵp Aelodau Duon Unsain Cymru yn 2015. Rhoddon nhw wobr
+                      cyflawniad oes iddi am ei chyfraniad i hanes pobl dduon ac
+                      addysg yng Nghymru.
+                    </li>
+
+                    <li>
+                      Ar ôl iddi hi farw, cafodd cerflun ohoni ei osod yng
+                      Nghaerdydd.
+                    </li>
+                  </ul>
+                }
+              ></PersonYTVid>
             }
           ></Route>
           <Route
             path="/12to16yo/GaneshSubrahmanyam"
             element={
               <PersonYTVid
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.nhsrho.org/news/reflections-of-south-asian-heritage-month/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        NHS article on South Asian heritage{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/programmes/p01gtkgp"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Dr Ganesh on 'The Real Indian Doctor' BBC programme{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.nhsrho.org/news/reflections-of-south-asian-heritage-month/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl am South Asian Heritage Month gan yr NHS{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/programmes/p01gtkgp"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Dr Ganesh ar raglen 'The Real Indian Doctors' ar BBC{" "}
+                      </a>
+                    </li>
+                  </ul>
+                }
                 indivName={"Ganesh Subrahmanyam"}
                 indivNameCym={"Ganesh Subrahmanyam"}
                 resource={twelveApi.slice(8, 9)}
@@ -4450,6 +7758,71 @@ function App() {
                     </li>
                   </ul>
                 }
+                welshText={
+                  <ul>
+                    <li>
+                      Roedd y bobl a fewnfudodd o Asia yn y 1950au yn bwysig
+                      iawn i lwyddiant y GIG (NHS).
+                    </li>
+                    <li>
+                      Roedden nhw'n dal i fod yn bwysig i ofal iechyd yn y
+                      blynyddoedd wedi hynny.
+                    </li>
+
+                    <li>
+                      Dechreuodd y GIG yn 1948 ac roedd angen llawer o feddygon
+                      i ofalu am bobl. Ond roedd prinder pobl feddygol ym
+                      Mhrydain oherwydd yr Ail Ryfel Byd.
+                    </li>
+
+                    <li>
+                      Hysbysebodd Prydain am help yn India (un o'r hen
+                      drefedigaethau), gan gynnig tâl da ac antur.
+                    </li>
+                    <li>
+                      Daeth nifer mawr o bobl feddygol o India i Brydain i
+                      weithio yn y GIG.
+                    </li>
+
+                    <li>
+                      Roedd Dr Ganesh Subrahmanyam yn un o'r meddygon Indiaidd
+                      cyntaf i gyrraedd Cymru.
+                    </li>
+
+                    <li>
+                      Cafodd ei dderbyn yn syth i'r gymuned Gymreig a dechrau
+                      wynebu'r her o drin clefydau a oedd yn wahanol iawn i rai
+                      India.
+                    </li>
+
+                    <li>
+                      Roedd yn rhan o'r tîm meddygol adeg trychineb Aberfan.
+                    </li>
+
+                    <li>
+                      Erbyn y 1960au, daeth 18,000 yn rhagor o feddygon Indiaidd
+                      i Brydain i helpu GIG a oedd mewn trafferth. Roedd y
+                      gwasanaeth ar fin dymchwel.
+                    </li>
+
+                    <li>
+                      Mae pobl Asiaidd ail genhedlaeth yn bwysig iawn yn y byd
+                      meddygol heddiw: Mae chwarter yr holl fyfyrwyr meddygol yn
+                      y DU o dras De Asia; Mae llawer yn gweithio mewn cartrefi
+                      gofal; Mae traean yr holl fferyllyddion o dras De Asia.
+                    </li>
+                    <li>
+                      Yn 2003, roedd 73% y meddygon yng Nghwm Rhondda yn
+                      Asiaidd.
+                    </li>
+
+                    <li>
+                      Gweithiodd staff meddygol De Asiaidd, wrth ochr eu
+                      cydweithwyr eraill, yn galed iawn drwy'r pandemig, er bod
+                      mwy o risg iddyn nhw ddal Covid.
+                    </li>
+                  </ul>
+                }
               ></PersonYTVid>
             }
           ></Route>
@@ -4457,6 +7830,75 @@ function App() {
             path="/12to16yo/VaughanGething"
             element={
               <Person
+                resourceOverlay={
+                  "Read a portrait of Vaughan Gething. (Item & Task)"
+                }
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.vaughangething.wales/en/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Vaughan Gething's personal website{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.gov.wales/vaughan-gething-ms#15220"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Government Website - Biography and information about his
+                        job{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=UBXgI934lkg"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Vaughan Gething talking about racial steretypes and
+                        being a black politician in Wales
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.vaughangething.wales/cy/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Gwefan personol Vaughan Gething{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.llyw.cymru/vaughan-gething-as"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Gwefan y Llywodraeth - Bywgraffiad a gwybodaeth am ei
+                        swydd
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=UBXgI934lkg"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Vaughan Gething yn siarad am sterioteipiau o hiliaeth a
+                        bod yn wleidydd du yng Nghymru
+                      </a>
+                    </li>
+                  </ul>
+                }
                 indivName={"Vaughan Gething"}
                 indivNameCym={"Vaughan Gething"}
                 linkResource={"Resources/VaughanGething"}
@@ -4514,6 +7956,59 @@ function App() {
                     <li>
                       Since May 2021, Gething has served as  Minister for the
                       Economy.{" "}
+                    </li>
+                  </ul>
+                }
+                welshText={
+                  <ul>
+                    <li>
+                      Cafodd Vaughan Gething ei eni ar 15 Mawrth 1974, yn
+                      Zambia.
+                    </li>
+                    <li>
+                      Cwrddodd ei dad, milfeddyg gwyn o Aberogwr, â'i fam sy'n
+                      fenyw ddu o Zambia, yn y wlad honno.
+                    </li>
+                    <li>
+                      Pan oedd yn ddwy oed, symudodd i Sir Fynwy, Cymru gyda'i
+                      deulu, ac yna symudon nhw eto i Dorset, Lloegr, lle cafodd
+                      Gething ei fagu.{" "}
+                    </li>
+                    <li>Ymunodd Vaughan â'r Blaid Lafur pan oedd yn 17 oed.</li>
+
+                    <li>
+                      Astudiodd y gyfraith yn Aberystwyth a daeth yn llywydd Du
+                      cyntaf Undeb Cenedlaethol Myfyrwyr Cymru.
+                    </li>
+
+                    <li>
+                      Wedyn, aeth i hyfforddi fel cyfreithiwr yng Nghaerdydd yn
+                      2001, gyda chwmni Thompsons, cyfreithwyr yr undebau
+                      llafur. Arbenigodd ar gyfraith cyflogaeth a daeth yn
+                      bartner yn Thompsons yn 2007.
+                    </li>
+
+                    <li>
+                      Yn 2008, pan oedd yn 34 oed, Vaughan oedd y person ifancaf
+                      i fod yn Llywydd Cyngres Undebau Llafur Cymru (Wales TUC).
+                      Hefyd, fe oedd y person hil gymysg cyntaf yn y rôl.
+                    </li>
+
+                    <li>
+                      Daeth Vaughan yn gynghorydd dros Butetown, Caerdydd, ac yn
+                      ymgeisydd Llafur Cymru dros etholaeth De Caerdydd a
+                      Phenarth yn y Senedd. 
+                    </li>
+                    <li>
+                      Ar ôl etholiad 2016, rhoddodd Carwyn Jones, y Prif
+                      Weinidog ddyrchafiad i Gething i Gabinet Senedd Cymru fel
+                      Ysgrifennydd y Cabinet dros Iechyd, Llesiant a Chwaraeon.
+                      Wedyn cafodd y swydd enw newydd, felly nawr Gething yw’r
+                      Gweinidog dros Iechyd a Gwasanaethau Cymdeithasol.
+                    </li>
+                    <li>
+                      Ym mis Mai 2021, cafodd Gething ei benodi'n Weinidog yr
+                      Economi.
                     </li>
                   </ul>
                 }

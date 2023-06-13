@@ -10,12 +10,13 @@
 
 .resourceBanner {
   position: fixed;
-  /* width: 5%; */
+  max-width: 29.5%;
   border-radius: 5px;
   margin: 20px;
   padding: 5px;
-  height: 2vh;
+  /* height: 2vh; */
   background-color: white;
+  z-index: 10000000000000000;
 }
 
 .scroll {
@@ -88,7 +89,7 @@
 
 .personInfoBack {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: white;
   font-family: sassoon;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -101,6 +102,32 @@
   align-items: flex-start;
   justify-content: flex-start;
   justify-items: center;
+}
+
+.backToSection {
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+  /* padding: 2rem; */
+}
+
+.backToButton {
+  border: 1px solid #258ea6;
+  background-color: #258ea6;
+  margin: 1rem;
+  padding: 5px;
+  color: #f2f2f2;
+  border-radius: 10px;
+  font-size: larger;
+  /* width: 3vw; */
+}
+.overlayUnderText {
+  text-align: center;
+  margin: 5px;
+  max-width: 80%;
+  /* margin-top: 10px; */
+  height: 4vh;
+  margin-left: 15px;
 }
 
 .flipMobile {
@@ -170,7 +197,41 @@
   font-family: "Futura", sans-serif;
   z-index: 9;
 }
+.prevnextpulse {
+  transform: scale(3);
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  font-family: "Futura", sans-serif;
+  z-index: 9;
+  animation: pulse 3s;
+  animation-iteration-count: 5;
+}
+.prevnextInvis {
+  transform: scale(3);
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  font-family: "Futura", sans-serif;
+  z-index: 9;
+}
 
+@keyframes pulse {
+  0% {
+    transform: scale(2.5);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+  }
+
+  50% {
+    transform: scale(3);
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  100% {
+    transform: scale(2.5);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+  }
+}
 .backLeft {
   width: 50%;
   height: 100%;

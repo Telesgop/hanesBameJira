@@ -13,12 +13,14 @@
 
 .storyBoxAnim {
   background-color: #fff;
-  border-radius: 10px;
-  /* height: 30vh; */
-  /* padding: 1px; */
+  border-radius: 5px;
+  height: 30.5vh;
+  padding: 1px;
   width: 20vw;
   margin: 1.5vw;
   margin-top: 1.5vw;
+  display: flex;
+  justify-content: flex-start;
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   font-family: "Comic Sans MS", sans-serif;
@@ -49,7 +51,7 @@
   margin-top: 0.5rem !important;
   margin-bottom: 0.5rem !important;
   font-weight: bold;
-  padding-top: 5px;
+  /* padding-top: 5px; */
   text-align: center;
 
   font-family: "Comic Sans MS", sans-serif;
@@ -81,7 +83,9 @@
   background-color: white;
   grid-area: content-2;
   object-fit: cover;
-  border-radius: 7px;
+  border-radius: 4px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
 }
 
 .indivImageDiaries {
@@ -104,6 +108,16 @@
   margin-top: 30px;
   overflow: scroll;
 }
+.indivSlugAnim {
+  font-family: sassoon;
+  grid-area: content-3;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  width: 10vw;
+  height: 10vh;
+  margin-top: 30px;
+  overflow: scroll;
+}
 
 .bottomDesc {
   margin: 1rem;
@@ -114,7 +128,14 @@
   .storyBox {
     width: 40vw !important;
   }
+  .storyBoxAnim {
+    width: 40vw !important;
+  }
   .indivImage {
+    width: 100% !important;
+    height: 20vh !important;
+  }
+  .indivImageAnim {
     width: 100% !important;
     height: 20vh !important;
   }
@@ -131,6 +152,9 @@
 
 @media only screen and (max-width: 1150px) {
   .storyBox {
+    height: 40vh;
+  }
+  .storyBoxAnim {
     height: 40vh;
   }
 }

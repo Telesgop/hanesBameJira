@@ -38,7 +38,7 @@ const StoryBoxAnim = ({ name, image, slug, welshSlug }) => {
     >
       <div>
         <h3 className="indivNameAnim">{name}</h3>
-        <div className="imgAndSlug">
+        <div className="imgAndSlugAnim">
           <img src={image} className="indivImageAnim" alt={name}></img>
         </div>
       </div>
