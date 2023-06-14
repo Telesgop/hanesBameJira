@@ -1242,8 +1242,8 @@ function App() {
                         1933.
                       </li>
                       <li>
-                        Hitler hated ethnic minorities, including the Jews, and
-                        Jews were treated very badly in Germany.
+                        Hitler hated ethnic minorities, including Jewish people,
+                        and Jewish people were treated very badly in Germany.
                       </li>
 
                       <li>
