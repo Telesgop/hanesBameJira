@@ -145,7 +145,7 @@ const DiaryBox = () => {
             )}
             {page === 1 && (
               <>
-                <h2 className="handwritten">Monday, 23th of January </h2>
+                <h2 className="handwritten">Monday, 23rd of January </h2>
                 <p>
                   {" "}
                   It's New Year's Day today, the beginning of the Year of the

@@ -92,8 +92,10 @@
 
 .introDivImg {
   object-fit: contain;
-  transform: scale(0.9);
+  transform: scale(1);
   width: 100%;
+  margin-top: 100px;
+  margin-right: 20px;
   /* height: 90%; */
 }
 

@@ -18,6 +18,7 @@ import louisa from "./Images/louisa.png";
 import vip from "./Images/vipPass.png";
 import castle from "./Images/castle.png";
 import diary from "./Images/diary.png";
+import ashleySmall from "./Images/ashleySmall.png";
 import postcard from "./Images/postcardsmall.png";
 import { LanguageContext } from "./Helper/Context";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
@@ -65,6 +66,7 @@ import Hans from "./Components/Resources/Hans";
 import DiaryBoxArandora from "./Components/DiaryBox/DiaryBoxArandora";
 import PersonPodcast from "./Components/Person/PersonPodcast";
 import Vaughan from "./Components/Resources/Vaughan";
+import DiaryBoxAshley from "./Components/DiaryBox/DiaryBoxAshley";
 
 function App() {
   const [lang, setLang] = useState(false);
@@ -149,6 +151,10 @@ function App() {
           <Route
             path="6to9yo/Diaries/FongSui"
             element={<DiaryBox></DiaryBox>}
+          ></Route>
+          <Route
+            path="12to16yo/Diaries/Ashley"
+            element={<DiaryBoxAshley></DiaryBoxAshley>}
           ></Route>
           <Route
             path="6to9yo/Resources/ArandoraStarStrip"
@@ -1150,6 +1156,33 @@ function App() {
                   <ul>
                     <li className="linkLi">
                       <a
+                        href="https://www.aber.ac.uk/en/news/archive/2018/11/title-218626-en.html"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Was ‘Kindertransport’ a success?{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/news/uk-wales-49349239"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        From Berlin to Aberystwyth
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/newsround/46877532"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        What was Kindertransport? (Newsround){" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
                         href="https://www.theguardian.com/society/2019/apr/02/hans-lichtenstein-obituary"
                         className="resourceHref"
                         target="_blank"
@@ -1188,6 +1221,33 @@ function App() {
                 }
                 linksCym={
                   <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.aber.ac.uk/cy/news/archive/2018/11/title-218626-cy.html"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Oedd ‘Kindertransport’ yn lwyddiant?
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/news/uk-wales-49349239"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        O Berlin i Aberystwyth
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/newsround/46877532"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Beth oedd Kindertransport? (Newsround)
+                      </a>
+                    </li>
                     <li className="linkLi">
                       <a
                         href="https://www.theguardian.com/society/2019/apr/02/hans-lichtenstein-obituary"
@@ -3269,7 +3329,7 @@ function App() {
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://www.heart.co.uk/showbiz/tv-movies/dancing-on-ice/colin-jackson-gay-boyfriend-partner-husband/"
+                        href="https://www.walesonline.co.uk/sport/other-sport/athletics/colin-jackson-hid-homosexuality-secret-16517078"
                         className="resourceHref"
                         target="_blank"
                       >
@@ -3309,7 +3369,7 @@ function App() {
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://www.heart.co.uk/showbiz/tv-movies/dancing-on-ice/colin-jackson-gay-boyfriend-partner-husband/"
+                        href="https://www.walesonline.co.uk/sport/other-sport/athletics/colin-jackson-hid-homosexuality-secret-16517078"
                         className="resourceHref"
                         target="_blank"
                       >
@@ -4365,6 +4425,15 @@ function App() {
                         Queen plants rose named after John Ystumllyn{" "}
                       </a>
                     </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://gwallter.com/books/john-ystumllyn-an-african-in-18th-century-eifionydd.html"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Blog about John Ystumllyn{" "}
+                      </a>
+                    </li>
                   </ul>
                 }
                 linksCym={
@@ -4423,6 +4492,15 @@ function App() {
                       >
                         Y Frenhines yn plannu rhosyn wedi'i enwi ar ôl John
                         Ystumllyn{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://gwallter.com/books/john-ystumllyn-an-african-in-18th-century-eifionydd.html"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Blog am John Ystumllyn{" "}
                       </a>
                     </li>
                   </ul>
@@ -4634,6 +4712,15 @@ function App() {
                   <ul>
                     <li className="linkLi">
                       <a
+                        href="https://www.youtube.com/watch?v=2Bx5mU2JOps"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Archive film of Tiger Bay
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
                         href="https://www.cardiffbay.co.uk/history/"
                         className="resourceHref"
                         target="_blank"
@@ -4672,6 +4759,15 @@ function App() {
                 }
                 linksCym={
                   <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=2Bx5mU2JOps"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Ffilm archif o Tiger Bay
+                      </a>
+                    </li>
                     <li className="linkLi">
                       <a
                         href="https://www.cardiffbay.co.uk/history/"
@@ -5588,6 +5684,15 @@ function App() {
                   <ul>
                     <li className="linkLi">
                       <a
+                        href="https://www.walesonline.co.uk/news/wales-news/underappreciated-serious-issue-hair-discrimination-22489203"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Article about hair discrimination
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
                         href="https://chwaraeteg.com/projects/wonderful-welsh-women/vernesta-cyril/"
                         className="resourceHref"
                         target="_blank"
@@ -5617,6 +5722,15 @@ function App() {
                 }
                 linksCym={
                   <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/news/wales-news/underappreciated-serious-issue-hair-discrimination-22489203"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl am wahaniaethu ar sail gwallt{" "}
+                      </a>
+                    </li>
                     <li className="linkLi">
                       <a
                         href="https://chwaraeteg.com/merched-gwych-o-gymru/vernesta-cyril/"
@@ -6896,8 +7010,14 @@ function App() {
             path="/12to16yo/AshleyWilliams"
             element={
               <Person
-                proposedResource={"With Ben Cabango? Or with Ashley himself?"}
+                buttonLink={"/Diaries/Ashley"}
+                linkResource={"Diaries/Ashley"}
                 indivName={"Ashley Williams"}
+                backcardImg={ashleySmall}
+                resourceOverlay={
+                  "Read the imaginary diary of Ashley Williams. (Item & Task)"
+                }
+                bgcolor={"#FF686B"}
                 indivNameCym={"Ashley Williams"}
                 links={
                   <ul>
