@@ -14,13 +14,15 @@ const PersonYTVid = ({
   indivName,
   indivPic,
   overlayText,
+  resourceOverlayCym,
   backText,
   backWelshText,
   slugText,
   welshSlugText,
-  resource,
+  resourceOverlay,
   dateOfBirth,
   youtubeVid,
+  youtubeVidCym,
   backLContent,
   linksCym,
   backLContentCym,
@@ -172,17 +174,33 @@ const PersonYTVid = ({
                     >
                       {overlayText}
                     </div> */}
-                    <iframe
-                      src={youtubeVid}
-                      className="youtubeEmbed"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen="true"
-                    ></iframe>
+                    {lang !== true ? (
+                      <iframe
+                        src={youtubeVid}
+                        className="youtubeEmbed"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen="true"
+                      ></iframe>
+                    ) : (
+                      <iframe
+                        src={youtubeVidCym}
+                        className="youtubeEmbed"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen="true"
+                      ></iframe>
+                    )}
+
                     <p className="courtesyText">
                       {lang !== true ? backLContent : backLContentCym}
                     </p>
+                  </div>
+                  <div className="overlayUnderText">
+                    {" "}
+                    {lang !== true ? resourceOverlay : resourceOverlayCym}
                   </div>
                 </div>
                 <div className="backRight">

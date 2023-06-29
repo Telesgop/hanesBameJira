@@ -45,7 +45,6 @@
 .colourCategoryP {
   margin: 0;
   font-size: large;
-  font-weight: bold;
   padding-left: 10px;
 }
 .OurWelshHistory {
@@ -80,7 +79,6 @@
   justify-content: space-between;
   width: 90%;
   margin: auto;
-  margin-top: 30px;
   flex-direction: row;
 }
 
@@ -92,17 +90,15 @@
 
 .introDivImg {
   object-fit: contain;
-  transform: scale(1);
+  transform: scale(0.9);
   width: 100%;
-  margin-top: 100px;
   margin-right: 20px;
   /* height: 90%; */
 }
 
 .introDivR {
   width: 35%;
-  height: 600px;
-  margin-top: 1rem;
+  height: 550px;
 
   display: flex;
   font-family: sassoon;
@@ -144,7 +140,6 @@
   justify-content: center;
   align-items: center;
   color: #f5f5f7;
-
   background-color: #fff;
   border-radius: 5px;
   height: 20vh;
@@ -231,5 +226,14 @@ a {
 
   .ageTextBegin {
     width: 20vw;
+  }
+
+  .introDivR {
+    display: none;
+  }
+
+  .introDivL {
+    width: 80vw;
+    margin: auto;
   }
 }

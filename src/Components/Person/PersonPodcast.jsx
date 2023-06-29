@@ -158,19 +158,18 @@ const PersonPodcast = ({
             >
               {" "}
               <div className="personInfoBack" id="myDIV2">
+                <div className="resourceBannerPodcast">RESOURCE</div>{" "}
                 <div className="backLeftYTVid">
                   <div className="backLVid">
-                    <div
-                      className={bgImg}
-                      style={{ display: displayStyle }}
-                      onClick={() => setDisplayStyle("none")}
-                    >
-                      {overlayText}
+                    <div className={bgImg}>
+                      <p className="courtesyText">
+                        {lang !== true ? backLContent : backLContentCym}
+                      </p>
                     </div>
-
-                    <p className="courtesyText">
-                      {lang !== true ? backLContent : backLContentCym}
-                    </p>
+                  </div>
+                  <div className="overlayUnderText">
+                    {" "}
+                    {lang !== true ? overlayText : overlayText}
                   </div>
                 </div>
                 <div className="backRight">

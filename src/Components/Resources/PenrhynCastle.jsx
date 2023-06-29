@@ -15,6 +15,19 @@ const PenrhynCastle = () => {
             : "Should people refuse to visit Penrhyn Castle?"}
         </h1>
         <p className="resourceP">
+          {lang ? (
+            <strong>
+              This is an imagined discussion between Alaw and Dafydd about
+              whether or not people should visit Penrhyn Castle.{" "}
+            </strong>
+          ) : (
+            <strong>
+              Dyma drafodaeth ddychmygol rhwng Alaw a Dafydd ynglŷn ag a ddylai
+              pobl ymweld â Chastell Penrhyn neu beidio.
+            </strong>
+          )}
+        </p>
+        <p className="resourceP">
           <strong>Alaw: </strong>
           {lang
             ? "Castell ffantasi enfawr a adeiladwyd rhwng 1820 a 1837 yw Castell Penrhyn. Mae miloedd o bobl yn ymweld â’r safle bob blwyddyn. Adeiladwyd Castell Penrhyn fel cartref moethus i’r teulu Pennant, teulu cyfoethog iawn a oedd yn berchen ar lawer o diroedd yng Nghymru a hefyd ar Ynysoedd y Caribî. Roedd y tir yn y Caribî yn cael ei ddefnyddio i dyfu planhigion siwgr a oedd yn creu elw mawr i’r teulu dros nifer o flynyddoedd. "

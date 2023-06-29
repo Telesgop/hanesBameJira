@@ -14,9 +14,18 @@
   border-radius: 5px;
   margin: 20px;
   padding: 5px;
-  /* height: 2vh; */
   background-color: white;
-  z-index: 10000000000000000;
+  z-index: 10000000000000000000;
+}
+.resourceBannerPodcast {
+  position: fixed;
+  max-width: 29.5%;
+  border-radius: 5px;
+  margin: 15px;
+  margin-left: 30px;
+  padding: 5px;
+  background-color: white;
+  z-index: 10000000000000000000;
 }
 
 .scroll {
@@ -37,6 +46,8 @@
   z-index: 1000000000000;
   object-fit: cover;
   width: 35%;
+  z-index: 1;
+
   height: 50%;
   /* background-color: black; */
   background-image: url("https://dev.addysgop.co.uk/pdfs/theo.jpg");
@@ -59,8 +70,9 @@
   object-fit: cover;
   width: 35%;
   height: 50%;
+  z-index: 1;
   /* background-color: black; */
-  background-image: url("https://www.peoplescollection.wales/sites/default/files/images/2018/September/robeson_1.png?itok=v-6_LZ4A");
+  background-image: url("https://www.peoplescollection.wales/sites/default/files/images/2014/February/60880_Anti-segregation%20march%201948%20R144.JPG?itok=9kFJWPzr");
   background-size: cover;
   color: white;
 }
@@ -144,7 +156,7 @@
   overflow: scroll;
   height: 90%;
   margin: 10px;
-  width: 42vw;
+  /* width: 42vw; */
   font-family: sassoon;
   overflow-y: auto;
   overflow-x: hidden;

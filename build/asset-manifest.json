@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hanesbame/static/css/main.b2983f73.css",
-    "main.js": "/hanesbame/static/js/main.ccf385ee.js",
+    "main.css": "/hanesbame/static/css/main.535b267f.css",
+    "main.js": "/hanesbame/static/js/main.8f88041b.js",
     "static/media/theoEng.mp3": "/hanesbame/static/media/theoEng.19ea092d84b338b8c607.mp3",
     "static/media/theoCym.mp3": "/hanesbame/static/media/theoCym.cb6575fedce401b5d77a.mp3",
     "static/media/emilyEng.mp3": "/hanesbame/static/media/emilyEng.d5413163c9dab3d62e35.mp3",
@@ -11,15 +11,19 @@
     "static/media/domEng.mp3": "/hanesbame/static/media/domEng.dbd45a8690d04c7e4642.mp3",
     "static/media/mirainCym.mp3": "/hanesbame/static/media/mirainCym.9231cee48836aafdb1cc.mp3",
     "static/media/news.png": "/hanesbame/static/media/news.2fca5f1e87a0e73e4d4b.png",
-    "static/media/map.png": "/hanesbame/static/media/map.39f346cb11dba213c75d.png",
+    "static/media/nigelCym.png": "/hanesbame/static/media/nigelCym.38953136fe8b96f9fbb6.png",
+    "static/media/nigelEng.png": "/hanesbame/static/media/nigelEng.7510d343f6da920201d1.png",
+    "static/media/map.png": "/hanesbame/static/media/map.41b045215452e6ab1b0c.png",
     "static/media/colin.png": "/hanesbame/static/media/colin.b11fe325b2cfc9796314.png",
     "static/media/asstrip.png": "/hanesbame/static/media/asstrip.4bda85a132abfea32002.png",
     "static/media/windrush.png": "/hanesbame/static/media/windrush.8cc100edd6017a001667.png",
     "static/media/postcard.png": "/hanesbame/static/media/postcard.dc6c2ba660864a2513ab.png",
     "static/media/italianDragon.png": "/hanesbame/static/media/italianDragon.1e9e7d5ae316bb187b4d.png",
+    "static/media/nige.png": "/hanesbame/static/media/nige.5fc5fad07bf859d9fc44.png",
     "static/media/readallaboutit.png": "/hanesbame/static/media/readallaboutit.a4f918a7ebedae4b759c.png",
     "static/media/postcardsmall.png": "/hanesbame/static/media/postcardsmall.bf40654ca2204c6e80a5.png",
     "static/media/castle.png": "/hanesbame/static/media/castle.7fa17448d9b0ca277e2f.png",
+    "static/media/boxing.png": "/hanesbame/static/media/boxing.2c9318de15604db7396e.png",
     "static/media/SpaceGrotesk-Regular.ttf": "/hanesbame/static/media/SpaceGrotesk-Regular.67fa42510e26f5d4733d.ttf",
     "static/media/hans.png": "/hanesbame/static/media/hans.852b68df70e523f19801.png",
     "static/media/vg.png": "/hanesbame/static/media/vg.6f8dc65945b3cd160cad.png",
@@ -27,15 +31,16 @@
     "static/media/idrisBio.png": "/hanesbame/static/media/idrisBio.9b8582379aef72da7184.png",
     "static/media/clive.png": "/hanesbame/static/media/clive.4a251ae4c03ca4016022.png",
     "static/media/diary.png": "/hanesbame/static/media/diary.7d5fa866dd3a5f9bdadd.png",
+    "static/media/ashleySmall.png": "/hanesbame/static/media/ashleySmall.ef79fd58b5c9468d6290.png",
     "static/media/Sassoon Infant Std Regular.otf": "/hanesbame/static/media/Sassoon Infant Std Regular.6c9ba3536d98ca16a17c.otf",
     "static/media/vipPass.png": "/hanesbame/static/media/vipPass.8f639e5506d722b61c2c.png",
     "static/media/wgLogo.png": "/hanesbame/static/media/wgLogo.06fdf6239de01cc1ef2d.png",
     "index.html": "/hanesbame/index.html",
-    "main.b2983f73.css.map": "/hanesbame/static/css/main.b2983f73.css.map",
-    "main.ccf385ee.js.map": "/hanesbame/static/js/main.ccf385ee.js.map"
+    "main.535b267f.css.map": "/hanesbame/static/css/main.535b267f.css.map",
+    "main.8f88041b.js.map": "/hanesbame/static/js/main.8f88041b.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2983f73.css",
-    "static/js/main.ccf385ee.js"
+    "static/css/main.535b267f.css",
+    "static/js/main.8f88041b.js"
   ]
 }

@@ -18,6 +18,8 @@ import louisa from "./Images/louisa.png";
 import vip from "./Images/vipPass.png";
 import castle from "./Images/castle.png";
 import diary from "./Images/diary.png";
+import nige from "./Images/nige.png";
+import boxing from "./Images/boxing.png";
 import ashleySmall from "./Images/ashleySmall.png";
 import postcard from "./Images/postcardsmall.png";
 import { LanguageContext } from "./Helper/Context";
@@ -67,6 +69,8 @@ import DiaryBoxArandora from "./Components/DiaryBox/DiaryBoxArandora";
 import PersonPodcast from "./Components/Person/PersonPodcast";
 import Vaughan from "./Components/Resources/Vaughan";
 import DiaryBoxAshley from "./Components/DiaryBox/DiaryBoxAshley";
+import NigelWalker from "./Components/Resources/NigelWalker";
+import JoeErskine from "./Components/Resources/JoeErskine";
 
 function App() {
   const [lang, setLang] = useState(false);
@@ -112,6 +116,10 @@ function App() {
             element={<IdrisPhillips />}
           ></Route>
           <Route
+            path="12to16yo/Resources/JoeErskine"
+            element={<JoeErskine />}
+          ></Route>
+          <Route
             path="9to12yo/Resources/Louisa"
             element={<LouisaBiog />}
           ></Route>
@@ -149,6 +157,10 @@ function App() {
             element={<Vaughan />}
           ></Route>
           <Route
+            path="12to16yo/Resources/NigelWalker"
+            element={<NigelWalker />}
+          ></Route>
+          <Route
             path="6to9yo/Diaries/FongSui"
             element={<DiaryBox></DiaryBox>}
           ></Route>
@@ -167,17 +179,12 @@ function App() {
             element={
               <PersonYTVid
                 welshSlugText={"Yr athletwr anhygoel."}
-                overlayText={
-                  <h2>
-                    The experiences of Gerallt Wyn Jones in North Wales{" "}
-                    <FaVideo />
-                  </h2>
+                resourceOverlay="A video about the experiences of another adventurer, Gerallt Wyn Jones."
+                resourceOverlayCym={
+                  "Fideo am brofiadau anturiaethwr arall, Gerallt Wyn Jones. "
                 }
                 quizButStyle={"showQuizBut"}
                 indivName={"Richard Parks"}
-                backLContent={
-                  "The experiences of Gerallt Wyn Jones in North Wales"
-                }
                 quizButtonText={"Try the quiz!"}
                 linkQuiz={
                   "https://dev.addysgop.co.uk/hanesbame/RichardParksQuiz"
@@ -191,7 +198,7 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Clip explaining his nomination for St David's award{" "}
+                        A video about Richard Parks' St Davids awards nomination{" "}
                       </a>
                     </li>
                     <li className="linkLi">
@@ -200,7 +207,7 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        An article about his adventures and his family{" "}
+                        An article about Richard Parks and his family{" "}
                       </a>
                     </li>
                     <li className="linkLi">
@@ -242,8 +249,7 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Clip fideo yn esbonio ei enwebiad ar gyfer gwobr Dewi
-                        Sant{" "}
+                        Fideo am enwebiad gobrau Dewi Sant Richard Parks
                       </a>
                     </li>
                     <li className="linkLi">
@@ -252,7 +258,7 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Erthygl am ei anturiaethau a'i deulu{" "}
+                        Erthygl am Richard Parks a’i deulu{" "}
                       </a>
                     </li>
                     <li className="linkLi">
@@ -389,7 +395,7 @@ function App() {
                   </ul>
                 }
                 indivPic={
-                  "https://www.richardparks.co.uk/files/7715/4383/2077/Richard_banner_mobile.png"
+                  "https://www.richardparks.co.uk/files/2314/1140/2688/antartic-30.jpg"
                 }
                 backText={`Through his incredible achievements – as a professional rugby player and as an extreme athlete – Richard Parks proved that despite setbacks and frustrations, we are all capable of turning our skills and abilities to other things.  Because of his never-give-up attitude and determination to succeed at something new, Richard is an inspirational figure to many – both in Wales and beyond.   `}
                 slugText={"The incredible athlete."}
@@ -481,6 +487,11 @@ function App() {
             path="/12to16yo/NigelWalker"
             element={
               <Person
+                backcardImg={nige}
+                linkResource="Resources/NigelWalker"
+                resourceOverlay={
+                  "Read an imaginary newpaper article about Nigel Walker (item & task)"
+                }
                 links={
                   <ul>
                     <li className="linkLi">
@@ -569,6 +580,7 @@ function App() {
                 indivPic={
                   "https://i.dailymail.co.uk/1s/2019/04/15/23/12319446-0-image-m-55_1555369161657.jpg"
                 }
+                bgcolor="#FF686B"
                 text={
                   <ul>
                     <li>Nigel Walker was born in Cardiff on 15 June 1963. </li>
@@ -620,9 +632,6 @@ function App() {
                       following the resignation of Steve Phillips.
                     </li>
                   </ul>
-                }
-                backLContent={
-                  "Factfile and discussion topics. NOT DEVELOPED YET"
                 }
                 welshText={
                   <ul>
@@ -894,7 +903,6 @@ function App() {
                     <audio controls>
                       <source src={theo} type="audio/mpeg" />
                     </audio>
-                    <p>Podcast: Theo Cabango and Mel Owen in discussion.</p>
                   </>
                 }
                 overlayText="Podcast: Theo Cabango and Mel Owen in discussion."
@@ -918,6 +926,15 @@ function App() {
                   <ul>
                     <li className="linkLi">
                       <a
+                        href="https://www.nationaltrust.org.uk/visit/wales/penrhyn-castle-and-garden/penrhyn-castle-and-slave-trade-history"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Penrhyn Castle's Colonial History{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
                         href="https://www.nationaltrust.org.uk/visit/wales/penrhyn-castle-and-garden/history-of-penrhyn-castle-and-garden"
                         className="resourceHref"
                         target="_blank"
@@ -927,11 +944,11 @@ function App() {
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://footsteps.bangor.ac.uk/en/location/penrhyn-castle"
+                        href="https://footsteps.bangor.ac.uk/images/sites/penrhyn-castle/virtual/"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Journey to the Past - Penrhyn Castle
+                        Virtual Tour of Penrhyn Castle{" "}
                       </a>
                     </li>
                     <li className="linkLi">
@@ -945,17 +962,35 @@ function App() {
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://www.nationaltrust.org.uk/visit/wales/penrhyn-castle-and-garden/penrhyn-castle-and-slave-trade-history"
+                        href="https://www.blackhistorymonth.org.uk/article/section/history-of-slavery/the-welsh-slave-owner-and-anti-abolitionist-mp-richard-pennant/"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Penrhyn Castle's colonial history{" "}
+                        Article about Richard Pennant{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://footsteps.bangor.ac.uk/en/location/penrhyn-castle"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Journey to the Past - Penrhyn Castle
                       </a>
                     </li>
                   </ul>
                 }
                 linksCym={
                   <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.nationaltrust.org.uk/cy/visit/wales/penrhyn-castle-and-garden/castell-penrhyn-a-hanes-fasnach-gaethwasiaeth"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Hanes trefedigaethol Castell Penrhyn{" "}
+                      </a>
+                    </li>
                     <li className="linkLi">
                       <a
                         href="https://nationaltrust.org.uk/cy/visit/wales/penrhyn-castle-and-garden/hanes-castell-penrhyn-ar-ardd"
@@ -967,11 +1002,11 @@ function App() {
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://footsteps.bangor.ac.uk/cy/location/penrhyn-castle"
+                        href="https://footsteps.bangor.ac.uk/images/sites/penrhyn-castle/virtual/"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Taith i'r Gorffennol - Castell Penrhyn{" "}
+                        Taith rhithiol o Gastell Penrhyn
                       </a>
                     </li>
                     <li className="linkLi">
@@ -985,11 +1020,20 @@ function App() {
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://www.nationaltrust.org.uk/cy/visit/wales/penrhyn-castle-and-garden/castell-penrhyn-a-hanes-fasnach-gaethwasiaeth"
+                        href="https://www.blackhistorymonth.org.uk/article/section/history-of-slavery/the-welsh-slave-owner-and-anti-abolitionist-mp-richard-pennant/"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Hanes trefedigaethol Castell Penrhyn{" "}
+                        Erthygl am Richard Pennant{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://footsteps.bangor.ac.uk/cy/location/penrhyn-castle"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Taith i'r Gorffennol - Castell Penrhyn{" "}
                       </a>
                     </li>
                   </ul>
@@ -1448,6 +1492,7 @@ function App() {
                 youtubeVid={
                   "https://www.youtube.com/embed/-KOxyZAgQEk?controls=0"
                 }
+                youtubeVidCym={"https://www.youtube.com/embed/1aLLCfQ7vCA"}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -3797,10 +3842,6 @@ function App() {
                     <audio controls>
                       <source src={emily} type="audio/mpeg" />
                     </audio>
-                    <p>
-                      Podcast: Emily Pemberton and Mel Owen discussing Paul
-                      Robeson's life.
-                    </p>
                   </>
                 }
                 backLContentCym={
@@ -3941,7 +3982,8 @@ function App() {
                   "Read Louisa BB Morgan’s imaginary biography. (Item & Task)"
                 }
                 linkResource={"Resources/Louisa"}
-                slugText={"The lady who lived all over the world."}
+                welshSlugText={"Y ddynes bu’n byw ar draws y byd."}
+                slugText={"The woman who lived all over the world."}
                 resource={nineApi.slice(6, 7)}
                 indivPic={
                   "https://m.media-amazon.com/images/M/MV5BZGRkNTgwM2YtZWUxNy00MDQzLWE5OTAtODU1MjVmYWE2ZjhiXkEyXkFqcGdeQXVyODIyODI5Mzc@._V1_.jpg"
@@ -5209,6 +5251,15 @@ function App() {
                   <ul>
                     <li className="linkLi">
                       <a
+                        href="https://newtown.org.uk/discover-newtown/newtown-heritage-trail/john-roberts"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Information about John Roberts the Romani Harpist
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
                         href="https://eriac.org/members/isaac-blake/"
                         className="resourceHref"
                         target="_blank"
@@ -5248,6 +5299,15 @@ function App() {
                 }
                 linksCym={
                   <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://newtown.org.uk/discover-newtown/newtown-heritage-trail/john-roberts"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Gwybodaeth am John Roberts y Telynor Romani{" "}
+                      </a>
+                    </li>
                     <li className="linkLi">
                       <a
                         href="https://eriac.org/members/isaac-blake/"
@@ -6495,6 +6555,15 @@ function App() {
                     </li>
                     <li className="linkLi">
                       <a
+                        href="https://hwb.gov.wales/api/storage/33927bd8-b92b-471d-896b-2dbca2391c57/Newspaper%20reports.pdf?preview=true"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Newspaper reports
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
                         href="https://www.cardiff1919.wales/"
                         className="resourceHref"
                         target="_blank"
@@ -6550,6 +6619,15 @@ function App() {
                         target="_blank"
                       >
                         Adnodd Hwb am Derfysgoedd 1919{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://hwb.gov.wales/api/storage/63280f52-c125-45d6-a000-1d5f5209a3a9/Erthyglau%20papur%20newydd.pdf"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthyglau papur newydd
                       </a>
                     </li>
                     <li className="linkLi">
@@ -7268,6 +7346,10 @@ function App() {
             path="/12to16yo/JoeErskine"
             element={
               <Person
+                bgcolor={"#FF686B"}
+                linkResource={"Resources/JoeErskine"}
+                backcardImg={boxing}
+                resourceOverlay={"Is boxing safe? (Item & Task)"}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -7333,9 +7415,6 @@ function App() {
                 indivName={"Joe Erskine"}
                 indivNameCym={"Joe Erskine"}
                 resource={twelveApi.slice(6, 7)}
-                proposedResource={
-                  "Factfile and discussion topics. NOT DEVELOPED YET"
-                }
                 slugText={"The gifted boxer from Butetown."}
                 indivPic={
                   "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/joe-erskine-keystone.jpg"
