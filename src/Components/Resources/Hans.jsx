@@ -58,7 +58,10 @@ const Hans = () => {
             : "O God, please protect Mum and Dad while I'm away and help them to find a way of escaping from Hitler and his Nazis. Amen. "}
         </p>
 
-        <div className="learningOutcomes">
+        <div
+          className="learningOutcomes"
+          style={{ backgroundColor: "#A2D6F9" }}
+        >
           <h2>{lang ? "Eich tro chi! " : "Your turn! "}</h2>
           <p className="resourceP">
             {lang

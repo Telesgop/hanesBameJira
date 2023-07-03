@@ -43,7 +43,10 @@ const LouisaBiog = () => {
             ? ""
             : "I feel I've been privelidged and lucky to be able to contribute to making this world a better place but there's a lot more to do if we are to live together in peace on this planet.    "}
         </p>
-        <div className="learningOutcomes">
+        <div
+          className="learningOutcomes"
+          style={{ "background-color": "#FF686B" }}
+        >
           <h2>{lang ? "Eich tro chi! " : "Your turn! "}</h2>
           <p className="resourceP">
             {lang

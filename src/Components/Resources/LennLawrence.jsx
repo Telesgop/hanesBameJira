@@ -27,7 +27,10 @@ const LennLawrence = () => {
             style={{ height: "800px", width: "600px" }}
           ></img>
         </div>
-        <div className="learningOutcomes">
+        <div
+          className="learningOutcomes"
+          style={{ "background-color": "#CFE57D" }}
+        >
           <h2>{lang ? "Eich tro chi! " : "Your turn! "}</h2>
           <p className="resourceP">
             {lang

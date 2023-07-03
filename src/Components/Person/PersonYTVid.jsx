@@ -167,13 +167,6 @@ const PersonYTVid = ({
               <div className="personInfoBack" id="myDIV2">
                 <div className="backLeftYTVid">
                   <div className="backLVid">
-                    {/* <div
-                      className="youtubeImgOverlay"
-                      style={{ display: displayStyle }}
-                      onClick={() => setDisplayStyle("none")}
-                    >
-                      {overlayText}
-                    </div> */}
                     {lang !== true ? (
                       <iframe
                         src={youtubeVid}

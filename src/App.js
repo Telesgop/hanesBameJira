@@ -179,8 +179,10 @@ function App() {
             element={
               <PersonYTVid
                 welshSlugText={"Yr athletwr anhygoel."}
-                resourceOverlay="A video about the experiences of another adventurer, Gerallt Wyn Jones."
-                resourceOverlayCym={
+                backLContent={
+                  "The experiences of another adventurer, Gerallt Wyn Jones."
+                }
+                backLContentCym={
                   "Fideo am brofiadau anturiaethwr arall, Gerallt Wyn Jones. "
                 }
                 quizButStyle={"showQuizBut"}
@@ -293,6 +295,7 @@ function App() {
                   </ul>
                 }
                 youtubeVid="https://www.youtube.com/embed/ZBmWbOYI8vk"
+                youtubeVidCym={"https://www.youtube.com/embed/C2nPmzhAOrQ"}
                 // indivPic={char1}
                 text={
                   <ul>
@@ -490,7 +493,7 @@ function App() {
                 backcardImg={nige}
                 linkResource="Resources/NigelWalker"
                 resourceOverlay={
-                  "Read an imaginary newpaper article about Nigel Walker (item & task)"
+                  "An imaginary newspaper article about Nigel Walker."
                 }
                 links={
                   <ul>
@@ -905,7 +908,7 @@ function App() {
                     </audio>
                   </>
                 }
-                overlayText="Podcast: Theo Cabango and Mel Owen in discussion."
+                overlayText="Rugby player Theo Cabango and Mel Owen in discussion."
                 bgImg={"podcastImgOverlay"}
                 backLContentCym={
                   <audio controls>
@@ -920,7 +923,7 @@ function App() {
             element={
               <Person
                 resourceOverlay={
-                  "Should you visit Penrhyn Castle? Argument for and against. (Item & Task)"
+                  "Should you visit Penrhyn Castle? Argument for and against."
                 }
                 links={
                   <ul>
@@ -1195,7 +1198,7 @@ function App() {
               <Person
                 backcardImg={hans}
                 bgcolor={"#A2D6F9"}
-                resourceOverlay={"Read an imaginary monologue. (Item & Task)"}
+                resourceOverlay={"An imaginary monologue."}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -1483,7 +1486,7 @@ function App() {
             path="/6to9yo/MerthyrSynagogue"
             element={
               <PersonYTVid
-                backLContent={"Learn more about synagogues "}
+                backLContent={"Learn more about synagogues. "}
                 overlayText={
                   <h2>
                     Learn more about synagogues <FaVideo />
@@ -1681,7 +1684,7 @@ function App() {
               <Person
                 backcardImg={newspaper}
                 resourceOverlay={
-                  "Read an imaginary newpaper article about Lenn Lawrence saving Swansea. (Item & Task)"
+                  "An imaginary newpaper article about Lenn Lawrence saving Swansea."
                 }
                 links={
                   <ul>
@@ -1871,7 +1874,9 @@ function App() {
             path="/6to9yo/TeleriGray"
             element={
               <PersonYTVid
-                backLContent={"Learn more about the Romani Gypsies way of life"}
+                backLContent={
+                  "Learn more about the Romani Gypsies way of life."
+                }
                 links={
                   <ul>
                     <li className="linkLi">
@@ -2061,9 +2066,7 @@ function App() {
             path="/6to9yo/FongSui"
             element={
               <Person
-                resourceOverlay={
-                  "Read the imaginary diary of Fong Sui. (Item & Task)"
-                }
+                resourceOverlay={"The imaginary diary of Fong Sui."}
                 welshSlugText={"Y Tsïeiniaid yng Nghymru."}
                 linkResource={"Diaries/FongSui"}
                 links={
@@ -2229,7 +2232,7 @@ function App() {
             element={
               <Person
                 resourceOverlay={
-                  "Read a cartoon about the fate of the SS Arandora Star. (Item & Task)"
+                  "A cartoon about the fate of the SS Arandora Star."
                 }
                 links={
                   <ul>
@@ -2449,7 +2452,7 @@ function App() {
             element={
               <Person
                 resourceOverlay={
-                  "Read the letter from Rosie to the mother of Wilson Monk. (Item & Task)"
+                  "A letter from Rosie to the mother of Wilson Monk."
                 }
                 links={
                   <ul>
@@ -2677,7 +2680,7 @@ function App() {
             element={
               <Person
                 resourceOverlay={
-                  "Read a short story about Megan meeting Shirley Bassey. (Item & Task)"
+                  "A short story about Megan meeting Shirley Bassey."
                 }
                 bgcolor={"#CFE57D"}
                 welshSlugText={"Y gantores fyd-enwog o Tiger Bay."}
@@ -2903,7 +2906,7 @@ function App() {
                 bgcolor={"#CFE57D"}
                 linkResource={"Resources/Windrush"}
                 resourceOverlay={
-                  "Find out more about the Windrush Generation in this informational piece. (Item & Task)"
+                  "Find out more about the Windrush Generation in this informational piece."
                 }
                 backcardImg={windrush}
                 welshSlugText={
@@ -3137,9 +3140,7 @@ function App() {
             path="/6to9yo/IdrisPhillips"
             element={
               <Person
-                resourceOverlay={
-                  "Read an imaginary biography of Idris Phillips. (Item & Task)"
-                }
+                resourceOverlay={"An imaginary biography of Idris Phillips."}
                 welshSlugText={"Glowyr du yn cloddio am aur du."}
                 quizButStyle={"dontShowQuizBut"}
                 links={
@@ -3350,7 +3351,7 @@ function App() {
               <Person
                 bgcolor={"#A2D6F9"}
                 resourceOverlay={
-                  "An imaginary interview between Jason Mohammed and Colin Jackson. (Item & Task)"
+                  "An imaginary interview between Jason Mohammed and Colin Jackson."
                 }
                 links={
                   <ul>
@@ -3572,7 +3573,7 @@ function App() {
             path="/9to12yo/IrisWilliams"
             element={
               <PersonYTVid
-                backLContent={"Listen to the beautiful voice of Iris Williams."}
+                backLContent={"The beautiful voice of Iris Williams."}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -3835,7 +3836,7 @@ function App() {
                   </ul>
                 }
                 indivNameCym={"Paul Robeson"}
-                overlayText=" Podcast: Emily Pemberton and Mel Owen discussing Paul
+                overlayText="Emily Pemberton and Mel Owen discuss Paul
                 Robeson's life."
                 backLContent={
                   <>
@@ -3978,9 +3979,7 @@ function App() {
                 indivNameCym={"Louisa BB Morgan"}
                 bgcolor={"#FF686B"}
                 backcardImg={louisa}
-                resourceOverlay={
-                  "Read Louisa BB Morgan’s imaginary biography. (Item & Task)"
-                }
+                resourceOverlay={" Louisa BB Morgan’s imaginary biography. "}
                 linkResource={"Resources/Louisa"}
                 welshSlugText={"Y ddynes bu’n byw ar draws y byd."}
                 slugText={"The woman who lived all over the world."}
@@ -4126,9 +4125,7 @@ function App() {
             path="/9to12yo/CliveSullivan"
             element={
               <Person
-                resourceOverlay={
-                  "Read a portrait of Clive Sullivan. (Item & Task)"
-                }
+                resourceOverlay={"A portrait of Clive Sullivan."}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -6095,7 +6092,7 @@ function App() {
               <Person
                 bgcolor={"#A2D6F9"}
                 resourceOverlay={
-                  "An imaginary newspaper report about Calzaghe. (Item & Task)"
+                  "An imaginary newspaper report about Calzaghe."
                 }
                 backcardImg={italianDragon}
                 links={
@@ -6345,14 +6342,14 @@ function App() {
           <Route
             path="/12to16yo/JasonMohammad"
             element={
-              <Person
-                overlayText=""
+              <PersonPodcast
+                bgImg={"podcastImgOverlay3"}
+                overlayText="Presenter Mirain Iwerydd discusses Jason Mohammad."
                 backLContent={
                   <>
                     <audio controls>
                       <source src={mirainEng} type="audio/mpeg" />
                     </audio>
-                    <p>Interview with Mirain Iwerydd.</p>
                   </>
                 }
                 backLContentCym={
@@ -6534,7 +6531,7 @@ function App() {
                     </li>
                   </ul>
                 }
-              ></Person>
+              ></PersonPodcast>
             }
           ></Route>
           <Route
@@ -7092,9 +7089,7 @@ function App() {
                 linkResource={"Diaries/Ashley"}
                 indivName={"Ashley Williams"}
                 backcardImg={ashleySmall}
-                resourceOverlay={
-                  "Read the imaginary diary of Ashley Williams. (Item & Task)"
-                }
+                resourceOverlay={"The imaginary diary of Ashley Williams."}
                 bgcolor={"#FF686B"}
                 indivNameCym={"Ashley Williams"}
                 links={
@@ -7349,7 +7344,7 @@ function App() {
                 bgcolor={"#FF686B"}
                 linkResource={"Resources/JoeErskine"}
                 backcardImg={boxing}
-                resourceOverlay={"Is boxing safe? (Item & Task)"}
+                resourceOverlay={"Is boxing safe?"}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -7660,9 +7655,7 @@ function App() {
                 }
                 resource={twelveApi.slice(7, 8)}
                 slugText={"Wales' First black headteacher."}
-                indivPic={
-                  "https://ichef.bbci.co.uk/news/976/cpsprodpb/13CF5/production/_98314118_bettyclean.jpg"
-                }
+                indivPic={"https://dev.addysgop.co.uk/pdfs/betty2.png"}
                 text={
                   <ul>
                     <li>
@@ -8029,9 +8022,7 @@ function App() {
             path="/12to16yo/VaughanGething"
             element={
               <Person
-                resourceOverlay={
-                  "Read a portrait of Vaughan Gething. (Item & Task)"
-                }
+                resourceOverlay={"A portrait of Vaughan Gething."}
                 links={
                   <ul>
                     <li className="linkLi">

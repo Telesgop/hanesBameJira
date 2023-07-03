@@ -47,7 +47,10 @@ const Windrush = () => {
             : "A few years ago, there was much discussion about the Windrush Generation in the news because of a scandal which arose after it was discovered that the UK Government had destroyed the original Windrush landing cards. As a result of this, some members of the Windrush Generation faced losing their rights as British citizens and even faced being sent out of the UK! However, the public protest which came about because of this demonstrated one thing clearly, that the majority of the British people are by now thankful to and very proud of the Windrush Generation and what they did for Britain. "}
         </p>
 
-        <div className="learningOutcomes">
+        <div
+          className="learningOutcomes"
+          style={{ backgroundColor: "#CFE57D" }}
+        >
           <h2>{lang ? "Eich tro chi! " : "Your turn! "}</h2>
           <p className="resourceP">
             {lang

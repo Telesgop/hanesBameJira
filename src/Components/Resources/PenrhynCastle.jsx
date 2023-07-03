@@ -17,13 +17,13 @@ const PenrhynCastle = () => {
         <p className="resourceP">
           {lang ? (
             <strong>
-              This is an imagined discussion between Alaw and Dafydd about
-              whether or not people should visit Penrhyn Castle.{" "}
+              Dyma drafodaeth ddychmygol rhwng Alaw a Dafydd ynglŷn ag a ddylai
+              pobl ymweld â Chastell Penrhyn neu beidio.
             </strong>
           ) : (
             <strong>
-              Dyma drafodaeth ddychmygol rhwng Alaw a Dafydd ynglŷn ag a ddylai
-              pobl ymweld â Chastell Penrhyn neu beidio.
+              This is an imagined discussion between Alaw and Dafydd about
+              whether or not people should visit Penrhyn Castle.{" "}
             </strong>
           )}
         </p>
@@ -55,7 +55,10 @@ const PenrhynCastle = () => {
             : "It's important that people know the complete history of how Penrhyn Castle was built so they can make up their own minds whether they want to visit the site or not. "}
         </p>
 
-        <div className="learningOutcomes">
+        <div
+          className="learningOutcomes"
+          style={{ backgroundColor: "#A2D6F9" }}
+        >
           <h2>{lang ? "Eich tro chi! " : "Your turn! "}</h2>
           <p className="resourceP">
             {lang

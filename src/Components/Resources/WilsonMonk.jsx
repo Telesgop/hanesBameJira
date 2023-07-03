@@ -27,7 +27,10 @@ const WilsonMonk = () => {
             style={{ border: "1px solid black", marginBottom: "20px" }}
           ></img>
         </div>
-        <div className="learningOutcomes">
+        <div
+          className="learningOutcomes"
+          style={{ backgroundColor: "#CFE57D" }}
+        >
           <h2>{lang ? "Eich tro chi! " : "Your turn! "}</h2>
           <p className="resourceP">
             {lang

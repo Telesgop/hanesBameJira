@@ -10,7 +10,7 @@ const JoeErskine = ({ bgColour }) => {
     <>
       <div className="resourcePage">
         <h1 className="resourceH1">
-          {lang ? " A yw bocsio’n ddiogel? " : "Is Boxing Safe? "}
+          {lang ? " A yw bocsio’n ddiogel? " : "Is boxing safe? "}
         </h1>
         <p className="resourceP">
           {lang

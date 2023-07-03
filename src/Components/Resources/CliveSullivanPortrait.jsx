@@ -32,7 +32,10 @@ const CliveSullivanPortrait = ({ bgColour }) => {
             ? "Bu farw Clive Sullivan yn 42 oed ac yn ystod ei fywyd roedd yn rhaid iddo orfod wynebu sawl her. Yn aml cafodd ei brofi’n gorfforol ac yn feddyliol. Profodd ragfarn a chenfigen gan eraill, ac oherwydd lliw ei groen, roedd yn rhaid iddo ymdrin â hiliaeth bron yn ddyddiol. Wrth ymdrin â’r holl rwystrau hyn, llwyddodd Clive Sullivan nid yn unig i oroesi ond i gyrraedd y brig yng nghamp rygbi’r gynghrair. Drwy wneud hyn, dangosodd y ffordd i eraill fod modd llwyddo mewn cyfnod a oedd yn gallu bod yn anodd iawn i bobl o’r lleiafrifoedd ethnig. A dyna pam mae Clive ‘Sully’ Sullivan yn un o arwyr pwysicaf chwaraeon Cymru! "
             : "Clive Sullivan died at the age of 42 and during his life, he had to face many challenges and was often tested physically and mentally. He experienced prejudice and jealousy from others and because of his skin colour, he had to tackle racism almost daily. When dealing with all these barriers, Clive Sullivan not only managed to survive, but he also reached the top of rugby league. In so doing, he demonstrated to others that success is possible in a period of time which could be very difficult for those from minority ethnic groups. And this is why Clive ‘Sully’ Sullivan is one of Wales’s most important sports heroes!"}
         </p>
-        <div className="learningOutcomes" style={{ backgroundColor: bgColour }}>
+        <div
+          className="learningOutcomes"
+          style={{ backgroundColor: "#A2D6F9" }}
+        >
           <h2>{lang ? "Eich tro chi! " : "Your turn! "}</h2>
           <p className="resourceP">
             {lang

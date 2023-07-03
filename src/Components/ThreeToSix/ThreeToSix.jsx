@@ -29,9 +29,9 @@ const ThreeToSix = () => {
         ></input>
         <BiSearchAlt className="magnifyingGlass" />
       </div> */}
-      <div className="storiesContainer">
+      <div className="storiesContainerAnim">
         {query == "" && (
-          <ul className="ulSearch">
+          <ul className="ulSearchAnim">
             {threetosix.map((item, id) => (
               <Link to={item.url}>
                 <StoryBoxAnim

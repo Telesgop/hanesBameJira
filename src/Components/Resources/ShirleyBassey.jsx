@@ -79,7 +79,10 @@ const ShirleyBassey = () => {
             : " At the end of the show, the girl with the clipboard came back to fetch Megan and her mother. The girl led them both through a side door which took them backstage. Megan's stomach was whizzing like a washing machine, but once she saw the friendly smile on the Tiger Bay diva's face, she knew that everything would be alright, that everything would be perfect! "}
         </p>
 
-        <div className="learningOutcomes">
+        <div
+          className="learningOutcomes"
+          style={{ backgroundColor: "#CFE57D" }}
+        >
           <h2 className="resourceH2">
             {lang ? "Eich tro chi! " : "Your turn! "}
           </h2>

@@ -139,7 +139,7 @@ const DiaryBoxAshley = () => {
                   we are back at the highest international level, and here to
                   stay! There’s a lot of nervousness around the place but that’s
                   natural, and necessary to make sure that we all channel that
-                  nervus energy into the effort on the field. It’s going to be
+                  nervous energy into the effort on the field. It’s going to be
                   hot and we’ll need to make sure that everyone drinks enough
                   water during the game. Chris is going to make his speech
                   before leaving the hotel, but I will be responsible for
@@ -181,9 +181,9 @@ const DiaryBoxAshley = () => {
             )}
             {page === 3 && (
               <>
-                <h2>Learning outcome: </h2>
+                <h2>Learning Outcome: </h2>
                 <p className="LOs">Able to write an imaginary diary</p>
-                <h2 className="LOs">Success Criteria</h2>
+                <h2 className="LOs">Success Criteria:</h2>
                 <p className="LOs">Using spoken language e.g. wind some up </p>
                 <p className="LOs">
                   Use the past, present and future tense of the verb e.g. I saw,

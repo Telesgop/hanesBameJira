@@ -7,14 +7,21 @@
   width: 80vw;
   font-family: sassoon;
 }
-
+.resourceText {
+  margin: 0;
+  padding-top: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 .resourceBanner {
   position: fixed;
   max-width: 29.5%;
   border-radius: 5px;
+  font-weight: bold;
   margin: 20px;
   padding: 5px;
-  background-color: white;
+  background-color: #258ea6;
+  color: #f2f2f2;
   z-index: 10000000000000000000;
 }
 .resourceBannerPodcast {
@@ -73,6 +80,24 @@
   z-index: 1;
   /* background-color: black; */
   background-image: url("https://www.peoplescollection.wales/sites/default/files/images/2014/February/60880_Anti-segregation%20march%201948%20R144.JPG?itok=9kFJWPzr");
+  background-size: cover;
+  color: white;
+}
+
+.podcastImgOverlay3 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  align-items: center;
+  margin: auto;
+  z-index: 1000000000000;
+  object-fit: cover;
+  width: 35%;
+  height: 50%;
+  z-index: 1;
+  /* background-color: black; */
+  background-image: url("https://dev.addysgop.co.uk/pdfs/Mirain.jpeg");
   background-size: cover;
   color: white;
 }
@@ -296,8 +321,7 @@
 
 .courtesyText {
   margin: 0;
-  padding-top: 5px;
-  color: darkgrey;
+  padding-top: 10px;
 }
 
 .resourceLi {
@@ -376,7 +400,7 @@
   align-items: center;
 }
 .backRight {
-  width: 50%;
+  width: 45%;
   /* height: 100%; */
   display: flex;
   justify-content: flex-start;

@@ -40,7 +40,10 @@ const IdrisPhillips = () => {
             ? "Do, dwi wedi gweld llawer a chyflawni hyd yn oed mwy yn ystod fy mywyd fel glöwr ym mhyllau glo De Cymru. Dwi wedi cael llawer o brofiadau ond yn anffodus, mae hiliaeth wedi bod gyda fi drwy gydol fy ngyrfa, fel rhyw gysgod yn y cefndir. Ond gobeithio, drwy rannu fy mhrofiadau, y bydd pethau’n haws i’r genhedlaeth nesaf."
             : "Yes, I've seen a lot and achieved even more during my life as a collier in the South Wales coalmines. I've had many experiences but unfortunately, I've faced racism throughout my career, like a kind of shadow in the background. But hopefully, by sharing my experiences, things will be easier for the next generation."}
         </p>
-        <div className="learningOutcomes">
+        <div
+          className="learningOutcomes"
+          style={{ "background-color": "#CFE57D" }}
+        >
           <h2>{lang ? "Eich tro chi! " : "Your turn! "}</h2>
           <p className="resourceP">
             {lang

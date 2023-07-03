@@ -72,7 +72,7 @@
         "nameCym" : "John Ystumllyn",
         "slug": "The 18th century slave who became a gardener.",
         "welshSlug": "Y caethwas a'r garddwr.",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Portrait_of_John_Ystumllyn%2C_1754_%284671107%29_%28cropped%29.jpg/640px-Portrait_of_John_Ystumllyn%2C_1754_%284671107%29_%28cropped%29.jpg",
+        "image": "https://dev.addysgop.co.uk/pdfs/john2.png",
         "url": "/9to12yo/JohnYstumllyn",
         "keywords": "John ystumllyn gardener slave jack du black flower ",
         "resources": [
@@ -85,7 +85,7 @@
         "nameCym" : "Tiger Bay",
         "slug": "The bustling multi-ethnic community in Cardiff Bay.",
         "welshSlug": "Y gymuned aml-ddiwylliannol yng Nghaerdydd.",
-        "image": "https://www.peoplescollection.wales/sites/default/files/images/2014/February/ah_50_34.jpg?itok=SN4XskT2",
+        "image": "https://dev.addysgop.co.uk/pdfs/tigerBay.png",
         "url": "/9to12yo/TigerBay",
         "keywords": "Tiger bay cardiff multi ethnic shirley bassey betty campbell community",
         "resources": [
@@ -161,7 +161,7 @@
         "id" : 11,
         "name" : "Dom James",
         "nameCym" : "Dom James",
-        "slug": "Rapper and radio presenter",
+        "slug": "Rapper and radio presenter.",
         "welshSlug": "Rapiwr a chyflwynydd radio.",
         "image": "https://ichef.bbci.co.uk/news/976/cpsprodpb/DBCD/production/_124296265_33020262_1243885189076260_6186539543915659264_n-1.jpg",
         "url": "/9to12yo/DomJames",

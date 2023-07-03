@@ -173,7 +173,9 @@ const Person = ({
               {" "}
               <div className="personInfoBack" id="myDIV2">
                 <div className="backLeft">
-                  <div className="resourceBanner">RESOURCE</div>{" "}
+                  <div className="resourceBanner">
+                    <p className="resourceText">RESOURCE & TASK</p>
+                  </div>{" "}
                   <div
                     className="backLText"
                     style={{ backgroundColor: bgcolor }}
