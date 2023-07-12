@@ -16,9 +16,7 @@ const ThreeToSix = () => {
     <>
       <div className="ageRange">
         <h2 className="ageRangeh2">
-          {lang !== true
-            ? "Progression Step 1"
-            : "NOT DEVELOPED - DO NOT TRIAL"}
+          {lang !== true ? "Progression Step 1" : "Cam Cynnydd 1"}
         </h2>
       </div>
       {/* <div className="searchbar">

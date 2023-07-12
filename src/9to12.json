@@ -2,8 +2,8 @@
     
     {
         "id" : 0,
-        "name" : "Hans Lichtenstein",
-        "nameCym" : "Hans Lichtenstein",
+        "name" : "Dr Hans Lichtenstein",
+        "nameCym" : "Dr Hans Lichtenstein",
         "slug": "The Jewish boy who fled Germany.",
         "welshSlug": "Yr Iddew a ddihangodd o'r Almaen.",
         "image": "https://www.countytimes.co.uk/resources/images/9306088.jpg?type=mds-article-962",
@@ -28,8 +28,8 @@
     },
     {
         "id" : 2,
-        "name" : "Colin Jackson",
-        "nameCym" : "Colin Jackson",
+        "name" : "Colin Jackson CBE",
+        "nameCym" : "Colin Jackson CBE",
         "slug": "The Olympic medallist.",
         "welshSlug": "Yr athletwr â medal Olympaidd.",
         "image": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/2ED2/production/_95868911_gettyimages-1852091.jpg",
@@ -41,8 +41,8 @@
     },
     {
         "id" : 3,
-        "name" : " Iris Williams",
-        "nameCym" : " Iris Williams",
+        "name" : " Iris Williams OBE",
+        "nameCym" : " Iris Williams OBE",
         "slug": "The jazz legend from South Wales.",
         "welshSlug": "Y gantores jazz chwedlonol o Dde Cymru. ",
         "image": "https://i2-prod.walesonline.co.uk/incoming/article1781243.ece/ALTERNATES/s615/iris-williams-61348596.jpg",
@@ -92,24 +92,12 @@
             "Links will go here"
         ]
     },
-    {
-        "id" : 9,
-        "name" : "Sidoli Ice Cream",
-        "nameCym" : "Hufen Iâ Sidoli",
-        "slug": "The story of the award-winning ice cream.",
-        "welshSlug": "Stori'r hufen iâ arbennig o'r Eidal.",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Sidolis%2C_Coney_Beach%2C_Porthcawl_%28geograph_6353418%29.jpg?20191231185933",
-        "url": "/9to12yo/SidoliIceCream",
-        "keywords": "Sidoli Ice Cream Italian",
-        "resources": [
-            "Links will go here"
-        ]
-    },
+    
     {
         "id" : 10,
-        "name" : "Vernester Cyril",
-        "nameCym" : "Vernester Cyril",
-        "slug": "The nurse from the Carribean.",
+        "name" : "Vernester Cyril OBE",
+        "nameCym" : "Vernester Cyril OBE",
+        "slug": "The nurse from the Caribbean.",
         "welshSlug": "Y nyrs o'r Caribî.",
         "image": "https://www.peoplescollection.wales/sites/default/files/images/2020/October/0Y3A9739%20%281%29.JPG?itok=MCJWHC5s",
         "url": "/9to12yo/VernesterCyril",

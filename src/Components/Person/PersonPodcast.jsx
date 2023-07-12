@@ -5,7 +5,6 @@ import { HiArrowCircleLeft } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { LanguageContext } from "../../Helper/Context";
 import { useContext } from "react";
-import Copyright from "../Copyright/Copyright";
 import { Link } from "react-router-dom";
 
 const PersonPodcast = ({
@@ -13,7 +12,10 @@ const PersonPodcast = ({
   welshText,
   indivName,
   indivPic,
+  pscc,
   overlayText,
+  psNum,
+  overlayTextCym,
   backText,
   backWelshText,
   slugText,
@@ -23,6 +25,7 @@ const PersonPodcast = ({
   backLContentCym,
   indivNameCym,
   links,
+  linksCym,
   bgImg,
 }) => {
   const { lang, setLang } = useContext(LanguageContext);
@@ -121,7 +124,7 @@ const PersonPodcast = ({
               }
             >
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-                <HiArrowCircleRight className="prevnext" />
+                <HiArrowCircleRight className="prevnextpulse" />
               </motion.div>
             </motion.div>
           </>
@@ -147,7 +150,7 @@ const PersonPodcast = ({
               }
             >
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-                <HiArrowCircleLeft className="prevnext" />
+                <HiArrowCircleLeft className="prevnextpulse" />
               </motion.div>
             </motion.div>
             <div
@@ -158,18 +161,26 @@ const PersonPodcast = ({
             >
               {" "}
               <div className="personInfoBack" id="myDIV2">
-                <div className="resourceBannerPodcast">RESOURCE</div>{" "}
+                <div className="resourceBannerPodcast">
+                  {" "}
+                  <p className="resourceText">PODCAST</p>
+                </div>{" "}
                 <div className="backLeftYTVid">
                   <div className="backLVid">
                     <div className={bgImg}>
                       <p className="courtesyText">
-                        {lang !== true ? backLContent : backLContentCym}
+                        <audio controls>
+                          <source
+                            src={lang !== true ? backLContent : backLContentCym}
+                            type="audio/mpeg"
+                          />
+                        </audio>
                       </p>
                     </div>
                   </div>
                   <div className="overlayUnderText">
                     {" "}
-                    {lang !== true ? overlayText : overlayText}
+                    {lang !== true ? overlayText : overlayTextCym}
                   </div>
                 </div>
                 <div className="backRight">
@@ -177,7 +188,7 @@ const PersonPodcast = ({
                     {" "}
                     {lang !== true ? "Online Resources:" : "Adnoddau Ar-lein:"}
                   </p>
-                  {links}
+                  {lang !== true ? links : linksCym}
                 </div>
               </div>
             </div>
@@ -195,6 +206,11 @@ const PersonPodcast = ({
           </>
         )}
       </div>
+      <Link to={pscc}>
+        <div className="backToSection">
+          <div className="backToButton">Back to PS{psNum}</div>
+        </div>
+      </Link>
     </>
   );
 };

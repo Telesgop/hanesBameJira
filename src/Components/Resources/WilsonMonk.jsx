@@ -3,9 +3,11 @@ import "./Resources.css";
 import { LanguageContext } from "../../Helper/Context";
 import { useContext } from "react";
 import postcard from "../../Images/postcard.png";
+import postcardCym from "../../Images/postcardCym5.png";
 
 const WilsonMonk = () => {
   const { lang, setLang } = useContext(LanguageContext);
+  document.body.style = "background: #f2f2f2;";
 
   return (
     <>
@@ -22,10 +24,17 @@ const WilsonMonk = () => {
         </p>
 
         <div className="learningOutcomesPoem">
-          <img
-            src={postcard}
-            style={{ border: "1px solid black", marginBottom: "20px" }}
-          ></img>
+          {lang ? (
+            <img
+              src={postcardCym}
+              style={{ border: "1px solid black", marginBottom: "20px" }}
+            ></img>
+          ) : (
+            <img
+              src={postcard}
+              style={{ border: "1px solid black", marginBottom: "20px" }}
+            ></img>
+          )}
         </div>
         <div
           className="learningOutcomes"

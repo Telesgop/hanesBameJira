@@ -5,6 +5,7 @@ import { useContext } from "react";
 
 const LouisaBiog = () => {
   const { lang, setLang } = useContext(LanguageContext);
+  document.body.style = "background: #f2f2f2;";
 
   return (
     <>
@@ -31,7 +32,7 @@ const LouisaBiog = () => {
         <p className="resourceP">
           {lang
             ? ""
-            : "After I graduated from university I pursued several varied careers. I've worked for the recrod company CBS in London and met famous people galore. I had a period of working as a translator for the Embassy in Grenada. During this time Iearnt how important it is to put yourself in other people's shoes and look at the world through their eyes. I saw how fragile life is for so many people, how fragile some of our habitats are, and how important the relationship between the two is. Unfortunately I cannot talk about the most important path in my career as I'd be breaking the Official Secrets Act and would be in a lot of trouble. I can say that I had a very exciting time working for Hughes Aircraft Systems International for NATO! "}
+            : "After I graduated from university I pursued several varied careers. I've worked for the record company CBS in London and met famous people galore. I had a period of working as a translator for the Embassy in Grenada. During this time I learnt how important it is to put yourself in other people's shoes and look at the world through their eyes. I saw how fragile life is for so many people, how fragile some of our habitats are, and how important the relationship between the two is. Unfortunately I cannot talk about the most important path in my career as I'd be breaking the Official Secrets Act and would be in a lot of trouble. I can say that I had a very exciting time working for Hughes Aircraft Systems International for NATO! "}
         </p>
         <p className="resourceP">
           {lang

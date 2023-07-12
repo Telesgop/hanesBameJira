@@ -12,8 +12,10 @@ const Person = ({
   text,
   welshText,
   linkResource,
+  psNum,
   indivName,
   indivPic,
+  resourceOverlayWelsh,
   backText,
   backWelshText,
   slugText,
@@ -26,6 +28,7 @@ const Person = ({
   backLContentCym,
   indivNameCym,
   links,
+  pscc,
   quizButtonText,
   buttonLink,
   linkQuiz,
@@ -181,7 +184,7 @@ const Person = ({
                     style={{ backgroundColor: bgcolor }}
                   >
                     {proposedResource}
-                    <a href={linkResource} className="resourceLi">
+                    <Link to={linkResource} className="resourceLi">
                       <img
                         src={backcardImg}
                         style={{
@@ -189,10 +192,13 @@ const Person = ({
                           objectFit: "contain",
                         }}
                       ></img>
-                    </a>
+                    </Link>
                     {lang !== true ? backLContent : backLContentCym}
                   </div>
-                  <div className="overlayUnderText">{resourceOverlay}</div>
+                  <div className="overlayUnderText">
+                    {" "}
+                    {lang !== true ? resourceOverlay : resourceOverlayWelsh}
+                  </div>
                 </div>
                 <div className="backRight">
                   <p className="backRightP">
@@ -217,9 +223,14 @@ const Person = ({
           </>
         )}
       </div>
-      <div className="backToSection">
-        <div className="backToButton">Back to PS..</div>
-      </div>
+      <Link to={pscc}>
+        <div className="backToSection">
+          <div className="backToButton">
+            {" "}
+            {lang !== true ? `Back to PS${psNum}` : `Nol i CC${psNum}`}
+          </div>
+        </div>
+      </Link>
     </>
   );
 };

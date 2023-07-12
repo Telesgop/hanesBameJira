@@ -17,9 +17,7 @@ const TwelveToSixteen = () => {
       <div className="ageRange">
         <h2 className="ageRangeh2">
           {" "}
-          {lang !== true
-            ? "Progression Step 4"
-            : "NOT DEVELOPED - DO NOT TRIAL"}
+          {lang !== true ? "Progression Step 4" : "Cam Cynnydd 4"}
         </h2>
       </div>
       <div className="searchbar">

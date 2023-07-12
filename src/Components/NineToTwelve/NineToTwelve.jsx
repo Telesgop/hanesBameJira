@@ -16,9 +16,7 @@ const NineToTwelve = () => {
     <>
       <div className="ageRange">
         <h2 className="ageRangeh2">
-          {lang !== true
-            ? "Progression Step 3"
-            : "NOT DEVELOPED - DO NOT TRIAL"}
+          {lang !== true ? "Progression Step 3" : "Cam Cynnydd 3"}
         </h2>
       </div>
       <div className="searchbar">

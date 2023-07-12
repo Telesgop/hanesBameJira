@@ -5,6 +5,7 @@ import { useContext } from "react";
 
 const Vaughan = () => {
   const { lang, setLang } = useContext(LanguageContext);
+  document.body.style = "background: #f2f2f2;";
 
   return (
     <>

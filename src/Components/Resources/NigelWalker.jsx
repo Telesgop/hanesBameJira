@@ -6,6 +6,7 @@ import nigelEng from "../../Images/nigelEng.png";
 import nigelCym from "../../Images/nigelCym.png";
 const NigelWalker = () => {
   const { lang, setLang } = useContext(LanguageContext);
+  document.body.style = "background: #f2f2f2;";
 
   return (
     <>

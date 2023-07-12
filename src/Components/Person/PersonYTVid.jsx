@@ -15,6 +15,8 @@ const PersonYTVid = ({
   indivPic,
   overlayText,
   resourceOverlayCym,
+  pscc,
+  psNum,
   backText,
   backWelshText,
   slugText,
@@ -128,7 +130,7 @@ const PersonYTVid = ({
               }
             >
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-                <HiArrowCircleRight className="prevnext" />
+                <HiArrowCircleRight className="prevnextpulse" />
               </motion.div>
             </motion.div>
           </>
@@ -154,7 +156,7 @@ const PersonYTVid = ({
               }
             >
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-                <HiArrowCircleLeft className="prevnext" />
+                <HiArrowCircleLeft className="prevnextpulse" />
               </motion.div>
             </motion.div>
             <div
@@ -219,6 +221,11 @@ const PersonYTVid = ({
           </>
         )}
       </div>
+      <Link to={pscc}>
+        <div className="backToSection">
+          <div className="backToButton">Back to PS{psNum}</div>
+        </div>
+      </Link>
     </>
   );
 };

@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/hanesbame/static/css/main.535b267f.css",
-    "main.js": "/hanesbame/static/js/main.8f88041b.js",
+    "main.css": "/hanesbame/static/css/main.9be226c6.css",
+    "main.js": "/hanesbame/static/js/main.cbe6af1a.js",
+    "static/media/hanan.wav": "/hanesbame/static/media/hanan.4fcbf0caafcac7fa81dd.wav",
     "static/media/theoEng.mp3": "/hanesbame/static/media/theoEng.19ea092d84b338b8c607.mp3",
     "static/media/theoCym.mp3": "/hanesbame/static/media/theoCym.cb6575fedce401b5d77a.mp3",
     "static/media/emilyEng.mp3": "/hanesbame/static/media/emilyEng.d5413163c9dab3d62e35.mp3",
@@ -10,11 +11,13 @@
     "static/media/mirainEng.mp3": "/hanesbame/static/media/mirainEng.996106f781cd21e49c00.mp3",
     "static/media/domEng.mp3": "/hanesbame/static/media/domEng.dbd45a8690d04c7e4642.mp3",
     "static/media/mirainCym.mp3": "/hanesbame/static/media/mirainCym.9231cee48836aafdb1cc.mp3",
+    "static/media/lenncym.png": "/hanesbame/static/media/lenncym.63de8195b20cd8e5d358.png",
     "static/media/news.png": "/hanesbame/static/media/news.2fca5f1e87a0e73e4d4b.png",
     "static/media/nigelCym.png": "/hanesbame/static/media/nigelCym.38953136fe8b96f9fbb6.png",
-    "static/media/nigelEng.png": "/hanesbame/static/media/nigelEng.7510d343f6da920201d1.png",
+    "static/media/nigelEng.png": "/hanesbame/static/media/nigelEng.b16019b5fd4594b8d4b7.png",
     "static/media/map.png": "/hanesbame/static/media/map.41b045215452e6ab1b0c.png",
     "static/media/colin.png": "/hanesbame/static/media/colin.b11fe325b2cfc9796314.png",
+    "static/media/postcardCym5.png": "/hanesbame/static/media/postcardCym5.30757313d8bc55fbc501.png",
     "static/media/asstrip.png": "/hanesbame/static/media/asstrip.4bda85a132abfea32002.png",
     "static/media/windrush.png": "/hanesbame/static/media/windrush.8cc100edd6017a001667.png",
     "static/media/postcard.png": "/hanesbame/static/media/postcard.dc6c2ba660864a2513ab.png",
@@ -36,11 +39,11 @@
     "static/media/vipPass.png": "/hanesbame/static/media/vipPass.8f639e5506d722b61c2c.png",
     "static/media/wgLogo.png": "/hanesbame/static/media/wgLogo.06fdf6239de01cc1ef2d.png",
     "index.html": "/hanesbame/index.html",
-    "main.535b267f.css.map": "/hanesbame/static/css/main.535b267f.css.map",
-    "main.8f88041b.js.map": "/hanesbame/static/js/main.8f88041b.js.map"
+    "main.9be226c6.css.map": "/hanesbame/static/css/main.9be226c6.css.map",
+    "main.cbe6af1a.js.map": "/hanesbame/static/js/main.cbe6af1a.js.map"
   },
   "entrypoints": [
-    "static/css/main.535b267f.css",
-    "static/js/main.8f88041b.js"
+    "static/css/main.9be226c6.css",
+    "static/js/main.cbe6af1a.js"
   ]
 }

@@ -40,6 +40,7 @@ import dom from "./Podcasts/DomJames/domEng.mp3";
 import domCym from "./Podcasts/DomJames/domCym.mp3";
 import theo from "./Podcasts/TheoCabango/theoEng.mp3";
 import emily from "./Podcasts/Emily/emilyEng.mp3";
+import hanan from "./Podcasts/Hanan/hanan.wav";
 import theoCym from "./Podcasts/TheoCabango/theoCym.mp3";
 import emilyCym from "./Podcasts/Emily/emilyCym.mp3";
 import mirainCym from "./Podcasts/Mirain/mirainCym.mp3";
@@ -178,7 +179,8 @@ function App() {
             path="/6to9yo/RichardParks"
             element={
               <PersonYTVid
-                welshSlugText={"Yr athletwr anhygoel."}
+                pscc={"/6to9yo"}
+                psNum={"2"}
                 backLContent={
                   "The experiences of another adventurer, Gerallt Wyn Jones."
                 }
@@ -299,10 +301,9 @@ function App() {
                 // indivPic={char1}
                 text={
                   <ul>
-                    <li>Richard Parks was born in Pontypridd.</li>
                     <li>
-                      His mother, Lee, was Jamaican, and his father, Derek, was
-                      Welsh.
+                      Richard Parks was born on 14 August 1977, in Pontypridd to
+                      a Jamaican mother and a Welsh father.
                     </li>
                     <li>
                       As a schoolboy Richard loved rugby, and he went on to play
@@ -318,7 +319,7 @@ function App() {
                       Richard represented Wales Sevens in the Rugby World Cup in
                       Argentina in 2001.{" "}
                     </li>
-                    <li>Richard also won 4 caps playing for Wales.</li>
+                    <li>Richard also won four caps playing for Wales.</li>
                     <li>
                       After being injured, Richard had to retire from rugby aged
                       31 in 2009.
@@ -340,6 +341,10 @@ function App() {
                       help from other people to the South Pole!
                     </li>
                     <li>
+                      Richard Parks has also worked with the famous actor Will
+                      Smith.{" "}
+                    </li>
+                    <li>
                       Richard proved that we are all capable of turning our
                       skills and abilities to do incredible things. He is an
                       inspirational figure to many – both in Wales and beyond.
@@ -350,7 +355,7 @@ function App() {
                   <ul>
                     <li>
                       Ganwyd Richard Parks ym Mhontypridd ar 14 Awst 1977 i fam
-                      o Jamaica, Lee, a thad o Gymru, Derek Parks.{" "}
+                      o Jamaica, Lee, a thad o Gymru.{" "}
                     </li>
                     <li>
                       Yn yr ysgol, roedd Richard yn chwaraewr rygbi medrus, yn
@@ -366,7 +371,7 @@ function App() {
                       Cynrychiolodd Richard Gymru yng Ngwpan y Byd Rygbi Saith
                       bob Ochr yn Ariannin yn 2001.{" "}
                     </li>
-                    <li>Enillodd Richard 4 cap i Gymru hefyd. </li>
+                    <li>Enillodd Richard pedwar cap i Gymru hefyd. </li>
                     <li>
                       Yn dilyn anaf i’w ligamentau a phroblemau meddygol gyda’i
                       ysgwydd, ymddeolodd Richard o rygbi proffesiynol yn 31 oed
@@ -384,6 +389,10 @@ function App() {
                       Ym mis Ionawr 2014, Richard oedd y Cymro cyntaf, a’r
                       person cyflymaf ym Mhrydain erioed, i sgïo ar ben ei hun,
                       heb gefnogaeth a heb gymorth, i Begwn y De.{" "}
+                    </li>
+                    <li>
+                      Mae Richard Parks hefyd wedi gweithio gyda'r actor enwog
+                      Will Smith.{" "}
                     </li>
                     <li>
                       Trwy ei gyflawniadau anhygoel – fel chwaraewr rygbi
@@ -490,10 +499,16 @@ function App() {
             path="/12to16yo/NigelWalker"
             element={
               <Person
+                pscc={"/12to16yo"}
+                psNum={"4"}
+                welshSlugText="Athletwr, chwaraewr rygbi a phrif weithredwr. "
                 backcardImg={nige}
-                linkResource="Resources/NigelWalker"
+                linkResource="./../Resources/NigelWalker"
                 resourceOverlay={
                   "An imaginary newspaper article about Nigel Walker."
+                }
+                resourceOverlayWelsh={
+                  "Erthygl papur newydd dychmygol am Nigel Walker. "
                 }
                 links={
                   <ul>
@@ -581,7 +596,7 @@ function App() {
                 indivName={"Nigel Walker"}
                 indivNameCym={"Nigel Walker"}
                 indivPic={
-                  "https://i.dailymail.co.uk/1s/2019/04/15/23/12319446-0-image-m-55_1555369161657.jpg"
+                  "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/4F4B/production/_119399202_cdf_300720_cf_nigel_walker_12.jpg"
                 }
                 bgcolor="#FF686B"
                 text={
@@ -593,9 +608,8 @@ function App() {
                     </li>
 
                     <li>
-                      Walker holds the fastest non-winning time for the
-                      200-metre hurdles. At Cardiff in 1991, he ran 22.77
-                      seconds.{" "}
+                      Nigel holds the fastest non-winning time for the 200-metre
+                      hurdles. At Cardiff in 1991, he ran 22.77 seconds.{" "}
                     </li>
 
                     <li>
@@ -609,7 +623,7 @@ function App() {
                     <li>
                       In a six-year career for the Blue and Blacks, Nigel played
                       121 games and scored 78 tries. On 6 March 1993, Nigel made
-                      his Five Nations debut against Ireland. Walker went on to
+                      his Five Nations debut against Ireland. Nigel went on to
                       represent Wales 17 times scoring 12 tries – making his
                       final appearance for Wales against England on 21 February
                       1998. During his rugby career, Nigel also played for the
@@ -619,9 +633,9 @@ function App() {
                     <li>
                       In 2001, Nigel was appointed Head of Sport at BBC Wales.
                       In 2010, Walker became the National Director at the
-                      English Institute of Sport. In 2018, celebrating Black
-                      History Month in the UK, Walker was included in a list of
-                      “100 Brilliant, Black and Welsh people”.{" "}
+                      English Institute of Sport (EIS). In 2018, celebrating
+                      Black History Month in the UK, Walker was included in a
+                      list of “100 Brilliant, Black and Welsh people”.{" "}
                     </li>
 
                     <li>
@@ -631,8 +645,9 @@ function App() {
                       where he chaired its major events Panel.{" "}
                     </li>
                     <li>
-                      In January 2023 was appointed as the Acting CEO of the WRU
-                      following the resignation of Steve Phillips.
+                      In January 2023, he was appointed as the Acting CEO of the
+                      Welsh Rugby Union following the resignation of Steve
+                      Phillips.
                     </li>
                   </ul>
                 }
@@ -650,7 +665,7 @@ function App() {
                     <li>
                       Gan Walker y mae’r amser heb ennill cyflymaf ar gyfer y
                       ras 200 metr dros y clwydi. Yng Nghaerdydd ym 1991,
-                      rhedodd hi mewn 22.77 eiliad.{" "}
+                      rhedodd y ras mewn 22.77 eiliad.{" "}
                     </li>
 
                     <li>
@@ -675,9 +690,9 @@ function App() {
 
                     <li>
                       Yn 2001, penodwyd Nigel yn Bennaeth Chwaraeon BBC Cymru.
-                      Yn 2010, gwnaed Walker yn Gyfarwyddwr Cenedlaethol yr
-                      English Institute of Sport. Yn 2018, wrth ddathlu Mis
-                      Hanes Pobl Ddu yn y DU, cafodd Walker ei gynnwys mewn
+                      Yn 2010, gwnaed Nigel yn Gyfarwyddwr Cenedlaethol yr
+                      English Institute of Sport (EIS). Yn 2018, wrth ddathlu
+                      Mis Hanes Pobl Ddu yn y DU, cafodd Nigel ei gynnwys mewn
                       rhestr o “100 Brilliant, Black and Welsh people”.{" "}
                     </li>
 
@@ -695,9 +710,6 @@ function App() {
                 backWelshText={
                   "Mae llwybr gyrfa Nigel Walker yn dangos, gyda dyfalbarhad, gwaith caled a ffocws, y gallwn gyrraedd ein nodau a defnyddio ein galluoedd a’n sgiliau i gyflawni ein huchelgeisiau.  "
                 }
-                welshSlugText={
-                  "Athletwr, chwaraewr rygbi ac un sydd wedi cyflawni cryn dipyn."
-                }
                 slugText={"Athlete, rugby player and high achiever."}
                 resources={api}
               ></Person>
@@ -707,6 +719,8 @@ function App() {
             path="/12to16yo/GlennWebbe"
             element={
               <PersonPodcast
+                pscc={"/12to16yo"}
+                psNum={"4"}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -896,23 +910,245 @@ function App() {
                 }
                 backText={`Hopefully, the racism Glenn experienced and the expectation that he would ‘play on’ despite suffering a head injury now belong firmly in the past.  
                 `}
-                slugText={"Wales’ first black icon."}
-                welshSlugText={"Eicon du cyntaf Cymru."}
+                slugText={"Wales' first rugby black icon."}
+                welshSlugText={"Eicon rygbi du cyntaf Cymru."}
                 backWelshText={
                   "Gobeithio bod yr hiliaeth a brofodd Glenn a’r disgwyliad y byddai’n ‘parhau i chwarae’ er gwaetha’r ffaith ei fod wedi dioddef anaf i’w ben, bellach yn wirioneddol yn y gorffennol."
                 }
+                backLContent={theo}
+                overlayTextCym="Mel Owen yn cyfweld â'r chwaraewr rygbi Theo Cabango. "
+                overlayText="Rugby player Theo Cabango and Mel Owen in discussion."
+                bgImg={"podcastImgOverlay"}
+                backLContentCym={theoCym}
+              ></PersonPodcast>
+            }
+          ></Route>
+          <Route
+            path="/6to9yo/HananIssa"
+            element={
+              <PersonPodcast
+                pscc={"/6to9yo"}
+                psNum={"2"}
+                links={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.gov.wales/hate-hurts-wales"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Welsh Government site about hate crime (for teachers)
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesartsreview.org/hanan-issa-in-conversation/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Wales Art Review - Hanan Issa Interview{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://poetrywales.co.uk/hanan-issa-on-how-she-writes-a-poem/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Poetry Wales - Hanan Issa on how she writes a poem
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.literaturewales.org/our-projects/representing-wales-2020/representing-wales-cohort/hanan-issa/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Hanan Issa - Representing Wales interview
+                      </a>
+                    </li>
+                  </ul>
+                }
+                linksCym={
+                  <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.llyw.cymru/mae-casineb-yn-brifo-cymru"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Gwefan Llywodraeth Cymru am drosedd casineb (ar gyfer
+                        athrawon)
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://jomec.co.uk/thecardiffian/2020/01/28/glenn-webbe-why-laughter-can-be-best-weapon-against-abuse/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Glenn Webbe yn son am ddelio â hiliaeth{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/sport/rugby/rugby-news/how-life-turned-out-glen-15213382"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl Wales Online ar yrfa Glen Webbe{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.wru.wales/2019/05/webbe-recalls-historic-world-cup-treble/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl am Webbe fel y chwaraewr du cyntaf yng Nghwpan
+                        Rygbi y Byd
+                      </a>
+                    </li>
+                  </ul>
+                }
+                resource={twelveApi.slice(0, 1)}
+                indivName={"Hanan Issa"}
+                indivNameCym={"Hanan Issa"}
+                indivPic={"https://www.dev.addysgop.co.uk/pdfs/hanan.png"}
+                text={
+                  <ul>
+                    <li>
+                      Hanan Issa is a Welsh-Iraqi poet, artist, and film-maker
+                      from Cardiff.
+                    </li>
+                    <li>
+                      In 2022, she was announced as the National Poet of Wales.
+                    </li>
+
+                    <li>She is the first Muslim National Poet of Wales.</li>
+
+                    <li>
+                      Hanan published her first book of poetry My Body Can House
+                      Two Hearts, in 2019.
+                    </li>
+
+                    <li>
+                      She has written a story for 'The Mab' - a collection of
+                      stories about the Mabinogi and is also writing a
+                      collection of stories for children called 'And I Hear
+                      Dragons'
+                    </li>
+
+                    <li>
+                      She has written also TV shows and has made a film called
+                      ‘The Golden Apple’
+                    </li>
+
+                    <li>
+                      Hanan grew up around a mix of languages, including Arabic
+                      from her Iraqi family, and Welsh from her grandparents.
+                    </li>
+
+                    <li>
+                      She recalls her Welsh grandparents reading poems to her
+                      from a young age.
+                    </li>
+                    <li>
+                      She says that being raised in Wales inspired her to become
+                      a poet.
+                    </li>
+                    <li>
+                      When discussing Wales, Hanan says that “poetry exists in
+                      the bones of this country.” and that she wants to
+                      encourage a more open sense of what ‘Welshness’ is.
+                    </li>
+                    <li>
+                      Sadly, Hanan was sad but not surprised that when she was
+                      made National Poet of Wales a small number of people made
+                      racist comments.
+                    </li>
+                    <li>
+                      Hanan hopes that during her time as National Poet of
+                      Wales, women will see her success and know that they can
+                      achieve it, too.
+                    </li>
+                  </ul>
+                }
+                welshText={
+                  <ul>
+                    <li>
+                      Ganwyd Glenn Webbe ar 21 Ionawr 1962 yng Nghaerdydd. Roedd
+                      ei rieni’n rhan o genhedlaeth Windrush.{" "}
+                    </li>
+
+                    <li>
+                      Mynychodd Ysgol Gyfun Glan Ely a chafodd gydnabyddiaeth am
+                      ei sgiliau rygbi, pêl-fasged ac athletau.{" "}
+                    </li>
+
+                    <li>
+                      Ar ôl ymuno â Chlwb Rygbi Caerdydd, cynghorwyd Glenn i
+                      adael am fod ‘clymbleidiau’ (cliques) yn nhîm Caerdydd.
+                      Felly, yn 18 oed, cytunodd Glenn i chwarae i Glwb Rygbi
+                      Pen-y-bont ar Ogwr. Chwaraeodd bedwar tymor ar ddeg i’r
+                      clwb.{" "}
+                    </li>
+
+                    <li>
+                      Ar 12 Mehefin 1986, yn ystod taith Cymru o Dde’r Môr
+                      Tawel, chwaraeodd Glenn ei gêm ryngwladol gyntaf fel
+                      eilydd yn erbyn Tonga.{" "}
+                    </li>
+
+                    <li>
+                      Chwaraeodd ei gêm gartref gyntaf ym muddugoliaeth y Pum
+                      Gwlad yn erbyn Lloegr ym 1987 ac o ganlyniad, cafodd ei
+                      ddewis ar gyfer y Cwpan y Byd Cyntaf yn Seland Newydd.{" "}
+                    </li>
+                    <li>
+                      Yng nghwpan y byd, chwaraeodd Glenn yn erbyn Tonga a
+                      sgorio dau gais yn gynnar yn y gêm. Fodd bynnag, cafodd ei
+                      daro’n anymwybodol o ganlyniad i dacl uchel. Roedd Cymru
+                      eisoes wedi defnyddio eu dau eilydd, felly chwaraeodd
+                      Glenn ymlaen – yn reddfol yn ôl pob golwg. Sgoriodd
+                      drydydd cais gwych, gan redeg naw deg metr a churo nifer o
+                      amddiffynwyr mewn buddugoliaeth o 29-16 i Gymru.{" "}
+                    </li>
+
+                    <li>
+                      Collodd Glenn Cymru’n dod yn drydydd am iddo gael ei anfon
+                      gartref ar sail diogelwch. Bellach, dywed nad yw’n gallu
+                      cofio’r gêm ar ôl y dacl – yn cynnwys ei drydydd cais.
+                      Oherwydd ei gampau yng Nghwpan y Byd 1987 a’i enw da am
+                      fod yn stoicaidd ac yn ddoniol, mae Glenn yn cael ei
+                      ddisgrifio’n aml fel “eicon du cyntaf Cymru”.{" "}
+                    </li>
+
+                    <li>
+                      Dywed Glenn iddo weld ‘ychydig iawn o hiliaeth’ yn ystod
+                      ei yrfa rygbi. Ond yn ystod gêm yn erbyn y tîm lleol,
+                      Maesteg, dioddefodd Glenn gamdriniaeth hiliol gan nifer
+                      fach o wylwyr. Arweiniodd ei ymateb ato’n cael ei
+                      gymeradwyo’n wresog a’i ganmol gan y dorf.{" "}
+                    </li>
+                  </ul>
+                }
+                w
+                slugText={"The National Poet of Wales."}
+                welshSlugText={"Bardd Cenedlaethol Cymru."}
                 backLContent={
                   <>
                     <audio controls>
-                      <source src={theo} type="audio/mpeg" />
+                      <source src={hanan} type="audio/mpeg" />
                     </audio>
                   </>
                 }
-                overlayText="Rugby player Theo Cabango and Mel Owen in discussion."
-                bgImg={"podcastImgOverlay"}
+                overlayText="Hanan Isa talking about being a poet"
+                overlayTextCym={"Hanan Issa yn trafod bod yn fardd."}
+                bgImg={"ImgOverlayHanan"}
                 backLContentCym={
                   <audio controls>
-                    <source src={theoCym} type="audio/mpeg" />
+                    <source src={hanan} type="audio/mpeg" />
                   </audio>
                 }
               ></PersonPodcast>
@@ -922,9 +1158,12 @@ function App() {
             path="/9to12yo/PenrhynCastle"
             element={
               <Person
+                pscc={"/9to12yo"}
+                psNum={"3"}
                 resourceOverlay={
                   "Should you visit Penrhyn Castle? Argument for and against."
                 }
+                resourceOverlayWelsh="A ddylech chi ymweld â Chastell Penrhyn?"
                 links={
                   <ul>
                     <li className="linkLi">
@@ -1045,7 +1284,7 @@ function App() {
                 bgcolor={"#A2D6F9"}
                 indivName={"Penrhyn Castle"}
                 indivNameCym={"Castell Penrhyn"}
-                linkResource={"Resources/PenrhynCastle"}
+                linkResource={"./../Resources/PenrhynCastle"}
                 resource={nineApi.slice(2, 1)}
                 indivPic={
                   "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Penrhyn_Castle_Wales_015.jpg/640px-Penrhyn_Castle_Wales_015.jpg"
@@ -1065,8 +1304,9 @@ function App() {
                     </li>
 
                     <li>
-                      When Richard Pennant became 1st baron of Penrhyn, they
-                      were controlling their Jamaican properties by letter.
+                      When Richard Pennant, a descendant of Gifford Pennant,
+                      became the 1st baron they were controlling their Jamaican
+                      properties by letter.
                     </li>
 
                     <li>
@@ -1075,7 +1315,7 @@ function App() {
 
                     <li>
                       By 1805, Richard Pennant owned nearly 1,000 enslaved
-                      people across his 4 plantations in Jamaica.
+                      people across his four plantations in Jamaica.
                     </li>
 
                     <li>
@@ -1139,9 +1379,9 @@ function App() {
                     </li>
                     <li>
                       Datblygodd yr ystâd a chynyddodd nifer y caethweision.
-                      Erbyn 1805, roedd Richard Pennant yn berchen ar bron 1,000
-                      o bobl oedd yn gaethweision ar draws ei 4 planhigfa yn
-                      Jamaica.{" "}
+                      Erbyn 1805, roedd Richard Pennant, un o ddisgynyddion
+                      Gifford, yn berchen ar bron 1,000 o bobl oedd yn
+                      gaethweision ar draws ei pedair planhigfa yn Jamaica.{" "}
                     </li>
                     <li>
                       Mae anwybodaeth Richard Pennant wedi ei gofnodi yn ei
@@ -1196,9 +1436,12 @@ function App() {
             path="/9to12yo/HansLichtenstein"
             element={
               <Person
+                pscc={"/9to12yo"}
+                psNum={"3"}
                 backcardImg={hans}
                 bgcolor={"#A2D6F9"}
                 resourceOverlay={"An imaginary monologue."}
+                resourceOverlayWelsh="Monolog dychmygol. "
                 links={
                   <ul>
                     <li className="linkLi">
@@ -1334,9 +1577,9 @@ function App() {
                     </li>
                   </ul>
                 }
-                linkResource={"Resources/Hans"}
-                indivName={"Hans Lichtenstein"}
-                indivNameCym={"Hans Lichtenstein"}
+                linkResource={"./../Resources/Hans"}
+                indivName={"Dr Hans Lichtenstein"}
+                indivNameCym={"Dr Hans Lichtenstein"}
                 indivPic={
                   "https://i.guim.co.uk/img/media/7c810c258320be244e1d7d4d721e8a171409c677/180_145_1240_744/master/1240.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=d36ac08cc3c44a21c37572bfc483bb4c"
                 }
@@ -1344,23 +1587,29 @@ function App() {
                 text={
                   <>
                     <ul>
+                      <li>Hans Lichtenstein was born in Germany in 1928.</li>
                       <li>
                         Hitler was appointed chancellor of Germany on 30 January
                         1933.
                       </li>
                       <li>
-                        Hitler hated ethnic minorities, including Jewish people,
-                        and Jewish people were treated very badly in Germany.
+                        Hitler and the Nazi Party hated ethnic minorities,
+                        including Jewish people, and Jewish people were treated
+                        very badly in Germany.
                       </li>
 
                       <li>
                         During Kristallnacht in 1938, many Jewish shops and
                         businesses were destroyed and looted.
                       </li>
-
+                      <li>
+                        The term Kristallnacht literally means Crystal Night and
+                        refers to the broken glass which covered the floor after
+                        the night of violence.{" "}
+                      </li>
                       <li>
                         One of the shops that was destroyed belonged to Ruth and
-                        Walter Lichtenstein.
+                        Walter Lichtenstein, Hans's parents.
                       </li>
 
                       <li>
@@ -1370,8 +1619,18 @@ function App() {
                         Transport).
                       </li>
                       <li>
-                        One of the children that was rescued was Ruth and
-                        Walter’s son, Hans Lichtenstein!
+                        Only children under 17 years old were allowed to enter
+                        the UK which meant their parents could not come.{" "}
+                      </li>
+                      <li>
+                        This meant a difficult decision for parents to let their
+                        children travel to the UK on their own and live with a
+                        foster family to avoid persecution.{" "}
+                      </li>
+                      <li>
+                        One of the children that was rescued was Hans
+                        Lichtenstein who arrived in Britain when he was just 12
+                        years old.
                       </li>
                       <li>
                         Hans arrived in Britain when he was just 12 years old.
@@ -1405,73 +1664,88 @@ function App() {
                       </li>
                       <li>Dr Hans Lichtenstein died aged 91 in March 2019. </li>
                     </ul>
-                    <p>
-                      Dr Hans Lichtenstein lived a long, hard life. After moving
-                      to Britain, he fulfilled his dream of becoming a doctor.{" "}
-                    </p>
                   </>
                 }
                 welshText={
-                  <ul>
-                    <li>
-                      Ar 30 Ionawr 1933, penodwyd Adolf Hitler yn ganghellor
-                      newydd yr Almaen. Roedd Hitler yn casáu’r Iddewon ac yn
-                      fuan iawn roeddent yn cael eu herlid, eu poenydio a’u
-                      gormesu.{" "}
-                    </li>
-                    <li>
-                      Yn ystod ‘Kristallnacht’ (‘Noson Grisial’) ar 9-10
-                      Tachwedd 1938, dinistriwyd llawer o siopau a busnesau
-                      Iddewig.
-                    </li>
-                    <li>
-                      Ar ôl Kristallnacht, daeth rhai pobl ynghyd i achub plant
-                      Iddewig o’r Almaen ac ardaloedd eraill oedd wedi eu rheoli
-                      gan y Natsïaid. Galwyd yr ymgais hon i’w hachub yn
-                      ‘Kindertransport’ (Trafnidiaeth Plant). Roedd Hans
-                      Lichtenstein ymysg y rheiny gafodd eu hachub.{" "}
-                    </li>
-                    <li>
-                      Ar ôl cyrraedd Prydain, cafodd Hans, oedd yn 12 oed, ei
-                      addysgu yn Ysgol fawreddog Gordonstoun.{" "}
-                    </li>
-                    <li>
-                      Astudiodd Hans feddygaeth yng Ngholeg y Drindod,
-                      Caergrawnt, a chwblhau ei hyfforddiant meddygol yn ysbyty
-                      Guy’s yn Llundain.{" "}
-                    </li>
-                    <li>
-                      Roedd yn rhaid i Hans wneud Gwasanaeth Milwrol (ymuno â’r
-                      fyddin, y llynges neu’r llu awyr) aeth ag ef i Malaya (sef
-                      Malaysia erbyn hyn), lle’r oedd, yn ystod yr argyfwng
-                      cenedlaethol, yn swyddog meddygol ar gyfer yr SAS oedd yn
-                      cael eu hedmygu’n fawr.{" "}
-                    </li>
-                    <li>
-                      Ym Malaysia, helpodd Hans i sefydlu’r gofal meddygol
-                      cyntaf ar gyfer pobl frodorol Malaysia, yr Orang
-                      Asli.  Cyfarfu â Beryl Rush hefyd, sef nyrs o Brydain, ac
-                      fe briododd y ddau yn Kuala Lumpur ym 1956.{" "}
-                    </li>
-                    <li>
-                      Ymgartrefodd Hans a Beryl yn Llandrindod yn y pen draw,
-                      lle gweithiodd Hans fel meddyg teulu uchel iawn ei barch
-                      am 32 o flynyddoedd.{" "}
-                    </li>
-                    <li>
-                      Yn ystod ei ymddeoliad, helpodd Hans i sefydlu
-                      Ymddiriedolaeth Bracken yn Llandrindod, sydd yn cynnig
-                      cymorth, cwnsela a therapïau cyflenwol canser.{" "}
-                    </li>
-                    <li>
-                      Yn hwyrach yn ei fywyd, dechreuodd Hans redeg marathonau a
-                      pharagleidio, ac yn ei 70au hwyr, gellid ei weld yn hedfan
-                      uwchlaw Cwm Elan ger ei gartref.{" "}
-                    </li>
-                    <li>
-                      Bu farw Dr Hans Lichtenstein ym Mawrth 2019 yn 91 oed.{" "}
-                    </li>
-                  </ul>
+                  <>
+                    <ul>
+                      <li>
+                        Cafodd Hans Lichtenstein ei eni yn yr Almaen yn 1928.
+                      </li>
+                      <li>
+                        Cafodd Hitler ei wneud yn Ganghellor yr Almaen ar 30
+                        Ionawr 1933.
+                      </li>
+                      <li>
+                        Roedd Hitler a'r Blaid Natsïaidd yn casáu lleiafrifoedd
+                        ethnig, gan gynnwys yr Iddewon. Cafodd Iddewon eu trin
+                        yn wael yn yr Almaen.
+                      </li>
+                      <li>
+                        Yn ystod Kristallnacht yn 1938, cafodd llawer o siopau a
+                        busnesau Iddewig eu dinistrio a'u hysbeilio.
+                      </li>
+                      <li>
+                        Ystyr Kristallnacht yw Noson Grisial. Cafodd y noson yr
+                        enw hwn oherwydd y gwydr wedi torri oedd dros y llawr i
+                        gyd ar ôl y noson o drais.
+                      </li>
+                      <li>
+                        Roedd Ruth a Walter Lichtenstein, rhieni Hans, yn
+                        berchen un o'r siopau a gafodd eu dinistrio..
+                      </li>
+                      <li>
+                        Yn ystod cyfnod Hitler mewn grym, daeth pobl ddewr at ei
+                        gilydd er mwyn achub plant Iddewig. Yr enw ar eu cynllun
+                        nhw i achub plant Iddewig oedd ‘Kindertransport’ (Cludo
+                        Plant).
+                      </li>
+                      <li>
+                        Dim ond plant o dan 17 oed oedd yn cael dod i mewn i'r
+                        DU. Roedd hyn yn golygu nad oedd eu rhieni nhw'n cael
+                        dod.
+                      </li>
+                      <li>
+                        Felly, roedd yn rhaid i rieni wneud penderfyniad anodd,
+                        gadael i'w plant deithio i'r DU ar eu pennau eu hunain a
+                        byw gyda theulu maeth er mwyn osgoi cael eu herlid.
+                      </li>
+                      <li>
+                        Roedd Hans Lichtenstein yn un o'r plant a gafodd ei
+                        achub. Dim ond deuddeg oed oedd Hans pan gyrhaeddodd
+                        Brydain.
+                      </li>
+                      <li>
+                        Astudiodd Hans feddygaeth yng Ngholeg y Drindod,
+                        Caergrawnt, ac yna daeth yn swyddog meddygol i'r SAS (y
+                        Gwasanaeth Awyr Arbennig/Special Air Service) ym
+                        Malaysia.
+                      </li>
+                      <li>
+                        Pan oedd Hans ym Malaysia, cwrddodd â Beryl Rush, nyrs o
+                        Brydain, a phriodon nhw yn 1956.
+                      </li>
+                      <li>
+                        Ar ôl gweithio ym Malaysia, symudodd Hans a Beryl i
+                        Landrindod. Gweithiodd Hans fel meddyg teulu uchel ei
+                        barch yma am 32 o flynyddoedd.
+                      </li>
+                      <li>
+                        Ar ôl ymddeol, helpodd Hans i sefydlu Ymddiriedolaeth
+                        Bracken (Bracken Trust) yn Llandrindod, sy'n cynnig
+                        cymorth canser, cwnsela a therapïau cyflenwol.{" "}
+                      </li>
+                      <li>
+                        Yn ddiweddarach, dechreuodd Hans redeg marathonau a
+                        pharagleidio. Pan oedd yn ei 70au hwyr, roedd i'w weld
+                        yn hofran fry uwchben Cwm Elan ger ei gartref!
+                      </li>
+                      <li>
+                        Gwnaeth Dr Hans Lichtenstein farw yn 91 oed ym mis
+                        Mawrth 2019.
+                      </li>
+                    </ul>
+                  </>
                 }
                 backText={`Dr Hans Lichtenstein lived a remarkable life.  Being Jewish in Hitler’s Germany, Hans faced violence and intimidation.  On moving to Britain on the Kindertransport, Hans worked hard and fulfilled his dream of becoming a doctor – but he never stopped having new interests. `}
                 slugText={"The Jewish boy who fled Germany."}
@@ -1486,7 +1760,10 @@ function App() {
             path="/6to9yo/MerthyrSynagogue"
             element={
               <PersonYTVid
+                pscc={"/6to9yo"}
+                psNum="2"
                 backLContent={"Learn more about synagogues. "}
+                backLContentCym="Dysgwch mwy am y synagog."
                 overlayText={
                   <h2>
                     Learn more about synagogues <FaVideo />
@@ -1498,6 +1775,15 @@ function App() {
                 youtubeVidCym={"https://www.youtube.com/embed/1aLLCfQ7vCA"}
                 links={
                   <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/bitesize/guides/zbm8jty/revision/1"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Practices in Judasim (Bitesize)
+                      </a>
+                    </li>
                     <li className="linkLi">
                       <a
                         href="https://www.foundationforjewishheritage.com/merthyr-tydfil"
@@ -1532,10 +1818,27 @@ function App() {
                         website.{" "}
                       </a>
                     </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/embed/-KOxyZAgQEk"
+                        className="resourceHref"
+                      >
+                        Interview about Merthyr Synagogue with Michael Mail
+                      </a>
+                    </li>
                   </ul>
                 }
                 linksCym={
                   <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/bitesize/guides/zqs2dxs/revision/1"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Addoli mewn synagog (Bitesize)
+                      </a>
+                    </li>
                     <li className="linkLi">
                       <a
                         href="https://www.foundationforjewishheritage.com/merthyr-tydfil"
@@ -1550,7 +1853,7 @@ function App() {
                         href="https://nation.cymru/news/merthyr-tydfil-synagogue-welsh-jewish-heritage-centre-lottery/"
                         className="resourceHref"
                       >
-                        Erthygl yn son am y project i{" "}
+                        Erthygl yn son am y project i ddiogelu'r adeilad{" "}
                       </a>
                     </li>
                     <li className="linkLi">
@@ -1558,7 +1861,7 @@ function App() {
                         href="https://jewishheritage.wales/"
                         className="resourceHref"
                       >
-                        Tudalen y 'Jewish heritage centre' ar y synogog{" "}
+                        Gwefan ‘Canolfan Treftadaeth Iddweig Cymru’
                       </a>
                     </li>
                     <li className="linkLi">
@@ -1566,7 +1869,15 @@ function App() {
                         href="https://ahfund.org.uk/projects/former-merthyr-tydfil-synagogue/"
                         className="resourceHref"
                       >
-                        Erthygl am Synagog Merthyrar wefan 'Jewish Heritage'
+                        Erthygl am Synagog Merthyr ar wefan 'Jewish Heritage'
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/embed/-KOxyZAgQEk"
+                        className="resourceHref"
+                      >
+                        Cyfweliad am Synagog Merthyr gyda Michael Mail
                       </a>
                     </li>
                   </ul>
@@ -1614,16 +1925,22 @@ function App() {
                     <li>They hope to open the centre by 2025.</li>
                     <li>
                       Buildings like these are very important to learn about our
-                      history and the many people who live in Wales.
+                      history and the diverse people who live in Wales.
                     </li>
                   </ul>
                 }
                 welshText={
                   <ul className="welshUl">
-                    <li>Adeiladwyd Synagog Merthyr ym 1877.</li>
+                    <li>
+                      Adeilad lle mae pobl Iddewig yn mynd i addoli yw synagog.
+                    </li>
+                    <li>
+                      Adeiladwyd Synagog Merthyr ym 1877 - yr adeilad Iddewig
+                      hynaf yng Nghymru.
+                    </li>
                     <li>
                       Cafodd ei ddylunio gan Charles Taylor, pensaer, oedd yn
-                      byw’n lleol.
+                      byw'n lleol.
                     </li>
                     <li>
                       Symudodd llawer o bobl Iddewig i Ferthyr Tudful pan
@@ -1631,15 +1948,7 @@ function App() {
                       Cymru.
                     </li>
                     <li>
-                      Ffurfiodd y bobl Iddewig gynulleidfa, grŵp i weddïo gyda’i
-                      gilydd, ym 1848.
-                    </li>
-                    <li>
-                      Pan oedd llai o waith yn y ffatrïoedd, gadawodd llawer o
-                      Iddewon Merthyr i chwilio swyddi rhywle arall.
-                    </li>
-                    <li>
-                      Mwy na thebyg mai Synagog Merthyr yw’r unig synagog yn y
+                      Mwy na thebyg mai Synagog Merthyr yw'r unig synagog yn y
                       byd sydd â draig Cymru arni.
                     </li>
                     <li>
@@ -1649,20 +1958,13 @@ function App() {
                     </li>
                     <li>
                       Yn 2019, prynwyd yr adeilad gan y Sefydliad Treftadaeth
-                      Iddewig.
+                      Iddewig sy'n gobeithio ei agor fel canolfan lle gall bobl
+                      ddysgu am y synagog a phobl Iddewig.
                     </li>
+                    <li>Mae nhw'n gobeithio agor y ganolfan erbyn 2025.</li>
                     <li>
-                      Yn 2021, roedd yn rhaid iddynt atgyweirio’r adeilad i’w
-                      wneud yn ddiogel ac i’w ddiogelu rhag y tywydd.
-                    </li>
-                    <li>
-                      Gobaith y Sefydliad Treftadaeth Iddewig yw agor yr adeilad
-                      fel Canolfan Traftadaeth Iddewig erbyn 2025.
-                    </li>
-                    <li>
-                      Cred Michael Mail o’r Sefydliad Treftadaeth Iddewig fod yr
-                      adeilad yn bwysig iawn am mai dyma’r ‘adeilad Iddewig
-                      pwrpasol hynaf sydd wedi goroesi yng Nghymru’.
+                      Mae adeiladau fel hyn yn bwysig iawn i ddysgu am ein hanes
+                      ac am yr amrywiaeth o bobl sydd yn byw yng Nhgymru.
                     </li>
                   </ul>
                 }
@@ -1682,9 +1984,14 @@ function App() {
             path="/6to9yo/LennLawrence"
             element={
               <Person
+                pscc={"/6to9yo"}
+                psNum="2"
                 backcardImg={newspaper}
                 resourceOverlay={
                   "An imaginary newpaper article about Lenn Lawrence saving Swansea."
+                }
+                resourceOverlayWelsh={
+                  "Erthygl papur newydd dychmygol am Lenn Lawrence yn achub Abertawe. "
                 }
                 links={
                   <ul>
@@ -1754,63 +2061,67 @@ function App() {
                 bgcolor={"#CFE57D"}
                 slugText={"The hero who saved Swansea."}
                 resource={api.slice(3, 4)}
-                linkResource="Resources/LennLawrence"
+                linkResource="./../Resources/LennLawrence"
                 welshSlugText={"Yr arwr achubodd Abertawe."}
                 indivPic={
                   "https://blackhistorywales.org.uk/wp-content/uploads/2020/07/Screenshot-2020-07-09-at-07.56.04.png"
                 }
                 text={
-                  <ul>
-                    <li>
-                      Lenn Lawrence came to Wales from Jamaica when he was 24 as
-                      a part of the Windrush generation.
-                    </li>
-                    <li>
-                      He had to take poorly paid jobs working as a builder to
-                      begin with and specialised in concrete.
-                    </li>
-                    <li>
-                      One day when he was working in Swansea a hole in the wall
-                      was in danger of flooding from a hole in one of the lock
-                      gates at the docks. He had to work hard to fill it with
-                      concrete in a race against the tide!
-                    </li>
-                    <li>
-                      Lenn helped build the M4 motorway, the deep-water dock for
-                      Marple ridgeway, Port Talbot town centre, the Pontdrefen
-                      bridge and many more sites.
-                    </li>
-                    <li>
-                      He was first black carpenter and foreman for the British
-                      Steel Corporation in Neath Port Talbot.
-                    </li>
-                    <li>
-                      Being an ethnic minority in 1962 in Wales was difficult
-                      and this led Lenn and other members of the community to
-                      start the Caribbean Friendship Society. Together they met
-                      with the police, councillors and other agencies.
-                    </li>
-                    <li>
-                      Although the Caribbean Friendship Society didn't have much
-                      money, Lenn and other members used their own money to set
-                      up meetings in each other’s houses, in a shed at the back
-                      of Corporation Road or at the Talbot pub.{" "}
-                    </li>
-                    <li>
-                      In 1981, the Caribbean Friendship Society relocated to
-                      Swansea and lasted until 1992, when it changed it's name
-                      to the Swansea Bay Regional Equality Council.
-                    </li>
-                    <li>
-                      Today the council still works to value the rights of
-                      people.
-                    </li>
-                    <li>
-                      Though determination and a belief in treating people
+                  <>
+                    <ul>
+                      <li>
+                        Lenn Lawrence came to Wales from Jamaica as a part of
+                        the Windrush generation in 1960 when he was 24.
+                      </li>
+                      <li>
+                        He had to take poorly paid jobs working as a builder to
+                        begin with and specialised in concrete.
+                      </li>
+                      <li>
+                        One day a hole in one of the lock gates at Swansea docks
+                        meant the city was in danger of flooding. He had to work
+                        hard to fill it with concrete in a race against the
+                        tide!
+                      </li>
+                      <li>
+                        Lenn helped build the M4 motorway, the deep-water dock
+                        for Marple ridgeway, Port Talbot town centre, the
+                        Pontdrefen bridge and many more sites.
+                      </li>
+                      <li>
+                        He was first black carpenter and foreman for the British
+                        Steel Corporation in Neath Port Talbot.
+                      </li>
+                      <li>
+                        Being an ethnic minority in 1962 in Wales had it's
+                        difficulties. It could be lonely and many people
+                        experienced racism. This led Lenn and other members of
+                        the community to start the Caribbean Friendship Society.
+                        Together they met with the police, councillors and other
+                        agencies.
+                      </li>
+                      <li>
+                        Although the Caribbean Friendship Society didn't have
+                        much money, Lenn and other members used their own money
+                        to set up meetings in each other’s houses, in a shed at
+                        the back of Corporation Road or at the Talbot pub.{" "}
+                      </li>
+                      <li>
+                        In 1981, the Caribbean Friendship Society relocated to
+                        Swansea and lasted until 1992, when it changed it's name
+                        to the Swansea Bay Regional Equality Council.
+                      </li>
+                      <li>
+                        Today the council still works to value the rights of
+                        people.
+                      </li>
+                    </ul>
+                    <p>
+                      Through determination and a belief in treating people
                       fairly, Lenn Lawrence became widely respected as both
                       hardworking and for promoting the rights of people.
-                    </li>
-                  </ul>
+                    </p>
+                  </>
                 }
                 welshText={
                   <ul>
@@ -1839,10 +2150,11 @@ function App() {
                     </li>
                     <li>
                       Roedd hi'n anodd bod yn lleiafrif ethnig yng Nghymru yn
-                      1962, felly dechreuodd Lenn ac aelodau eraill o'r gymuned
-                      Gymdeithas Cyfeillgarwch y Caribî. Gyda'i gilydd, cawson
-                      nhw gyfarfodydd gyda'r heddlu, cynghorwyr ac asiantaethau
-                      eraill.
+                      1962. Gallai fod yn unig ac roedd nifer o bobl wedi profi
+                      hiliaeth. Felly dechreuodd Lenn ac aelodau eraill o'r
+                      gymuned Gymdeithas Cyfeillgarwch y Caribî. Gyda'i gilydd,
+                      cawson nhw gyfarfodydd gyda'r heddlu, cynghorwyr ac
+                      asiantaethau eraill.
                     </li>
                     <li>
                       Doedd dim llawer o arian gan Gymdeithas Cyfeillgarwch y
@@ -1874,6 +2186,10 @@ function App() {
             path="/6to9yo/TeleriGray"
             element={
               <PersonYTVid
+                pscc={"/6to9yo"}
+                youtubeVidCym={"https://www.youtube.com/embed/3ZR3z0N2HMw"}
+                psNum={"2"}
+                backLContentCym={"Dysgwch mwy am ffordd o fyw y Romani. "}
                 backLContent={
                   "Learn more about the Romani Gypsies way of life."
                 }
@@ -1951,8 +2267,8 @@ function App() {
                   <>
                     <ul>
                       <li>
-                        Teleri Gray is a Romani storyteller and she is helping
-                        people to remember and preserve the Traveller’s history.{" "}
+                        Teleri Gray is a Gypsy Romani storyteller and she is
+                        helping people to remember and preserve their history.
                       </li>
                       <li>
                         Teleri talks about what life is like for Traveller
@@ -1961,9 +2277,9 @@ function App() {
 
                       <li>
                         Life can be very hard for Romani’s. They are not always
-                        welcomed in communities because there are a lot of false
-                        things said about them and people do not understand the
-                        way they choose to live.{" "}
+                        welcomed in communities because there are a lot of
+                        untrue things said about them and people do not
+                        understand the way they choose to live.{" "}
                       </li>
                       <li>Gypsies have lived in Wales for over 400 years.</li>
 
@@ -2006,8 +2322,8 @@ function App() {
                   <>
                     <ul>
                       <li>
-                        Mae Teleri Gray yn storïwraig Romani ac mae hi'n helpu
-                        pobl i gofio ac i gadw hanes y Teithwyr.
+                        Mae Teleri Gray yn storïwraig Sipsi Romani ac mae hi'n
+                        helpu pobl i gofio ac i gadw eu hanes.
                       </li>
                       <li>
                         Mae Teleri'n sôn am sut mae bywyd i blant a theuluoedd
@@ -2066,9 +2382,12 @@ function App() {
             path="/6to9yo/FongSui"
             element={
               <Person
+                pscc={"/6to9yo"}
+                psNum={"2"}
                 resourceOverlay={"The imaginary diary of Fong Sui."}
+                resourceOverlayWelsh={"Dyddiadur dychmygol Fong Sui."}
                 welshSlugText={"Y Tsïeiniaid yng Nghymru."}
-                linkResource={"Diaries/FongSui"}
+                linkResource={"./../Diaries/FongSui"}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -2166,7 +2485,7 @@ function App() {
                         the restaurant two nights a week, and raising four
                         children.
                       </li>
-                      <li>Fong Sui is now a grandmother of seven children.</li>
+                      <li>Fong Sui now has 7 grandchildren.</li>
                     </ul>
                     <p>
                       {" "}
@@ -2231,9 +2550,12 @@ function App() {
             path="/6to9yo/ArandoraStar"
             element={
               <Person
+                pscc={"/6to9yo"}
+                psNum={"2"}
                 resourceOverlay={
                   "A cartoon about the fate of the SS Arandora Star."
                 }
+                resourceOverlayWelsh={"Cartŵn am dynged yr SS Arandora Star. "}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -2318,7 +2640,7 @@ function App() {
                 }
                 welshSlugText={"Trasiedi y llong â suddwyd."}
                 backcardImg={strip}
-                linkResource="Resources/ArandoraStarStrip"
+                linkResource="./../Resources/ArandoraStarStrip"
                 bgcolor="#CFE57D"
                 indivName={"The Arandora Star"}
                 indivNameCym={"The Arandora Star"}
@@ -2328,58 +2650,60 @@ function App() {
                   "https://upload.wikimedia.org/wikipedia/commons/7/72/Arandora_Star_1940.jpg"
                 }
                 text={
-                  <ul>
-                    <li>The SS Arandora Star was built to be a cruise ship.</li>
-                    <li>
-                      During World War Two, she was painted grey and guns were
-                      added. The Arandora Star was then used to carry soldiers.
-                    </li>
-                    <li>
-                      On her last journey, in 1940, the ship carried prisoners
-                      of war to camps in Canada.{" "}
-                    </li>
-                    <li>734 of the men onboard were Welsh Italian.</li>
-                    <li>
-                      These Italian men were declared “enemy aliens” by the
-                      British government even though their families moved to
-                      Wales decades before the war began!
-                    </li>
-                    <li>
-                      The ship was also carrying too many passengers – there
-                      were 1678 men on board but the ship should only have taken
-                      500!{" "}
-                    </li>
-                    <li>
-                      On 2 July 1940, just one day into the journey, a German
-                      torpedo hit The Arandora Star.
-                    </li>
+                  <>
+                    <ul>
+                      <li>
+                        The SS Arandora Star was built to be a cruise ship.
+                      </li>
+                      <li>
+                        During World War Two, she was painted grey and guns were
+                        added. The Arandora Star was then used to carry
+                        soldiers.
+                      </li>
+                      <li>
+                        On her last journey, in 1940, the ship carried prisoners
+                        of war to camps in Canada.{" "}
+                      </li>
+                      <li>734 of the men onboard were Welsh Italian.</li>
+                      <li>
+                        These Italian men were declared “enemy aliens” by the
+                        British government even though their families moved to
+                        Wales decades before the war began!
+                      </li>
+                      <li>
+                        The ship was also carrying too many passengers – there
+                        were 1678 men on board but the ship should only have
+                        taken 500!{" "}
+                      </li>
+                      <li>
+                        On 2 July 1940, just one day into the journey, a German
+                        torpedo hit The Arandora Star.
+                      </li>
 
-                    <li>
-                      The ship was just off the coast of Ireland at the time.
-                    </li>
+                      <li>
+                        The ship was just off the coast of Ireland at the time.
+                      </li>
 
-                    <li>
-                      The ship wasn’t displaying the International Red Cross
-                      symbol – this would have told other ships that it was
-                      carrying civilians on board, and therefore shouldn’t be
-                      fired at.
-                    </li>
+                      <li>
+                        The ship wasn’t displaying the International Red Cross
+                        symbol – this would have told other ships that it was
+                        carrying civilians on board, and therefore shouldn’t be
+                        fired at.
+                      </li>
 
-                    <li>
-                      The ship sank within minutes and more than 800 lives were
-                      lost.
-                    </li>
+                      <li>
+                        The ship sank within minutes and more than 800 lives
+                        were lost.
+                      </li>
 
-                    <li>53 Welsh Italians died.</li>
-
-                    <li>
-                      Lifeboats that could have been used to rescue some men
-                      were blocked by heavy wire so people couldn’t get at them.
-                      The barbed wire placed on deck also caused major problems.{" "}
-                    </li>
-
-                    <li>This was a dreadful tragedy.</li>
-                  </ul>
+                      <li>
+                        Lifeboats that could have been used to rescue some men
+                        were blocked by heavy wire so people couldn’t get at
+                        them. The barbed wire placed on deck also caused major
+                        problems.{" "}
+                      </li>
+                    </ul>
+                  </>
                 }
                 welshText={
                   <ul>
@@ -2414,34 +2738,26 @@ function App() {
                       Ar 2 Gorffennaf 1940, dim ond diwrnod ar ôl gadael, tarodd
                       torpedo Almaenig long yr Arandora Star.
                     </li>
-
                     <li>
                       Roedd y llong dafliad carreg o arfordir Iwerddon ar y
                       pryd.
                     </li>
-
                     <li>
                       Doedd y llong ddim yn dangos symbol y Groes Goch
                       Ryngwladol. Byddai’r symbol wedi dweud wrth longau eraill
                       ei bod hi'n cario sifiliaid ar ei bwrdd, ac felly na
                       ddylai neb saethu tuag ati.
                     </li>
-
                     <li>
                       Suddodd y llong cyn pen munudau a chafodd dros 800 o
                       fywydau eu colli.
                     </li>
-
-                    <li>Gwnaeth 53 o Gymry o dras Eidalaidd farw. </li>
-
                     <li>
                       Roedd hi'n amhosibl cyrraedd badau achub a allai fod wedi
                       achub rhai o'r dynion oherwydd bod weiars trwm o'u cwmpas
                       nhw. Hefyd, cododd problemau mawr oherwydd y weiren bigog
                       dros y dec.
                     </li>
-
-                    <li>Roedd yn drychineb ofnadwy. </li>
                   </ul>
                 }
               ></Person>
@@ -2451,9 +2767,12 @@ function App() {
             path="/6to9yo/320Battalion"
             element={
               <Person
+                pscc={"/6to9yo"}
+                psNum={"2"}
                 resourceOverlay={
                   "A letter from Rosie to the mother of Wilson Monk."
                 }
+                resourceOverlayWelsh="Llythyr wrth mam Wilson Monk at Rosie. "
                 links={
                   <ul>
                     <li className="linkLi">
@@ -2555,7 +2874,7 @@ function App() {
                 welshSlugText={"Yr Americanwyr gafodd groeso yng Nghymru."}
                 indivName={"320th Barrage Balloon Battalion "}
                 indivNameCym={"320th Barrage Balloon Battalion "}
-                linkResource={"Resources/WilsonMonk"}
+                linkResource={"./../Resources/WilsonMonk"}
                 backcardImg={postcard}
                 bgcolor={"#CFE57D"}
                 slugText={"The Americans who found a welcome in Wales."}
@@ -2564,59 +2883,62 @@ function App() {
                   "https://images.squarespace-cdn.com/content/v1/55e4bcf2e4b01d0dc78c9848/1441893157537-7AL21O6U939POF0AYWGB/image-asset.jpeg"
                 }
                 text={
-                  <ul>
-                    <li>
-                      During World War Two, the 320th Barrage Balloon Battalion,
-                      a unit of the 621 men from the US Army, arrived in
-                      Pontypool.
-                    </li>
-                    <li>The men were all black African Americans.</li>
-                    <li>
-                      They were part of the 130,000 black US troops stationed
-                      all over Britain who were helping fight against Germany in
-                      the war.
-                    </li>
-                    <li>
-                      The job of the Barrage Balloon Battalion was to raise
-                      helium balloons over the invasion beaches to prevent
-                      German airplanes from flying over the beaches.
-                    </li>
-                    <li>
-                      At the time black people were being treated badly in
-                      America. They were not allowed to eat and drink in the
-                      same restaurants as white people.
-                    </li>
-                    <li>
-                      These men found Wales a very different country to the one
-                      they had come from and were glad to have a warm welcome.
-                    </li>
-                    <li>
-                      Wales had very different attitudes to America in the way
-                      residents treated black people and the people of Wales
-                      invited them into their houses.
-                    </li>
-                    <li>
-                      One member of the 320th who found a welcome in Wales was
-                      Wilson Caldwell Monk.
-                    </li>
-                    <li>
-                      Before joining the army, he had worked as many jobs as he
-                      could squeeze into a day. He mopped floors, delivered
-                      pharmacy orders, sold salt-water taffy and waited on
-                      tables in restaurants that would never serve a black man
-                      like himself.
-                    </li>
-                    <li>
-                      When Wilson Monk travelled to Wales, he met people like
-                      Jessie Prior. She looked after Monk as if he was her son
-                      and wrote to his own mother saying he was being looked
-                      after in Wales.
-                    </li>
-                    <li>
+                  <>
+                    <ul>
+                      <li>
+                        During World War Two, the 320th Barrage Balloon
+                        Battalion, a unit of the 621 men from the US Army,
+                        arrived in Pontypool.
+                      </li>
+                      <li>The men were all black.</li>
+                      <li>
+                        They were part of the 130,000 black US troops stationed
+                        all over Britain who were helping fight against Germany
+                        in the war.
+                      </li>
+                      <li>
+                        The job of the Barrage Balloon Battalion was to raise
+                        helium balloons over the invasion beaches to prevent
+                        German airplanes from flying over the beaches.
+                      </li>
+                      <li>
+                        At the time black people were being treated badly in
+                        America. They were not allowed to eat and drink in the
+                        same restaurants as white people.
+                      </li>
+                      <li>
+                        These men found Wales a very different country to the
+                        one they had come from and were glad to have a warm
+                        welcome.
+                      </li>
+                      <li>
+                        Wales had very different attitudes to America in the way
+                        residents treated black people and the people of Wales
+                        invited them into their houses.
+                      </li>
+                      <li>
+                        One member of the 320th who found a welcome in Wales was
+                        Wilson Caldwell Monk.
+                      </li>
+                      <li>
+                        Before joining the army, he had worked as many jobs as
+                        he could squeeze into a day. He mopped floors, delivered
+                        pharmacy orders, sold salt-water taffy and waited on
+                        tables in restaurants that would never serve a black man
+                        like himself.
+                      </li>
+                      <li>
+                        When Wilson Monk travelled to Wales, he met people like
+                        Jessie Prior. She looked after Monk as if he was her son
+                        and wrote to his own mother saying he was being looked
+                        after in Wales.
+                      </li>
+                    </ul>
+                    <p>
                       The people of Wales taught Monk that not everyone treated
                       black people badly.
-                    </li>
-                  </ul>
+                    </p>
+                  </>
                 }
                 welshText={
                   <ul>
@@ -2624,7 +2946,7 @@ function App() {
                       Yn ystod yr Ail Ryfel Byd, daeth 320fed Bataliwn “Barrage
                       Balloon”, uned o 621 o ddynion o Fyddin UDA, i Bont-y-pŵl.
                     </li>
-                    <li>Roedd y dynion i gyd yn Americanwyr Affricanaidd. </li>
+                    <li>Roedd y dynion i gyd yn ddu. </li>
                     <li>
                       Roedden nhw'n rhan o'r 130,000 o filwyr du UDA a ddaeth i
                       Brydain pan oedd angen helpu i ymladd yn erbyn yr Almaen
@@ -2679,9 +3001,12 @@ function App() {
             path="/6to9yo/ShirleyBassey"
             element={
               <Person
+                pscc={"/6to9yo"}
+                psNum={"2"}
                 resourceOverlay={
                   "A short story about Megan meeting Shirley Bassey."
                 }
+                resourceOverlayWelsh="Stori fer am Megan yn cwrdd â Shirley Bassey."
                 bgcolor={"#CFE57D"}
                 welshSlugText={"Y gantores fyd-enwog o Tiger Bay."}
                 links={
@@ -2728,9 +3053,9 @@ function App() {
                     </li>
                   </ul>
                 }
-                indivName={"Dame Shirley Bassey"}
-                indivNameCym={"Y Fonesig Shirley Bassey"}
-                linkResource={"Resources/ShirleyBassey"}
+                indivName={"Dame Shirley Bassey OBE"}
+                indivNameCym={"Y Fonesig Shirley Bassey OBE"}
+                linkResource={"./../Resources/ShirleyBassey"}
                 backcardImg={vip}
                 slugText={"The world famous Welsh singer from Tiger Bay."}
                 resource={api.slice(8, 9)}
@@ -2744,7 +3069,7 @@ function App() {
                         Shirley Bassey was one of the first black British
                         entertainers to become famous around the world.
                       </li>
-                      <li>She was born in Tiger Bay, Cardiff.</li>
+                      <li>She was born in Tiger Bay, Cardiff in 1937.</li>
                       <li>
                         Her father was Nigerian and her mother was from Teeside.
                       </li>
@@ -2903,11 +3228,14 @@ function App() {
             path="/6to9yo/Windrush"
             element={
               <Person
+                pscc={"/6to9yo"}
+                psNum={"2"}
                 bgcolor={"#CFE57D"}
-                linkResource={"Resources/Windrush"}
+                linkResource={"./../Resources/Windrush"}
                 resourceOverlay={
                   "Find out more about the Windrush Generation in this informational piece."
                 }
+                resourceOverlayWelsh="Dysgwch mwy am y Genhedlaeth Windrush."
                 backcardImg={windrush}
                 welshSlugText={
                   "Y gweithwyr â  fu'n helpu ail-adeiladu Prydain."
@@ -3029,7 +3357,7 @@ function App() {
                     </li>
                     <li>
                       They were called the Windrush Generation because the first
-                      boat bringing them to Britain was called the MV Empire
+                      ship bringing them to Britain was called the MV Empire
                       Windrush.{" "}
                     </li>
                     <li>
@@ -3054,9 +3382,9 @@ function App() {
                       and work in the UK.  {" "}
                     </li>
                     <li>
-                      Over the following decades, thousands more Commonwealth
-                      people came to Britain and many of them came to live in
-                      Wales.{" "}
+                      Over the following decades, thousands of people came from
+                      Commonwealth countries to Britain and many of them came to
+                      live in Wales.{" "}
                     </li>
                     <li>
                       They often encountered found that people treated them
@@ -3070,9 +3398,10 @@ function App() {
                       life.{" "}
                     </li>
                     <li>
-                      In 2017 there was a scandal when hundreds of the Windrush
-                      generation were told they would have to leave the country
-                      because they didn’t have proof they were British subjects.{" "}
+                      There was a scandal in 2017 when people from the Windrush
+                      Generation were deported or sent to detention centres.
+                      This was because the British Government changed the rules
+                      on what proof they needed that they were British Citizens.
                     </li>
                   </ul>
                 }
@@ -3127,9 +3456,10 @@ function App() {
                     </li>
                     <li>
                       Yn 2017 roedd sgandal pan gafodd cannoedd o bobl
-                      Cenhedlaeth Windrush wybod y byddai'n rhaid iddyn nhw
-                      adael y wlad oherwydd bod dim prawf ganddyn nhw eu bod
-                      nhw'n ddeiliaid Prydeinig.
+                      Cenhedlaeth Windrush eu danfon yn ôl neu cael eu cadw mewn
+                      canolfannau cadw. Roedd hyn oherwydd bod Llywodraeth
+                      Prydain wedi newid y rheolau ar beth oedd eu hangen i
+                      ddangos eu bod nhw'n ddeiliaid Prydeinig.
                     </li>
                   </ul>
                 }
@@ -3140,7 +3470,10 @@ function App() {
             path="/6to9yo/IdrisPhillips"
             element={
               <Person
+                pscc={"/6to9yo"}
+                psNum={"2"}
                 resourceOverlay={"An imaginary biography of Idris Phillips."}
+                resourceOverlayWelsh={"Bywgraffiad dychmygol Idris Phillips. "}
                 welshSlugText={"Glowyr du yn cloddio am aur du."}
                 quizButStyle={"dontShowQuizBut"}
                 links={
@@ -3227,7 +3560,7 @@ function App() {
                     </li>
                   </ul>
                 }
-                linkResource={"Resources/IdrisPhillips"}
+                linkResource={"./../Resources/IdrisPhillips"}
                 indivName={"Idris Phillips"}
                 indivNameCym={"Idris Phillips"}
                 bgcolor="#CFE57D"
@@ -3243,11 +3576,17 @@ function App() {
                       Idris Philips was the son of a sailor from the Caribbean
                       Island of St Lucia, and a white woman from Merthyr.{" "}
                     </li>
-                    <li>Idris had 10 brothers and sisters. </li>
                     <li>
-                      He and his family suffered racism in the small village
-                      where they lived and people treated them differently
-                      because of the colour of their skin.{" "}
+                      He was born in the early 1930s and had 10 brothers and
+                      sisters.{" "}
+                    </li>
+                    <li>
+                      He and his family suffered racism in the small village of
+                      Senghenydd where they lived and people treated them
+                      differently because of the colour of their skin.
+                    </li>
+                    <li>
+                      They were the only mixed race family in the village.{" "}
                     </li>
                     <li>
                       At 14, like many others at his age at this time, Idris
@@ -3283,6 +3622,7 @@ function App() {
                       Idris’ story shows that despite hardship and unfairness,
                       great things can be achieved with determination.{" "}
                     </li>
+                    <li>Sadly, Idris died recently of Covid.</li>
                   </ul>
                 }
                 welshText={
@@ -3349,10 +3689,13 @@ function App() {
             path="/9to12yo/ColinJackson"
             element={
               <Person
+                pscc={"/9to12yo"}
+                psNum={"3"}
                 bgcolor={"#A2D6F9"}
                 resourceOverlay={
                   "An imaginary interview between Jason Mohammed and Colin Jackson."
                 }
+                resourceOverlayWelsh="Sgwrs ddychmygol rhwng Jason Mohammed a Colin Jackson. "
                 links={
                   <ul>
                     <li className="linkLi">
@@ -3391,6 +3734,15 @@ function App() {
                         Mudiad Ysgolion Meithrin information page{" "}
                       </a>
                     </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/whodoyouthinkyouare/past-stories/colin-jackson.shtml"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        BBC Who Do You Think You Are - Colin Jackson{" "}
+                      </a>
+                    </li>
                   </ul>
                 }
                 linksCym={
@@ -3419,7 +3771,7 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Coli Jackson ar ei rywioldeb{" "}
+                        Colin Jackson ar ei rywioldeb{" "}
                       </a>
                     </li>
                     <li className="linkLi">
@@ -3431,12 +3783,21 @@ function App() {
                         Taflen wybodaeth gan Mudiad Ysgolion Meithrin{" "}
                       </a>
                     </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/whodoyouthinkyouare/past-stories/colin-jackson.shtml"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        BBC Who Do You Think You Are - Colin Jackson{" "}
+                      </a>
+                    </li>
                   </ul>
                 }
                 backcardImg={colin}
-                indivName={"Colin Jackson"}
-                indivNameCym={"Colin Jackson"}
-                linkResource={"Resources/ColinJackson"}
+                indivName={"Colin Jackson CBE"}
+                indivNameCym={"Colin Jackson CBE"}
+                linkResource={"./../Resources/ColinJackson"}
                 slugText={"The Olympic medallist."}
                 welshSlugText={"Yr athletwr â medal Olympaidd."}
                 resource={nineApi.slice(3, 4)}
@@ -3445,7 +3806,9 @@ function App() {
                 }
                 text={
                   <ul>
-                    <li>Colin Jackson was born in Cardiff.</li>
+                    <li>
+                      Colin Jackson was born on 18 February 1967, in Cardiff.{" "}
+                    </li>
                     <li>
                       Colin was a gifted sportsman, whose was very talented in
                       number of sports. He played football and cricket for the
@@ -3573,7 +3936,10 @@ function App() {
             path="/9to12yo/IrisWilliams"
             element={
               <PersonYTVid
+                pscc={"/9to12yo"}
+                psNum={"3"}
                 backLContent={"The beautiful voice of Iris Williams."}
+                backLContentCym="Llais prydferth Iris Williams. "
                 links={
                   <ul>
                     <li className="linkLi">
@@ -3636,9 +4002,10 @@ function App() {
                     </li>
                   </ul>
                 }
-                indivName={"Iris Williams"}
-                indivNameCym={"Iris Williams"}
+                indivName={"Iris Williams OBE"}
+                indivNameCym={"Iris Williams OBE"}
                 youtubeVid="https://www.youtube.com/embed/Et70EtJ0Shg"
+                youtubeVidCym={"https://www.youtube.com/embed/Et70EtJ0Shg"}
                 slugText={"The jazz legend from South Wales."}
                 welshSlugText={"Y gantores jazz chwedlonol o Dde Cymru. "}
                 resource={nineApi.slice(4, 5)}
@@ -3648,16 +4015,16 @@ function App() {
                 text={
                   <ul>
                     <li>
-                      Iris Williams was born on 20 April 1944. She was born in
-                      Rhydyfelin and brought up in a Children’s Home in
-                      Tonyrefail.{" "}
+                      Iris Williams was born on 20 April 1944 in Rhydyfelin.
                     </li>
                     <li>
                       Her father was a black American GI posted to Wales during
                       World War Two and her mother, whom he met at a dance hall
                       in Pontypridd, gave her up for adoption.
                     </li>
-
+                    <li>
+                      She was brought up in a Children’s Home in Tonyrefail.{" "}
+                    </li>
                     <li>
                       Iris’s career took off after she won a scholarship to the
                       Royal Welsh College of Music and Drama.
@@ -3770,6 +4137,9 @@ function App() {
             path="/12to16yo/PaulRobeson"
             element={
               <PersonPodcast
+                pscc={"/12to16yo"}
+                welshSlugText="Yr Americanwr a safodd gyda'r glowyr. "
+                psNum={"4"}
                 indivName={"Paul Robeson"}
                 bgImg={"podcastImgOverlay2"}
                 links={
@@ -3838,135 +4208,168 @@ function App() {
                 indivNameCym={"Paul Robeson"}
                 overlayText="Emily Pemberton and Mel Owen discuss Paul
                 Robeson's life."
-                backLContent={
-                  <>
-                    <audio controls>
-                      <source src={emily} type="audio/mpeg" />
-                    </audio>
-                  </>
-                }
-                backLContentCym={
-                  <audio controls>
-                    <source src={emilyCym} type="audio/mpeg" />
-                  </audio>
-                }
+                overlayTextCym={"Emily Pemberton yn trafod Paul Robeson. "}
+                backLContent={emily}
+                backLContentCym={emilyCym}
                 slugText={"The American who stood with the miners."}
                 resource={nineApi.slice(5, 6)}
                 indivPic={
                   "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/%22Paul_Robeson%2C_world_famous_Negro_baritone%2C_leading_Moore_Shipyard_%28Oakland%2C_CA%29_workers_in_singing_the_Star_Spangled_Ba_-_NARA_-_535874.jpg/640px-%22Paul_Robeson%2C_world_famous_Negro_baritone%2C_leading_Moore_Shipyard_%28Oakland%2C_CA%29_workers_in_singing_the_Star_Spangled_Ba_-_NARA_-_535874.jpg"
                 }
                 text={
-                  <ul>
-                    <li>
-                      Paul Robeson was born on 9 April 1898 in Princetown, New
-                      Jersey, the US.{" "}
-                    </li>
-                    <li>
-                      A natural athlete and American footballer; Paul also had
-                      an impressive singing voice. He became a bass-baritone
-                      concert artist, stage and film actor.{" "}
-                    </li>
-                    <li>
-                      Paul is also famed for his political activism. He moved to
-                      the UK to escape racism in the US, and developed strong
-                      links to Wales after meeting Welsh miners in London who
-                      were petitioning the government for help. He led a Welsh
-                      choir in a rendition and organised donations to fund their
-                      return to south Wales on a train, complete with food and
-                      clothing.{" "}
-                    </li>
-                    <li>
-                      After the Gresford Colliery Disaster, Paul contributed
-                      proceeds of his concert in Caernarfon to the fund for the
-                      orphans and children of the dead. It was an important
-                      moral and political gesture.{" "}
-                    </li>
-                    <li>
-                      Paul joined the miners on hunger marches in 1927 and 1928.
-                      In 1940, he starred in the movie Proud Valley – about a
-                      black miner who moves to the Valleys.{" "}
-                    </li>
-                    <li>
-                      Paul said of Wales: ‘[It was there] I first understood the
-                      struggles of white and negro together – when I went down
-                      into the coal mine in the Rhondda Valley, [and] lived
-                      amongst them’.{" "}
-                    </li>
-                    <li>
-                      In 2018, Hwn yw fy Mrawd: Paul Robeson - Arwr i Gymru,
-                      Arwr i’r Byd, a biopic depicting his life was performed at
-                      the National Eisteddfod in Cardiff Bay. The show was 60
-                      years to the day since Paul addressed the Eisteddfod
-                      festival in Ebbw Vale.
-                    </li>
-                    <li>
-                      On 23 January 1976, Paul Robeson died in Philadelphia, the
-                      US.{" "}
-                    </li>
-                    <li>
+                  <>
+                    <ul>
+                      <li>
+                        Paul Robeson was born on 9 April 1898 in Princetown, New
+                        Jersey, USA. Robeson’s father was born into slavery and
+                        escaped as a teen.
+                      </li>
+                      <li>
+                        Paul, an actor and singer, is perhaps best known for his
+                        political activism, and said that his political
+                        education started in the UK through his contact with
+                        ordinary working people, particularly the miners of
+                        South Wales.
+                      </li>
+                      <li>
+                        Robeson also claimed that he saw clear similarities
+                        between miners' lives and the lives of Black Americans.
+                      </li>
+                      <li>
+                        Paul developed strong links to Wales after an accidental
+                        meeting with Welsh miners in London, who were
+                        petitioning the government for help with growing
+                        unemployment. He led a Welsh choir in a rendition and
+                        organised donations to fund their return to south Wales
+                        on a train, complete with food and clothing.
+                      </li>
+                      <li>
+                        Paul joined the miners on hunger marches in 1927 and
+                        1928. In 1940, he starred in the movie Proud Valley –
+                        about a black miner who moves to the Valleys.
+                      </li>
+                      <li>
+                        In 1950, the US State Department cancelled Robeson’s
+                        passport, meaning he could not leave the United States.
+                        In the eyes of the US government, he was an enemy due to
+                        his political activism.
+                      </li>
+                      <li>
+                        In 1957, while still not able to travel out of the US,
+                        Robeson was able to perform at the Miners’ Eisteddfod in
+                        Porthcawl due to a new technology - the transatlantic
+                        telephone link!
+                      </li>
+                      <li>
+                        During his performance, Robeson could be heard saying:
+                        “My warmest greetings to the people of my beloved Wales
+                        and a special hello to the miners of South Wales at your
+                        great festival. It is a privilege to be participating in
+                        this historic festival. All the best to you as we strive
+                        for a world where we can live abundant and dignified
+                        lives.”
+                      </li>
+                      <li>
+                        One year later, in July 1958, Robeson’s passport was
+                        returned to him. In August 1958, Robeson returned to
+                        Wales to attend the National Eisteddfod in Ebbw Vale!
+                      </li>
+                      <li>
+                        On 23 January 1976, Paul Robeson died in Philadelphia,
+                        the US.{" "}
+                      </li>
+                      <li>
+                        In 2018, a biopic depicting his life was performed at
+                        the National Eisteddfod in Cardiff Bay. The show was 60
+                        years to the day since Paul addressed the Eisteddfod
+                        festival in Ebbw Vale.{" "}
+                      </li>
+                    </ul>
+                    <p>
                       Paul Robeson was blessed with a wonderful singing voice.
                       He was also fiercely moral – and believed in treating
-                      people, whatever their creed and skin colour, with respect
-                      and fairness.{" "}
-                    </li>
-                  </ul>
+                      people, whatever their skin colour, with respect and
+                      fairness.{" "}
+                    </p>
+                  </>
                 }
                 welshText={
-                  <ul>
-                    <li>
-                      Cafodd Paul Robeson ei eni ar 9 Ebrill 1898 yn Princetown,
-                      New Jersey, UDA.
-                    </li>
-                    <li>
-                      Roedd Paul yn athletwr naturiol ac yn bêl-droediwr
-                      Americanaidd. Hefyd, roedd ganddo lais canu hyfryd iawn.
-                      Daeth yn artist cyngerdd fel bas bariton, ac yn actor
-                      llwyfan a ffilm.
-                    </li>
-                    <li>
-                      Mae Paul yn enwog hefyd am ei weithredu gwleidyddol.
-                      Symudodd i'r DU i ddianc rhag hiliaeth yn UDA. Datblygodd
-                      gysylltiadau cryf â Chymru ar ôl cwrdd â glowyr o Gymru yn
-                      Llundain. Roedden nhw yno i geisio cael help gan y
-                      llywodraeth. Arweiniodd Paul y canu gyda chôr o Gymru a
-                      threfnu rhoddion er mwyn iddyn nhw allu mynd yn ôl i dde
-                      Cymru ar y trên, gyda bwyd a dillad hefyd.
-                    </li>
-                    <li>
-                      Ar ôl Trychineb Glofa Gresford, cyfrannodd Paul enillion
-                      ei gyngerdd yng Nghaernarfon i'r gronfa i blant amddifad a
-                      phlant y glowyr a oedd wedi marw. Roedd yn rhywbeth pwysig
-                      i'w wneud, yn foesol ac yn wleidyddol.
-                    </li>
-                    <li>
-                      Ymunodd Paul â'r glowyr ar orymdeithiau newyn yn 1927 a
-                      1928. Yn 1940, Paul oedd y seren yn y ffilm Proud Valley –
-                      am löwr du sy'n symud i'r Cymoedd.
-                    </li>
-                    <li>
-                      Meddai Paul am Gymru: ‘[Yno] des i ddeall am y tro cyntaf
-                      sut roedd pobl wyn a du yn ymdrechu gyda’i gilydd – pan es
-                      i lawr i’r pwll glo yng Nghwm Rhondda, [a] byw yn eu mysg
-                      nhw.
-                    </li>
-                    <li>
-                      Yn 2018, perfformiwyd Hwn yw fy Mrawd: Paul Robeson – Arwr
-                      i Gymru, Arwr i’r Byd, drama gerdd yn darlunio ei fywyd,
-                      yn yr Eisteddfod Genedlaethol ym Mae Caerdydd. Cafodd y
-                      sioe ei llwyfannu 60 mlynedd i'r diwrnod ers i Paul
-                      annerch yr Eisteddfod yng Nglyn Ebwy.
-                    </li>
-                    <li>
-                      Ar 23 Ionawr 1976, gwnaeth Paul Robeson farw yn
-                      Philadelphia, UDA.
-                    </li>
-                    <li>
+                  <>
+                    <ul>
+                      <li>
+                        Cafodd Paul Robeson ei eni ar 9 Ebrill 1898 yn
+                        Princetown, New Jersey, UDA. Cafodd tad Robeson ei eni
+                        yn gaethwas a dihangodd pan oedd yn ei arddegau.
+                      </li>
+                      <li>
+                        Roedd Paul yn athletwr naturiol ac yn bêl-droediwr
+                        Americanaidd ond yn fwyaf adnabyddus oherwydd ei
+                        weithredu gwleidyddol a ddechreuodd yn y Deyrnas Unedig
+                        trwy gyswllt gyda phobl dosbarth gweithiol cyffredin, yn
+                        enwedig glowyr De Cymru.
+                      </li>
+                      <li>
+                        Honnai Robeson ei fod yn gweld tebygrwydd clir rhwng
+                        bywydau'r glowyr a bywydau Americanwyr Du.
+                      </li>
+                      <li>
+                        Datblygodd gysylltiadau cryf â Chymru ar ôl cwrdd â
+                        glowyr o Gymru yn Llundain. Roedden nhw yno i geisio
+                        cael help gan y llywodraeth. Arweiniodd Paul y canu gyda
+                        chôr o Gymru a threfnu rhoddion er mwyn iddyn nhw allu
+                        mynd yn ôl i dde Cymru ar y trên, gyda bwyd a dillad
+                        hefyd.
+                      </li>
+                      <li>
+                        Ymunodd Paul â'r glowyr ar orymdeithiau newyn yn 1927 a
+                        1928. Yn 1940, Paul oedd y seren yn y ffilm Proud Valley
+                        – am löwr du sy'n symud i'r Cymoedd.
+                      </li>
+                      <li>
+                        Yn 1950, canslwyd pasbort Robeson gan yr US State
+                        Department oedd yn golygu na allai adael UDA. Roedd yn
+                        elyn, yn llygaid llywodraeth America, oherwydd ei
+                        weithredu gwleidyddol.
+                      </li>
+                      <li>
+                        Yn 1957, ac yntau yn dal ddim yn gallu gadael America,
+                        fe berfformiodd Robeson yn Eisteddfod y Glowyr ym
+                        Mhorthcawl trwy dechnoleg newydd sbon - y linc ffôn
+                        trawsatlantig!
+                      </li>
+                      <li>
+                        Yn ystod ei berfformiad gellir clywed Robeson yn dweud
+                        “My warmest greetings to the people of my beloved Wales
+                        and a special hello to the miners of South Wales at your
+                        great festival. It is a privilege to be participating in
+                        this historic festival. All the best to you as we strive
+                        for a world where we can live abundant and dignified
+                        lives.”
+                      </li>
+                      <li>
+                        Blwyddyn yn ddiweddarach rhoddwyd pasbort Robeson yn ôl
+                        iddo. Yn Awst 1958 dychwelodd Robeson i Gymru i fynd i'r
+                        Eiseddfod Gendlaethol yng Nghlyn Ebwy.
+                      </li>
+                      <li>
+                        Yn 2018, perfformiwyd Hwn yw fy Mrawd: Paul Robeson –
+                        Arwr i Gymru, Arwr i’r Byd, drama gerdd yn darlunio ei
+                        fywyd, yn yr Eisteddfod Genedlaethol ym Mae Caerdydd.
+                        Cafodd y sioe ei llwyfannu 60 mlynedd i'r diwrnod ers i
+                        Paul annerch yr Eisteddfod yng Nglyn Ebwy.
+                      </li>
+                      <li>
+                        Ar 23 Ionawr 1976, gwnaeth Paul Robeson farw yn
+                        Philadelphia, UDA.
+                      </li>
+                    </ul>
+                    <p>
                       Roedd llais canu rhagorol gan Paul Robeson. Hefyd, roedd
                       yn ffyrnig o foesol – ac yn credu mewn trin pobl, beth
                       bynnag oedd eu cred a lliw eu croen, gyda pharch a
-                      thegwch.
-                    </li>
-                  </ul>
+                      thegwch.{" "}
+                    </p>{" "}
+                  </>
                 }
               ></PersonPodcast>
             }
@@ -3975,13 +4378,16 @@ function App() {
             path="/9to12yo/Louisa"
             element={
               <Person
+                welshSlugText="Y ddynes fu'n byw dros y byd. "
+                pscc={"/9to12yo"}
+                psNum={"3"}
                 indivName={"Louisa BB Morgan"}
                 indivNameCym={"Louisa BB Morgan"}
                 bgcolor={"#FF686B"}
                 backcardImg={louisa}
                 resourceOverlay={" Louisa BB Morgan’s imaginary biography. "}
-                linkResource={"Resources/Louisa"}
-                welshSlugText={"Y ddynes bu’n byw ar draws y byd."}
+                resourceOverlayWelsh="Bywgraffiad dychmygol Louisa BB Morgan. "
+                linkResource={"./../Resources/Louisa"}
                 slugText={"The woman who lived all over the world."}
                 resource={nineApi.slice(6, 7)}
                 indivPic={
@@ -3994,7 +4400,7 @@ function App() {
                       1951 in London.{" "}
                     </li>
                     <li>
-                      Returning to Nigeria in 1960, Louisa received a Catholic
+                      Louisa went to Nigeria in 1960 and received a Catholic
                       school education – and enjoyed it very much.{" "}
                     </li>
                     <li>
@@ -4040,7 +4446,7 @@ function App() {
                     </li>
                     <li>
                       Regarding her Catholic education and faith, Louisa says:
-                      ‘It binds me to my beliefs…It’s helped shape my life. It
+                      ‘It binds me to my beliefs… It’s helped shape my life. It
                       continues to make me what I am today’.{" "}
                     </li>
 
@@ -4058,8 +4464,8 @@ function App() {
                       Mehefin 1951 yn Llundain.
                     </li>
                     <li>
-                      Aeth Louisa yn ôl i Nigeria yn 1960, ac aeth i ysgol
-                      Gatholig – a mwynhau yn fawr iawn.
+                      Aeth Louisa i Nigeria yn 1960, ac aeth i ysgol Gatholig -
+                      a mwynhau yn fawr iawn.
                     </li>
                     <li>
                       Astudiodd Louisa: Ffrangeg ac Astudiaethau Ewropeaidd;
@@ -4107,7 +4513,7 @@ function App() {
                     </li>
                     <li>
                       O ran ei haddysg a'i ffydd Gatholig, dywed Louisa: ‘Mae'n
-                      fy nghlymu at fy nghredoau...Mae wedi helpu i lunio fy
+                      fy nghlymu at fy nghredoau... Mae wedi helpu i lunio fy
                       mywyd. Mae'n dal i'm gwneud i'r person ydw i heddiw’.
                     </li>
 
@@ -4125,7 +4531,10 @@ function App() {
             path="/9to12yo/CliveSullivan"
             element={
               <Person
+                pscc={"/9to12yo"}
+                psNum={"3"}
                 resourceOverlay={"A portrait of Clive Sullivan."}
+                resourceOverlayWelsh="Portread o Clive Sullivan. "
                 links={
                   <ul>
                     <li className="linkLi">
@@ -4229,7 +4638,7 @@ function App() {
                 indivNameCym={"Clive Sullivan"}
                 backcardImg={clive}
                 bgcolor={"#A2D6F9"}
-                linkResource={"Resources/CliveSullivan"}
+                linkResource={"./../Resources/CliveSullivan"}
                 welshSlugText={"Yr arwr a aeth i Hull."}
                 slugText={"Hull's rugby league hero."}
                 resource={nineApi.slice(7, 8)}
@@ -4238,7 +4647,10 @@ function App() {
                 }
                 text={
                   <ul>
-                    <li>Clive Sullivan was born in Splott, Cardiff.</li>
+                    <li>
+                      Clive Sullivan was born on 9 April 1943 in Splott,
+                      Cardiff.{" "}
+                    </li>
                     <li>
                       Clive played rugby at school, but injuries led to him
                       having surgery on his knees, feet and shoulders.
@@ -4402,11 +4814,14 @@ function App() {
             path="/9to12yo/JohnYstumllyn"
             element={
               <PersonYTVid
+                pscc={"/9to12yo"}
+                psNum={"3"}
                 backLContent={"Clip courtesy of Cwmni Da Cyf."}
                 backLContentCym={
                   "Diolch i Cwmni Da Cyf. am y clip.                  "
                 }
                 youtubeVid={"https://www.youtube.com/embed/AsDgYVYenG8"}
+                youtubeVidCym={"https://www.youtube.com/embed/AsDgYVYenG8"}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -4637,6 +5052,29 @@ function App() {
                       provided with a handsome memorial".{" "}
                     </li>
                     <li>
+                      The following poem (an englyn) is written on his memorial:{" "}
+                      <br />
+                      <br />
+                      Yn India gynna'm ganwyd a nghamrau
+                      <br />
+                      Yng Nghymru'm bedyddiwyd
+                      <br />
+                      Wele'r fan dan lechan lwyd
+                      <br />
+                      Du oeraidd y'm daearwyd.
+                      <br />
+                      <br />
+                      (translates to)
+                      <br />
+                      Born in India, to Wales I came
+                      <br />
+                      To be baptised
+                      <br />
+                      See this spot, a grey slate marks
+                      <br />
+                      My cold resting place.
+                    </li>
+                    <li>
                       John was earliest black person in Wales who we have
                       information about. John was a very likeable person. He
                       also is known to have not suffered much racial prejudice,
@@ -4732,6 +5170,18 @@ function App() {
                       olygus".
                     </li>
                     <li>
+                      Ar y gofeb mae’r englyn yma - <br />
+                      <br />
+                      Yn India gynna'm ganwyd a nghamrau
+                      <br />
+                      Yng Nghymru'm bedyddiwyd
+                      <br />
+                      Wele'r fan dan lechan lwyd
+                      <br />
+                      Du oeraidd y'm daearwyd.
+                      <br />
+                    </li>
+                    <li>
                       John oedd y person du cynharaf yng Nghymru rydyn ni'n
                       gwybod rhywbeth amdano. Roedd John yn berson hoffus iawn.
                       Hefyd mae'n debyg na ddioddefodd lawer o ragfarn hiliaeth,
@@ -4747,6 +5197,8 @@ function App() {
             path="/9to12yo/TigerBay"
             element={
               <Person
+                pscc={"/9to12yo"}
+                psNum={"3"}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -4971,9 +5423,11 @@ function App() {
             }
           ></Route>
           <Route
-            path="/9to12yo/SidoliIceCream"
+            path="/6to9yo/SidoliIceCream"
             element={
               <PersonYTVid
+                pscc={"/6to9yo"}
+                psNum={"2"}
                 overlayText={
                   <h2>
                     Have a look how Sidoli Ice Cream is made today
@@ -5067,7 +5521,11 @@ function App() {
                 backLContent={
                   "Have a look how Sidoli Ice Cream is made today. "
                 }
+                backLContentCym={
+                  "Sut mae hufen iâ Sidoli yn cael ei wneud heddiw. "
+                }
                 youtubeVid="https://www.youtube.com/embed/xTRwVpwUvVw"
+                youtubeVidCym="https://www.youtube.com/embed/xTRwVpwUvVw"
                 resource={nineApi.slice(10, 11)}
                 indivPic={
                   "https://i2-prod.walesonline.co.uk/incoming/article17960109.ece/ALTERNATES/s1200c/0_RM_180320_Sidoli_IceCream_020.jpg"
@@ -5243,7 +5701,11 @@ function App() {
             path="/9to12yo/IsaacBlake"
             element={
               <PersonYTVid
+                pscc={"/9to12yo"}
+                psNum={"3"}
+                youtubeVidCym="https://www.youtube.com/embed/MDjyYMf5HNk"
                 backLContent={"Find out more about Gypsy Jazz! "}
+                backLContentCym="Dysgwch mwy am Gypsy Jazz!"
                 links={
                   <ul>
                     <li className="linkLi">
@@ -5358,47 +5820,17 @@ function App() {
                 text={
                   <ul>
                     <li>
-                      Gypsies were once a regular sight in Wales, they travelled
-                      from community to community and provided an important
-                      source of labour.
-                    </li>
-
-                    <li>
-                      They also shared their artistic talent, such as musical
-                      traditions, which enriched the culture of Wales.
-                    </li>
-
-                    <li>
-                      John Roberts formed The Cambrian Minstrels with his 9 sons
-                      – they were the first truly Welsh Romani orchestra.
-                    </li>
-
-                    <li>
-                      Another example is John Wood Jones, the great-grandson of
-                      the legendary, Abram Wood. John became resident harpist at
-                      Llanover Court, near Abergavenny and also taught blind
-                      children and others with mobility issues to play the harp.
-                      He even played at Buckingham Palace for Queen Victoria.
-                    </li>
-
-                    <li>
-                      The rich legacy of Romani arts and culture is therefore
-                      varied and colourful. It includes poetry, Gypsy Jazz, the
-                      triple harp and traditional dancing.
-                    </li>
-
-                    <li>
-                      Isaac Blake grew up on Cardiff’s Shirenewton site – a
-                      council-run collection of 55 individual pitches which has
-                      about 300 residents.
+                      Isaac Blake was born in 1979 in Bromsgrove but grew up on
+                      Cardiff's Shirenewton site - a council-run collection of
+                      55 individual pitches which has about 300 residents.
                     </li>
 
                     <li>
                       Those living on the site were often verbally abused and
                       stereotypically judged. “Gypsy kids”, Isaac remembers,
                       were put in special classes at school regardless of their
-                      ability. The children needed ‘a thick skin and low
-                      expectations’.
+                      ability. The children needed 'a thick skin and low
+                      expectations'.
                     </li>
 
                     <li>
@@ -5418,49 +5850,45 @@ function App() {
                       the Romani community, which includes sharing his knowledge
                       and teaching with the Romani community.
                     </li>
+                    <li>
+                      Gypsies were once a regular sight in Wales, they travelled
+                      from community to community and provided an important
+                      source of labour.
+                    </li>
+
+                    <li>
+                      They also shared their artistic talent, such as musical
+                      traditions, which enriched the culture of Wales.
+                    </li>
+                    <li>
+                      John Roberts was a Romany gypsy harpist who lived in
+                      Newtown. He formed The Cambrian Minstrels with his 9 sons
+                      - they were the first truly Welsh Romany orchestra.
+                    </li>
+
+                    <li>
+                      Another example is John Wood Jones, the great-grandson of
+                      the legendary, Abram Wood. John became resident harpist at
+                      Llanover Court, near Abergavenny and also taught blind
+                      children and others with mobility issues to play the harp.
+                      He even played at Buckingham Palace for Queen Victoria.
+                    </li>
+
+                    <li>
+                      The rich legacy of Romani arts and culture is therefore
+                      varied and colourful. It includes poetry, Gypsy Jazz, the
+                      triple harp and traditional dancing.
+                    </li>
                   </ul>
                 }
                 welshText={
                   <ul>
                     <li>
-                      Roedd sipsiwn i'w gweld yn rheolaidd yng Nghymru ers
-                      talwm. Roedden nhw'n teithio o gymuned i gymuned ac ar
-                      gael i weithio am gyfnod byr.
+                      Cafodd Isaac Blake ei eni yn Bromsgrove yn 1979 ond cafodd
+                      ei fagu ar safle Shirenewton yng Nghaerdydd - safle wedi'i
+                      redeg gan y cyngor. Mae 55 llain neu le unigol. Mae tua
+                      300 o bobl yn byw yno.
                     </li>
-
-                    <li>
-                      Hefyd, roedden nhw'n rhannu eu talent artistig, fel
-                      traddodiadau cerddorol, gan gyfoethogi diwylliant Cymru.
-                    </li>
-
-                    <li>
-                      Ffurfiodd John Roberts gerddorfa The Cambrian Minstrels
-                      gyda'i 9 mab – nhw oedd y gerddorfa gyntaf o Romani
-                      Cymreig.
-                    </li>
-
-                    <li>
-                      Mae John Wood Jones yn enghraifft arall. Fe oedd gor-ŵyr
-                      Abram Wood, y cerddor chwedlonol. Daeth John yn delynor
-                      preswyl yn Llys Llanofer, ger y Fenni. Hefyd, roedd yn
-                      dysgu plant dall a rhai eraill oedd yn methu symud yn dda
-                      i ganu'r delyn. Chwaraeodd John ym Mhalas Buckingham
-                      Palace i'r Frenhines Victoria, hyd yn oed.
-                    </li>
-
-                    <li>
-                      Felly mae etifeddiaeth gyfoethog celfyddydau a diwylliant
-                      Romani yn amrywiol ac yn lliwgar. Mae'n cynnwys
-                      barddoniaeth, Jazz Sipsiwn, y delyn deires a dawnsio
-                      traddodiadol.
-                    </li>
-
-                    <li>
-                      Cafodd Isaac Blake ei fagu ar safle Shirenewton yng
-                      Nghaerdydd – safle wedi'i redeg gan y cyngor. Mae 55 llain
-                      neu le unigol. Mae tua 300 o bobl yn byw yno.
-                    </li>
-
                     <li>
                       Roedd rhai pobl yn galw enwau ar y Romani a oedd yn byw ar
                       y safle yn aml. Roedd pobl yn eu barnu nhw gyda
@@ -5469,7 +5897,6 @@ function App() {
                       ysgol, beth bynnag oedd eu gallu nhw. Roedd ar y plant
                       angen “croen trwchus a disgwyliadau isel”.
                     </li>
-
                     <li>
                       Mae Isaac wedi tyfu i herio'r stereoteipiau. Enillodd
                       ysgoloriaeth i ddilyn cwrs theatr dawns yng Ngholeg
@@ -5487,6 +5914,34 @@ function App() {
                       gyfoethog y gymuned Romani, sy'n cynnwys rhannu ei
                       wybodaeth â'r gymuned Romani.
                     </li>
+                    <li>
+                      Roedd sipsiwn i'w gweld yn rheolaidd yng Nghymru ers
+                      talwm. Roedden nhw'n teithio o gymuned i gymuned ac ar
+                      gael i weithio am gyfnod byr.
+                    </li>
+                    <li>
+                      Hefyd, roedden nhw'n rhannu eu talent artistig, fel
+                      traddodiadau cerddorol, gan gyfoethogi diwylliant Cymru.
+                    </li>
+                    <li>
+                      Ffurfiodd John Roberts gerddorfa The Cambrian Minstrels
+                      gyda'i 9 mab – nhw oedd y gerddorfa gyntaf o Romani
+                      Cymreig.
+                    </li>
+                    <li>
+                      Mae John Wood Jones yn enghraifft arall. Fe oedd gor-ŵyr
+                      Abram Wood, y cerddor chwedlonol. Daeth John yn delynor
+                      preswyl yn Llys Llanofer, ger y Fenni. Hefyd, roedd yn
+                      dysgu plant dall a rhai eraill oedd yn methu symud yn dda
+                      i ganu'r delyn. Chwaraeodd John ym Mhalas Buckingham
+                      Palace i'r Frenhines Victoria, hyd yn oed.
+                    </li>
+                    <li>
+                      Felly mae etifeddiaeth gyfoethog celfyddydau a diwylliant
+                      Romani yn amrywiol ac yn lliwgar. Mae'n cynnwys
+                      barddoniaeth, Jazz Sipsiwn, y delyn deires a dawnsio
+                      traddodiadol.
+                    </li>
                   </ul>
                 }
               ></PersonYTVid>
@@ -5496,14 +5951,18 @@ function App() {
             path="/9to12yo/PattiFlynn"
             element={
               <PersonYTVid
+                pscc={"/9to12yo"}
+                psNum={"3"}
                 indivName={"Patti Flynn"}
                 indivNameCym={"Patti Flynn"}
                 backLContent={
                   "The unveiling of a purple plaque for Patti Flynn."
                 }
+                backLContentCym="Dad-orchuddio plac porffor ar gyfer Patty Flynn. "
                 welshSlugText={"Cantores, actores, model ac ymgyrchydd."}
                 slugText={"Jazz singer, author, model and social activist."}
                 youtubeVid="https://www.youtube.com/embed/g3y5JJQdanI"
+                youtubeVidCym={"https://www.youtube.com/embed/g3y5JJQdanI"}
                 resource={nineApi.slice(11, 12)}
                 indivPic={
                   "https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Patti_Flynn.jpg/220px-Patti_Flynn.jpg"
@@ -5592,8 +6051,8 @@ function App() {
                 text={
                   <ul>
                     <li>
-                      Patricia Maude Young was born in Cardiff and was the
-                      youngest child of seven to Wilmott George Young and
+                      Patricia Maude Young was born in Cardiff in 1937 and was
+                      the youngest child of seven to Wilmott George Young and
                       Beatrice Young.  
                     </li>
 
@@ -5736,7 +6195,15 @@ function App() {
           <Route
             path="/9to12yo/VernesterCyril"
             element={
-              <Person
+              <PersonYTVid
+                pscc={"/9to12yo"}
+                psNum={"3"}
+                youtubeVid={"https://www.youtube.com/embed/NZGvt4WbN3g"}
+                backLContent="Interview with a hairdresser specialising in braiding. "
+                backLContentCym={
+                  "Cyfweliad â steilydd gwallt sy'n arbenigo mewn plethu. "
+                }
+                youtubeVidCym={"https://www.youtube.com/embed/SlPA829fDak"}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -5817,9 +6284,9 @@ function App() {
                     </li>
                   </ul>
                 }
-                indivName={"Vernester Cyril"}
-                indivNameCym={"Vernester Cyril"}
-                slugText={"The nurse from the Carribean."}
+                indivName={"Vernester Cyril OBE"}
+                indivNameCym={"Vernester Cyril OBE"}
+                slugText={"The nurse from the Caribbean."}
                 welshSlugText={"Y nyrs o'r Caribî."}
                 proposedResource={"Possible interview with nurse."}
                 resource={nineApi.slice(11, 12)}
@@ -5973,34 +6440,28 @@ function App() {
                     </li>
                   </ul>
                 }
-              ></Person>
+              ></PersonYTVid>
             }
           ></Route>
           <Route
             path="/9to12yo/DomJames"
             element={
-              <Person
+              <PersonPodcast
+                pscc={"/9to12yo"}
+                psNum={"3"}
+                bgImg={"podcastImgOverlayDom"}
                 indivName={"Dom James"}
                 indivNameCym={"Dom James"}
                 slugText={"Rapper and radio presenter."}
                 welshSlugText={"Rapiwr a chyflwynydd radio."}
+                overlayText="Dom James and Mel Owen in discussion."
+                overlayTextCym={"Mel Owen yn cyfweld â Dom James. "}
                 resource={nineApi.slice(12, 13)}
                 indivPic={
                   "https://ichef.bbci.co.uk/news/976/cpsprodpb/DBCD/production/_124296265_33020262_1243885189076260_6186539543915659264_n-1.jpg"
                 }
-                backLContent={
-                  <>
-                    <audio controls>
-                      <source src={dom} type="audio/mpeg" />
-                    </audio>
-                    <p>Podcast: Dom James and Mel Owen in discussion</p>
-                  </>
-                }
-                backLContentCym={
-                  <audio controls>
-                    <source src={domCym} type="audio/mpeg" />
-                  </audio>
-                }
+                backLContent={dom}
+                backLContentCym={domCym}
                 text={
                   <ul>
                     <li>
@@ -6040,6 +6501,7 @@ function App() {
                       topped the Miwsig poll of musicians that were going to be
                       making waves in the Welsh music scene.{" "}
                     </li>
+                    <li>Dom is known for his strong Welsh identity. </li>
                   </ul>
                 }
                 welshText={
@@ -6081,19 +6543,25 @@ function App() {
                       ar frig rhestr Miwsig o gerddorion a oedd yn mynd i fod yn
                       ddylanwadol yn y sin gerddoriaeth Gymraeg a Chymreig.
                     </li>
+                    <li>
+                      Mae Dom yn adnabyddus am ei falchder o fod yn Gymro.
+                    </li>
                   </ul>
                 }
-              ></Person>
+              ></PersonPodcast>
             }
           ></Route>
           <Route
             path="/9to12yo/JoeCalzaghe"
             element={
               <Person
+                pscc={"/9to12yo"}
+                psNum={"3"}
                 bgcolor={"#A2D6F9"}
                 resourceOverlay={
                   "An imaginary newspaper report about Calzaghe."
                 }
+                resourceOverlayWelsh="Erthygl papur newydd dychmygol am Calzaghe."
                 backcardImg={italianDragon}
                 links={
                   <ul>
@@ -6168,7 +6636,7 @@ function App() {
                 }
                 indivName={"Joe Calzaghe"}
                 indivNameCym={"Joe Calzaghe"}
-                linkResource={"Resources/JoeCalzaghe"}
+                linkResource={"./../Resources/JoeCalzaghe"}
                 resource={twelveApi.slice(2, 3)}
                 slugText={"The undefeated boxing world champion."}
                 welshSlugText={"Pencampwr bocsio diguro'r byd."}
@@ -6220,9 +6688,9 @@ function App() {
 
                     <li>
                       Three months later, on 5 February 2009, Joe announced his
-                      retirement from professional boxing. By doing this,
-                      Calzaghe became one of only fifteen world champions to
-                      retire as an undefeated world champion.
+                      retirement from professional boxing. Calzaghe became one
+                      of only fifteen world champions to retire as an undefeated
+                      world champion.
                     </li>
 
                     <li>
@@ -6300,9 +6768,9 @@ function App() {
 
                     <li>
                       Dri mis yn ddiweddarach, ar 5 Chwefror 2009, cyhoeddodd
-                      Joe ei fod yn ymddeol o focsio proffesiynol. Drwy wneud
-                      hyn, daeth Calzaghe yn un o bymtheg pencampwr byd yn unig
-                      i ymddeol heb gael ei guro.
+                      Joe ei fod yn ymddeol o focsio proffesiynol. Daeth
+                      Calzaghe yn un o bymtheg pencampwr byd yn unig i ymddeol
+                      heb gael ei guro.
                     </li>
 
                     <li>
@@ -6343,20 +6811,16 @@ function App() {
             path="/12to16yo/JasonMohammad"
             element={
               <PersonPodcast
+                welshSlugText={"Newyddiadurwr a chyflwynydd teledu a radio. "}
                 bgImg={"podcastImgOverlay3"}
-                overlayText="Presenter Mirain Iwerydd discusses Jason Mohammad."
-                backLContent={
-                  <>
-                    <audio controls>
-                      <source src={mirainEng} type="audio/mpeg" />
-                    </audio>
-                  </>
+                pscc={"/12to16yo"}
+                psNum="4"
+                overlayText="Presenter Mirain Iwerydd talks about her experiences."
+                overlayTextCym={
+                  "Mirain Iwerydd yn siarad am ei phrofiadau fel cyflwynydd. "
                 }
-                backLContentCym={
-                  <audio controls>
-                    <source src={mirainCym} type="audio/mpeg" />
-                  </audio>
-                }
+                backLContent={mirainEng}
+                backLContentCym={mirainCym}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -6433,11 +6897,12 @@ function App() {
                 text={
                   <ul>
                     <li>
-                      Jason is a well-known radio and television presenter for
-                      the BBC, most notably for news and sports coverage.{" "}
+                      Jason (born 17 September 1973) is a well-known radio and
+                      television presenter for the BBC, most notably for news
+                      and sports coverage.
                     </li>
                     <li>
-                      Born in Cardiff to a Pakistani father and Welsh mother,
+                      Born in Cardiff to a Pakistani father and Welsh mother,
                       Jason - a practicing Muslim - went to Swansea University
                       to study Welsh and Politics before then gaining a
                       postgraduate diploma in broadcast journalism.{" "}
@@ -6455,19 +6920,19 @@ function App() {
 
                     <li>
                       His career has seen him become an anchor on Wales on
-                      Saturday, host of the BBC sports programme, Final Score.
+                      Saturday, host of the BBC sports programme, Final Score,
                       presenter of the Scrum V specials on BBC Two Wales and
                       presenter of the BBC Radio Two programme Good Morning
                       Sunday.{" "}
                     </li>
 
                     <li>
-                      Jason was part of the BBC’s broadcasting crew at the Rio
+                      Jason was part of the BBC’s broadcasting crew at the Rio
                       2016 Summer Olympics, has covered snooker for the BBC and
                       hosted on BBC Radio Five Live. He has also been an
-                      occasional presenter of Match of the Day and Match of the
-                      Day 2, and has hosted some of the BBC’s live coverage of
-                      the RBS Six Nations.{" "}
+                      occasional presenter of Match of the Day and Match of the
+                      Day 2, and has hosted some of the BBC's live coverage of
+                      the RBS Six Nations.{" "}
                     </li>
 
                     <li>Jason is also in great demand as a public speaker. </li>
@@ -6515,7 +6980,7 @@ function App() {
                       Roedd Jason yn rhan o griw darlledu'r BBC yng Ngemau
                       Olympaidd Rio 2016, mae wedi cyflwyno snwcer i'r BBC ac yn
                       gyflwynydd ar BBC Radio Five Live. Hefyd mae wedi cyflwyno
-                      Match of the Day a Match of the Day 2 bob hyn a hyn. Mae
+                      Match of the Day a Match of the Day 2 bob hyn a hyn. Mae
                       wedi cyflwyno rhai o gemau rygbi byw Cystadleuaeth Chwe
                       Gwlad RBS.
                     </li>
@@ -6538,6 +7003,9 @@ function App() {
             path="/12to16yo/1919RaceRiots"
             element={
               <Person
+                welshSlugText={"Y terfysgoedd a gododd gywilydd ar Gymru. "}
+                pscc={"/12to16yo"}
+                psNum={"4"}
                 overlayText=""
                 links={
                   <ul>
@@ -6685,22 +7153,23 @@ function App() {
                 text={
                   <ul>
                     <li>
-                      From January to August 1919, Tiger Bay in Cardiff was the
-                      scene of fierce riots which targeted black and ethnic
-                      communities{" "}
+                      In 1919, Race Riots took place across South Wales which
+                      targeted black and ethnic communities. Similar riots took
+                      place in dock towns across the UK - including Glasgow and
+                      Liverpool.
                     </li>
                     <li>
-                      Several factors caused to the riots:
+                      Several factors led to unrest leading up to the riots:
                       <ul>
                         <li>
                           At the end of the First World War, the return home of
                           a large number of troops meant there were too many men
-                          competing for the available jobs at Cardiff docks,
-                          especially among the seamen.{" "}
+                          competing for available jobs, especially among the
+                          seamen.
                         </li>
                         <li>
                           Some people felt that people from other countries –
-                          ‘foreigners’ - were ‘stealing’ jobs despite these
+                          ‘foreigners’ - were ‘stealing’ jobs, despite these
                           communities helping to keep the docks working whilst
                           Britain was at war.{" "}
                         </li>
@@ -6708,7 +7177,7 @@ function App() {
                         <li>
                           Fear about the lack of housing - a lack of materials
                           and labour caused by the war meant places to live in
-                          were hard to find - also helped to cause tension.{" "}
+                          were hard to find.
                         </li>
 
                         <li>
@@ -6716,56 +7185,69 @@ function App() {
                           their white co-workers and had to put up with much
                           poorer working and living conditions. They were
                           unfairly blamed for white workers getting a lower wage
-                          too.{" "}
+                          too.
                         </li>
 
                         <li>
-                          Racism also motivated the hostility towards these
-                          settlers. {" "}
-                        </li>
-
-                        <li>
-                          Four minority workers died in these violent attacks.
+                          Racism also motivated hostility towards these
+                          settlers. 
                         </li>
                       </ul>
                     </li>
-
-                    <li>
-                      Tensions broke out into riots in Cardiff, whilst other
-                      riots took place in other port towns such as Glasgow and
-                      Scotland. Cities in England also saw riots such as London,
-                      South Shields, Hull and Liverpool.{" "}
-                    </li>
                     <li>
                       Along with African, Afro-Caribbean, Chinese and Arab
-                      sailors, South Asians were also targeted.{" "}
+                      sailors, South Asians were also targeted.
                     </li>
-
                     <li>
                       Through the intensive press coverage, the 1919 race riots
                       were the first time many people became aware that there
                       were black and minority ethnic people living in Britain,
                       including those who had lived and worked here for many
-                      years and served in the war.{" "}
+                      years and served in the war.
+                    </li>
+                    <li>
+                      In Newport, tensions sparked after it was claimed a black
+                      man made an insulting remark to a white woman. It was
+                      reported that a mob of white people began attacking
+                      non-white members of the community at random.
                     </li>
 
                     <li>
-                      Many also suffered vandalisation of their homes and
-                      properties. South Asians suffered less than black or
-                      Chinese workers as they were not regarded as such direct
-                      competition for jobs and housing.{" "}
+                      Many suffered vandalisation of their homes and properties.
+                      In Newport, the South Wales Argus reported that ‘White
+                      mobs wrecked so many properties that the town looked as if
+                      it had suffered an air raid’. Included in these properties
+                      were Chinese laundries and a Greek lodging house.
                     </li>
 
                     <li>
-                      In Cardiff clashes took place on 11 June 1919 between
+                      While white crowds destroyed properties, of the 30 people
+                      arrested during the riots, 27 were black.
+                    </li>
+
+                    <li>
+                      In Cardiff, clashes took place on 11 June 1919 between
                       white soldiers returning from the Great War and local
                       Butetown (Tiger Bay) men of mainly Yemeni, Somali and
-                      Afro-Caribbean backgrounds.{" "}
+                      Afro-Caribbean backgrounds.
                     </li>
 
+                    <li>
+                      A newspaper article from 1919 reported that: “It is
+                      understood that the Government is prepared to send troops
+                      to affected areas if the police are unable to control the
+                      riots. There have now been four deaths in Cardiff, and
+                      many were injured.”
+                    </li>
                     <li>
                       The riots lasted for four days, spreading out into
                       Grangetown and parts of the city centre.{" "}
+                    </li>
+                    <li>
+                      The 1919 Race Riots are an incredibly shocking but
+                      important part of Welsh history that should be remembered.
+                      However, there are currently no plaques or memorials
+                      dedicated to remembering the riots in Wales.{" "}
                     </li>
                   </ul>
                 }
@@ -6841,12 +7323,26 @@ function App() {
                     </li>
 
                     <li>
-                      Hefyd, cafodd cartrefi ac eiddo rhai pobl eu fandaleiddio.
-                      Ddioddefodd pobl o Dde Asia ddim cymaint â gweithwyr du
-                      neu Tsieineaidd oherwydd nad oedden nhw'n cael eu
-                      hystyried yn gymaint o gystadleuaeth am swyddi a thai.
+                      Yng Nghasnewydd, taniodd tensiynau ar ôl i rywun honni bod
+                      dyn du wedi dweud pethau sarhaus wrth ddynes wen.
+                      Adroddwyd bod tyrfa o bobl wyn wedi dechrau ymosod ar hap
+                      ar aelodau heb fod yn wyn o'r gymuned.
                     </li>
 
+                    <li>
+                      Cafodd cartrefi ac eiddo llawer o bobl eu fandaleiddio.
+                      Yng Nghasnewydd, adroddodd papur newydd South Wales Argus
+                      bod ‘tyrfaoedd o bobl wyn wedi dinistrio cymaint o eiddo
+                      fel bod y dref yn edrych fel petai wedi dioddef cyrch
+                      bomio’. Roedd golchdai Tsieineaidd a llety Groegaidd
+                      wedi'u cynnwys yn yr eiddo hwn.
+                    </li>
+
+                    <li>
+                      Er mai tyrfaoedd o bobl wyn ddinistriodd yr eiddo, pobl
+                      ddu oedd 27 o’r 30 o bobl a arestiwyd yn ystod y
+                      terfysgoedd.
+                    </li>
                     <li>
                       Yng Nghaerdydd, digwyddodd gwrthdaro ar 11 Mehefin 1919
                       rhwng milwyr gwyn a oedd yn dod yn ôl o'r Rhyfel Mawr a
@@ -6854,10 +7350,22 @@ function App() {
                       bennaf o gefndir Yemen, Somalia ac
                       Affricanaidd-Caribïaidd.
                     </li>
-
+                    <li>
+                      Adroddodd erthygl papur newydd yn 1919 fel hyn: “Rydyn
+                      ni'n deall bod y Llywodraeth yn barod i anfon milwyr i'r
+                      ardaloedd sydd wedi'u heffeithio os nad yw'r heddlu'n
+                      gallu rheoli'r terfysgoedd. Erbyn hyn mae pedwar person
+                      wedi marw yng Nghaerdydd, a llawer wedi'u hanafu.”
+                    </li>
                     <li>
                       Parhaodd y terfysgoedd am bedwar diwrnod, gan estyn allan
                       i Grangetown a rhannau o ganol y ddinas.
+                    </li>
+                    <li>
+                      Mae Terfysgoedd Hil 1919 yn rhan frawychus o hanes Cymru
+                      ond maen nhw'n bwysig a dylen ni eu cofio nhw. Fodd
+                      bynnag, ar hyn o bryd does dim placiau neu gofebion sy'n
+                      coffáu’r terfysgoedd yng Nghymru.
                     </li>
                   </ul>
                 }
@@ -6868,6 +7376,12 @@ function App() {
             path="/12to16yo/KizzyCrawford"
             element={
               <PersonYTVid
+                pscc={"/12to16yo"}
+                youtubeVidCym="https://www.youtube.com/embed/PnUErgWxB_c"
+                psNum={"4"}
+                backLContent="A clip of Kizzy singing."
+                backLContentCym={"Clip o Kizzy yn canu. "}
+                welshSlugText="Y gyfansoddwraig a'r gantores. "
                 overlayText={"Kizzy Crawford performing 'The Starling'"}
                 youtubeVid={"https://www.youtube.com/embed/g3-eFdI9ZTY"}
                 links={
@@ -6919,7 +7433,7 @@ function App() {
                 indivNameCym={"Kizzy Crawford"}
                 proposedResource={"Interview of podcast with Kizzy herself?"}
                 resource={twelveApi.slice(4, 5)}
-                slugText={"The talented singer songwriter."}
+                slugText={"The singer songwriter."}
                 indivPic={
                   "https://ents24.imgix.net/image/000/158/543/f362a1cbe3eb9d638603c935c57a9f81ee7bd0bf.jpg?auto=format&crop=faces&w=1920&h=1920"
                 }
@@ -6927,75 +7441,81 @@ function App() {
                   <ul>
                     <li>
                       Born in 1996 in Oxford, Kizzy grew up in Merthyr Tydfil.
-                      She has Bajan heritage – her father’s family are from
+                      She has Bajan heritage – her father’s family are from
                       Barbados.{" "}
                     </li>
                     <li>
-                      She began writing songs at the age of thirteen. She sings
-                      in both English and Welsh, using traditional and modern
-                      sources.{" "}
+                      Kizzy began writing songs at the age of thirteen. She
+                      sings in both English and Welsh, using traditional and
+                      modern sources. She has said that the Welsh language is
+                      very important to her.
                     </li>
 
-                    <li>At the age of 26 Kizzy was diagnosed with autism. </li>
-
-                    <li>Kizzy has a sister, Eädyth, who is also a singer. </li>
+                    <li>Kizzy has a sister, Eädyth, who is also a singer </li>
 
                     <li>
-                      Kizzy won the Arts Connect Original Singer-Songwriter
-                      prize in 2012 resulting in work with Amy Wadge including
-                      recording her first single Starling. Her EP Temporary
-                      Zone was released in December 2013.{" "}
-                    </li>
-
-                    <li>
-                      Together with many radio and TV appearances in Wales
-                      during 2013, Kizzy has performed live at various
-                      festivals.{" "}
+                      Together with many radio and TV appearances, Kizzy has
+                      performed live at various festivals, including
+                      Glastonbury!{" "}
                     </li>
 
                     <li>
-                      In 2014 she performed at Glastonbury on the BBC
-                      Introducing stage and has since performed at several other
-                      high-profile festivals.{" "}
+                      Her music was also used to welcome the US President to the
+                      NATO Summit in Wales.
                     </li>
 
                     <li>
-                      Crawford performed at the Euro 16 Welsh team homecoming
-                      gig at Cardiff City Football Stadium alongside the Manic
-                      Street Preachers.{" "}
-                    </li>
-
-                    <li>
-                      Her music was used to welcome the US President to the NATO
-                      Summit in Wales.{" "}
+                      Kizzy wrote her song 'Caer o Feddyliau' to give women an
+                      anthem and a voice, to celebrate themselves as strong
+                      Welsh women, and to “break free from the chains of
+                      centuries of patriarchy and misogyny.”
                     </li>
 
                     <li>
                       In 2016, several of her compositions were selected as part
                       of the WJEC A Level Music Syllabus - her music sat in the
-                      contemporary section alongside The Manics, Gruff Rhys &
-                      The Super Furry Animals.{" "}
+                      contemporary section alongside the Manic Street Preachers,
+                      Gruff Rhys & The Super Furry Animals.
                     </li>
 
                     <li>
-                      Kizzy was invited to perform and discuss that accolade
-                      live on Woman's Hour  for BBC Radio 4.  {" "}
+                      She performed at the Euro 16 Welsh team homecoming gig at
+                      Cardiff City Football Stadium alongside the Manic Street
+                      Preachers.
                     </li>
 
                     <li>
-                      She played a supporting role as PC Emma Jones in the
-                      award-winning BBC drama Keeping Faith.{" "}
-                    </li>
-
-                    <li>
-                      In 2018, Crawford signed to Freestyle Records and released
-                      her debut album "The Way I Dream" in 2019.{" "}
-                    </li>
-
-                    <li>
-                      In November 2021, Crawford released her first
+                      In November 2021, Kizzy Crawford released her first
                       self-recorded/produced/mixed and debut Welsh Album "Rhydd"
-                      with Sain Records.{" "}
+                      with Sain Records.
+                    </li>
+
+                    <li>
+                      Outside of her music career, Kizzy played a supporting
+                      role as PC Emma Jones in the award-winning BBC drama
+                      Keeping Faith.
+                    </li>
+
+                    <li>At the age of 26 Kizzy was diagnosed with autism.</li>
+
+                    <li>
+                      Kizzy said that her autism diagnosis has helped her
+                      understand and know herself better, and that she’s excited
+                      to explore it in her music.
+                    </li>
+
+                    <li>
+                      In ‘Kizzy Crawford, Autism and Me’, a radio documentary
+                      broadcast by BBC Radio Wales, Kizzy explores her autism
+                      diagnosis and looks into why girls are usually diagnosed
+                      later than boys.
+                    </li>
+
+                    <li>
+                      Kizzy has stated that growing up, she had no examples of
+                      Black or mixed-race musicians in the Welsh music scene,
+                      and that she wants to inspire other mixed-race girls in
+                      Wales.
                     </li>
                   </ul>
                 }
@@ -7008,15 +7528,29 @@ function App() {
                     <li>
                       Dechreuodd hi ysgrifennu caneuon pan oedd hi'n 13 oed. Mae
                       hi'n canu yn Gymraeg ac yn Saesneg, gan ddefnyddio
-                      ffynonellau traddodiadol a modern.
+                      ffynonellau traddodiadol a modern. Mae hi wedi dweud bod
+                      yr iaith Gymraeg yn bwysig iawn iddi hi.
                     </li>
 
                     <li>
-                      Pan oedd Kizzy yn 26 oed, cafodd hi ddiagnosis
-                      awtistiaeth.{" "}
+                      Mae Kizzy’n ymddangos yn aml ar y radio a'r teledu, hefyd
+                      mae hi wedi perfformio'n fyw mewn llawer o wyliau, gan
+                      gynnwys Glastonbury!
                     </li>
 
-                    <li>Mae gan Kizzy chwaer, Eädyth, sy'n canu hefyd. </li>
+                    <li>
+                      Cafodd ei cherddoriaeth hefyd ei defnyddio i groesawu
+                      Arlywydd UDA i Uwchgynhadledd NATO yng Nghymru.{" "}
+                    </li>
+
+                    <li>
+                      Ysgrifennodd Kizzy ei chân 'Caer o Feddyliau' i roi anthem
+                      a llais i fenywod, iddyn nhw ddathlu eu hunain fel menywod
+                      cryf o Gymru, ac i “dorri'n rhydd o gadwyni canrifoedd o
+                      batriarchaeth a chasineb at fenywod.”
+                    </li>
+
+                    <li>Mae gan Kizzy chwaer, Eädyth, sy'n canu hefyd.</li>
 
                     <li>
                       Enillodd Kizzy wobr Canwr-Gyfansoddwr Gwreiddiol Arts
@@ -7033,27 +7567,16 @@ function App() {
                     </li>
 
                     <li>
-                      Yn 2014 perfformiodd hi yn Glastonbury ar lwyfan BBC
-                      Introducing ac ers hynny mae hi wedi perfformio mewn nifer
-                      o wyliau amlwg.
-                    </li>
-
-                    <li>
                       Perfformiodd Crawford pan ddaeth tîm Ewros 16 Cymru yn ôl
                       adre, mewn gig yn Stadiwm Tîm Pêl-droed Caerdydd, wrth
                       ochr y Manic Street Preachers.
                     </li>
 
                     <li>
-                      Cafodd ei cherddoriaeth ei defnyddio i groesawu Arlywydd
-                      UDA i Uwchgynhadledd NATO yng Nghymru.
-                    </li>
-
-                    <li>
                       Yn 2016, cafodd nifer o'i chyfansoddiadau eu dewis yn rhan
                       o Faes Llafur TGAU Safon Uwch Cerddoriaeth – roedd ei
-                      cherddoriaeth yn yr adran gyfoes wrth ochr y Manics, Gruff
-                      Rhys a'r Super Furry Animals.
+                      cherddoriaeth yn yr adran gyfoes wrth ochr y Manic Street
+                      Preachers, Gruff Rhys a'r Super Furry Animals.
                     </li>
 
                     <li>
@@ -7062,8 +7585,9 @@ function App() {
                     </li>
 
                     <li>
-                      Chwaraeodd rôl gynorthwyol fel PC Emma Jones yn Keeping
-                      Faith, y ddrama gan y BBC sydd wedi ennill gwobrau.
+                      Yn ogystal â chanu mae Kizzy wedi actio a chwaraeodd rôl
+                      gynorthwyol fel PC Emma Jones yn Keeping Faith, y ddrama
+                      gan y BBC sydd wedi ennill gwobrau.
                     </li>
 
                     <li>
@@ -7076,6 +7600,28 @@ function App() {
                       Halbwm Cymraeg cyntaf y mae hi wedi'i
                       hunanrecordio/cynhyrchu/cymysgu gyda Recordiau Sain.
                     </li>
+                    <li>
+                      Pan oedd Kizzy yn 26 oed, cafodd hi ddiagnosis
+                      awtistiaeth.
+                    </li>
+                    <li>
+                      Dywedodd Kizzy fod ei diagnosis awtistiaeth wedi ei helpu
+                      i’w deall ei hun ac i’w hadnabod ei hun yn well, a'i bod
+                      hi'n teimlo'n llawn cyffro wrth archwilio hyn yn ei
+                      cherddoriaeth.
+                    </li>
+                    <li>
+                      Yn ‘Kizzy Crawford, Autism and Me’, rhaglen ddogfen ar BBC
+                      Radio Wales, mae Kizzy yn edrych ar ei diagnosis
+                      awtistiaeth ac yn ymchwilio i pam mae merched yn cael
+                      diagnosis yn ddiweddarach na bechgyn fel arfer.
+                    </li>
+                    <li>
+                      Mae Kizzy wedi dweud, pan oedd hi'n tyfu i fyny, nad oedd
+                      ganddi unrhyw enghreifftiau o gerddorion Du neu hil gymysg
+                      yn y sin gerddoriaeth yng Nghymru, a'i bod hi eisiau
+                      ysbrydoli merched eraill o hil gymysg yng Nghymru.
+                    </li>
                   </ul>
                 }
               ></PersonYTVid>
@@ -7085,11 +7631,15 @@ function App() {
             path="/12to16yo/AshleyWilliams"
             element={
               <Person
+                welshSlugText={"Cyn-gapten Pêldroed Cymru."}
+                pscc={"/12to16yo"}
+                psNum={"4"}
                 buttonLink={"/Diaries/Ashley"}
-                linkResource={"Diaries/Ashley"}
+                linkResource={"./../Diaries/Ashley"}
                 indivName={"Ashley Williams"}
                 backcardImg={ashleySmall}
                 resourceOverlay={"The imaginary diary of Ashley Williams."}
+                resourceOverlayWelsh="Dyddiadur dychmygol Ashley Williams. "
                 bgcolor={"#FF686B"}
                 indivNameCym={"Ashley Williams"}
                 links={
@@ -7164,9 +7714,9 @@ function App() {
                 text={
                   <ul>
                     <li>
-                      Ashley Williams was born in Wolverhampton. He is of
-                      Afro-Jamaican descent through his father and of Welsh
-                      descent through his mother.{" "}
+                      Ashley Williams was born in 1985 in Wolverhampton. He is
+                      of Afro-Jamaican descent through his father and of Welsh
+                      descent through his mother.
                     </li>
 
                     <li>
@@ -7185,7 +7735,10 @@ function App() {
                       Williams, whilst captain of Stockport, made his
                       international debut for Wales.{" "}
                     </li>
-
+                    <li>
+                      On playing for Wales, Williams said: “I don’t just play
+                      for Wales – I consider myself Welsh”{" "}
+                    </li>
                     <li>
                       In March 2008, Williams signed for Swansea City on loan.{" "}
                     </li>
@@ -7204,9 +7757,20 @@ function App() {
                       picked up the Clubman of the Year award at the same event.{" "}
                     </li>
                     <li>
+                      In 2010, Williams set up the charity WillsWorld with his
+                      wife Vanessa. The charity hopes to help those in need,
+                      particularly under-privileged children.{" "}
+                    </li>
+                    <li>
+                      Ashley Williams is a Patron of Street Football Wales,
+                      which helps people aged 16 and above who face social
+                      exclusion, as well as being a Patron for the Ethan Perkins
+                      Trust, a charity that provides grants to children in South
+                      Wales who are diagnosed with brain tumours.{" "}
+                    </li>
+                    <li>
                       The 2010–11 season saw Swansea and Williams gain promotion
-                      to the Premier League via a play-off final win at
-                      Wembley. {" "}
+                      to the Premier League via a play-off final win at Wembley.{" "}
                     </li>
 
                     <li>
@@ -7216,13 +7780,13 @@ function App() {
 
                     <li>
                       The season also saw him equal and surpass a club record of
-                      106 consecutive matches, previously jointly held by Andy
-                      Legg and Gilbert Beech.{" "}
+                      106 consecutive matches, previously jointly held by Andy
+                      Legg and Gilbert Beech.{" "}
                     </li>
 
                     <li>
-                      In 2016, Williams joined Everton on a three-year contract
-                      for a £12 million transfer fee and then moved to Stoke
+                      In 2016, Williams joined Everton on a three-year contract
+                      for a £12 million transfer fee and then moved to Stoke
                       City in 2018 and Bristol City 2019.{" "}
                     </li>
 
@@ -7230,10 +7794,10 @@ function App() {
                       The highlight of Ashley Williams’ career was captaining
                       Wales to the semi-final of UEFA Euro 2016. It was Wales'
                       first major tournament for more than half a century. Held
-                      in France, Williams headed the equalising goal,
-                      against Belgium in the quarter-finals as Wales eventually
-                      won 3–1 to progress to the semi-finals for the first time
-                      in their international football history.{" "}
+                      in France, Williams headed the equalising goal, against
+                      Belgium in the quarter-finals as Wales eventually won 3–1
+                      to progress to the semi-finals for the first time in their
+                      international football history.{" "}
                     </li>
 
                     <li>Williams retired in 2021 aged 36. </li>
@@ -7242,6 +7806,12 @@ function App() {
                       Williams is one of Wales’ biggest footballing stars and
                       earned 86 caps for Wales and scored two goals with his
                       last cap coming in June 2019.{" "}
+                    </li>
+                    <li>
+                      Since retiring, Williams has enjoyed being a pundit for
+                      BBC Sport and Sky Sports, whilst also working at a
+                      grassroots level helping young players in Wales after
+                      receiving his coaching badges.{" "}
                     </li>
                   </ul>
                 }
@@ -7269,7 +7839,11 @@ function App() {
                       Tra oedd Williams yn gapten Stockport, chwaraeodd yn ei
                       gêm ryngwladol gyntaf dros Gymru.
                     </li>
-
+                    <li>
+                      Wrth sôn am chwarae dros Gymru, meddai Williams: “Nid
+                      chwarae dros Gymru yn unig dwi – dwi'n ystyried fy hunan
+                      yn Gymro”.{" "}
+                    </li>
                     <li>
                       Ym mis Mawrth 2008, arwyddodd Williams i Ddinas Abertawe
                       ar fenthyg.{" "}
@@ -7287,8 +7861,20 @@ function App() {
                       Chwaraeodd yr amddiffynnwr yn dda yn ystod ei dymor cyntaf
                       yn y Bencampwriaeth. Yn y pen draw, cafodd ei enwi'n
                       Bêl-droediwr y Flwyddyn yng Nghymru ym mis Tachwedd 2009.
-                      Hefyd, cododd Williams wobr Dyn Clwb y Flwyddyn yn yr un
+                      Hefyd, enillodd Williams wobr Dyn Clwb y Flwyddyn yn yr un
                       achlysur.
+                    </li>
+                    <li>
+                      Yn 2010, sefydlodd Williams yr elusen WillsWorld gyda
+                      Vanessa, ei wraig. Mae'r elusen yn gobeithio helpu’r rhai
+                      mewn angen, yn enwedig plant difreintiedig.{" "}
+                    </li>
+                    <li>
+                      Mae Ashley Williams yn Noddwr elusen Street Football
+                      Wales, sy'n helpu pobl 16 oed a hŷn sy'n wynebu allgáu
+                      cymdeithasol. Hefyd, mae’n Noddwr i Ymddiriedolaeth Ethan
+                      Perkins, elusen sy'n rhoi grantiau i blant yn Ne Cymru
+                      sy'n cael diagnosis tiwmor yr ymennydd.{" "}
                     </li>
                     <li>
                       Yn nhymor 2010–11 cafodd Abertawe a Williams ddyrchafiad i
@@ -7332,6 +7918,12 @@ function App() {
                       86 o gapiau dros Gymru a sgorio dwy gôl, gyda'i gap olaf
                       ym mis Mehefin 2019.
                     </li>
+                    <li>
+                      Ers ymddeol, mae Williams yn mwynhau bod yn sylwebydd i
+                      Chwaraeon y BBC a Sky Sports, a hefyd mae'n gweithio ar
+                      lawr gwlad yn helpu chwaraewyr ifanc yng Nghymru ar ôl
+                      cael ei fathodynnau hyfforddi.{" "}
+                    </li>
                   </ul>
                 }
               ></Person>
@@ -7341,10 +7933,14 @@ function App() {
             path="/12to16yo/JoeErskine"
             element={
               <Person
+                pscc={"/12to16yo"}
+                psNum={"4"}
+                welshSlugText="Y bocsiwr dawnus o Butetown. "
                 bgcolor={"#FF686B"}
-                linkResource={"Resources/JoeErskine"}
+                linkResource={"./../Resources/JoeErskine"}
                 backcardImg={boxing}
                 resourceOverlay={"Is boxing safe?"}
+                resourceOverlayWelsh={"Yw bocsio'n ddiogel?"}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -7418,9 +8014,9 @@ function App() {
                   <>
                     <ul>
                       <li>
-                        Joseph Erskine, a boxer from the Butetown district of
-                        Cardiff, was a former British and British Empire
-                        heavyweight boxing champion.
+                        Joseph Erskine (born 26 January 1934), a boxer from the
+                        Butetown district of Cardiff, was a former British and
+                        British Empire heavyweight boxing champion.
                       </li>
                       <li>He was one of the most gifted boxers of his day.</li>
 
@@ -7538,7 +8134,10 @@ function App() {
             path="/12to16yo/ElizabethCampbell"
             element={
               <PersonYTVid
+                pscc={"/12to16yo"}
+                psNum={"4"}
                 youtubeVid={"https://www.youtube.com/embed/y0Lg1LF65JY"}
+                youtubeVidCym={"https://www.youtube.com/embed/ifn0X_DGXZs"}
                 links={
                   <ul>
                     <li className="linkLi">
@@ -7640,8 +8239,8 @@ function App() {
                     </li>
                   </ul>
                 }
-                indivName={"Elizabeth Campbell"}
-                indivNameCym={"Elizabeth Campbell"}
+                indivName={`Elizabeth "Betty" Campbell MBE `}
+                indivNameCym={`Elizabeth "Betty" Campbell MBE `}
                 proposedResource={
                   <a href={"https://dev.addysgop.co.uk/hanesbame/BettyQuiz"}>
                     <motion.div
@@ -7655,6 +8254,8 @@ function App() {
                 }
                 resource={twelveApi.slice(7, 8)}
                 slugText={"Wales' First black headteacher."}
+                welshSlugText={"Pennaeth du cyntaf Cymru."}
+                backLContent="An interview with Natalie Jones."
                 indivPic={"https://dev.addysgop.co.uk/pdfs/betty2.png"}
                 text={
                   <ul>
@@ -7665,9 +8266,8 @@ function App() {
                     <li>
                       {" "}
                       Her mother, Nora, was Welsh Barbadian and her father,
-                      Simon, had come to the UK from Jamaica when he was 15, was
-                      killed in World War II. With the death of her father, the
-                      family struggled with money and life was hard.{" "}
+                      Simon, had come to the UK from Jamaica when he was 15. He
+                      fought for Britain in World War II and was killed.
                     </li>
 
                     <li>
@@ -7700,8 +8300,8 @@ function App() {
                     <li>
                       Betty felt that it was important to tell the children
                       about black culture and black history as part of their
-                      education so she taught them about slavery and the system
-                      of apartheid which operated at the time in South Africa.{" "}
+                      education so she taught them about slavery and the system
+                      of apartheid which operated at the time in South Africa.{" "}
                     </li>
 
                     <li>
@@ -7736,7 +8336,9 @@ function App() {
                     </li>
 
                     <li>
-                      After she died, a statue of her was put up in Cardiff.{" "}
+                      A statue was erected for her in Cardiff following the a
+                      public vote. It is the first statue of a female named
+                      woman to be erected in Wales.{" "}
                     </li>
                   </ul>
                 }
@@ -7749,9 +8351,8 @@ function App() {
                     <li>
                       Roedd Nora, ei mam, yn Gymraes o dras Barbados. Roedd
                       Simon, ei thad, wedi dod i'r DU o Jamaica pan oedd yn 15
-                      oed, a chafodd ei ladd yn yr Ail Ryfel Byd. Ar ôl i'w thad
-                      farw, roedd gan y teulu broblemau arian ac roedd bywyd yn
-                      anodd.
+                      oed. Ymladdodd dros Brydain yn yr Ail Ryfel Byd a cafodd
+                      ei ladd.
                     </li>
 
                     <li>
@@ -7823,8 +8424,9 @@ function App() {
                     </li>
 
                     <li>
-                      Ar ôl iddi hi farw, cafodd cerflun ohoni ei osod yng
-                      Nghaerdydd.
+                      Cafodd cerflun ohoni ei osod yng Nghaerdydd yn dilyn
+                      pleidlais cyhoeddus. Hwn oedd y cerflun cyntaf o fenyw
+                      sy'n cael ei enwi i gael ei osod yng Nghymru.
                     </li>
                   </ul>
                 }
@@ -7835,6 +8437,9 @@ function App() {
             path="/12to16yo/GaneshSubrahmanyam"
             element={
               <PersonYTVid
+                pscc={"/12to16yo"}
+                psNum={"4"}
+                welshSlugText="Y doctor o'r India."
                 links={
                   <ul>
                     <li className="linkLi">
@@ -7879,10 +8484,13 @@ function App() {
                     </li>
                   </ul>
                 }
-                indivName={"Ganesh Subrahmanyam"}
-                indivNameCym={"Ganesh Subrahmanyam"}
+                indivName={"Dr Ganesh Subrahmanyam"}
+                indivNameCym={"Dr Ganesh Subrahmanyam"}
                 resource={twelveApi.slice(8, 9)}
                 youtubeVid="https://www.bbc.co.uk/programmes/p0b4kn0p/player"
+                youtubeVidCym={
+                  "https://www.bbc.co.uk/programmes/p0b4kn0p/player"
+                }
                 slugText={"The Indian Doctor."}
                 indivPic={
                   "https://ichef.bbci.co.uk/images/ic/240x135/p0b6ksrg.jpg"
@@ -7890,8 +8498,8 @@ function App() {
                 text={
                   <ul>
                     <li>
-                      People who immigrated from Asia in the 1950s were very
-                      important to the success of the NHS.{" "}
+                      People who immigrated from South Asia in the 1950s were
+                      very important to the success of the NHS.{" "}
                     </li>
                     <li>
                       They continued to be important to healthcare in the years
@@ -7901,7 +8509,7 @@ function App() {
                     <li>
                       The NHS began in 1948 and there was a need for many
                       doctors to look after people. But there was a shortage of
-                      medical people in Britain because of World War 2.{" "}
+                      medical people in Britain because of World War II.
                     </li>
 
                     <li>
@@ -7910,7 +8518,8 @@ function App() {
                     </li>
                     <li>
                       A large number of medical people came from India to
-                      Britain to work in the NHS.{" "}
+                      Britain to work in the NHS. They were a part of the
+                      Windrush Generation.
                     </li>
 
                     <li>
@@ -7962,9 +8571,9 @@ function App() {
                     </li>
 
                     <li>
-                      Dechreuodd y GIG yn 1948 ac roedd angen llawer o feddygon
-                      i ofalu am bobl. Ond roedd prinder pobl feddygol ym
-                      Mhrydain oherwydd yr Ail Ryfel Byd.
+                      Daeth nifer mawr o bobl feddygol o India i Brydain i
+                      weithio yn y GIG. Roedd rhain yn rhan o'r Genhedlaeth
+                      Windrush.
                     </li>
 
                     <li>
@@ -7973,7 +8582,8 @@ function App() {
                     </li>
                     <li>
                       Daeth nifer mawr o bobl feddygol o India i Brydain i
-                      weithio yn y GIG.
+                      weithio yn y GIG. Roeddent yn ran o'r Genhedlaeth
+                      Windrush.
                     </li>
 
                     <li>
@@ -7993,7 +8603,7 @@ function App() {
 
                     <li>
                       Erbyn y 1960au, daeth 18,000 yn rhagor o feddygon Indiaidd
-                      i Brydain i helpu GIG a oedd mewn trafferth. Roedd y
+                      i Brydain i helpu'r GIG a oedd mewn trafferth. Roedd y
                       gwasanaeth ar fin dymchwel.
                     </li>
 
@@ -8022,7 +8632,11 @@ function App() {
             path="/12to16yo/VaughanGething"
             element={
               <Person
+                pscc={"/12to16yo"}
+                psNum={"4"}
+                welshSlugText="Gwleidydd Llafur Cymraeg. "
                 resourceOverlay={"A portrait of Vaughan Gething."}
+                resourceOverlayWelsh="Portread o Vaughan Gething. "
                 links={
                   <ul>
                     <li className="linkLi">
@@ -8050,7 +8664,7 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Vaughan Gething talking about racial steretypes and
+                        Vaughan Gething talking about racial stereotypes and
                         being a black politician in Wales
                       </a>
                     </li>
@@ -8091,7 +8705,7 @@ function App() {
                 }
                 indivName={"Vaughan Gething"}
                 indivNameCym={"Vaughan Gething"}
-                linkResource={"Resources/VaughanGething"}
+                linkResource={"./../Resources/VaughanGething"}
                 bgcolor={"#FF686B"}
                 backcardImg={vg}
                 resource={twelveApi.slice(9, 10)}
@@ -8102,50 +8716,58 @@ function App() {
                 text={
                   <ul>
                     <li>
-                      Vaughan Gething was born in Zambia  where his father,
-                      a white Welsh vet from Ogmore-by-Sea, met his mother who
-                      is a Black Zambian.{" "}
+                      Vaughan Gething was born on 15 March 1974, in Zambia.
                     </li>
                     <li>
-                      When he was two years old, he moved to Monmouthshire,
+                      His father, a white Welsh vet, met his mother who is a
+                      black Zambian when he moved to Zambia.{" "}
+                    </li>
+                    <li>
+                      When he was two years old, he moved to Monmouthshire,
                       Wales with his family and then they moved again to Dorset,
                       England, where Gething was brought up.{" "}
                     </li>
-                    <li>Vaughan joined the Labour Party when he was 17. </li>
+                    <li>Vaughan joined the Labour Party when he was 17. </li>
                     <li>
-                      He read law at Aberystwyth where he became the first Black
-                      president of the National Union of Students Wales.{" "}
+                      He studied law at Aberystwyth where he became the first
+                      Black president of the National Union of Students Wales.{" "}
                     </li>
-
                     <li>
                       He went on to train as a solicitor in Cardiff in 2001,
                       with the trade union solicitors Thompsons. He specialised
                       in employment law and became a partner in Thompsons in
                       2007.{" "}
                     </li>
-
+                    <li>
+                      Gething is a strong supporter of the trade union movement.{" "}
+                    </li>
+                    <li>
+                      Between 2001 and 2003, Gething was the chair of Right to
+                      Vote – a project which aimed to encourage more
+                      participation from black and minority ethnic communities
+                      in Welsh public life.{" "}
+                    </li>
                     <li>
                       In 2008, at the age of 34, Vaughan became the youngest
-                      President of Wales TUC. He also became the first mixed
-                      race person in the role.{" "}
+                      President of Wales' Trade Union Congress. He also became
+                      the first black President in the role.
                     </li>
 
                     <li>
                       Vaughan became a councillor for Butetown, Cardiff as the
-                      Welsh Labour candidate for the Cardiff South and
-                      Penarth constituency in the Senedd. {" "}
+                      Welsh Labour candidate for the Cardiff South and Penarth
+                      constituency in the Senedd.{" "}
                     </li>
 
                     <li>
-                      Following the 2016 election, First Minister Carwyn
-                      Jones promoted Gething to the Welsh Cabinet as Cabinet
-                      Secretary for Health, Well-being and Sport. The position
-                      was then renamed as Minister for Health and Social
-                      Services.{" "}
+                      Following the 2016 election, Gething was promoted to the
+                      Welsh Cabinet as Cabinet Secretary for Health, Well-being
+                      and Sport. The position was then renamed as Minister for
+                      Health and Social Services.
                     </li>
                     <li>
-                      Since May 2021, Gething has served as  Minister for the
-                      Economy.{" "}
+                      In May 2021, Gething was appointed as a Minister for the
+                      Economy.
                     </li>
                   </ul>
                 }

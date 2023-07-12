@@ -26,12 +26,15 @@
 }
 .resourceBannerPodcast {
   position: fixed;
+  font-weight: bold;
+
   max-width: 29.5%;
   border-radius: 5px;
   margin: 15px;
   margin-left: 30px;
   padding: 5px;
-  background-color: white;
+  background-color: #258ea6;
+  color: #f2f2f2;
   z-index: 10000000000000000000;
 }
 
@@ -89,7 +92,7 @@
   display: flex;
   justify-content: center;
   border-radius: 15px;
-  align-items: center;
+  align-items: flex-end;
   margin: auto;
   z-index: 1000000000000;
   object-fit: cover;
@@ -98,6 +101,42 @@
   z-index: 1;
   /* background-color: black; */
   background-image: url("https://dev.addysgop.co.uk/pdfs/Mirain.jpeg");
+  background-size: cover;
+  color: white;
+}
+
+.podcastImgOverlayDom {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  align-items: flex-end;
+  margin: auto;
+  z-index: 1000000000000;
+  object-fit: cover;
+  width: 35%;
+  height: 50%;
+  z-index: 1;
+  /* background-color: black; */
+  background-image: url("https://dev.addysgop.co.uk/pdfs/domJamesPic.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.ImgOverlayHanan {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  align-items: flex-end;
+  margin: auto;
+  z-index: 1000000000000;
+  object-fit: cover;
+  width: 35%;
+  height: 50%;
+  z-index: 1;
+  /* background-color: black; */
+  background-image: url("https://www.dev.addysgop.co.uk/pdfs/hanan.png");
   background-size: cover;
   color: white;
 }

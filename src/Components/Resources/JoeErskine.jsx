@@ -5,6 +5,7 @@ import { useContext } from "react";
 
 const JoeErskine = ({ bgColour }) => {
   const { lang, setLang } = useContext(LanguageContext);
+  document.body.style = "background: #f2f2f2;";
 
   return (
     <>
@@ -25,7 +26,7 @@ const JoeErskine = ({ bgColour }) => {
         <p className="resourceP">
           {lang
             ? "Y cyngor gan fyrddau iechyd yw y dylai oedolion wneud tua 100 munud o ymarfer corff yr wythnos i gadw’n iach – ac mae bocsio’n fath da o ymarfer corff. Mae gwyddonwyr yn dweud bod gormod o bobl y DU yn byw bywydau sy’n rhy segur, felly byddai bocsio’n ffordd o gyrraedd y targed yma o 100 munud. Yn ogystal â chodi lefelau ffitrwydd, mae bocsio’n gwella cydbwysedd a chryfder corfforol, yn enwedig cryfder rhan uchaf y corff. Wrth gymryd rhan mewn ymarferion bocsio, mae eich cydsymud llaw i lygad yn datblygu yn ogystal â’ch sgiliau canolbwyntio.  "
-            : "Health boards advise adults to do around 100 minutes of physical exercise a week to keep healthy – and boxing is a good kind of physical exercise. Scientists say that too many people in the Uk live lives which are too sedentary, so boxing would be a way of achieving this target of 100 minutes. As well as raising fitness levels, boxing improves balance and physical strength, especially upper body strength. When taking part in boxing exercises, your hand-eye coordination develops as well as your concentration skills.  "}
+            : "Health boards advise adults to do around 100 minutes of physical exercise a week to keep healthy – and boxing is a good kind of physical exercise. Scientists say that too many people in the UK live lives which are too sedentary, so boxing would be a way of achieving this target of 100 minutes. As well as raising fitness levels, boxing improves balance and physical strength, especially upper body strength. When taking part in boxing exercises, your hand-eye coordination develops as well as your concentration skills.  "}
         </p>
         <p className="resourceP">
           {lang

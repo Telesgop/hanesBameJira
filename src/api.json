@@ -54,6 +54,20 @@
         ]
     },
     {
+        "id" : 15,
+        "name" : "Hanan Issa",
+        "nameCym" : "Hanan Issa",
+        "slug": "The National Poet of Wales.",
+        "welshSlug": "Bardd Cenedlaethol Cymru.",
+        "image": "https://www.dev.addysgop.co.uk/pdfs/hanan.png",
+        "url": "/6to9yo/HananIssa",
+        "keywords": "Hanan Issa Poet poetry art iraqi mixed race ",
+        "resources": [
+            "Links will go here"
+           
+        ]
+    } ,
+    {
         "id" : 5,
         "name" : "Teleri Gray",
         "nameCym" : "Teleri Gray",
@@ -111,8 +125,8 @@
     },
     {
         "id" : 11,
-        "name" : "Dame Shirley Bassey",
-        "nameCym" : "Y Fonesig Shirley Bassey",
+        "name" : "Dame Shirley Bassey OBE",
+        "nameCym" : "Y Fonesig Shirley Bassey OBE",
         "slug": "The world famous Welsh singer from Tiger Bay.",
         "welshSlug": "Y gantores fyd-enwog o Tiger Bay.",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/TV-opnamen_van_Engelse_zangeres_Shirley_Bassey_Shirley_Bassey_%2C_kop%2C_Bestanddeelnr_924-1644.jpg/1600px-TV-opnamen_van_Engelse_zangeres_Shirley_Bassey_Shirley_Bassey_%2C_kop%2C_Bestanddeelnr_924-1644.jpg?20180317103651",
@@ -151,6 +165,20 @@
             "Links will go here"
            
         ]
-    } 
+    } ,
+   
+    {
+        "id" : 9,
+        "name" : "Sidoli Ice Cream",
+        "nameCym" : "Hufen Iâ Sidoli",
+        "slug": "The story of the award-winning ice cream.",
+        "welshSlug": "Stori'r hufen iâ arbennig o'r Eidal.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Sidolis%2C_Coney_Beach%2C_Porthcawl_%28geograph_6353418%29.jpg?20191231185933",
+        "url": "/6to9yo/SidoliIceCream",
+        "keywords": "Sidoli Ice Cream Italian",
+        "resources": [
+            "Links will go here"
+        ]
+    }
 ]
 

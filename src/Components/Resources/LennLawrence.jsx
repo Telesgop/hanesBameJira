@@ -3,8 +3,10 @@ import "./Resources.css";
 import { LanguageContext } from "../../Helper/Context";
 import { useContext } from "react";
 import newspaper from "../../Images/news.png";
+import newspaperCym from "../../Images/lenncym.png";
 const LennLawrence = () => {
   const { lang, setLang } = useContext(LanguageContext);
+  document.body.style = "background: #f2f2f2;";
 
   return (
     <>
@@ -22,10 +24,17 @@ const LennLawrence = () => {
           </strong>{" "}
         </p>
         <div>
-          <img
-            src={newspaper}
-            style={{ height: "800px", width: "600px" }}
-          ></img>
+          {lang ? (
+            <img
+              src={newspaperCym}
+              style={{ height: "800px", width: "600px" }}
+            ></img>
+          ) : (
+            <img
+              src={newspaper}
+              style={{ height: "800px", width: "600px" }}
+            ></img>
+          )}
         </div>
         <div
           className="learningOutcomes"
