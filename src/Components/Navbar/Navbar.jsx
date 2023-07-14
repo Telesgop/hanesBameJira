@@ -33,7 +33,11 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navLeft">
         <Link to={"/"}>
-          <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+          <motion.div
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            id="home"
+          >
             <AiFillHome
               style={{
                 transform: "scale(1.5)",
@@ -112,6 +116,7 @@ const Navbar = () => {
           className="hoverNav"
           onClick={() => setIsOpen((isOpen) => !isOpen)}
           whileHover={{ scale: 1.2 }}
+          id="menuBtn"
           whileTap={{ scale: 0.9 }}
         >
           <GiHamburgerMenu

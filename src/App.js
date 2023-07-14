@@ -109,11 +109,19 @@ function App() {
   function handleLang() {
     document.getElementById("lang").click();
   }
+  function handleMenu() {
+    document.getElementById("menuBtn").click();
+  }
+  function handleHome() {
+    document.getElementById("home").click();
+  }
   useKey("Digit1", handle1);
   useKey("Digit2", handle2);
   useKey("Digit3", handle3);
   useKey("Digit4", handle4);
   useKey("KeyL", handleLang);
+  useKey("KeyM", handleMenu);
+  useKey("KeyH", handleHome);
 
   const [lang, setLang] = useState(false);
   return (
