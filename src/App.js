@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./App.css";
 import { FaVideo } from "react-icons/fa";
 import "./Components/Person/Person.css";
@@ -73,7 +73,44 @@ import DiaryBoxAshley from "./Components/DiaryBox/DiaryBoxAshley";
 import NigelWalker from "./Components/Resources/NigelWalker";
 import JoeErskine from "./Components/Resources/JoeErskine";
 
+function useKey(key, cb) {
+  const callbackRef = useRef(cb);
+
+  useEffect(() => {
+    callbackRef.current = cb;
+  });
+
+  useEffect(() => {
+    function handle(event) {
+      if (event.code === key) {
+        callbackRef.current(event);
+      }
+    }
+
+    document.addEventListener("keydown", handle);
+
+    return () => document.removeEventListener("keydown", handle);
+  }, [key]);
+}
+
 function App() {
+  function handle1() {
+    document.getElementById("PS1").click();
+  }
+  function handle2() {
+    document.getElementById("PS2").click();
+  }
+  function handle3() {
+    document.getElementById("PS3").click();
+  }
+  function handle4() {
+    document.getElementById("PS4").click();
+  }
+  useKey("Digit1", handle1);
+  useKey("Digit2", handle2);
+  useKey("Digit3", handle3);
+  useKey("Digit4", handle4);
+
   const [lang, setLang] = useState(false);
   return (
     <BrowserRouter basename="/hanesbame">

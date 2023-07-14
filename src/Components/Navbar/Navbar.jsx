@@ -45,6 +45,7 @@ const Navbar = () => {
         </Link>
         <Link to={"/3to6yo"}>
           <motion.div
+            id="PS1"
             className="categoryBut"
             style={{ "background-color": "#FFCB77", color: "#f2f2f2" }}
             whileHover={{ scale: 1.2 }}
@@ -55,6 +56,7 @@ const Navbar = () => {
         </Link>
         <Link to={"/6to9yo"}>
           <motion.div
+            id="PS2"
             className="categoryBut"
             style={{ "background-color": "#CFE57D", color: "#f2f2f2" }}
             whileHover={{ scale: 1.2 }}
@@ -66,6 +68,7 @@ const Navbar = () => {
         </Link>
         <Link to={"/9to12yo"}>
           <motion.div
+            id="PS3"
             className="categoryBut"
             style={{ "background-color": "#A2D6F9", color: "#f2f2f2" }}
             whileHover={{ scale: 1.2 }}
@@ -77,6 +80,7 @@ const Navbar = () => {
         </Link>
         <Link to={"/12to16yo"}>
           <motion.div
+            id="PS4"
             className="categoryBut"
             style={{ "background-color": "#FF686B", color: "#f2f2f2" }}
             whileHover={{ scale: 1.2 }}
