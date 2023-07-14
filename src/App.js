@@ -106,10 +106,14 @@ function App() {
   function handle4() {
     document.getElementById("PS4").click();
   }
+  function handleLang() {
+    document.getElementById("lang").click();
+  }
   useKey("Digit1", handle1);
   useKey("Digit2", handle2);
   useKey("Digit3", handle3);
   useKey("Digit4", handle4);
+  useKey("KeyL", handleLang);
 
   const [lang, setLang] = useState(false);
   return (

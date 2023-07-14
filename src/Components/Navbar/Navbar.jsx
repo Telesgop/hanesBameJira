@@ -102,6 +102,7 @@ const Navbar = () => {
             onClick={handlePress}
             className="categoryButTranslate"
             tabIndex="0"
+            id="lang"
           >
             {lang ? "English" : "Cymraeg"}
           </div>
