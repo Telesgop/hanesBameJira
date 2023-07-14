@@ -71,17 +71,14 @@ const Person = ({
         {slide === 0 && (
           <>
             <motion.div
-              className="prevnextblocked"
+              className="prevnext"
               variants={prevnextbuttons}
               transition={{ delay: 5 }}
               // initial="hidden"
               // animate="visible"
             >
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-                <HiArrowCircleLeft
-                  className="prevnextblocked"
-                  style={{ display: "none" }}
-                />
+                <HiArrowCircleLeft className="prevnextBlocked" />
               </motion.div>
             </motion.div>
             <motion.div
@@ -122,6 +119,7 @@ const Person = ({
             </motion.div>
             <motion.div
               className="prevnext"
+              id="flipL"
               variants={prevnextbuttons}
               initial="hidden"
               animate="visible"
@@ -143,7 +141,6 @@ const Person = ({
             </motion.div>
           </>
         )}
-
         {slide === 1 && (
           <>
             <motion.div
@@ -151,6 +148,7 @@ const Person = ({
               variants={prevnextbuttons}
               initial="hidden"
               animate="visible"
+              id="flipL"
               onClick={() =>
                 (document.getElementById("myDIV2").style = `
                 transform: rotateY(180deg); 

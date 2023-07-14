@@ -115,6 +115,9 @@ function App() {
   function handleHome() {
     document.getElementById("home").click();
   }
+  function handleFlip() {
+    document.getElementById("flipL").click();
+  }
   useKey("Digit1", handle1);
   useKey("Digit2", handle2);
   useKey("Digit3", handle3);
@@ -122,6 +125,7 @@ function App() {
   useKey("KeyL", handleLang);
   useKey("KeyM", handleMenu);
   useKey("KeyH", handleHome);
+  useKey("KeyF", handleFlip);
 
   const [lang, setLang] = useState(false);
   return (

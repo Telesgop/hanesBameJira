@@ -116,6 +116,7 @@ const PersonYTVid = ({
               className="prevnext"
               variants={prevnextbuttons}
               initial="hidden"
+              id="flipL"
               animate="visible"
               onClick={() =>
                 (document.getElementById("myDIV").style = `
@@ -143,6 +144,7 @@ const PersonYTVid = ({
               variants={prevnextbuttons}
               initial="hidden"
               animate="visible"
+              id="flipL"
               onClick={() =>
                 (document.getElementById("myDIV2").style = `
                 transform: rotateY(180deg); 

@@ -109,6 +109,7 @@ const PersonPodcast = ({
             <motion.div
               className="prevnext"
               variants={prevnextbuttons}
+              id="flipL"
               initial="hidden"
               animate="visible"
               onClick={() =>
@@ -136,6 +137,7 @@ const PersonPodcast = ({
               className="prevnext"
               variants={prevnextbuttons}
               initial="hidden"
+              id="flipL"
               animate="visible"
               onClick={() =>
                 (document.getElementById("myDIV2").style = `
