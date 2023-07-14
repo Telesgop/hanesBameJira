@@ -10,11 +10,7 @@ const ColinJackson = () => {
   return (
     <>
       <div className="resourcePage">
-        <h1 className="resourceH1">
-          {lang
-            ? "Cyfweliad dychmygol ar Radio Cymru rhwng y cyflwynydd chwaraeon Jason Mohammad a’r cyn bencampwr byd dros y clwydi, Colin Jackson, wrth iddo edrych ymlaen at y Gemau Olympaidd ym Mharis yn 2024… "
-            : "An imaginary interview between sports reporter Jason Mohammad and former World Champion hurdler Colin Jackson as he looks forward to the Olympic Games in Paris in 2024… "}
-        </h1>
+        <h1 className="resourceH1">{lang ? "Cyfweliad " : "Interview "}</h1>
         <p className="resourceP">
           <strong>Jason Mohammad: </strong>
           {lang

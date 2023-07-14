@@ -121,7 +121,7 @@ const DiaryBox = () => {
                 </h2>
                 <p className="diaryLOs">
                   {lang !== true
-                    ? " In a diary, you put your thoughts and feelings on paper. You can mention what's happened, what has happened or what's going to happen. How about having a go at writing your own diary? Something similar to the one above but discussing Fong Sui's life 10 years after moving to Wales. What's changed, what's stayed the same?"
+                    ? " In a diary, you put your thoughts and feelings on paper. You can mention what’s happened, what is happening, or what's going to happen. How about having a go at writing your own diary? Something similar to the one above but discussing Fong Sui's life 10 years after moving to Wales. What's changed, what's stayed the same?"
                     : "Mewn dyddiadur, rydych chi’n rhoi eich meddyliau a’ch teimladau ar bapur. Gallwch sôn am bethau sydd wedi digwydd, yn digwydd neu’n mynd i ddigwydd. Beth am i chi roi cynnig ar ysgrifennu dyddiadur eich hun? Un tebyg i’r un uchod ond yn sôn am fywyd Fong Sui 10 mlynedd ar ôl symud i Gymru. Beth sydd wedi newid, beth sydd wedi aros yr un fath?"}
                 </p>
               </>

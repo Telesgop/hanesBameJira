@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 import Copyright from "../Copyright/Copyright";
 
 const Categories = () => {
+  document.body.style = "background: #f2f2f2;";
+
   const { lang, setLang } = useContext(LanguageContext);
   const container = {
     hidden: { y: 50 },

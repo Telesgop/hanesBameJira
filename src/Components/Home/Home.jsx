@@ -16,25 +16,27 @@ const Home = () => {
       <h1 className="OurWelshHistory">
         <span className="underlineNice">Our Welsh History</span>
       </h1>
-      <h3>
-        A website which celebrates the rich diverse history of ethnic and
-        minority people in Wales.
+      <h3>A website which celebrates the rich and diverse history of Wales.</h3>
+      <h3 style={{ "font-weight": "normal" }}>
+        The 'Our Welsh History' website has been designed specifically for the
+        Curriculum for Wales working closely with teachers, educational experts
+        and members of the Black, Asian, and Minority Ethnic community.
       </h3>
       <h3 style={{ "font-weight": "normal" }}>
-        On the website we look at the essential role that ethnic minorities have
-        played in the history of our country. We shine a light on characters
-        that have been influencial in our history, on important buildings as
-        well as on some current individuals that are shaping the Wales of the
-        future.
+        It provides a wealth of resources that will support teachers to teach
+        Black, Asian, and Minority Ethnic histories and contributions as part of
+        Welsh history in the new curriculum introduced in 2022.
       </h3>
       <h3 style={{ "font-weight": "normal" }}>
-        The website contains interesting facts, videos, podcasts and points for
-        discussion. The Teacher Notes show how the website fits in to the new
-        National Curriculum and contains weblinks for further research.
+        The resources can be easily adapted to be used within a school's
+        curriculum to support teachers and practitioners to be confident in the
+        content that they are using. The variety of stories from across Wales
+        will help learners to recognise the diverse story of Wales, to feel
+        inspired by what they are being taught and to become ethically informed
+        citizens of the world.
       </h3>
       <h3 style={{ "font-weight": "normal" }}>
-        We very much hope the website will assist in bringing the multicultural
-        history of Wales to life in classrooms across the country. Enjoy!
+        Dip in to the website and be inspired!
       </h3>
     </>
   );
@@ -43,26 +45,27 @@ const Home = () => {
       <h1 className="OurWelshHistory">
         <span className="underlineNice">Hanes Cymru Ni</span>
       </h1>
-      <h3>
-        {" "}
-        Gwefan sy'n dathlu cyfoeth hanes pobl ethnig a lleiafrifol yng Nghymru.
+      <h3>Gwefan sy'n dathlu cyfoeth amrywiaeth hanes Cymru.</h3>
+      <h3 style={{ "font-weight": "normal" }}>
+        Mae gwefan ‘Ein Hanes Cymru Ni’ wedi cael ei chynllunio'n benodol ar
+        gyfer Cwricwlwm Cymru gan gydweithio'n agos ag athrawon, arbenigwyr
+        addysgol ac aelodau o'r gymuned Ddu, Asiaidd, a Lleiafrifoedd Ethnig.
       </h3>
       <h3 style={{ "font-weight": "normal" }}>
-        Ar y wefan rydym yn edrych ar y rôl hanfodol mae pobl o gefndiroedd
-        ethnig a lleiafrifol wedi chwarae yn hanes ein gwlad. Rydym yn taflu
-        golau ar gymeriadau sydd wedi bod y allweddol yn ein hanes, ar adeiladau
-        pwysig yn ogystal â rhai unigolion cyfoes sy'n siapio dyfodol Cymru.
+        Mae'n cynnig cyfoeth o adnoddau a fydd yn cefnogi athrawon i ddysgu am
+        hanes a chyfraniad pobl Ddu, Asiaidd a Lleiafrifoedd Ethnig yn rhan o
+        hanes Cymru yn y cwricwlwm newydd a gyflwynwyd yn 2022.
       </h3>
       <h3 style={{ "font-weight": "normal" }}>
-        Mae'r wefan yn cynnwys ffeithiau diddorol, fideos, podcastiau a
-        phwyntiau trafod. Mae Nodiadau Athrawon ar gael sy'n dangos sut mae'r
-        wefan yn cysylltu â'r Cwricwlwm Cenedlaethol yn ogystal â dolenni i
-        wneud ymchwil pellach.
+        Mae'n hawdd addasu'r adnoddau i'w defnyddio'n rhan o gwricwlwm ysgol er
+        mwyn cefnogi athrawon ac ymarferwyr i fod â hyder yn y cynnwys y maen
+        nhw'n ei ddefnyddio. Bydd yr amrywiaeth o storïau o bob rhan o Gymru yn
+        helpu dysgwyr i adnabod stori amrywiol Cymru, i gael eu hysbrydoli gan
+        yr hyn sy'n cael ei addysgu iddyn nhw ac i ddod yn ddinasyddion moesegol
+        wybodus y byd.
       </h3>
       <h3 style={{ "font-weight": "normal" }}>
-        Hyderwn yn fawr y bydd y wefan yn gymorth i ddod a hanes
-        aml-ddiwylliannol Cymru yn fyw mewn ystafelloedd dosbarth trwy'r wlad.
-        Mwynhewch!
+        Edrychwch ar y wefan er mwyn cael eich ysbrydoli!
       </h3>
     </>
   );

@@ -6,6 +6,8 @@ import Pagination from "../Pagination/Pagination";
 import "./Index.css";
 
 const Index = () => {
+  document.body.style = "background: #f2f2f2;";
+
   const { lang, setLang } = useContext(LanguageContext);
   const [query, setQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);

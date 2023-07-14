@@ -223,7 +223,10 @@ const PersonYTVid = ({
       </div>
       <Link to={pscc}>
         <div className="backToSection">
-          <div className="backToButton">Back to PS{psNum}</div>
+          <div className="backToButton">
+            {" "}
+            {lang !== true ? `Back to PS${psNum}` : `Nol i CC${psNum}`}
+          </div>
         </div>
       </Link>
     </>

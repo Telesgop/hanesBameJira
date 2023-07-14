@@ -161,10 +161,6 @@ const PersonPodcast = ({
             >
               {" "}
               <div className="personInfoBack" id="myDIV2">
-                <div className="resourceBannerPodcast">
-                  {" "}
-                  <p className="resourceText">PODCAST</p>
-                </div>{" "}
                 <div className="backLeftYTVid">
                   <div className="backLVid">
                     <div className={bgImg}>
@@ -208,7 +204,10 @@ const PersonPodcast = ({
       </div>
       <Link to={pscc}>
         <div className="backToSection">
-          <div className="backToButton">Back to PS{psNum}</div>
+          <div className="backToButton">
+            {" "}
+            {lang !== true ? `Back to PS${psNum}` : `Nol i CC${psNum}`}
+          </div>
         </div>
       </Link>
     </>

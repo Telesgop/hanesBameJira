@@ -134,6 +134,16 @@ const Navbar = () => {
             </motion.div>
           </div>{" "}
           <div className="innerTextInfo">
+            <Link to={"/Categories"}>
+              <motion.h2
+                className="notesH2"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                onClick={() => setIsOpen(false)}
+              >
+                Sections
+              </motion.h2>
+            </Link>
             <Link to={"/Notes"}>
               <motion.h2
                 className="notesH2"
@@ -141,7 +151,7 @@ const Navbar = () => {
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setIsOpen(false)}
               >
-                {lang ? "Nodiadau" : "Notes"}
+                Teacher Notes
               </motion.h2>
             </Link>
             <Link to={"/Index"}>
@@ -154,7 +164,6 @@ const Navbar = () => {
                 {lang ? "Mynegai" : "Index"}
               </motion.h2>
             </Link>
-
             <Link to={"/Resources"}>
               <motion.h2
                 className="notesH2"
@@ -162,7 +171,7 @@ const Navbar = () => {
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setIsOpen(false)}
               >
-                {lang ? "" : "Resources"}
+                {lang ? "Ad Res" : "Additional Resources"}
               </motion.h2>
             </Link>
             <Link to={"/Accessibility"}>
@@ -175,16 +184,7 @@ const Navbar = () => {
                 {lang ? "Hygyrchedd" : "Accessibility"}
               </motion.h2>
             </Link>
-            <Link to={"/Categories"}>
-              <motion.h2
-                className="notesH2"
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={() => setIsOpen(false)}
-              >
-                Categories
-              </motion.h2>
-            </Link>
+
             <Link to={"/Info"}>
               <motion.h2
                 className="notesH2"
@@ -192,7 +192,7 @@ const Navbar = () => {
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setIsOpen(false)}
               >
-                Site Information
+                Credits
               </motion.h2>
             </Link>
           </div>

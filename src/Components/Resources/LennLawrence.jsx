@@ -19,7 +19,7 @@ const LennLawrence = () => {
         <p className="resourceP">
           <strong>
             {lang
-              ? "Un o Genhedlaeth Windrush yw Lenn Lawrence. Daeth i Gymru yn 1960 i helpu i ailadeiladu’r wlad ar ôl yr Ail Ryfel Byd. Tra oedd yn byw yn Abertawe, daeth yn arwr dros nos wrth helpu gyda digwyddiad difrifol iawn yn yno. Dyma erthygl papur newydd sy’n adrodd ei hanes: "
+              ? "Un o Genhedlaeth Windrush yw Lenn Lawrence. Daeth i Gymru yn 1960 i helpu ailadeiladu’r wlad ar ôl yr Ail Ryfel Byd. Tra oedd yn byw yn Abertawe, daeth yn arwr dros nos wrth helpu gyda digwyddiad difrifol iawn yno. Dyma erthygl papur newydd sy’n adrodd ei hanes: "
               : "Lenn Lawrence is one of the Windrush Generation. He came to Wales in 1960 to help rebuild the country after the Second World War. While he was living in Swansea, he became an overnight hero because of the way he dealt with something really serious which happened there. Here is a newspaper article telling his story: "}
           </strong>{" "}
         </p>

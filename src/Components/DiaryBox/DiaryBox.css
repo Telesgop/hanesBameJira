@@ -35,10 +35,16 @@
   width: 50%;
 }
 
+.ASp {
+  padding: 10px;
+  text-align: center;
+}
+
 .ASdiv {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 95%;
+  /* border: 1px solid black; */
 }
 .ASdiv2 {
   display: flex;
@@ -48,9 +54,11 @@
 
 .DiaryFlipBookSpine {
   width: 1px;
-  height: 100%;
+  position: absolute;
+  height: 70%;
   background-color: rgba(0, 0, 0, 0.35);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 111111111111;
 }
 
 .DiaryFlipBookRight {

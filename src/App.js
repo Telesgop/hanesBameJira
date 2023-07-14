@@ -253,7 +253,7 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Fideo am enwebiad gobrau Dewi Sant Richard Parks
+                        Fideo am enwebiad gwobrau Dewi Sant Richard Parks
                       </a>
                     </li>
                     <li className="linkLi">
@@ -355,7 +355,7 @@ function App() {
                   <ul>
                     <li>
                       Ganwyd Richard Parks ym Mhontypridd ar 14 Awst 1977 i fam
-                      o Jamaica, Lee, a thad o Gymru.{" "}
+                      o Jamaica a thad o Gymru.{" "}
                     </li>
                     <li>
                       Yn yr ysgol, roedd Richard yn chwaraewr rygbi medrus, yn
@@ -369,7 +369,7 @@ function App() {
                     </li>
                     <li>
                       Cynrychiolodd Richard Gymru yng Ngwpan y Byd Rygbi Saith
-                      bob Ochr yn Ariannin yn 2001.{" "}
+                      bob Ochr yn Yr Ariannin yn 2001.{" "}
                     </li>
                     <li>Enillodd Richard pedwar cap i Gymru hefyd. </li>
                     <li>
@@ -411,6 +411,7 @@ function App() {
                 }
                 backText={`Through his incredible achievements – as a professional rugby player and as an extreme athlete – Richard Parks proved that despite setbacks and frustrations, we are all capable of turning our skills and abilities to other things.  Because of his never-give-up attitude and determination to succeed at something new, Richard is an inspirational figure to many – both in Wales and beyond.   `}
                 slugText={"The incredible athlete."}
+                welshSlugText={"Yr athletwr anhygoel."}
                 backWelshText={
                   "Trwy ei gyflawniadau anhygoel – fel chwaraewr rygbi proffesiynol ac fel athletwr eithafol – mae Richard Parks wedi profi, er gwaethaf anawsterau a rhwystredigaethau, ein bod i gyd yn gallu troi ein sgiliau a’n galluoedd i wneud pethau eraill.  Oherwydd yr agwedd hon o beidio byth â rhoi fyny a’r penderfynoldeb i lwyddo gyda rhywbeth newydd, mae Richard yn ysbrydoliaeth i gymaint o bobl – yng Nghymru a thu hwnt."
                 }
@@ -981,34 +982,6 @@ function App() {
                         athrawon)
                       </a>
                     </li>
-                    <li className="linkLi">
-                      <a
-                        href="https://jomec.co.uk/thecardiffian/2020/01/28/glenn-webbe-why-laughter-can-be-best-weapon-against-abuse/"
-                        className="resourceHref"
-                        target="_blank"
-                      >
-                        Glenn Webbe yn son am ddelio â hiliaeth{" "}
-                      </a>
-                    </li>
-                    <li className="linkLi">
-                      <a
-                        href="https://www.walesonline.co.uk/sport/rugby/rugby-news/how-life-turned-out-glen-15213382"
-                        className="resourceHref"
-                        target="_blank"
-                      >
-                        Erthygl Wales Online ar yrfa Glen Webbe{" "}
-                      </a>
-                    </li>
-                    <li className="linkLi">
-                      <a
-                        href="https://www.wru.wales/2019/05/webbe-recalls-historic-world-cup-treble/"
-                        className="resourceHref"
-                        target="_blank"
-                      >
-                        Erthygl am Webbe fel y chwaraewr du cyntaf yng Nghwpan
-                        Rygbi y Byd
-                      </a>
-                    </li>
                   </ul>
                 }
                 resource={twelveApi.slice(0, 1)}
@@ -1040,7 +1013,7 @@ function App() {
                     </li>
 
                     <li>
-                      She has written also TV shows and has made a film called
+                      She has also written TV shows and has made a film called
                       ‘The Golden Apple’
                     </li>
 
@@ -1077,80 +1050,73 @@ function App() {
                 welshText={
                   <ul>
                     <li>
-                      Ganwyd Glenn Webbe ar 21 Ionawr 1962 yng Nghaerdydd. Roedd
-                      ei rieni’n rhan o genhedlaeth Windrush.{" "}
+                      Mae Hanan Issa yn fardd, yn artist ac mae hi’n gwneud
+                      ffilmiau. Mae'n byw yng Nghaerdydd ac mae hi'n Gymraes o
+                      dras Irac.
                     </li>
 
                     <li>
-                      Mynychodd Ysgol Gyfun Glan Ely a chafodd gydnabyddiaeth am
-                      ei sgiliau rygbi, pêl-fasged ac athletau.{" "}
+                      Yn 2022, cafodd hi ei gwneud yn Fardd Cenedlaethol Cymru.
                     </li>
 
                     <li>
-                      Ar ôl ymuno â Chlwb Rygbi Caerdydd, cynghorwyd Glenn i
-                      adael am fod ‘clymbleidiau’ (cliques) yn nhîm Caerdydd.
-                      Felly, yn 18 oed, cytunodd Glenn i chwarae i Glwb Rygbi
-                      Pen-y-bont ar Ogwr. Chwaraeodd bedwar tymor ar ddeg i’r
-                      clwb.{" "}
+                      Hi yw Mwslim cyntaf i fod yn Fardd Cenedlaethol Cymru.
                     </li>
 
                     <li>
-                      Ar 12 Mehefin 1986, yn ystod taith Cymru o Dde’r Môr
-                      Tawel, chwaraeodd Glenn ei gêm ryngwladol gyntaf fel
-                      eilydd yn erbyn Tonga.{" "}
+                      Cyhoeddodd Hanan ei llyfr cyntaf o gerddi, My Body Can
+                      House Two Hearts, yn 2019.
                     </li>
 
                     <li>
-                      Chwaraeodd ei gêm gartref gyntaf ym muddugoliaeth y Pum
-                      Gwlad yn erbyn Lloegr ym 1987 ac o ganlyniad, cafodd ei
-                      ddewis ar gyfer y Cwpan y Byd Cyntaf yn Seland Newydd.{" "}
+                      Mae hi wedi ysgrifennu stori ar gyfer ‘The Mab’ – casgliad
+                      o storïau am y Mabinogi. Yn ogystal, mae hi'n ysgrifennu
+                      casgliad o storïau i blant o'r enw ‘And I Hear Dragons’.
                     </li>
                     <li>
-                      Yng nghwpan y byd, chwaraeodd Glenn yn erbyn Tonga a
-                      sgorio dau gais yn gynnar yn y gêm. Fodd bynnag, cafodd ei
-                      daro’n anymwybodol o ganlyniad i dacl uchel. Roedd Cymru
-                      eisoes wedi defnyddio eu dau eilydd, felly chwaraeodd
-                      Glenn ymlaen – yn reddfol yn ôl pob golwg. Sgoriodd
-                      drydydd cais gwych, gan redeg naw deg metr a churo nifer o
-                      amddiffynwyr mewn buddugoliaeth o 29-16 i Gymru.{" "}
+                      Hefyd, mae hi wedi ysgrifennu sioeau teledu ac wedi gwneud
+                      ffilm o'r enw ‘The Golden Apple’.
                     </li>
 
                     <li>
-                      Collodd Glenn Cymru’n dod yn drydydd am iddo gael ei anfon
-                      gartref ar sail diogelwch. Bellach, dywed nad yw’n gallu
-                      cofio’r gêm ar ôl y dacl – yn cynnwys ei drydydd cais.
-                      Oherwydd ei gampau yng Nghwpan y Byd 1987 a’i enw da am
-                      fod yn stoicaidd ac yn ddoniol, mae Glenn yn cael ei
-                      ddisgrifio’n aml fel “eicon du cyntaf Cymru”.{" "}
+                      Roedd Hanan yn clywed llawer o ieithoedd pan oedd hi'n
+                      ferch fach, gan gynnwys Arabeg oddi wrth ei theulu o Irac,
+                      a Chymraeg oddi wrth ei mam-gu a'i thad-cu.
                     </li>
 
                     <li>
-                      Dywed Glenn iddo weld ‘ychydig iawn o hiliaeth’ yn ystod
-                      ei yrfa rygbi. Ond yn ystod gêm yn erbyn y tîm lleol,
-                      Maesteg, dioddefodd Glenn gamdriniaeth hiliol gan nifer
-                      fach o wylwyr. Arweiniodd ei ymateb ato’n cael ei
-                      gymeradwyo’n wresog a’i ganmol gan y dorf.{" "}
+                      Mae hi'n cofio clywed ei mam-gu a'i thad-cu sy'n siarad
+                      Cymraeg yn darllen cerddi iddi pan oedd hi'n ferch fach.
+                    </li>
+                    <li>
+                      Mae hi'n dweud bod cael ei magu yng Nghymru wedi ei
+                      hysbrydoli hi i fod yn fardd.
+                    </li>
+                    <li>
+                      Wrth drafod Cymru, mae Hanan yn dweud bod “barddoniaeth yn
+                      esgyrn y wlad hon”, a'i bod hi eisiau annog pobl i feddwl
+                      yn fwy agored am beth yw ‘Cymreictod’.
+                    </li>
+                    <li>
+                      Yn anffodus, roedd Hanan yn drist ond heb ei synnu bod
+                      nifer bach o bobl wedi dweud pethau hiliol pan gafodd hi
+                      ei gwneud yn Fardd Cenedlaethol Cymru.
+                    </li>
+                    <li>
+                      Yn ystod ei chyfnod fel Bardd Cenedlaethol Cymru, mae
+                      Hanan yn gobeithio bydd menywod yn gweld ei llwyddiant ac
+                      yn gwybod y gallan nhw fod yn llwyddiannus hefyd.
                     </li>
                   </ul>
                 }
                 w
                 slugText={"The National Poet of Wales."}
                 welshSlugText={"Bardd Cenedlaethol Cymru."}
-                backLContent={
-                  <>
-                    <audio controls>
-                      <source src={hanan} type="audio/mpeg" />
-                    </audio>
-                  </>
-                }
+                backLContent={hanan}
                 overlayText="Hanan Isa talking about being a poet"
                 overlayTextCym={"Hanan Issa yn trafod bod yn fardd."}
                 bgImg={"ImgOverlayHanan"}
-                backLContentCym={
-                  <audio controls>
-                    <source src={hanan} type="audio/mpeg" />
-                  </audio>
-                }
+                backLContentCym={hanan}
               ></PersonPodcast>
             }
           ></Route>
@@ -1747,9 +1713,9 @@ function App() {
                     </ul>
                   </>
                 }
-                backText={`Dr Hans Lichtenstein lived a remarkable life.  Being Jewish in Hitler’s Germany, Hans faced violence and intimidation.  On moving to Britain on the Kindertransport, Hans worked hard and fulfilled his dream of becoming a doctor – but he never stopped having new interests. `}
+                backText={`Dr Hans Lichtenstein lived a remarkable life. Being Jewish in Hitler’s Germany, Hans faced violence and intimidation.  On moving to Britain on the Kindertransport, Hans worked hard and fulfilled his dream of becoming a doctor – but he never stopped having new interests. `}
                 slugText={"The Jewish boy who fled Germany."}
-                welshSlugText={"Yr Iddew a ddihangodd o'r Almaen."}
+                welshSlugText={"Y bachgen Iddewig a ddihangodd o'r Almaen."}
                 backWelshText={
                   "Cafodd Dr Hans Lichtenstein fywyd rhyfeddol. Yn Iddew yn yr Almaen Natsïaidd, wynebodd Hans drais a braw. Ar ôl symud i Brydain ar y Kindertransport, gweithiodd Hans yn galed a chyflawni ei freuddwyd o fod yn feddyg – ond ni wnaeth fyth rhoi’r gorau i gael diddordebau newydd. "
                 }
@@ -2032,7 +1998,7 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Sut lwyddodd Lenn Lawrence achub Abertawe rhag boddi{" "}
+                        Sut lwyddodd Lenn Lawrence i achub Abertawe rhag boddi{" "}
                       </a>
                     </li>
                     <li className="linkLi">
@@ -2089,8 +2055,8 @@ function App() {
                         Pontdrefen bridge and many more sites.
                       </li>
                       <li>
-                        He was first black carpenter and foreman for the British
-                        Steel Corporation in Neath Port Talbot.
+                        He was the first black carpenter and foreman for the
+                        British Steel Corporation in Neath Port Talbot.
                       </li>
                       <li>
                         Being an ethnic minority in 1962 in Wales had it's
@@ -2408,6 +2374,33 @@ function App() {
                         Chinese in Wales website
                       </a>
                     </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/whats-on/whats-on-news/you-can-celebrate-chinese-new-25985794"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Chinese New Year in Wales{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=7YA9fwm4s8M"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Chinese New Year: BBC Teach{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=5K3Tc5uN6ac"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        An interview with Font Sui (contains emotional story){" "}
+                      </a>
+                    </li>
                   </ul>
                 }
                 linksCym={
@@ -2428,6 +2421,33 @@ function App() {
                         target="_blank"
                       >
                         Gwefan 'Chinese in Wales'{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.walesonline.co.uk/whats-on/whats-on-news/you-can-celebrate-chinese-new-25985794"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Y Flwyddyn Newydd Tseiniaidd yng Nghymru
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=7YA9fwm4s8M"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Y Flwyddyn Newydd Tseiniaidd: BBC Teach
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=5K3Tc5uN6ac"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Cyfweliad gyda Fong Sui (cynnwys emosiynol)
                       </a>
                     </li>
                   </ul>
@@ -2462,7 +2482,7 @@ function App() {
                       </li>
                       <li>
                         Many of those who came opened and worked in Chinese
-                        restaurants whilst others opened their own launderettes.
+                        restaurants whilst others opened their own laundries.
                       </li>
                       <li>
                         Fong Sui came to Wales from her home village in China
@@ -2839,7 +2859,7 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Blog gan Llywodraeth Cymru am y bataliwn{" "}
+                        Blog gan Lywodraeth Cymru am y bataliwn{" "}
                       </a>
                     </li>
                     <li className="linkLi">
@@ -2866,7 +2886,7 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Can a ysgrifennnwyd I gofio am y 320fed bataliwn{" "}
+                        Can a ysgrifennnwyd i gofio am y 320fed bataliwn{" "}
                       </a>
                     </li>
                   </ul>
@@ -3079,8 +3099,8 @@ function App() {
                       </li>
                       <li>
                         She continued to sing in clubs in the evenings and
-                        became well-known after in a Christmas show in London in
-                        1955.
+                        became well-known after performing in a Christmas show
+                        in London in 1955.
                       </li>
                       <li>
                         In 1959, her song 'As I Love You' reached number 1 in in
@@ -3387,10 +3407,9 @@ function App() {
                       live in Wales.{" "}
                     </li>
                     <li>
-                      They often encountered found that people treated them
-                      differently and were unkind to them but the Windrush
-                      Generation made a valuable and lasting contribution to
-                      life in Wales.{" "}
+                      They often found that people treated them differently and
+                      were unkind to them but the Windrush Generation made a
+                      valuable and lasting contribution to life in Wales.{" "}
                     </li>
                     <li>
                       Caribbean migrants have become a vital part of Welsh
@@ -3810,7 +3829,7 @@ function App() {
                       Colin Jackson was born on 18 February 1967, in Cardiff.{" "}
                     </li>
                     <li>
-                      Colin was a gifted sportsman, whose was very talented in
+                      Colin is a gifted sportsman, who is very talented in a
                       number of sports. He played football and cricket for the
                       county as well as rugby and basketball for his school.
                     </li>
@@ -4172,6 +4191,15 @@ function App() {
                         David Harewood (actor) talking about Paul Robeson{" "}
                       </a>
                     </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/embed/9_QGfzeiNb0"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        The Manic Street Preachers song - ‘Let Robeson Sing’
+                      </a>
+                    </li>
                   </ul>
                 }
                 linksCym={
@@ -4201,6 +4229,15 @@ function App() {
                         target="_blank"
                       >
                         David Harewood (actor) yn trafod Paul Robeson{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/embed/9_QGfzeiNb0"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Cân y Manic Street Preachers - ‘Let Robeson Sing’
                       </a>
                     </li>
                   </ul>
@@ -4571,7 +4608,7 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        'Imagine' by Alex Wharton. A triubute to Clive Sullivan{" "}
+                        'Imagine' by Alex Wharton. A tribute to Clive Sullivan{" "}
                       </a>
                     </li>
                     <li className="linkLi">
@@ -4695,7 +4732,7 @@ function App() {
                     <li>In 1967, Clive made his debut for Great Britain.</li>
                     <li>
                       In 1972, Clive was made the captain of GB team and in the
-                      World Cup that year they become world champions!{" "}
+                      World Cup that year they became world champions!{" "}
                     </li>
                     <li>
                       Scoring a try in GB’s 4 games, Sullivan scored a memorable
@@ -4830,7 +4867,7 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Biography on Welsh government webite{" "}
+                        Biography on Cadw Website{" "}
                       </a>
                     </li>
                     <li className="linkLi">
@@ -4898,7 +4935,7 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Bywgrafiiad o John Ystymullyn{" "}
+                        Bywgraffiad o John Ystymullyn{" "}
                       </a>
                     </li>
                     <li className="linkLi">
@@ -4907,7 +4944,7 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        ''Y Garddwr' gan Alex Wharton. Er cof am John Ystumllyn
+                        'Y Garddwr' gan Alex Wharton. Er cof am John Ystumllyn
                       </a>
                     </li>
                     <li className="linkLi">
@@ -4935,7 +4972,7 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Erthygl newyddion lleol yn coffau bywyd John Ystumllyn{" "}
+                        Erthygl newyddion lleol yn coffáu bywyd John Ystumllyn{" "}
                       </a>
                     </li>
                     <li className="linkLi">
@@ -4980,13 +5017,13 @@ function App() {
                     </li>
 
                     <li>
-                      This may mean that he came from the West Africa or
-                      the West Indies.
+                      This may mean that he came from the West Africa or the
+                      West Indies.
                     </li>
 
                     <li>
                       Once in Wales, John came to live with the Wynn family as a
-                      servant at their Ystumllyn estate in Criccieth.
+                      servant at their Ystumllyn estate in Criccieth.
                     </li>
 
                     <li>
@@ -5035,7 +5072,7 @@ function App() {
                       near where John was buried in St Cynhaearn's Church.
                     </li>
                     <li>
-                      Recently, Zehra Zaidi, the founder of We Too Built
+                      Recently, Zehra Zaidi, the founder of We Too Built
                       Britain, approached the Chelsea flower show winner
                       Harkness Roses with the idea of creating a rose named
                       after John Ystumllyn. The beautiful rose is yellow,
@@ -5043,7 +5080,7 @@ function App() {
                     </li>
                     <li>
                       His grave at St Cynhaearn's Church, Ynyscynhaearn, was
-                      made a Grade II listed building  in 1999.{" "}
+                      made a Grade II listed building in 1999.{" "}
                     </li>
                     <li>
                       It was listed "as of special interest in commemorating a
@@ -5144,7 +5181,7 @@ function App() {
 
                     <li>
                       Gwnaeth John farw yn 1786; gwnaeth Margaret, ei wraig, fyw
-                      am dros bedwar deg o flynyddoedd.
+                      am dros bedwar deg o flynyddoedd arall.
                     </li>
 
                     <li>
@@ -5299,7 +5336,7 @@ function App() {
                 }
                 indivName={"Tiger Bay"}
                 indivNameCym={"Tiger Bay"}
-                proposedResource={"Factfile with discussion. NOT DEVELOPED YET"}
+                resourceOverlay={"/"}
                 slugText={"The bustling multi-ethnic community in Cardiff Bay."}
                 welshSlugText={"Y gymuned aml-ddiwylliannol yng Nghaerdydd."}
                 resource={nineApi.slice(9, 10)}
@@ -5820,11 +5857,12 @@ function App() {
                 text={
                   <ul>
                     <li>
-                      Isaac Blake was born in 1979 in Bromsgrove but grew up on
-                      Cardiff's Shirenewton site - a council-run collection of
-                      55 individual pitches which has about 300 residents.
+                      Isaac Blake is a proud gay Gypsy from Wales. He was born
+                      in Bromsgrove in 1959 and grew up on a number of Gypsy and
+                      Traveller caravan sites including Cardiff's Shirenewton
+                      site - a council-run site. It has 55 individual pitches
+                      which has about 300 residents.
                     </li>
-
                     <li>
                       Those living on the site were often verbally abused and
                       stereotypically judged. “Gypsy kids”, Isaac remembers,
@@ -5851,11 +5889,14 @@ function App() {
                       and teaching with the Romani community.
                     </li>
                     <li>
+                      Isaac has worked hard in supporting LGBTQI Romani and
+                      Traveller rights in UK, Europe and beyond.
+                    </li>
+                    <li>
                       Gypsies were once a regular sight in Wales, they travelled
                       from community to community and provided an important
                       source of labour.
                     </li>
-
                     <li>
                       They also shared their artistic talent, such as musical
                       traditions, which enriched the culture of Wales.
@@ -5884,10 +5925,11 @@ function App() {
                 welshText={
                   <ul>
                     <li>
-                      Cafodd Isaac Blake ei eni yn Bromsgrove yn 1979 ond cafodd
-                      ei fagu ar safle Shirenewton yng Nghaerdydd - safle wedi'i
-                      redeg gan y cyngor. Mae 55 llain neu le unigol. Mae tua
-                      300 o bobl yn byw yno.
+                      Mae Isaac Blake yn Sipsi hoyw balch o Gymru. Ganed ef yn
+                      Bromsgrove yn 1959 a cafodd ei fagu ar nifer o safleoedd
+                      carafan Sipsi a Theithwyr gan gynnwys safle Shirenewton
+                      yng Nghaerdydd - safle wedi'i redeg gan y cyngor. Mae 55
+                      llain neu le unigol. Mae tua 300 o bobl yn byw yno.
                     </li>
                     <li>
                       Roedd rhai pobl yn galw enwau ar y Romani a oedd yn byw ar
@@ -5913,6 +5955,10 @@ function App() {
                       Mae Isaac Blake yn dilyn etifeddiaeth ddiwylliannol
                       gyfoethog y gymuned Romani, sy'n cynnwys rhannu ei
                       wybodaeth â'r gymuned Romani.
+                    </li>
+                    <li>
+                      Mae Isaac wedi gweithio'n galed yn cefnogi hawliau LGBTQI
+                      Romani a Theithwyr yn y DU, Ewrop a thu hwnt.
                     </li>
                     <li>
                       Roedd sipsiwn i'w gweld yn rheolaidd yng Nghymru ers
@@ -6003,7 +6049,7 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        BBC artilce on life and death of Patti Flynn{" "}
+                        BBC article on life and death of Patti Flynn{" "}
                       </a>
                     </li>
                   </ul>
@@ -7002,9 +7048,11 @@ function App() {
           <Route
             path="/12to16yo/1919RaceRiots"
             element={
-              <Person
+              <PersonYTVid
                 welshSlugText={"Y terfysgoedd a gododd gywilydd ar Gymru. "}
                 pscc={"/12to16yo"}
+                youtubeVidCym="https://www.youtube.com/embed/4APrn1JpUI8"
+                youtubeVid="https://www.youtube.com/embed/Un8fkdzGsKw"
                 psNum={"4"}
                 overlayText=""
                 links={
@@ -7069,7 +7117,7 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        People voicing their opinions on the incidient trying to
+                        People voicing their opinions on the incident trying to
                         conclude what actually happened{" "}
                       </a>
                     </li>
@@ -7369,7 +7417,7 @@ function App() {
                     </li>
                   </ul>
                 }
-              ></Person>
+              ></PersonYTVid>
             }
           ></Route>
           <Route

@@ -144,6 +144,7 @@
 .personH2 {
   margin: 0;
   font-family: sassoon;
+  font-size: larger;
 }
 .imgBox {
   display: flex;
@@ -668,5 +669,11 @@
   }
   .personShortSlug {
     height: auto;
+  }
+}
+
+@media only screen and (max-width: 850px) and (max-height: 590px) {
+  .personH2 {
+    font-size: medium;
   }
 }
