@@ -27,6 +27,7 @@ const Accessibility = () => {
               Gwasgwch 1 - 4 i newid rhwng y tudalennau blaen Camau Cynnydd.
             </li>
             <li>Gwasgwch L er mwyn newid yr iaith rhwng Cymraeg a Saesneg.</li>
+            <li>Gwasgwch H i ddychwelyd i'r Hafan.</li>
             <li>Gwasgwch M i agor y ddewislen.</li>
             <li>Yna gellir symud drwyddi gan ddefnyddio'r bysell Tab.</li>
           </>
@@ -34,6 +35,7 @@ const Accessibility = () => {
           <>
             <li>Press 1 - 4 to toggle between Progression Step Homepages.</li>
             <li>Press L to switch between English and Welsh.</li>
+            <li>Press H to return to the Homepage.</li>
             <li>
               Press F to flip between the front and back of an individual card.
             </li>

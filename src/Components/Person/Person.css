@@ -7,6 +7,40 @@
   width: 80vw;
   font-family: sassoon;
 }
+
+.discPoints {
+  /* display: flex; */
+  font-size: larger;
+  grid-area: 2 / 1 / 3 / 3;
+  width: 90%;
+  /* text-align: center; */
+  height: 100%;
+  overflow: scroll;
+}
+
+.discBPs {
+  margin: 10px;
+}
+
+.discPoints::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.discPoints::-webkit-scrollbar {
+  width: 5px;
+}
+
+.discPoints::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #258ea6;
+}
+
+.discH1 {
+  margin-top: 0;
+  font-weight: bold;
+
+  text-align: center;
+}
 .resourceText {
   margin: 0;
   padding-top: 3px;
@@ -150,6 +184,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 30vw;
 }
 .personInfo {
   background-color: white;
@@ -165,8 +200,9 @@
 }
 
 .personInfoBack {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   background-color: white;
   font-family: sassoon;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -247,6 +283,8 @@
   flex-direction: column;
   align-items: center;
   font-family: sassoon;
+  /* border: 1px solid black; */
+  width: 30vw;
 }
 .personText {
   display: flex;
@@ -310,37 +348,29 @@
   }
 }
 .backLeft {
-  width: 50%;
-  height: 100%;
+  /* width: 70%; */
+  height: 40vh;
+  grid-area: 1 / 1 / 2 / 2;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: sassoon;
-  flex-direction: column;
-  border-radius: 15px;
-}
-
-.backLeftYTVid {
-  width: 50%;
-  height: 60%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-family: sassoon;
-  flex-direction: column;
-  border-radius: 15px;
-}
-
-.backLeft {
-  width: 50%;
-  height: 50%;
-  display: flex;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   font-family: sassoon;
   flex-direction: column;
   border-radius: 15px;
   overflow: hidden;
+}
+
+.backLeftYTVid {
+  width: 37vw;
+  height: 45vh;
+  /* height: 40vh; */
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: sassoon;
+  flex-direction: column;
+  border-radius: 15px;
 }
 
 .quizButton {
@@ -440,8 +470,9 @@
   align-items: center;
 }
 .backRight {
-  width: 45%;
+  width: 100%;
   /* height: 100%; */
+  grid-area: 1 / 2 / 2 / 3;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;

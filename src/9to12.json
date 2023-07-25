@@ -85,7 +85,7 @@
         "nameCym" : "Tiger Bay",
         "slug": "The bustling multi-ethnic community in Cardiff Bay.",
         "welshSlug": "Y gymuned aml-ddiwylliannol yng Nghaerdydd.",
-        "image": "https://dev.addysgop.co.uk/pdfs/tigerBay.png",
+        "image": "https://www.peoplescollection.wales/sites/default/files/images/2014/February/ah_50_65.jpg?itok=MYqAmr5U",
         "url": "/9to12yo/TigerBay",
         "keywords": "Tiger bay cardiff multi ethnic shirley bassey betty campbell community",
         "resources": [
@@ -99,7 +99,7 @@
         "nameCym" : "Vernester Cyril OBE",
         "slug": "The nurse from the Caribbean.",
         "welshSlug": "Y nyrs o'r Caribî.",
-        "image": "https://www.peoplescollection.wales/sites/default/files/images/2020/October/0Y3A9739%20%281%29.JPG?itok=MCJWHC5s",
+        "image": "https://www.peoplescollection.wales/sites/default/files/images/2020/October/IMG_1162.JPG?itok=n0H1slat",
         "url": "/9to12yo/VernesterCyril",
         "keywords": "Vernester cyril nurse caribbean midwife racism equality obe ",
         "resources": [
@@ -112,7 +112,7 @@
         "nameCym" : "Patti Flynn",
         "slug": "Jazz singer, author, model and social activist.",
         "welshSlug": "Cantores, actores, model ac ymgyrchydd.",
-        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Patti_Flynn.jpg/220px-Patti_Flynn.jpg",
+        "image": "https://images.ctfassets.net/pjshm78m9jt4/3mDdfiYDrRayUMrNkUSsSe/5bc6fecd4f8eac385551699dbe603567/b923a966-a573-4e8e-a9d5-90e398f2d2bf.jpeg?fm=avif&fit=fill&w=830&h=467&q=80",
         "url": "/9to12yo/PattiFlynn",
         "keywords": "Patti Flynn",
         "resources": [
@@ -134,8 +134,8 @@
     },
     {
         "id" : 14,
-        "name" : "Joe Calzaghe  ",
-        "nameCym" : "Joe Calzaghe  ",
+        "name" : "Joe Calzaghe",
+        "nameCym" : "Joe Calzaghe",
         "slug": "The undefeated boxing world champion.",
         "welshSlug": "Pencampwr bocsio diguro'r byd.",
         "image":   "https://upload.wikimedia.org/wikipedia/commons/a/a5/JoeCalzaghe-July2007.jpg",

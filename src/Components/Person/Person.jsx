@@ -11,6 +11,8 @@ import { Link } from "react-router-dom";
 const Person = ({
   text,
   welshText,
+  disc,
+  discCym,
   linkResource,
   psNum,
   indivName,
@@ -175,7 +177,10 @@ const Person = ({
               <div className="personInfoBack" id="myDIV2">
                 <div className="backLeft">
                   <div className="resourceBanner">
-                    <p className="resourceText">RESOURCE & TASK</p>
+                    <p className="resourceText">
+                      {" "}
+                      {lang !== true ? "TASK" : "TASG"}
+                    </p>
                   </div>{" "}
                   <div
                     className="backLText"
@@ -204,6 +209,15 @@ const Person = ({
                     {lang !== true ? "Online Resources:" : "Adnoddau Ar-lein:"}
                   </p>
                   {lang !== true ? links : linksCym}
+                </div>
+                <div className="discPoints">
+                  {" "}
+                  {lang !== true ? (
+                    <p className="discH1">DISCUSSION POINTS</p>
+                  ) : (
+                    <p className="discH1">PWYNTIAU TRAFOD</p>
+                  )}
+                  {lang !== true ? disc : discCym}
                 </div>
               </div>
             </div>

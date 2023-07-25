@@ -12,16 +12,13 @@ const PersonYTVid = ({
   text,
   welshText,
   indivName,
+  disc,
+  discCym,
   indivPic,
-  overlayText,
-  resourceOverlayCym,
   pscc,
   psNum,
-  backText,
-  backWelshText,
   slugText,
   welshSlugText,
-  resourceOverlay,
   dateOfBirth,
   youtubeVid,
   youtubeVidCym,
@@ -30,9 +27,6 @@ const PersonYTVid = ({
   backLContentCym,
   indivNameCym,
   links,
-  quizButtonText,
-  buttonLink,
-  linkQuiz,
 }) => {
   const { lang, setLang } = useContext(LanguageContext);
   const [slide, setSlide] = useState(0);
@@ -195,10 +189,10 @@ const PersonYTVid = ({
                       {lang !== true ? backLContent : backLContentCym}
                     </p>
                   </div>
-                  <div className="overlayUnderText">
+                  {/* <div className="overlayUnderText">
                     {" "}
                     {lang !== true ? resourceOverlay : resourceOverlayCym}
-                  </div>
+                  </div> */}
                 </div>
                 <div className="backRight">
                   <p className="backRightP">
@@ -206,6 +200,15 @@ const PersonYTVid = ({
                     {lang !== true ? "Online Resources:" : "Adnoddau Ar-lein:"}
                   </p>
                   {lang !== true ? links : linksCym}
+                </div>
+                <div className="discPoints">
+                  {" "}
+                  {lang !== true ? (
+                    <p className="discH1">DISCUSSION POINTS</p>
+                  ) : (
+                    <p className="discH1">PWYNTIAU TRAFOD</p>
+                  )}
+                  {lang !== true ? disc : discCym}
                 </div>
               </div>
             </div>

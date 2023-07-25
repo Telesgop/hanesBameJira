@@ -73,9 +73,9 @@
   /* font-family: "Mona Sans", sans-serif; */
   font-family: "Comic Sans MS", sans-serif;
 
-  margin: 3vh;
+  margin-top: 1vh;
   margin-left: 5vh;
-  margin-bottom: 0;
+  margin-bottom: 1vh;
   font-size: x-large !important;
 }
 

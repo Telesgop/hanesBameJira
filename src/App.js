@@ -234,6 +234,43 @@ function App() {
               <PersonYTVid
                 pscc={"/6to9yo"}
                 psNum={"2"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Richard Parks always carries a Welsh flag with him on his
+                      extreme adventures. Why do you think he does this?{" "}
+                    </li>
+                    <li className="discBPs">
+                      There were many times on Richard Parks’s adventures that
+                      he wanted to quit. What advice could you give to people
+                      who are tempted to quit at something that’s important to
+                      them?{" "}
+                    </li>
+                    <li className="discBPs">
+                      Richard Parks wants to leave a better world for his son.
+                      What can you do to try and make a better world?{" "}
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Mae Richard Parks yn cario baner Cymru gyda fe bob amser
+                      pan mae'n mynd ar antur eithafol. Pam mae'n gwneud hyn,
+                      tybed?
+                    </li>
+                    <li className="discBPs">
+                      Roedd Richard Parks eisiau rhoi'r gorau iddi sawl gwaith
+                      yn ystod ei anturiaethau. Pa gyngor fyddech chi'n ei roi i
+                      bobl sy'n teimlo fel rhoi'r gorau i rywbeth sy'n bwysig
+                      iddyn nhw?
+                    </li>
+                    <li className="discBPs">
+                      Mae Richard Parks eisiau gadael byd gwell i'w fab. Beth
+                      allwch chi ei wneud i geisio gwneud byd gwell?
+                    </li>
+                  </ol>
+                }
                 backLContent={
                   "The experiences of another adventurer, Gerallt Wyn Jones."
                 }
@@ -460,7 +497,7 @@ function App() {
                   </ul>
                 }
                 indivPic={
-                  "https://www.richardparks.co.uk/files/2314/1140/2688/antartic-30.jpg"
+                  "https://www.richardparks.co.uk/files/7314/0913/3387/098.JPG"
                 }
                 backText={`Through his incredible achievements – as a professional rugby player and as an extreme athlete – Richard Parks proved that despite setbacks and frustrations, we are all capable of turning our skills and abilities to other things.  Because of his never-give-up attitude and determination to succeed at something new, Richard is an inspirational figure to many – both in Wales and beyond.   `}
                 slugText={"The incredible athlete."}
@@ -481,8 +518,8 @@ function App() {
             element={
               <AnimCard
                 indivName={"Sidoli's Ice Cream"}
-                sourceVid={"https://www.youtube.com/embed/19MmCWS2s6U"}
-                sourceVidCym={"https://www.youtube.com/embed/HVU7HVg8-h0"}
+                sourceVid={"https://www.youtube.com/embed/oWKjzWB-H1s"}
+                sourceVidCym={"https://www.youtube.com/embed/3vW48iyHgNs"}
               />
             }
           ></Route>
@@ -503,8 +540,8 @@ function App() {
             element={
               <AnimCard
                 indivName={"John Ystumllyn"}
-                sourceVid="https://www.youtube.com/embed/2llyk3-Lffk"
-                sourceVidCym={"https://www.youtube.com/embed/1LMGniAE0Go"}
+                sourceVid="https://www.youtube.com/embed/xWo27Q3DwoE"
+                sourceVidCym={"https://www.youtube.com/embed/nS5KTYBguxA"}
               />
             }
           ></Route>
@@ -513,8 +550,8 @@ function App() {
             element={
               <AnimCard
                 indivName={"Abram Wood"}
-                sourceVid="https://www.youtube.com/embed/KA_5dmVTopI"
-                sourceVidCym={"https://www.youtube.com/embed/q_8NtoaUIgY"}
+                sourceVid="https://www.youtube.com/embed/7cKacAlPLJg"
+                sourceVidCym={"https://www.youtube.com/embed/9QozuCSgAz8"}
               />
             }
           ></Route>
@@ -523,8 +560,8 @@ function App() {
             element={
               <AnimCard
                 indivName={"Betty Campbell"}
-                sourceVid="https://www.youtube.com/embed/gikb903GUqM"
-                sourceVidCym={"https://www.youtube.com/embed/UEcG_eEXRts"}
+                sourceVid={"https://www.youtube.com/embed/Y457bKccqaQ"}
+                sourceVidCym={"https://www.youtube.com/embed/q_S5lsx63bQ"}
               />
             }
           ></Route>
@@ -533,8 +570,8 @@ function App() {
             element={
               <AnimCard
                 indivName={"Dr Ganesh Subrahamanyan"}
-                sourceVid="https://www.youtube.com/embed/qlN9J-DsxYM"
-                sourceVidCym={"https://www.youtube.com/embed/2OOy40pWRPA"}
+                sourceVid="https://www.youtube.com/embed/pP0h3Dh66Ao"
+                sourceVidCym={"https://www.youtube.com/embed/4i7nNKbBBCU"}
               />
             }
           ></Route>
@@ -543,8 +580,8 @@ function App() {
             element={
               <AnimCard
                 indivName={"Vernester Cyril"}
-                sourceVid="https://www.youtube.com/embed/NEu7ctn7-8g"
-                sourceVidCym={"https://www.youtube.com/embed/0m0Z_vGwVgA"}
+                sourceVid="https://www.youtube.com/embed/_ipAfB7s0lo"
+                sourceVidCym={"https://www.youtube.com/embed/867yO16TAVY"}
               />
             }
           ></Route>
@@ -554,6 +591,43 @@ function App() {
             element={
               <Person
                 pscc={"/12to16yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      What skills and qualities do you think hurdlers and rugby
+                      players share?
+                    </li>
+                    <li className="discBPs">
+                      When racist graffiti was written in Walkers school, it was
+                      painted over and no mention made of it. How best do you
+                      think schools should tackle racist incidents today?
+                    </li>
+                    <li className="discBPs">
+                      The incident spurred Walker on to be the best he could.
+                      Can you think of any situation where you have been spurred
+                      on by a negative experience?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Pa sgiliau a nodweddion sy'n gyffredin rhwng gwibwyr dros
+                      y clwydi a chwaraewyr rygbi?
+                    </li>
+                    <li className="discBPs">
+                      Pan gafodd graffiti hiliol ei ysgrifennu yn ysgol Nigel
+                      Walker, peintiwyd drosto a soniodd neb am y peth. Beth
+                      yw'r ffordd orau i ysgolion ymdrin â digwyddiadau hiliol
+                      heddiw, yn eich barn chi?
+                    </li>
+                    <li className="discBPs">
+                      Roedd y digwyddiad yn sbardun i Walker wneud ei orau glas.
+                      Allwch chi feddwl am unrhyw sefyllfa lle mae profiad
+                      negyddol wedi eich sbarduno chi i wneud rhywbeth?
+                    </li>
+                  </ol>
+                }
                 psNum={"4"}
                 welshSlugText="Athletwr, chwaraewr rygbi a phrif weithredwr. "
                 backcardImg={nige}
@@ -774,6 +848,47 @@ function App() {
             element={
               <PersonPodcast
                 pscc={"/12to16yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Webb left Cardiff RFC for Bridgend because of trouble with
+                      ‘cliques’ at Cardiff. Why do you think people form
+                      cliques? What is the best way of dealing with them?
+                    </li>
+                    <li className="discBPs">
+                      Concussion in rugby is a common injury that can have a
+                      long term impact on players. What should be done to make
+                      sure the players health is protected in the game?
+                    </li>
+                    <li className="discBPs">
+                      Webbe often used humour to deal with racist abuse. Do you
+                      think this is an effective method? What other actions
+                      could a player take to deal with racism they experience?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Gadawodd Webbe Glwb Rygbi Caerdydd a mynd i Ben-y-bont
+                      oherwydd bod trafferth gyda ‘chliciau’ yng Nghaerdydd. Pam
+                      mae pobl yn ffurfio cliciau, yn eich barn chi? Beth yw'r
+                      ffordd orau o ymdrin â nhw?
+                    </li>
+                    <li className="discBPs">
+                      Mae cyfergyd (concussion) mewn rygbi yn anaf cyffredin
+                      sy'n gallu cael effaith hirdymor ar chwaraewyr. Beth
+                      ddylai gael ei wneud er mwyn sicrhau bod iechyd y
+                      chwaraewyr yn cael ei ddiogelu yn y gêm?
+                    </li>
+                    <li className="discBPs">
+                      Roedd Webbe yn aml yn defnyddio hiwmor er mwyn ymdrin â
+                      cham-drin hiliol. Ydych chi'n meddwl bod hwn yn ddull
+                      effeithiol? Beth arall allai chwaraewr ei wneud er mwyn
+                      ymdrin â'r hiliaeth y mae'n ei wynebu?
+                    </li>
+                  </ol>
+                }
                 psNum={"4"}
                 links={
                   <ul>
@@ -982,6 +1097,47 @@ function App() {
             element={
               <PersonPodcast
                 pscc={"/6to9yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Why do you think some people made racist comments when
+                      Hanan Issa was made National Poet of Wales?
+                    </li>
+                    <li className="discBPs">
+                      Hanan Issa grew up listening to many languages. Who in
+                      your class can speak more than one language? Why is being
+                      able to understand and speak another language a good
+                      thing?
+                    </li>
+                    <li className="discBPs">
+                      Hanan Issa thinks that belonging to a place should be
+                      based on how much you care about a place. What places do
+                      you care most about? Is it a good way to decide where you
+                      belong?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Pam rydych chi'n meddwl gwnaeth rhai pobl sylwadau hiliol
+                      pan gafodd Hanan Issa ei gwneud yn Fardd Cenedlaethol
+                      Cymru?
+                    </li>
+                    <li className="discBPs">
+                      Roedd Hanan Issa yn arfer clywed llawer o ieithoedd pan
+                      oedd hi'n ferch fach. Pwy yn eich dosbarth chi sy'n gallu
+                      siarad mwy nag un iaith? Pam mae gallu deall a siarad
+                      iaith arall yn beth da?
+                    </li>
+                    <li className="discBPs">
+                      Mae Hanan Issa yn meddwl mai'r lleoedd sy’n bwysig i chi
+                      yw'r rhai rydych chi'n perthyn iddyn nhw. Pa leoedd sydd
+                      fwyaf pwysig i chi? Ydy hon yn ffordd dda er mwyn
+                      penderfynu lle rydych chi'n perthyn iddo?
+                    </li>
+                  </ol>
+                }
                 psNum={"2"}
                 links={
                   <ul>
@@ -1040,7 +1196,7 @@ function App() {
                 resource={twelveApi.slice(0, 1)}
                 indivName={"Hanan Issa"}
                 indivNameCym={"Hanan Issa"}
-                indivPic={"https://www.dev.addysgop.co.uk/pdfs/hanan.png"}
+                indivPic={"https://www.dev.addysgop.co.uk/pdfs/hananCopy2.png"}
                 text={
                   <ul>
                     <li>
@@ -1178,6 +1334,47 @@ function App() {
             element={
               <Person
                 pscc={"/9to12yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Richard Pennant owned a slave plantation in Jamaica but
+                      had never visited it himself. Do you think he may have
+                      been more willing to see the end of slavery if he had seen
+                      enslaved people himself?
+                    </li>
+                    <li className="discBPs">
+                      Richard Pennant said - “I do not wish the cattle nor the
+                      negroes to be overworked”. Does this mean that he was a
+                      kind man?
+                    </li>
+                    <li className="discBPs">
+                      Richard Pennant spent a lot of his money improving North
+                      Wales, building roads, schools etc. Does this help to
+                      improve his reputation in history?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Roedd Richard Pennant yn berchen ar blanhigfa siwgr yn
+                      Jamaica ond doedd e erioed wedi ymweld â’r blanhigfa ei
+                      hunan. Ydych chi'n meddwl efallai y byddai Richard Pennant
+                      wedi bod yn fwy parod i weld caethwasiaeth yn gorffen
+                      petai ef ei hun wedi mynd i weld pobl wedi'u caethiwo?
+                    </li>
+                    <li className="discBPs">
+                      Dywedodd Richard Pennant – “Dydw i ddim eisiau i'r
+                      gwartheg na'r bobl ddu gael eu gorweithio”. Ydy hyn yn
+                      golygu ei fod yn ddyn caredig?
+                    </li>
+                    <li className="discBPs">
+                      Gwariodd Richard Pennant lawer o'i arian yn gwella Gogledd
+                      Cymru, yn adeiladu ffyrdd, ysgolion ac ati. A yw hyn yn
+                      helpu i wella ei enw da mewn hanes?
+                    </li>
+                  </ol>
+                }
                 psNum={"3"}
                 resourceOverlay={
                   "Should you visit Penrhyn Castle? Argument for and against."
@@ -1306,7 +1503,7 @@ function App() {
                 linkResource={"./../Resources/PenrhynCastle"}
                 resource={nineApi.slice(2, 1)}
                 indivPic={
-                  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Penrhyn_Castle_Wales_015.jpg/640px-Penrhyn_Castle_Wales_015.jpg"
+                  "https://upload.wikimedia.org/wikipedia/commons/4/48/Penrhyn_Castle_-_geograph.org.uk_-_3718225.jpg?20220822155557"
                 }
                 text={
                   <ul>
@@ -1456,6 +1653,47 @@ function App() {
             element={
               <Person
                 pscc={"/9to12yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Hans Lichenstein left Germany on one of the last
+                      Kindertransports. What do you think his parents may have
+                      talked about when deciding whether to send their son on
+                      it?
+                    </li>
+                    <li className="discBPs">
+                      Children on the Kindertransport often arrived alone and
+                      with no family. What do you think their foster families
+                      could do to make the experience easier for the children?
+                    </li>
+                    <li className="discBPs">
+                      What similarities and differences could there be with
+                      children of the Kindertransport and refugee children
+                      arriving in Wales today?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Gadawodd Hans Lichenstein yr Almaen ar un o'r
+                      Kindertransports diwethaf. Yn eich barn chi, pa fath o
+                      bethau roedd ei rieni'n eu trafod wrth benderfynu a ddylen
+                      nhw anfon eu mab arno?
+                    </li>
+                    <li className="discBPs">
+                      Roedd y plant ar y Kindertransport yn aml yn cyrraedd ar
+                      eu pennau eu hunain a heb deulu. Beth allai eu teuluoedd
+                      maeth wneud, yn eich barn chi, fel bod y profiad yn haws
+                      i'r plant?
+                    </li>
+                    <li className="discBPs">
+                      Beth allai fod yn debyg ac yn wahanol am brofiad plant y
+                      Kindertransport a phrofiad plant sy'n ffoaduriaid sy'n
+                      cyrraedd Cymru heddiw?
+                    </li>
+                  </ol>
+                }
                 psNum={"3"}
                 backcardImg={hans}
                 bgcolor={"#A2D6F9"}
@@ -1780,6 +2018,42 @@ function App() {
             element={
               <PersonYTVid
                 pscc={"/6to9yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      How does the Welsh Dragon symbol (like the one on the
+                      synagogue) make people feel about Wales?
+                    </li>
+                    <li className="discBPs">
+                      Why would the synagogue have been important to Jewish
+                      people in Merthyr?
+                    </li>
+                    <li className="discBPs">
+                      The synagogue is in ruins, but lots of money is being
+                      spent on it to make it usable again. Why do you think it
+                      is important to look after historical buildings like the
+                      synagogue?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Sut mae symbol y Ddraig Goch (fel yr un ar y synagog) yn
+                      gwneud i bobl deimlo am Gymru?
+                    </li>
+                    <li className="discBPs">
+                      Sut byddai'r synagog wedi bod yn bwysig i bobl Iddewig ym
+                      Merthyr?
+                    </li>
+                    <li className="discBPs">
+                      Mae'r synagog yn adfail, ond mae llawer o arian yn cael ei
+                      wario er mwyn gallu ei ddefnyddio eto. Pam rydych chi'n
+                      meddwl ei bod hi'n bwysig gofalu am adeiladau hanesyddol
+                      fel y synagog?
+                    </li>
+                  </ol>
+                }
                 psNum="2"
                 backLContent={"Learn more about synagogues. "}
                 backLContentCym="Dysgwch mwy am y synagog."
@@ -2004,6 +2278,51 @@ function App() {
             element={
               <Person
                 pscc={"/6to9yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Lenn Lawrence was given the nickname Lenny the Lion after
+                      he helped to stop Swansea flooding. Can you think of any
+                      other nicknames to show how important he has been to
+                      Wales?
+                    </li>
+                    <li className="discBPs">
+                      Lenn Lawrence had come to Britain to help rebuild the
+                      country after the war but was very poorly paid and had to
+                      work harder than the workers who were white. How do you
+                      think this made him feel? How would you have reacted if
+                      you were in his shoes?
+                    </li>
+                    <li className="discBPs">
+                      Lenn Lawrence started the Caribbean Friendship Society.
+                      Why do you think it is important to have places where you
+                      can feel part of a group?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Cafodd Lenn Lawrence y llysenw ‘Lenny the Lion’ ar ôl iddo
+                      helpu i amddiffyn Abertawe rhag llifogydd. Allwch chi
+                      feddwl am unrhyw lysenwau eraill i ddangos pa mor bwysig
+                      mae Lenn wedi bod i Gymru?
+                    </li>
+                    <li className="discBPs">
+                      Roedd Lenn Lawrence wedi dod i Brydain i helpu i
+                      ailadeiladu'r wlad ar ôl y rhyfel ond roedd y tâl yn wael
+                      iawn ac roedd yn rhaid iddo weithio'n galetach na'r
+                      gweithwyr oedd yn wyn. Sut roedd hyn yn gwneud iddo
+                      deimlo, yn eich barn chi? Sut byddech chi wedi ymateb yn
+                      ei le ef?
+                    </li>
+                    <li className="discBPs">
+                      Dechreuodd Lenn Lawrence Gymdeithas Cyfeillgarwch y
+                      Caribî. Yn eich barn chi, pam mae'n bwysig cael lleoedd
+                      lle gallwch chi deimlo'n rhan o grŵp?
+                    </li>
+                  </ol>
+                }
                 psNum="2"
                 backcardImg={newspaper}
                 resourceOverlay={
@@ -2206,6 +2525,40 @@ function App() {
             element={
               <PersonYTVid
                 pscc={"/6to9yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Why is listening to stories a good way to learn about the
+                      past?
+                    </li>
+                    <li className="discBPs">
+                      Many of the Roma customs and traditions are being
+                      forgotten. What can we do to help keep them alive?
+                    </li>
+                    <li className="discBPs">
+                      Many people see gypsy people as being all alike and don’t
+                      understand their culture. Are any groups of people e.g.
+                      Welsh all alike?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Pam mae gwrando ar storïau'n ffordd dda o ddysgu am y
+                      gorffennol?
+                    </li>
+                    <li className="discBPs">
+                      Mae pobl yn anghofio llawer o arferion a thraddodiadau'r
+                      Romani. Beth allwn ni ei wneud i helpu i'w cadw nhw'n fyw?
+                    </li>
+                    <li className="discBPs">
+                      Mae llawer o bobl yn meddwl bod sipsiwn i gyd yr un peth a
+                      dydy’r bobl hyn ddim yn deall eu diwylliant nhw. A oes
+                      unrhyw grwpiau o bobl, e.e. Cymry, sydd i gyd yr un peth?
+                    </li>
+                  </ol>
+                }
                 youtubeVidCym={"https://www.youtube.com/embed/3ZR3z0N2HMw"}
                 psNum={"2"}
                 backLContentCym={"Dysgwch mwy am ffordd o fyw y Romani. "}
@@ -2216,20 +2569,39 @@ function App() {
                   <ul>
                     <li className="linkLi">
                       <a
-                        href="https://www.flickr.com/photos/134286418@N02/22408268685"
+                        href="https://www.youtube.com/watch?v=Q6wSLfGBVGY"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Information about Teleri Gray{" "}
+                        Gypsy, Roma and Traveller History Animation
                       </a>
                     </li>
                     <li className="linkLi">
                       <a
-                        href="https://www.walesonline.co.uk/lifestyle/showbiz/history-month-challenges-stereotype-gypsies-2029120"
+                        href="https://travellermovement.org.uk/gypsy-roma-and-traveller-history-and-culture"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Article on racial stereotyping of travellers{" "}
+                        Gypsy Roma and Traveller History and Culture{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.gypsy-traveller.org/heritage/gypsy-roma-and-traveller-history-month-2022/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Gypsy, Roma and Traveller History Month Resources (for
+                        teachers){" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.flickr.com/photos/134286418@N02/21785580874/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Information about Teleri Gray{" "}
                       </a>
                     </li>
                   </ul>
@@ -2238,29 +2610,38 @@ function App() {
                   <ul>
                     <li className="linkLi">
                       <a
-                        href="https://www.flickr.com/photos/134286418@N02/22408268685"
+                        href="https://www.youtube.com/watch?v=Q6wSLfGBVGY"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Animeiddiad am hanes Sipsiwn, Roma a Theithwyr (Saesneg)
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://travellermovement.org.uk/gypsy-roma-and-traveller-history-and-culture"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Hanes a Diwylliant Sipsiwn, Roma a Theithwyr
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.gypsy-traveller.org/heritage/gypsy-roma-and-traveller-history-month-2022/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Mis Hanes Sipsiwn, Roma a Theithwyr (ar gyfer athrawon)
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.flickr.com/photos/134286418@N02/21785580874/"
                         className="resourceHref"
                         target="_blank"
                       >
                         Gwybodaeth am Teleri Gray{" "}
-                      </a>
-                    </li>
-                    <li className="linkLi">
-                      <a
-                        href="https://www.walesonline.co.uk/lifestyle/showbiz/history-month-challenges-stereotype-gypsies-2029120"
-                        className="resourceHref"
-                        target="_blank"
-                      >
-                        Erhygl am stereoteipio hiliol yn erbyn teithwyr{" "}
-                      </a>
-                    </li>
-                    <li className="linkLi">
-                      <a
-                        href="https://www.bbc.co.uk/cymrufyw/29667652"
-                        className="resourceHref"
-                        target="_blank"
-                      >
-                        Erthygl am ei theulu{" "}
                       </a>
                     </li>
                   </ul>
@@ -2402,6 +2783,46 @@ function App() {
             element={
               <Person
                 pscc={"/6to9yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      When Fong Sui moved to Wales, she had no idea what it
+                      would be like, or what her future husband was like. What 5
+                      questions do you think she may have asked her mother
+                      before leaving for Wales?
+                    </li>
+                    <li className="discBPs">
+                      Fong Sui’s mother sent her to Wales for a better life. Was
+                      she right to do this? Did Fong Sui and her family get a
+                      better life?
+                    </li>
+                    <li className="discBPs">
+                      Today, Wales has many different types of restaurants e.g.
+                      Italian, Chinese, Indian etc. How do you think these
+                      restaurants came to be here?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Pan symudodd Fong Sui i Gymru, doedd dim syniad ganddi hi
+                      sut byddai’r wlad, neu sut un oedd y dyn oedd yn mynd i
+                      fod yn ŵr iddi. Pa 5 cwestiwn fyddai hi wedi’u gofyn i'w
+                      mam hi cyn gadael am Gymru, yn eich barn chi?
+                    </li>
+                    <li className="discBPs">
+                      Cafodd Fong Sui ei hanfon i Gymru gan ei mam i gael bywyd
+                      gwell. Oedd hi'n iawn i wneud hyn? A gafodd Fong Sui a'i
+                      theulu fywyd gwell?
+                    </li>
+                    <li className="discBPs">
+                      Heddiw, mae gan Gymru lawer o wahanol fathau o dai bwyta,
+                      e.e. Eidalaidd, Tsieineaidd, Indiaidd, ac ati. Sut rydych
+                      chi'n meddwl daeth y tai bwyta hyn i Gymru?
+                    </li>
+                  </ol>
+                }
                 psNum={"2"}
                 resourceOverlay={"The imaginary diary of Fong Sui."}
                 resourceOverlayWelsh={"Dyddiadur dychmygol Fong Sui."}
@@ -2520,10 +2941,10 @@ function App() {
                 buttonLink={"/Diaries/FongSui"}
                 indivName={"Fong Sui"}
                 indivNameCym={"Fong Sui"}
-                slugText={"The Chinese in Wales."}
+                slugText={"The Jones's. Rhondda, 1961."}
                 resource={api.slice(5, 6)}
                 indivPic={
-                  "https://i2-prod.walesonline.co.uk/incoming/article6289157.ece/ALTERNATES/s810/JS28547881.jpg"
+                  "https://www.peoplescollection.wales/sites/default/files/images/2014/February/GTJ12363_2.jpg?itok=Df4Ihv3O"
                 }
                 text={
                   <>
@@ -2624,6 +3045,44 @@ function App() {
             element={
               <Person
                 pscc={"/6to9yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      How do you think people felt in Wales when the Italian
+                      Welsh people were arrested?
+                    </li>
+                    <li className="discBPs">
+                      Why was the Arandora star torpedoed by the Germans?
+                    </li>
+                    <li className="discBPs">
+                      What might have helped more people to survive when the
+                      Arandora Star was sunk?
+                    </li>
+                    <li className="discBPs">
+                      What is a good way to remember the Welsh Italian people
+                      who died when the boat sank?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Yn eich barn chi, sut roedd pobl yn teimlo yng Nghymru pan
+                      gafodd y Cymry o dras Eidalaidd eu harestio?
+                    </li>
+                    <li className="discBPs">
+                      Pam saethodd yr Almaenwyr dorpido at yr Arandora Star?
+                    </li>
+                    <li className="discBPs">
+                      Beth allai fod wedi helpu rhagor o bobl i oroesi pan
+                      gafodd yr Arandora Star ei suddo?
+                    </li>
+                    <li className="discBPs">
+                      Beth fyddai'n ffordd dda o gofio'r Cymry o dras Eidalaidd
+                      a wnaeth farw pan suddodd y llong?
+                    </li>
+                  </ol>
+                }
                 psNum={"2"}
                 resourceOverlay={
                   "A cartoon about the fate of the SS Arandora Star."
@@ -2717,10 +3176,12 @@ function App() {
                 bgcolor="#CFE57D"
                 indivName={"The Arandora Star"}
                 indivNameCym={"The Arandora Star"}
-                slugText={"The tragedy of the sunken ship."}
+                slugText={
+                  "Ferdinando Pompa, who sadly lost his life aboard the Arandora Star."
+                }
                 resource={api.slice(6, 7)}
                 indivPic={
-                  "https://upload.wikimedia.org/wikipedia/commons/7/72/Arandora_Star_1940.jpg"
+                  "https://www.peoplescollection.wales/sites/default/files/images/2020/May/Nascenza%20%26%20Ferdinando%20Pompa%20%26%20%20%20Family%20circa%201905.jpg?itok=hl2JGjdD"
                 }
                 text={
                   <>
@@ -2841,6 +3302,50 @@ function App() {
             element={
               <Person
                 pscc={"/6to9yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      The 320th were a black American army unit that had been
+                      used to segregation - where black people and white people
+                      were not allowed to go to the same places as white people.
+                      How do you think they felt to be in Wales where they could
+                      go everywhere that white people could?
+                    </li>
+                    <li className="discBPs">
+                      Monk was looked after by a family in Wales, whose own son
+                      was away at war. Mrs. Prior wrote to Monk’s mother to say
+                      she would take care of him. Why do you think Mrs. Prior
+                      wanted to take care of Monk so well?
+                    </li>
+                    <li className="discBPs">
+                      Why are the black American soldiers known as the forgotten
+                      soldiers?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Roedd y 320fed Bataliwn yn uned o filwyr du ym myddin
+                      America ac roedden nhw'n gyfarwydd ag arwahanu - lle doedd
+                      pobl ddu ddim yn cael mynd i'r un lleoedd â phobl wyn. Yn
+                      eich barn chi, sut roedd hi'n teimlo iddyn nhw fod yng
+                      Nghymru lle roedden nhw'n cael mynd i'r un mannau â phobl
+                      wynion?
+                    </li>
+                    <li className="discBPs">
+                      Yng Nghymru, roedd teulu'n gofalu am Monk, ac roedd mab y
+                      teulu hwnnw i ffwrdd yn y rhyfel. Ysgrifennodd Mrs. Prior
+                      at fam Monk i ddweud y byddai hi'n gofalu amdano. Pam
+                      roedd Mrs. Prior eisiau gofalu mor dda am Monk, yn eich
+                      barn chi?{" "}
+                    </li>
+                    <li className="discBPs">
+                      Pam mae milwyr du America yn cael eu galw'n ‘the forgotten
+                      soldiers’?
+                    </li>
+                  </ol>
+                }
                 psNum={"2"}
                 resourceOverlay={
                   "A letter from Rosie to the mother of Wilson Monk."
@@ -3075,6 +3580,41 @@ function App() {
             element={
               <Person
                 pscc={"/6to9yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Shirley Bassey was the youngest of 7 children. What are
+                      the advantages and disadvantages of being the youngest in
+                      the family?
+                    </li>
+                    <li className="discBPs">
+                      Shirley Bassey was the first black British woman to become
+                      famous around the world. Do you think this helped other
+                      black British women?
+                    </li>
+                    <li className="discBPs">
+                      Shirley Bassey won many awards for her singing. Are awards
+                      important?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Shirley Bassey oedd yr ifancaf o 7 o blant. Beth yw
+                      manteision ac anfanteision bod yr ifancaf yn y teulu?
+                    </li>
+                    <li className="discBPs">
+                      Shirley Bassey oedd y fenyw ddu gyntaf o Brydain i ddod yn
+                      enwog ledled y byd. Ydych chi'n meddwl bod hyn wedi helpu
+                      menywod du eraill o Brydain?
+                    </li>
+                    <li className="discBPs">
+                      Enillodd Shirley Bassey lawer o wobrau am ei chanu. Ydy
+                      gwobrau'n bwysig?
+                    </li>
+                  </ol>
+                }
                 psNum={"2"}
                 resourceOverlay={
                   "A short story about Megan meeting Shirley Bassey."
@@ -3102,6 +3642,16 @@ function App() {
                         Brief biography of Shirley Bassey{" "}
                       </a>
                     </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=d3KdY_rm1SE"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Shirley Bassey singing the James Bond theme - Diamonds
+                        are Forever{" "}
+                      </a>
+                    </li>
                   </ul>
                 }
                 linksCym={
@@ -3123,6 +3673,16 @@ function App() {
                       >
                         Bywgraffiad byr am Shirley Bassey{" "}
                       </a>
+                    </li>{" "}
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=d3KdY_rm1SE"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Shirley Bassey yn canu thema James Bond - Diamonds are
+                        Forever
+                      </a>
                     </li>
                   </ul>
                 }
@@ -3133,7 +3693,7 @@ function App() {
                 slugText={"The world famous Welsh singer from Tiger Bay."}
                 resource={api.slice(8, 9)}
                 indivPic={
-                  "https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F75b621da-8fff-4cfb-ad8e-d63040e1f7a8.jpg?fit=scale-down&source=next&width=700"
+                  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Shirley_Bassey_Wembley_2006_%28cropped%29.jpg/640px-Shirley_Bassey_Wembley_2006_%28cropped%29.jpg"
                 }
                 text={
                   <>
@@ -3302,6 +3862,39 @@ function App() {
             element={
               <Person
                 pscc={"/6to9yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      The Windrush Generation had moved from tropical islands in
+                      the Caribbean to Wales. What do you think were the first
+                      differences they noticed? Why should Wales be thankful for
+                      the people who came over in Windrush generation?
+                    </li>
+                    <li className="discBPs">
+                      In 2018 the government changed the rules and said the
+                      Windrush Generation couldn’t stay. How do you feel when
+                      someone changes the rules of a game? How do you think they
+                      felt?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Roedd Cenhedlaeth Windrush wedi symud o ynysoedd trofannol
+                      yn y Caribî i Gymru. Pa bethau gwahanol dynnodd eu sylw
+                      nhw gyntaf, yn eich barn chi? Pam dylai Cymru fod yn
+                      ddiolchgar am y bobl a ddaeth draw yn rhan o Genhedlaeth
+                      Windrush?
+                    </li>
+                    <li className="discBPs">
+                      Yn 2018, newidiodd llywodraeth Prydain y rheolau a dweud
+                      nad oedd Cenhedlaeth Windrush yn gallu aros. Yn eich barn
+                      chi, sut mae pobl yn teimlo pan mae rhywun yn newid
+                      rheolau gêm? Sut roedden nhw'n teimlo, yn eich barn chi?
+                    </li>
+                  </ol>
+                }
                 psNum={"2"}
                 bgcolor={"#CFE57D"}
                 linkResource={"./../Resources/Windrush"}
@@ -3543,6 +4136,42 @@ function App() {
             element={
               <Person
                 pscc={"/6to9yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Idris Phillips had 10 brothers and sisters and his family
+                      lived in a small, terraced house. What do you think
+                      mornings were like in the house?
+                    </li>
+                    <li className="discBPs">
+                      How do you think Idris Phillips felt being blamed for
+                      things just because of the colour of his skin?
+                    </li>
+                    <li className="discBPs">
+                      Idris Phillips was often hurt by people talking about him
+                      behind his back. What could you do if you see someone
+                      being hurt in this way?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Roedd gan Idris Phillips 10 brawd a chwaer ac roedd ei
+                      deulu'n byw mewn tŷ teras bach. Sut roedd hi yn y bore yn
+                      y tŷ, yn eich barn chi?
+                    </li>
+                    <li className="discBPs">
+                      Tybed sut roedd Idris Phillips yn teimlo am gael y bai am
+                      bethau dim ond oherwydd lliw ei groen?
+                    </li>
+                    <li className="discBPs">
+                      Roedd Idris Phillips yn aml yn cael ei frifo gan bobl oedd
+                      yn siarad amdano y tu ôl i'w gefn. Beth allech chi ei
+                      wneud os gwelwch chi rywun yn cael ei frifo fel hyn?
+                    </li>
+                  </ol>
+                }
                 psNum={"2"}
                 resourceOverlay={"An imaginary biography of Idris Phillips."}
                 resourceOverlayWelsh={"Bywgraffiad dychmygol Idris Phillips. "}
@@ -3762,6 +4391,42 @@ function App() {
             element={
               <Person
                 pscc={"/9to12yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Why do you think so many sports people go on to present or
+                      take part in TV shows?
+                    </li>
+                    <li className="discBPs">
+                      Some people get offered titles like CBE and refuse them.
+                      Why do you think this is?
+                    </li>
+                    <li className="discBPs">
+                      Colin Jackson denied being gay for several years because
+                      he was worried about people’s reaction. How we can we help
+                      LGBTQ+ people feel included in our communities?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Yn eich barn chi, pam mae cymaint o bobl o fyd chwaraeon
+                      yn mynd ymlaen i gyflwyno sioeau teledu neu i gymryd rhan
+                      ynddyn nhw?
+                    </li>
+                    <li className="discBPs">
+                      Mae rhai pobl yn cael cynnig teitlau fel CBE ac yn eu
+                      gwrthod nhw. Beth yw’r rheswm dros hyn, yn eich barn chi?
+                    </li>
+                    <li className="discBPs">
+                      Wnaeth Colin Jackson ddim dweud ei fod yn hoyw am nifer o
+                      flynyddoedd oherwydd ei fod yn poeni am ymateb pobl. Sut
+                      gallwn ni helpu pobl LHDTC+ i deimlo eu bod nhw'n cael eu
+                      cynnwys yn ein cymunedau?
+                    </li>
+                  </ol>
+                }
                 psNum={"3"}
                 bgcolor={"#A2D6F9"}
                 resourceOverlay={
@@ -3930,6 +4595,11 @@ function App() {
                       appeared on Strictly Come Dancing in 2005.
                     </li>
                     <li>
+                      When he appeared on the TV programme “Who do you think you
+                      are?” a DNA test showed that he is descended from the
+                      Taino Indians - the native inhabitants of Jamaica.
+                    </li>
+                    <li>
                       In 2017, aged 50, Colin Jackson, the stylish icon of Welsh
                       sport, came out as gay.{" "}
                     </li>
@@ -3996,6 +4666,11 @@ function App() {
                       Dancing yn 2005.
                     </li>
                     <li>
+                      Pan ymddangosodd ar y rhaglen “Who do you think you are?”
+                      dangosodd prawf DNA ei fod yn hannu o dras yr Indiaid
+                      Taino - trigolion brodorion Jamaica.
+                    </li>
+                    <li>
                       Yn 2017, pan oedd yn 50 oed, dywedodd Colin Jackson, eicon
                       llawn steil chwaraeon Cymru, ei fod yn hoyw.
                     </li>
@@ -4008,6 +4683,52 @@ function App() {
             path="/9to12yo/IrisWilliams"
             element={
               <PersonYTVid
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      People say that Iris was ‘destined to be different’. How
+                      was she different and why can this be a good thing?
+                    </li>
+                    <li className="discBPs">
+                      Iris Williams is often compared to Shirley Bassey. Why do
+                      you think this is? Why does she hate being compared to
+                      her?
+                    </li>
+                    <li className="discBPs">
+                      Iris got her ‘get up and go’, and determination from her
+                      tough childhood. Why do difficulties sometimes lead to
+                      success?
+                    </li>
+                    <li className="discBPs">
+                      Iris finally found stability with a loving foster family
+                      who arranged her first piano lessons. How important do you
+                      think this family were in Iris having a successful career?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Mae pobl yn dweud mai ‘tynged Iris oedd bod yn wahanol’.
+                      Sut roedd hi’n wahanol a pham mae hyn yn gallu bod yn beth
+                      da?
+                    </li>
+                    <li className="discBPs">
+                      Mae Iris Williams yn cael ei chymharu â Shirley Bassey yn
+                      aml. Pam, tybed? Pam mae hi’n casáu cael ei chymharu â hi?
+                    </li>
+                    <li className="discBPs">
+                      Cafodd Iris ei hegni a’i phenderfyniad o’i phlentyndod
+                      anodd. Pam mae anawsterau’n arwain at lwyddiant weithiau?
+                    </li>
+                    <li className="discBPs">
+                      Yn y pen draw, cafodd Iris fywyd sefydlog gyda theulu
+                      maeth cariadus a drefnodd iddi gael ei gwersi piano
+                      cyntaf. Pa mor bwysig yn eich barn chi oedd y teulu hwn o
+                      ran helpu Iris i gael gyrfa lwyddiannus?
+                    </li>
+                  </ol>
+                }
                 pscc={"/9to12yo"}
                 psNum={"3"}
                 backLContent={"The beautiful voice of Iris Williams."}
@@ -4210,6 +4931,47 @@ function App() {
             element={
               <PersonPodcast
                 pscc={"/12to16yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Robeson’s father had escaped from slavery. How do you
+                      think this knowledge shaped his views on equality?
+                    </li>
+                    <li className="discBPs">
+                      Robeson performed a concert in Wales through a telephone
+                      link. How different would that be today?
+                    </li>
+                    <li className="discBPs">
+                      Robeson had his passport cancelled by the government and
+                      was not allowed to leave the USA. Should governments be
+                      allowed to do this?
+                    </li>
+                    <li className="discBPs">
+                      Why did the Welsh people take Robeson to their hearts?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Roedd tad Robeson wedi dianc rhag caethwasiaeth. Yn eich
+                      barn chi, sut roedd y wybodaeth hon yn llunio ei
+                      safbwyntiau ar gydraddoldeb?
+                    </li>
+                    <li className="discBPs">
+                      Perfformiodd Robeson gyngerdd yng Nghymru drwy gyswllt
+                      ffôn. Pa mor wahanol fyddai hynny heddiw?
+                    </li>
+                    <li className="discBPs">
+                      Canslodd llywodraeth UDA basbort Robeson felly doedd e
+                      ddim yn cael gadael y wlad. A ddylai fod hawl gan
+                      lywodraethau i wneud hyn?
+                    </li>
+                    <li className="discBPs">
+                      Pam roedd y Cymry mor hoff o Robeson?
+                    </li>
+                  </ol>
+                }
                 welshSlugText="Yr Americanwr a safodd gyda'r glowyr. "
                 psNum={"4"}
                 indivName={"Paul Robeson"}
@@ -4222,8 +4984,7 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Welsh Government website - information about the life of
-                        Paul Robeson{" "}
+                        HWB: The Life of Paul Robeson
                       </a>
                     </li>
                     <li className="linkLi">
@@ -4232,7 +4993,16 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Welsh Government website - remembering Paul Robeson
+                        CADW: Paul Robeson's Wales
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=3EKJXWLFvQs"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Paul Robeson singing at the Eisteddfod
                       </a>
                     </li>
                     <li className="linkLi">
@@ -4263,7 +5033,7 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Gwybodaeth am Paul Robeson ar Hwb
+                        HWB: Bywyd Paul Robeson
                       </a>
                     </li>
                     <li className="linkLi">
@@ -4272,7 +5042,16 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Erthygl Cadw am Paul Robeson{" "}
+                        CADW: Cymru Paul Robeson
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.youtube.com/watch?v=3EKJXWLFvQs"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Paul Robeson yn canu yn yr Eisteddfod
                       </a>
                     </li>
                     <li className="linkLi">
@@ -4469,6 +5248,41 @@ function App() {
             element={
               <Person
                 welshSlugText="Y ddynes fu'n byw dros y byd. "
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Lousia’s father preferred to spend money on experiences
+                      rather than material things. Which do you prefer?{" "}
+                    </li>
+                    <li className="discBPs">
+                      What opportunities did Louisa gain from going to school
+                      abroad when she was young? What difficulties do you think
+                      she faced?
+                    </li>
+                    <li className="discBPs">
+                      What are the advantages and disadvantages of having a
+                      portfolio career (several different jobs) over a single
+                      one?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Roedd hi'n well gan dad Louisa wario arian ar brofiadau yn
+                      hytrach na phethau materol. Pa un sydd orau gennych chi?{" "}
+                    </li>
+                    <li className="discBPs">
+                      Pa gyfleoedd gafodd Louisa oherwydd iddi fynd i'r ysgol
+                      dramor pan oedd hi'n ifanc? Pa anawsterau roedd hi'n eu
+                      hwynebu, yn eich barn chi?
+                    </li>
+                    <li className="discBPs">
+                      Beth yw manteision ac anfanteision cael gyrfa bortffolio
+                      (sawl swydd wahanol) yn hytrach nag un yrfa?
+                    </li>
+                  </ol>
+                }
                 pscc={"/9to12yo"}
                 psNum={"3"}
                 indivName={"Louisa BB Morgan"}
@@ -4622,6 +5436,43 @@ function App() {
             element={
               <Person
                 pscc={"/9to12yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Clive Sullivan had many injuries and surgeries throughout
+                      his lifetime, but always came back to play more rugby. Was
+                      he right to do this? Why? / Why not?
+                    </li>
+                    <li className="discBPs">
+                      Clive Sullivan was the first black man to captain a
+                      British team in any sport. How do you think his teammates
+                      treated him? Explain.
+                    </li>
+                    <li className="discBPs">
+                      Clive Sullivan died young at 42. What do you think he
+                      would have gone on to do if he’d lived longer?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Cafodd Clive Sullivan lawer o anafiadau a llawdriniaethau
+                      drwy gydol ei fywyd, ond bob tro, daeth yn ôl i chwarae
+                      rhagor o rygbi. Oedd e'n iawn i wneud hyn? Pam / Pam lai?
+                    </li>
+                    <li className="discBPs">
+                      Clive Sullivan oedd y dyn du cyntaf i fod yn gapten ar dîm
+                      Prydeinig mewn unrhyw gamp. Sut roedd ei gyd-chwaraewyr yn
+                      ei drin, yn eich barn chi? Esboniwch.
+                    </li>
+                    <li className="discBPs">
+                      Gwnaeth Clive Sullivan farw'n ifanc, yn 42 oed. Beth
+                      rydych chi'n meddwl y byddai wedi mynd ymlaen i'w wneud
+                      petai wedi cael byw'n hirach?
+                    </li>
+                  </ol>
+                }
                 psNum={"3"}
                 resourceOverlay={"A portrait of Clive Sullivan."}
                 resourceOverlayWelsh="Portread o Clive Sullivan. "
@@ -4905,6 +5756,40 @@ function App() {
             element={
               <PersonYTVid
                 pscc={"/9to12yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      What challenges do you think John Ystumllyn faced when he
+                      arrived in Wales?
+                    </li>
+                    <li className="discBPs">
+                      Why do you think John Ystumllyn was Christened with a
+                      Welsh name?
+                    </li>
+                    <li className="discBPs">
+                      John Ystumllyn had one of the first mixed marriages in
+                      Wales. Do you think they were brave marrying each other?
+                      Why?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Pa heriau roedd John Ystumllyn yn eu hwynebu pan
+                      gyrhaeddodd Gymru, yn eich barn chi?
+                    </li>
+                    <li className="discBPs">
+                      Tybed pam cafodd John Ystumllyn ei fedyddio ag enw
+                      Cymraeg?
+                    </li>
+                    <li className="discBPs">
+                      Cafodd John Ystumllyn un o'r priodasau cymysg cyntaf yng
+                      Nghymru. Oedden nhw'n ddewr yn priodi ei gilydd, yn eich
+                      barn chi? Pam?
+                    </li>
+                  </ol>
+                }
                 psNum={"3"}
                 backLContent={"Clip courtesy of Cwmni Da Cyf."}
                 backLContentCym={
@@ -5055,7 +5940,7 @@ function App() {
                 welshSlugText={"Y caethwas a'r garddwr."}
                 resource={nineApi.slice(8, 9)}
                 indivPic={
-                  "https://ichef.bbci.co.uk/news/976/cpsprodpb/FDB1/production/_121154946_johnystumllynpeople'scollection.png"
+                  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Portrait_of_John_Ystumllyn%2C_11_May_1754.jpg/640px-Portrait_of_John_Ystumllyn%2C_11_May_1754.jpg"
                 }
                 text={
                   <ul>
@@ -5286,8 +6171,47 @@ function App() {
           <Route
             path="/9to12yo/TigerBay"
             element={
-              <Person
+              <PersonYTVid
                 pscc={"/9to12yo"}
+                youtubeVid={"https://www.youtube.com/embed/9fIMdQ7wUl8"}
+                youtubeVidCym={"https://www.youtube.com/embed/9fIMdQ7wUl8"}
+                backLContent={"Gaynor Legall Interview"}
+                backLContentCym={"Cyfweliad Gaynor Legall"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Coal mining brought people from over 50 countries to Tiger
+                      Bay. If you had been there, what different sights, sounds
+                      and smells might you have noticed?
+                    </li>
+                    <li className="discBPs">
+                      What difficulties might there be when so many different
+                      cultures move to one area? What are the positives?
+                    </li>
+                    <li className="discBPs">
+                      How do you think the different cultures of Tiger Bay have
+                      impacted Cardiff today?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Daeth pobl o dros 50 o wledydd i Tiger Bay oherwydd bod
+                      glo'n cael ei gloddio. Petaech chi wedi bod yno, pa bethau
+                      gwahanol byddech chi wedi'u gweld, eu clywed a'u harogli?
+                    </li>
+                    <li className="discBPs">
+                      Pa drafferthion allai godi oherwydd bod cymaint o
+                      ddiwylliannau gwahanol yn symud i un ardal? Beth yw'r
+                      pethau cadarnhaol?
+                    </li>
+                    <li className="discBPs">
+                      Yn eich barn chi, sut mae diwylliannau gwahanol Tiger Bay
+                      wedi effeithio ar Gaerdydd heddiw?
+                    </li>
+                  </ol>
+                }
                 psNum={"3"}
                 links={
                   <ul>
@@ -5387,12 +6311,11 @@ function App() {
                     </li>
                   </ul>
                 }
+                linkResource={"./../Resources/Hans"}
                 indivName={"Tiger Bay"}
                 indivNameCym={"Tiger Bay"}
-                resourceOverlay={"/"}
                 slugText={"The bustling multi-ethnic community in Cardiff Bay."}
                 welshSlugText={"Y gymuned aml-ddiwylliannol yng Nghaerdydd."}
-                resource={nineApi.slice(9, 10)}
                 indivPic={
                   "https://www.peoplescollection.wales/sites/default/files/images/2014/February/ah_50_34.jpg?itok=SN4XskT2"
                 }
@@ -5509,7 +6432,7 @@ function App() {
                     </li>
                   </ul>
                 }
-              ></Person>
+              ></PersonYTVid>
             }
           ></Route>
           <Route
@@ -5517,6 +6440,36 @@ function App() {
             element={
               <PersonYTVid
                 pscc={"/6to9yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      What jobs do you think 12-year-olds could do, if it was
+                      allowed today?
+                    </li>
+                    <li className="discBPs">
+                      Ben’s journey to Wales took 3 weeks. What problems might
+                      he have had on the journey?
+                    </li>
+                    <li className="discBPs">
+                      What is your favourite flavour of ice-cream? Why?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Pa swyddi allai plant 12 oed eu gwneud, petai ganddyn nhw
+                      hawl i weithio heddiw?
+                    </li>
+                    <li className="discBPs">
+                      Cymerodd taith Ben i Gymru 3 wythnos. Pa broblemau allai
+                      Ben fod wedi'u cael ar y daith?
+                    </li>
+                    <li className="discBPs">
+                      Pa un yw eich hoff flas hufen iâ chi? Pam?
+                    </li>
+                  </ol>
+                }
                 psNum={"2"}
                 overlayText={
                   <h2>
@@ -5792,6 +6745,46 @@ function App() {
             element={
               <PersonYTVid
                 pscc={"/9to12yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      A stereotype is an idea or belief many people have about a
+                      thing or group that is based upon how they look on the
+                      outside. Can you think of any stereotypes that are around
+                      today?
+                    </li>
+                    <li className="discBPs">
+                      How do you think the Gypsy Romani children felt being put
+                      into a separate class from the other children at school?
+                    </li>
+                    <li className="discBPs">
+                      How did Isaac Blake react to the low expectations his
+                      teachers had of him at school? Would you prefer your
+                      teachers to have low or high expectations of you? Why?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Stereoteip yw syniad neu gred sydd gan lawer o bobl am
+                      beth neu grŵp, oherwydd y ffordd maen nhw'n edrych ar y tu
+                      allan. Allwch chi feddwl am unrhyw stereoteipiau sydd o
+                      gwmpas heddiw?
+                    </li>
+                    <li className="discBPs">
+                      Yn eich barn chi, sut roedd y plant Romani yn teimlo am
+                      gael eu rhoi mewn dosbarth ar wahân i'r plant eraill yn yr
+                      ysgol?
+                    </li>
+                    <li className="discBPs">
+                      Beth oedd ymateb Isaac Blake i'r disgwyliadau isel oedd
+                      gan ei athrawon ohono yn yr ysgol? A fyddai'n well gennych
+                      chi fod gan eich athrawon ddisgwyliadau isel neu uchel
+                      ohonoch chi? Pam?
+                    </li>
+                  </ol>
+                }
                 psNum={"3"}
                 youtubeVidCym="https://www.youtube.com/embed/MDjyYMf5HNk"
                 backLContent={"Find out more about Gypsy Jazz! "}
@@ -5911,7 +6904,7 @@ function App() {
                   <ul>
                     <li>
                       Isaac Blake is a proud gay Gypsy from Wales. He was born
-                      in Bromsgrove in 1959 and grew up on a number of Gypsy and
+                      in Bromsgrove in 1979 and grew up on a number of Gypsy and
                       Traveller caravan sites including Cardiff's Shirenewton
                       site - a council-run site. It has 55 individual pitches
                       which has about 300 residents.
@@ -6051,6 +7044,40 @@ function App() {
             element={
               <PersonYTVid
                 pscc={"/9to12yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Patti Flynn campaigned for 26 years to get a memorial to
+                      black people killed in the wars. Why do you think it took
+                      so long?
+                    </li>
+                    <li className="discBPs">
+                      What other ways do you think we could honour the Black and
+                      minority ethnic soldiers who were killed in the wars?
+                    </li>
+                    <li className="discBPs">
+                      Which individuals from the ‘Our Welsh History’ site would
+                      you erect a monument for and why?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Ymgyrchodd Patti Flynn am 26 blynedd i gael cofeb i'r bobl
+                      ddu a oedd wedi cael eu lladd yn y rhyfeloedd. Pam
+                      cymerodd hyn gymaint o amser, yn eich barn chi?
+                    </li>
+                    <li className="discBPs">
+                      Ym mha ffyrdd eraill y gallwn ni anrhydeddu’r milwyr du a
+                      lleiafrifoedd ethnig a gafodd eu lladd yn y rhyfeloedd?
+                    </li>
+                    <li className="discBPs">
+                      I ba unigolion o wefan ‘Ein Hanes Ni’ fyddech chi’n codi
+                      cofeb ar eu cyfer a pham?
+                    </li>
+                  </ol>
+                }
                 psNum={"3"}
                 indivName={"Patti Flynn"}
                 indivNameCym={"Patti Flynn"}
@@ -6152,13 +7179,12 @@ function App() {
                     <li>
                       Patricia Maude Young was born in Cardiff in 1937 and was
                       the youngest child of seven to Wilmott George Young and
-                      Beatrice Young.  
+                      Beatrice Young.
                     </li>
 
                     <li>
                       Her father was Jamaican and a merchant seaman, he arrived
-                      in Cardiff in the 1920s; Patti’s mother was from
-                      Cardiff.  
+                      in Cardiff in the 1920s; Patti’s mother was from Cardiff.
                     </li>
 
                     <li>
@@ -6168,7 +7194,7 @@ function App() {
                     </li>
 
                     <li>
-                      When a young girl, and living in Bute Town (also known as
+                      When a young girl, and living in Butetown (also known as
                       Tiger Bay) Patti loved music and singing – especially
                       jazz.
                     </li>
@@ -6179,7 +7205,7 @@ function App() {
                     </li>
 
                     <li>
-                      She also co-founded the Bute Town Bay Jazz Festival.{" "}
+                      She also co-founded the Butetown Bay Jazz Festival.{" "}
                     </li>
 
                     <li>
@@ -6296,6 +7322,42 @@ function App() {
             element={
               <PersonYTVid
                 pscc={"/9to12yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Why do you think so many people stared at Vernester Cyril
+                      when she first arrived in Britain in the 1960s?
+                    </li>
+                    <li className="discBPs">
+                      What can be done to make people feel comfortable about
+                      their hair?
+                    </li>
+                    <li className="discBPs">
+                      Vernester Cyril said black people in Britain needed to “be
+                      bold, be brave, be assertive, be strong”. Why do you think
+                      this was important advice for people coming to Britain?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Yn eich barn chi, pam roedd cymaint o bobl yn syllu ar
+                      Vernester Cyril pan gyrhaeddodd hi Brydain gyntaf yn y
+                      1960au?
+                    </li>
+                    <li className="discBPs">
+                      Beth mae’n bosibl ei wneud er mwyn i bobl deimlo'n
+                      gyfforddus am eu gwallt nhw?
+                    </li>
+                    <li className="discBPs">
+                      Dywedodd Vernester Cyril fod angen i bobl ddu ym Mhrydain
+                      fod “yn fentrus, yn ddewr, yn benderfynol, yn gryf”. Pam
+                      roedd hwn yn gyngor pwysig i bobl oedd yn dod i Brydain,
+                      yn eich barn chi?
+                    </li>
+                  </ol>
+                }
                 psNum={"3"}
                 youtubeVid={"https://www.youtube.com/embed/NZGvt4WbN3g"}
                 backLContent="Interview with a hairdresser specialising in braiding. "
@@ -6305,6 +7367,15 @@ function App() {
                 youtubeVidCym={"https://www.youtube.com/embed/SlPA829fDak"}
                 links={
                   <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.peoplescollection.wales/items/1847861"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        An interview with Vernester Cyril OBE
+                      </a>
+                    </li>
                     <li className="linkLi">
                       <a
                         href="https://www.walesonline.co.uk/news/wales-news/underappreciated-serious-issue-hair-discrimination-22489203"
@@ -6345,6 +7416,15 @@ function App() {
                 }
                 linksCym={
                   <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.peoplescollection.wales/items/1847861"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Cyfweliad gyda Vernester Cyril OBE
+                      </a>
+                    </li>
                     <li className="linkLi">
                       <a
                         href="https://www.walesonline.co.uk/news/wales-news/underappreciated-serious-issue-hair-discrimination-22489203"
@@ -6547,6 +7627,57 @@ function App() {
             element={
               <PersonPodcast
                 pscc={"/9to12yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Dom said “I just have fun doing what I do.” What do you
+                      have fun doing? Can you think of a job that you could do
+                      which lets you do this?
+                    </li>
+                    <li className="discBPs">
+                      Dom was the class clown at school and often was sent out
+                      of the classroom. What do you think makes some children be
+                      the class clown?
+                    </li>
+                    <li className="discBPs">
+                      Code switching is where someone changes how they behave to
+                      fit in with others. Can you think of a time when you have
+                      code switched? If so, how did it make you feel?
+                    </li>
+                    <li className="discBPs">
+                      Growing up, Dom didn’t see many Welsh speakers that looked
+                      like him. How important is it for young people to have
+                      role models that look like them?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Dywedodd Dom “Dwi'n cael hwyl yn gwneud beth dwi'n ei
+                      wneud, dyna i gyd.” Beth rydych chi'n cael hwyl yn ei
+                      wneud? Allwch chi feddwl am swydd y gallech chi ei gwneud
+                      sy'n gadael i chi wneud hyn?
+                    </li>
+                    <li className="discBPs">
+                      Dom oedd clown y dosbarth yn yr ysgol ac roedd yn aml yn
+                      cael ei anfon allan o'r ystafell ddosbarth. Yn eich barn
+                      chi, beth sy'n gwneud i rai plant ymddwyn fel clown y
+                      dosbarth?
+                    </li>
+                    <li className="discBPs">
+                      Newid cod yw pan mae rhywun yn newid sut mae'n ymddwyn er
+                      mwyn bod yn rhan o grŵp o bobl eraill. Ydych chi'n gallu
+                      meddwl am adeg pan rydych chi wedi newid cod? Os felly,
+                      sut roedd hyn yn gwneud i chi deimlo?
+                    </li>
+                    <li className="discBPs">
+                      Wrth dyfu, doedd Dom ddim yn gweld llawer o siaradwyr
+                      Cymraeg a oedd yn edrych fel fe. Pa mor bwysig yw hi i
+                      bobl ifanc gael modelau rôl sy'n edrych fel nhw?
+                    </li>
+                  </ol>
+                }
                 psNum={"3"}
                 bgImg={"podcastImgOverlayDom"}
                 indivName={"Dom James"}
@@ -6655,6 +7786,43 @@ function App() {
             element={
               <Person
                 pscc={"/9to12yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Joe Calzaghe was verbally bullied at school which made him
+                      feel very lonely. Do you think that verbal bullying (with
+                      words) is as hurtful as physical bullying?
+                    </li>
+                    <li className="discBPs">
+                      Joe Calzaghe never lost a boxing match. Are there any
+                      benefits to sometimes losing?
+                    </li>
+                    <li className="discBPs">
+                      Joe Calzaghe won many awards and was Welsh Sports
+                      Personality of the Year three times. Do you think that
+                      awards are important? Why?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Roedd plant eraill yn dweud pethau cas wrth Joe Calzaghe
+                      pan oedd yn yr ysgol, felly roedd yn teimlo'n unig iawn.
+                      Ydych chi'n meddwl bod bwlio geiriol (dweud geiriau cas)
+                      yn brifo cymaint â bwlio corfforol?
+                    </li>
+                    <li className="discBPs">
+                      Chollodd Joe Calzaghe ddim un ornest focsio erioed. Ydy
+                      colli weithiau yn beth da?
+                    </li>
+                    <li className="discBPs">
+                      Enillodd Joe Calzaghe lawer o wobrau a buodd e’n
+                      Bersonoliaeth Chwaraeon y Flwyddyn yng Nghymru dair
+                      gwaith. Ydych chi'n meddwl bod gwobrau'n bwysig? Pam?
+                    </li>
+                  </ol>
+                }
                 psNum={"3"}
                 bgcolor={"#A2D6F9"}
                 resourceOverlay={
@@ -6910,6 +8078,42 @@ function App() {
             path="/12to16yo/JasonMohammad"
             element={
               <PersonPodcast
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Why do you think people are sometimes reluctant to talk
+                      about their faith?
+                    </li>
+                    <li className="discBPs">
+                      Why do you think people make hateful comments on race or
+                      religion?
+                    </li>
+                    <li className="discBPs">
+                      How important are documentaries, like those made by JM on
+                      his Pilgrimage to Mecca, in bringing about more tolerance
+                      and understanding of people of diverse faiths and
+                      cultures?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Yn eich barn chi, pam dydy pobl ddim yn fodlon siarad am
+                      eu ffydd weithiau?
+                    </li>
+                    <li className="discBPs">
+                      Pam ydych chi’n meddwl bod pobl yn gwneud sylwadau cas ar
+                      sail hil neu grefydd?
+                    </li>
+                    <li className="discBPs">
+                      Pa mor bwysig yw rhaglenni dogfen, fel yr un wnaeth JM am
+                      ei Bererindod i Mecca, wrth wneud i'r gwylwyr ddod i
+                      ddeall pobl sydd â ffydd a diwylliant gwahanol a dod yn
+                      fwy goddefgar?
+                    </li>
+                  </ol>
+                }
                 welshSlugText={"Newyddiadurwr a chyflwynydd teledu a radio. "}
                 bgImg={"podcastImgOverlay3"}
                 pscc={"/12to16yo"}
@@ -7035,6 +8239,14 @@ function App() {
                     </li>
 
                     <li>Jason is also in great demand as a public speaker. </li>
+                    <li>
+                      He has learnt Welsh and has presented programmes in Welsh
+                      on S4C.{" "}
+                    </li>
+                    <li>
+                      As a Welsh learner he was very proud to judge the Welsh
+                      Learner competition in the Urdd Eisteddfod in 2021.
+                    </li>
 
                     <li>
                       As one of the best-known presenters in the UK Jason was
@@ -7085,9 +8297,16 @@ function App() {
                     </li>
 
                     <li>
-                      Hefyd, mae galw mawr am Jason fel siaradwr cyhoeddus.{" "}
+                      Hefyd, mae galw mawr am Jason fel siaradwr cyhoeddus.
                     </li>
-
+                    <li>
+                      Mae wedi dysgu Cymraeg ac mae’n cyflwyno rhaglenni yn
+                      Gymraeg ar S4C.
+                    </li>
+                    <li>
+                      Fel dysgwr Cymraeg roedd yn falch iawn o gael ei ddewis yn
+                      feirniad Dysgwr y Flwyddyn yn Eisteddfod yr Urdd 2021.
+                    </li>
                     <li>
                       Fel un o'r cyflwynwyr mwyaf adnabyddus yn y DU, cafodd
                       Jason ei restru fel un o'r deg person sy'n ennill y
@@ -7103,6 +8322,38 @@ function App() {
             element={
               <PersonYTVid
                 welshSlugText={"Y terfysgoedd a gododd gywilydd ar Gymru. "}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      There were many factors that caused the 1919 riots. What
+                      do you think was the main one?
+                    </li>
+                    <li className="discBPs">
+                      Does the press influence public opinion on protests and
+                      riots today?
+                    </li>
+                    <li className="discBPs">
+                      What do you think would be a fitting memorial to the 1919
+                      riots?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Roedd llawer o ffactorau'n gyfrifol am derfysgoedd 1919.
+                      Pa un, yn eich barn chi, oedd y prif ffactor?
+                    </li>
+                    <li className="discBPs">
+                      Ydy'r wasg yn dylanwadu ar farn y cyhoedd am brotestiadau
+                      a therfysgoedd heddiw?
+                    </li>
+                    <li className="discBPs">
+                      Yn eich barn chi, beth fyddai'n ffordd dda o gofio
+                      terfysgoedd 1919?
+                    </li>
+                  </ol>
+                }
                 pscc={"/12to16yo"}
                 youtubeVidCym="https://www.youtube.com/embed/4APrn1JpUI8"
                 youtubeVid="https://www.youtube.com/embed/Un8fkdzGsKw"
@@ -7477,6 +8728,46 @@ function App() {
             path="/12to16yo/KizzyCrawford"
             element={
               <PersonYTVid
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Kizzy spoke of a lack of mixed race Welsh singers when she
+                      was growing up. How important is it for young people to
+                      have role models that ‘look like them’ when they are
+                      growing up?
+                    </li>
+                    <li className="discBPs">
+                      Kizzy’s songs often have themes that celebrate ‘strong
+                      Welsh women’. What does a strong Welsh woman look like to
+                      you? (or what skills and qualities do you think a strong
+                      Welsh woman has?
+                    </li>
+                    <li className="discBPs">
+                      Do you think it’s important for prominent people like
+                      Kizzy to be open their autism?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Soniodd Kizzy am y ffaith bod diffyg cantorion o hil
+                      gymysg yn canu yn Gymraeg pan oedd hi'n tyfu. Pa mor
+                      bwysig yw hi i bobl ifanc gael modelau rôl sy'n ‘edrych
+                      fel nhw’ pan maen nhw'n tyfu?
+                    </li>
+                    <li className="discBPs">
+                      Yn aml, mae gan ganeuon Kizzy themâu sy'n dathlu
+                      ‘Cymraësau cryf’ neu ‘menywod cryf o Gymru’. Sut mae
+                      Cymraes gryf yn edrych i chi? (neu pa sgiliau a rhinweddau
+                      sydd gan Gymraes gryf, yn eich barn chi?)
+                    </li>
+                    <li className="discBPs">
+                      Yn eich barn chi, pam mae'n bwysig i bobl amlwg fel Kizzy
+                      fod yn agored am fod yn awtistig?
+                    </li>
+                  </ol>
+                }
                 pscc={"/12to16yo"}
                 youtubeVidCym="https://www.youtube.com/embed/PnUErgWxB_c"
                 psNum={"4"}
@@ -7733,6 +9024,42 @@ function App() {
             element={
               <Person
                 welshSlugText={"Cyn-gapten Pêldroed Cymru."}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Ashley Williams grew up in England, but played football
+                      for Wales. How do you think he felt when he played against
+                      England in internationals?
+                    </li>
+                    <li className="discBPs">
+                      In what ways can playing football help people who are
+                      socially excluded?
+                    </li>
+                    <li className="discBPs">
+                      Ashley retired from football at 36. How would you spend
+                      your time if you retired at this age?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Cafodd Ashley Williams ei fagu yn Lloegr, ond chwaraeodd
+                      bêl-droed dros Gymru. Yn eich barn chi, sut roedd yn
+                      teimlo wrth chwarae yn erbyn Lloegr mewn gemau
+                      rhyngwladol?
+                    </li>
+                    <li className="discBPs">
+                      Ym mha ffyrdd gall chwarae pêl-droed helpu pobl sydd
+                      wedi'u hallgáu yn gymdeithasol?
+                    </li>
+                    <li className="discBPs">
+                      Ymddeolodd Ashley o chwarae pêl-droed pan oedd yn 36 oed.
+                      Sut byddech chi'n treulio eich amser petaech chi'n ymddeol
+                      mor ifanc â hyn?
+                    </li>
+                  </ol>
+                }
                 pscc={"/12to16yo"}
                 psNum={"4"}
                 buttonLink={"/Diaries/Ashley"}
@@ -7747,11 +9074,21 @@ function App() {
                   <ul>
                     <li className="linkLi">
                       <a
+                        href="https://faw.cymru/news/the-dragon-on-my-shirt/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        ‘The Dragon on My Shirt’ - The Red Wall films about
+                        Black and Asian footballers.
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
                         href="https://www.skysports.com/football/news/11095/12199145/ashley-williams-former-wales-and-swansea-captain-announces-retirement"
                         className="resourceHref"
                         target="_blank"
                       >
-                        Sky news article on his retirement{" "}
+                        Sky news article on Ashley Williams' retirement{" "}
                       </a>
                     </li>
                     <li className="linkLi">
@@ -7760,7 +9097,8 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        BBC Sport Wales article discussing his future{" "}
+                        BBC Sport Wales article discussing Ashley Williams'
+                        future{" "}
                       </a>
                     </li>
                     <li className="linkLi">
@@ -7769,14 +9107,24 @@ function App() {
                         className="resourceHref"
                         target="_blank"
                       >
-                        Article discussing his legacy as Wales' best ever
-                        captain{" "}
+                        Article discussing Ashley Williams' legacy as Wales'
+                        best ever captain{" "}
                       </a>
                     </li>
                   </ul>
                 }
                 linksCym={
                   <ul>
+                    <li className="linkLi">
+                      <a
+                        href="https://faw.cymru/news/the-dragon-on-my-shirt/"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        ‘The Dragon on My Shirt’ - ffilmiau’r Wal Goch am
+                        beldroedwyr Du ac Asiaidd.
+                      </a>
+                    </li>
                     <li className="linkLi">
                       <a
                         href="https://www.skysports.com/football/news/11095/12199145/ashley-williams-former-wales-and-swansea-captain-announces-retirement"
@@ -8035,6 +9383,36 @@ function App() {
             element={
               <Person
                 pscc={"/12to16yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Do the benefits of boxing outweigh the dangers?
+                    </li>
+                    <li className="discBPs">
+                      In what ways does boxing offer people a way out of their
+                      circumstances?
+                    </li>
+                    <li className="discBPs">Should women box?</li>
+                    <li className="discBPs">
+                      Does boxing make people more aggressive?{" "}
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      A yw manteision bocsio'n fwy na'r peryglon?
+                    </li>
+                    <li className="discBPs">
+                      Ym mha ffyrdd mae bocsio'n cynnig ffordd i bobl allan o'u
+                      hamgylchiadau?
+                    </li>
+                    <li className="discBPs">A ddylai menywod focsio?</li>
+                    <li className="discBPs">
+                      Ydy bocsio'n gwneud i bobl fod yn fwy ymosodol?{" "}
+                    </li>
+                  </ol>
+                }
                 psNum={"4"}
                 welshSlugText="Y bocsiwr dawnus o Butetown. "
                 bgcolor={"#FF686B"}
@@ -8236,6 +9614,42 @@ function App() {
             element={
               <PersonYTVid
                 pscc={"/12to16yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Betty was told it was unlikely that she could become a
+                      teacher and was 1 of only 6 females allowed to train as a
+                      teacher. Do females still have to fight harder than males
+                      to achieve their goals today?
+                    </li>
+                    <li className="discBPs">
+                      Betty sought to provide a sense of belonging & identity
+                      for young people. How can we do this for young people
+                      today?
+                    </li>
+                    <li className="discBPs">
+                      How important are statues in remembering people?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Dywedodd rhywun wrth Betty Campbell y byddai’n anodd iawn
+                      iddi fod yn athrawes. Pan oedd hi yn y coleg, roedd hi'n 1
+                      o 6 menyw yn unig a oedd yn cael hyfforddi fel athrawes.
+                      Ydy menywod yn dal i orfod ymladd yn galetach na dynion i
+                      gyflawni eu hamcanion heddiw?
+                    </li>
+                    <li className="discBPs">
+                      Roedd Betty'n ceisio rhoi ymdeimlad o berthyn a hunaniaeth
+                      i bobl ifanc. Sut gallwn ni wneud hyn i bobl ifanc heddiw?
+                    </li>
+                    <li className="discBPs">
+                      Pa mor bwysig yw cerfluniau wrth gofio pobl?
+                    </li>
+                  </ol>
+                }
                 psNum={"4"}
                 youtubeVid={"https://www.youtube.com/embed/y0Lg1LF65JY"}
                 youtubeVidCym={"https://www.youtube.com/embed/ifn0X_DGXZs"}
@@ -8539,6 +9953,36 @@ function App() {
             element={
               <PersonYTVid
                 pscc={"/12to16yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      What challenges might the first Indian doctors have faced
+                      when they arrived in Wales?
+                    </li>
+                    <li className="discBPs">
+                      What are the advantages and disadvantages of having a
+                      doctor with your own cultural background?
+                    </li>
+                    <li className="discBPs">
+                      How do migrants support the NHS today?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Pa heriau allai fod yn wynebu'r meddygon cyntaf o India
+                      pan gyrhaeddon nhw yng Nghymru?
+                    </li>
+                    <li className="discBPs">
+                      Beth yw manteision ac anfanteision bod â meddyg sydd â'r
+                      un cefndir diwylliannol â chi?
+                    </li>
+                    <li className="discBPs">
+                      Sut mae ymfudwyr yn cefnogi’r GIG heddiw?
+                    </li>
+                  </ol>
+                }
                 psNum={"4"}
                 welshSlugText="Y doctor o'r India."
                 links={
@@ -8559,6 +10003,15 @@ function App() {
                         target="_blank"
                       >
                         Dr Ganesh on 'The Real Indian Doctor' BBC programme{" "}
+                      </a>
+                    </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/news/health-56944739"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Article about risk of Covid in South Asians
                       </a>
                     </li>
                   </ul>
@@ -8583,6 +10036,15 @@ function App() {
                         Dr Ganesh ar raglen 'The Real Indian Doctors' ar BBC{" "}
                       </a>
                     </li>
+                    <li className="linkLi">
+                      <a
+                        href="https://www.bbc.co.uk/news/health-56944739"
+                        className="resourceHref"
+                        target="_blank"
+                      >
+                        Erthygl am risg Covid mewn pobl o Dde Asia
+                      </a>
+                    </li>
                   </ul>
                 }
                 indivName={"Dr Ganesh Subrahmanyam"}
@@ -8594,7 +10056,7 @@ function App() {
                 }
                 slugText={"The Indian Doctor."}
                 indivPic={
-                  "https://ichef.bbci.co.uk/images/ic/240x135/p0b6ksrg.jpg"
+                  "https://media.licdn.com/dms/image/C5603AQGwbfpUPle0iw/profile-displayphoto-shrink_800_800/0/1516514569994?e=2147483647&v=beta&t=VFIE5XUzqzEPY0AUH56i943YnFtJwu_h_mEQRf46oJE"
                 }
                 text={
                   <ul>
@@ -8734,6 +10196,41 @@ function App() {
             element={
               <Person
                 pscc={"/12to16yo"}
+                disc={
+                  <ol>
+                    <li className="discBPs">
+                      Vaughan Gething was a lawyer before he became a Health
+                      Minister for Wales. Should politicians jobs be closely
+                      related to their background and training?
+                    </li>
+                    <li className="discBPs">
+                      Do you think that being a black politician helps Vaughan
+                      Gething engage with some communities better?
+                    </li>
+                    <li className="discBPs">
+                      Should politicians be held to account for the choices they
+                      made during Covid?
+                    </li>
+                  </ol>
+                }
+                discCym={
+                  <ol>
+                    <li className="discBPs">
+                      Cyfreithiwr oedd Vaughan Gething cyn dod yn Weinidog
+                      Iechyd Cymru. A ddylai fod cysylltiad agos rhwng swyddi
+                      gwleidyddion a'u cefndir a'u hyfforddiant?
+                    </li>
+                    <li className="discBPs">
+                      Ydych chi'n meddwl bod Vaughan Gething yn gallu
+                      ymgysylltu'n well â rhai cymunedau oherwydd ei fod yn
+                      wleidydd du?
+                    </li>
+                    <li className="discBPs">
+                      A ddylai gwleidyddion gael eu dal i gyfrif am y dewisiadau
+                      a wnaethon nhw yn ystod Covid?
+                    </li>
+                  </ol>
+                }
                 psNum={"4"}
                 welshSlugText="Gwleidydd Llafur Cymraeg. "
                 resourceOverlay={"A portrait of Vaughan Gething."}
@@ -8867,6 +10364,11 @@ function App() {
                       Health and Social Services.
                     </li>
                     <li>
+                      Vaughan Gething was Health Minister during the Covid
+                      pandemic and was criticised for many of the choices that
+                      he made.
+                    </li>
+                    <li>
                       In May 2021, Gething was appointed as a Minister for the
                       Economy.
                     </li>
@@ -8918,6 +10420,11 @@ function App() {
                       Ysgrifennydd y Cabinet dros Iechyd, Llesiant a Chwaraeon.
                       Wedyn cafodd y swydd enw newydd, felly nawr Gething yw’r
                       Gweinidog dros Iechyd a Gwasanaethau Cymdeithasol.
+                    </li>
+                    <li>
+                      Vaughan Gething oedd y gwenidog Iechyd yn ystod y pandemig
+                      Covid a cafodd ei feirniadu am nifer o'r penderfyniadau a
+                      wnaeth yn ystod y cyfnod.
                     </li>
                     <li>
                       Ym mis Mai 2021, cafodd Gething ei benodi'n Weinidog yr

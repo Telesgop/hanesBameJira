@@ -9,6 +9,8 @@ import { Link } from "react-router-dom";
 
 const PersonPodcast = ({
   text,
+  disc,
+  discCym,
   welshText,
   indivName,
   indivPic,
@@ -187,6 +189,15 @@ const PersonPodcast = ({
                     {lang !== true ? "Online Resources:" : "Adnoddau Ar-lein:"}
                   </p>
                   {lang !== true ? links : linksCym}
+                </div>
+                <div className="discPoints">
+                  {" "}
+                  {lang !== true ? (
+                    <p className="discH1">DISCUSSION POINTS</p>
+                  ) : (
+                    <p className="discH1">PWYNTIAU TRAFOD</p>
+                  )}
+                  {lang !== true ? disc : discCym}
                 </div>
               </div>
             </div>
