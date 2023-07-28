@@ -1,6 +1,15 @@
 .notesH1 {
   font-family: sassoon;
   margin-top: 0;
+  text-align: left;
+  width: 70%;
+}
+.notesH1Content {
+  font-family: sassoon;
+  margin-top: 0;
+  text-align: left;
+  width: 70%;
+  font-size: x-large;
 }
 
 .notesMain {
@@ -10,6 +19,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  text-align: left;
 }
 
 .notesP {
@@ -17,4 +27,8 @@
   width: 70%;
   font-size: larger;
   font-weight: normal;
+}
+.notesSub {
+  font-family: sassoon;
+  width: 70%;
 }

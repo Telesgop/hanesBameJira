@@ -33,7 +33,7 @@ const Index = () => {
                     <strong>{item.name}</strong>
                   </td>
 
-                  <td>{item.slug}</td>
+                  <td>{lang !== true ? item.slug : item.welshSlug}</td>
                 </tr>
               </Link>
             ))}

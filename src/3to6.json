@@ -2,11 +2,11 @@
     {
         "id" : 0,
         "name" : "Dr Ganesh Subrahamanyan",
-        "nameCym": "Dr Ganesh Subrahamanyan",
+        "nameCym": "Dr Ganesh Subrahmanyan",
         "slug": "The Indian Doctor.",
         "welshSlug": "",
         "image": "https://dev.addysgop.co.uk/pdfs/ganesh.png",
-        "url": "/3to6yo/GaneshSubrahamanyan",
+        "url": "/ps1/GaneshSubrahmanyan",
         "keywords" : "Doctor ganesh subrahmanyam indian nhs world war two aberfan asian dr"
     },{
         "id" : 1,
@@ -15,7 +15,7 @@
         "welshSlug": "",
         "slug": "The story of the award-winning ice cream.",
         "image": "https://dev.addysgop.co.uk/pdfs/sidoli.png",
-        "url": "/3to6yo/SidoliIceCream",
+        "url": "/ps1/SidoliIceCream",
         "keywords" : "Sidoli ice cream italian world war two"
     }
     ,{
@@ -25,7 +25,7 @@
         "slug": "Community Activist and Wales’ First Black Headteacher.",
         "welshSlug": "Community Activist and Wales’ First Black Headteacher.",
         "image": "https://dev.addysgop.co.uk/pdfs/betty.png",
-        "url": "/3to6yo/BettyCampbell",
+        "url": "/ps1/BettyCampbell",
         "keywords": "Elizabeth betty campbell teacher headteacher cardiff barbados jamaica world war two butetown mbe statue "
     }
     ,{
@@ -35,7 +35,7 @@
         "slug": "",
         "welshSlug": "",
         "image": "https://dev.addysgop.co.uk/pdfs/abram.png",
-        "url": "/3to6yo/AbramWood",
+        "url": "/ps1/AbramWood",
         "keywords": "Romani Kale Gypsy gypsies travellers  "
     }
     ,{
@@ -45,7 +45,7 @@
         "slug": "Nurse.",
         "welshSlug": "",
         "image": "https://dev.addysgop.co.uk/pdfs/vernester.png",
-        "url": "/3to6yo/VernesterCyril",
+        "url": "/ps1/VernesterCyril",
         "keywords": "Vernester cyril nurse caribbean"
     }
     ,{
@@ -55,7 +55,7 @@
         "slug": "The 18th century slave who became a gardener.",
         "welshSlug": "",
         "image": "https://dev.addysgop.co.uk/pdfs/john.png",
-        "url": "/3to6yo/JohnYstumllyn",
+        "url": "/ps1/JohnYstumllyn",
         "keywords": "John ystumllyn gardener slave jack du black flower "
     }
   

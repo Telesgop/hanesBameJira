@@ -314,7 +314,7 @@ const BettyQuiz = () => {
                 <>
                   <div className="finishedQuiz">Well done!</div>
                   <div className="finishedBut">
-                    <a href="https://dev.addysgop.co.uk/hanesbame/12to16yo/ElizabethCampbell">
+                    <a href="https://dev.addysgop.co.uk/hanesbame/ps4/ElizabethCampbell">
                       Back to info page
                     </a>
                   </div>

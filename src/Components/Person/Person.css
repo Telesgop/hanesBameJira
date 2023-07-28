@@ -348,7 +348,6 @@
   }
 }
 .backLeft {
-  /* width: 70%; */
   height: 40vh;
   grid-area: 1 / 1 / 2 / 2;
   display: flex;
@@ -363,30 +362,12 @@
 .backLeftYTVid {
   width: 37vw;
   height: 45vh;
-  /* height: 40vh; */
-
   display: flex;
   justify-content: flex-start;
   align-items: center;
   font-family: sassoon;
   flex-direction: column;
   border-radius: 15px;
-}
-
-.quizButton {
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  width: 10vw;
-  height: 5vh;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-self: center;
-  text-align: center;
-  align-items: center;
-  background-color: #258ea6;
-  color: #f2f2f2;
-  text-decoration: none;
 }
 
 .courtesyText {
@@ -396,22 +377,6 @@
 
 .resourceLi {
   height: auto;
-}
-
-.showQuizBut {
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  width: 10vw;
-  height: 5vh;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-self: center;
-  text-align: center;
-  align-items: center;
-  background-color: #258ea6;
-  color: #f2f2f2;
-  text-decoration: none;
 }
 
 .dontShowQuizBut {
@@ -479,7 +444,7 @@
   font-weight: bold;
   font-family: sassoon;
   font-size: large;
-  text-align: flex-start;
+  text-align: start;
   border-radius: 15px;
 }
 
@@ -526,7 +491,6 @@
   height: 50vh;
   border-radius: 7px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
   object-fit: cover;
 }
 
@@ -541,69 +505,62 @@
   height: 10vh;
 }
 
-@media only screen and (max-width: 600px) {
-  .personInfo {
+@media only screen and (max-width: 500px) {
+  .personInfoBack {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
     height: auto !important;
-    width: 100vw;
-    padding: 0 !important;
-    box-shadow: none;
+    width: 85vw;
   }
-  .personText {
-    padding: 0rem !important;
-    margin-right: 20px !important;
-    width: 100vw;
-    list-style: none !important;
-    display: flex;
-    list-style-type: none !important;
+  .wholePage {
+    display: grid !important;
+    grid-template-columns: 1fr;
+  }
+  .backLText {
+    width: 90%;
+    height: auto;
+  }
+  .backLeft {
+    width: 100%;
+    align-items: center;
   }
 
+  .prevnext {
+    grid-area: 3 / 1 / 4 / 6;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1450px) {
+  .backLeft {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .backLeftYTVid {
+    width: 100%;
+    display: flex;
+    justify-content: center !important;
+    align-content: center !important;
+    align-items: center !important;
+  }
+
+  .backLVid {
+    display: flex;
+    justify-content: center !important;
+    align-content: center !important;
+    align-items: center !important;
+  }
   .personText ul {
     list-style: none;
     padding: 10px;
   }
-  .personBox {
-    justify-content: space-between;
-    margin-top: 1vh;
-    list-style: none !important;
-    list-style-type: none !important;
-    height: auto !important;
-    background: none;
-    border: none;
-    display: flex;
-    width: 100%;
-  }
-  .leftSide {
-    width: 100%;
-    list-style: none !important;
-  }
 
-  .imgBox {
-    width: 50vw !important;
-  }
-  .prevnext {
-    display: none;
-  }
-
-  .personName {
-    text-align: center;
-  }
-  .personImg {
-    width: 100%;
-    height: 20vh;
-  }
   .rightSide {
     overflow: visible;
-    list-style: none !important;
-  }
-  .wholePage {
-    margin-top: 0;
-    margin: 0 !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     list-style: none !important;
   }
 
@@ -617,6 +574,26 @@
   .personShortSlug {
     height: auto;
   }
+
+  .backLeft {
+    width: 100%;
+  }
+
+  .wholePage {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .prevnextBlocked {
+    display: none;
+  }
+
+  .prevnext {
+    grid-area: 3 / 1 / 4 / 6;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 1215px) {
@@ -626,71 +603,59 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .prevnextBlocked {
+    display: none;
+  }
+  .personInfoBack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: auto !important;
+    width: 85vw;
+  }
+  .prevnext {
+    z-index: 11111212121;
+  }
+
   .personInfo {
     display: flex;
     flex-direction: column;
     height: auto !important;
-    width: 100vw;
     padding: 0 !important;
     box-shadow: none;
   }
-  .personText {
-    padding: 0rem !important;
-    margin-right: 20px !important;
-    width: 100vw;
-    list-style: none !important;
-    display: flex;
-    list-style-type: none !important;
-  }
-
   .personText ul {
     list-style: none;
     padding: 10px;
   }
-  .personBox {
-    justify-content: space-between;
-    margin-top: 1vh;
-    list-style: none !important;
-    list-style-type: none !important;
-    height: auto !important;
-    background: none;
-    border: none;
-    display: flex;
+
+  .backLeft {
     width: 100%;
   }
+
+  .backLText {
+    width: 80vw;
+  }
+
   .leftSide {
     width: 100%;
-    list-style: none !important;
   }
 
   .imgBox {
-    width: 50vw !important;
-  }
-  .prevnext {
-    display: none;
+    width: 70vw !important;
   }
 
   .personName {
     text-align: center;
   }
   .personImg {
-    width: 100%;
-    height: 20vh;
+    height: 100%;
   }
   .rightSide {
     overflow: visible;
     list-style: none !important;
   }
-  .wholePage {
-    margin-top: 0;
-    margin: 0 !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style: none !important;
-  }
-
   .flipMobile {
     display: flex;
   }

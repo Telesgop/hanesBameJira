@@ -6,7 +6,7 @@
         "slug": "Wales’ First black headteacher.",
         "welshSlug": "Pennaeth du cyntaf Cymru.",
         "image": "https://dev.addysgop.co.uk/pdfs/betty2.png",
-        "url": "/12to16yo/ElizabethCampbell",
+        "url": "/ps4/ElizabethCampbell",
         "keywords" : "Elizabeth betty campbell teacher headteacher cardiff barbados jamaica world war two butetown mbe statue ",
         "resources": [
             "Links will go here"
@@ -19,7 +19,7 @@
     "slug": "Athlete, rugby player and high achiever.",
     "welshSlug": "Athletwr, chwaraewr rygbi a phrif weithredwr. ",
     "image": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/4F4B/production/_119399202_cdf_300720_cf_nigel_walker_12.jpg",
-    "url": "/12to16yo/NigelWalker",
+    "url": "/ps4/NigelWalker",
     "keywords": "Nigel walker rugby athlete cardiff olympics sport",
     "resources": [
         "Links will go here"
@@ -33,8 +33,8 @@
     "nameCym" : "Dr Ganesh Subrahmanyam",
     "slug": "The Indian Doctor.",
     "welshSlug": "Y doctor o'r India.",
-    "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0b6ksrg.jpg",
-    "url": "/12to16yo/GaneshSubrahmanyam",
+    "image": "https://scontent-lhr8-1.xx.fbcdn.net/v/t1.6435-9/77264903_2523343967701248_4818416177501962240_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_ohc=JCfmBGobA98AX-V07gn&_nc_ht=scontent-lhr8-1.xx&oh=00_AfDbr__rCvG7MjcZwiudyPpx22dxLgaUD-Ue2p87qrW6Og&oe=64E8D3EA",
+    "url": "/ps4/GaneshSubrahmanyam",
     "keywords" : "Doctor ganesh subrahmanyam indian nhs world war two aberfan asian  ",
     "resources": [
         "Links will go here"
@@ -46,8 +46,8 @@
     "nameCym" : "Kizzy Crawford",
     "slug": "The singer songwriter.",
     "welshSlug": "Y gyfansoddwraig a'r gantores.",
-    "image": "https://ents24.imgix.net/image/000/158/543/f362a1cbe3eb9d638603c935c57a9f81ee7bd0bf.jpg?auto=format&crop=faces&w=1920&h=1920",
-    "url": "/12to16yo/KizzyCrawford",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Kizzy_Crawford.jpg/640px-Kizzy_Crawford.jpg",
+    "url": "/ps4/KizzyCrawford",
     "keywords": "Kizzy crawford singer songwriter merthyr tydfil bajan barbados autism radio  ",
     "resources": [
         "Links will go here"
@@ -58,10 +58,10 @@
     "id" : 0,
     "name" : "Glenn Webbe",
     "nameCym" : "Glenn Webbe",
-    "slug": "Wales' first rugby black icon.",
+    "slug": "Wales' first black rugby icon.",
     "welshSlug": "Eicon rygbi du cyntaf Cymru.",
-    "image": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/DC57/production/_113170465_shutterstock_editorial_3156656a.jpg",
-    "url": "/12to16yo/GlennWebbe",
+    "image": "https://dev.addysgop.co.uk/pdfs/glenn1.png",
+    "url": "/ps4/GlennWebbe",
     "keywords": "Glenn webbe cardiff windrush rugby athletics world cup sport",
     "resources": [
         "Links will go here"
@@ -74,7 +74,7 @@
     "slug": "Newsreader, television and radio presenter.",
     "welshSlug": "Newyddiadurwr a chyflwynydd teledu a radio. ",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/2012-03-19_Jason_Mohammad_at_Wales_Grand_Slam_Celebrations.jpg/640px-2012-03-19_Jason_Mohammad_at_Wales_Grand_Slam_Celebrations.jpg",
-    "url": "/12to16yo/JasonMohammad",
+    "url": "/ps4/JasonMohammad",
     "keywords": "Jason mohammad newsreader presenter radio muslim pakistani cardiff bbc olympics ",
     "resources": [
         "Links will go here"
@@ -88,7 +88,7 @@
     "slug": "Welsh Labour politician.",
     "welshSlug": "Gwleidydd Llafur Cymraeg. ",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Vaughan_Gething.jpg/640px-Vaughan_Gething.jpg",
-    "url": "/12to16yo/VaughanGething",
+    "url": "/ps4/VaughanGething",
     "keywords" : "Vaughan gething zambian labour cardiff butetown senedd politics politicians  ",
     "resources": [
         "Links will go here"
@@ -101,7 +101,7 @@
     "slug": "The gifted boxer from Butetown.",
     "welshSlug": "Y bocsiwr dawnus o Butetown. ",
     "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/joe-erskine-keystone.jpg",
-    "url": "/12to16yo/JoeErskine",
+    "url": "/ps4/JoeErskine",
     "keywords": "Joe Erskine boxer tiger bay cardiff sport",
     "resources": [
         "Links will go here"
@@ -114,7 +114,7 @@
     "slug": "The American who stood with the miners.    ",
     "welshSlug": "Yr Americanwr a safodd gyda'r glowyr. ",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/%22Paul_Robeson%2C_world_famous_Negro_baritone%2C_leading_Moore_Shipyard_%28Oakland%2C_CA%29_workers_in_singing_the_Star_Spangled_Ba_-_NARA_-_535874.jpg/640px-%22Paul_Robeson%2C_world_famous_Negro_baritone%2C_leading_Moore_Shipyard_%28Oakland%2C_CA%29_workers_in_singing_the_Star_Spangled_Ba_-_NARA_-_535874.jpg",
-    "url": "/12to16yo/PaulRobeson",
+    "url": "/ps4/PaulRobeson",
     "keywords" : "",
     "resources": [
         "Links will go here"
@@ -127,8 +127,8 @@
     "nameCym" : "Louisa BB Morgan",
     "slug": "The woman who lived all over the world.",
     "welshSlug": "Y ddynes fu'n byw dros y byd. ",
-    "image": "https://m.media-amazon.com/images/M/MV5BZGRkNTgwM2YtZWUxNy00MDQzLWE5OTAtODU1MjVmYWE2ZjhiXkEyXkFqcGdeQXVyODIyODI5Mzc@._V1_.jpg",
-    "url": "/9to12yo/Louisa",
+    "image": "https://scontent-lhr8-2.xx.fbcdn.net/v/t1.6435-9/37876165_1613481078757166_4484080448414154752_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=aB9SNHDfPrYAX9PBKzJ&_nc_ht=scontent-lhr8-2.xx&oh=00_AfDHP1fPuQg2x7CRMuRugVuHX8tyx1tg5WbOb9PqTp3pcA&oe=64E9CEF6",
+    "url": "/ps3/Louisa",
     "keywords": "Louisa st bartholomew brown morgan nigeria catholic singing acting singer actor religion ",
     "resources": [
         "Links will go here"
@@ -141,7 +141,7 @@
     "slug": "The Welsh football star.",
     "welshSlug": "Cyn-gapten Pêldroed Cymru.",
     "image": "https://dev.addysgop.co.uk/pdfs/ashleyWilliams.png",
-    "url": "/12to16yo/AshleyWilliams",
+    "url": "/ps4/AshleyWilliams",
     "keywords": "Ashley williams footballer captain swansea sport",
     "resources": [
         "Links will go here"
@@ -154,7 +154,7 @@
     "slug": "The race riots that shamed Wales.",
     "welshSlug": "Y terfysgoedd a gododd gywilydd ar Gymru. ",
     "image": "https://i2-prod.walesonline.co.uk/incoming/article16433006.ece/ALTERNATES/s810/0_AMR_WOL_140619_13.jpg",
-    "url": "/12to16yo/1919RaceRiots",
+    "url": "/ps4/1919RaceRiots",
     "keywords" : "",
     "resources": [
         "Links will go here"

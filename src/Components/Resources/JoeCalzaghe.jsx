@@ -56,6 +56,49 @@ const JoeCalzaghe = () => {
             ? "Efallai na chafodd Joe Calzaghe amser da gyda’i gyfoedion yn yr ysgol, ond aeth ymlaen i wireddu ei freuddwydion a bod yn ysbrydoliaeth i lawer dros y byd ac ennill y ffugenw 'Y Ddraig Eidalaidd' hefyd, “Rwy’n gobeithio fy mod wedi dangos i bobl ifanc eraill na all unrhyw un ddiffodd eich fflam.”   "
             : "Joe Calzaghe may not have had a happy time at school, but he went on to achieve his dreams and be an inspiration to many across the world, gaining him the nickname ‘The Italian Dragon’, “I hope that I’ve shown other young people that no one can extinguish your flame.”  "}
         </p>{" "}
+        <div
+          className="learningOutcomes"
+          style={{ "background-color": "#FF686B" }}
+        >
+          <h2>{lang ? "Eich tro chi! " : "Your turn! "}</h2>
+          <p className="resourceP">
+            {lang
+              ? "Dychmygwch eich bod wedi cael y dasg o gyfweld â Joe Calzaghe ar gyfer papur newydd cenedlaethol.    "
+              : "Imagine you have been given the job of interviewing Joe Calzaghe for a national newspaper. "}
+          </p>
+          <p className="resourceP">
+            {lang
+              ? "Rydych yn gallu gofyn 5 cwestiwn yn unig. Beth fydden nhw?   "
+              : "You can only ask 5 questions. What would they be? "}
+          </p>
+          <p className="resourceP">
+            {lang
+              ? "Sut ydych chi'n meddwl y byddai'n ateb? Cyfnewidiwch eich cwestiynau gyda ffrind ac ateb cwestiynau eich gilydd.  "
+              : "What do you think he would answer? Swap questions with a friend and answer each others questions.  "}
+          </p>
+
+          <p className="resourceP">
+            <strong>{lang ? "Deilliant Dysgu:" : "Learning Outcome:"}</strong>
+            <br /> {lang ? "Gofyn cwestinau " : "Asking questions "}
+          </p>
+          <p className="resourceP">
+            <strong>
+              {lang ? "Meini Prawf Llwyddiant: " : "Success Criteria:"}
+            </strong>
+            <br />{" "}
+            {lang
+              ? "Gofyn cwestiynau diddorol  "
+              : "Asks interesting questions"}
+            <br />{" "}
+            {lang
+              ? "Gofyn cwestiynau am wahanol gyfnodau yn ei fywyd  "
+              : "Questions asked cover different parts of his life "}
+            <br />{" "}
+            {lang
+              ? "Defnyddio atalnodi cywir - prif lythrennau a marciau cwestiwn  "
+              : "Use correct punctuation - capital letters and question marks "}
+          </p>
+        </div>
       </div>
     </>
   );

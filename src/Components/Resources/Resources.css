@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+.timeline {
+  width: 70vw;
+  object-fit: contain;
+}
+
+.timelineImg {
+  object-fit: contain;
+}
+
 .resourcePage {
   display: flex;
   flex-direction: column;

@@ -38,7 +38,7 @@ const Notes = () => {
           ? "Edrychwch ar y wefan er mwyn cael eich ysbrydoli!"
           : "Dip in to the website and be inspired!"}
       </p>
-      <h1 className="notesH1"> {lang ? "Y Cynnwys" : "The Content"}</h1>
+      <h1 className="notesH1Content"> {lang ? "Y Cynnwys" : "The Content"}</h1>
       <p className="notesP">
         {lang
           ? "Mae'r wefan hon yn rhannu storïau o brofiadau pobl Dduon, Asiaidd a Lleiafrifoedd Ethnig. Cafodd ei chreu gan gadw ‘Cwricwlwm Cymru’ mewn cof ac mae'n rhannu cefndir a digwyddiadau hanesyddol unigolion yng Nghymru.  Ei bwriad yw ysbrydoli ymarferwyr a dysgwyr, fel bod diben eglur a dilys wrth ystyried cymunedau Du, Asiaidd a Lleiafrifoedd Ethnig.   Drwy adfyfyrio ac archwilio, dylai ymarferwyr fagu hyder i wreiddio cyfleoedd trawsgwricwlaidd drwy addysgeg o ansawdd uchel.  "
@@ -69,7 +69,9 @@ const Notes = () => {
             : "is not meant to take the place of lesson planning but is a resource which supports lesson planning and cross-curricular themes; it includes activities which embed and support the teaching of these themes."}
         </li>
       </ul>
-      <h3>{lang ? " Adrannau" : "Sections"} </h3>
+      <h3 className="notesSub">
+        {lang ? " Camau Cynnydd" : "Progression Steps"}{" "}
+      </h3>
       <p className="notesP">
         {lang
           ? "Mae'r cynnwys wedi'i rannu'n bedwar cam cynnydd, gan rannu profiadau pobl o amrywiaeth o gefndiroedd ethnig, o rannau amrywiol o Gymru mewn ystod o feysydd gan gynnwys y celfyddydau, chwaraeon, gwleidyddiaeth a busnes. Mae'r iaith a'r cynnwys yn mynd yn fwy heriol wrth i chi symud drwy'r camau.  "
@@ -90,7 +92,7 @@ const Notes = () => {
           ? "Mae gan Gamau Cynnydd 2, 3 a 4 amrywiaeth o ‘gardiau’ sy'n rhoi sylw i berson, lle neu ddigwyddiad. Mae prif dudalen pob cerdyn yn cynnwys ffeithiau a ffigurau am yr eitem o dan sylw. Drwy glicio ar y saeth ar y dde i'r wybodaeth, byddwch chi'n datgelu cefn y cerdyn. Mae cefn y cardiau'n cynnwys eitem ychwanegol a all fod yn fideo, yn ffeil sain neu'n adnodd a thasg. Hefyd, maen nhw'n cynnwys syniadau trafod, ffotograffau a dolenni gwe y mae'n bosibl eu defnyddio ar gyfer rhagor o ymchwil.   "
           : "Progression Steps 2, 3 and 4 have a range of 'cards' featuring a person, place or event. The main page of each card contains facts and figures about the featured item. By clicking on the arrow to the right of the information you will reveal the back of the card. The back of the cards feature an additional item which can be a video, an audio file or a resource and task. They also contain discussion ideas, photos and weblinks which can be used for further research."}
       </p>
-      <h3>{lang ? "Y Ddewislen " : "Menu"}</h3>
+      <h3 className="notesSub">{lang ? "Y Ddewislen " : "Menu"}</h3>
       <p className="notesP">
         {lang
           ? "Mae botwm y ddewislen (tair llinell ar gornel dde uchaf y wefan) yn rhoi mynediad i chi at:"
@@ -100,7 +102,7 @@ const Notes = () => {
         {lang ? (
           <>
             <li>
-              <b>Adrannau</b> - dolen i'r dudalen adrannau
+              <b>Camau Cynnydd</b> - dolen i’r dudalen Camau Cynnydd
             </li>
             <li>
               <b>Mynegai</b> - rhestr o'r holl eitemau drwy'r wefan i gyd
@@ -110,7 +112,7 @@ const Notes = () => {
               hygyrchedd y wefan
             </li>
             <li>
-              <b>Deunyddiau ychwanegol</b> - deunyddiau eraill fel cyfweliadau
+              <b>Adnoddau ychwanegol</b> - adnoddau eraill fel cyfweliadau
               estynedig
             </li>
             <li>
@@ -120,7 +122,7 @@ const Notes = () => {
         ) : (
           <>
             <li>
-              <b>Sections</b> - a link to the sections page
+              <b>Progression Steps</b> - a link to the Progression Steps page
             </li>
             <li>
               <b>Index</b> - a list of all the items throughout the site
@@ -139,7 +141,9 @@ const Notes = () => {
           </>
         )}
       </ul>
-      <h3>{lang ? "Sut i ddefnyddio'r cynnwys" : "How to use the content"}</h3>
+      <h3 className="notesSub">
+        {lang ? "Sut i ddefnyddio'r cynnwys" : "How to use the content"}
+      </h3>
       <p className="notesP">
         {lang
           ? "Nid cynlluniau gwersi yw'r adnoddau ar y wefan hon ond yn hytrach adnoddau a fydd yn ysgogi trafodaeth ac yn ysbrydoli syniadau ar gyfer gweithgareddau yn yr ystafell ddosbarth. Bydd yr ymarferydd yn gallu dewis a dethol elfennau sy'n berthnasol i'w gwricwlwm ysgol a'i gynnwys wrth gynllunio.  "

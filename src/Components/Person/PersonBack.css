@@ -87,12 +87,14 @@
   .personInfo {
     display: flex;
     flex-direction: column;
-    background: none;
-    border: none;
-    width: 100%;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
   .personText {
-    padding: 1rem;
+    padding-top: 0;
   }
   .personBox {
     margin-bottom: 1vh;
@@ -105,14 +107,9 @@
     align-self: center;
   }
   .prevnext {
-    display: none;
+    padding: 20px;
   }
-  .blob1 {
-    overflow: hidden;
-  }
-  .blob2 {
-    overflow: hidden;
-  }
+
   .personName {
     margin: 3vh;
     text-align: center;

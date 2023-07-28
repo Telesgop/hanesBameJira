@@ -5,7 +5,7 @@
     "slug": "",
     "welshSlug": "",
     "image": "",
-    "url": "/6to9yo/FirstGenChinese"
+    "url": "/ps2/FirstGenChinese"
 },
 {
     "id" : 9,
@@ -13,7 +13,7 @@
     "slug": "",
     "welshSlug": "",
     "image": "",
-    "url": "/6to9yo/SSAndoraStarr"
+    "url": "/ps2/SSAndoraStarr"
 },
 {
     "id" : 10,
@@ -21,7 +21,7 @@
     "slug": "",
     "welshSlug": "",
     "image": "",
-    "url": "/6to9yo/WilsonMonk"
+    "url": "/ps2/WilsonMonk"
 },
 {
     "id" : 11,
@@ -29,14 +29,14 @@
     "slug": "",
     "welshSlug": "",
     "image": "",
-    "url": "/6to9yo/ShirleyBassey"
+    "url": "/ps2/ShirleyBassey"
 }  ,
 {
     "id" : 2,
     "name" : "Richard Parks",
     "slug": "Rugby player / athlete",
     "image": "https://www.richardparks.co.uk/files/7715/4383/2077/Richard_banner_mobile.png",
-    "url": "/3to6yo/RichardParks",
+    "url": "/ps1/RichardParks",
     "keywords" : "Richard Parks"
 }
 
@@ -46,7 +46,7 @@
     "name" : "Vernester Cyril OBE",
     "slug": "Vernester worked as a midwife for over 30 years",
     "image": "https://www.peoplescollection.wales/sites/default/files/stories/Mrs-Vernester-Cyril-OBE.jpg",
-    "url": "/3to6yo/VernesterCyril",
+    "url": "/ps1/VernesterCyril",
     "keywords" : "Vernester Cyril OBE"
 },
 {
@@ -54,7 +54,7 @@
     "name" : "Dr Ganesh Subrahmanyam",
     "slug": "Dr Ganesh Subrahmanyam was one of the first Indian doctors to arrive in Wales.  ",
     "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0b6ksrg.jpg",
-    "url": "/3to6yo/GaneshSubrahmanyam",
+    "url": "/ps1/GaneshSubrahmanyam",
     "keywords" : "Dr Ganesh Subrahmanyam"
 },
 {
@@ -62,7 +62,7 @@
     "name" : "Elizabeth Campbell MBE",
     "slug": "Community Activist and Wales’ First Black Headteacher",
     "image": "https://www.100welshwomen.wales/wp-content/uploads/2018/01/Betty-Campbell.jpg",
-    "url": "/3to6yo/ElizabethCampbell",
+    "url": "/ps1/ElizabethCampbell",
     "keywords" : "Elizabeth Campbell MBE"
 },
 {
@@ -70,7 +70,7 @@
     "name" : "Vaughan Gething ",
     "slug": "Welsh Labour and Co-operative politician serving as Minister for the Economy since 2021.",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Vaughan_Gething.jpg/800px-Vaughan_Gething.jpg",
-    "url": "/3to6yo/ElizabethCampbell",
+    "url": "/ps1/ElizabethCampbell",
     "keywords" : "Vaughan Gething"
 }
 ]

@@ -1,17 +1,27 @@
 import { React, useContext, useState } from "react";
 import "./NineToTwelve.css";
 import { LanguageContext } from "../../Helper/Context";
+import { SearchbarContext } from "../../Helper/Context";
 import StoryBox from "../StoryBox/StoryBox";
 import ninetotwelve from "../../9to12.json";
-import Copyright from "../Copyright/Copyright";
 import { Link } from "react-router-dom";
 import { BiSearchAlt } from "react-icons/bi";
 
 const NineToTwelve = () => {
   const { lang, setLang } = useContext(LanguageContext);
+  const { searchClear, setSearchClear } = useContext(SearchbarContext);
   const [query, setQuery] = useState("");
   document.body.style = "background: #A2D6F9;";
 
+  function handleClick() {
+    setSearchClear(false);
+    console.log(searchClear);
+  }
+
+  function handleBlur() {
+    setSearchClear(true);
+    console.log(searchClear);
+  }
   return (
     <>
       <div className="ageRange">
@@ -22,6 +32,8 @@ const NineToTwelve = () => {
       <div className="searchbar">
         <input
           onChange={(event) => setQuery(event.target.value)}
+          onClick={handleClick}
+          onBlur={handleBlur}
           className="searchInput"
           placeholder={lang !== true ? "Search" : "Chwilio"}
         ></input>

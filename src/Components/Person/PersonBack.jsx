@@ -46,7 +46,7 @@ const Person = ({ text, welshText, indivName, indivPic, indivPic2 }) => {
           animate="visible"
         >
           <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-            <Link to="/6to9yo/example">
+            <Link to="/ps2/example">
               <HiArrowCircleLeft className="prevnext" />
             </Link>
           </motion.div>

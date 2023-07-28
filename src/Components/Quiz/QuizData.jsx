@@ -274,7 +274,7 @@ const QuizData = () => {
                   <div className="finishedQuiz">Well done!</div>
                   <div className="finishedBut">
                     {" "}
-                    <a href="https://dev.addysgop.co.uk/hanesbame/6to9yo/RichardParks">
+                    <a href="https://dev.addysgop.co.uk/hanesbame/ps2/RichardParks">
                       Back to info page
                     </a>
                   </div>

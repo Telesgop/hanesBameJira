@@ -2,6 +2,10 @@ import React from "react";
 import "./Resources.css";
 import { LanguageContext } from "../../Helper/Context";
 import { useContext } from "react";
+import bettyTimeline from "../../Images/bettyTimeline2.png";
+import colinTimeline from "../../Images/colinTimeline.png";
+import colinTimelineCym from "../../Images/colinTimelineCym.png";
+import bettyTimelineCymraeg from "../../Images/bettyTimelineCymraeg.png";
 
 const ColinJackson = () => {
   const { lang, setLang } = useContext(LanguageContext);
@@ -11,11 +15,16 @@ const ColinJackson = () => {
     <>
       <div className="resourcePage">
         <h1 className="resourceH1">{lang ? "Cyfweliad " : "Interview "}</h1>
+        <p>
+          {lang
+            ? "Sgwrs ddychmygol rhwng Jason Mohammad a Colin Jackson. "
+            : "An imaginary interview between Jason Mohammad and Colin Jackson."}
+        </p>
         <p className="resourceP">
           <strong>Jason Mohammad: </strong>
           {lang
-            ? "Croeso i’r rhaglen Colin.  Braf dy gael di yma!  "
-            : "Welcome to the programme Colin. Good to have you here!  "}
+            ? "Croeso i’r rhaglen Colin. Braf dy gael di yma!"
+            : "Welcome to the programme Colin. Good to have you here "}
         </p>
         <p className="resourceP">
           <strong>Colin Jackson: </strong>
@@ -122,10 +131,76 @@ const ColinJackson = () => {
         <p className="resourceP">
           <strong>Jason Mohammad: </strong>
           {lang
-            ? " Diolch am ddod ar y rhaglen.  "
+            ? "Diolch am ddod ar y rhaglen.  "
             : "Thank you for coming on the programme. "}
         </p>
-        <div className="learningOutcomesPoem"></div>
+        <div
+          className="learningOutcomes"
+          style={{ backgroundColor: "#A2D6F9" }}
+        >
+          <h2>{lang ? "Eich tro chi! " : "Your turn! "}</h2>
+          <p className="resourceP">
+            {lang
+              ? "Gallwn ddangos prif ddigwyddiadau cyfnod o amser mewn llinell amser. "
+              : `We can show the main events of a period of time in a timeline. 
+            `}
+          </p>
+          <p className="resourceP">
+            {lang
+              ? "Isod mae esiampl o linell amser yn dangos prif ddigwyddiadau ym mywyd Betty Campbell.  "
+              : `Below is an example of a timeline showing the main events in Betty Campbell's life.
+            `}
+          </p>
+          <h2>{lang ? "Betty Campbell" : "Betty Campbell"}</h2>
+          <div className="timelineImg">
+            {lang ? (
+              <img src={bettyTimelineCymraeg} className="timeline" />
+            ) : (
+              <img src={bettyTimeline} className="timeline" />
+            )}
+          </div>
+          <p className="resourceP">
+            {lang
+              ? "Ewch ati i greu llinell amser o ddigwyddiadau ym mywyd Colin Jackson rhwng ei eni a heddiw. Gallwch ddefnyddio geiriau neu luniau i ddangos y digwyddiadau. Defnyddiwch raddfa addas (e.e. 2cm = 5 mlynedd)."
+              : `Make a timeline of Colin Jackson’s life up to this year. Include all the key events that you can find. You can use images or words to show the events. Use an appropriate scale (e.g. 2cm = 5 years).`}
+          </p>
+          <div className="timelineImg">
+            {lang ? (
+              <img src={colinTimelineCym} className="timeline" />
+            ) : (
+              <img src={colinTimeline} className="timeline" />
+            )}
+          </div>
+          <p className="resourceP">
+            {lang
+              ? "Byddwch yn greadigol!"
+              : `Be creative!
+            `}
+          </p>
+          <p className="resourceP">
+            <strong>{lang ? "Deilliant Dysgu:" : "Learning Outcome:"}</strong>
+            <br />{" "}
+            {lang ? "Gallu ysgrifennu ymson  " : "To construct a timeline "}
+          </p>
+          <p className="resourceP">
+            <strong>
+              {lang ? "Meini Prawf Llwyddiant: " : "Success Criteria:"}
+            </strong>
+            <br />{" "}
+            {lang
+              ? "Ysgrifennu yn y person cyntaf, e.e. Dwi’n..   "
+              : "Draw a timeline using an appropriate scale "}
+            <br />
+            {lang
+              ? "Ysgrifennu am deimladau, e.e. Dwi’n difaru.. "
+              : "Select key events in Colin Jackson’s life  "}
+            <br />
+            {lang
+              ? "Defnyddio cwestiynau rhethregol, e.e. Tybed beth fydd yn digwydd..? "
+              : "Add events to correct place on the timeline "}
+            <br />
+          </p>
+        </div>
       </div>
     </>
   );

@@ -47,7 +47,7 @@ const Navbar = () => {
             />
           </motion.div>
         </Link>
-        <Link to={"/3to6yo"}>
+        <Link to={"/ps1"}>
           <motion.div
             id="PS1"
             className="categoryBut"
@@ -58,7 +58,7 @@ const Navbar = () => {
             {lang ? "CC1" : "PS1"}
           </motion.div>
         </Link>
-        <Link to={"/6to9yo"}>
+        <Link to={"/ps2"}>
           <motion.div
             id="PS2"
             className="categoryBut"
@@ -70,7 +70,7 @@ const Navbar = () => {
             {lang ? "CC2" : "PS2"}
           </motion.div>
         </Link>
-        <Link to={"/9to12yo"}>
+        <Link to={"/ps3"}>
           <motion.div
             id="PS3"
             className="categoryBut"
@@ -82,7 +82,7 @@ const Navbar = () => {
             {lang ? "CC3" : "PS3"}
           </motion.div>
         </Link>
-        <Link to={"/12to16yo"}>
+        <Link to={"/ps4"}>
           <motion.div
             id="PS4"
             className="categoryBut"
@@ -144,16 +144,6 @@ const Navbar = () => {
             </motion.div>
           </div>{" "}
           <div className="innerTextInfo">
-            <Link to={"/Categories"}>
-              <motion.h2
-                className="notesH2"
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={() => setIsOpen(false)}
-              >
-                Sections
-              </motion.h2>
-            </Link>
             <Link to={"/Notes"}>
               <motion.h2
                 className="notesH2"
@@ -161,7 +151,17 @@ const Navbar = () => {
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setIsOpen(false)}
               >
-                Teacher Notes
+                {lang ? "Nodiadau Athrawon" : "Teacher Notes"}
+              </motion.h2>
+            </Link>
+            <Link to={"/Categories"}>
+              <motion.h2
+                className="notesH2"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                onClick={() => setIsOpen(false)}
+              >
+                {lang ? "Camau Cynnydd" : "Progression Steps"}{" "}
               </motion.h2>
             </Link>
             <Link to={"/Index"}>
@@ -174,16 +174,7 @@ const Navbar = () => {
                 {lang ? "Mynegai" : "Index"}
               </motion.h2>
             </Link>
-            <Link to={"/Resources"}>
-              <motion.h2
-                className="notesH2"
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={() => setIsOpen(false)}
-              >
-                {lang ? "Ad Res" : "Additional Resources"}
-              </motion.h2>
-            </Link>
+
             <Link to={"/Accessibility"}>
               <motion.h2
                 className="notesH2"
@@ -202,7 +193,7 @@ const Navbar = () => {
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setIsOpen(false)}
               >
-                Credits
+                {lang ? "Cydnabyddiaethau" : "Acknowledgements"}
               </motion.h2>
             </Link>
           </div>
